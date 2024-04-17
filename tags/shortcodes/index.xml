@@ -75,7 +75,7 @@ cursor: pointer;
 bilibilibi Shortcode
 &lt;/h2>
 &lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;autoplay=0&amp;danmaku=1"
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&amp;danmaku=1&amp;autoplay=0"
 scrolling="no"
 frameborder="no"
 framespacing="0"

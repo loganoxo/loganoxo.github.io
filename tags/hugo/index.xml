@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Logan的博客</title><link>/tags/hugo/</link><description>Recent content in Hugo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 09 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>测试SEO</title><link>/articles/how_to_seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>/articles/how_to_seo/</guid><description>&lt;img src="/articles/how_to_seo/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 测试SEO" />&lt;h2 id="bilibilibi-shortcode">
-&lt;a href="#bilibilibi-shortcode" class="header-anchor">#&lt;/a>
-bilibilibi Shortcode
-&lt;/h2>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;autoplay=0&amp;danmaku=1"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
-&lt;h2 id="gitlab-snippets-shortcode">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Logan的博客</title><link>/tags/hugo/</link><description>Recent content in Hugo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 09 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>测试SEO</title><link>/articles/how_to_seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>/articles/how_to_seo/</guid><description>&lt;img src="/articles/how_to_seo/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 测试SEO" />&lt;h2 id="gitlab-snippets-shortcode">
 &lt;a href="#gitlab-snippets-shortcode" class="header-anchor">#&lt;/a>
 Gitlab Snippets Shortcode
 &lt;/h2>&lt;script
@@ -27,6 +14,19 @@ Quote Shortcode
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>A famous person, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>The book they wrote&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;h2 id="bilibilibi-shortcode1为自动播放0为手动播放">
+&lt;a href="#bilibilibi-shortcode1%e4%b8%ba%e8%87%aa%e5%8a%a8%e6%92%ad%e6%94%be0%e4%b8%ba%e6%89%8b%e5%8a%a8%e6%92%ad%e6%94%be" class="header-anchor">#&lt;/a>
+bilibilibi Shortcode,1为自动播放，0为手动播放
+&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&amp;danmaku=1&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
 &lt;h2 id="图片轮播">
 &lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad" class="header-anchor">#&lt;/a>
 图片轮播
@@ -64,4 +64,4 @@ loop: true,
 网易云,1为自动播放，0为手动播放
 &lt;/h1>
 &lt;iframe border="0" style="margin: 0 0;" width=100% height=86
-src="//music.163.com/outchain/player?type=2&amp;id=1367394991&amp;auto=1&amp;height=66">&lt;/iframe></description></item></channel></rss>
+src="https://music.163.com/outchain/player?type=2&amp;id=1367394991&amp;auto=1&amp;height=66">&lt;/iframe></description></item></channel></rss>
