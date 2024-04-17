@@ -3,7 +3,7 @@
 bilibilibi Shortcode
 &lt;/h2>
 &lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026"
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;autoplay=0&amp;danmaku=1"
 scrolling="no"
 frameborder="no"
 framespacing="0"
@@ -11,10 +11,6 @@ allowfullscreen="true"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;h2 id="gist-shortcode">
-&lt;a href="#gist-shortcode" class="header-anchor">#&lt;/a>
-Gist Shortcode
-&lt;/h2>&lt;script src="https://gist.github.com/spf13/7896402.js">&lt;/script>
 &lt;h2 id="gitlab-snippets-shortcode">
 &lt;a href="#gitlab-snippets-shortcode" class="header-anchor">#&lt;/a>
 Gitlab Snippets Shortcode
@@ -62,4 +58,10 @@ lazyLoading: true,
 lazyLoadingInPrevNext: true,
 loop: true,
 });
-&lt;/script></description></item></channel></rss>
+&lt;/script>
+&lt;h1 id="网易云1为自动播放0为手动播放">
+&lt;a href="#%e7%bd%91%e6%98%93%e4%ba%911%e4%b8%ba%e8%87%aa%e5%8a%a8%e6%92%ad%e6%94%be0%e4%b8%ba%e6%89%8b%e5%8a%a8%e6%92%ad%e6%94%be" class="header-anchor">#&lt;/a>
+网易云,1为自动播放，0为手动播放
+&lt;/h1>
+&lt;iframe border="0" style="margin: 0 0;" width=100% height=86
+src="//music.163.com/outchain/player?type=2&amp;id=1367394991&amp;auto=1&amp;height=66">&lt;/iframe></description></item></channel></rss>
