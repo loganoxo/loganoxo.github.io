@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seo on Logan的博客</title><link>/tags/seo/</link><description>Recent content in Seo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 09 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="/tags/seo/index.xml" rel="self" type="application/rss+xml"/><item><title>测试SEO</title><link>/articles/how_to_seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>/articles/how_to_seo/</guid><description>&lt;img src="/articles/how_to_seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;h2 id="gitlab-snippets-shortcode">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seo on Logan的博客</title><link>https://git.wssw.fun/tags/seo/</link><description>Recent content in Seo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 09 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/tags/seo/index.xml" rel="self" type="application/rss+xml"/><item><title>测试SEO</title><link>https://git.wssw.fun/articles/how_to_seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/how_to_seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/how_to_seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;h2 id="gitlab-snippets-shortcode">
 &lt;a href="#gitlab-snippets-shortcode" class="header-anchor">#&lt;/a>
 Gitlab Snippets Shortcode
 &lt;/h2>&lt;script
@@ -35,13 +35,13 @@ allowfullscreen="true"
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">
 &lt;div class="swiper-slide">
-&lt;img src="/photos/a.png" alt="">
+&lt;img src="https://git.wssw.fun/photos/a.png" alt="">
 &lt;/div>
 &lt;div class="swiper-slide">
-&lt;img src="/photos/b.png" alt="">
+&lt;img src="https://git.wssw.fun/photos/b.png" alt="">
 &lt;/div>
 &lt;div class="swiper-slide">
-&lt;img src="/photos/c.png" alt="">
+&lt;img src="https://git.wssw.fun/photos/c.png" alt="">
 &lt;/div>
 &lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
@@ -68,7 +68,7 @@ src="https://music.163.com/outchain/player?type=2&amp;id=1367394991&amp;auto=1&a
 &lt;h2 id="普通方式引入图片">
 &lt;a href="#%e6%99%ae%e9%80%9a%e6%96%b9%e5%bc%8f%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 普通方式引入图片
-&lt;/h2>&lt;p>&lt;img src="/photos/pexels-kian-mousazadeh-1964605-19193127.jpg"
+&lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/pexels-kian-mousazadeh-1964605-19193127.jpg"
 loading="lazy"
 alt="pexels-kian-mousazadeh-1964605-19193127.jpg"
 >&lt;/p></description></item></channel></rss>
