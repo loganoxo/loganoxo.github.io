@@ -269,4 +269,182 @@ alt="pexels-kian-mousazadeh-1964605-19193127.jpg"
 &lt;div class="timeline__description">
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item></channel></rss>
+&lt;/div>
+&lt;h2 id="聊天气泡">
+&lt;a href="#%e8%81%8a%e5%a4%a9%e6%b0%94%e6%b3%a1" class="header-anchor">#&lt;/a>
+聊天气泡
+&lt;/h2>
+&lt;div class="chat --other">
+&lt;div class="chat__inner">
+&lt;div class="chat__meta">John Doe&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div>
+&lt;div class="chat__text">
+这是左边的消息内容。
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.chat {
+margin: 10px;
+padding: 10px;
+position: relative;
+transition: transform 0.2s;
+max-width: 80%;
+min-width: 15%;
+}
+.chat:hover {
+transform: scale(1.05);
+}
+.chat.--self {
+text-align: left;
+background-color: #ecf5ff;
+color: #000000;
+border-radius: 15px;
+width: fit-content;
+margin-left: auto;
+}
+.chat.--self::before {
+content: "";
+position: absolute;
+right: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 0 0 20px;
+border-style: solid;
+border-color: transparent transparent transparent #ecf5ff;
+}
+.chat.--other {
+text-align: left;
+background-color: #ffecec;
+color: #333;
+border-radius: 15px;
+position: relative;
+width: fit-content;
+}
+.chat.--other::before {
+content: "";
+position: absolute;
+left: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 20px 0 0;
+border-style: solid;
+border-color: transparent #ffecec transparent transparent;
+}
+.chat__meta {
+font-weight: bold;
+font-size: 0.67em;
+color: #707070;
+margin-bottom: 5px;
+}
+.chat__text {
+font-size: 0.9em;
+margin-left: 10px;
+word-break: break-all;
+}
+[data-scheme="dark"] {
+.chat.--self {
+color: #fefefe;
+background-color: #253958;
+}
+.chat.--self::before {
+border-color: transparent transparent transparent #253958;
+}
+.chat.--other {
+color: #fefefe;
+background-color: #1a1a1a;
+}
+.chat.--other::before {
+border-color: transparent #1a1a1a transparent transparent;
+}
+.chat__meta {
+color: #b1b1b1;
+}
+}
+&lt;/style>
+&lt;div class="chat --self">
+&lt;div class="chat__inner">
+&lt;div class="chat__meta" style="text-align: right;">2023-09-12 14:45&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div>
+&lt;div class="chat__text">
+这是右边的消息内容，测试长长长长长长长长长长长长长长长长长长长长长长长长度。
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.chat {
+margin: 10px;
+padding: 10px;
+position: relative;
+transition: transform 0.2s;
+max-width: 80%;
+min-width: 15%;
+}
+.chat:hover {
+transform: scale(1.05);
+}
+.chat.--self {
+text-align: left;
+background-color: #ecf5ff;
+color: #000000;
+border-radius: 15px;
+width: fit-content;
+margin-left: auto;
+}
+.chat.--self::before {
+content: "";
+position: absolute;
+right: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 0 0 20px;
+border-style: solid;
+border-color: transparent transparent transparent #ecf5ff;
+}
+.chat.--other {
+text-align: left;
+background-color: #ffecec;
+color: #333;
+border-radius: 15px;
+position: relative;
+width: fit-content;
+}
+.chat.--other::before {
+content: "";
+position: absolute;
+left: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 20px 0 0;
+border-style: solid;
+border-color: transparent #ffecec transparent transparent;
+}
+.chat__meta {
+font-weight: bold;
+font-size: 0.67em;
+color: #707070;
+margin-bottom: 5px;
+}
+.chat__text {
+font-size: 0.9em;
+margin-left: 10px;
+word-break: break-all;
+}
+[data-scheme="dark"] {
+.chat.--self {
+color: #fefefe;
+background-color: #253958;
+}
+.chat.--self::before {
+border-color: transparent transparent transparent #253958;
+}
+.chat.--other {
+color: #fefefe;
+background-color: #1a1a1a;
+}
+.chat.--other::before {
+border-color: transparent #1a1a1a transparent transparent;
+}
+.chat__meta {
+color: #b1b1b1;
+}
+}
+&lt;/style></description></item></channel></rss>
