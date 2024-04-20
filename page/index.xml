@@ -1,1 +1,1097 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Logan的博客</title><link>https://git.wssw.fun/page/</link><description>Recent content in Pages on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 28 May 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/page/index.xml" rel="self" type="application/rss+xml"/><item><title>归档</title><link>https://git.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://git.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/photos/</guid><description/></item><item><title>关于</title><link>https://git.wssw.fun/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/about/</guid><description>&lt;p>这是我的博客&lt;/p></description></item><item><title>搜索</title><link>https://git.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://git.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/links/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Logan的博客</title><link>https://git.wssw.fun/page/</link><description>Recent content in Pages on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 28 May 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/page/index.xml" rel="self" type="application/rss+xml"/><item><title>归档</title><link>https://git.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://git.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/photos/</guid><description/></item><item><title/><link>https://git.wssw.fun/page/timeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/timeline/</guid><description>&lt;img src="https://git.wssw.fun/page/timeline/202309112259082.png" alt="Featured image of post " />&lt;p>&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2021-02-10&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">Whispers of love, carried by the breeze.&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+温柔的微风向树木低语着秘密
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2022-01-13&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">星星在你的眼中起舞&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+Love is blind
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2022-02-10&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">月光轻轻吻着大地&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+Echoes of laughter, memories untamed
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2022-03-14&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">森林的低语&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+Love is life
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2022-04-16&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">树叶的交响乐&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+在梦的花园里，我们徜徉
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2023-05-9&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">雨滴在玫瑰花瓣上舞动&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+雨滴在玫瑰花瓣上舞动
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2023-05-1&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">在夜的心中，寂静有千言万语&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+Clouds drift lazily in the azure sky.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2024-04-2&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">logan&lt;/span>
+&lt;/div>
+&lt;a href="https://git.wssw.fun/articles">
+&lt;div class="timeline__title">脚步在记忆的路上轻轻回响&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+Butterflies dance in fields of dreams.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;/p></description></item><item><title>关于</title><link>https://git.wssw.fun/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/about/</guid><description>&lt;p>这是我的博客&lt;/p></description></item><item><title>搜索</title><link>https://git.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://git.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/links/</guid><description/></item></channel></rss>
