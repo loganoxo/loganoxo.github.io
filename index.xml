@@ -1029,16 +1029,30 @@ fill="currentColor">
 &lt;/div>
 &lt;/div>&lt;p>然后执行hugo命令，就可以验证了&lt;/p>
 &lt;ul>
-&lt;li>Google Analytics
-先到Google Analytics创建一个账号，并登录。&lt;/li>
+&lt;li>Google Analytics&lt;/li>
 &lt;/ul>
-&lt;p>新建一个资源，填完后获得tracking code。&lt;/p>
-&lt;p>更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)&lt;/p>
-&lt;p>站点地图确认打开，默认都打开了
-在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
+&lt;blockquote>
+&lt;p>先到Google Analytics创建一个账号，并登录。
+新建一个资源，填完后获得tracking code。
+更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)
+站点地图确认打开，默认都打开了&lt;/p>
+&lt;/blockquote>
+&lt;p>在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
 &lt;p>Bing
 相似地，在Bing网站管理登陆、添加网站url。&lt;/p>
-&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p></description></item><item><title>归档</title><link>https://git.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://git.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/photos/</guid><description/></item><item><title>Placeholder Text</title><link>https://git.wssw.fun/example/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/example/placeholder-text/</guid><description>&lt;img src="https://git.wssw.fun/example/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" />&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
+&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p>
+&lt;ul>
+&lt;li>测试
+&lt;a class="link" href="https://tagassistant.google.com/" target="_blank" rel="noopener"
+>https://tagassistant.google.com/
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>归档</title><link>https://git.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://git.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/photos/</guid><description/></item><item><title>Placeholder Text</title><link>https://git.wssw.fun/example/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/example/placeholder-text/</guid><description>&lt;img src="https://git.wssw.fun/example/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" />&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
 &lt;p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p>
 &lt;ol>
 &lt;li>Exierant elisi ambit vivere dedere&lt;/li>
