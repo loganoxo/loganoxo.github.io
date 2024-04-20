@@ -743,4 +743,28 @@ Butterflies dance in fields of dreams.
 &lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/p></description></item><item><title>搜索</title><link>https://git.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://git.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/links/</guid><description/></item></channel></rss>
+&lt;/p></description></item><item><title>搜索</title><link>https://git.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://git.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/links/</guid><description>&lt;p>&lt;a href="https://tablericons.com/" title="Tabler Icons" class="friend-link" target="_blank" rel="friend">
+&lt;div class="friend-link-div">
+&lt;div class="friend-link-avatar">
+&lt;img src=https://tablericons.com/ckissi.jpeg class="friend-avatar" loading="lazy" alt="Avatar">
+&lt;/div>
+&lt;div class="friend-link-info">
+&lt;i class="fa fa-link" aria-hidden="true">&lt;/i>
+&lt;i class="friend-name">Tabler Icons&lt;/i>
+&lt;p class="friend-bio">icon、svg&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/a>
+&lt;a href="https://webgradients.com/" title="Web Gradients" class="friend-link" target="_blank" rel="friend">
+&lt;div class="friend-link-div">
+&lt;div class="friend-link-avatar">
+&lt;img src=https://webgradients.com/favicons/favicon-32x32.png class="friend-avatar" loading="lazy" alt="Avatar">
+&lt;/div>
+&lt;div class="friend-link-info">
+&lt;i class="fa fa-link" aria-hidden="true">&lt;/i>
+&lt;i class="friend-name">Web Gradients&lt;/i>
+&lt;p class="friend-bio">取色&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/a>
+&lt;/p></description></item></channel></rss>

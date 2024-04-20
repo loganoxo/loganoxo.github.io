@@ -373,4 +373,26 @@ color: #b1b1b1;
 &lt;h2 id="文字渐变色">
 &lt;a href="#%e6%96%87%e5%ad%97%e6%b8%90%e5%8f%98%e8%89%b2" class="header-anchor">#&lt;/a>
 文字渐变色
-&lt;/h2>&lt;p>&lt;span class="colorfulfont"> 我挑的配色很好看吧！&lt;br>好喜欢蓝色（再次）（再次）&lt;br> 但总之换行的话就加个空标签。&lt;/span>&lt;/p></description></item></channel></rss>
+&lt;/h2>&lt;p>&lt;span class="colorfulfont"> 我挑的配色很好看吧！&lt;br>好喜欢蓝色（再次）（再次）&lt;br> 但总之换行的话就加个空标签。&lt;/span>&lt;/p>
+&lt;h2 id="文字高斯模糊">
+&lt;a href="#%e6%96%87%e5%ad%97%e9%ab%98%e6%96%af%e6%a8%a1%e7%b3%8a" class="header-anchor">#&lt;/a>
+文字高斯模糊
+&lt;/h2>&lt;p>&lt;span class="blur">一些手动打码效果！&lt;br>但总之换行的话就加个空标签。&lt;/span>&lt;/p>
+&lt;h2 id="github卡片">
+&lt;a href="#github%e5%8d%a1%e7%89%87" class="header-anchor">#&lt;/a>
+github卡片
+&lt;/h2>
+&lt;article class="shortcode-card">
+&lt;a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">
+&lt;header>
+&lt;img alt="gohugoio/hugo" src="https://opengraph.githubassets.com/1/gohugoio/hugo" />
+&lt;/header>
+&lt;/a>
+&lt;/article>
+&lt;h2 id="内容折叠">
+&lt;a href="#%e5%86%85%e5%ae%b9%e6%8a%98%e5%8f%a0" class="header-anchor">#&lt;/a>
+内容折叠
+&lt;/h2>&lt;details>
+&lt;summary>用法&lt;/summary>
+在markdown里写下
+&lt;/details></description></item></channel></rss>
