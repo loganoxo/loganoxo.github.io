@@ -447,4 +447,8 @@ border-color: transparent #1a1a1a transparent transparent;
 color: #b1b1b1;
 }
 }
-&lt;/style></description></item></channel></rss>
+&lt;/style>
+&lt;h2 id="文字渐变色">
+&lt;a href="#%e6%96%87%e5%ad%97%e6%b8%90%e5%8f%98%e8%89%b2" class="header-anchor">#&lt;/a>
+文字渐变色
+&lt;/h2>&lt;p>&lt;span class="colorfulfont"> 我挑的配色很好看吧！&lt;br>好喜欢蓝色（再次）（再次）&lt;br> 但总之换行的话就加个空标签。&lt;/span>&lt;/p></description></item></channel></rss>

@@ -447,7 +447,11 @@ border-color: transparent #1a1a1a transparent transparent;
 color: #b1b1b1;
 }
 }
-&lt;/style></description></item><item><title>测试SEO</title><link>https://git.wssw.fun/articles/how_to_seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/how_to_seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/how_to_seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;h2 id="gitlab-snippets-shortcode">
+&lt;/style>
+&lt;h2 id="文字渐变色">
+&lt;a href="#%e6%96%87%e5%ad%97%e6%b8%90%e5%8f%98%e8%89%b2" class="header-anchor">#&lt;/a>
+文字渐变色
+&lt;/h2>&lt;p>&lt;span class="colorfulfont"> 我挑的配色很好看吧！&lt;br>好喜欢蓝色（再次）（再次）&lt;br> 但总之换行的话就加个空标签。&lt;/span>&lt;/p></description></item><item><title>测试SEO</title><link>https://git.wssw.fun/articles/how_to_seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/how_to_seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/how_to_seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;h2 id="gitlab-snippets-shortcode">
 &lt;a href="#gitlab-snippets-shortcode" class="header-anchor">#&lt;/a>
 Gitlab Snippets Shortcode
 &lt;/h2>&lt;script
