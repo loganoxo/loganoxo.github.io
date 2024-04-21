@@ -124,9 +124,22 @@ allowfullscreen="true"
 &lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
 &lt;script>
-var swiper = new Swiper('.swiper-container', {
+element_imgloop = document.querySelector('script[src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"]');
+if (element_imgloop.readyState) {
+element_imgloop.onreadystatechange = function () {
+if (element_imgloop.readyState === 'loaded' || element_imgloop.readyState === 'complete') {
+imgloop_fun();
+}
+};
+} else {
+element_imgloop.onload = function () {
+imgloop_fun();
+};
+}
+function imgloop_fun() {
+new Swiper('.swiper-container', {
 pagination: '.swiper-pagination',
 paginationClickable: true,
 autoHeight: true,
@@ -136,6 +149,7 @@ lazyLoading: true,
 lazyLoadingInPrevNext: true,
 loop: true,
 });
+}
 &lt;/script>
 &lt;h2 id="网易云1为自动播放0为手动播放">
 &lt;a href="#%e7%bd%91%e6%98%93%e4%ba%911%e4%b8%ba%e8%87%aa%e5%8a%a8%e6%92%ad%e6%94%be0%e4%b8%ba%e6%89%8b%e5%8a%a8%e6%92%ad%e6%94%be" class="header-anchor">#&lt;/a>
