@@ -1,0 +1,21 @@
+{
+  "name": "Logan的博客",
+  "short_name": "logan's blog",
+  "theme_color": "#f5f5fa",
+  "background_color": "#f5f5fa",
+  "display": "standalone",
+  "description": "A simply blog.",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
