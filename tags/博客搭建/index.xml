@@ -124,17 +124,18 @@ allowfullscreen="true"
 &lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
-&lt;script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
-&lt;script>
-element_imgloop = document.querySelector('script[src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"]');
-if (element_imgloop.readyState) {
-element_imgloop.onreadystatechange = function () {
-if (element_imgloop.readyState === 'loaded' || element_imgloop.readyState === 'complete') {
+&lt;script async src="">&lt;/script>
+&lt;script>var imgloopScript = document.createElement('script');
+imgloopScript.type = 'text/javascript';imgloopScript.src = '/js/swiper.min.js';imgloopScript.async = true;
+document.head.appendChild(imgloopScript);
+if (imgloopScript.readyState) {
+imgloopScript.onreadystatechange = function () {
+if (imgloopScript.readyState === 'loaded' || imgloopScript.readyState === 'complete') {
 imgloop_fun();
 }
 };
 } else {
-element_imgloop.onload = function () {
+imgloopScript.onload = function () {
 imgloop_fun();
 };
 }
