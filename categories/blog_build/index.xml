@@ -127,12 +127,21 @@ class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 >&lt;/p>
-&lt;p>test5 &lt;img src="https://git.wssw.fun/articles/my_template/b.jpg"
+&lt;p>test5 &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 2"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 4"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
@@ -169,11 +178,41 @@ fill="currentColor">
 &lt;a href="#%e4%bd%bf%e7%94%a8figure%e7%9f%ad%e4%bb%a3%e7%a0%81%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 使用figure短代码引入图片
 &lt;/h2>&lt;blockquote>
-&lt;p>vh为相对于窗口高度的百分比&lt;/p>
+&lt;p>vh为相对于窗口高度的百分比
+短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，外部链接不可以&lt;/p>
 &lt;/blockquote>
-&lt;figure>&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/seo">&lt;img src="https://wx1.sinaimg.cn/mw690/007FIqVFly1hnzyewgzvej31jk0p0tda.jpg"
-alt=" # 可以写markdown " style="height: 20vh ! important" style="max-width: 60% " loading="lazy">&lt;/a>&lt;figcaption>
-&lt;h4>图片标题&lt;/h4>&lt;p>&lt;h1 id="可以写markdown">
+&lt;p>&lt;figure class="gallery-image" style="flex-grow: 66;
+flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/my_template/a.jpg" target="_blank">&lt;img src="https://git.wssw.fun/articles/my_template/a.jpg"width="2731"
+height="4096" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>页绑定图片&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure class="gallery-image" style="flex-grow: 177;
+flex-basis: 426px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/images/ttt.jpg" target="_blank">&lt;img src="https://git.wssw.fun/images/ttt.jpg"width="4200"
+height="2363" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/images/ttt_hu856e1bd23be0390451a3dc197fb5e67a_654374_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/images/ttt_hu856e1bd23be0390451a3dc197fb5e67a_654374_1024x0_resize_q75_box.jpg 1024w"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>全局图片&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;figure>&lt;a style="display: inline-block;"
+href="https://git.wssw.fun/articles/seo">&lt;img src="https://wx1.sinaimg.cn/mw690/007FIqVFly1hnzyewgzvej31jk0p0tda.jpg"
+alt=" # 可以写markdown "
+style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>外部图片&lt;/h4>&lt;p>&lt;h1 id="可以写markdown">
 &lt;a href="#%e5%8f%af%e4%bb%a5%e5%86%99markdown" class="header-anchor">#&lt;/a>
 可以写markdown
 &lt;/h1>&lt;/p>
