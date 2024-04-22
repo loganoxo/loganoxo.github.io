@@ -46,7 +46,6 @@ allowfullscreen="true"
 &lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
-&lt;script async src="">&lt;/script>
 &lt;script>var imgloopScript = document.createElement('script');
 imgloopScript.type = 'text/javascript';imgloopScript.src = '/js/swiper.min.js';imgloopScript.async = true;
 document.head.appendChild(imgloopScript);
@@ -410,4 +409,77 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item></channel></rss>
+&lt;/details>
+&lt;h2 id="放在同一个目录下的图片支持photoswipe">
+&lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe" class="header-anchor">#&lt;/a>
+放在同一个目录下的图片，支持PhotoSwipe
+&lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/articles/my_template/a.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 1"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> &lt;img src="https://git.wssw.fun/articles/my_template/b.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/my_template/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>
+&lt;img src="https://git.wssw.fun/articles/my_template/c.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/my_template/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 3"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 4"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>图片自动在一个图册里,需要 &lt;code>回车&lt;/code> 或者其他元素
+Photo by &lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
+>mymind
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> and &lt;a class="link" href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener"
+>Luke Chesser
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="img标签-引入图片">
+&lt;a href="#img%e6%a0%87%e7%ad%be-%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
+img标签 引入图片
+&lt;/h2>&lt;img src="c.jpg" alt="图片描述" style="max-height: 500px;width: auto"></description></item></channel></rss>
