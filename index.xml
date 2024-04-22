@@ -1297,7 +1297,31 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>测试SEO</title><link>https://git.wssw.fun/articles/seo/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;/blockquote>
+&lt;p>&lt;figure class="gallery-image" style="flex-grow: 142;
+flex-basis: 342px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/example/image-gallery/1.jpg" target="_blank">&lt;img src="https://git.wssw.fun/example/image-gallery/1.jpg"width="2000"
+height="1400" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/example/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/example/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_1024x0_resize_q75_box.jpg 1024w"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>页绑定图片&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure class="gallery-image" style="flex-grow: 177;
+flex-basis: 426px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/images/ttt.jpg" target="_blank">&lt;img src="https://git.wssw.fun/images/ttt.jpg"width="4200"
+height="2363" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/images/ttt_hu856e1bd23be0390451a3dc197fb5e67a_654374_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/images/ttt_hu856e1bd23be0390451a3dc197fb5e67a_654374_1024x0_resize_q75_box.jpg 1024w"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>全局图片&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>&lt;/p></description></item><item><title>测试SEO</title><link>https://git.wssw.fun/articles/seo/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
 &lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
 如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
 登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
