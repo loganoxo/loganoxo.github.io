@@ -145,15 +145,15 @@ style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
 图片轮播
 &lt;/h2>
 &lt;link
-rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.css"media="none"
+rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
 onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
-src="https://git.wssw.fun/js/swiper.min.js"crossorigin="anonymous"
+src="https://git.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
 async
 >
 &lt;/script>&lt;script>
-loadScript("/js/swiper.min.js","SwiperCallback")
+loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js","SwiperCallback")
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">
