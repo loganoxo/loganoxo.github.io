@@ -259,7 +259,17 @@ style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
 &lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad" class="header-anchor">#&lt;/a>
 图片轮播
 &lt;/h2>
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;link
+rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.css"media="none"
+onload="this.media='all'"crossorigin="anonymous"
+>
+&lt;script
+src="https://git.wssw.fun/js/swiper.min.js"crossorigin="anonymous"
+async
+>
+&lt;/script>&lt;script>
+loadScript("/js/swiper.min.js","SwiperCallback")
+&lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">
 &lt;div class="swiper-slide">
@@ -274,21 +284,8 @@ style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
 &lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
-&lt;script>var imgloopScript = document.createElement('script');
-imgloopScript.type = 'text/javascript';imgloopScript.src = '/js/swiper.min.js';imgloopScript.async = true;
-document.head.appendChild(imgloopScript);
-if (imgloopScript.readyState) {
-imgloopScript.onreadystatechange = function () {
-if (imgloopScript.readyState === 'loaded' || imgloopScript.readyState === 'complete') {
-imgloop_fun();
-}
-};
-} else {
-imgloopScript.onload = function () {
-imgloop_fun();
-};
-}
-function imgloop_fun() {
+&lt;script>
+function SwiperCallback() {
 new Swiper('.swiper-container', {
 pagination: '.swiper-pagination',
 paginationClickable: true,
