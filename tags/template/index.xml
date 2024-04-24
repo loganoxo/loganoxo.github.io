@@ -101,7 +101,7 @@ fill="currentColor">
 使用figure短代码引入图片
 &lt;/h2>&lt;blockquote>
 &lt;p>vh为相对于窗口高度的百分比
-短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，外部链接不可以&lt;/p>
+短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，网络链接不可以&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;figure class="gallery-image" style="flex-grow: 66;
 flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg" target="_blank">&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"width="2731"
@@ -134,15 +134,15 @@ style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
 >
 &lt;/a>
 &lt;figcaption>
-&lt;h4>外部图片&lt;/h4>&lt;p>&lt;h1 id="可以写markdown">
+&lt;h4>网络链接&lt;/h4>&lt;p>&lt;h1 id="可以写markdown">
 &lt;a href="#%e5%8f%af%e4%bb%a5%e5%86%99markdown" class="header-anchor">#&lt;/a>
 可以写markdown
 &lt;/h1>&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;h2 id="图片轮播">
-&lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad" class="header-anchor">#&lt;/a>
-图片轮播
+&lt;h2 id="图片轮播-引入全局资源">
+&lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad-%e5%bc%95%e5%85%a5%e5%85%a8%e5%b1%80%e8%b5%84%e6%ba%90" class="header-anchor">#&lt;/a>
+图片轮播 引入全局资源
 &lt;/h2>
 &lt;link
 rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
@@ -156,17 +156,52 @@ async
 loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js","SwiperCallback")
 &lt;/script>
 &lt;div class="swiper-container">
-&lt;div class="swiper-wrapper">
-&lt;div class="swiper-slide">
+&lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
+&lt;img src="https://git.wssw.fun/photos/%e4%ba%ba%e7%89%a92.png" alt="">
+&lt;/div>&lt;div class="swiper-slide">
+&lt;img src="https://git.wssw.fun/photos/%e6%97%a5%e5%b8%b81.jpg" alt="">
+&lt;/div>&lt;div class="swiper-slide">
 &lt;img src="https://git.wssw.fun/photos/a.png" alt="">
+&lt;/div>&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
-&lt;div class="swiper-slide">
-&lt;img src="https://git.wssw.fun/photos/b.png" alt="">
-&lt;/div>
-&lt;div class="swiper-slide">
-&lt;img src="https://git.wssw.fun/photos/c.png" alt="">
-&lt;/div>
-&lt;/div>
+&lt;script>
+function SwiperCallback() {
+new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl: true,
+mousewheelControl: true,
+lazyLoading: true,
+lazyLoadingInPrevNext: true,
+loop: true,
+});
+}
+&lt;/script>
+&lt;h2 id="图片轮播引入网络链接">
+&lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad%e5%bc%95%e5%85%a5%e7%bd%91%e7%bb%9c%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
+图片轮播引入网络链接
+&lt;/h2>
+&lt;link
+rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
+onload="this.media='all'"crossorigin="anonymous"
+>
+&lt;script
+src="https://git.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
+async
+>
+&lt;/script>&lt;script>
+loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js","SwiperCallback")
+&lt;/script>
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
+&lt;img src="https://s2.loli.net/2024/04/24/phCBS9GdtFILeXR.jpg" alt="">
+&lt;/div>&lt;div class="swiper-slide">
+&lt;img src="https://s2.loli.net/2024/04/24/lXC6G498QWc1zxs.jpg" alt="">
+&lt;/div>&lt;div class="swiper-slide">
+&lt;img src="https://s2.loli.net/2024/04/24/zNbMujV4AiHL6fY.jpg" alt="">
+&lt;/div>&lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
 &lt;script>
@@ -187,25 +222,25 @@ loop: true,
 &lt;a href="#img%e6%a0%87%e7%ad%be-%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 img标签 引入图片
 &lt;/h2>&lt;img src="c.jpg" alt="图片描述" style="max-height: 500px;width: auto">
-&lt;h2 id="使用imgproc">
-&lt;a href="#%e4%bd%bf%e7%94%a8imgproc" class="header-anchor">#&lt;/a>
-使用imgproc
+&lt;h2 id="使用imgproc不能使用网络链接">
+&lt;a href="#%e4%bd%bf%e7%94%a8imgproc%e4%b8%8d%e8%83%bd%e4%bd%bf%e7%94%a8%e7%bd%91%e7%bb%9c%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
+使用imgproc，不能使用网络链接
 &lt;/h2>
 &lt;figure style="padding: 0.25rem; margin: 2rem 0;">
 &lt;img style="max-width: 100%; width: auto; height: auto;" src="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_200x0_resize_q75_box.jpg" width="200"
 height="300" alt="">
 &lt;figcaption>
 &lt;small>
-这是图片
+这是本地图片
 &lt;/small>
 &lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="普通方式引入图片并且在目录外部">
 &lt;a href="#%e6%99%ae%e9%80%9a%e6%96%b9%e5%bc%8f%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87%e5%b9%b6%e4%b8%94%e5%9c%a8%e7%9b%ae%e5%bd%95%e5%a4%96%e9%83%a8" class="header-anchor">#&lt;/a>
 普通方式引入图片，并且在目录外部
-&lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/pexels-kian-mousazadeh-1964605-19193127.jpg"
+&lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/a.png"
 loading="lazy"
-alt="pexels-kian-mousazadeh-1964605-19193127.jpg"
+alt="a.png"
 >&lt;/p></description></item><item><title>短代码相关模板</title><link>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/shortcodes-example/front.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
 &lt;a href="#highlight-shortcode-%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81" class="header-anchor">#&lt;/a>
 highlight shortcode 高亮代码
@@ -581,7 +616,7 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item><item><title>A页面</title><link>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;/details></description></item><item><title>A页面</title><link>https://git.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
 &lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 A页面-包含B页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
@@ -591,7 +626,7 @@ A页面-包含B页面的超链接
 &lt;h1 id="titlea">
 &lt;a href="#titlea" class="header-anchor">#&lt;/a>
 titleA
-&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
+&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://git.wssw.fun/articles/with-hugo/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
 &lt;a href="#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 B页面-包含A页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-A#titlea" >点击查看另一个Markdown文件
