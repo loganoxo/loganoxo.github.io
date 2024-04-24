@@ -745,24 +745,4 @@ Examples
 &lt;p>Block math:
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$&lt;/p></description></item><item><title>A页面</title><link>https://git.wssw.fun/example/md-import/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/example/md-import/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
-&lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
-A页面-包含B页面的超链接
-&lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
-&lt;/a>&lt;/p>
-&lt;p>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>
-&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;/p>
-&lt;h1 id="titlea">
-&lt;a href="#titlea" class="header-anchor">#&lt;/a>
-titleA
-&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://git.wssw.fun/example/md-import/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/example/md-import/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
-&lt;a href="#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
-B页面-包含A页面的超链接
-&lt;/h1>&lt;p>&lt;a class="link" href="../page-A#titlea" >点击查看另一个Markdown文件
-&lt;/a>&lt;/p>
-&lt;p>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>
-&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;/p>
-&lt;h1 id="titleb">
-&lt;a href="#titleb" class="header-anchor">#&lt;/a>
-titleB
-&lt;/h1>&lt;p>text&lt;/p></description></item></channel></rss>
+$$&lt;/p></description></item></channel></rss>

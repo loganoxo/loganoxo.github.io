@@ -1,145 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客搭建 on Logan的博客</title><link>https://git.wssw.fun/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link><description>Recent content in 博客搭建 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo博客-配置baseUrl的坑</title><link>https://git.wssw.fun/articles/hugo_baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo_baseurl/</guid><description>&lt;img src="https://git.wssw.fun/articles/hugo_baseurl/001309-1713370389a7cb.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
-&lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
-hugo博客 配置baseUrl的坑
-&lt;/h1>&lt;h2 id="本地启动">
-&lt;a href="#%e6%9c%ac%e5%9c%b0%e5%90%af%e5%8a%a8" class="header-anchor">#&lt;/a>
-本地启动
-&lt;/h2>&lt;ul>
-&lt;li>不管配置文件怎么改，默认的&lt;code>baseUrl&lt;/code>都为&lt;code>localhost&lt;/code>，bind的ip为&lt;code>127.0.0.1&lt;/code>;&lt;/li>
-&lt;li>生成的public里的html中的url都不会是你配置文件里的&lt;code>baseUrl&lt;/code>&lt;/li>
-&lt;li>-D包含草稿&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="除非在后面加上---baseurl">
-&lt;a href="#%e9%99%a4%e9%9d%9e%e5%9c%a8%e5%90%8e%e9%9d%a2%e5%8a%a0%e4%b8%8a---baseurl" class="header-anchor">#&lt;/a>
-除非在后面加上 &amp;ndash;baseURL
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D --baseURL http://www.xxx.com/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="启动局域网连接">
-&lt;a href="#%e5%90%af%e5%8a%a8%e5%b1%80%e5%9f%9f%e7%bd%91%e8%bf%9e%e6%8e%a5" class="header-anchor">#&lt;/a>
-启动局域网连接
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-2-1">&lt;a class="lnlinks" href="#hl-2-1">1&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D --bind&lt;span class="o">=&lt;/span>0.0.0.0 --port&lt;span class="o">=&lt;/span>&lt;span class="m">1313&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>所以本地开发测试时，不需要关心&lt;code>baseUrl&lt;/code>，server启动时就一定是&lt;code>localhost&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="本地或服务器打包">
-&lt;a href="#%e6%9c%ac%e5%9c%b0%e6%88%96%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%89%93%e5%8c%85" class="header-anchor">#&lt;/a>
-本地或服务器打包
-&lt;/h2>&lt;ul>
-&lt;li>打包时，hugo会严格按照配置文件中的&lt;code>baseUrl&lt;/code>创建静态页面，与&lt;code>--environment&lt;/code>无关&lt;/li>
-&lt;li>&lt;code>--gc&lt;/code>构建站点时会自动执行垃圾回收;&lt;code>--minify&lt;/code>对输出的 HTML、CSS 和 JavaScript 进行压缩和优化&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-3-1">&lt;a class="lnlinks" href="#hl-3-1">1&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="服务器多环境打包">
-&lt;a href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%a4%9a%e7%8e%af%e5%a2%83%e6%89%93%e5%8c%85" class="header-anchor">#&lt;/a>
-服务器多环境打包
-&lt;/h2>&lt;p>我的博客，同一套代码在&lt;code>github pages&lt;/code>和&lt;code>vercel&lt;/code>上都有部署,分别是不同的域名，所以就需要区分两个环境的&lt;code>baseUrl&lt;/code>,我是这样做的：&lt;/p>
-&lt;ul>
-&lt;li>把原本的&lt;code>hugo.yaml&lt;/code>当作是&lt;code>vercel&lt;/code> 的配置，复制原本的配置为&lt;code>hugo_git.yaml&lt;/code>当作&lt;code>github pages&lt;/code>的配置&lt;/li>
-&lt;li>两个文件只有&lt;code>baseUrl&lt;/code>不同&lt;/li>
-&lt;li>在启动Hugo打包的时候，需要加具体的配置文件名参数&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-4-1">&lt;a class="lnlinks" href="#hl-4-1">1&lt;/a>
-&lt;/span>&lt;span class="lnt" id="hl-4-2">&lt;a class="lnlinks" href="#hl-4-2">2&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo.yaml &lt;span class="c1"># 在vercel上使用，默认为vercel&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>模板</title><link>https://git.wssw.fun/articles/my_template/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/my_template/</guid><description>&lt;img src="https://git.wssw.fun/articles/my_template/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客搭建 on Logan的博客</title><link>https://git.wssw.fun/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link><description>Recent content in 博客搭建 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo相关内容</title><link>https://git.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/</guid><description/></item><item><title>图片相关模板</title><link>https://git.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
 &lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
 放在同一个目录下的图片，支持PhotoSwipe图册
-&lt;/h2>&lt;p>test1 &lt;img src="https://git.wssw.fun/articles/my_template/a.jpg"
+&lt;/h2>&lt;p>test1 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 1"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://git.wssw.fun/articles/my_template/b.jpg"
+> &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/b.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 >
-&lt;img src="https://git.wssw.fun/articles/my_template/c.jpg"
+&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/c.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 3"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> test2 &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
+> test2 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 4"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 > test3
-test4 &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
+test4 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 4"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 >&lt;/p>
-&lt;p>test5 &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
+&lt;p>test5 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://git.wssw.fun/articles/my_template/d.jpg"
+> &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="2731"
 height="4096"
-srcset="https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 4"
 class="gallery-image"
@@ -182,8 +104,8 @@ fill="currentColor">
 短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，外部链接不可以&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;figure class="gallery-image" style="flex-grow: 66;
-flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/my_template/a.jpg" target="_blank">&lt;img src="https://git.wssw.fun/articles/my_template/a.jpg"width="2731"
-height="4096" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
+flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg" target="_blank">&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"width="2731"
+height="4096" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
@@ -270,7 +192,7 @@ img标签 引入图片
 使用imgproc
 &lt;/h2>
 &lt;figure style="padding: 0.25rem; margin: 2rem 0;">
-&lt;img style="max-width: 100%; width: auto; height: auto;" src="https://git.wssw.fun/articles/my_template/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_200x0_resize_q75_box.jpg" width="200"
+&lt;img style="max-width: 100%; width: auto; height: auto;" src="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_200x0_resize_q75_box.jpg" width="200"
 height="300" alt="">
 &lt;figcaption>
 &lt;small>
@@ -284,8 +206,85 @@ height="300" alt="">
 &lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/pexels-kian-mousazadeh-1964605-19193127.jpg"
 loading="lazy"
 alt="pexels-kian-mousazadeh-1964605-19193127.jpg"
->&lt;/p>
-&lt;h2 id="highlight-shortcode-高亮代码">
+>&lt;/p></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/hugo-baseurl/001309-1713370389a7cb.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+&lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
+hugo博客 配置baseUrl的坑
+&lt;/h1>&lt;h2 id="本地启动">
+&lt;a href="#%e6%9c%ac%e5%9c%b0%e5%90%af%e5%8a%a8" class="header-anchor">#&lt;/a>
+本地启动
+&lt;/h2>&lt;ul>
+&lt;li>不管配置文件怎么改，默认的&lt;code>baseUrl&lt;/code>都为&lt;code>localhost&lt;/code>，bind的ip为&lt;code>127.0.0.1&lt;/code>;&lt;/li>
+&lt;li>生成的public里的html中的url都不会是你配置文件里的&lt;code>baseUrl&lt;/code>&lt;/li>
+&lt;li>-D包含草稿&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="除非在后面加上---baseurl">
+&lt;a href="#%e9%99%a4%e9%9d%9e%e5%9c%a8%e5%90%8e%e9%9d%a2%e5%8a%a0%e4%b8%8a---baseurl" class="header-anchor">#&lt;/a>
+除非在后面加上 &amp;ndash;baseURL
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D --baseURL http://www.xxx.com/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="启动局域网连接">
+&lt;a href="#%e5%90%af%e5%8a%a8%e5%b1%80%e5%9f%9f%e7%bd%91%e8%bf%9e%e6%8e%a5" class="header-anchor">#&lt;/a>
+启动局域网连接
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-2-1">&lt;a class="lnlinks" href="#hl-2-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D --bind&lt;span class="o">=&lt;/span>0.0.0.0 --port&lt;span class="o">=&lt;/span>&lt;span class="m">1313&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>所以本地开发测试时，不需要关心&lt;code>baseUrl&lt;/code>，server启动时就一定是&lt;code>localhost&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="本地或服务器打包">
+&lt;a href="#%e6%9c%ac%e5%9c%b0%e6%88%96%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%89%93%e5%8c%85" class="header-anchor">#&lt;/a>
+本地或服务器打包
+&lt;/h2>&lt;ul>
+&lt;li>打包时，hugo会严格按照配置文件中的&lt;code>baseUrl&lt;/code>创建静态页面，与&lt;code>--environment&lt;/code>无关&lt;/li>
+&lt;li>&lt;code>--gc&lt;/code>构建站点时会自动执行垃圾回收;&lt;code>--minify&lt;/code>对输出的 HTML、CSS 和 JavaScript 进行压缩和优化&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-3-1">&lt;a class="lnlinks" href="#hl-3-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="服务器多环境打包">
+&lt;a href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%a4%9a%e7%8e%af%e5%a2%83%e6%89%93%e5%8c%85" class="header-anchor">#&lt;/a>
+服务器多环境打包
+&lt;/h2>&lt;p>我的博客，同一套代码在&lt;code>github pages&lt;/code>和&lt;code>vercel&lt;/code>上都有部署,分别是不同的域名，所以就需要区分两个环境的&lt;code>baseUrl&lt;/code>,我是这样做的：&lt;/p>
+&lt;ul>
+&lt;li>把原本的&lt;code>hugo.yaml&lt;/code>当作是&lt;code>vercel&lt;/code> 的配置，复制原本的配置为&lt;code>hugo_git.yaml&lt;/code>当作&lt;code>github pages&lt;/code>的配置&lt;/li>
+&lt;li>两个文件只有&lt;code>baseUrl&lt;/code>不同&lt;/li>
+&lt;li>在启动Hugo打包的时候，需要加具体的配置文件名参数&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-4-1">&lt;a class="lnlinks" href="#hl-4-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-4-2">&lt;a class="lnlinks" href="#hl-4-2">2&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo.yaml &lt;span class="c1"># 在vercel上使用，默认为vercel&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>短代码相关模板</title><link>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/shortcodes-example/front.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
 &lt;a href="#highlight-shortcode-%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81" class="header-anchor">#&lt;/a>
 highlight shortcode 高亮代码
 &lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go-html-template" data-lang="go-html-template">&lt;span class="line">&lt;span class="ln" id="42">&lt;a class="lnlinks" href="#42">42&lt;/a>&lt;/span>&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">range&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">.Pages&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>
@@ -660,4 +659,24 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item></channel></rss>
+&lt;/details></description></item><item><title>A页面</title><link>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
+A页面-包含B页面的超链接
+&lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
+&lt;/a>&lt;/p>
+&lt;p>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>
+&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;/p>
+&lt;h1 id="titlea">
+&lt;a href="#titlea" class="header-anchor">#&lt;/a>
+titleA
+&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
+&lt;a href="#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
+B页面-包含A页面的超链接
+&lt;/h1>&lt;p>&lt;a class="link" href="../page-A#titlea" >点击查看另一个Markdown文件
+&lt;/a>&lt;/p>
+&lt;p>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>
+&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;/p>
+&lt;h1 id="titleb">
+&lt;a href="#titleb" class="header-anchor">#&lt;/a>
+titleB
+&lt;/h1>&lt;p>text&lt;/p></description></item></channel></rss>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo相关内容 on Logan的博客</title><link>https://git.wssw.fun/articles/with-hugo/</link><description>Recent content in hugo相关内容 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/articles/with-hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>图片相关模板</title><link>https://git.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
+&lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
+放在同一个目录下的图片，支持PhotoSwipe图册
+&lt;/h2>&lt;p>test1 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 1"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/b.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/b_hu5459c0360c2b0cb7a147d2df0eb350ca_1572200_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>
+&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/c.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/c_hu5459c0360c2b0cb7a147d2df0eb350ca_1571883_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 3"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> test2 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 4"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> test3
+test4 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 4"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>&lt;/p>
+&lt;p>test5 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+> &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+width="2731"
+height="4096"
+srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu5459c0360c2b0cb7a147d2df0eb350ca_2219586_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 4"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>图片自动在一个图册里,默认需要 &lt;code>回车&lt;/code> 或者其他元素，改动gallery.ts，注释if (!isNewLineImage) continue;
+Photo by &lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
+>mymind
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> and &lt;a class="link" href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener"
+>Luke Chesser
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="使用figure短代码引入图片">
+&lt;a href="#%e4%bd%bf%e7%94%a8figure%e7%9f%ad%e4%bb%a3%e7%a0%81%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
+使用figure短代码引入图片
+&lt;/h2>&lt;blockquote>
+&lt;p>vh为相对于窗口高度的百分比
+短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，外部链接不可以&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;figure class="gallery-image" style="flex-grow: 66;
+flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg" target="_blank">&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"width="2731"
+height="4096" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_1024x0_resize_q75_box.jpg 1024w"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>页绑定图片&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure class="gallery-image" style="flex-grow: 177;
+flex-basis: 426px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/images/ttt.jpg" target="_blank">&lt;img src="https://git.wssw.fun/images/ttt.jpg"width="4200"
+height="2363" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/images/ttt_hu856e1bd23be0390451a3dc197fb5e67a_654374_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/images/ttt_hu856e1bd23be0390451a3dc197fb5e67a_654374_1024x0_resize_q75_box.jpg 1024w"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>全局图片&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;figure>&lt;a style="display: inline-block;"
+href="https://git.wssw.fun/articles/seo">&lt;img src="https://s2.loli.net/2024/04/23/pcFxemD341fzMEk.jpg"
+alt=" # 可以写markdown "
+style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
+>
+&lt;/a>
+&lt;figcaption>
+&lt;h4>外部图片&lt;/h4>&lt;p>&lt;h1 id="可以写markdown">
+&lt;a href="#%e5%8f%af%e4%bb%a5%e5%86%99markdown" class="header-anchor">#&lt;/a>
+可以写markdown
+&lt;/h1>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="图片轮播">
+&lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad" class="header-anchor">#&lt;/a>
+图片轮播
+&lt;/h2>
+&lt;link
+rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
+onload="this.media='all'"crossorigin="anonymous"
+>
+&lt;script
+src="https://git.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
+async
+>
+&lt;/script>&lt;script>
+loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js","SwiperCallback")
+&lt;/script>
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://git.wssw.fun/photos/a.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://git.wssw.fun/photos/b.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://git.wssw.fun/photos/c.png" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script>
+function SwiperCallback() {
+new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl: true,
+mousewheelControl: true,
+lazyLoading: true,
+lazyLoadingInPrevNext: true,
+loop: true,
+});
+}
+&lt;/script>
+&lt;h2 id="img标签-引入图片">
+&lt;a href="#img%e6%a0%87%e7%ad%be-%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
+img标签 引入图片
+&lt;/h2>&lt;img src="c.jpg" alt="图片描述" style="max-height: 500px;width: auto">
+&lt;h2 id="使用imgproc">
+&lt;a href="#%e4%bd%bf%e7%94%a8imgproc" class="header-anchor">#&lt;/a>
+使用imgproc
+&lt;/h2>
+&lt;figure style="padding: 0.25rem; margin: 2rem 0;">
+&lt;img style="max-width: 100%; width: auto; height: auto;" src="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu5459c0360c2b0cb7a147d2df0eb350ca_276740_200x0_resize_q75_box.jpg" width="200"
+height="300" alt="">
+&lt;figcaption>
+&lt;small>
+这是图片
+&lt;/small>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="普通方式引入图片并且在目录外部">
+&lt;a href="#%e6%99%ae%e9%80%9a%e6%96%b9%e5%bc%8f%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87%e5%b9%b6%e4%b8%94%e5%9c%a8%e7%9b%ae%e5%bd%95%e5%a4%96%e9%83%a8" class="header-anchor">#&lt;/a>
+普通方式引入图片，并且在目录外部
+&lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/pexels-kian-mousazadeh-1964605-19193127.jpg"
+loading="lazy"
+alt="pexels-kian-mousazadeh-1964605-19193127.jpg"
+>&lt;/p></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/hugo-baseurl/001309-1713370389a7cb.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+&lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
+hugo博客 配置baseUrl的坑
+&lt;/h1>&lt;h2 id="本地启动">
+&lt;a href="#%e6%9c%ac%e5%9c%b0%e5%90%af%e5%8a%a8" class="header-anchor">#&lt;/a>
+本地启动
+&lt;/h2>&lt;ul>
+&lt;li>不管配置文件怎么改，默认的&lt;code>baseUrl&lt;/code>都为&lt;code>localhost&lt;/code>，bind的ip为&lt;code>127.0.0.1&lt;/code>;&lt;/li>
+&lt;li>生成的public里的html中的url都不会是你配置文件里的&lt;code>baseUrl&lt;/code>&lt;/li>
+&lt;li>-D包含草稿&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="除非在后面加上---baseurl">
+&lt;a href="#%e9%99%a4%e9%9d%9e%e5%9c%a8%e5%90%8e%e9%9d%a2%e5%8a%a0%e4%b8%8a---baseurl" class="header-anchor">#&lt;/a>
+除非在后面加上 &amp;ndash;baseURL
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D --baseURL http://www.xxx.com/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="启动局域网连接">
+&lt;a href="#%e5%90%af%e5%8a%a8%e5%b1%80%e5%9f%9f%e7%bd%91%e8%bf%9e%e6%8e%a5" class="header-anchor">#&lt;/a>
+启动局域网连接
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-2-1">&lt;a class="lnlinks" href="#hl-2-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -D --bind&lt;span class="o">=&lt;/span>0.0.0.0 --port&lt;span class="o">=&lt;/span>&lt;span class="m">1313&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>所以本地开发测试时，不需要关心&lt;code>baseUrl&lt;/code>，server启动时就一定是&lt;code>localhost&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="本地或服务器打包">
+&lt;a href="#%e6%9c%ac%e5%9c%b0%e6%88%96%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%89%93%e5%8c%85" class="header-anchor">#&lt;/a>
+本地或服务器打包
+&lt;/h2>&lt;ul>
+&lt;li>打包时，hugo会严格按照配置文件中的&lt;code>baseUrl&lt;/code>创建静态页面，与&lt;code>--environment&lt;/code>无关&lt;/li>
+&lt;li>&lt;code>--gc&lt;/code>构建站点时会自动执行垃圾回收;&lt;code>--minify&lt;/code>对输出的 HTML、CSS 和 JavaScript 进行压缩和优化&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-3-1">&lt;a class="lnlinks" href="#hl-3-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="服务器多环境打包">
+&lt;a href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%a4%9a%e7%8e%af%e5%a2%83%e6%89%93%e5%8c%85" class="header-anchor">#&lt;/a>
+服务器多环境打包
+&lt;/h2>&lt;p>我的博客，同一套代码在&lt;code>github pages&lt;/code>和&lt;code>vercel&lt;/code>上都有部署,分别是不同的域名，所以就需要区分两个环境的&lt;code>baseUrl&lt;/code>,我是这样做的：&lt;/p>
+&lt;ul>
+&lt;li>把原本的&lt;code>hugo.yaml&lt;/code>当作是&lt;code>vercel&lt;/code> 的配置，复制原本的配置为&lt;code>hugo_git.yaml&lt;/code>当作&lt;code>github pages&lt;/code>的配置&lt;/li>
+&lt;li>两个文件只有&lt;code>baseUrl&lt;/code>不同&lt;/li>
+&lt;li>在启动Hugo打包的时候，需要加具体的配置文件名参数&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-4-1">&lt;a class="lnlinks" href="#hl-4-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-4-2">&lt;a class="lnlinks" href="#hl-4-2">2&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo.yaml &lt;span class="c1"># 在vercel上使用，默认为vercel&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>短代码相关模板</title><link>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/shortcodes-example/front.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
+&lt;a href="#highlight-shortcode-%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81" class="header-anchor">#&lt;/a>
+highlight shortcode 高亮代码
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go-html-template" data-lang="go-html-template">&lt;span class="line">&lt;span class="ln" id="42">&lt;a class="lnlinks" href="#42">42&lt;/a>&lt;/span>&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">range&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">.Pages&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln" id="43">&lt;a class="lnlinks" href="#43">43&lt;/a>&lt;/span>&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">.RelPermalink&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">.LinkTitle&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln" id="44">&lt;a class="lnlinks" href="#44">44&lt;/a>&lt;/span>&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">end&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="md高亮代码">
+&lt;a href="#md%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81" class="header-anchor">#&lt;/a>
+md高亮代码
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;hello&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="gitlab-snippets-shortcode">
+&lt;a href="#gitlab-snippets-shortcode" class="header-anchor">#&lt;/a>
+Gitlab Snippets Shortcode
+&lt;/h2>&lt;script
+type="application/javascript"
+src="https://gitlab.com/-/snippets/2349278.js"
+>&lt;/script>
+&lt;h2 id="quote-shortcode">
+&lt;a href="#quote-shortcode" class="header-anchor">#&lt;/a>
+Quote Shortcode
+&lt;/h2>&lt;p>Stack adds a &lt;code>quote&lt;/code> shortcode. For example:&lt;/p>
+&lt;blockquote>
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>A famous person, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>The book they wrote&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;h2 id="bilibilibi-shortcode1为自动播放0为手动播放">
+&lt;a href="#bilibilibi-shortcode1%e4%b8%ba%e8%87%aa%e5%8a%a8%e6%92%ad%e6%94%be0%e4%b8%ba%e6%89%8b%e5%8a%a8%e6%92%ad%e6%94%be" class="header-anchor">#&lt;/a>
+bilibilibi Shortcode,1为自动播放，0为手动播放
+&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&amp;danmaku=1&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="网易云1为自动播放0为手动播放">
+&lt;a href="#%e7%bd%91%e6%98%93%e4%ba%911%e4%b8%ba%e8%87%aa%e5%8a%a8%e6%92%ad%e6%94%be0%e4%b8%ba%e6%89%8b%e5%8a%a8%e6%92%ad%e6%94%be" class="header-anchor">#&lt;/a>
+网易云,1为自动播放，0为手动播放
+&lt;/h2>
+&lt;iframe border="0" style="margin: 0 0;" width=100% height=86
+src="https://music.163.com/outchain/player?type=2&amp;id=1367394991&amp;auto=1&amp;height=66">&lt;/iframe>
+&lt;h2 id="获取电影数据打包时需要魔法把去掉">
+&lt;a href="#%e8%8e%b7%e5%8f%96%e7%94%b5%e5%bd%b1%e6%95%b0%e6%8d%ae%e6%89%93%e5%8c%85%e6%97%b6%e9%9c%80%e8%a6%81%e9%ad%94%e6%b3%95%e6%8a%8a%e5%8e%bb%e6%8e%89" class="header-anchor">#&lt;/a>
+获取电影数据，打包时需要魔法；把\去掉
+&lt;/h2>&lt;p>{{&amp;lt; neodb &amp;ldquo;&lt;a class="link" href="https://neodb.social/book/5SJvkuHNGL4XhBddW2J4EJ%22" target="_blank" rel="noopener"
+>https://neodb.social/book/5SJvkuHNGL4XhBddW2J4EJ"
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> &amp;gt;}}
+{{&amp;lt; neodb &amp;ldquo;&lt;a class="link" href="https://neodb.social/movie/1bgVODaWCBKlCQ1AuGlLzC%22" target="_blank" rel="noopener"
+>https://neodb.social/movie/1bgVODaWCBKlCQ1AuGlLzC"
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> &amp;gt;}}
+{{&amp;lt; neodb &amp;ldquo;&lt;a class="link" href="https://neodb.social/tv/season/5es8Us1HHOhVz3UlLmTspr%22" target="_blank" rel="noopener"
+>https://neodb.social/tv/season/5es8Us1HHOhVz3UlLmTspr"
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> &amp;gt;}}
+{{&amp;lt; neodb &amp;ldquo;&lt;a class="link" href="https://neodb.social/game/5pvs201VxbkldH4LOEtDVt%22" target="_blank" rel="noopener"
+>https://neodb.social/game/5pvs201VxbkldH4LOEtDVt"
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> &amp;gt;}}
+{{&amp;lt; neodb &amp;ldquo;&lt;a class="link" href="https://neodb.social/podcast/5tlY7lSI0WfXcoHstz7u4S%22" target="_blank" rel="noopener"
+>https://neodb.social/podcast/5tlY7lSI0WfXcoHstz7u4S"
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a> &amp;gt;}}&lt;/p>
+&lt;h1 id="测试标题一级顶级">
+&lt;a href="#%e6%b5%8b%e8%af%95%e6%a0%87%e9%a2%98%e4%b8%80%e7%ba%a7%e9%a1%b6%e7%ba%a7" class="header-anchor">#&lt;/a>
+测试标题，一级(顶级)
+&lt;/h1>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h2 id="二级">
+&lt;a href="#%e4%ba%8c%e7%ba%a7" class="header-anchor">#&lt;/a>
+二级
+&lt;/h2>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h2 id="二级-1">
+&lt;a href="#%e4%ba%8c%e7%ba%a7-1" class="header-anchor">#&lt;/a>
+二级
+&lt;/h2>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h3 id="三级">
+&lt;a href="#%e4%b8%89%e7%ba%a7" class="header-anchor">#&lt;/a>
+三级
+&lt;/h3>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h3 id="三级-1">
+&lt;a href="#%e4%b8%89%e7%ba%a7-1" class="header-anchor">#&lt;/a>
+三级
+&lt;/h3>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h4 id="四级">
+&lt;a href="#%e5%9b%9b%e7%ba%a7" class="header-anchor">#&lt;/a>
+四级
+&lt;/h4>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h4 id="四级-1">
+&lt;a href="#%e5%9b%9b%e7%ba%a7-1" class="header-anchor">#&lt;/a>
+四级
+&lt;/h4>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h5 id="五级">
+&lt;a href="#%e4%ba%94%e7%ba%a7" class="header-anchor">#&lt;/a>
+五级
+&lt;/h5>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h5 id="五级-1">
+&lt;a href="#%e4%ba%94%e7%ba%a7-1" class="header-anchor">#&lt;/a>
+五级
+&lt;/h5>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h6 id="六级">
+&lt;a href="#%e5%85%ad%e7%ba%a7" class="header-anchor">#&lt;/a>
+六级
+&lt;/h6>&lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;p>####### 七级 没有处理，没有样式
+奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。
+而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会&lt;/p>
+&lt;h2 id="时间轴">
+&lt;a href="#%e6%97%b6%e9%97%b4%e8%bd%b4" class="header-anchor">#&lt;/a>
+时间轴
+&lt;/h2>&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">2023-09-10&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;a href="">
+&lt;div class="timeline__title">&lt;/div>
+&lt;/a>
+&lt;div class="timeline__description">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="聊天气泡">
+&lt;a href="#%e8%81%8a%e5%a4%a9%e6%b0%94%e6%b3%a1" class="header-anchor">#&lt;/a>
+聊天气泡
+&lt;/h2>
+&lt;div class="chat --other">
+&lt;div class="chat__inner">
+&lt;div class="chat__meta">John Doe&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div>
+&lt;div class="chat__text">
+这是左边的消息内容。
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.chat {
+margin: 10px;
+padding: 10px;
+position: relative;
+transition: transform 0.2s;
+max-width: 80%;
+min-width: 15%;
+}
+.chat:hover {
+transform: scale(1.05);
+}
+.chat.--self {
+text-align: left;
+background-color: #ecf5ff;
+color: #000000;
+border-radius: 15px;
+width: fit-content;
+margin-left: auto;
+}
+.chat.--self::before {
+content: "";
+position: absolute;
+right: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 0 0 20px;
+border-style: solid;
+border-color: transparent transparent transparent #ecf5ff;
+}
+.chat.--other {
+text-align: left;
+background-color: #ffecec;
+color: #333;
+border-radius: 15px;
+position: relative;
+width: fit-content;
+}
+.chat.--other::before {
+content: "";
+position: absolute;
+left: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 20px 0 0;
+border-style: solid;
+border-color: transparent #ffecec transparent transparent;
+}
+.chat__meta {
+font-weight: bold;
+font-size: 0.67em;
+color: #707070;
+margin-bottom: 5px;
+}
+.chat__text {
+font-size: 0.9em;
+margin-left: 10px;
+word-break: break-all;
+}
+[data-scheme="dark"] {
+.chat.--self {
+color: #fefefe;
+background-color: #253958;
+}
+.chat.--self::before {
+border-color: transparent transparent transparent #253958;
+}
+.chat.--other {
+color: #fefefe;
+background-color: #1a1a1a;
+}
+.chat.--other::before {
+border-color: transparent #1a1a1a transparent transparent;
+}
+.chat__meta {
+color: #b1b1b1;
+}
+}
+&lt;/style>
+&lt;div class="chat --self">
+&lt;div class="chat__inner">
+&lt;div class="chat__meta" style="text-align: right;">2023-09-12 14:45&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div>
+&lt;div class="chat__text">
+这是右边的消息内容，测试长长长长长长长长长长长长长长长长长长长长长长长长度。
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.chat {
+margin: 10px;
+padding: 10px;
+position: relative;
+transition: transform 0.2s;
+max-width: 80%;
+min-width: 15%;
+}
+.chat:hover {
+transform: scale(1.05);
+}
+.chat.--self {
+text-align: left;
+background-color: #ecf5ff;
+color: #000000;
+border-radius: 15px;
+width: fit-content;
+margin-left: auto;
+}
+.chat.--self::before {
+content: "";
+position: absolute;
+right: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 0 0 20px;
+border-style: solid;
+border-color: transparent transparent transparent #ecf5ff;
+}
+.chat.--other {
+text-align: left;
+background-color: #ffecec;
+color: #333;
+border-radius: 15px;
+position: relative;
+width: fit-content;
+}
+.chat.--other::before {
+content: "";
+position: absolute;
+left: -18px;
+bottom: 5px;
+transform: translateY(-50%);
+border-width: 15px 20px 0 0;
+border-style: solid;
+border-color: transparent #ffecec transparent transparent;
+}
+.chat__meta {
+font-weight: bold;
+font-size: 0.67em;
+color: #707070;
+margin-bottom: 5px;
+}
+.chat__text {
+font-size: 0.9em;
+margin-left: 10px;
+word-break: break-all;
+}
+[data-scheme="dark"] {
+.chat.--self {
+color: #fefefe;
+background-color: #253958;
+}
+.chat.--self::before {
+border-color: transparent transparent transparent #253958;
+}
+.chat.--other {
+color: #fefefe;
+background-color: #1a1a1a;
+}
+.chat.--other::before {
+border-color: transparent #1a1a1a transparent transparent;
+}
+.chat__meta {
+color: #b1b1b1;
+}
+}
+&lt;/style>
+&lt;h2 id="文字渐变色">
+&lt;a href="#%e6%96%87%e5%ad%97%e6%b8%90%e5%8f%98%e8%89%b2" class="header-anchor">#&lt;/a>
+文字渐变色
+&lt;/h2>&lt;p>&lt;span class="colorfulfont"> 我挑的配色很好看吧！&lt;br>好喜欢蓝色（再次）（再次）&lt;br> 但总之换行的话就加个空标签。&lt;/span>&lt;/p>
+&lt;h2 id="文字高斯模糊">
+&lt;a href="#%e6%96%87%e5%ad%97%e9%ab%98%e6%96%af%e6%a8%a1%e7%b3%8a" class="header-anchor">#&lt;/a>
+文字高斯模糊
+&lt;/h2>&lt;p>&lt;span class="blur">一些手动打码效果！&lt;br>但总之换行的话就加个空标签。&lt;/span>&lt;/p>
+&lt;h2 id="github卡片">
+&lt;a href="#github%e5%8d%a1%e7%89%87" class="header-anchor">#&lt;/a>
+github卡片
+&lt;/h2>
+&lt;article class="shortcode-card">
+&lt;a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">
+&lt;header>
+&lt;img alt="gohugoio/hugo" src="https://opengraph.githubassets.com/1/gohugoio/hugo" />
+&lt;/header>
+&lt;/a>
+&lt;/article>
+&lt;h2 id="内容折叠">
+&lt;a href="#%e5%86%85%e5%ae%b9%e6%8a%98%e5%8f%a0" class="header-anchor">#&lt;/a>
+内容折叠
+&lt;/h2>&lt;details>
+&lt;summary>用法&lt;/summary>
+在markdown里写下
+&lt;/details></description></item><item><title>测试SEO</title><link>https://git.wssw.fun/articles/with-hugo/seo/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/seo/wallhaven-6d7xmx.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
+如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
+登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>HTML验证文件上传
+只需要根据要求，下载HTML验证文件，把文件放在站点根目录的static目录下&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>HTML标记
+在config.yaml中加一个配置&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">googleSiteVerification&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;xxx&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#写google给的字符串&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到themes/meme/layouts/partials/head/custom.html或者head.html，在第一行加入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;google-site-verification&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{.Site.Params.googleSiteVerification}}&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后执行hugo命令，就可以验证了&lt;/p>
+&lt;ul>
+&lt;li>Google Analytics&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>先到Google Analytics创建一个账号，并登录。
+新建一个资源，填完后获得tracking code。
+更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)
+站点地图确认打开，默认都打开了&lt;/p>
+&lt;/blockquote>
+&lt;p>在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
+&lt;p>Bing
+相似地，在Bing网站管理登陆、添加网站url。&lt;/p>
+&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p>
+&lt;ul>
+&lt;li>测试
+&lt;a class="link" href="https://tagassistant.google.com/" target="_blank" rel="noopener"
+>https://tagassistant.google.com/
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>A页面</title><link>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
+A页面-包含B页面的超链接
+&lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
+&lt;/a>&lt;/p>
+&lt;p>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>
+&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;/p>
+&lt;h1 id="titlea">
+&lt;a href="#titlea" class="header-anchor">#&lt;/a>
+titleA
+&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/hugo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/md-import/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
+&lt;a href="#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
+B页面-包含A页面的超链接
+&lt;/h1>&lt;p>&lt;a class="link" href="../page-A#titlea" >点击查看另一个Markdown文件
+&lt;/a>&lt;/p>
+&lt;p>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>
+&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;br/>&lt;/p>
+&lt;h1 id="titleb">
+&lt;a href="#titleb" class="header-anchor">#&lt;/a>
+titleB
+&lt;/h1>&lt;p>text&lt;/p></description></item></channel></rss>
