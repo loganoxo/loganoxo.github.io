@@ -1,1 +1,0 @@
-.top-scroll-bar,.page-load-progress-bar{position:fixed;top:0;left:0;z-index:9999;display:none;width:0;height:4px;border-radius:5px;background-image:linear-gradient(-20deg,#a5a9d9 0%,#99c99c 100%); [data-scheme="light"] & { background-image: linear-gradient(90deg, #80de28 0%, #ce327e 100%); }}
