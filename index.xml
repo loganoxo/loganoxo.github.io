@@ -278,7 +278,129 @@ height="299" alt="">
 &lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/a.png"
 loading="lazy"
 alt="a.png"
->&lt;/p></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://s2.loli.net/2024/04/24/DhCEiz9kqQVe6Ob.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+>&lt;/p>
+&lt;h2 id="用gallery短代码引入网络图片">
+&lt;a href="#%e7%94%a8gallery%e7%9f%ad%e4%bb%a3%e7%a0%81%e5%bc%95%e5%85%a5%e7%bd%91%e7%bb%9c%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
+用gallery短代码引入网络图片
+&lt;/h2>
+&lt;script
+src="https://git.wssw.fun/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js"crossorigin="anonymous"
+defer
+>
+&lt;/script>&lt;script>
+loadScript("/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js","WaterfallCallback")
+&lt;/script>
+&lt;script
+src="https://git.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"crossorigin="anonymous"
+defer
+>
+&lt;/script>&lt;script>
+loadScript("/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js","ImgStatusCallback")
+&lt;/script>
+&lt;script
+src="https://git.wssw.fun/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js"crossorigin="anonymous"
+defer
+>
+&lt;/script>&lt;script>
+loadScript("/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js","ViewImageCallback")
+&lt;/script>
+&lt;gallery>
+&lt;img src="https://s2.loli.net/2024/04/24/f87Asu2MrBaJ36H.png">
+&lt;img src="https://s2.loli.net/2024/04/24/7LcInkGSHNAY4TQ.jpg">
+&lt;img src="https://s2.loli.net/2024/04/24/fNizeVH8kGadh9E.jpg">
+&lt;/gallery>
+&lt;style>
+.gallery-photos {
+width: 100%;
+}
+.gallery-photo {
+width: 24.9%;
+position: relative;
+visibility: hidden;
+border-radius: 20px;
+overflow: hidden;
+}
+.gallery-photo.visible {
+visibility: visible;
+animation: fadeIn 2s;
+}
+.gallery-photo img {
+display: block;
+width: 100%;
+border-radius: 20px;
+padding: 6px;
+cursor: pointer;
+animation: fadeIn 1s;
+transition: all .4s ease-in-out;
+}
+.gallery-photo:hover img {
+transform: scale(1.1);
+}
+@media screen and (max-width: 1800px) {
+.gallery-photo {
+width: 33.3%;
+}
+}
+@media screen and (max-width: 860px) {
+.gallery-photo {
+width: 49.9%;
+}
+}
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+&lt;/style>
+&lt;script>
+function WaterfallCallback() {
+}
+function ImgStatusCallback() {
+}
+function ViewImageCallback() {
+}
+document.addEventListener('DOMContentLoaded', () => {
+var photosAll = document.getElementsByTagName('gallery') || '';
+if (photosAll) {
+for (var i = 0; i &lt; photosAll.length; i++) {
+photosAll[i].innerHTML = '&lt;div class="gallery-photos">' + photosAll[i].innerHTML + '&lt;/div>'
+var photosIMG = photosAll[i].getElementsByTagName('img')
+for (var j = 0; j &lt; photosIMG.length; j++) {
+wrap(photosIMG[j], document.createElement('div'));
+}
+}
+}
+function wrap(el, wrapper) {
+wrapper.className = "gallery-photo";
+el.parentNode.insertBefore(wrapper, el);
+wrapper.appendChild(el);
+}
+let galleryPhotos = document.querySelectorAll('.gallery-photos') || ''
+if (galleryPhotos) {
+(new ImgStatus).watch('.gallery-photo img', function (imgs) {
+if (imgs.isDone()) {
+for (var i = 0; i &lt; galleryPhotos.length; i++) {
+waterfall(galleryPhotos[i]);
+let pagePhoto = galleryPhotos[i].querySelectorAll('.gallery-photo');
+for (var j = 0; j &lt; pagePhoto.length; j++) {
+pagePhoto[j].className += " visible"
+}
+;
+}
+}
+});
+window.addEventListener('resize', function () {
+for (var i = 0; i &lt; galleryPhotos.length; i++) {
+waterfall(galleryPhotos[i]);
+}
+});
+}
+window.ViewImage &amp;&amp; ViewImage.init('.gallery-photo img')
+});
+&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://s2.loli.net/2024/04/24/DhCEiz9kqQVe6Ob.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
 &lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
 hugo博客 配置baseUrl的坑
 &lt;/h1>&lt;h2 id="本地启动">
