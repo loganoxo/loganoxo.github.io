@@ -1,1 +1,92 @@
 User-agent: *
+Allow: /sitemap.xml
+
+Allow: /example/hello-world/
+
+Allow: /categories/
+
+Allow: /tags/hugo/
+
+Allow: /articles/with-hugo/
+
+Allow: /tags/stack/
+
+Allow: /tags/
+
+Allow: /tags/template/
+
+Allow: /tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
+
+Allow: /categories/blog-build/
+
+Allow: /
+
+Allow: /articles/
+
+Allow: /articles/with-hugo/picture-example/
+
+Allow: /tags/baseurl/
+
+Allow: /articles/with-hugo/hugo-baseurl/
+
+Allow: /articles/with-hugo/shortcodes-example/
+
+Allow: /tags/seo/
+
+Allow: /articles/with-hugo/seo/
+
+Allow: /tags/emoji/
+
+Allow: /example/emoji-support/
+
+Allow: /categories/test-example/
+
+Allow: /example/
+
+Allow: /tags/privacy/
+
+Allow: /example/rich-content/
+
+Allow: /tags/shortcodes/
+
+Allow: /example/test-chinese/
+
+Allow: /example/image-gallery/
+
+Allow: /tags/css/
+
+Allow: /tags/html/
+
+Allow: /tags/markdown/
+
+Allow: /example/markdown-syntax/
+
+Allow: /tags/themes/
+
+Allow: /tags/example-tag/
+
+Allow: /page/
+
+Allow: /page/archives/
+
+Allow: /page/photos/
+
+Allow: /example/placeholder-text/
+
+Allow: /tags/tag-with-whitespaces/
+
+Allow: /tags/text/
+
+Allow: /example/math-typesetting/
+
+Allow: /articles/with-hugo/page-a/
+
+Allow: /articles/with-hugo/page-b/
+
+Allow: /page/about/
+
+Allow: /timeline/
+
+Allow: /page/search/
+
+Allow: /page/links/
