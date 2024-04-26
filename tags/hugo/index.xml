@@ -1,67 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Logan的博客</title><link>https://git.wssw.fun/tags/hugo/</link><description>Recent content in Hugo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo相关内容</title><link>https://git.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/</guid><description>&lt;img src="https://s2.loli.net/2024/04/24/f87Asu2MrBaJ36H.png" alt="Featured image of post hugo相关内容" /></description></item><item><title>图片相关模板</title><link>https://git.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/cover.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Logan的博客</title><link>https://logan.wssw.fun/tags/hugo/</link><description>Recent content in Hugo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo相关内容</title><link>https://logan.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/</guid><description>&lt;img src="https://s2.loli.net/2024/04/24/f87Asu2MrBaJ36H.png" alt="Featured image of post hugo相关内容" /></description></item><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/cover.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
 &lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
 放在同一个目录下的图片，支持PhotoSwipe图册
-&lt;/h2>&lt;p>test1 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"
+&lt;/h2>&lt;p>test1 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 1"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/b.jpg"
+> &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/b.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 >
-&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/c.jpg"
+&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/c.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/c_hu3d03a01dcc18bc5be0e67db3d8d209a6_22203_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/c_hu3d03a01dcc18bc5be0e67db3d8d209a6_22203_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/c_hu3d03a01dcc18bc5be0e67db3d8d209a6_22203_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/c_hu3d03a01dcc18bc5be0e67db3d8d209a6_22203_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 3"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> test2 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+> test2 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 4"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 > test3
-test4 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+test4 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 4"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 >&lt;/p>
-&lt;p>test5 &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+&lt;p>test5 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/d.jpg"
+> &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
 width="342"
 height="512"
-srcset="https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Image 4"
 class="gallery-image"
@@ -104,8 +104,8 @@ fill="currentColor">
 短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，网络链接不可以&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;figure class="gallery-image" style="flex-grow: 66;
-flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg" target="_blank">&lt;img src="https://git.wssw.fun/articles/with-hugo/picture-example/a.jpg"width="342"
-height="512" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
+flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg" target="_blank">&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg"width="342"
+height="512" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
@@ -116,8 +116,8 @@ data-flex-basis="160px"
 &lt;/figcaption>
 &lt;/figure>
 &lt;figure class="gallery-image" style="flex-grow: 177;
-flex-basis: 426px;">&lt;a style="display: inline-block;" href="https://git.wssw.fun/img/ttt.jpg" target="_blank">&lt;img src="https://git.wssw.fun/img/ttt.jpg"width="1050"
-height="591" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://git.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://git.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w"
+flex-basis: 426px;">&lt;a style="display: inline-block;" href="https://logan.wssw.fun/img/ttt.jpg" target="_blank">&lt;img src="https://logan.wssw.fun/img/ttt.jpg"width="1050"
+height="591" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
@@ -128,7 +128,7 @@ data-flex-basis="426px"
 &lt;/figcaption>
 &lt;/figure>&lt;/p>
 &lt;figure>&lt;a style="display: inline-block;"
-href="https://git.wssw.fun/articles/seo">&lt;img src="https://s2.loli.net/2024/04/23/pcFxemD341fzMEk.jpg"
+href="https://logan.wssw.fun/articles/seo">&lt;img src="https://s2.loli.net/2024/04/23/pcFxemD341fzMEk.jpg"
 alt=" # 可以写markdown "
 style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
 >
@@ -145,11 +145,11 @@ style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
 图片轮播 引入全局资源
 &lt;/h2>
 &lt;link
-rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
+rel="stylesheet"href="https://logan.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
 onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
-src="https://git.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
 async
 >
 &lt;/script>&lt;script>
@@ -157,11 +157,11 @@ loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
-&lt;img src="https://git.wssw.fun/photos/%e4%ba%ba%e7%89%a92.png" alt="">
+&lt;img src="https://logan.wssw.fun/photos/%e4%ba%ba%e7%89%a92.png" alt="">
 &lt;/div>&lt;div class="swiper-slide">
-&lt;img src="https://git.wssw.fun/photos/%e6%97%a5%e5%b8%b81.jpg" alt="">
+&lt;img src="https://logan.wssw.fun/photos/%e6%97%a5%e5%b8%b81.jpg" alt="">
 &lt;/div>&lt;div class="swiper-slide">
-&lt;img src="https://git.wssw.fun/photos/a.png" alt="">
+&lt;img src="https://logan.wssw.fun/photos/a.png" alt="">
 &lt;/div>&lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
@@ -184,11 +184,11 @@ loop: true,
 图片轮播引入网络链接
 &lt;/h2>
 &lt;link
-rel="stylesheet"href="https://git.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
+rel="stylesheet"href="https://logan.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
 onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
-src="https://git.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
 async
 >
 &lt;/script>&lt;script>
@@ -227,7 +227,7 @@ img标签 引入图片
 使用imgproc，不能使用网络链接
 &lt;/h2>
 &lt;figure style="padding: 0.25rem; margin: 2rem 0;">
-&lt;img style="max-width: 100%; width: auto; height: auto;" src="https://git.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_200x0_resize_q75_box.jpg" width="200"
+&lt;img style="max-width: 100%; width: auto; height: auto;" src="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_200x0_resize_q75_box.jpg" width="200"
 height="299" alt="">
 &lt;figcaption>
 &lt;small>
@@ -238,7 +238,7 @@ height="299" alt="">
 &lt;h2 id="普通方式引入图片并且在目录外部">
 &lt;a href="#%e6%99%ae%e9%80%9a%e6%96%b9%e5%bc%8f%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87%e5%b9%b6%e4%b8%94%e5%9c%a8%e7%9b%ae%e5%bd%95%e5%a4%96%e9%83%a8" class="header-anchor">#&lt;/a>
 普通方式引入图片，并且在目录外部
-&lt;/h2>&lt;p>&lt;img src="https://git.wssw.fun/photos/a.png"
+&lt;/h2>&lt;p>&lt;img src="https://logan.wssw.fun/photos/a.png"
 loading="lazy"
 alt="a.png"
 >&lt;/p>
@@ -247,21 +247,21 @@ alt="a.png"
 用gallery短代码引入网络图片
 &lt;/h2>
 &lt;script
-src="https://git.wssw.fun/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js"crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
 loadScript("/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js","WaterfallCallback")
 &lt;/script>
 &lt;script
-src="https://git.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
 loadScript("/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js","ImgStatusCallback")
 &lt;/script>
 &lt;script
-src="https://git.wssw.fun/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js"crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
@@ -363,7 +363,7 @@ waterfall(galleryPhotos[i]);
 }
 window.ViewImage &amp;&amp; ViewImage.init('.gallery-photo img')
 });
-&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/hugo-baseurl/cover.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/cover.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
 &lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
 hugo博客 配置baseUrl的坑
 &lt;/h1>&lt;h2 id="本地启动">
@@ -441,7 +441,7 @@ hugo博客 配置baseUrl的坑
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>短代码相关模板</title><link>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/shortcodes-example/cover.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
+&lt;/div></description></item><item><title>短代码相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/shortcodes-example/cover.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
 &lt;a href="#highlight-shortcode-%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81" class="header-anchor">#&lt;/a>
 highlight shortcode 高亮代码
 &lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go-html-template" data-lang="go-html-template">&lt;span class="line">&lt;span class="ln" id="42">&lt;a class="lnlinks" href="#42">42&lt;/a>&lt;/span>&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">range&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">.Pages&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>
@@ -816,7 +816,7 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item><item><title>测试SEO</title><link>https://git.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://git.wssw.fun/articles/with-hugo/seo/cover.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;/details></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/seo/cover.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
 &lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
 如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
 登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
@@ -875,7 +875,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>A页面</title><link>https://git.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;/ul></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
 &lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 A页面-包含B页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
@@ -885,7 +885,7 @@ A页面-包含B页面的超链接
 &lt;h1 id="titlea">
 &lt;a href="#titlea" class="header-anchor">#&lt;/a>
 titleA
-&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://git.wssw.fun/articles/with-hugo/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/articles/with-hugo/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
+&lt;/h1>&lt;p>text&lt;/p></description></item><item><title>B页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-b/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-b/</guid><description>&lt;h1 id="b页面-包含a页面的超链接">
 &lt;a href="#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 B页面-包含A页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-A#titlea" >点击查看另一个Markdown文件

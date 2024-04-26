@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Logan的博客</title><link>https://git.wssw.fun/page/</link><description>Recent content in Pages on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 28 May 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://git.wssw.fun/page/index.xml" rel="self" type="application/rss+xml"/><item><title>归档</title><link>https://git.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://git.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://git.wssw.fun/page/photos/</guid><description/></item><item><title/><link>https://git.wssw.fun/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/about/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Logan的博客</title><link>https://logan.wssw.fun/page/</link><description>Recent content in Pages on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 28 May 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/page/index.xml" rel="self" type="application/rss+xml"/><item><title>归档</title><link>https://logan.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://logan.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/photos/</guid><description/></item><item><title/><link>https://logan.wssw.fun/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/about/</guid><description>
 &lt;div class="chat --other">
 &lt;div class="chat__inner">
 &lt;div class="chat__meta">Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div>
@@ -607,7 +607,7 @@ border-color: transparent #1a1a1a transparent transparent;
 color: #b1b1b1;
 }
 }
-&lt;/style></description></item><item><title/><link>https://git.wssw.fun/timeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/timeline/</guid><description>&lt;img src="https://git.wssw.fun/timeline/cover.jpg" alt="Featured image of post " />&lt;p>&lt;div class="timeline__row">
+&lt;/style></description></item><item><title/><link>https://logan.wssw.fun/timeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/timeline/</guid><description>&lt;img src="https://logan.wssw.fun/timeline/cover.jpg" alt="Featured image of post " />&lt;p>&lt;div class="timeline__row">
 &lt;div class="timeline__time">
 &lt;div class="timeline__time">2021-02-10&lt;/div>
 &lt;div class="timeline__split-line">&lt;/div>
@@ -616,7 +616,7 @@ color: #b1b1b1;
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">Whispers of love, carried by the breeze.&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -633,7 +633,7 @@ color: #b1b1b1;
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">星星在你的眼中起舞&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -650,7 +650,7 @@ Love is blind
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">月光轻轻吻着大地&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -667,7 +667,7 @@ Echoes of laughter, memories untamed
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">森林的低语&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -684,7 +684,7 @@ Love is life
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">树叶的交响乐&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -701,7 +701,7 @@ Love is life
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">雨滴在玫瑰花瓣上舞动&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -718,7 +718,7 @@ Love is life
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">在夜的心中，寂静有千言万语&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -735,7 +735,7 @@ Clouds drift lazily in the azure sky.
 &lt;div class="timeline__tags">
 &lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
 &lt;/div>
-&lt;a href="https://git.wssw.fun/articles">
+&lt;a href="https://logan.wssw.fun/articles">
 &lt;div class="timeline__title">脚步在记忆的路上轻轻回响&lt;/div>
 &lt;/a>
 &lt;div class="timeline__description">
@@ -743,7 +743,7 @@ Butterflies dance in fields of dreams.
 &lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/p></description></item><item><title>搜索</title><link>https://git.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://git.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://git.wssw.fun/page/links/</guid><description>&lt;p>&lt;a href="https://tablericons.com/" title="Tabler Icons" class="friend-link" target="_blank" rel="friend">
+&lt;/p></description></item><item><title>搜索</title><link>https://logan.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://logan.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/links/</guid><description>&lt;p>&lt;a href="https://tablericons.com/" title="Tabler Icons" class="friend-link" target="_blank" rel="friend">
 &lt;div class="friend-link-div">
 &lt;div class="friend-link-avatar">
 &lt;img src=https://tablericons.com/ckissi.jpeg class="friend-avatar" loading="lazy" alt="Avatar">
