@@ -250,9 +250,16 @@ Other Elements — abbr, sub, sup, kbd, mark
 &lt;a href="#hyperlinked-image" class="header-anchor">#&lt;/a>
 Hyperlinked image
 &lt;/h2>&lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
->&lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+>
+&lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+width="1000"
+height="780"
 loading="lazy"
+decoding="async"
 alt="Google"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
 >
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">

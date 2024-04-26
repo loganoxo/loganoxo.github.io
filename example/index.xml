@@ -185,38 +185,53 @@ fill="currentColor">
 &lt;h2 id="图片">
 &lt;a href="#%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 图片
-&lt;/h2>&lt;p>&lt;img src="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
+&lt;/h2>&lt;p>
+&lt;img src="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
 width="667"
 height="1000"
 srcset="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Photo by Florian Klauer on Unsplash"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
+>
+&lt;img src="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
 width="1000"
 height="667"
 srcset="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Photo by Luca Bravo on Unsplash"
 class="gallery-image"
 data-flex-grow="149"
 data-flex-basis="359px"
->&lt;/p>
-&lt;p>&lt;img src="https://logan.wssw.fun/helena-hertz-wWZzXlDpMog-unsplash.jpg"
+>
+&lt;/p>
+&lt;p>
+&lt;img src="helena-hertz-wWZzXlDpMog-unsplash.jpg"
+width="1000"
+height="780"
 loading="lazy"
+decoding="async"
 alt="Photo by Helena Hertz on Unsplash"
-> &lt;img src="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
+>
+&lt;img src="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
 width="667"
 height="1000"
 srcset="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Photo by Hudai Gayiran on Unsplash"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
->&lt;/p>
+>
+&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
@@ -269,25 +284,30 @@ Syntax
 &lt;/div>&lt;h2 id="result">
 &lt;a href="#result" class="header-anchor">#&lt;/a>
 Result
-&lt;/h2>&lt;p>&lt;img src="https://logan.wssw.fun/example/image-gallery/1.jpg"
+&lt;/h2>&lt;p>
+&lt;img src="https://logan.wssw.fun/example/image-gallery/1.jpg"
 width="2000"
 height="1400"
 srcset="https://logan.wssw.fun/example/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Image 1"
 class="gallery-image"
 data-flex-grow="142"
 data-flex-basis="342px"
-> &lt;img src="https://logan.wssw.fun/example/image-gallery/2.jpg"
+>
+&lt;img src="https://logan.wssw.fun/example/image-gallery/2.jpg"
 width="780"
 height="520"
 srcset="https://logan.wssw.fun/example/image-gallery/2_hu3d03a01dcc18bc5be0e67db3d8d209a6_46078_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/image-gallery/2_hu3d03a01dcc18bc5be0e67db3d8d209a6_46078_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
->&lt;/p>
+>
+&lt;/p>
 &lt;blockquote>
 &lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
 >mymind
@@ -590,9 +610,16 @@ Other Elements — abbr, sub, sup, kbd, mark
 &lt;a href="#hyperlinked-image" class="header-anchor">#&lt;/a>
 Hyperlinked image
 &lt;/h2>&lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
->&lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+>
+&lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+width="1000"
+height="780"
 loading="lazy"
+decoding="async"
 alt="Google"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
 >
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">

@@ -38,73 +38,30 @@ fill="currentColor">
 &lt;/blockquote></description></item><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/cover.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
 &lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
 放在同一个目录下的图片，支持PhotoSwipe图册
-&lt;/h2>&lt;p>test1 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg"
+&lt;/h2>&lt;p>
+&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg"
 width="342"
 height="512"
 srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Image 1"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/b.jpg"
+>
+&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/b.jpg"
 width="342"
 height="512"
 srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
 >
-&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/c.jpg"
-width="342"
-height="512"
-srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/c_hu3d03a01dcc18bc5be0e67db3d8d209a6_22203_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/c_hu3d03a01dcc18bc5be0e67db3d8d209a6_22203_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-alt="Image 3"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
-> test2 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
-width="342"
-height="512"
-srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-alt="Image 4"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
-> test3
-test4 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
-width="342"
-height="512"
-srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-alt="Image 4"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
->&lt;/p>
-&lt;p>test5 &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
-width="342"
-height="512"
-srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-alt="Image 2"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
-> &lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/d.jpg"
-width="342"
-height="512"
-srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/d_hu3d03a01dcc18bc5be0e67db3d8d209a6_15543_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-alt="Image 4"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
->&lt;/p>
+&lt;/p>
 &lt;blockquote>
 &lt;p>图片自动在一个图册里,默认需要 &lt;code>回车&lt;/code> 或者其他元素，改动gallery.ts，注释if (!isNewLineImage) continue;
 Photo by &lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
@@ -133,6 +90,72 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/a>&lt;/p>
 &lt;/blockquote>
+&lt;h1 id="网络链接支持photoswipe图册">
+&lt;a href="#%e7%bd%91%e7%bb%9c%e9%93%be%e6%8e%a5%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
+网络链接支持PhotoSwipe图册
+&lt;/h1>&lt;p>
+&lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg"
+width="1000"
+height="780"
+loading="lazy"
+decoding="async"
+alt="link1"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
+>
+&lt;img src="https://pic.imgdb.cn/item/662bf3310ea9cb140327e6d7.jpg"
+width="1000"
+height="780"
+loading="lazy"
+decoding="async"
+alt="link2"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
+>
+&lt;/p>
+&lt;h1 id="static目录支持photoswipe图册">
+&lt;a href="#static%e7%9b%ae%e5%bd%95%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
+static目录支持PhotoSwipe图册
+&lt;/h1>&lt;p>
+&lt;img src="https://logan.wssw.fun/photos/a.png"
+width="1000"
+height="780"
+loading="lazy"
+decoding="async"
+alt="static"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
+>
+&lt;/p>
+&lt;h1 id="assets目录支持photoswipe图册">
+&lt;a href="#assets%e7%9b%ae%e5%bd%95%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
+assets目录支持PhotoSwipe图册
+&lt;/h1>&lt;p>
+&lt;img src="https://logan.wssw.fun/img/ttt.jpg"
+width="1050"
+height="591"
+srcset="https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+decoding="async"
+alt="assets"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>
+&lt;/p>
+&lt;h1 id="svg不支持photoswipe图册">
+&lt;a href="#svg%e4%b8%8d%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
+svg不支持PhotoSwipe图册
+&lt;/h1>&lt;p>
+&lt;img src="https://logan.wssw.fun/icons/back.svg"
+loading="lazy"
+decoding="async"
+alt="svg"
+>
+&lt;/p>
 &lt;h2 id="使用figure短代码引入图片">
 &lt;a href="#%e4%bd%bf%e7%94%a8figure%e7%9f%ad%e4%bb%a3%e7%a0%81%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 使用figure短代码引入图片
@@ -142,7 +165,7 @@ fill="currentColor">
 &lt;/blockquote>
 &lt;p>&lt;figure class="gallery-image" style="flex-grow: 66;
 flex-basis: 160px;">&lt;a style="display: inline-block;" href="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg" target="_blank">&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg"width="342"
-height="512" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
+height="512" style="height: 60vh ! important" style="max-width: 60% " loading="lazy" decoding="async"srcset="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
@@ -154,7 +177,7 @@ data-flex-basis="160px"
 &lt;/figure>
 &lt;figure class="gallery-image" style="flex-grow: 177;
 flex-basis: 426px;">&lt;a style="display: inline-block;" href="https://logan.wssw.fun/img/ttt.jpg" target="_blank">&lt;img src="https://logan.wssw.fun/img/ttt.jpg"width="1050"
-height="591" style="height: 60vh ! important" style="max-width: 60% " loading="lazy"srcset="https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w"
+height="591" style="height: 60vh ! important" style="max-width: 60% " loading="lazy" decoding="async"srcset="https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
@@ -164,13 +187,10 @@ data-flex-basis="426px"
 &lt;h4>全局图片&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;figure>&lt;a style="display: inline-block;"
-href="https://logan.wssw.fun/articles/seo">&lt;img src="https://s2.loli.net/2024/04/23/pcFxemD341fzMEk.jpg"
+&lt;figure>&lt;img src="https://pic.imgdb.cn/item/662bf3300ea9cb140327e53f.jpg"
 alt=" # 可以写markdown "
-style="height: 20vh ! important" style="max-width: 60% " loading="lazy"
->
-&lt;/a>
-&lt;figcaption>
+style="height: 20vh ! important" style="max-width: 60% " loading="lazy" decoding="async"
+>&lt;figcaption>
 &lt;h4>网络链接&lt;/h4>&lt;p>&lt;h1 id="可以写markdown">
 &lt;a href="#%e5%8f%af%e4%bb%a5%e5%86%99markdown" class="header-anchor">#&lt;/a>
 可以写markdown
@@ -194,11 +214,11 @@ loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
-&lt;img src="https://logan.wssw.fun/photos/%e4%ba%ba%e7%89%a92.png" alt="">
+&lt;img src="https://logan.wssw.fun/photos/%e4%ba%ba%e7%89%a92.png" alt="" loading="lazy" decoding="async">
 &lt;/div>&lt;div class="swiper-slide">
-&lt;img src="https://logan.wssw.fun/photos/%e6%97%a5%e5%b8%b81.jpg" alt="">
+&lt;img src="https://logan.wssw.fun/photos/%e6%97%a5%e5%b8%b81.jpg" alt="" loading="lazy" decoding="async">
 &lt;/div>&lt;div class="swiper-slide">
-&lt;img src="https://logan.wssw.fun/photos/a.png" alt="">
+&lt;img src="https://logan.wssw.fun/photos/a.png" alt="" loading="lazy" decoding="async">
 &lt;/div>&lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
@@ -233,11 +253,9 @@ loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
-&lt;img src="https://s2.loli.net/2024/04/24/phCBS9GdtFILeXR.jpg" alt="">
+&lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg" alt="" loading="lazy" decoding="async">
 &lt;/div>&lt;div class="swiper-slide">
-&lt;img src="https://s2.loli.net/2024/04/24/lXC6G498QWc1zxs.jpg" alt="">
-&lt;/div>&lt;div class="swiper-slide">
-&lt;img src="https://s2.loli.net/2024/04/24/zNbMujV4AiHL6fY.jpg" alt="">
+&lt;img src="https://pic.imgdb.cn/item/662bf3300ea9cb140327e53f.jpg" alt="" loading="lazy" decoding="async">
 &lt;/div>&lt;/div>
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
@@ -258,14 +276,14 @@ loop: true,
 &lt;h2 id="img标签-引入图片">
 &lt;a href="#img%e6%a0%87%e7%ad%be-%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 img标签 引入图片
-&lt;/h2>&lt;img src="c.jpg" alt="图片描述" style="max-height: 500px;width: auto">
+&lt;/h2>&lt;img src="c.jpg" alt="图片描述" style="max-height: 500px;width: auto" loading="lazy" decoding="async">
 &lt;h2 id="使用imgproc不能使用网络链接">
 &lt;a href="#%e4%bd%bf%e7%94%a8imgproc%e4%b8%8d%e8%83%bd%e4%bd%bf%e7%94%a8%e7%bd%91%e7%bb%9c%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 使用imgproc，不能使用网络链接
 &lt;/h2>
 &lt;figure style="padding: 0.25rem; margin: 2rem 0;">
 &lt;img style="max-width: 100%; width: auto; height: auto;" src="https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_200x0_resize_q75_box.jpg" width="200"
-height="299" alt="">
+height="299" alt="" loading="lazy" decoding="async">
 &lt;figcaption>
 &lt;small>
 这是本地图片
@@ -275,10 +293,18 @@ height="299" alt="">
 &lt;h2 id="普通方式引入图片并且在目录外部">
 &lt;a href="#%e6%99%ae%e9%80%9a%e6%96%b9%e5%bc%8f%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87%e5%b9%b6%e4%b8%94%e5%9c%a8%e7%9b%ae%e5%bd%95%e5%a4%96%e9%83%a8" class="header-anchor">#&lt;/a>
 普通方式引入图片，并且在目录外部
-&lt;/h2>&lt;p>&lt;img src="https://logan.wssw.fun/photos/a.png"
+&lt;/h2>&lt;p>
+&lt;img src="https://logan.wssw.fun/photos/a.png"
+width="1000"
+height="780"
 loading="lazy"
+decoding="async"
 alt="a.png"
->&lt;/p>
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
+>
+&lt;/p>
 &lt;h2 id="用gallery短代码引入网络图片">
 &lt;a href="#%e7%94%a8gallery%e7%9f%ad%e4%bb%a3%e7%a0%81%e5%bc%95%e5%85%a5%e7%bd%91%e7%bb%9c%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 用gallery短代码引入网络图片
@@ -305,9 +331,8 @@ defer
 loadScript("/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js","ViewImageCallback")
 &lt;/script>
 &lt;gallery>
-&lt;img src="https://s2.loli.net/2024/04/24/f87Asu2MrBaJ36H.png">
-&lt;img src="https://s2.loli.net/2024/04/24/7LcInkGSHNAY4TQ.jpg">
-&lt;img src="https://s2.loli.net/2024/04/24/fNizeVH8kGadh9E.jpg">
+&lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg" loading="lazy" decoding="async">
+&lt;img src="https://pic.imgdb.cn/item/662bf3300ea9cb140327e53f.jpg" loading="lazy" decoding="async">
 &lt;/gallery>
 &lt;style>
 .gallery-photos {
@@ -843,7 +868,7 @@ github卡片
 &lt;article class="shortcode-card">
 &lt;a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">
 &lt;header>
-&lt;img alt="gohugoio/hugo" src="https://opengraph.githubassets.com/1/gohugoio/hugo" />
+&lt;img alt="gohugoio/hugo" src="https://opengraph.githubassets.com/1/gohugoio/hugo" loading="lazy" decoding="async" />
 &lt;/header>
 &lt;/a>
 &lt;/article>
@@ -1062,38 +1087,53 @@ fill="currentColor">
 &lt;h2 id="图片">
 &lt;a href="#%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 图片
-&lt;/h2>&lt;p>&lt;img src="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
+&lt;/h2>&lt;p>
+&lt;img src="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
 width="667"
 height="1000"
 srcset="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Photo by Florian Klauer on Unsplash"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
+>
+&lt;img src="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
 width="1000"
 height="667"
 srcset="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Photo by Luca Bravo on Unsplash"
 class="gallery-image"
 data-flex-grow="149"
 data-flex-basis="359px"
->&lt;/p>
-&lt;p>&lt;img src="https://logan.wssw.fun/helena-hertz-wWZzXlDpMog-unsplash.jpg"
+>
+&lt;/p>
+&lt;p>
+&lt;img src="helena-hertz-wWZzXlDpMog-unsplash.jpg"
+width="1000"
+height="780"
 loading="lazy"
+decoding="async"
 alt="Photo by Helena Hertz on Unsplash"
-> &lt;img src="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
+>
+&lt;img src="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
 width="667"
 height="1000"
 srcset="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Photo by Hudai Gayiran on Unsplash"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
->&lt;/p>
+>
+&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
@@ -1146,25 +1186,30 @@ Syntax
 &lt;/div>&lt;h2 id="result">
 &lt;a href="#result" class="header-anchor">#&lt;/a>
 Result
-&lt;/h2>&lt;p>&lt;img src="https://logan.wssw.fun/example/image-gallery/1.jpg"
+&lt;/h2>&lt;p>
+&lt;img src="https://logan.wssw.fun/example/image-gallery/1.jpg"
 width="2000"
 height="1400"
 srcset="https://logan.wssw.fun/example/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Image 1"
 class="gallery-image"
 data-flex-grow="142"
 data-flex-basis="342px"
-> &lt;img src="https://logan.wssw.fun/example/image-gallery/2.jpg"
+>
+&lt;img src="https://logan.wssw.fun/example/image-gallery/2.jpg"
 width="780"
 height="520"
 srcset="https://logan.wssw.fun/example/image-gallery/2_hu3d03a01dcc18bc5be0e67db3d8d209a6_46078_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/image-gallery/2_hu3d03a01dcc18bc5be0e67db3d8d209a6_46078_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
+decoding="async"
 alt="Image 2"
 class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
->&lt;/p>
+>
+&lt;/p>
 &lt;blockquote>
 &lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
 >mymind
@@ -1467,9 +1512,16 @@ Other Elements — abbr, sub, sup, kbd, mark
 &lt;a href="#hyperlinked-image" class="header-anchor">#&lt;/a>
 Hyperlinked image
 &lt;/h2>&lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
->&lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+>
+&lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+width="1000"
+height="780"
 loading="lazy"
+decoding="async"
 alt="Google"
+class="gallery-image"
+data-flex-grow="128"
+data-flex-basis="307px"
 >
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -2350,7 +2402,7 @@ Butterflies dance in fields of dreams.
 &lt;/p></description></item><item><title>搜索</title><link>https://logan.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://logan.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/links/</guid><description>&lt;p>&lt;a href="https://tablericons.com/" title="Tabler Icons" class="friend-link" target="_blank" rel="friend">
 &lt;div class="friend-link-div">
 &lt;div class="friend-link-avatar">
-&lt;img src=https://tablericons.com/ckissi.jpeg class="friend-avatar" loading="lazy" alt="Avatar">
+&lt;img src=https://tablericons.com/ckissi.jpeg class="friend-avatar" loading="lazy" decoding="async" alt="Avatar">
 &lt;/div>
 &lt;div class="friend-link-info">
 &lt;i class="fa fa-link" aria-hidden="true">&lt;/i>
@@ -2362,7 +2414,7 @@ Butterflies dance in fields of dreams.
 &lt;a href="https://webgradients.com/" title="Web Gradients" class="friend-link" target="_blank" rel="friend">
 &lt;div class="friend-link-div">
 &lt;div class="friend-link-avatar">
-&lt;img src=https://webgradients.com/favicons/favicon-32x32.png class="friend-avatar" loading="lazy" alt="Avatar">
+&lt;img src=https://webgradients.com/favicons/favicon-32x32.png class="friend-avatar" loading="lazy" decoding="async" alt="Avatar">
 &lt;/div>
 &lt;div class="friend-link-info">
 &lt;i class="fa fa-link" aria-hidden="true">&lt;/i>
