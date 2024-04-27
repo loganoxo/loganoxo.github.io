@@ -21,7 +21,7 @@ Allow: /tags/baseurl/
 
 Allow: /articles/with-hugo/hugo-baseurl/
 
-Allow: /articles/with-hugo/shortcodes-example/
+Allow: /articles/with-hugo/other-example/
 
 Allow: /tags/seo/
 
