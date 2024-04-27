@@ -165,15 +165,15 @@ style="height: 20vh ! important" style="max-width: 60% " loading="lazy" decoding
 图片轮播 引入全局资源
 &lt;/h2>
 &lt;link
-rel="stylesheet"href="https://logan.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
+rel="stylesheet"href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/css/swiper.min.css"media="none"
 onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
-src="https://logan.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
+src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js"crossorigin="anonymous"
 async
 >
 &lt;/script>&lt;script>
-loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js","SwiperCallback")
+loadScript("https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js","SwiperCallback")
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
@@ -204,15 +204,15 @@ loop: true,
 图片轮播引入网络链接
 &lt;/h2>
 &lt;link
-rel="stylesheet"href="https://logan.wssw.fun/css/swiper.min.f15544a5b5ce5cac67a06ed9c8b22fbc63172b6710a7a0fb81d7c2ed5ba8dc36.css"media="none"
+rel="stylesheet"href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/css/swiper.min.css"media="none"
 onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
-src="https://logan.wssw.fun/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js"crossorigin="anonymous"
+src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js"crossorigin="anonymous"
 async
 >
 &lt;/script>&lt;script>
-loadScript("/js/swiper.min.f7e04fb00ca8b19b91ffaa74c0e81ae8aa87a65aa0cb6a95ac8c0066f0140ec3.js","SwiperCallback")
+loadScript("https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js","SwiperCallback")
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
@@ -273,11 +273,11 @@ data-flex-basis="307px"
 用gallery短代码引入网络图片
 &lt;/h2>
 &lt;script
-src="https://logan.wssw.fun/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js"crossorigin="anonymous"
+src="https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
-loadScript("/js/waterfall.min.b0fc51b005896015662038ffa15e1e92ff1b8425ed1ba022ba3e4485474a6c93.js","WaterfallCallback")
+loadScript("https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.0.2/waterfall.min.js","WaterfallCallback")
 &lt;/script>
 &lt;script
 src="https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"crossorigin="anonymous"
