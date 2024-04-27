@@ -17,12 +17,6 @@ Allow: /tags/template/
 
 Allow: /tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
 
-Allow: /categories/blog-build/
-
-Allow: /
-
-Allow: /articles/
-
 Allow: /articles/with-hugo/picture-example/
 
 Allow: /tags/baseurl/
@@ -38,10 +32,6 @@ Allow: /articles/with-hugo/seo/
 Allow: /tags/emoji/
 
 Allow: /example/emoji-support/
-
-Allow: /categories/test-example/
-
-Allow: /example/
 
 Allow: /tags/privacy/
 
@@ -87,6 +77,16 @@ Allow: /page/about/
 
 Allow: /timeline/
 
+Allow: /categories/blog-build/
+
+Allow: /categories/test-example/
+
+Allow: /
+
 Allow: /page/search/
 
+Allow: /articles/
+
 Allow: /page/links/
+
+Allow: /example/
