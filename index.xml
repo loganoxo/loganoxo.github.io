@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on Logan的博客</title><link>https://logan.wssw.fun/</link><description>Recent content in 首页 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://logan.wssw.fun/example/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/hello-world/</guid><description>&lt;img src="https://logan.wssw.fun/example/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on Logan的博客</title><link>https://logan.wssw.fun/</link><description>Recent content in 首页 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://logan.wssw.fun/example/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/hello-world/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1a650ea9cb1403739c9d.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
 &lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
 >https://stack.jimmycai.com/
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -35,7 +35,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/picture-example/cover.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
+&lt;/blockquote></description></item><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b9a0ea9cb1403771231.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
 &lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
 放在同一个目录下的图片，支持PhotoSwipe图册
 &lt;/h2>&lt;p>
@@ -425,7 +425,7 @@ waterfall(galleryPhotos[i]);
 }
 window.ViewImage &amp;&amp; ViewImage.init('.gallery-photo img')
 });
-&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/cover.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b880ea9cb140376d770.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
 &lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
 hugo博客 配置baseUrl的坑
 &lt;/h1>&lt;h2 id="本地启动">
@@ -503,7 +503,7 @@ hugo博客 配置baseUrl的坑
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>短代码相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/shortcodes-example/cover.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
+&lt;/div></description></item><item><title>短代码相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/shortcodes-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/shortcodes-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1a650ea9cb1403739c9d.jpg" alt="Featured image of post 短代码相关模板" />&lt;h2 id="highlight-shortcode-高亮代码">
 &lt;a href="#highlight-shortcode-%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81" class="header-anchor">#&lt;/a>
 highlight shortcode 高亮代码
 &lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go-html-template" data-lang="go-html-template">&lt;span class="line">&lt;span class="ln" id="42">&lt;a class="lnlinks" href="#42">42&lt;/a>&lt;/span>&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">range&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="na">.Pages&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">}}&lt;/span>
@@ -878,7 +878,7 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://logan.wssw.fun/articles/with-hugo/seo/cover.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;/details></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1ba60ea9cb140377342f.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
 &lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
 如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
 登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
@@ -937,7 +937,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Emoji Support</title><link>https://logan.wssw.fun/example/emoji-support/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/emoji-support/</guid><description>&lt;img src="https://logan.wssw.fun/example/emoji-support/cover.jpg" alt="Featured image of post Emoji Support" />&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
+&lt;/ul></description></item><item><title>Emoji Support</title><link>https://logan.wssw.fun/example/emoji-support/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/emoji-support/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b380ea9cb140375fded.jpg" alt="Featured image of post Emoji Support" />&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
 &lt;p>The &lt;a class="link" href="https://gohugo.io/functions/emojify/" target="_blank" rel="noopener"
 >&lt;code>emojify&lt;/code>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -1061,7 +1061,7 @@ Quote Shortcode
 &lt;blockquote>
 &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;cite>Some book&lt;/cite>&lt;/span>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Somebody&lt;/span>&lt;cite>&lt;/cite>&lt;/span>&lt;/blockquote></description></item><item><title>测试中文</title><link>https://logan.wssw.fun/example/test-chinese/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/test-chinese/</guid><description>&lt;img src="https://logan.wssw.fun/example/test-chinese/cover.jpg" alt="Featured image of post 测试中文" />&lt;h2 id="正文测试">
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Somebody&lt;/span>&lt;cite>&lt;/cite>&lt;/span>&lt;/blockquote></description></item><item><title>测试中文</title><link>https://logan.wssw.fun/example/test-chinese/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/test-chinese/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b2c0ea9cb140375dbe6.jpg" alt="Featured image of post 测试中文" />&lt;h2 id="正文测试">
 &lt;a href="#%e6%ad%a3%e6%96%87%e6%b5%8b%e8%af%95" class="header-anchor">#&lt;/a>
 正文测试
 &lt;/h2>&lt;p>而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p>
@@ -1154,7 +1154,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/a>&lt;/p></description></item><item><title>Image gallery</title><link>https://logan.wssw.fun/example/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/image-gallery/</guid><description>&lt;img src="https://logan.wssw.fun/example/image-gallery/cover.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
+&lt;/a>&lt;/p></description></item><item><title>Image gallery</title><link>https://logan.wssw.fun/example/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/image-gallery/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b0a0ea9cb1403757a4c.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
 >PhotoSwipe
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -1260,7 +1260,7 @@ data-flex-basis="426px"
 &lt;figcaption>
 &lt;h4>全局图片&lt;/h4>
 &lt;/figcaption>
-&lt;/figure>&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://logan.wssw.fun/example/markdown-syntax/</link><pubDate>Fri, 11 Mar 2022 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/markdown-syntax/</guid><description>&lt;img src="https://logan.wssw.fun/example/markdown-syntax/cover.jpg" alt="Featured image of post Markdown Syntax Guide" />&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;/figure>&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://logan.wssw.fun/example/markdown-syntax/</link><pubDate>Fri, 11 Mar 2022 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/markdown-syntax/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1ae60ea9cb140374faa6.jpg" alt="Featured image of post Markdown Syntax Guide" />&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">
 &lt;a href="#headings" class="header-anchor">#&lt;/a>
 Headings
@@ -1545,7 +1545,7 @@ fill="currentColor">
 &lt;/a> during Gopherfest, November 18, 2015.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>归档</title><link>https://logan.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://logan.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/photos/</guid><description/></item><item><title>Placeholder Text</title><link>https://logan.wssw.fun/example/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/placeholder-text/</guid><description>&lt;img src="https://logan.wssw.fun/example/placeholder-text/cover.jpg" alt="Featured image of post Placeholder Text" />&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
+&lt;/div></description></item><item><title>归档</title><link>https://logan.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://logan.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/photos/</guid><description/></item><item><title>Placeholder Text</title><link>https://logan.wssw.fun/example/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/placeholder-text/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b670ea9cb14037673c4.jpg" alt="Featured image of post Placeholder Text" />&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
 &lt;p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p>
 &lt;ol>
 &lt;li>Exierant elisi ambit vivere dedere&lt;/li>
