@@ -878,7 +878,11 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1ba60ea9cb140377342f.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;/details>
+&lt;h2 id="键盘标签">
+&lt;a href="#%e9%94%ae%e7%9b%98%e6%a0%87%e7%ad%be" class="header-anchor">#&lt;/a>
+键盘标签
+&lt;/h2>&lt;p>在 Windows 操作系统中，「复制」功能的快捷键是：&lt;kbd>CTRL&lt;/kbd> + &lt;kbd>C&lt;/kbd>&lt;/p></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1ba60ea9cb140377342f.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
 &lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
 如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
 登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>

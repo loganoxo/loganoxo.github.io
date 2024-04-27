@@ -763,7 +763,11 @@ github卡片
 &lt;/h2>&lt;details>
 &lt;summary>用法&lt;/summary>
 在markdown里写下
-&lt;/details></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;/details>
+&lt;h2 id="键盘标签">
+&lt;a href="#%e9%94%ae%e7%9b%98%e6%a0%87%e7%ad%be" class="header-anchor">#&lt;/a>
+键盘标签
+&lt;/h2>&lt;p>在 Windows 操作系统中，「复制」功能的快捷键是：&lt;kbd>CTRL&lt;/kbd> + &lt;kbd>C&lt;/kbd>&lt;/p></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
 &lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 A页面-包含B页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
