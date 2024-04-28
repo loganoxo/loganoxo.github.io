@@ -280,11 +280,11 @@ defer
 loadScript("https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.0.2/waterfall.min.js","WaterfallCallback")
 &lt;/script>
 &lt;script
-src="https://logan.wssw.fun/js/imgStatus.e2aeaa8dbe6b1c78e81b98ec93bd33b6db3e33f0136c8941ce4a79d3e1d6c47e.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
-loadScript("/js/imgStatus.e2aeaa8dbe6b1c78e81b98ec93bd33b6db3e33f0136c8941ce4a79d3e1d6c47e.js","ImgStatusCallback")
+loadScript("/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js","ImgStatusCallback")
 &lt;/script>
 &lt;script
 src="https://logan.wssw.fun/js/view-image.f509da4b08b0945fe359178212f151359338efef134a89e44537f112f409728d.js"crossorigin="anonymous"
