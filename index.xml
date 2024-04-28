@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on Logan的博客</title><link>https://logan.wssw.fun/</link><description>Recent content in 首页 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><atom:link href="https://logan.wssw.fun/index.xml" rel="self" type="application/rss+xml"/><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b9a0ea9cb1403771231.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on Logan的博客</title><link>https://logan.wssw.fun/</link><description>Recent content in 首页 on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><atom:link href="https://logan.wssw.fun/index.xml" rel="self" type="application/rss+xml"/><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9a1b0ea9cb14036d4173.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
 &lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
 放在同一个目录下的图片，支持PhotoSwipe图册
 &lt;/h2>&lt;p>
@@ -388,7 +388,7 @@ waterfall(galleryPhotos[i]);
 }
 window.ViewImage &amp;&amp; ViewImage.init('.gallery-photo img')
 });
-&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b880ea9cb140376d770.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea64f0ea9cb14037d9c7e.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
 &lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
 hugo博客 配置baseUrl的坑
 &lt;/h1>&lt;h2 id="本地启动">
@@ -466,7 +466,66 @@ hugo博客 配置baseUrl的坑
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>其他模板</title><link>https://logan.wssw.fun/articles/with-hugo/other-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/other-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1a650ea9cb1403739c9d.jpg" alt="Featured image of post 其他模板" />&lt;h2 id="原生代码块">
+&lt;/div></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9a1a0ea9cb14036d3fcb.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
+如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
+登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>HTML验证文件上传
+只需要根据要求，下载HTML验证文件，把文件放在站点根目录的static目录下&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>HTML标记
+在config.yaml中加一个配置&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">googleSiteVerification&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;xxx&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#写google给的字符串&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到themes/meme/layouts/partials/head/custom.html或者head.html，在第一行加入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;google-site-verification&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{.Site.Params.googleSiteVerification}}&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后执行hugo命令，就可以验证了&lt;/p>
+&lt;ul>
+&lt;li>Google Analytics&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>先到Google Analytics创建一个账号，并登录。
+新建一个资源，填完后获得tracking code。
+更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)
+站点地图确认打开，默认都打开了&lt;/p>
+&lt;/blockquote>
+&lt;p>在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
+&lt;p>Bing
+相似地，在Bing网站管理登陆、添加网站url。&lt;/p>
+&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p>
+&lt;ul>
+&lt;li>测试
+&lt;a class="link" href="https://tagassistant.google.com/" target="_blank" rel="noopener"
+>https://tagassistant.google.com/
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>其他模板</title><link>https://logan.wssw.fun/articles/with-hugo/other-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/other-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea0af0ea9cb140377953f.jpg" alt="Featured image of post 其他模板" />&lt;h2 id="原生代码块">
 &lt;a href="#%e5%8e%9f%e7%94%9f%e4%bb%a3%e7%a0%81%e5%9d%97" class="header-anchor">#&lt;/a>
 原生代码块
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
@@ -864,66 +923,7 @@ github卡片
 &lt;h2 id="键盘标签">
 &lt;a href="#%e9%94%ae%e7%9b%98%e6%a0%87%e7%ad%be" class="header-anchor">#&lt;/a>
 键盘标签
-&lt;/h2>&lt;p>在 Windows 操作系统中，「复制」功能的快捷键是：&lt;kbd>CTRL&lt;/kbd> + &lt;kbd>C&lt;/kbd>&lt;/p></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1ba60ea9cb140377342f.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
-&lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
-如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
-登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>
-&lt;p>HTML验证文件上传
-只需要根据要求，下载HTML验证文件，把文件放在站点根目录的static目录下&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>HTML标记
-在config.yaml中加一个配置&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
-&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">googleSiteVerification&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;xxx&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#写google给的字符串&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>找到themes/meme/layouts/partials/head/custom.html或者head.html，在第一行加入：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;google-site-verification&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{.Site.Params.googleSiteVerification}}&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>然后执行hugo命令，就可以验证了&lt;/p>
-&lt;ul>
-&lt;li>Google Analytics&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>先到Google Analytics创建一个账号，并登录。
-新建一个资源，填完后获得tracking code。
-更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)
-站点地图确认打开，默认都打开了&lt;/p>
-&lt;/blockquote>
-&lt;p>在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
-&lt;p>Bing
-相似地，在Bing网站管理登陆、添加网站url。&lt;/p>
-&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p>
-&lt;ul>
-&lt;li>测试
-&lt;a class="link" href="https://tagassistant.google.com/" target="_blank" rel="noopener"
->https://tagassistant.google.com/
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Emoji Support</title><link>https://logan.wssw.fun/example/emoji-support/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/emoji-support/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b380ea9cb140375fded.jpg" alt="Featured image of post Emoji Support" />&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
+&lt;/h2>&lt;p>在 Windows 操作系统中，「复制」功能的快捷键是：&lt;kbd>CTRL&lt;/kbd> + &lt;kbd>C&lt;/kbd>&lt;/p></description></item><item><title>Emoji Support</title><link>https://logan.wssw.fun/example/emoji-support/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/emoji-support/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea6500ea9cb14037d9d02.jpg" alt="Featured image of post Emoji Support" />&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
 &lt;p>The &lt;a class="link" href="https://gohugo.io/functions/emojify/" target="_blank" rel="noopener"
 >&lt;code>emojify&lt;/code>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -974,7 +974,7 @@ fill="currentColor">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Rich Content</title><link>https://logan.wssw.fun/example/rich-content/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>Rich Content</title><link>https://logan.wssw.fun/example/rich-content/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/rich-content/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9ad20ea9cb14036e3aaa.jpg" alt="Featured image of post Rich Content" />&lt;p>Hugo ships with several &lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" target="_blank" rel="noopener"
 >Built-in Shortcodes
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -1047,7 +1047,7 @@ Quote Shortcode
 &lt;blockquote>
 &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;cite>Some book&lt;/cite>&lt;/span>&lt;/blockquote>
 &lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Somebody&lt;/span>&lt;cite>&lt;/cite>&lt;/span>&lt;/blockquote></description></item><item><title>测试中文</title><link>https://logan.wssw.fun/example/test-chinese/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/test-chinese/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b2c0ea9cb140375dbe6.jpg" alt="Featured image of post 测试中文" />&lt;h2 id="正文测试">
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Somebody&lt;/span>&lt;cite>&lt;/cite>&lt;/span>&lt;/blockquote></description></item><item><title>测试中文</title><link>https://logan.wssw.fun/example/test-chinese/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/test-chinese/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662bf3300ea9cb140327e530.jpg" alt="Featured image of post 测试中文" />&lt;h2 id="正文测试">
 &lt;a href="#%e6%ad%a3%e6%96%87%e6%b5%8b%e8%af%95" class="header-anchor">#&lt;/a>
 正文测试
 &lt;/h2>&lt;p>而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p>
@@ -1140,7 +1140,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/a>&lt;/p></description></item><item><title>Image gallery</title><link>https://logan.wssw.fun/example/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/image-gallery/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b0a0ea9cb1403757a4c.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
+&lt;/a>&lt;/p></description></item><item><title>Image gallery</title><link>https://logan.wssw.fun/example/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/image-gallery/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea6500ea9cb14037d9ce3.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
 >PhotoSwipe
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -1531,7 +1531,7 @@ fill="currentColor">
 &lt;/a> during Gopherfest, November 18, 2015.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>归档</title><link>https://logan.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://logan.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/photos/</guid><description/></item><item><title>Placeholder Text</title><link>https://logan.wssw.fun/example/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/placeholder-text/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b670ea9cb14037673c4.jpg" alt="Featured image of post Placeholder Text" />&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
+&lt;/div></description></item><item><title>归档</title><link>https://logan.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://logan.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/photos/</guid><description/></item><item><title>Placeholder Text</title><link>https://logan.wssw.fun/example/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/placeholder-text/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9a0f0ea9cb14036d305c.jpg" alt="Featured image of post Placeholder Text" />&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
 &lt;p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p>
 &lt;ol>
 &lt;li>Exierant elisi ambit vivere dedere&lt;/li>
@@ -1565,7 +1565,7 @@ fill="currentColor">
 Mane refeci capiebant unda mulcebat
 &lt;/h2>&lt;p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong>Faces illo pepulere&lt;/strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p>
 &lt;p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p>
-&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://logan.wssw.fun/example/math-typesetting/</link><pubDate>Sat, 09 Feb 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p>
+&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://logan.wssw.fun/example/math-typesetting/</link><pubDate>Sat, 09 Feb 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/math-typesetting/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9a240ea9cb14036d52ad.jpg" alt="Featured image of post Math Typesetting" />&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p>
 &lt;p>In this example we will be using &lt;a class="link" href="https://katex.org/" target="_blank" rel="noopener"
 >KaTeX
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Logan的博客</title><link>https://logan.wssw.fun/tags/hugo/</link><description>Recent content in Hugo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo相关内容</title><link>https://logan.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/</guid><description>&lt;img src="https://s2.loli.net/2024/04/24/f87Asu2MrBaJ36H.png" alt="Featured image of post hugo相关内容" /></description></item><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b9a0ea9cb1403771231.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Logan的博客</title><link>https://logan.wssw.fun/tags/hugo/</link><description>Recent content in Hugo on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>图片相关模板</title><link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9a1b0ea9cb14036d4173.jpg" alt="Featured image of post 图片相关模板" />&lt;h2 id="放在同一个目录下的图片支持photoswipe图册">
 &lt;a href="#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c" class="header-anchor">#&lt;/a>
 放在同一个目录下的图片，支持PhotoSwipe图册
 &lt;/h2>&lt;p>
@@ -388,7 +388,7 @@ waterfall(galleryPhotos[i]);
 }
 window.ViewImage &amp;&amp; ViewImage.init('.gallery-photo img')
 });
-&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1b880ea9cb140376d770.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
+&lt;/script></description></item><item><title>hugo博客-配置baseUrl的坑</title><link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea64f0ea9cb14037d9c7e.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" />&lt;h1 id="hugo博客-配置baseurl的坑">
 &lt;a href="#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91" class="header-anchor">#&lt;/a>
 hugo博客 配置baseUrl的坑
 &lt;/h1>&lt;h2 id="本地启动">
@@ -466,7 +466,66 @@ hugo博客 配置baseUrl的坑
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo -D --gc --minify --config hugo_git.yaml &lt;span class="c1">#在github action中使用&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>其他模板</title><link>https://logan.wssw.fun/articles/with-hugo/other-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/other-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1a650ea9cb1403739c9d.jpg" alt="Featured image of post 其他模板" />&lt;h2 id="原生代码块">
+&lt;/div></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9a1a0ea9cb14036d3fcb.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
+&lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
+如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
+登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>HTML验证文件上传
+只需要根据要求，下载HTML验证文件，把文件放在站点根目录的static目录下&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>HTML标记
+在config.yaml中加一个配置&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">googleSiteVerification&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;xxx&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#写google给的字符串&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到themes/meme/layouts/partials/head/custom.html或者head.html，在第一行加入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;google-site-verification&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{.Site.Params.googleSiteVerification}}&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后执行hugo命令，就可以验证了&lt;/p>
+&lt;ul>
+&lt;li>Google Analytics&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>先到Google Analytics创建一个账号，并登录。
+新建一个资源，填完后获得tracking code。
+更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)
+站点地图确认打开，默认都打开了&lt;/p>
+&lt;/blockquote>
+&lt;p>在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
+&lt;p>Bing
+相似地，在Bing网站管理登陆、添加网站url。&lt;/p>
+&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p>
+&lt;ul>
+&lt;li>测试
+&lt;a class="link" href="https://tagassistant.google.com/" target="_blank" rel="noopener"
+>https://tagassistant.google.com/
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>其他模板</title><link>https://logan.wssw.fun/articles/with-hugo/other-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/other-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea0af0ea9cb140377953f.jpg" alt="Featured image of post 其他模板" />&lt;h2 id="原生代码块">
 &lt;a href="#%e5%8e%9f%e7%94%9f%e4%bb%a3%e7%a0%81%e5%9d%97" class="header-anchor">#&lt;/a>
 原生代码块
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
@@ -864,66 +923,7 @@ github卡片
 &lt;h2 id="键盘标签">
 &lt;a href="#%e9%94%ae%e7%9b%98%e6%a0%87%e7%ad%be" class="header-anchor">#&lt;/a>
 键盘标签
-&lt;/h2>&lt;p>在 Windows 操作系统中，「复制」功能的快捷键是：&lt;kbd>CTRL&lt;/kbd> + &lt;kbd>C&lt;/kbd>&lt;/p></description></item><item><title>测试SEO</title><link>https://logan.wssw.fun/articles/with-hugo/seo/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/seo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662d1ba60ea9cb140377342f.jpg" alt="Featured image of post 测试SEO" />&lt;blockquote>
-&lt;p>在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
-如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
-登录后，如果是首次使用在Search Console中以下界面中选择“网页”类型资源，并将博客完整url填入其中，注意http或者https，www等最好能完全正确。&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>
-&lt;p>HTML验证文件上传
-只需要根据要求，下载HTML验证文件，把文件放在站点根目录的static目录下&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>HTML标记
-在config.yaml中加一个配置&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
-&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">googleSiteVerification&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;xxx&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#写google给的字符串&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>找到themes/meme/layouts/partials/head/custom.html或者head.html，在第一行加入：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-1-1">&lt;a class="lnlinks" href="#hl-1-1">1&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;google-site-verification&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{.Site.Params.googleSiteVerification}}&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>然后执行hugo命令，就可以验证了&lt;/p>
-&lt;ul>
-&lt;li>Google Analytics&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>先到Google Analytics创建一个账号，并登录。
-新建一个资源，填完后获得tracking code。
-更新config.toml文件，配置GoogleAnalytics的id(G-xxxxxxx)
-站点地图确认打开，默认都打开了&lt;/p>
-&lt;/blockquote>
-&lt;p>在左侧点击“站点地图”，并在右侧点添加/测试站点地图，并添加url，&lt;/p>
-&lt;p>Bing
-相似地，在Bing网站管理登陆、添加网站url。&lt;/p>
-&lt;p>然后在左侧点击“配置我的网站&amp;gt;Sitemaps”，并在右侧加上sitemap的url，点击提交。&lt;/p>
-&lt;ul>
-&lt;li>测试
-&lt;a class="link" href="https://tagassistant.google.com/" target="_blank" rel="noopener"
->https://tagassistant.google.com/
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;/h2>&lt;p>在 Windows 操作系统中，「复制」功能的快捷键是：&lt;kbd>CTRL&lt;/kbd> + &lt;kbd>C&lt;/kbd>&lt;/p></description></item><item><title>hugo相关内容</title><link>https://logan.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9b6b0ea9cb14036efb29.jpg" alt="Featured image of post hugo相关内容" /></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
 &lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 A页面-包含B页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件

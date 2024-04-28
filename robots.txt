@@ -1,6 +1,14 @@
 User-agent: *
 Allow: /sitemap.xml
 
+Allow: /articles/with-hugo/picture-example/
+
+Allow: /articles/with-hugo/hugo-baseurl/
+
+Allow: /articles/with-hugo/seo/
+
+Allow: /articles/with-hugo/other-example/
+
 Allow: /categories/
 
 Allow: /tags/hugo/
@@ -15,17 +23,9 @@ Allow: /tags/template/
 
 Allow: /tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
 
-Allow: /articles/with-hugo/picture-example/
-
 Allow: /tags/baseurl/
 
-Allow: /articles/with-hugo/hugo-baseurl/
-
-Allow: /articles/with-hugo/other-example/
-
 Allow: /tags/seo/
-
-Allow: /articles/with-hugo/seo/
 
 Allow: /tags/emoji/
 
