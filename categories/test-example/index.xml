@@ -144,78 +144,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/a>&lt;/em>&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="图片">
-&lt;a href="#%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
-图片
-&lt;/h2>&lt;p>
-&lt;img src="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
-width="667"
-height="1000"
-srcset="https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-decoding="async"
-alt="Photo by Florian Klauer on Unsplash"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
->
-&lt;img src="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
-width="1000"
-height="667"
-srcset="https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-decoding="async"
-alt="Photo by Luca Bravo on Unsplash"
-class="gallery-image"
-data-flex-grow="149"
-data-flex-basis="359px"
->
-&lt;/p>
-&lt;p>
-&lt;img src="helena-hertz-wWZzXlDpMog-unsplash.jpg"
-width="1000"
-height="780"
-loading="lazy"
-decoding="async"
-alt="Photo by Helena Hertz on Unsplash"
-class="gallery-image"
-data-flex-grow="128"
-data-flex-basis="307px"
->
-&lt;img src="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
-width="667"
-height="1000"
-srcset="https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/example/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-decoding="async"
-alt="Photo by Hudai Gayiran on Unsplash"
-class="gallery-image"
-data-flex-grow="66"
-data-flex-basis="160px"
->
-&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
-&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
-&lt;/span>&lt;span class="lnt" id="hl-0-3">&lt;a class="lnlinks" href="#hl-0-3">3&lt;/a>
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Photo by Florian Klauer on Unsplash&lt;/span>](&lt;span class="na">florian-klauer-nptLmg6jqDo-unsplash.jpg&lt;/span>) ![&lt;span class="nt">Photo by Luca Bravo on Unsplash&lt;/span>](&lt;span class="na">luca-bravo-alS7ewQ41M8-unsplash.jpg&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Photo by Helena Hertz on Unsplash&lt;/span>](&lt;span class="na">helena-hertz-wWZzXlDpMog-unsplash.jpg&lt;/span>) ![&lt;span class="nt">Photo by Hudai Gayiran on Unsplash&lt;/span>](&lt;span class="na">hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>相册语法来自 &lt;a class="link" href="https://typlog.com/" target="_blank" rel="noopener"
->Typlog
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>&lt;/p></description></item><item><title>Image gallery</title><link>https://logan.wssw.fun/example/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/image-gallery/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea6500ea9cb14037d9ce3.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
+&lt;/blockquote></description></item><item><title>Image gallery</title><link>https://logan.wssw.fun/example/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/example/image-gallery/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea6500ea9cb14037d9ce3.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
 >PhotoSwipe
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
