@@ -170,10 +170,7 @@ onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
 src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js"crossorigin="anonymous"
-async
 >
-&lt;/script>&lt;script>
-loadScript("https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js","SwiperCallback")
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
@@ -186,7 +183,6 @@ loadScript("https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js","Sw
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
 &lt;script>
-function SwiperCallback() {
 new Swiper('.swiper-container', {
 pagination: '.swiper-pagination',
 paginationClickable: true,
@@ -197,7 +193,6 @@ lazyLoading: true,
 lazyLoadingInPrevNext: true,
 loop: true,
 });
-}
 &lt;/script>
 &lt;h2 id="图片轮播引入网络链接">
 &lt;a href="#%e5%9b%be%e7%89%87%e8%bd%ae%e6%92%ad%e5%bc%95%e5%85%a5%e7%bd%91%e7%bb%9c%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
@@ -209,10 +204,7 @@ onload="this.media='all'"crossorigin="anonymous"
 >
 &lt;script
 src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js"crossorigin="anonymous"
-async
 >
-&lt;/script>&lt;script>
-loadScript("https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js","SwiperCallback")
 &lt;/script>
 &lt;div class="swiper-container">
 &lt;div class="swiper-wrapper">&lt;div class="swiper-slide">
@@ -223,7 +215,6 @@ loadScript("https://cdn.bootcdn.net/ajax/libs/Swiper/3.4.2/js/swiper.min.js","Sw
 &lt;div class="swiper-pagination">&lt;/div>
 &lt;/div>
 &lt;script>
-function SwiperCallback() {
 new Swiper('.swiper-container', {
 pagination: '.swiper-pagination',
 paginationClickable: true,
@@ -234,7 +225,6 @@ lazyLoading: true,
 lazyLoadingInPrevNext: true,
 loop: true,
 });
-}
 &lt;/script>
 &lt;h2 id="img标签-引入图片">
 &lt;a href="#img%e6%a0%87%e7%ad%be-%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
@@ -276,22 +266,16 @@ data-flex-basis="307px"
 src="https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"crossorigin="anonymous"
 defer
 >
-&lt;/script>&lt;script>
-loadScript("https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.0.2/waterfall.min.js","WaterfallCallback")
 &lt;/script>
 &lt;script
 src="https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"integrity="sha256-41yMXbVRbDWCPNZov5CnB8yoxMHWE3c0q8xZ&amp;#43;bQURdQ="crossorigin="anonymous"
 defer
 >
-&lt;/script>&lt;script>
-loadScript("/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js","ImgStatusCallback")
 &lt;/script>
 &lt;script
 src="https://logan.wssw.fun/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js"integrity="sha256-ew4e9NCRyczhKcgd0MmtmoTsBn5XWy&amp;#43;ADYx7IU4w4u4="crossorigin="anonymous"
 defer
 >
-&lt;/script>&lt;script>
-loadScript("/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js","ViewImageCallback")
 &lt;/script>
 &lt;gallery>
 &lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg" loading="lazy" decoding="async">
@@ -344,13 +328,12 @@ opacity: 1;
 }
 &lt;/style>
 &lt;script>
-function WaterfallCallback() {
+function wrap(el, wrapper) {
+wrapper.className = "gallery-photo";
+el.parentNode.insertBefore(wrapper, el);
+wrapper.appendChild(el);
 }
-function ImgStatusCallback() {
-}
-function ViewImageCallback() {
-}
-document.addEventListener('DOMContentLoaded', () => {
+function gallery_shortcode() {
 var photosAll = document.getElementsByTagName('gallery') || '';
 if (photosAll) {
 for (var i = 0; i &lt; photosAll.length; i++) {
@@ -360,11 +343,6 @@ for (var j = 0; j &lt; photosIMG.length; j++) {
 wrap(photosIMG[j], document.createElement('div'));
 }
 }
-}
-function wrap(el, wrapper) {
-wrapper.className = "gallery-photo";
-el.parentNode.insertBefore(wrapper, el);
-wrapper.appendChild(el);
 }
 let galleryPhotos = document.querySelectorAll('.gallery-photos') || ''
 if (galleryPhotos) {
@@ -376,7 +354,6 @@ let pagePhoto = galleryPhotos[i].querySelectorAll('.gallery-photo');
 for (var j = 0; j &lt; pagePhoto.length; j++) {
 pagePhoto[j].className += " visible"
 }
-;
 }
 }
 });
@@ -387,7 +364,14 @@ waterfall(galleryPhotos[i]);
 });
 }
 window.ViewImage &amp;&amp; ViewImage.init('.gallery-photo img')
+}
+if (document.readyState === "loading") {
+document.addEventListener("DOMContentLoaded", () => {
+gallery_shortcode();
 });
+} else {
+gallery_shortcode();
+}
 &lt;/script></description></item><item><title>其他模板</title><link>https://logan.wssw.fun/articles/with-hugo/other-example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/other-example/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662ea0af0ea9cb140377953f.jpg" alt="Featured image of post 其他模板" />&lt;h2 id="原生代码块">
 &lt;a href="#%e5%8e%9f%e7%94%9f%e4%bb%a3%e7%a0%81%e5%9d%97" class="header-anchor">#&lt;/a>
 原生代码块
