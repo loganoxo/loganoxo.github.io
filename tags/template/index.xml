@@ -280,18 +280,18 @@ defer
 loadScript("https://cdn.bootcdn.net/ajax/libs/waterfall.js/1.0.2/waterfall.min.js","WaterfallCallback")
 &lt;/script>
 &lt;script
-src="https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js"integrity="sha256-41yMXbVRbDWCPNZov5CnB8yoxMHWE3c0q8xZ&amp;#43;bQURdQ="crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
 loadScript("/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js","ImgStatusCallback")
 &lt;/script>
 &lt;script
-src="https://logan.wssw.fun/js/view-image.f509da4b08b0945fe359178212f151359338efef134a89e44537f112f409728d.js"crossorigin="anonymous"
+src="https://logan.wssw.fun/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js"integrity="sha256-ew4e9NCRyczhKcgd0MmtmoTsBn5XWy&amp;#43;ADYx7IU4w4u4="crossorigin="anonymous"
 defer
 >
 &lt;/script>&lt;script>
-loadScript("/js/view-image.f509da4b08b0945fe359178212f151359338efef134a89e44537f112f409728d.js","ViewImageCallback")
+loadScript("/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js","ViewImageCallback")
 &lt;/script>
 &lt;gallery>
 &lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg" loading="lazy" decoding="async">
