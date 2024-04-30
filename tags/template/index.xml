@@ -823,10 +823,210 @@ line-height: 30px;
 &lt;h2 id="代码折叠">
 &lt;a href="#%e4%bb%a3%e7%a0%81%e6%8a%98%e5%8f%a0" class="header-anchor">#&lt;/a>
 代码折叠
-&lt;/h2>&lt;h2 id="卡片链接">
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-2-1">&lt;a class="lnlinks" href="#hl-2-1"> 1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-2">&lt;a class="lnlinks" href="#hl-2-2"> 2&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-3">&lt;a class="lnlinks" href="#hl-2-3"> 3&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-4">&lt;a class="lnlinks" href="#hl-2-4"> 4&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-5">&lt;a class="lnlinks" href="#hl-2-5"> 5&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-6">&lt;a class="lnlinks" href="#hl-2-6"> 6&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-7">&lt;a class="lnlinks" href="#hl-2-7"> 7&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-8">&lt;a class="lnlinks" href="#hl-2-8"> 8&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-9">&lt;a class="lnlinks" href="#hl-2-9"> 9&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-10">&lt;a class="lnlinks" href="#hl-2-10">10&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-11">&lt;a class="lnlinks" href="#hl-2-11">11&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-12">&lt;a class="lnlinks" href="#hl-2-12">12&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-13">&lt;a class="lnlinks" href="#hl-2-13">13&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-14">&lt;a class="lnlinks" href="#hl-2-14">14&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-15">&lt;a class="lnlinks" href="#hl-2-15">15&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-16">&lt;a class="lnlinks" href="#hl-2-16">16&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-17">&lt;a class="lnlinks" href="#hl-2-17">17&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-18">&lt;a class="lnlinks" href="#hl-2-18">18&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-19">&lt;a class="lnlinks" href="#hl-2-19">19&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-20">&lt;a class="lnlinks" href="#hl-2-20">20&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-21">&lt;a class="lnlinks" href="#hl-2-21">21&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-22">&lt;a class="lnlinks" href="#hl-2-22">22&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-23">&lt;a class="lnlinks" href="#hl-2-23">23&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-24">&lt;a class="lnlinks" href="#hl-2-24">24&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-25">&lt;a class="lnlinks" href="#hl-2-25">25&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-26">&lt;a class="lnlinks" href="#hl-2-26">26&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-27">&lt;a class="lnlinks" href="#hl-2-27">27&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-28">&lt;a class="lnlinks" href="#hl-2-28">28&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-29">&lt;a class="lnlinks" href="#hl-2-29">29&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-30">&lt;a class="lnlinks" href="#hl-2-30">30&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-31">&lt;a class="lnlinks" href="#hl-2-31">31&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-32">&lt;a class="lnlinks" href="#hl-2-32">32&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-33">&lt;a class="lnlinks" href="#hl-2-33">33&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-34">&lt;a class="lnlinks" href="#hl-2-34">34&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-35">&lt;a class="lnlinks" href="#hl-2-35">35&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-36">&lt;a class="lnlinks" href="#hl-2-36">36&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-37">&lt;a class="lnlinks" href="#hl-2-37">37&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-38">&lt;a class="lnlinks" href="#hl-2-38">38&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-39">&lt;a class="lnlinks" href="#hl-2-39">39&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-40">&lt;a class="lnlinks" href="#hl-2-40">40&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-41">&lt;a class="lnlinks" href="#hl-2-41">41&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-42">&lt;a class="lnlinks" href="#hl-2-42">42&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-43">&lt;a class="lnlinks" href="#hl-2-43">43&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-44">&lt;a class="lnlinks" href="#hl-2-44">44&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-45">&lt;a class="lnlinks" href="#hl-2-45">45&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-2-46">&lt;a class="lnlinks" href="#hl-2-46">46&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">package&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">com.logan&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">io.lettuce.core.ReadFrom&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">org.springframework.boot.autoconfigure.data.redis.LettuceClientConfigurationBuilderCustomizer&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">org.springframework.context.annotation.Bean&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">org.springframework.context.annotation.Configuration&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">org.springframework.data.redis.core.RedisTemplate&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kn">import&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nn">org.springframework.data.redis.serializer.RedisSerializer&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @author logan
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @version 1.0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @date 2022/5/24
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nd">@Configuration&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">class&lt;/span> &lt;span class="nc">RedisConfig&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * 配置redis集群的读写分离
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nd">@Bean&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">LettuceClientConfigurationBuilderCustomizer&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">clientConfigurationBuilderCustomizer&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">clientConfigurationBuilder&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">clientConfigurationBuilder&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">readFrom&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ReadFrom&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">REPLICA_PREFERRED&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * 集群客户端是不支持多数据库db的，只有一个数据库默认是SELECT 0;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nd">@Bean&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">RedisTemplate&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">customRedisTemplate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">LettuceConnectionFactory&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">lettuceConnectionFactory&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">//创建新的redisTemplate&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">RedisTemplate&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Object&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">new&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">RedisTemplate&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">//设置key序列化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">setKeySerializer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RedisSerializer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">string&lt;/span>&lt;span class="p">());&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">setHashKeySerializer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RedisSerializer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">string&lt;/span>&lt;span class="p">());&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">//设置value序列化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">setValueSerializer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">new&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">GenericFastJsonRedisSerializer&lt;/span>&lt;span class="p">());&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c1">// redisTemplate.setValueSerializer(RedisSerializer.json());&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">setHashValueSerializer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RedisSerializer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">json&lt;/span>&lt;span class="p">());&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">//设置连接工厂&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">setConnectionFactory&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">lettuceConnectionFactory&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">redisTemplate&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="卡片链接">
 &lt;a href="#%e5%8d%a1%e7%89%87%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 卡片链接
-&lt;/h2></description></item><item><title>hugo相关内容</title><link>https://logan.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9b6b0ea9cb14036efb29.jpg" alt="Featured image of post hugo相关内容" /></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
+&lt;/h2>&lt;a1 href="https://github.com/Ice-Hazymoon/hugo-theme-luna" target="_blank">
+&lt;div class="zhengti">
+&lt;a href="https://github.com/Ice-Hazymoon/hugo-theme-luna">
+&lt;div class="wenzi">
+&lt;div class="linkk">
+&lt;div class="namee">hugo-theme-luna&lt;/div>&lt;div class="descc">A simple, performance-first, SEO-friendly Hugo theme hugo-theme-luna.&lt;/div>&lt;/div>
+&lt;div class="linktext">https://github.com/Ice-Hazymoon/hugo-theme-luna&lt;/div>
+&lt;/div>
+&lt;/a>
+&lt;div class="daimg">&lt;img class="link-card-img" decoding="async" loading="lazy" src="https://repository-images.githubusercontent.com/486781027/dc31a9ab-66d1-49b8-a225-4f85f2329f2e" alt=""/>
+&lt;/div>
+&lt;/div>
+&lt;/a1>
+&lt;style>
+a1 {
+display: flex;
+flex-direction: column;
+}
+.zhengti {
+margin: auto;
+padding: 4%;
+width: 90%;
+display: flex;
+align-items: flex-start;
+flex-direction: row;
+border-radius: 25px;
+background-color: #ffffff;
+transition: border 0.3s ease-in-out;
+box-shadow: 0 6px 10px 0 #00000033;
+&amp;:hover {
+transform: scale(1.03);
+}
+}
+.wenzi {
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+flex: 2;
+}
+.linkk {
+display: flex;
+flex-direction: column;
+}
+.namee {
+font-size: 1.7rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
+color: var(--card-text-color-main);
+}
+.descc {
+font-size: 1.3rem;
+color: #9ca3af;
+margin-bottom: 0.5rem;
+}
+.linktext {
+font-size: 0.9rem;
+color: #9ca3af;
+}
+.daimg {
+display: flex;
+flex-direction: row;
+flex: 1;
+align-self: flex-end;
+}
+.link-card-img {
+display: block;
+height: auto;
+max-height: 200px;
+width: 100%;
+object-fit: cover;
+max-width: 50%;
+margin-right: 2px;
+border-radius: 0.25rem;
+}
+@media (max-width: 900px) {
+a1 {
+max-height: 25em;
+overflow-y: auto;
+padding-right: 4%;
+}
+.zhengti {
+display: flex;
+flex-direction: column;
+}
+}
+[data-scheme="dark"] {
+.zhengti {
+background-color: #d2e5eb14;
+border: 0 solid #30363d;
+box-shadow: 2px 4px 16px rgba(0, 0, 0, .05);
+&amp;:hover {
+transform: scale(1.03);
+border: 1px solid rgba(96, 91, 91, 0.68);
+}
+}
+.descc {
+color: #dedede;
+}
+.linktext {
+color: #fcfcfc;
+}
+}
+&lt;/style></description></item><item><title>hugo相关内容</title><link>https://logan.wssw.fun/articles/with-hugo/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9b6b0ea9cb14036efb29.jpg" alt="Featured image of post hugo相关内容" /></description></item><item><title>A页面</title><link>https://logan.wssw.fun/articles/with-hugo/page-a/</link><pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid><description>&lt;h1 id="a页面-包含b页面的超链接">
 &lt;a href="#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5" class="header-anchor">#&lt;/a>
 A页面-包含B页面的超链接
 &lt;/h1>&lt;p>&lt;a class="link" href="../page-B#titleb" >点击查看另一个Markdown文件
