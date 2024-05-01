@@ -58,24 +58,24 @@ fill="currentColor">
 网络链接支持PhotoSwipe图册
 &lt;/h1>&lt;p>
 &lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg"
-width="1000"
-height="780"
+width="500"
+height="300"
 loading="lazy"
 decoding="async"
 alt="link1"
 class="gallery-image link-image"
-data-flex-grow="128"
-data-flex-basis="307px"
+data-flex-grow="20"
+data-flex-basis="20px"
 >
 &lt;img src="https://pic.imgdb.cn/item/662bf3310ea9cb140327e6d7.jpg"
-width="1000"
-height="780"
+width="500"
+height="300"
 loading="lazy"
 decoding="async"
 alt="link2"
 class="gallery-image link-image"
-data-flex-grow="128"
-data-flex-basis="307px"
+data-flex-grow="20"
+data-flex-basis="20px"
 >
 &lt;/p>
 &lt;h1 id="static目录支持photoswipe图册">
@@ -83,14 +83,14 @@ data-flex-basis="307px"
 static目录支持PhotoSwipe图册
 &lt;/h1>&lt;p>
 &lt;img src="https://logan.wssw.fun/photos/a.png"
-width="1000"
-height="780"
+width="500"
+height="300"
 loading="lazy"
 decoding="async"
 alt="static"
 class="gallery-image link-image"
-data-flex-grow="128"
-data-flex-basis="307px"
+data-flex-grow="20"
+data-flex-basis="20px"
 >
 &lt;/p>
 &lt;h1 id="assets目录支持photoswipe图册">

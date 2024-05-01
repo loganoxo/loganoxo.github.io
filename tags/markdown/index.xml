@@ -252,14 +252,14 @@ Hyperlinked image
 &lt;/h2>&lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >
 &lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
-width="1000"
-height="780"
+width="500"
+height="300"
 loading="lazy"
 decoding="async"
 alt="Google"
 class="gallery-image link-image"
-data-flex-grow="128"
-data-flex-basis="307px"
+data-flex-grow="20"
+data-flex-basis="20px"
 >
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
