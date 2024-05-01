@@ -509,7 +509,7 @@ height="780"
 loading="lazy"
 decoding="async"
 alt="Google"
-class="gallery-image"
+class="gallery-image link-image"
 data-flex-grow="128"
 data-flex-basis="307px"
 >

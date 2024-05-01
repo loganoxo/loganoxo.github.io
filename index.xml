@@ -63,7 +63,7 @@ height="780"
 loading="lazy"
 decoding="async"
 alt="link1"
-class="gallery-image"
+class="gallery-image link-image"
 data-flex-grow="128"
 data-flex-basis="307px"
 >
@@ -73,7 +73,7 @@ height="780"
 loading="lazy"
 decoding="async"
 alt="link2"
-class="gallery-image"
+class="gallery-image link-image"
 data-flex-grow="128"
 data-flex-basis="307px"
 >
@@ -88,7 +88,7 @@ height="780"
 loading="lazy"
 decoding="async"
 alt="static"
-class="gallery-image"
+class="gallery-image link-image"
 data-flex-grow="128"
 data-flex-basis="307px"
 >
@@ -243,21 +243,6 @@ height="299" alt="" loading="lazy" decoding="async">
 &lt;/small>
 &lt;/figcaption>
 &lt;/figure>
-&lt;h2 id="普通方式引入图片并且在目录外部">
-&lt;a href="#%e6%99%ae%e9%80%9a%e6%96%b9%e5%bc%8f%e5%bc%95%e5%85%a5%e5%9b%be%e7%89%87%e5%b9%b6%e4%b8%94%e5%9c%a8%e7%9b%ae%e5%bd%95%e5%a4%96%e9%83%a8" class="header-anchor">#&lt;/a>
-普通方式引入图片，并且在目录外部
-&lt;/h2>&lt;p>
-&lt;img src="https://logan.wssw.fun/photos/a.png"
-width="1000"
-height="780"
-loading="lazy"
-decoding="async"
-alt="a.png"
-class="gallery-image"
-data-flex-grow="128"
-data-flex-basis="307px"
->
-&lt;/p>
 &lt;h2 id="用gallery短代码引入网络图片">
 &lt;a href="#%e7%94%a8gallery%e7%9f%ad%e4%bb%a3%e7%a0%81%e5%bc%95%e5%85%a5%e7%bd%91%e7%bb%9c%e5%9b%be%e7%89%87" class="header-anchor">#&lt;/a>
 用gallery短代码引入网络图片
@@ -1674,7 +1659,7 @@ height="780"
 loading="lazy"
 decoding="async"
 alt="Google"
-class="gallery-image"
+class="gallery-image link-image"
 data-flex-grow="128"
 data-flex-basis="307px"
 >
