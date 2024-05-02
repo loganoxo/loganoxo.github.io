@@ -9,15 +9,75 @@ Allow: /articles/with-hugo/seo/
 
 Allow: /articles/with-hugo/other-example/
 
+Allow: /p/2024/05/11895611/
+
+Allow: /p/2024/05/14915117/
+
+Allow: /p/2024/05/49167149/
+
+Allow: /p/2024/05/84511784/
+
+Allow: /p/2024/05/45117945/
+
+Allow: /p/2024/05/95611835/
+
+Allow: /p/2024/05/34916834/
+
+Allow: /p/2024/05/16138956/
+
+Allow: /p/2024/05/11784511/
+
+Allow: /p/2024/05/89561389/
+
 Allow: /categories/
+
+Allow: /p/
+
+Allow: /tags/jvm/
+
+Allow: /categories/jvm/
+
+Allow: /p/2024/05/15714915/
+
+Allow: /p/2024/05/38956138/
+
+Allow: /tags/
+
+Allow: /p/2024/05/67349167/
+
+Allow: /p/2024/05/16835116/
+
+Allow: /p/2024/05/61189461/
+
+Allow: /p/2024/05/11894611/
+
+Allow: /p/2024/05/49157139/
+
+Allow: /p/2024/05/95613895/
+
+Allow: /p/2024/05/73491673/
+
+Allow: /p/2024/05/57138451/
+
+Allow: /p/2024/05/13895613/
+
+Allow: /p/2024/05/45117845/
+
+Allow: /p/2024/05/78451178/
+
+Allow: /p/2024/05/95611895/
+
+Allow: /p/2024/05/71491671/
+
+Allow: /p/2024/05/91671491/
+
+Allow: /p/2024/05/17845117/
 
 Allow: /tags/hugo/
 
 Allow: /articles/with-hugo/
 
 Allow: /tags/stack/
-
-Allow: /tags/
 
 Allow: /tags/template/
 
@@ -39,7 +99,97 @@ Allow: /tags/shortcodes/
 
 Allow: /example/test-chinese/
 
+Allow: /p/2023/09/38956138/
+
+Allow: /tags/redis/
+
+Allow: /categories/redis/
+
+Allow: /p/2023/09/45117845/
+
+Allow: /p/2023/09/78451671/
+
+Allow: /p/2023/09/61784511/
+
 Allow: /example/image-gallery/
+
+Allow: /tags/linux/
+
+Allow: /categories/linux/
+
+Allow: /p/2023/05/14916714/
+
+Allow: /p/2023/05/84511784/
+
+Allow: /p/2023/05/91571391/
+
+Allow: /p/2023/05/51178451/
+
+Allow: /p/2023/05/14916714/
+
+Allow: /p/2023/05/91571491/
+
+Allow: /p/2023/05/84511784/
+
+Allow: /p/2023/01/89461189/
+
+Allow: /p/2023/01/91671491/
+
+Allow: /p/2023/01/57138157/
+
+Allow: /p/2023/01/49167149/
+
+Allow: /p/2023/01/45117845/
+
+Allow: /p/2023/01/34916834/
+
+Allow: /p/2023/01/38956138/
+
+Allow: /p/2023/01/89461189/
+
+Allow: /p/2023/01/91671491/
+
+Allow: /p/2023/01/15713815/
+
+Allow: /p/2023/01/51178451/
+
+Allow: /p/2023/01/13895613/
+
+Allow: /p/2023/01/83491673/
+
+Allow: /p/2023/01/95611894/
+
+Allow: /p/2023/01/51178451/
+
+Allow: /p/2023/01/13895613/
+
+Allow: /p/2023/01/73491673/
+
+Allow: /p/2023/01/49167149/
+
+Allow: /p/2023/01/15713815/
+
+Allow: /p/2023/01/57149157/
+
+Allow: /p/2023/01/17845117/
+
+Allow: /p/2023/01/11783511/
+
+Allow: /p/2023/01/38956138/
+
+Allow: /p/2023/01/95611895/
+
+Allow: /p/2023/01/17845117/
+
+Allow: /p/2023/01/45117845/
+
+Allow: /tags/springcloud/
+
+Allow: /categories/springcloud/
+
+Allow: /p/2023/01/34916834/
+
+Allow: /p/2023/01/11784511/
 
 Allow: /tags/css/
 

@@ -1,0 +1,1050 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="Linux相关"><meta name=keywords content="Linux,常用命令"><title>ohmyzsh</title>
+<link rel=canonical href=https://logan.wssw.fun/p/2023/05/91571391/><link rel=stylesheet href=/scss/style.min.13aa7f8d1031a866f598038f5f109d260d836a6b68cfc49d43713498eb7a1e2b.css><meta property='og:title' content="ohmyzsh"><meta property='og:description' content="Linux相关"><meta property='og:url' content='https://logan.wssw.fun/p/2023/05/91571391/'><meta property='og:site_name' content='Logan的博客'><meta property='og:type' content='article'><meta property='article:section' content='Draft'><meta property='article:tag' content='Linux'><meta property='article:published_time' content='2023-05-03T03:49:51+08:00'><meta property='article:modified_time' content='2024-05-02T20:08:23+00:00'><meta name=twitter:title content="ohmyzsh"><meta name=twitter:description content="Linux相关"><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><script async src="https://www.googletagmanager.com/gtag/js?id=G-R7GQB9XXQW"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-R7GQB9XXQW",{anonymize_ip:!1})}</script><meta name=google-site-verification content="3CAZCWVpDIWQxfZCqLMpov13bCzaH1QdnlHZTNnNjfM"><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.min.js crossorigin=anonymous async></script><meta name=referrer content="no-referrer-when-downgrade"><script src=/js/sceneanimation.min.8c8c65611aaf0c8996e6d8a06f3e3bc82e6c8d2d2ab542e7cde8df7bceeeba9e.js integrity="sha256-jIxlYRqvDImW5tigbz47yC5sjS0qtULnzejfe87uup4=" crossorigin=anonymous async></script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"dark")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e==="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar-3K_hu560d426f92925c766fafa78be2429fd1_3226_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy decoding=async alt=Avatar>
+</a><span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/>Logan🌀</a></h1><h2 class=site-description>Starry serenade ✍️</h2></div></header><ol class=menu-social><li><a href=https://github.com/loganoxo target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://blog.csdn.net/u014229652 target=_blank title=my_csdn rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg></a></li><li><a href=https://twitter.com target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>主页</span></a></li><li><a href=/articles/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1112 6.006a5 5 0 117.5 6.572"/></svg>
+<span>我的</span></a></li><li><a href=/page/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>归档</span></a></li><li><a href=/page/photos/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7h1a2 2 0 002-2 1 1 0 011-1h6a1 1 0 011 1 2 2 0 002 2h1a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2"/><path d="M9 13a3 3 0 106 0 3 3 0 00-6 0"/></svg>
+<span>相册</span></a></li><li><a href=/page/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>搜索</span></a></li><li><a href=/timeline/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-fish-christianity" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7S16.354 17 9.692 17c-3.226.025-6.194-1.905-7.692-5 1.498-3.095 4.466-5.025 7.692-5C16.354 7 22 17 22 17"/></svg>
+<span>年轴</span></a></li><li><a href=/page/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>友链</span></a></li><li><a href=/page/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>关于</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" viewBox="0 0 1025 1024" xmlns="http://www.w3.org/2000/svg" p-id="14930" width="128" height="128"><path d="M253.939302 502.92736a269.74208 269.74208.0 00122.90048 235.84768 257.024 257.024.0 00259.95264 9.07264c81.46944-44.27776 135.70048-130.49856 139.0592-226.7136 5.14048-147.3536-107.37664-270.1312-250.63424-275.1488-145.32608-5.05856-266.1376 109.568-271.27808 256.94208zM531.730022.3072c16.384.57344 32.256 15.48288 31.62112 33.8944l-3.72736 106.43456c-.57344 16.384-15.4624 32.256-33.8944 31.60064-16.384-.57344-32.23552-15.4624-31.60064-33.8944l3.72736-106.43456c2.74432-20.3776 15.4624-32.23552 33.87392-31.60064zm493.89568 527.52384c-.57344 16.384-13.35296 30.26944-33.8944 31.60064l-104.36608-3.64544c-16.384-.57344-32.19456-17.53088-31.62112-33.8944.57344-16.384 15.48288-32.256 33.8944-31.60064l104.38656 3.64544a32.3584 32.3584.0 0131.60064 33.8944zm-855.53152-29.9008c-.57344 16.384-13.35296 30.28992-33.8944 31.62112l-104.38656-3.64544c-16.384-.57344-32.17408-17.5104-31.60064-33.8944.57344-16.384 15.4624-32.256 33.8944-31.60064l104.38656 3.64544a32.3584 32.3584.0 0131.60064 33.8944zm325.91872 525.76256c-16.384-.57344-32.256-15.48288-31.62112-33.8944l3.72736-106.43456c.57344-16.384 15.4624-32.256 33.8944-31.60064 16.384.57344 32.23552 15.4624 31.60064 33.8944l-3.72736 106.43456c-2.74432 20.3776-17.5104 32.1536-33.87392 31.60064zm401.32608-871.26016c11.85792 12.6976 11.0592 35.2256-1.6384 47.06304l-78.37696 73.09312c-12.6976 11.85792-33.1776 11.14112-47.08352-1.6384-11.83744-12.6976-11.0592-35.2256 1.6384-47.08352l78.39744-73.09312c16.85504-13.74208 35.2256-11.0592 47.06304 1.6384zm-15.50336 737.1776c-12.6976 11.85792-31.1296 11.22304-47.06304-1.6384l-70.9632-80.34304c-11.85792-12.6976-11.0592-35.2256 1.6384-47.08352s35.2256-11.0592 47.08352 1.6384l73.07264 78.37696c9.728 14.68416 8.94976 37.21216-3.76832 49.0496zm-596.31616-645.8368c-12.6976 11.85792-31.1296 11.20256-47.06304-1.6384l-73.09312-78.37696c-11.85792-12.6976-11.0592-35.2256 1.6384-47.08352s35.2256-11.0592 47.08352 1.6384l73.09312 78.37696c11.776 14.7456 11.0592 35.2256-1.6384 47.08352zm-138.24 614.05184c-11.85792-12.71808-11.0592-35.2256 1.6384-47.08352l78.37696-73.09312c12.6976-11.83744 33.1776-11.12064 47.08352 1.6384 11.83744 12.71808 11.0592 35.2256-1.6384 47.104l-78.39744 73.07264c-16.7936 11.71456-35.2256 11.0592-47.06304-1.6384z" fill="#ffb948"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="128" height="128"><path d="M578.256332 591.814252v-82.970701m0 95.54202a12.655127 12.655127.0 01-12.571318-12.571319v-82.970701a12.571318 12.571318.0 1125.142636.0v82.970701a12.571318 12.571318.0 01-12.571318 12.571319z" fill="#f89b1b"/><path d="M598.873294 479.342858a36.959676 36.959676.0 01-27.573092-61.59946 52.380493 52.380493.0 1062.521357 36.540632 36.875867 36.875867.0 01-34.948265 25.058828zm204.0744-109.035234v-82.970701m0 95.542019a12.571318 12.571318.0 01-12.571318-12.571318v-82.970701a12.571318 12.571318.0 1125.142636.0v82.970701a12.571318 12.571318.0 01-12.571318 12.571318z" fill="#f89b1b"/><path d="M823.9837 257.83623a36.959676 36.959676.0 01-27.6569-61.515651 52.129067 52.129067.0 1064.616576 50.285273 53.050963 53.050963.0 00-2.011411-14.163685A36.875867 36.875867.0 01823.9837 257.83623z" fill="#f89b1b"/><path d="M803.282929 328.822274a59.588049 59.588049.0 0159.588049 59.588048V785.66398H743.694881V388.410322a59.588049 59.588049.0 0159.588048-59.588048zM581.776301 551.16699a143.145411 143.145411.0 01143.145411 143.145411V837.54162H438.463272V694.312401A143.145411 143.145411.0 01581.776301 551.16699z" fill="#612273"/><path d="M600.968514 198.667225l-49.111951-4.693292a8.380879 8.380879.0 01-7.039938-5.196145l-17.599845-42.658674a8.380879 8.380879.0 00-15.672244.0l-17.432228 42.658674a8.380879 8.380879.0 01-7.039938 5.196145l-49.11195 4.693292a8.380879 8.380879.0 00-4.777101 14.750347l36.959676 32.51781a8.380879 8.380879.0 012.681881 8.380878l-11.06276 45.67579a8.380879 8.380879.0 0012.487509 9.302776L515.232123 285.074086a8.380879 8.380879.0 018.380879.0l40.982497 24.136931a8.380879 8.380879.0 0012.571319-9.302776l-10.978952-45.675789a8.380879 8.380879.0 012.681882-8.380879L606.08085 213.417572a8.380879 8.380879.0 00-5.028528-14.750347z" fill="#fed150"/><path d="M470.897274 246.77347l1.927602-8.380879a8.380879 8.380879.0 00-2.681881-8.380879l-35.032074-30.506399a8.380879 8.380879.0 00-1.927602 13.912259l36.959676 32.51781a6.788512 6.788512.0 01.754279.838088zM603.98563 199.589122l-34.948265 30.674016a8.380879 8.380879.0 00-2.681881 8.380879l1.927602 8.380879a6.788512 6.788512.0 01.754279-.838088l37.043485-32.769236a8.380879 8.380879.0 00-2.09522-13.82845zm-28.578797 92.189667a8.380879 8.380879.0 01-10.643716 1.759985l-40.982498-24.053123a8.380879 8.380879.0 00-8.380879.0L474.249625 293.454965a8.380879 8.380879.0 01-10.643716-1.676176l-1.927602 8.380879a8.380879 8.380879.0 0012.487509 9.302775l41.066307-24.388357a8.380879 8.380879.0 018.380879.0l40.982497 24.136931a8.380879 8.380879.0 0012.571319-9.302776z" fill="#fed150" opacity=".5"/><path d="M434.608068 426.543321l-28.159753-2.681881a4.86091 4.86091.0 01-4.022822-3.017117l-10.057054-24.388357a4.86091 4.86091.0 00-8.967541.0l-9.973245 24.388357a4.693292 4.693292.0 01-4.022822 3.017117l-28.159753 2.681881a4.86091 4.86091.0 00-2.76569 8.380879l21.203623 18.605551a4.944719 4.944719.0 011.592367 4.777101L354.654484 484.455194a4.86091 4.86091.0 007.123747 5.363762l23.466461-13.82845a5.196145 5.196145.0 014.944718.0l23.466461 13.82845a4.86091 4.86091.0 007.123747-5.363762l-6.285659-26.064533a4.86091 4.86091.0 011.508558-4.777101l21.203624-18.605551a4.86091 4.86091.0 00-2.849499-8.380879z" fill="#fed150"/><path d="M360.102055 454.032604l1.173323-4.609484a4.944719 4.944719.0 00-1.592367-5.112336l-20.0303-17.683654a4.944719 4.944719.0 00-1.173323 8.380879l21.203623 18.605551zm76.182189-26.98643-20.0303 17.26461a4.86091 4.86091.0 00-1.508559 4.777101l1.173323 4.693292v-.502852l21.203624-18.605551a4.86091 4.86091.0 00-.838088-7.6266zM419.94153 479.845711a4.777101 4.777101.0 01-6.034233 1.005705l-23.46646-13.82845a5.196145 5.196145.0 00-4.944719.0l-23.466461 13.82845a4.777101 4.777101.0 01-6.034233-1.005705l-1.089514 4.609483a4.86091 4.86091.0 007.123747 5.363762l23.466461-13.82845a5.196145 5.196145.0 014.944719.0l23.46646 13.82845a4.86091 4.86091.0 007.123747-5.363762z" fill="#fed150" opacity=".5"/><path d="M635.413926 803.68287A414.685886 414.685886.0 01459.41547 18.729756 9.805628 9.805628.0 00453.967898.124205a513.831683 513.831683.0 10567.050264 607.027056 9.805628 9.805628.0 00-18.186507-6.704704A414.350651 414.350651.0 01635.413926 803.68287z" fill="#fed150" p-id="22313"/><path d="M50.931434 292.868303a460.110249 460.110249.0 00275.311871 359.455895 413.847798 413.847798.0 01133.339782-633.594442A9.805628 9.805628.0 00453.967898.124205 513.915492 513.915492.0 0050.931434 292.868303z" fill="#fed150" opacity=".4" p-id="22314"/><path d="M1006.016389 597.261823A513.664065 513.664065.0 013.914704 475.320036c-.670471 10.308481-1.257132 20.616962-1.257132 31.093061a513.831683 513.831683.0 001018.36059 100.570546 9.805628 9.805628.0 00-15.001773-9.72182zM231.539373 332.258434c0 7.458982.67047 14.917964 1.257132 22.293138A414.769695 414.769695.0 01459.583087 18.729756 9.805628 9.805628.0 00453.967898.124205a505.869848 505.869848.0 00-94.620122 20.868388A413.177328 413.177328.0 00231.539373 332.258434z" fill="#fed150" opacity=".5" p-id="22315"/><path d="M715.032275 421.514794m17.683654.0h141.217809q17.683654.0 17.683655 17.683654v-.083809q0 17.683654-17.683655 17.683655H732.715929q-17.683654.0-17.683654-17.683655v.083809q0-17.683654 17.683654-17.683654z" fill="#eb3d72" p-id="22316"/><path d="M205.139605 319.603307c4.441866-6.872321 22.041711-45.340555-11.817039-67.047031s-51.626214 8.380879-51.626214 8.380879a25.142637 25.142637.0 1042.742482 27.489282s2.179029 5.950424-6.537085 18.437934-25.142637 12.236083-43.077718.754279-47.01673-65.789899-.67047-138.787354c1.592367-2.514264 3.352352-4.693292 5.028527-7.039938a26.818812 26.818812.0 00-23.047417-2.430455 33.523515 33.523515.0 00-18.689359 17.683654c-31.260678 64.36515-22.628373 127.724594 21.203623 155.884347 48.944333 31.093061 82.048804-6.453277 86.49067-13.325597zM734.224488 931.491272c6.453277-2.681881 37.713955-21.45505 24.304548-53.386198s-40.647262-19.35983-40.647262-19.35983a21.874094 21.874094.0 1016.761757 40.312027s-1.340941 5.363762-13.577023 9.973246S697.264812 905.259122 689.889638 888.497364s-1.340941-69.561295 67.047031-98.894371c2.346646-1.005705 4.693292-1.676176 7.039938-2.514263a31.931148 31.931148.0 00-1.927602-3.352352 28.578797 28.578797.0 00-38.635851-7.542791c-51.87764 30.841634-74.422204 81.545951-57.325212 122.277023 19.778874 46.262451 61.59946 35.786353 68.136546 33.020662zM279.813236 802.844782c-5.950424-3.687587-39.390131-18.354125-57.660447 11.146569s7.794217 44.334849 7.794217 44.334849a21.874094 21.874094.0 1023.047417-36.875867s5.112336-2.011411 16.007479 5.279954 10.811334 21.622667 1.173323 37.211102-55.984271 41.317733-119.511333 2.430455c-2.179029-1.340941-4.106631-2.849499-6.118041-4.274249a22.376947 22.376947.0 00-1.676176 3.51997 28.662606 28.662606.0 0016.342714 36.037779c55.146183 24.388357 109.538087 13.409406 132.920739-24.136931 26.399768-42.9101-6.369468-70.902235-12.319892-74.673631zM431.00429 694.312401h302.298301m0 20.952197H431.00429a20.952197 20.952197.0 010-41.904394h302.298301a20.952197 20.952197.0 010 41.904394z" fill="#eb3d72" p-id="22317"/><path d="M255.760113 683.082023m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22318"/><path d="M356.246851 840.977781m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22319"/><path d="M54.870447 472.135302m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22320"/><path d="M561.410765 873.914635m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".5" p-id="22321"/><path d="M445.167976 825.13792m-19.862683.0a19.862683 19.862683.0 1039.725365.0 19.862683 19.862683.0 10-39.725365.0z" fill="#fed150" opacity=".5" p-id="22322"/><path d="M149.406761 689.786726m-19.862683.0a19.862683 19.862683.0 1039.725365.0 19.862683 19.862683.0 10-39.725365.0z" fill="#fed150" opacity=".5" p-id="22323"/><path d="M132.225959 633.299603m-18.940786.0a18.940786 18.940786.0 1037.881572.0 18.940786 18.940786.0 10-37.881572.0z" fill="#fed150" opacity=".4" p-id="22324"/><path d="M475.339139 906.935297m-18.940786.0a18.940786 18.940786.0 1037.881573.0 18.940786 18.940786.0 10-37.881573.0z" fill="#fed150" opacity=".4" p-id="22325"/></svg>
+<span>主题</span></li></ol></li></ol></aside><main class="main full-width"><div class=breadcrumb><li><a href=/>首页</a></li><li><a href=/p/>Drafts</a></li><li class=active><a href=/p/2023/05/91571391/>ohmyzsh</a></li></div><article class=main-article><header class="article-header not-page"><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"/><use href="#gentle-wave" x="48" y="3"/><use href="#gentle-wave" x="48" y="5"/><use href="#gentle-wave" x="48" y="7"/></g></svg></section><style>.main-hero-waves-area{--icat-post-waveone:rgba(17, 17, 17, 0.78);--icat-post-wavetwo:rgba(17, 17, 17, 0.51);--icat-post-wavethree:rgba(17, 17, 17, 0.212);--icat-post-wavefour:rgb(17, 17, 17);opacity:1; [data-scheme="light"] & { --icat-post-waveone: rgba(255, 255, 255, 0.741); --icat-post-wavetwo: rgba(255, 255, 255, 0.51); --icat-post-wavethree: rgba(255, 255, 255, 0.212); --icat-post-wavefour: #fff; }}.waves-area{width:100%;position:absolute;left:0;bottom:0;z-index:5}.waves-area .waves-svg{width:100%;height:8rem}@media screen and (max-width:768px){.waves-area .waves-svg{height:40px;min-height:40px}}.waves-area .waves-svg .parallax>use{-webkit-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-moz-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-o-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-ms-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite}.waves-area .waves-svg .parallax>use:nth-child(1){-webkit-animation-delay:-2s;-moz-animation-delay:-2s;-o-animation-delay:-2s;-ms-animation-delay:-2s;animation-delay:-2s;-webkit-animation-duration:7s;-moz-animation-duration:7s;-o-animation-duration:7s;-ms-animation-duration:7s;animation-duration:7s;fill:var(--icat-post-waveone)}.waves-area .waves-svg .parallax>use:nth-child(2){-webkit-animation-delay:-3s;-moz-animation-delay:-3s;-o-animation-delay:-3s;-ms-animation-delay:-3s;animation-delay:-3s;-webkit-animation-duration:10s;-moz-animation-duration:10s;-o-animation-duration:10s;-ms-animation-duration:10s;animation-duration:10s;fill:var(--icat-post-wavetwo)}.waves-area .waves-svg .parallax>use:nth-child(3){-webkit-animation-delay:-4s;-moz-animation-delay:-4s;-o-animation-delay:-4s;-ms-animation-delay:-4s;animation-delay:-4s;-webkit-animation-duration:13s;-moz-animation-duration:13s;-o-animation-duration:13s;-ms-animation-duration:13s;animation-duration:13s;fill:var(--icat-post-wavethree)}.waves-area .waves-svg .parallax>use:nth-child(4){-webkit-animation-delay:-5s;-moz-animation-delay:-5s;-o-animation-delay:-5s;-ms-animation-delay:-5s;animation-delay:-5s;-webkit-animation-duration:20s;-moz-animation-duration:20s;-o-animation-duration:20s;-ms-animation-duration:20s;animation-duration:20s;fill:var(--icat-post-wavefour)}@keyframes move-forever{0%{transform:translate3d(-90px,0,0)}100%{transform:translate3d(85px,0,0)}}</style><div class=article-details><header class=article-category><a href=/categories/linux/>Linux</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/2023/05/91571391/>ohmyzsh</a></h2><h3 class=article-subtitle>Linux相关</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>2023年5月3日</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 6 分钟</time></div></footer></div></header><section class=article-content><h1 id=mac安装和配置ohmyzsh><a href=#mac%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%aeohmyzsh class=header-anchor>#</a>
+mac安装和配置ohmyzsh</h1><ul><li><p>1、ohmyzsh项目默认目录为 ～/.ohmyzsh ，github项目地址为：https://github.com/ohmyzsh/ohmyzsh</p></li><li><p>2、配置文件默认目录为 ～/.zshrc my zshrc save in github</p></li><li><p>3、安装ohmyzsh</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-0-1><a class=lnlinks href=#hl-0-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sh -c <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class=k>)</span><span class=s2>&#34;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>4、安装插件</p><ul><li><p><a class=link href=https://github.com/zsh-users/zsh-syntax-highlighting target=_blank rel=noopener>https://github.com/zsh-users/zsh-syntax-highlighting
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span>
+</a>~/.oh-my-zsh/custom/plugins</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-1-1><a class=lnlinks href=#hl-1-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class=si>${</span><span class=nv>ZSH_CUSTOM</span><span class=k>:-</span><span class=p>~/.oh-my-zsh/custom</span><span class=si>}</span>/plugins/zsh-syntax-highlighting
+</span></span></code></pre></td></tr></table></div></div></li><li><p><a class=link href=https://github.com/zsh-users/zsh-autosuggestions target=_blank rel=noopener>https://github.com/zsh-users/zsh-autosuggestions
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span>
+</a>~/.oh-my-zsh/custom/plugins</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-2-1><a class=lnlinks href=#hl-2-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git clone https://github.com/zsh-users/zsh-autosuggestions <span class=si>${</span><span class=nv>ZSH_CUSTOM</span><span class=k>:-</span><span class=p>~/.oh-my-zsh/custom</span><span class=si>}</span>/plugins/zsh-autosuggestions
+</span></span></code></pre></td></tr></table></div></div></li><li><p><a class=link href=https://github.com/wting/autojump target=_blank rel=noopener>https://github.com/wting/autojump
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-3-1><a class=lnlinks href=#hl-3-1>1</a>
+</span><span class=lnt id=hl-3-2><a class=lnlinks href=#hl-3-2>2</a>
+</span><span class=lnt id=hl-3-3><a class=lnlinks href=#hl-3-3>3</a>
+</span><span class=lnt id=hl-3-4><a class=lnlinks href=#hl-3-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>brew install autojump
+</span></span><span class=line><span class=cl><span class=c1># 直接配置在zshrc中的plugins里</span>
+</span></span><span class=line><span class=cl><span class=c1># zsh直接通过.oh-my-zsh/plugins/autojump/autojump.plugin.zsh寻找autojump安装路径</span>
+</span></span><span class=line><span class=cl><span class=c1># 从而实现功能</span>
+</span></span></code></pre></td></tr></table></div></div></li><li></li></ul></li><li><p>4、安装字体 font-hack-nerd-font</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-4-1><a class=lnlinks href=#hl-4-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>brew install font-hack-nerd-font --cask
+</span></span></code></pre></td></tr></table></div></div></li><li><p>5、安装主题 dracula <a class=link href=https://draculatheme.com/zsh target=_blank rel=noopener>https://draculatheme.com/zsh
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><ul><li><p>软连接方式</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-5-1><a class=lnlinks href=#hl-5-1>1</a>
+</span><span class=lnt id=hl-5-2><a class=lnlinks href=#hl-5-2>2</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>git clone https://github.com/dracula/zsh.git
+</span></span><span class=line><span class=cl>ln -s $DRACULA_THEME/dracula.zsh-theme $OH_MY_ZSH/themes/dracula.zsh-theme
+</span></span></code></pre></td></tr></table></div></div></li><li><p>文件方式</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-6-1><a class=lnlinks href=#hl-6-1>1</a>
+</span><span class=lnt id=hl-6-2><a class=lnlinks href=#hl-6-2>2</a>
+</span><span class=lnt id=hl-6-3><a class=lnlinks href=#hl-6-3>3</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ini data-lang=ini><span class=line><span class=cl><span class=na>1、Download using the GitHub .zip download option and unzip them.</span>
+</span></span><span class=line><span class=cl><span class=na>2、Move dracula.zsh-theme file to oh-my-zsh&#39;s theme folder: oh-my-zsh/themes/dracula.zsh-theme.</span>
+</span></span><span class=line><span class=cl><span class=na>3、Move /lib to oh-my-zsh&#39;s theme folder: oh-my-zsh/themes/lib.</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>我自己修改的 放在 ~/.oh-my-zsh/custom/themes/mydracula.zsh-theme</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-7-1><a class=lnlinks href=#hl-7-1>  1</a>
+</span><span class=lnt id=hl-7-2><a class=lnlinks href=#hl-7-2>  2</a>
+</span><span class=lnt id=hl-7-3><a class=lnlinks href=#hl-7-3>  3</a>
+</span><span class=lnt id=hl-7-4><a class=lnlinks href=#hl-7-4>  4</a>
+</span><span class=lnt id=hl-7-5><a class=lnlinks href=#hl-7-5>  5</a>
+</span><span class=lnt id=hl-7-6><a class=lnlinks href=#hl-7-6>  6</a>
+</span><span class=lnt id=hl-7-7><a class=lnlinks href=#hl-7-7>  7</a>
+</span><span class=lnt id=hl-7-8><a class=lnlinks href=#hl-7-8>  8</a>
+</span><span class=lnt id=hl-7-9><a class=lnlinks href=#hl-7-9>  9</a>
+</span><span class=lnt id=hl-7-10><a class=lnlinks href=#hl-7-10> 10</a>
+</span><span class=lnt id=hl-7-11><a class=lnlinks href=#hl-7-11> 11</a>
+</span><span class=lnt id=hl-7-12><a class=lnlinks href=#hl-7-12> 12</a>
+</span><span class=lnt id=hl-7-13><a class=lnlinks href=#hl-7-13> 13</a>
+</span><span class=lnt id=hl-7-14><a class=lnlinks href=#hl-7-14> 14</a>
+</span><span class=lnt id=hl-7-15><a class=lnlinks href=#hl-7-15> 15</a>
+</span><span class=lnt id=hl-7-16><a class=lnlinks href=#hl-7-16> 16</a>
+</span><span class=lnt id=hl-7-17><a class=lnlinks href=#hl-7-17> 17</a>
+</span><span class=lnt id=hl-7-18><a class=lnlinks href=#hl-7-18> 18</a>
+</span><span class=lnt id=hl-7-19><a class=lnlinks href=#hl-7-19> 19</a>
+</span><span class=lnt id=hl-7-20><a class=lnlinks href=#hl-7-20> 20</a>
+</span><span class=lnt id=hl-7-21><a class=lnlinks href=#hl-7-21> 21</a>
+</span><span class=lnt id=hl-7-22><a class=lnlinks href=#hl-7-22> 22</a>
+</span><span class=lnt id=hl-7-23><a class=lnlinks href=#hl-7-23> 23</a>
+</span><span class=lnt id=hl-7-24><a class=lnlinks href=#hl-7-24> 24</a>
+</span><span class=lnt id=hl-7-25><a class=lnlinks href=#hl-7-25> 25</a>
+</span><span class=lnt id=hl-7-26><a class=lnlinks href=#hl-7-26> 26</a>
+</span><span class=lnt id=hl-7-27><a class=lnlinks href=#hl-7-27> 27</a>
+</span><span class=lnt id=hl-7-28><a class=lnlinks href=#hl-7-28> 28</a>
+</span><span class=lnt id=hl-7-29><a class=lnlinks href=#hl-7-29> 29</a>
+</span><span class=lnt id=hl-7-30><a class=lnlinks href=#hl-7-30> 30</a>
+</span><span class=lnt id=hl-7-31><a class=lnlinks href=#hl-7-31> 31</a>
+</span><span class=lnt id=hl-7-32><a class=lnlinks href=#hl-7-32> 32</a>
+</span><span class=lnt id=hl-7-33><a class=lnlinks href=#hl-7-33> 33</a>
+</span><span class=lnt id=hl-7-34><a class=lnlinks href=#hl-7-34> 34</a>
+</span><span class=lnt id=hl-7-35><a class=lnlinks href=#hl-7-35> 35</a>
+</span><span class=lnt id=hl-7-36><a class=lnlinks href=#hl-7-36> 36</a>
+</span><span class=lnt id=hl-7-37><a class=lnlinks href=#hl-7-37> 37</a>
+</span><span class=lnt id=hl-7-38><a class=lnlinks href=#hl-7-38> 38</a>
+</span><span class=lnt id=hl-7-39><a class=lnlinks href=#hl-7-39> 39</a>
+</span><span class=lnt id=hl-7-40><a class=lnlinks href=#hl-7-40> 40</a>
+</span><span class=lnt id=hl-7-41><a class=lnlinks href=#hl-7-41> 41</a>
+</span><span class=lnt id=hl-7-42><a class=lnlinks href=#hl-7-42> 42</a>
+</span><span class=lnt id=hl-7-43><a class=lnlinks href=#hl-7-43> 43</a>
+</span><span class=lnt id=hl-7-44><a class=lnlinks href=#hl-7-44> 44</a>
+</span><span class=lnt id=hl-7-45><a class=lnlinks href=#hl-7-45> 45</a>
+</span><span class=lnt id=hl-7-46><a class=lnlinks href=#hl-7-46> 46</a>
+</span><span class=lnt id=hl-7-47><a class=lnlinks href=#hl-7-47> 47</a>
+</span><span class=lnt id=hl-7-48><a class=lnlinks href=#hl-7-48> 48</a>
+</span><span class=lnt id=hl-7-49><a class=lnlinks href=#hl-7-49> 49</a>
+</span><span class=lnt id=hl-7-50><a class=lnlinks href=#hl-7-50> 50</a>
+</span><span class=lnt id=hl-7-51><a class=lnlinks href=#hl-7-51> 51</a>
+</span><span class=lnt id=hl-7-52><a class=lnlinks href=#hl-7-52> 52</a>
+</span><span class=lnt id=hl-7-53><a class=lnlinks href=#hl-7-53> 53</a>
+</span><span class=lnt id=hl-7-54><a class=lnlinks href=#hl-7-54> 54</a>
+</span><span class=lnt id=hl-7-55><a class=lnlinks href=#hl-7-55> 55</a>
+</span><span class=lnt id=hl-7-56><a class=lnlinks href=#hl-7-56> 56</a>
+</span><span class=lnt id=hl-7-57><a class=lnlinks href=#hl-7-57> 57</a>
+</span><span class=lnt id=hl-7-58><a class=lnlinks href=#hl-7-58> 58</a>
+</span><span class=lnt id=hl-7-59><a class=lnlinks href=#hl-7-59> 59</a>
+</span><span class=lnt id=hl-7-60><a class=lnlinks href=#hl-7-60> 60</a>
+</span><span class=lnt id=hl-7-61><a class=lnlinks href=#hl-7-61> 61</a>
+</span><span class=lnt id=hl-7-62><a class=lnlinks href=#hl-7-62> 62</a>
+</span><span class=lnt id=hl-7-63><a class=lnlinks href=#hl-7-63> 63</a>
+</span><span class=lnt id=hl-7-64><a class=lnlinks href=#hl-7-64> 64</a>
+</span><span class=lnt id=hl-7-65><a class=lnlinks href=#hl-7-65> 65</a>
+</span><span class=lnt id=hl-7-66><a class=lnlinks href=#hl-7-66> 66</a>
+</span><span class=lnt id=hl-7-67><a class=lnlinks href=#hl-7-67> 67</a>
+</span><span class=lnt id=hl-7-68><a class=lnlinks href=#hl-7-68> 68</a>
+</span><span class=lnt id=hl-7-69><a class=lnlinks href=#hl-7-69> 69</a>
+</span><span class=lnt id=hl-7-70><a class=lnlinks href=#hl-7-70> 70</a>
+</span><span class=lnt id=hl-7-71><a class=lnlinks href=#hl-7-71> 71</a>
+</span><span class=lnt id=hl-7-72><a class=lnlinks href=#hl-7-72> 72</a>
+</span><span class=lnt id=hl-7-73><a class=lnlinks href=#hl-7-73> 73</a>
+</span><span class=lnt id=hl-7-74><a class=lnlinks href=#hl-7-74> 74</a>
+</span><span class=lnt id=hl-7-75><a class=lnlinks href=#hl-7-75> 75</a>
+</span><span class=lnt id=hl-7-76><a class=lnlinks href=#hl-7-76> 76</a>
+</span><span class=lnt id=hl-7-77><a class=lnlinks href=#hl-7-77> 77</a>
+</span><span class=lnt id=hl-7-78><a class=lnlinks href=#hl-7-78> 78</a>
+</span><span class=lnt id=hl-7-79><a class=lnlinks href=#hl-7-79> 79</a>
+</span><span class=lnt id=hl-7-80><a class=lnlinks href=#hl-7-80> 80</a>
+</span><span class=lnt id=hl-7-81><a class=lnlinks href=#hl-7-81> 81</a>
+</span><span class=lnt id=hl-7-82><a class=lnlinks href=#hl-7-82> 82</a>
+</span><span class=lnt id=hl-7-83><a class=lnlinks href=#hl-7-83> 83</a>
+</span><span class=lnt id=hl-7-84><a class=lnlinks href=#hl-7-84> 84</a>
+</span><span class=lnt id=hl-7-85><a class=lnlinks href=#hl-7-85> 85</a>
+</span><span class=lnt id=hl-7-86><a class=lnlinks href=#hl-7-86> 86</a>
+</span><span class=lnt id=hl-7-87><a class=lnlinks href=#hl-7-87> 87</a>
+</span><span class=lnt id=hl-7-88><a class=lnlinks href=#hl-7-88> 88</a>
+</span><span class=lnt id=hl-7-89><a class=lnlinks href=#hl-7-89> 89</a>
+</span><span class=lnt id=hl-7-90><a class=lnlinks href=#hl-7-90> 90</a>
+</span><span class=lnt id=hl-7-91><a class=lnlinks href=#hl-7-91> 91</a>
+</span><span class=lnt id=hl-7-92><a class=lnlinks href=#hl-7-92> 92</a>
+</span><span class=lnt id=hl-7-93><a class=lnlinks href=#hl-7-93> 93</a>
+</span><span class=lnt id=hl-7-94><a class=lnlinks href=#hl-7-94> 94</a>
+</span><span class=lnt id=hl-7-95><a class=lnlinks href=#hl-7-95> 95</a>
+</span><span class=lnt id=hl-7-96><a class=lnlinks href=#hl-7-96> 96</a>
+</span><span class=lnt id=hl-7-97><a class=lnlinks href=#hl-7-97> 97</a>
+</span><span class=lnt id=hl-7-98><a class=lnlinks href=#hl-7-98> 98</a>
+</span><span class=lnt id=hl-7-99><a class=lnlinks href=#hl-7-99> 99</a>
+</span><span class=lnt id=hl-7-100><a class=lnlinks href=#hl-7-100>100</a>
+</span><span class=lnt id=hl-7-101><a class=lnlinks href=#hl-7-101>101</a>
+</span><span class=lnt id=hl-7-102><a class=lnlinks href=#hl-7-102>102</a>
+</span><span class=lnt id=hl-7-103><a class=lnlinks href=#hl-7-103>103</a>
+</span><span class=lnt id=hl-7-104><a class=lnlinks href=#hl-7-104>104</a>
+</span><span class=lnt id=hl-7-105><a class=lnlinks href=#hl-7-105>105</a>
+</span><span class=lnt id=hl-7-106><a class=lnlinks href=#hl-7-106>106</a>
+</span><span class=lnt id=hl-7-107><a class=lnlinks href=#hl-7-107>107</a>
+</span><span class=lnt id=hl-7-108><a class=lnlinks href=#hl-7-108>108</a>
+</span><span class=lnt id=hl-7-109><a class=lnlinks href=#hl-7-109>109</a>
+</span><span class=lnt id=hl-7-110><a class=lnlinks href=#hl-7-110>110</a>
+</span><span class=lnt id=hl-7-111><a class=lnlinks href=#hl-7-111>111</a>
+</span><span class=lnt id=hl-7-112><a class=lnlinks href=#hl-7-112>112</a>
+</span><span class=lnt id=hl-7-113><a class=lnlinks href=#hl-7-113>113</a>
+</span><span class=lnt id=hl-7-114><a class=lnlinks href=#hl-7-114>114</a>
+</span><span class=lnt id=hl-7-115><a class=lnlinks href=#hl-7-115>115</a>
+</span><span class=lnt id=hl-7-116><a class=lnlinks href=#hl-7-116>116</a>
+</span><span class=lnt id=hl-7-117><a class=lnlinks href=#hl-7-117>117</a>
+</span><span class=lnt id=hl-7-118><a class=lnlinks href=#hl-7-118>118</a>
+</span><span class=lnt id=hl-7-119><a class=lnlinks href=#hl-7-119>119</a>
+</span><span class=lnt id=hl-7-120><a class=lnlinks href=#hl-7-120>120</a>
+</span><span class=lnt id=hl-7-121><a class=lnlinks href=#hl-7-121>121</a>
+</span><span class=lnt id=hl-7-122><a class=lnlinks href=#hl-7-122>122</a>
+</span><span class=lnt id=hl-7-123><a class=lnlinks href=#hl-7-123>123</a>
+</span><span class=lnt id=hl-7-124><a class=lnlinks href=#hl-7-124>124</a>
+</span><span class=lnt id=hl-7-125><a class=lnlinks href=#hl-7-125>125</a>
+</span><span class=lnt id=hl-7-126><a class=lnlinks href=#hl-7-126>126</a>
+</span><span class=lnt id=hl-7-127><a class=lnlinks href=#hl-7-127>127</a>
+</span><span class=lnt id=hl-7-128><a class=lnlinks href=#hl-7-128>128</a>
+</span><span class=lnt id=hl-7-129><a class=lnlinks href=#hl-7-129>129</a>
+</span><span class=lnt id=hl-7-130><a class=lnlinks href=#hl-7-130>130</a>
+</span><span class=lnt id=hl-7-131><a class=lnlinks href=#hl-7-131>131</a>
+</span><span class=lnt id=hl-7-132><a class=lnlinks href=#hl-7-132>132</a>
+</span><span class=lnt id=hl-7-133><a class=lnlinks href=#hl-7-133>133</a>
+</span><span class=lnt id=hl-7-134><a class=lnlinks href=#hl-7-134>134</a>
+</span><span class=lnt id=hl-7-135><a class=lnlinks href=#hl-7-135>135</a>
+</span><span class=lnt id=hl-7-136><a class=lnlinks href=#hl-7-136>136</a>
+</span><span class=lnt id=hl-7-137><a class=lnlinks href=#hl-7-137>137</a>
+</span><span class=lnt id=hl-7-138><a class=lnlinks href=#hl-7-138>138</a>
+</span><span class=lnt id=hl-7-139><a class=lnlinks href=#hl-7-139>139</a>
+</span><span class=lnt id=hl-7-140><a class=lnlinks href=#hl-7-140>140</a>
+</span><span class=lnt id=hl-7-141><a class=lnlinks href=#hl-7-141>141</a>
+</span><span class=lnt id=hl-7-142><a class=lnlinks href=#hl-7-142>142</a>
+</span><span class=lnt id=hl-7-143><a class=lnlinks href=#hl-7-143>143</a>
+</span><span class=lnt id=hl-7-144><a class=lnlinks href=#hl-7-144>144</a>
+</span><span class=lnt id=hl-7-145><a class=lnlinks href=#hl-7-145>145</a>
+</span><span class=lnt id=hl-7-146><a class=lnlinks href=#hl-7-146>146</a>
+</span><span class=lnt id=hl-7-147><a class=lnlinks href=#hl-7-147>147</a>
+</span><span class=lnt id=hl-7-148><a class=lnlinks href=#hl-7-148>148</a>
+</span><span class=lnt id=hl-7-149><a class=lnlinks href=#hl-7-149>149</a>
+</span><span class=lnt id=hl-7-150><a class=lnlinks href=#hl-7-150>150</a>
+</span><span class=lnt id=hl-7-151><a class=lnlinks href=#hl-7-151>151</a>
+</span><span class=lnt id=hl-7-152><a class=lnlinks href=#hl-7-152>152</a>
+</span><span class=lnt id=hl-7-153><a class=lnlinks href=#hl-7-153>153</a>
+</span><span class=lnt id=hl-7-154><a class=lnlinks href=#hl-7-154>154</a>
+</span><span class=lnt id=hl-7-155><a class=lnlinks href=#hl-7-155>155</a>
+</span><span class=lnt id=hl-7-156><a class=lnlinks href=#hl-7-156>156</a>
+</span><span class=lnt id=hl-7-157><a class=lnlinks href=#hl-7-157>157</a>
+</span><span class=lnt id=hl-7-158><a class=lnlinks href=#hl-7-158>158</a>
+</span><span class=lnt id=hl-7-159><a class=lnlinks href=#hl-7-159>159</a>
+</span><span class=lnt id=hl-7-160><a class=lnlinks href=#hl-7-160>160</a>
+</span><span class=lnt id=hl-7-161><a class=lnlinks href=#hl-7-161>161</a>
+</span><span class=lnt id=hl-7-162><a class=lnlinks href=#hl-7-162>162</a>
+</span><span class=lnt id=hl-7-163><a class=lnlinks href=#hl-7-163>163</a>
+</span><span class=lnt id=hl-7-164><a class=lnlinks href=#hl-7-164>164</a>
+</span><span class=lnt id=hl-7-165><a class=lnlinks href=#hl-7-165>165</a>
+</span><span class=lnt id=hl-7-166><a class=lnlinks href=#hl-7-166>166</a>
+</span><span class=lnt id=hl-7-167><a class=lnlinks href=#hl-7-167>167</a>
+</span><span class=lnt id=hl-7-168><a class=lnlinks href=#hl-7-168>168</a>
+</span><span class=lnt id=hl-7-169><a class=lnlinks href=#hl-7-169>169</a>
+</span><span class=lnt id=hl-7-170><a class=lnlinks href=#hl-7-170>170</a>
+</span><span class=lnt id=hl-7-171><a class=lnlinks href=#hl-7-171>171</a>
+</span><span class=lnt id=hl-7-172><a class=lnlinks href=#hl-7-172>172</a>
+</span><span class=lnt id=hl-7-173><a class=lnlinks href=#hl-7-173>173</a>
+</span><span class=lnt id=hl-7-174><a class=lnlinks href=#hl-7-174>174</a>
+</span><span class=lnt id=hl-7-175><a class=lnlinks href=#hl-7-175>175</a>
+</span><span class=lnt id=hl-7-176><a class=lnlinks href=#hl-7-176>176</a>
+</span><span class=lnt id=hl-7-177><a class=lnlinks href=#hl-7-177>177</a>
+</span><span class=lnt id=hl-7-178><a class=lnlinks href=#hl-7-178>178</a>
+</span><span class=lnt id=hl-7-179><a class=lnlinks href=#hl-7-179>179</a>
+</span><span class=lnt id=hl-7-180><a class=lnlinks href=#hl-7-180>180</a>
+</span><span class=lnt id=hl-7-181><a class=lnlinks href=#hl-7-181>181</a>
+</span><span class=lnt id=hl-7-182><a class=lnlinks href=#hl-7-182>182</a>
+</span><span class=lnt id=hl-7-183><a class=lnlinks href=#hl-7-183>183</a>
+</span><span class=lnt id=hl-7-184><a class=lnlinks href=#hl-7-184>184</a>
+</span><span class=lnt id=hl-7-185><a class=lnlinks href=#hl-7-185>185</a>
+</span><span class=lnt id=hl-7-186><a class=lnlinks href=#hl-7-186>186</a>
+</span><span class=lnt id=hl-7-187><a class=lnlinks href=#hl-7-187>187</a>
+</span><span class=lnt id=hl-7-188><a class=lnlinks href=#hl-7-188>188</a>
+</span><span class=lnt id=hl-7-189><a class=lnlinks href=#hl-7-189>189</a>
+</span><span class=lnt id=hl-7-190><a class=lnlinks href=#hl-7-190>190</a>
+</span><span class=lnt id=hl-7-191><a class=lnlinks href=#hl-7-191>191</a>
+</span><span class=lnt id=hl-7-192><a class=lnlinks href=#hl-7-192>192</a>
+</span><span class=lnt id=hl-7-193><a class=lnlinks href=#hl-7-193>193</a>
+</span><span class=lnt id=hl-7-194><a class=lnlinks href=#hl-7-194>194</a>
+</span><span class=lnt id=hl-7-195><a class=lnlinks href=#hl-7-195>195</a>
+</span><span class=lnt id=hl-7-196><a class=lnlinks href=#hl-7-196>196</a>
+</span><span class=lnt id=hl-7-197><a class=lnlinks href=#hl-7-197>197</a>
+</span><span class=lnt id=hl-7-198><a class=lnlinks href=#hl-7-198>198</a>
+</span><span class=lnt id=hl-7-199><a class=lnlinks href=#hl-7-199>199</a>
+</span><span class=lnt id=hl-7-200><a class=lnlinks href=#hl-7-200>200</a>
+</span><span class=lnt id=hl-7-201><a class=lnlinks href=#hl-7-201>201</a>
+</span><span class=lnt id=hl-7-202><a class=lnlinks href=#hl-7-202>202</a>
+</span><span class=lnt id=hl-7-203><a class=lnlinks href=#hl-7-203>203</a>
+</span><span class=lnt id=hl-7-204><a class=lnlinks href=#hl-7-204>204</a>
+</span><span class=lnt id=hl-7-205><a class=lnlinks href=#hl-7-205>205</a>
+</span><span class=lnt id=hl-7-206><a class=lnlinks href=#hl-7-206>206</a>
+</span><span class=lnt id=hl-7-207><a class=lnlinks href=#hl-7-207>207</a>
+</span><span class=lnt id=hl-7-208><a class=lnlinks href=#hl-7-208>208</a>
+</span><span class=lnt id=hl-7-209><a class=lnlinks href=#hl-7-209>209</a>
+</span><span class=lnt id=hl-7-210><a class=lnlinks href=#hl-7-210>210</a>
+</span><span class=lnt id=hl-7-211><a class=lnlinks href=#hl-7-211>211</a>
+</span><span class=lnt id=hl-7-212><a class=lnlinks href=#hl-7-212>212</a>
+</span><span class=lnt id=hl-7-213><a class=lnlinks href=#hl-7-213>213</a>
+</span><span class=lnt id=hl-7-214><a class=lnlinks href=#hl-7-214>214</a>
+</span><span class=lnt id=hl-7-215><a class=lnlinks href=#hl-7-215>215</a>
+</span><span class=lnt id=hl-7-216><a class=lnlinks href=#hl-7-216>216</a>
+</span><span class=lnt id=hl-7-217><a class=lnlinks href=#hl-7-217>217</a>
+</span><span class=lnt id=hl-7-218><a class=lnlinks href=#hl-7-218>218</a>
+</span><span class=lnt id=hl-7-219><a class=lnlinks href=#hl-7-219>219</a>
+</span><span class=lnt id=hl-7-220><a class=lnlinks href=#hl-7-220>220</a>
+</span><span class=lnt id=hl-7-221><a class=lnlinks href=#hl-7-221>221</a>
+</span><span class=lnt id=hl-7-222><a class=lnlinks href=#hl-7-222>222</a>
+</span><span class=lnt id=hl-7-223><a class=lnlinks href=#hl-7-223>223</a>
+</span><span class=lnt id=hl-7-224><a class=lnlinks href=#hl-7-224>224</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=c1># -*- mode: sh; -*-</span>
+</span></span><span class=line><span class=cl><span class=c1># vim: set ft=sh :</span>
+</span></span><span class=line><span class=cl><span class=c1># Dracula Theme v1.2.5</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/dracula/dracula-theme</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># Copyright 2019, All rights reserved</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># Code licensed under the MIT license</span>
+</span></span><span class=line><span class=cl><span class=c1># http://zenorocha.mit-license.org</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># @author Zeno Rocha &lt;hi@zenorocha.com&gt;</span>
+</span></span><span class=line><span class=cl><span class=c1># @maintainer Avalon Williams &lt;avalonwilliams@protonmail.com&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Initialization {{{</span>
+</span></span><span class=line><span class=cl><span class=n>source</span> <span class=o>$</span><span class=p>{</span><span class=mi>0</span><span class=p>:</span><span class=n>A</span><span class=p>:</span><span class=n>h</span><span class=p>}</span><span class=o>/</span><span class=n>lib</span><span class=o>/</span><span class=n>async</span><span class=o>.</span><span class=n>zsh</span>
+</span></span><span class=line><span class=cl><span class=n>autoload</span> <span class=o>-</span><span class=n>Uz</span> <span class=n>add</span><span class=o>-</span><span class=n>zsh</span><span class=o>-</span><span class=n>hook</span>
+</span></span><span class=line><span class=cl><span class=n>setopt</span> <span class=n>PROMPT_SUBST</span>
+</span></span><span class=line><span class=cl><span class=n>async_init</span>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>=</span><span class=s1>&#39;&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Options {{{</span>
+</span></span><span class=line><span class=cl><span class=c1># Set to 0 to disable the git status</span>
+</span></span><span class=line><span class=cl><span class=n>DRACULA_DISPLAY_GIT</span><span class=o>=$</span><span class=p>{</span><span class=n>DRACULA_DISPLAY_GIT</span><span class=p>:</span><span class=o>-</span><span class=mi>1</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Set to 1 to show the date</span>
+</span></span><span class=line><span class=cl><span class=n>DRACULA_DISPLAY_TIME</span><span class=o>=$</span><span class=p>{</span><span class=n>DRACULA_DISPLAY_TIME</span><span class=p>:</span><span class=o>-</span><span class=mi>1</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Set to 1 to show the &#39;context&#39; segment</span>
+</span></span><span class=line><span class=cl><span class=n>DRACULA_DISPLAY_CONTEXT</span><span class=o>=$</span><span class=p>{</span><span class=n>DRACULA_DISPLAY_CONTEXT</span><span class=p>:</span><span class=o>-</span><span class=mi>0</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Changes the arrow icon</span>
+</span></span><span class=line><span class=cl><span class=n>DRACULA_ARROW_ICON</span><span class=o>=$</span><span class=p>{</span><span class=n>DRACULA_ARROW_ICON</span><span class=p>:</span><span class=o>-</span><span class=err>➜</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Set to 1 to use an new line for commands</span>
+</span></span><span class=line><span class=cl><span class=n>DRACULA_DISPLAY_NEW_LINE</span><span class=o>=$</span><span class=p>{</span><span class=n>DRACULA_DISPLAY_NEW_LINE</span><span class=p>:</span><span class=o>-</span><span class=mi>0</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># function to detect if git has support for --no-optional-locks</span>
+</span></span><span class=line><span class=cl><span class=n>dracula_test_git_optional_lock</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>local</span> <span class=n>git_version</span><span class=o>=$</span><span class=p>{</span><span class=n>DEBUG_OVERRIDE_V</span><span class=p>:</span><span class=o>-</span><span class=s2>&#34;$(git version | cut -d&#39; &#39; -f3)&#34;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=n>local</span> <span class=n>git_version</span><span class=o>=</span><span class=s2>&#34;$(git version | cut -d&#39; &#39; -f3)&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=c1># test for git versions &lt; 2.14.0</span>
+</span></span><span class=line><span class=cl>	<span class=k>case</span> <span class=s2>&#34;$git_version&#34;</span> <span class=ow>in</span>
+</span></span><span class=line><span class=cl>		<span class=p>[</span><span class=mi>0</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>.*</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>			<span class=k>return</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>			<span class=p>;;</span>
+</span></span><span class=line><span class=cl>		<span class=mf>2.</span><span class=p>[</span><span class=mi>0</span><span class=o>-</span><span class=mi>9</span><span class=p>]</span><span class=o>.*</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>			<span class=k>return</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>			<span class=p>;;</span>
+</span></span><span class=line><span class=cl>		<span class=mf>2.1</span><span class=p>[</span><span class=mi>0</span><span class=o>-</span><span class=mi>3</span><span class=p>]</span><span class=o>.*</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>			<span class=k>return</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>			<span class=p>;;</span>
+</span></span><span class=line><span class=cl>	<span class=n>esac</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=c1># if version &gt; 2.14.0 return true</span>
+</span></span><span class=line><span class=cl>	<span class=n>echo</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># use --no-optional-locks flag on git</span>
+</span></span><span class=line><span class=cl><span class=n>DRACULA_GIT_NOLOCK</span><span class=o>=$</span><span class=p>{</span><span class=n>DRACULA_GIT_NOLOCK</span><span class=p>:</span><span class=o>-$</span><span class=p>(</span><span class=n>dracula_test_git_optional_lock</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Status segment {{{</span>
+</span></span><span class=line><span class=cl><span class=c1># arrow is green if last command was successful, red if not, </span>
+</span></span><span class=line><span class=cl><span class=c1># turns yellow in vi command mode</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>((</span> <span class=o>!</span> <span class=n>DRACULA_DISPLAY_NEW_LINE</span> <span class=p>));</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>	<span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;%(1V:</span><span class=si>%F</span><span class=s1>{yellow}:%(?:</span><span class=si>%F</span><span class=s1>{green}:</span><span class=si>%F</span><span class=s1>{red}))${DRACULA_ARROW_ICON} &#39;</span>
+</span></span><span class=line><span class=cl><span class=n>fi</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Time segment {{{</span>
+</span></span><span class=line><span class=cl><span class=n>dracula_time_segment</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>((</span> <span class=n>DRACULA_DISPLAY_TIME</span> <span class=p>));</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=p>[[</span> <span class=o>-</span><span class=n>z</span> <span class=s2>&#34;$TIME_FORMAT&#34;</span> <span class=p>]];</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>			<span class=n>TIME_FORMAT</span><span class=o>=</span><span class=s2>&#34;%-H:%M:%S&#34;</span>
+</span></span><span class=line><span class=cl>			<span class=c1># check if locale uses AM and PM</span>
+</span></span><span class=line><span class=cl>			<span class=c1># if ! locale -ck LC_TIME | grep &#39;am_pm=&#34;;&#34;&#39; &gt; /dev/null; then</span>
+</span></span><span class=line><span class=cl>			<span class=c1># 	TIME_FORMAT=&#34;%-I:%M%p&#34;</span>
+</span></span><span class=line><span class=cl>			<span class=c1># fi</span>
+</span></span><span class=line><span class=cl>		<span class=n>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=nb>print</span> <span class=o>-</span><span class=n>P</span> <span class=s2>&#34;%D{$TIME_FORMAT} &#34;</span>
+</span></span><span class=line><span class=cl>	<span class=n>fi</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;</span><span class=si>%F</span><span class=s1>{green}%B$(dracula_time_segment)&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># User context segment {{{</span>
+</span></span><span class=line><span class=cl><span class=n>dracula_context</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>((</span> <span class=n>DRACULA_DISPLAY_CONTEXT</span> <span class=p>));</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=p>[[</span> <span class=o>-</span><span class=n>n</span> <span class=s2>&#34;${SSH_CONNECTION-}${SSH_CLIENT-}${SSH_TTY-}&#34;</span> <span class=p>]]</span> <span class=o>||</span> <span class=p>((</span> <span class=n>EUID</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>));</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=s1>&#39;%n@%m &#39;</span>
+</span></span><span class=line><span class=cl>		<span class=k>else</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=s1>&#39;%n &#39;</span>
+</span></span><span class=line><span class=cl>		<span class=n>fi</span>
+</span></span><span class=line><span class=cl>	<span class=n>fi</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;</span><span class=si>%F</span><span class=s1>{magenta}%B$(dracula_context)&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Directory segment {{{</span>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;</span><span class=si>%F</span><span class=s1>{blue}%B</span><span class=si>%c</span><span class=s1> &#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Custom variable {{{</span>
+</span></span><span class=line><span class=cl><span class=n>function</span> <span class=n>custom_variable_prompt</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>[[</span> <span class=o>-</span><span class=n>z</span> <span class=o>$</span><span class=n>DRACULA_CUSTOM_VARIABLE</span> <span class=p>]]</span> <span class=o>&amp;&amp;</span> <span class=k>return</span>
+</span></span><span class=line><span class=cl>	<span class=n>echo</span> <span class=s2>&#34;$FG[008]$DRACULA_CUSTOM_VARIABLE &#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;$(custom_variable_prompt)&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Async git segment {{{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>dracula_git_status</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>((</span> <span class=o>!</span> <span class=n>DRACULA_DISPLAY_GIT</span> <span class=p>))</span> <span class=o>&amp;&amp;</span> <span class=k>return</span>
+</span></span><span class=line><span class=cl>	<span class=n>cd</span> <span class=s2>&#34;$1&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>local</span> <span class=n>ref</span> <span class=n>branch</span> <span class=n>lockflag</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=p>((</span> <span class=n>DRACULA_GIT_NOLOCK</span> <span class=p>))</span> <span class=o>&amp;&amp;</span> <span class=n>lockflag</span><span class=o>=</span><span class=s2>&#34;--no-optional-locks&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>ref</span><span class=o>=$</span><span class=p>(</span><span class=o>=</span><span class=n>git</span> <span class=o>$</span><span class=n>lockflag</span> <span class=n>symbolic</span><span class=o>-</span><span class=n>ref</span> <span class=o>--</span><span class=n>quiet</span> <span class=n>HEAD</span> <span class=mi>2</span><span class=o>&gt;/</span><span class=n>tmp</span><span class=o>/</span><span class=n>git</span><span class=o>-</span><span class=n>errors</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=k>case</span> <span class=o>$</span><span class=err>?</span> <span class=ow>in</span>
+</span></span><span class=line><span class=cl>		<span class=mi>0</span><span class=p>)</span>   <span class=p>;;</span>
+</span></span><span class=line><span class=cl>		<span class=mi>128</span><span class=p>)</span> <span class=k>return</span> <span class=p>;;</span>
+</span></span><span class=line><span class=cl>		<span class=o>*</span><span class=p>)</span>   <span class=n>ref</span><span class=o>=$</span><span class=p>(</span><span class=o>=</span><span class=n>git</span> <span class=o>$</span><span class=n>lockflag</span> <span class=n>rev</span><span class=o>-</span><span class=n>parse</span> <span class=o>--</span><span class=n>short</span> <span class=n>HEAD</span> <span class=mi>2</span><span class=o>&gt;/</span><span class=n>tmp</span><span class=o>/</span><span class=n>git</span><span class=o>-</span><span class=n>errors</span><span class=p>)</span> <span class=o>||</span> <span class=k>return</span> <span class=p>;;</span>
+</span></span><span class=line><span class=cl>	<span class=n>esac</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>branch</span><span class=o>=$</span><span class=p>{</span><span class=n>ref</span><span class=c1>#refs/heads/}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>[[</span> <span class=o>-</span><span class=n>n</span> <span class=o>$</span><span class=n>branch</span> <span class=p>]];</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>		<span class=n>echo</span> <span class=o>-</span><span class=n>n</span> <span class=s2>&#34;${ZSH_THEME_GIT_PROMPT_PREFIX}${branch}&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=n>local</span> <span class=n>git_status</span> <span class=n>icon</span>
+</span></span><span class=line><span class=cl>		<span class=n>git_status</span><span class=o>=</span><span class=s2>&#34;$(LC_ALL=C =git $lockflag status 2&gt;&amp;1)&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=p>[[</span> <span class=s2>&#34;$git_status&#34;</span> <span class=o>=~</span> <span class=s1>&#39;new file:|deleted:|modified:|renamed:|Untracked files:&#39;</span> <span class=p>]];</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=o>-</span><span class=n>n</span> <span class=s2>&#34;$ZSH_THEME_GIT_PROMPT_DIRTY&#34;</span>
+</span></span><span class=line><span class=cl>		<span class=k>else</span>
+</span></span><span class=line><span class=cl>			<span class=n>echo</span> <span class=o>-</span><span class=n>n</span> <span class=s2>&#34;$ZSH_THEME_GIT_PROMPT_CLEAN&#34;</span>
+</span></span><span class=line><span class=cl>		<span class=n>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=n>echo</span> <span class=o>-</span><span class=n>n</span> <span class=s2>&#34;$ZSH_THEME_GIT_PROMPT_SUFFIX&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=n>fi</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>dracula_git_callback</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>DRACULA_GIT_STATUS</span><span class=o>=</span><span class=s2>&#34;$3&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=n>zle</span> <span class=o>&amp;&amp;</span> <span class=n>zle</span> <span class=n>reset</span><span class=o>-</span><span class=n>prompt</span>
+</span></span><span class=line><span class=cl>	<span class=n>async_stop_worker</span> <span class=n>dracula_git_worker</span> <span class=n>dracula_git_status</span> <span class=s2>&#34;$(pwd)&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>dracula_git_async</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>async_start_worker</span> <span class=n>dracula_git_worker</span> <span class=o>-</span><span class=n>n</span>
+</span></span><span class=line><span class=cl>	<span class=n>async_register_callback</span> <span class=n>dracula_git_worker</span> <span class=n>dracula_git_callback</span>
+</span></span><span class=line><span class=cl>	<span class=n>async_job</span> <span class=n>dracula_git_worker</span> <span class=n>dracula_git_status</span> <span class=s2>&#34;$(pwd)&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>add</span><span class=o>-</span><span class=n>zsh</span><span class=o>-</span><span class=n>hook</span> <span class=n>precmd</span> <span class=n>dracula_git_async</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;$DRACULA_GIT_STATUS&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>ZSH_THEME_GIT_PROMPT_CLEAN</span><span class=o>=</span><span class=s2>&#34;) </span><span class=si>%F</span><span class=s2>{green}%B✔ &#34;</span>
+</span></span><span class=line><span class=cl><span class=n>ZSH_THEME_GIT_PROMPT_DIRTY</span><span class=o>=</span><span class=s2>&#34;) </span><span class=si>%F</span><span class=s2>{yellow}%B✗ &#34;</span>
+</span></span><span class=line><span class=cl><span class=n>ZSH_THEME_GIT_PROMPT_PREFIX</span><span class=o>=</span><span class=s2>&#34;</span><span class=si>%F</span><span class=s2>{cyan}%B(&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>ZSH_THEME_GIT_PROMPT_SUFFIX</span><span class=o>=</span><span class=s2>&#34;</span><span class=si>%f</span><span class=s2>%b&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Linebreak {{{</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>((</span> <span class=n>DRACULA_DISPLAY_NEW_LINE</span> <span class=p>));</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>	<span class=n>PROMPT</span><span class=o>+=$</span><span class=s1>&#39;</span><span class=se>\n</span><span class=s1>&#39;</span>
+</span></span><span class=line><span class=cl>	<span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;%(1V:</span><span class=si>%F</span><span class=s1>{yellow}:%(?:</span><span class=si>%F</span><span class=s1>{green}:</span><span class=si>%F</span><span class=s1>{red}))${DRACULA_ARROW_ICON} &#39;</span>
+</span></span><span class=line><span class=cl><span class=n>fi</span>
+</span></span><span class=line><span class=cl><span class=c1># }}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># define widget without clobbering old definitions</span>
+</span></span><span class=line><span class=cl><span class=n>dracula_defwidget</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>local</span> <span class=n>fname</span><span class=o>=</span><span class=n>dracula</span><span class=o>-</span><span class=n>wrap</span><span class=o>-$</span><span class=mi>1</span>
+</span></span><span class=line><span class=cl>	<span class=n>local</span> <span class=n>prev</span><span class=o>=</span><span class=p>(</span><span class=o>$</span><span class=p>(</span><span class=n>zle</span> <span class=o>-</span><span class=n>l</span> <span class=o>-</span><span class=n>L</span> <span class=s2>&#34;$1&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>	<span class=n>local</span> <span class=n>oldfn</span><span class=o>=$</span><span class=p>{</span><span class=n>prev</span><span class=p>[</span><span class=mi>4</span><span class=p>]:</span><span class=o>-$</span><span class=mi>1</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=c1># if no existing zle functions, just define it normally</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>[[</span> <span class=o>-</span><span class=n>z</span> <span class=s2>&#34;$prev&#34;</span> <span class=p>]];</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>		<span class=n>zle</span> <span class=o>-</span><span class=n>N</span> <span class=o>$</span><span class=mi>1</span> <span class=o>$</span><span class=mi>2</span>
+</span></span><span class=line><span class=cl>		<span class=k>return</span>
+</span></span><span class=line><span class=cl>	<span class=n>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=c1># if already defined, return</span>
+</span></span><span class=line><span class=cl>	<span class=p>[[</span> <span class=s2>&#34;${prev[4]}&#34;</span> <span class=o>=</span> <span class=o>$</span><span class=n>fname</span> <span class=p>]]</span> <span class=o>&amp;&amp;</span> <span class=k>return</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>oldfn</span><span class=o>=$</span><span class=p>{</span><span class=n>prev</span><span class=p>[</span><span class=mi>4</span><span class=p>]:</span><span class=o>-$</span><span class=mi>1</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>zle</span> <span class=o>-</span><span class=n>N</span> <span class=n>dracula</span><span class=o>-</span><span class=n>old</span><span class=o>-$</span><span class=n>oldfn</span> <span class=o>$</span><span class=n>oldfn</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>eval</span> <span class=s2>&#34;$fname() { $2 </span><span class=se>\&#34;</span><span class=s2>\$@</span><span class=se>\&#34;</span><span class=s2>; zle dracula-old-$oldfn -- </span><span class=se>\&#34;</span><span class=s2>\$@</span><span class=se>\&#34;</span><span class=s2>; }&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>zle</span> <span class=o>-</span><span class=n>N</span> <span class=o>$</span><span class=mi>1</span> <span class=o>$</span><span class=n>fname</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># ensure vi mode is handled by prompt</span>
+</span></span><span class=line><span class=cl><span class=n>dracula_zle_update</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>[[</span> <span class=o>$</span><span class=n>KEYMAP</span> <span class=o>=</span> <span class=n>vicmd</span> <span class=p>]];</span> <span class=n>then</span>
+</span></span><span class=line><span class=cl>		<span class=n>psvar</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=o>=</span><span class=n>vicmd</span>
+</span></span><span class=line><span class=cl>	<span class=k>else</span>
+</span></span><span class=line><span class=cl>		<span class=n>psvar</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=o>=</span><span class=s1>&#39;&#39;</span>
+</span></span><span class=line><span class=cl>	<span class=n>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=n>zle</span> <span class=n>reset</span><span class=o>-</span><span class=n>prompt</span>
+</span></span><span class=line><span class=cl>	<span class=n>zle</span> <span class=o>-</span><span class=n>R</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>dracula_defwidget</span> <span class=n>zle</span><span class=o>-</span><span class=n>line</span><span class=o>-</span><span class=n>init</span> <span class=n>dracula_zle_update</span>
+</span></span><span class=line><span class=cl><span class=n>dracula_defwidget</span> <span class=n>zle</span><span class=o>-</span><span class=n>keymap</span><span class=o>-</span><span class=n>select</span> <span class=n>dracula_zle_update</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Ensure effects are reset</span>
+</span></span><span class=line><span class=cl><span class=n>PROMPT</span><span class=o>+=</span><span class=s1>&#39;</span><span class=si>%f</span><span class=s1>%b&#39;</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul></li><li><p>6、配置文件 ～/.zshrc</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-8-1><a class=lnlinks href=#hl-8-1>  1</a>
+</span><span class=lnt id=hl-8-2><a class=lnlinks href=#hl-8-2>  2</a>
+</span><span class=lnt id=hl-8-3><a class=lnlinks href=#hl-8-3>  3</a>
+</span><span class=lnt id=hl-8-4><a class=lnlinks href=#hl-8-4>  4</a>
+</span><span class=lnt id=hl-8-5><a class=lnlinks href=#hl-8-5>  5</a>
+</span><span class=lnt id=hl-8-6><a class=lnlinks href=#hl-8-6>  6</a>
+</span><span class=lnt id=hl-8-7><a class=lnlinks href=#hl-8-7>  7</a>
+</span><span class=lnt id=hl-8-8><a class=lnlinks href=#hl-8-8>  8</a>
+</span><span class=lnt id=hl-8-9><a class=lnlinks href=#hl-8-9>  9</a>
+</span><span class=lnt id=hl-8-10><a class=lnlinks href=#hl-8-10> 10</a>
+</span><span class=lnt id=hl-8-11><a class=lnlinks href=#hl-8-11> 11</a>
+</span><span class=lnt id=hl-8-12><a class=lnlinks href=#hl-8-12> 12</a>
+</span><span class=lnt id=hl-8-13><a class=lnlinks href=#hl-8-13> 13</a>
+</span><span class=lnt id=hl-8-14><a class=lnlinks href=#hl-8-14> 14</a>
+</span><span class=lnt id=hl-8-15><a class=lnlinks href=#hl-8-15> 15</a>
+</span><span class=lnt id=hl-8-16><a class=lnlinks href=#hl-8-16> 16</a>
+</span><span class=lnt id=hl-8-17><a class=lnlinks href=#hl-8-17> 17</a>
+</span><span class=lnt id=hl-8-18><a class=lnlinks href=#hl-8-18> 18</a>
+</span><span class=lnt id=hl-8-19><a class=lnlinks href=#hl-8-19> 19</a>
+</span><span class=lnt id=hl-8-20><a class=lnlinks href=#hl-8-20> 20</a>
+</span><span class=lnt id=hl-8-21><a class=lnlinks href=#hl-8-21> 21</a>
+</span><span class=lnt id=hl-8-22><a class=lnlinks href=#hl-8-22> 22</a>
+</span><span class=lnt id=hl-8-23><a class=lnlinks href=#hl-8-23> 23</a>
+</span><span class=lnt id=hl-8-24><a class=lnlinks href=#hl-8-24> 24</a>
+</span><span class=lnt id=hl-8-25><a class=lnlinks href=#hl-8-25> 25</a>
+</span><span class=lnt id=hl-8-26><a class=lnlinks href=#hl-8-26> 26</a>
+</span><span class=lnt id=hl-8-27><a class=lnlinks href=#hl-8-27> 27</a>
+</span><span class=lnt id=hl-8-28><a class=lnlinks href=#hl-8-28> 28</a>
+</span><span class=lnt id=hl-8-29><a class=lnlinks href=#hl-8-29> 29</a>
+</span><span class=lnt id=hl-8-30><a class=lnlinks href=#hl-8-30> 30</a>
+</span><span class=lnt id=hl-8-31><a class=lnlinks href=#hl-8-31> 31</a>
+</span><span class=lnt id=hl-8-32><a class=lnlinks href=#hl-8-32> 32</a>
+</span><span class=lnt id=hl-8-33><a class=lnlinks href=#hl-8-33> 33</a>
+</span><span class=lnt id=hl-8-34><a class=lnlinks href=#hl-8-34> 34</a>
+</span><span class=lnt id=hl-8-35><a class=lnlinks href=#hl-8-35> 35</a>
+</span><span class=lnt id=hl-8-36><a class=lnlinks href=#hl-8-36> 36</a>
+</span><span class=lnt id=hl-8-37><a class=lnlinks href=#hl-8-37> 37</a>
+</span><span class=lnt id=hl-8-38><a class=lnlinks href=#hl-8-38> 38</a>
+</span><span class=lnt id=hl-8-39><a class=lnlinks href=#hl-8-39> 39</a>
+</span><span class=lnt id=hl-8-40><a class=lnlinks href=#hl-8-40> 40</a>
+</span><span class=lnt id=hl-8-41><a class=lnlinks href=#hl-8-41> 41</a>
+</span><span class=lnt id=hl-8-42><a class=lnlinks href=#hl-8-42> 42</a>
+</span><span class=lnt id=hl-8-43><a class=lnlinks href=#hl-8-43> 43</a>
+</span><span class=lnt id=hl-8-44><a class=lnlinks href=#hl-8-44> 44</a>
+</span><span class=lnt id=hl-8-45><a class=lnlinks href=#hl-8-45> 45</a>
+</span><span class=lnt id=hl-8-46><a class=lnlinks href=#hl-8-46> 46</a>
+</span><span class=lnt id=hl-8-47><a class=lnlinks href=#hl-8-47> 47</a>
+</span><span class=lnt id=hl-8-48><a class=lnlinks href=#hl-8-48> 48</a>
+</span><span class=lnt id=hl-8-49><a class=lnlinks href=#hl-8-49> 49</a>
+</span><span class=lnt id=hl-8-50><a class=lnlinks href=#hl-8-50> 50</a>
+</span><span class=lnt id=hl-8-51><a class=lnlinks href=#hl-8-51> 51</a>
+</span><span class=lnt id=hl-8-52><a class=lnlinks href=#hl-8-52> 52</a>
+</span><span class=lnt id=hl-8-53><a class=lnlinks href=#hl-8-53> 53</a>
+</span><span class=lnt id=hl-8-54><a class=lnlinks href=#hl-8-54> 54</a>
+</span><span class=lnt id=hl-8-55><a class=lnlinks href=#hl-8-55> 55</a>
+</span><span class=lnt id=hl-8-56><a class=lnlinks href=#hl-8-56> 56</a>
+</span><span class=lnt id=hl-8-57><a class=lnlinks href=#hl-8-57> 57</a>
+</span><span class=lnt id=hl-8-58><a class=lnlinks href=#hl-8-58> 58</a>
+</span><span class=lnt id=hl-8-59><a class=lnlinks href=#hl-8-59> 59</a>
+</span><span class=lnt id=hl-8-60><a class=lnlinks href=#hl-8-60> 60</a>
+</span><span class=lnt id=hl-8-61><a class=lnlinks href=#hl-8-61> 61</a>
+</span><span class=lnt id=hl-8-62><a class=lnlinks href=#hl-8-62> 62</a>
+</span><span class=lnt id=hl-8-63><a class=lnlinks href=#hl-8-63> 63</a>
+</span><span class=lnt id=hl-8-64><a class=lnlinks href=#hl-8-64> 64</a>
+</span><span class=lnt id=hl-8-65><a class=lnlinks href=#hl-8-65> 65</a>
+</span><span class=lnt id=hl-8-66><a class=lnlinks href=#hl-8-66> 66</a>
+</span><span class=lnt id=hl-8-67><a class=lnlinks href=#hl-8-67> 67</a>
+</span><span class=lnt id=hl-8-68><a class=lnlinks href=#hl-8-68> 68</a>
+</span><span class=lnt id=hl-8-69><a class=lnlinks href=#hl-8-69> 69</a>
+</span><span class=lnt id=hl-8-70><a class=lnlinks href=#hl-8-70> 70</a>
+</span><span class=lnt id=hl-8-71><a class=lnlinks href=#hl-8-71> 71</a>
+</span><span class=lnt id=hl-8-72><a class=lnlinks href=#hl-8-72> 72</a>
+</span><span class=lnt id=hl-8-73><a class=lnlinks href=#hl-8-73> 73</a>
+</span><span class=lnt id=hl-8-74><a class=lnlinks href=#hl-8-74> 74</a>
+</span><span class=lnt id=hl-8-75><a class=lnlinks href=#hl-8-75> 75</a>
+</span><span class=lnt id=hl-8-76><a class=lnlinks href=#hl-8-76> 76</a>
+</span><span class=lnt id=hl-8-77><a class=lnlinks href=#hl-8-77> 77</a>
+</span><span class=lnt id=hl-8-78><a class=lnlinks href=#hl-8-78> 78</a>
+</span><span class=lnt id=hl-8-79><a class=lnlinks href=#hl-8-79> 79</a>
+</span><span class=lnt id=hl-8-80><a class=lnlinks href=#hl-8-80> 80</a>
+</span><span class=lnt id=hl-8-81><a class=lnlinks href=#hl-8-81> 81</a>
+</span><span class=lnt id=hl-8-82><a class=lnlinks href=#hl-8-82> 82</a>
+</span><span class=lnt id=hl-8-83><a class=lnlinks href=#hl-8-83> 83</a>
+</span><span class=lnt id=hl-8-84><a class=lnlinks href=#hl-8-84> 84</a>
+</span><span class=lnt id=hl-8-85><a class=lnlinks href=#hl-8-85> 85</a>
+</span><span class=lnt id=hl-8-86><a class=lnlinks href=#hl-8-86> 86</a>
+</span><span class=lnt id=hl-8-87><a class=lnlinks href=#hl-8-87> 87</a>
+</span><span class=lnt id=hl-8-88><a class=lnlinks href=#hl-8-88> 88</a>
+</span><span class=lnt id=hl-8-89><a class=lnlinks href=#hl-8-89> 89</a>
+</span><span class=lnt id=hl-8-90><a class=lnlinks href=#hl-8-90> 90</a>
+</span><span class=lnt id=hl-8-91><a class=lnlinks href=#hl-8-91> 91</a>
+</span><span class=lnt id=hl-8-92><a class=lnlinks href=#hl-8-92> 92</a>
+</span><span class=lnt id=hl-8-93><a class=lnlinks href=#hl-8-93> 93</a>
+</span><span class=lnt id=hl-8-94><a class=lnlinks href=#hl-8-94> 94</a>
+</span><span class=lnt id=hl-8-95><a class=lnlinks href=#hl-8-95> 95</a>
+</span><span class=lnt id=hl-8-96><a class=lnlinks href=#hl-8-96> 96</a>
+</span><span class=lnt id=hl-8-97><a class=lnlinks href=#hl-8-97> 97</a>
+</span><span class=lnt id=hl-8-98><a class=lnlinks href=#hl-8-98> 98</a>
+</span><span class=lnt id=hl-8-99><a class=lnlinks href=#hl-8-99> 99</a>
+</span><span class=lnt id=hl-8-100><a class=lnlinks href=#hl-8-100>100</a>
+</span><span class=lnt id=hl-8-101><a class=lnlinks href=#hl-8-101>101</a>
+</span><span class=lnt id=hl-8-102><a class=lnlinks href=#hl-8-102>102</a>
+</span><span class=lnt id=hl-8-103><a class=lnlinks href=#hl-8-103>103</a>
+</span><span class=lnt id=hl-8-104><a class=lnlinks href=#hl-8-104>104</a>
+</span><span class=lnt id=hl-8-105><a class=lnlinks href=#hl-8-105>105</a>
+</span><span class=lnt id=hl-8-106><a class=lnlinks href=#hl-8-106>106</a>
+</span><span class=lnt id=hl-8-107><a class=lnlinks href=#hl-8-107>107</a>
+</span><span class=lnt id=hl-8-108><a class=lnlinks href=#hl-8-108>108</a>
+</span><span class=lnt id=hl-8-109><a class=lnlinks href=#hl-8-109>109</a>
+</span><span class=lnt id=hl-8-110><a class=lnlinks href=#hl-8-110>110</a>
+</span><span class=lnt id=hl-8-111><a class=lnlinks href=#hl-8-111>111</a>
+</span><span class=lnt id=hl-8-112><a class=lnlinks href=#hl-8-112>112</a>
+</span><span class=lnt id=hl-8-113><a class=lnlinks href=#hl-8-113>113</a>
+</span><span class=lnt id=hl-8-114><a class=lnlinks href=#hl-8-114>114</a>
+</span><span class=lnt id=hl-8-115><a class=lnlinks href=#hl-8-115>115</a>
+</span><span class=lnt id=hl-8-116><a class=lnlinks href=#hl-8-116>116</a>
+</span><span class=lnt id=hl-8-117><a class=lnlinks href=#hl-8-117>117</a>
+</span><span class=lnt id=hl-8-118><a class=lnlinks href=#hl-8-118>118</a>
+</span><span class=lnt id=hl-8-119><a class=lnlinks href=#hl-8-119>119</a>
+</span><span class=lnt id=hl-8-120><a class=lnlinks href=#hl-8-120>120</a>
+</span><span class=lnt id=hl-8-121><a class=lnlinks href=#hl-8-121>121</a>
+</span><span class=lnt id=hl-8-122><a class=lnlinks href=#hl-8-122>122</a>
+</span><span class=lnt id=hl-8-123><a class=lnlinks href=#hl-8-123>123</a>
+</span><span class=lnt id=hl-8-124><a class=lnlinks href=#hl-8-124>124</a>
+</span><span class=lnt id=hl-8-125><a class=lnlinks href=#hl-8-125>125</a>
+</span><span class=lnt id=hl-8-126><a class=lnlinks href=#hl-8-126>126</a>
+</span><span class=lnt id=hl-8-127><a class=lnlinks href=#hl-8-127>127</a>
+</span><span class=lnt id=hl-8-128><a class=lnlinks href=#hl-8-128>128</a>
+</span><span class=lnt id=hl-8-129><a class=lnlinks href=#hl-8-129>129</a>
+</span><span class=lnt id=hl-8-130><a class=lnlinks href=#hl-8-130>130</a>
+</span><span class=lnt id=hl-8-131><a class=lnlinks href=#hl-8-131>131</a>
+</span><span class=lnt id=hl-8-132><a class=lnlinks href=#hl-8-132>132</a>
+</span><span class=lnt id=hl-8-133><a class=lnlinks href=#hl-8-133>133</a>
+</span><span class=lnt id=hl-8-134><a class=lnlinks href=#hl-8-134>134</a>
+</span><span class=lnt id=hl-8-135><a class=lnlinks href=#hl-8-135>135</a>
+</span><span class=lnt id=hl-8-136><a class=lnlinks href=#hl-8-136>136</a>
+</span><span class=lnt id=hl-8-137><a class=lnlinks href=#hl-8-137>137</a>
+</span><span class=lnt id=hl-8-138><a class=lnlinks href=#hl-8-138>138</a>
+</span><span class=lnt id=hl-8-139><a class=lnlinks href=#hl-8-139>139</a>
+</span><span class=lnt id=hl-8-140><a class=lnlinks href=#hl-8-140>140</a>
+</span><span class=lnt id=hl-8-141><a class=lnlinks href=#hl-8-141>141</a>
+</span><span class=lnt id=hl-8-142><a class=lnlinks href=#hl-8-142>142</a>
+</span><span class=lnt id=hl-8-143><a class=lnlinks href=#hl-8-143>143</a>
+</span><span class=lnt id=hl-8-144><a class=lnlinks href=#hl-8-144>144</a>
+</span><span class=lnt id=hl-8-145><a class=lnlinks href=#hl-8-145>145</a>
+</span><span class=lnt id=hl-8-146><a class=lnlinks href=#hl-8-146>146</a>
+</span><span class=lnt id=hl-8-147><a class=lnlinks href=#hl-8-147>147</a>
+</span><span class=lnt id=hl-8-148><a class=lnlinks href=#hl-8-148>148</a>
+</span><span class=lnt id=hl-8-149><a class=lnlinks href=#hl-8-149>149</a>
+</span><span class=lnt id=hl-8-150><a class=lnlinks href=#hl-8-150>150</a>
+</span><span class=lnt id=hl-8-151><a class=lnlinks href=#hl-8-151>151</a>
+</span><span class=lnt id=hl-8-152><a class=lnlinks href=#hl-8-152>152</a>
+</span><span class=lnt id=hl-8-153><a class=lnlinks href=#hl-8-153>153</a>
+</span><span class=lnt id=hl-8-154><a class=lnlinks href=#hl-8-154>154</a>
+</span><span class=lnt id=hl-8-155><a class=lnlinks href=#hl-8-155>155</a>
+</span><span class=lnt id=hl-8-156><a class=lnlinks href=#hl-8-156>156</a>
+</span><span class=lnt id=hl-8-157><a class=lnlinks href=#hl-8-157>157</a>
+</span><span class=lnt id=hl-8-158><a class=lnlinks href=#hl-8-158>158</a>
+</span><span class=lnt id=hl-8-159><a class=lnlinks href=#hl-8-159>159</a>
+</span><span class=lnt id=hl-8-160><a class=lnlinks href=#hl-8-160>160</a>
+</span><span class=lnt id=hl-8-161><a class=lnlinks href=#hl-8-161>161</a>
+</span><span class=lnt id=hl-8-162><a class=lnlinks href=#hl-8-162>162</a>
+</span><span class=lnt id=hl-8-163><a class=lnlinks href=#hl-8-163>163</a>
+</span><span class=lnt id=hl-8-164><a class=lnlinks href=#hl-8-164>164</a>
+</span><span class=lnt id=hl-8-165><a class=lnlinks href=#hl-8-165>165</a>
+</span><span class=lnt id=hl-8-166><a class=lnlinks href=#hl-8-166>166</a>
+</span><span class=lnt id=hl-8-167><a class=lnlinks href=#hl-8-167>167</a>
+</span><span class=lnt id=hl-8-168><a class=lnlinks href=#hl-8-168>168</a>
+</span><span class=lnt id=hl-8-169><a class=lnlinks href=#hl-8-169>169</a>
+</span><span class=lnt id=hl-8-170><a class=lnlinks href=#hl-8-170>170</a>
+</span><span class=lnt id=hl-8-171><a class=lnlinks href=#hl-8-171>171</a>
+</span><span class=lnt id=hl-8-172><a class=lnlinks href=#hl-8-172>172</a>
+</span><span class=lnt id=hl-8-173><a class=lnlinks href=#hl-8-173>173</a>
+</span><span class=lnt id=hl-8-174><a class=lnlinks href=#hl-8-174>174</a>
+</span><span class=lnt id=hl-8-175><a class=lnlinks href=#hl-8-175>175</a>
+</span><span class=lnt id=hl-8-176><a class=lnlinks href=#hl-8-176>176</a>
+</span><span class=lnt id=hl-8-177><a class=lnlinks href=#hl-8-177>177</a>
+</span><span class=lnt id=hl-8-178><a class=lnlinks href=#hl-8-178>178</a>
+</span><span class=lnt id=hl-8-179><a class=lnlinks href=#hl-8-179>179</a>
+</span><span class=lnt id=hl-8-180><a class=lnlinks href=#hl-8-180>180</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># If you come from bash you might have to change your $PATH.</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span><span class=nv>$HOME</span>/bin:/usr/local/bin:<span class=nv>$PATH</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Path to your oh-my-zsh installation.</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>ZSH</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/.oh-my-zsh&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Set name of the theme to load --- if set to &#34;random&#34;, it will</span>
+</span></span><span class=line><span class=cl><span class=c1># load a random theme each time oh-my-zsh is loaded, in which case,</span>
+</span></span><span class=line><span class=cl><span class=c1># to know which specific one was loaded, run: echo $RANDOM_THEME</span>
+</span></span><span class=line><span class=cl><span class=c1># See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</span>
+</span></span><span class=line><span class=cl><span class=c1>#ZSH_THEME=&#34;agnoster&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># ZSH_THEME=&#34;dracula&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>ZSH_THEME</span><span class=o>=</span><span class=s2>&#34;mydracula&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1>#ZSH_THEME=&#34;random&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Set list of themes to pick from when loading at random</span>
+</span></span><span class=line><span class=cl><span class=c1># Setting this variable when ZSH_THEME=random will cause zsh to load</span>
+</span></span><span class=line><span class=cl><span class=c1># a theme from this variable instead of looking in $ZSH/themes/</span>
+</span></span><span class=line><span class=cl><span class=c1># If set to an empty array, this variable will have no effect.</span>
+</span></span><span class=line><span class=cl><span class=c1># ZSH_THEME_RANDOM_CANDIDATES=( &#34;robbyrussell&#34; &#34;agnoster&#34; )</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to use case-sensitive completion.</span>
+</span></span><span class=line><span class=cl><span class=c1># CASE_SENSITIVE=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to use hyphen-insensitive completion.</span>
+</span></span><span class=line><span class=cl><span class=c1># Case-sensitive completion must be off. _ and - will be interchangeable.</span>
+</span></span><span class=line><span class=cl><span class=c1># HYPHEN_INSENSITIVE=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment one of the following lines to change the auto-update behavior</span>
+</span></span><span class=line><span class=cl><span class=c1># zstyle &#39;:omz:update&#39; mode disabled  # disable automatic updates</span>
+</span></span><span class=line><span class=cl><span class=c1># zstyle &#39;:omz:update&#39; mode auto      # update automatically without asking</span>
+</span></span><span class=line><span class=cl><span class=c1># zstyle &#39;:omz:update&#39; mode reminder  # just remind me to update when it&#39;s time</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to change how often to auto-update (in days).</span>
+</span></span><span class=line><span class=cl><span class=c1># zstyle &#39;:omz:update&#39; frequency 13</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line if pasting URLs and other text is messed up.</span>
+</span></span><span class=line><span class=cl><span class=c1># DISABLE_MAGIC_FUNCTIONS=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to disable colors in ls.</span>
+</span></span><span class=line><span class=cl><span class=c1># DISABLE_LS_COLORS=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to disable auto-setting terminal title.</span>
+</span></span><span class=line><span class=cl><span class=c1># DISABLE_AUTO_TITLE=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to enable command auto-correction.</span>
+</span></span><span class=line><span class=cl><span class=c1># ENABLE_CORRECTION=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line to display red dots whilst waiting for completion.</span>
+</span></span><span class=line><span class=cl><span class=c1># You can also set it to another string to have that shown instead of the default red dots.</span>
+</span></span><span class=line><span class=cl><span class=c1># e.g. COMPLETION_WAITING_DOTS=&#34;%F{yellow}waiting...%f&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Caution: this setting can cause issues with multiline prompts in zsh &lt; 5.7.1 (see #5765)</span>
+</span></span><span class=line><span class=cl><span class=c1># COMPLETION_WAITING_DOTS=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line if you want to disable marking untracked files</span>
+</span></span><span class=line><span class=cl><span class=c1># under VCS as dirty. This makes repository status check for large repositories</span>
+</span></span><span class=line><span class=cl><span class=c1># much, much faster.</span>
+</span></span><span class=line><span class=cl><span class=c1># DISABLE_UNTRACKED_FILES_DIRTY=&#34;true&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Uncomment the following line if you want to change the command execution time</span>
+</span></span><span class=line><span class=cl><span class=c1># stamp shown in the history command output.</span>
+</span></span><span class=line><span class=cl><span class=c1># You can set one of the optional three formats:</span>
+</span></span><span class=line><span class=cl><span class=c1># &#34;mm/dd/yyyy&#34;|&#34;dd.mm.yyyy&#34;|&#34;yyyy-mm-dd&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># or set a custom format using the strftime function format specifications,</span>
+</span></span><span class=line><span class=cl><span class=c1># see &#39;man strftime&#39; for details.</span>
+</span></span><span class=line><span class=cl><span class=nv>HIST_STAMPS</span><span class=o>=</span><span class=s2>&#34;yyyy-mm-dd&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Would you like to use another custom folder than $ZSH/custom?</span>
+</span></span><span class=line><span class=cl><span class=c1># ZSH_CUSTOM=/path/to/new-custom-folder</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Which plugins would you like to load?</span>
+</span></span><span class=line><span class=cl><span class=c1># Standard plugins can be found in $ZSH/plugins/</span>
+</span></span><span class=line><span class=cl><span class=c1># Custom plugins may be added to $ZSH_CUSTOM/plugins/</span>
+</span></span><span class=line><span class=cl><span class=c1># Example format: plugins=(rails git textmate ruby lighthouse)</span>
+</span></span><span class=line><span class=cl><span class=c1># Add wisely, as too many plugins slow down shell startup.</span>
+</span></span><span class=line><span class=cl><span class=c1># zsh-syntax-highlighting:~/.oh-my-zsh/custom/plugins,https://github.com/zsh-users/zsh-syntax-highlighting</span>
+</span></span><span class=line><span class=cl><span class=c1># zsh-autosuggestions:~/.oh-my-zsh/custom/plugins,https://github.com/zsh-users/zsh-autosuggestions</span>
+</span></span><span class=line><span class=cl><span class=nv>plugins</span><span class=o>=(</span>
+</span></span><span class=line><span class=cl>           git 
+</span></span><span class=line><span class=cl>           colored-man-pages
+</span></span><span class=line><span class=cl>           <span class=c1># macos</span>
+</span></span><span class=line><span class=cl>           <span class=c1># 以下需要自己安装</span>
+</span></span><span class=line><span class=cl><span class=c1>#~/.oh-my-zsh/custom/plugins,https://github.com/zsh-users/zsh-syntax-highlighting</span>
+</span></span><span class=line><span class=cl>           zsh-syntax-highlighting
+</span></span><span class=line><span class=cl><span class=c1>#~/.oh-my-zsh/custom/plugins,https://github.com/zsh-users/zsh-autosuggestions</span>
+</span></span><span class=line><span class=cl>           zsh-autosuggestions
+</span></span><span class=line><span class=cl><span class=c1>#brew install autojump </span>
+</span></span><span class=line><span class=cl>           autojump
+</span></span><span class=line><span class=cl><span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>source</span> <span class=nv>$ZSH</span>/oh-my-zsh.sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># User configuration</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># export MANPATH=&#34;/usr/local/man:$MANPATH&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># You may need to manually set your language environment</span>
+</span></span><span class=line><span class=cl><span class=c1># export LANG=en_US.UTF-8</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Preferred editor for local and remote sessions</span>
+</span></span><span class=line><span class=cl><span class=c1># if [[ -n $SSH_CONNECTION ]]; then</span>
+</span></span><span class=line><span class=cl><span class=c1>#   export EDITOR=&#39;vim&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># else</span>
+</span></span><span class=line><span class=cl><span class=c1>#   export EDITOR=&#39;mvim&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1># fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Compilation flags</span>
+</span></span><span class=line><span class=cl><span class=c1># export ARCHFLAGS=&#34;-arch x86_64&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Set personal aliases, overriding those provided by oh-my-zsh libs,</span>
+</span></span><span class=line><span class=cl><span class=c1># plugins, and themes. Aliases can be placed here, though oh-my-zsh</span>
+</span></span><span class=line><span class=cl><span class=c1># users are encouraged to define aliases within the ZSH_CUSTOM folder.</span>
+</span></span><span class=line><span class=cl><span class=c1># For a full list of active aliases, run `alias`.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># Example aliases</span>
+</span></span><span class=line><span class=cl><span class=c1># alias zshconfig=&#34;mate ~/.zshrc&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># alias ohmyzsh=&#34;mate ~/.oh-my-zsh&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 去重 zsh_history</span>
+</span></span><span class=line><span class=cl><span class=c1>#setopt HIST_IGNORE_ALL_DUPS</span>
+</span></span><span class=line><span class=cl><span class=c1>#setopt HIST_IGNORE_SPACE</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># proxy</span>
+</span></span><span class=line><span class=cl><span class=c1>#alias setproxy=&#34;export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1>#alias unproxy=&#34;unset http_proxy;unset https_proxy;unset ALL_PROXY&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># git-proxy</span>
+</span></span><span class=line><span class=cl><span class=c1>#alias gitProxy=&#34;git config --global http.proxy socks5://127.0.0.1:7890;git config --global https.proxy socks5://127.0.0.1:7890&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1>#alias gitUnproxy=&#34;git config --global --unset http.proxy;git config --global --unset https.proxy&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 上面alias舍弃，代理用自定义函数方式去做</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># maven</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>MAVEN_HOME</span><span class=o>=</span>~/Data/Software/apache-maven-3.6.3
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span><span class=nv>$MAVEN_HOME</span>/bin:<span class=nv>$PATH</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># java</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>JAVA_HOME</span><span class=o>=</span>/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span><span class=nv>$JAVA_HOME</span>/bin:<span class=nv>$PATH</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># brew 清华镜像源</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>HOMEBREW_BREW_GIT_REMOTE</span><span class=o>=</span><span class=s2>&#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>HOMEBREW_CORE_GIT_REMOTE</span><span class=o>=</span><span class=s2>&#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>HOMEBREW_BOTTLE_DOMAIN</span><span class=o>=</span><span class=s2>&#34;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># brew命令</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>brewtree</span><span class=o>=</span><span class=s2>&#34;brew deps --tree --installed&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>brewlist</span><span class=o>=</span><span class=s2>&#34;brew leaves | xargs brew deps  --installed --for-each | sed &#39;s/^.*:/</span><span class=k>$(</span>tput setaf 4<span class=k>)</span><span class=s2>&amp;</span><span class=k>$(</span>tput sgr0<span class=k>)</span><span class=s2>/&#39;&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># java多版本</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/.jenv/bin:</span><span class=nv>$PATH</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>eval</span> <span class=s2>&#34;</span><span class=k>$(</span>jenv init -<span class=k>)</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># ls颜色和图标</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>ls</span><span class=o>=</span><span class=s2>&#34;lsd&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># alias ll=&#34;lsd -lh&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># alias l=&#34;lsd -alh&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># bat主题</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>BAT_THEME</span><span class=o>=</span><span class=s2>&#34;Dracula&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># python</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>python2</span><span class=o>=</span><span class=s1>&#39;/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7&#39;</span> 
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>python3</span><span class=o>=</span><span class=s1>&#39;/usr/local/opt/python@3.10/bin/python3&#39;</span> 
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>python</span><span class=o>=</span>python3
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>pips</span><span class=o>=</span><span class=s1>&#39;/usr/bin/pip3&#39;</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>pip</span><span class=o>=</span><span class=s1>&#39;/usr/local/opt/python@3.10/bin/pip3&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># top替代</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>btop</span><span class=o>=</span><span class=s2>&#34;bpytop&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># tree颜色</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>trees</span><span class=o>=</span><span class=s2>&#34;\tree -C&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 加载自定义函数</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>au</span><span class=o>=</span><span class=s2>&#34;autoload -U&#34;</span> 
+</span></span><span class=line><span class=cl><span class=nv>fpath</span><span class=o>+=</span>~/Data/Config/my-functions
+</span></span><span class=line><span class=cl>autoload -U setproxy unproxy getproxy
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 重载配置文件</span>
+</span></span><span class=line><span class=cl><span class=nb>alias</span> <span class=nv>rr</span><span class=o>=</span><span class=s2>&#34;echo &#39;reloading...&#39;&amp;&amp;source ~/.zshrc&#34;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>7、其他安装</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-9-1><a class=lnlinks href=#hl-9-1> 1</a>
+</span><span class=lnt id=hl-9-2><a class=lnlinks href=#hl-9-2> 2</a>
+</span><span class=lnt id=hl-9-3><a class=lnlinks href=#hl-9-3> 3</a>
+</span><span class=lnt id=hl-9-4><a class=lnlinks href=#hl-9-4> 4</a>
+</span><span class=lnt id=hl-9-5><a class=lnlinks href=#hl-9-5> 5</a>
+</span><span class=lnt id=hl-9-6><a class=lnlinks href=#hl-9-6> 6</a>
+</span><span class=lnt id=hl-9-7><a class=lnlinks href=#hl-9-7> 7</a>
+</span><span class=lnt id=hl-9-8><a class=lnlinks href=#hl-9-8> 8</a>
+</span><span class=lnt id=hl-9-9><a class=lnlinks href=#hl-9-9> 9</a>
+</span><span class=lnt id=hl-9-10><a class=lnlinks href=#hl-9-10>10</a>
+</span><span class=lnt id=hl-9-11><a class=lnlinks href=#hl-9-11>11</a>
+</span><span class=lnt id=hl-9-12><a class=lnlinks href=#hl-9-12>12</a>
+</span><span class=lnt id=hl-9-13><a class=lnlinks href=#hl-9-13>13</a>
+</span><span class=lnt id=hl-9-14><a class=lnlinks href=#hl-9-14>14</a>
+</span><span class=lnt id=hl-9-15><a class=lnlinks href=#hl-9-15>15</a>
+</span><span class=lnt id=hl-9-16><a class=lnlinks href=#hl-9-16>16</a>
+</span><span class=lnt id=hl-9-17><a class=lnlinks href=#hl-9-17>17</a>
+</span><span class=lnt id=hl-9-18><a class=lnlinks href=#hl-9-18>18</a>
+</span><span class=lnt id=hl-9-19><a class=lnlinks href=#hl-9-19>19</a>
+</span><span class=lnt id=hl-9-20><a class=lnlinks href=#hl-9-20>20</a>
+</span><span class=lnt id=hl-9-21><a class=lnlinks href=#hl-9-21>21</a>
+</span><span class=lnt id=hl-9-22><a class=lnlinks href=#hl-9-22>22</a>
+</span><span class=lnt id=hl-9-23><a class=lnlinks href=#hl-9-23>23</a>
+</span><span class=lnt id=hl-9-24><a class=lnlinks href=#hl-9-24>24</a>
+</span><span class=lnt id=hl-9-25><a class=lnlinks href=#hl-9-25>25</a>
+</span><span class=lnt id=hl-9-26><a class=lnlinks href=#hl-9-26>26</a>
+</span><span class=lnt id=hl-9-27><a class=lnlinks href=#hl-9-27>27</a>
+</span><span class=lnt id=hl-9-28><a class=lnlinks href=#hl-9-28>28</a>
+</span><span class=lnt id=hl-9-29><a class=lnlinks href=#hl-9-29>29</a>
+</span><span class=lnt id=hl-9-30><a class=lnlinks href=#hl-9-30>30</a>
+</span><span class=lnt id=hl-9-31><a class=lnlinks href=#hl-9-31>31</a>
+</span><span class=lnt id=hl-9-32><a class=lnlinks href=#hl-9-32>32</a>
+</span><span class=lnt id=hl-9-33><a class=lnlinks href=#hl-9-33>33</a>
+</span><span class=lnt id=hl-9-34><a class=lnlinks href=#hl-9-34>34</a>
+</span><span class=lnt id=hl-9-35><a class=lnlinks href=#hl-9-35>35</a>
+</span><span class=lnt id=hl-9-36><a class=lnlinks href=#hl-9-36>36</a>
+</span><span class=lnt id=hl-9-37><a class=lnlinks href=#hl-9-37>37</a>
+</span><span class=lnt id=hl-9-38><a class=lnlinks href=#hl-9-38>38</a>
+</span><span class=lnt id=hl-9-39><a class=lnlinks href=#hl-9-39>39</a>
+</span><span class=lnt id=hl-9-40><a class=lnlinks href=#hl-9-40>40</a>
+</span><span class=lnt id=hl-9-41><a class=lnlinks href=#hl-9-41>41</a>
+</span><span class=lnt id=hl-9-42><a class=lnlinks href=#hl-9-42>42</a>
+</span><span class=lnt id=hl-9-43><a class=lnlinks href=#hl-9-43>43</a>
+</span><span class=lnt id=hl-9-44><a class=lnlinks href=#hl-9-44>44</a>
+</span><span class=lnt id=hl-9-45><a class=lnlinks href=#hl-9-45>45</a>
+</span><span class=lnt id=hl-9-46><a class=lnlinks href=#hl-9-46>46</a>
+</span><span class=lnt id=hl-9-47><a class=lnlinks href=#hl-9-47>47</a>
+</span><span class=lnt id=hl-9-48><a class=lnlinks href=#hl-9-48>48</a>
+</span><span class=lnt id=hl-9-49><a class=lnlinks href=#hl-9-49>49</a>
+</span><span class=lnt id=hl-9-50><a class=lnlinks href=#hl-9-50>50</a>
+</span><span class=lnt id=hl-9-51><a class=lnlinks href=#hl-9-51>51</a>
+</span><span class=lnt id=hl-9-52><a class=lnlinks href=#hl-9-52>52</a>
+</span><span class=lnt id=hl-9-53><a class=lnlinks href=#hl-9-53>53</a>
+</span><span class=lnt id=hl-9-54><a class=lnlinks href=#hl-9-54>54</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># https://nodejs.org/en/</span>
+</span></span><span class=line><span class=cl>brew install node
+</span></span><span class=line><span class=cl><span class=c1># https://npmmirror.com 阿里镜像源 </span>
+</span></span><span class=line><span class=cl>npm install -g cnpm --registry<span class=o>=</span>https://registry.npmmirror.com
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/bchatard/alfred-jetbrains alfred流</span>
+</span></span><span class=line><span class=cl>npm install -g @bchatard/alfred-jetbrains
+</span></span><span class=line><span class=cl><span class=c1># https://picgo.github.io/PicGo-Core-Doc/zh/guide/ 图片上传</span>
+</span></span><span class=line><span class=cl>npm install picgo -g
+</span></span><span class=line><span class=cl><span class=c1># https://tldr.sh  替代man</span>
+</span></span><span class=line><span class=cl>npm install -g tldr
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/wting/autojump  j跳转</span>
+</span></span><span class=line><span class=cl>brew install autojump
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/sharkdp/bat  替代cat</span>
+</span></span><span class=line><span class=cl>brew install bat
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/aristocratos/bpytop 替代top</span>
+</span></span><span class=line><span class=cl>brew install bpytop
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/bcicen/ctop  容器资源利用情况</span>
+</span></span><span class=line><span class=cl>brew install ctop
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/muesli/duf  磁盘空间</span>
+</span></span><span class=line><span class=cl>brew install duf
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/nicolargo/glances  服务 代替top</span>
+</span></span><span class=line><span class=cl>brew install glances
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/hishamhm/htop 代替top</span>
+</span></span><span class=line><span class=cl>brew install htop
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/jenv/jenv java版本管理</span>
+</span></span><span class=line><span class=cl>brew install jenv
+</span></span><span class=line><span class=cl>jenv doctor
+</span></span><span class=line><span class=cl>jenv versions
+</span></span><span class=line><span class=cl>jenv <span class=nb>local</span> 11.0.2
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/Peltoche/lsd 代替ls</span>
+</span></span><span class=line><span class=cl>brew install lsd
+</span></span><span class=line><span class=cl><span class=c1># lsof</span>
+</span></span><span class=line><span class=cl>brew install lsof
+</span></span><span class=line><span class=cl><span class=c1># nginx</span>
+</span></span><span class=line><span class=cl>brew install nginx
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/tmux/tmux</span>
+</span></span><span class=line><span class=cl>brew install tmux
+</span></span><span class=line><span class=cl><span class=c1># tree</span>
+</span></span><span class=line><span class=cl>brew install tree
+</span></span><span class=line><span class=cl><span class=c1># 文件搜索 https://github.com/ggreer/the_silver_searcher </span>
+</span></span><span class=line><span class=cl><span class=c1># ag -g filename ./</span>
+</span></span><span class=line><span class=cl>brew install the_silver_searcher
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/junegunn/fzf 文件查询</span>
+</span></span><span class=line><span class=cl><span class=c1># 可以用来查找任何 列表 内容，文件、Git 分支、进程等 预览</span>
+</span></span><span class=line><span class=cl><span class=c1># fzf、ctrl+T：显示下拉列表； ctrl+R：显示历史命令； ctrl+g：回到首行；cd \ &lt;TAB&gt;：模糊匹配</span>
+</span></span><span class=line><span class=cl>brew install fzf
+</span></span><span class=line><span class=cl><span class=c1># 文件名搜索 https://github.com/sharkdp/fd</span>
+</span></span><span class=line><span class=cl>brew install fd
+</span></span><span class=line><span class=cl><span class=c1># markdown https://github.com/charmbracelet/glow</span>
+</span></span><span class=line><span class=cl>brew install glow
+</span></span><span class=line><span class=cl><span class=c1># https://github.com/skywind3000/z.lua</span>
+</span></span><span class=line><span class=cl><span class=c1># clone z.lua 到 ~/Data/Software/z.lua</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>brew install trash <span class=c1>#rm 废纸篓</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>8、自定义函数 ～/Data/Config/my-functions目录下</p><ul><li><p>getproxy</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-10-1><a class=lnlinks href=#hl-10-1>1</a>
+</span><span class=lnt id=hl-10-2><a class=lnlinks href=#hl-10-2>2</a>
+</span><span class=lnt id=hl-10-3><a class=lnlinks href=#hl-10-3>3</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;http=</span><span class=nv>$http_proxy</span><span class=s2>;https=</span><span class=nv>$https_proxy</span><span class=s2>;all=</span><span class=nv>$all_proxy</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;HTTP=</span><span class=nv>$HTTP_PROXY</span><span class=s2>;HTTPS=</span><span class=nv>$HTTPS_PROXY</span><span class=s2>;ALL=</span><span class=nv>$ALL_PROXY</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;gh=</span><span class=k>$(</span>git config --get http.proxy<span class=k>)</span><span class=s2>;ghs=</span><span class=k>$(</span>git config --get https.proxy<span class=k>)</span><span class=s2>;&#34;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>setproxy</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-11-1><a class=lnlinks href=#hl-11-1> 1</a>
+</span><span class=lnt id=hl-11-2><a class=lnlinks href=#hl-11-2> 2</a>
+</span><span class=lnt id=hl-11-3><a class=lnlinks href=#hl-11-3> 3</a>
+</span><span class=lnt id=hl-11-4><a class=lnlinks href=#hl-11-4> 4</a>
+</span><span class=lnt id=hl-11-5><a class=lnlinks href=#hl-11-5> 5</a>
+</span><span class=lnt id=hl-11-6><a class=lnlinks href=#hl-11-6> 6</a>
+</span><span class=lnt id=hl-11-7><a class=lnlinks href=#hl-11-7> 7</a>
+</span><span class=lnt id=hl-11-8><a class=lnlinks href=#hl-11-8> 8</a>
+</span><span class=lnt id=hl-11-9><a class=lnlinks href=#hl-11-9> 9</a>
+</span><span class=lnt id=hl-11-10><a class=lnlinks href=#hl-11-10>10</a>
+</span><span class=lnt id=hl-11-11><a class=lnlinks href=#hl-11-11>11</a>
+</span><span class=lnt id=hl-11-12><a class=lnlinks href=#hl-11-12>12</a>
+</span><span class=lnt id=hl-11-13><a class=lnlinks href=#hl-11-13>13</a>
+</span><span class=lnt id=hl-11-14><a class=lnlinks href=#hl-11-14>14</a>
+</span><span class=lnt id=hl-11-15><a class=lnlinks href=#hl-11-15>15</a>
+</span><span class=lnt id=hl-11-16><a class=lnlinks href=#hl-11-16>16</a>
+</span><span class=lnt id=hl-11-17><a class=lnlinks href=#hl-11-17>17</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> !<span class=o>=</span> <span class=s2>&#34;git&#34;</span> <span class=o>]</span> <span class=o>&amp;&amp;</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> !<span class=o>=</span> <span class=s2>&#34;ssh&#34;</span> <span class=o>]</span> <span class=o>&amp;&amp;</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> !<span class=o>=</span> <span class=s2>&#34;all&#34;</span> <span class=o>]</span> <span class=p>;</span> <span class=k>then</span> 
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> 输入不符合要求
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;git&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;all&#34;</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span> 
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;set git proxy ......&#34;</span>
+</span></span><span class=line><span class=cl>    git config --global http.proxy socks5://127.0.0.1:7890
+</span></span><span class=line><span class=cl>    git config --global https.proxy socks5://127.0.0.1:7890
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;ssh&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;all&#34;</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span> 
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;set ssh proxy ......&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>export</span> <span class=nv>https_proxy</span><span class=o>=</span>http://127.0.0.1:7890 
+</span></span><span class=line><span class=cl>    <span class=nb>export</span> <span class=nv>http_proxy</span><span class=o>=</span>http://127.0.0.1:7890 
+</span></span><span class=line><span class=cl>    <span class=nb>export</span> <span class=nv>all_proxy</span><span class=o>=</span>socks5://127.0.0.1:7890
+</span></span><span class=line><span class=cl>    <span class=nb>export</span> <span class=nv>HTTPS_PROXY</span><span class=o>=</span>http://127.0.0.1:7890
+</span></span><span class=line><span class=cl>    <span class=nb>export</span> <span class=nv>HTTP_PROXY</span><span class=o>=</span>http://127.0.0.1:7890
+</span></span><span class=line><span class=cl>    <span class=nb>export</span> <span class=nv>ALL_PROXY</span><span class=o>=</span>socks5://127.0.0.1:7890
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>unproxy</p></li><li><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-12-1><a class=lnlinks href=#hl-12-1> 1</a>
+</span><span class=lnt id=hl-12-2><a class=lnlinks href=#hl-12-2> 2</a>
+</span><span class=lnt id=hl-12-3><a class=lnlinks href=#hl-12-3> 3</a>
+</span><span class=lnt id=hl-12-4><a class=lnlinks href=#hl-12-4> 4</a>
+</span><span class=lnt id=hl-12-5><a class=lnlinks href=#hl-12-5> 5</a>
+</span><span class=lnt id=hl-12-6><a class=lnlinks href=#hl-12-6> 6</a>
+</span><span class=lnt id=hl-12-7><a class=lnlinks href=#hl-12-7> 7</a>
+</span><span class=lnt id=hl-12-8><a class=lnlinks href=#hl-12-8> 8</a>
+</span><span class=lnt id=hl-12-9><a class=lnlinks href=#hl-12-9> 9</a>
+</span><span class=lnt id=hl-12-10><a class=lnlinks href=#hl-12-10>10</a>
+</span><span class=lnt id=hl-12-11><a class=lnlinks href=#hl-12-11>11</a>
+</span><span class=lnt id=hl-12-12><a class=lnlinks href=#hl-12-12>12</a>
+</span><span class=lnt id=hl-12-13><a class=lnlinks href=#hl-12-13>13</a>
+</span><span class=lnt id=hl-12-14><a class=lnlinks href=#hl-12-14>14</a>
+</span><span class=lnt id=hl-12-15><a class=lnlinks href=#hl-12-15>15</a>
+</span><span class=lnt id=hl-12-16><a class=lnlinks href=#hl-12-16>16</a>
+</span><span class=lnt id=hl-12-17><a class=lnlinks href=#hl-12-17>17</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> !<span class=o>=</span> <span class=s2>&#34;git&#34;</span> <span class=o>]</span> <span class=o>&amp;&amp;</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> !<span class=o>=</span> <span class=s2>&#34;ssh&#34;</span> <span class=o>]</span> <span class=o>&amp;&amp;</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> !<span class=o>=</span> <span class=s2>&#34;all&#34;</span> <span class=o>]</span> <span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> 输入不符合要求
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;git&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;all&#34;</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;unset git proxy ......&#34;</span>
+</span></span><span class=line><span class=cl>    git config --global --unset http.proxy socks5://127.0.0.1:7890
+</span></span><span class=line><span class=cl>    git config --global --unset https.proxy socks5://127.0.0.1:7890
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;ssh&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=o>[</span> <span class=s2>&#34;</span><span class=nv>$1</span><span class=s2>&#34;</span> <span class=o>=</span> <span class=s2>&#34;all&#34;</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;unset ssh proxy ......&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>unset</span> https_proxy
+</span></span><span class=line><span class=cl>    <span class=nb>unset</span> http_proxy
+</span></span><span class=line><span class=cl>    <span class=nb>unset</span> all_proxy
+</span></span><span class=line><span class=cl>    <span class=nb>unset</span> HTTPS_PROXY
+</span></span><span class=line><span class=cl>    <span class=nb>unset</span> HTTP_PROXY
+</span></span><span class=line><span class=cl>    <span class=nb>unset</span> ALL_PROXY
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></td></tr></table></div></div></li><li></li></ul></li><li></li></ul></section><footer class=article-footer><section class=article-tags><a href=/tags/linux/>Linux</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>true</span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<span>最后更新于 2024年5月2日 20:08</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/2023/05/14916714/><div class=article-details><h2 class=article-title>Tmux</h2></div></a></article><article><a href=/p/2023/05/91571491/><div class=article-details><h2 class=article-title>Vim</h2></div></a></article><article><a href=/p/2023/05/14916714/><div class=article-details><h2 class=article-title>linux常用命令</h2></div></a></article><article><a href=/p/2023/05/84511784/><div class=article-details><h2 class=article-title>nohup</h2></div></a></article><article><a href=/p/2023/05/51178451/><div class=article-details><h2 class=article-title>ranger</h2></div></a></article></div></div></aside><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.js crossorigin=anonymous></script><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding);--waline-font-size:var(--article-font-size)}.waline-container .wl-count{color:var(--card-text-color-main)}</style><script>Waline.init({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],lang:"zh-cn",locale:{admin:"Admin",placeholder:null},requiredMeta:["nick"],serverURL:"https://waline.wssw.fun/"})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2024 &nbsp;&nbsp;by &nbsp; logan</section><section class=powerby>发表了79篇文章 ·
+总计439.85k字</section><section class=powerby><div class=powerby><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv></span>次
+</span><span id=busuanzi_container_site_uv>本站访客数<span id=busuanzi_value_site_uv></span>人次</span></div></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe.min.js crossorigin=anonymous defer></script><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js crossorigin=anonymous defer></script><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css crossorigin=anonymous></main></div><script type=text/javascript src=/ts/main.js defer></script><a href=javascript:void(0) class=right_things id=back-to-top title=返回顶部></a><style>html{scroll-behavior:smooth}#back-to-top{z-index:998!important;transition:1.5s ease,opacity 2s ease,visibility 2s ease,right .8s ease;opacity:0;display:inline-block;visibility:hidden;position:fixed;bottom:10px;right:10px;width:55px;height:55px;font-size:30px;text-align:center;line-height:50px;border-radius:20px;box-shadow:var(--shadow-l1);cursor:pointer;color:var(--body-text-color);background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #241348 0%, #4d0404 100%); }}#back-to-top:before{content:' ';display:inline-block;position:relative;top:0;transform:rotate(135deg);height:10px;width:10px;border-width:0 0 2px 2px;border-style:solid}#back-to-top:hover{transform:scale(1.1,1.1);background-image:linear-gradient(-225deg,#E3FDF5 0%,#FFE6FA 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #432581 0%, #861818 100%); }}#back-to-top:hover:before{border-color:#2674e0}@media screen and (max-width:768px){#back-to-top{width:35px;height:35px;font-size:10px;right:15px}}</style><script>function resizeRight(){var t=document.querySelectorAll(".right_things"),e=window.innerWidth;t.length>0&&t.forEach(function(t){e>2100?t.style.right="280px":e>1800?t.style.right="120px":e<1800&&(t.style.right="10px")})}window.addEventListener("resize",function(){requestAnimationFrame(resizeRight)});function backToTop(){window.scrollTo({top:0,behavior:"smooth"})}window.onload=function(){requestAnimationFrame(resizeRight);var t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t>0?(e.style.visibility="visible",e.style.opacity="1"):(e.style.opacity="0",e.style.visibility="hidden")},window.onscroll=function(){var t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t<400?(e.style.opacity="0",e.style.visibility="hidden"):(e.style.visibility="visible",e.style.opacity="1",e.addEventListener("click",backToTop,!1))}</script><style>.toggle-toc-inner,.toggle-toc-inner svg{z-index:1!important;pointer-events:none}.toggle-toc-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.toggle-toc-inner svg{display:none}#toc-container{display:none;position:fixed;bottom:120px;right:80px;padding:10px;border:1px solid #96979a50;border-radius:var(--card-border-radius);box-shadow:rgba(14,30,37,.12)0 2px 4px,rgba(14,30,37,.32)0 2px 16px;z-index:997!important;max-height:80vh;overflow-y:auto;width:auto;max-width:290px;background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); color: #FFFFFFB2; }}#TableOfContents{background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); }}#TableOfContents a:hover{font-weight:bolder}[data-scheme=dark] #TableOfContents a{color:#212223}[data-scheme=dark] #TableOfContents a:hover{color:#052ed3}#toggle-toc{transition:1.5s ease,opacity 2s ease,visibility 2s ease,right .8s ease;opacity:0;display:block;visibility:hidden;position:fixed;bottom:75px;right:10px;width:55px;height:55px;font-size:1.7rem;padding:5px;z-index:1000!important;border:0 solid #96979a50;border-radius:20px;box-shadow:var(--shadow-l1);color:#707070;cursor:pointer;background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #241348 0%, #4d0404 100%); color: #FFFFFFB2; } animation: jump 0.3s 4;animation-delay:.6s}#toggle-toc:hover{transform:scale(1.1,1.1);background-image:linear-gradient(-225deg,#E3FDF5 0%,#FFE6FA 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #432581 0%, #861818 100%); }}.widget--toc #TableOfContents{overflow-x:auto;max-height:66vh;width:auto}.toggle-toc-inner::before{content:'目录'}@media screen and (max-width:768px){#toggle-toc{width:35px;height:35px;font-size:10px;bottom:60px;right:15px}.toggle-toc-inner::before{content:''}.toggle-toc-inner svg{display:block}#toc-container{bottom:100px;right:60px}}</style><a id=toggle-toc class=right_things title=目录 href=javascript:void(0)><div class=toggle-toc-inner><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></div></a><section class="widget archives" id=toc-container><h2 class=section-title>目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#mac安装和配置ohmyzsh>mac安装和配置ohmyzsh</a></li></ol></nav></div></section><script>var toggleButton=document.getElementById("toggle-toc"),tocContainer=document.getElementById("toc-container"),scrollThreshold=400;function extracted(){var e=window.scrollY||window.pageYOffset;e>=scrollThreshold?(toggleButton.style.visibility="visible",toggleButton.style.opacity="1"):(toggleButton.style.opacity="0",toggleButton.style.visibility="hidden")}window.addEventListener("scroll",function(){extracted()}),window.onload=function(){extracted()},toggleButton.addEventListener("click",function(e){tocContainer.style.display==="none"||tocContainer.style.display===""?tocContainer.style.display="block":tocContainer.style.display="none",e.stopPropagation()}),"ontouchstart"in window||toggleButton.addEventListener("mouseover",function(){tocContainer.style.display="block"}),document.addEventListener("click",function(e){!tocContainer.contains(e.target)&&!toggleButton.contains(e.target)&&e.target!==toggleButton&&e.target!==tocContainer&&(tocContainer.style.display="none")})</script><script src=https://cdn.bootcdn.net/ajax/libs/nprogress/0.2.0/nprogress.min.js crossorigin=anonymous></script><div class=top-scroll-bar></div><style>.top-scroll-bar,.page-load-progress-bar{position:fixed;top:0;left:0;z-index:9999;display:none;width:0;height:4px;border-radius:5px;background-image:linear-gradient(to right,#5a0ca6 0%,rgba(208,114,155,.84) 50%,#29d 100%); [data-scheme="light"] & { background-image: linear-gradient(to right, #78ee6e 0%, #5069e3 50%, #29d 100%); }}#nprogress{pointer-events:none}#nprogress .my_bar{background-image:linear-gradient(to right,#5a0ca6 0%,rgba(208,114,155,.84) 50%,#29d 100%); [data-scheme="light"] & { background-image: linear-gradient(to right, #78ee6e 0%, #5069e3 50%, #29d 100%); } position: fixed;z-index:9999;top:0;left:0;border-radius:10px;width:100%;height:5px}#nprogress .my_peg{display:block;position:absolute;right:0;width:100px;height:100%;box-shadow:0 0 10px #29d,0 0 5px #29d;opacity:1;-webkit-transform:rotate(3deg)translate(0,-4px);-ms-transform:rotate(3deg)translate(0,-4px);transform:rotate(3deg)translate(0,-4px)}#nprogress .my_spinner{display:block;position:fixed;z-index:1031;top:15px;right:15px}#nprogress .my_spinner-icon{width:25px;height:25px;box-sizing:border-box;border:solid 3px transparent;border-top-color:#29d;border-left-color:#29d;border-radius:50%;-webkit-animation:nprogress-spinner 400ms linear infinite;animation:nprogress-spinner 400ms linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .my_spinner,.nprogress-custom-parent #nprogress .my_bar{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><script>var my_template='<div class="my_bar" role="bar"><div class="my_peg"></div></div><div class="my_spinner" role="spinner"><div class="my_spinner-icon"></div></div>';NProgress.configure({template:my_template}),NProgress.start(),document.addEventListener("readystatechange",()=>{if(document.readyState==="interactive"&&NProgress.inc(.6),document.readyState==="complete"){NProgress.done(!0),NProgress.configure({template:my_template,minimum:0,trickle:!1,showSpinner:!1});var e=document.querySelector(".top-scroll-bar");window.addEventListener("scroll",function(){var t=document.documentElement.scrollTop||document.body.scrollTop,n=document.documentElement.scrollHeight-document.documentElement.clientHeight,s=t/n*100;e.style.width=s+"%",e.style.display="block"})}})</script><script>function loadScript(e,t){var n=document.querySelector('script[src="'+e+'"]'),s=!1;n.onload=function(){s||(s=!0,t&&window[t]())},n.onreadystatechange=function(){!s&&(n.readyState==="loaded"||n.readyState==="complete")&&(s=!0,t&&window[t]())}}</script></body></html>
