@@ -58,8 +58,8 @@ fill="currentColor">
 网络链接支持PhotoSwipe图册
 &lt;/h1>&lt;p>
 &lt;img src="https://pic.imgdb.cn/item/662bf32e0ea9cb140327e18a.jpg"
-width="500"
-height="300"
+width="900"
+height="600"
 loading="lazy"
 decoding="async"
 alt="link1"
@@ -68,8 +68,8 @@ data-flex-grow="20"
 data-flex-basis="20px"
 >
 &lt;img src="https://pic.imgdb.cn/item/662bf3310ea9cb140327e6d7.jpg"
-width="500"
-height="300"
+width="900"
+height="600"
 loading="lazy"
 decoding="async"
 alt="link2"
@@ -83,8 +83,8 @@ data-flex-basis="20px"
 static目录支持PhotoSwipe图册
 &lt;/h1>&lt;p>
 &lt;img src="https://logan.wssw.fun/photos/a.png"
-width="500"
-height="300"
+width="900"
+height="600"
 loading="lazy"
 decoding="async"
 alt="static"

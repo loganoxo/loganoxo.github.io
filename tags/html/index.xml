@@ -252,8 +252,8 @@ Hyperlinked image
 &lt;/h2>&lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >
 &lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
-width="500"
-height="300"
+width="900"
+height="600"
 loading="lazy"
 decoding="async"
 alt="Google"
