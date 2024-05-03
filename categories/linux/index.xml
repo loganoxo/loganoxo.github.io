@@ -9,7 +9,7 @@
 &lt;/h2>&lt;p>我们把一个 SpringBoot 工程导出为 jar 包，jar 包上传到阿里云 ECS 服务器上，使用 java -jar xxx-xxx.jar 命令启动这个 SpringBoot 程序。此时我们本地的 xshell 客户端必须一直开着，一旦 xshell 客户端关闭，java -jar xxx-xxx.jar 进程就会被结束，SpringBoot 程序就访问不了了。&lt;/p>
 &lt;p>所以我们希望启动 SpringBoot 的 jar 包之后，对应的进程可以一直运行，不会因为 xshell 客户端关闭而被结束。&lt;/p>
 &lt;p>
-&lt;img src="https://cdn.jsdelivr.net/gh/loganoxo/file/img/20220410/20220410054728.png"
+&lt;img src="https://logan.1357810.xyz/img/20220410/20220410054728.png"
 width="900"
 height="600"
 loading="lazy"
@@ -43,7 +43,7 @@ data-flex-basis="20px"
 &lt;/div>
 &lt;/div>&lt;p>前台（默认情况）运行上面脚本的效果是：&lt;/p>
 &lt;p>
-&lt;img src="https://cdn.jsdelivr.net/gh/loganoxo/file/img/20220410/20220410054847.png"
+&lt;img src="https://logan.1357810.xyz/img/20220410/20220410054847.png"
 width="900"
 height="600"
 loading="lazy"
@@ -56,7 +56,7 @@ data-flex-basis="20px"
 &lt;/p>
 &lt;p>后台运行上面脚本的效果是：&lt;/p>
 &lt;p>
-&lt;img src="https://cdn.jsdelivr.net/gh/loganoxo/file/img/20220410/20220410054858.png"
+&lt;img src="https://logan.1357810.xyz/img/20220410/20220410054858.png"
 width="900"
 height="600"
 loading="lazy"
@@ -81,7 +81,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>
-&lt;img src="https://cdn.jsdelivr.net/gh/loganoxo/file/img/20220410/20220410055051.png"
+&lt;img src="https://logan.1357810.xyz/img/20220410/20220410055051.png"
 width="900"
 height="600"
 loading="lazy"
