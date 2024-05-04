@@ -31,8 +31,6 @@ Allow: /p/2024/05/89561389/
 
 Allow: /categories/
 
-Allow: /p/
-
 Allow: /tags/jvm/
 
 Allow: /categories/jvm/
@@ -230,6 +228,8 @@ Allow: /categories/test-example/
 Allow: /
 
 Allow: /page/search/
+
+Allow: /p/
 
 Allow: /articles/
 
