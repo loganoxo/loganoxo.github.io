@@ -1,74 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcodes on Logan的博客</title><link>https://logan.wssw.fun/tags/shortcodes/</link><description>Recent content in Shortcodes on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Fri, 09 Feb 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>Rich Content</title><link>https://logan.wssw.fun/example/rich-content/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/example/rich-content/</guid><description>&lt;img src="https://pic.imgdb.cn/item/662e9ad20ea9cb14036e3aaa.jpg" alt="Featured image of post Rich Content" />&lt;p>Hugo ships with several &lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" target="_blank" rel="noopener"
->Built-in Shortcodes
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a> for rich content, along with a &lt;a class="link" href="https://gohugo.io/about/hugo-and-gdpr/" target="_blank" rel="noopener"
->Privacy Config
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
-&lt;hr>
-&lt;h2 id="youtube-privacy-enhanced-shortcode">
-&lt;a href="#youtube-privacy-enhanced-shortcode" class="header-anchor">#&lt;/a>
-YouTube Privacy Enhanced Shortcode
-&lt;/h2>&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/ZJthWmvUzzc"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;br>
-&lt;hr>
-&lt;h2 id="twitter-simple-shortcode">
-&lt;a href="#twitter-simple-shortcode" class="header-anchor">#&lt;/a>
-Twitter Simple Shortcode
-&lt;/h2>&lt;p>{{&amp;lt; twitter_simple user=&amp;ldquo;DesignReviewed&amp;rdquo; id=&amp;ldquo;1085870671291310081&amp;rdquo; &amp;gt;}}&lt;/p>
-&lt;br>
-&lt;hr>
-&lt;h2 id="vimeo-simple-shortcode">
-&lt;a href="#vimeo-simple-shortcode" class="header-anchor">#&lt;/a>
-Vimeo Simple Shortcode
-&lt;/h2>&lt;p>{{&amp;lt; vimeo_simple 48912912 &amp;gt;}}&lt;/p>
-&lt;h2 id="bilibilibi-shortcode">
-&lt;a href="#bilibilibi-shortcode" class="header-anchor">#&lt;/a>
-bilibilibi Shortcode
-&lt;/h2>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&amp;danmaku=1&amp;autoplay=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
-&lt;h2 id="gist-shortcode">
-&lt;a href="#gist-shortcode" class="header-anchor">#&lt;/a>
-Gist Shortcode
-&lt;/h2>&lt;p>{{&amp;lt; gist spf13 7896402 &amp;gt;}}&lt;/p>
-&lt;h2 id="gitlab-snippets-shortcode">
-&lt;a href="#gitlab-snippets-shortcode" class="header-anchor">#&lt;/a>
-Gitlab Snippets Shortcode
-&lt;/h2>&lt;p>{{&amp;lt; gitlab 2349278 &amp;gt;}}&lt;/p>
-&lt;h2 id="quote-shortcode">
-&lt;a href="#quote-shortcode" class="header-anchor">#&lt;/a>
-Quote Shortcode
-&lt;/h2>&lt;p>Stack adds a &lt;code>quote&lt;/code> shortcode. For example:&lt;/p>
-&lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>A famous person, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>The book they wrote&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>Anonymous book&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;cite>Some book&lt;/cite>&lt;/span>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Somebody&lt;/span>&lt;cite>&lt;/cite>&lt;/span>&lt;/blockquote></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Shortcodes on Logan的博客</title>
+        <link>https://logan.wssw.fun/tags/shortcodes/</link>
+        <description>Recent content in Shortcodes on Logan的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>logan</copyright>
+        <lastBuildDate>Fri, 09 Feb 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rich Content</title>
+        <link>https://logan.wssw.fun/example/rich-content/</link>
+        <pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/example/rich-content/</guid>
+        <description>&lt;img src="https://pic.imgdb.cn/item/662e9ad20ea9cb14036e3aaa.jpg" alt="Featured image of post Rich Content" /&gt;&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Built-in Shortcodes
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+          fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Privacy Config
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+          fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;
+    &lt;a href=&#34;#youtube-privacy-enhanced-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    YouTube Privacy Enhanced Shortcode
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/ZJthWmvUzzc&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;
+    &lt;a href=&#34;#twitter-simple-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Twitter Simple Shortcode
+&lt;/h2&gt;&lt;p&gt;{{&amp;lt; twitter_simple user=&amp;ldquo;DesignReviewed&amp;rdquo; id=&amp;ldquo;1085870671291310081&amp;rdquo; &amp;gt;}}&lt;/p&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;
+    &lt;a href=&#34;#vimeo-simple-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Vimeo Simple Shortcode
+&lt;/h2&gt;&lt;p&gt;{{&amp;lt; vimeo_simple 48912912 &amp;gt;}}&lt;/p&gt;
+&lt;h2 id=&#34;bilibilibi-shortcode&#34;&gt;
+    &lt;a href=&#34;#bilibilibi-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    bilibilibi Shortcode
+&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+  &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&amp;danmaku=1&amp;autoplay=0&#34;
+          scrolling=&#34;no&#34;
+          frameborder=&#34;no&#34;
+          framespacing=&#34;0&#34;
+          allowfullscreen=&#34;true&#34;
+  &gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;gist-shortcode&#34;&gt;
+    &lt;a href=&#34;#gist-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Gist Shortcode
+&lt;/h2&gt;&lt;p&gt;{{&amp;lt; gist spf13 7896402 &amp;gt;}}&lt;/p&gt;
+&lt;h2 id=&#34;gitlab-snippets-shortcode&#34;&gt;
+    &lt;a href=&#34;#gitlab-snippets-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Gitlab Snippets Shortcode
+&lt;/h2&gt;&lt;p&gt;{{&amp;lt; gitlab 2349278 &amp;gt;}}&lt;/p&gt;
+&lt;h2 id=&#34;quote-shortcode&#34;&gt;
+    &lt;a href=&#34;#quote-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Quote Shortcode
+&lt;/h2&gt;&lt;p&gt;Stack adds a &lt;code&gt;quote&lt;/code&gt; shortcode.  For example:&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A famous person, &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;The book they wrote&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;Anonymous book&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;cite&gt;Some book&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;Somebody&lt;/span&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

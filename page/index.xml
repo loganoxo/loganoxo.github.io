@@ -1,770 +1,1070 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Logan的博客</title><link>https://logan.wssw.fun/page/</link><description>Recent content in Pages on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><atom:link href="https://logan.wssw.fun/page/index.xml" rel="self" type="application/rss+xml"/><item><title>归档</title><link>https://logan.wssw.fun/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/archives/</guid><description/></item><item><title>相册</title><link>https://logan.wssw.fun/page/photos/</link><pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate><guid>https://logan.wssw.fun/page/photos/</guid><description/></item><item><title/><link>https://logan.wssw.fun/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/about/</guid><description>
-&lt;div class="chat --other">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta">Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div>
-&lt;div class="chat__text">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Logan的博客</title>
+        <link>https://logan.wssw.fun/page/</link>
+        <description>Recent content in Pages on Logan的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>logan</copyright><atom:link href="https://logan.wssw.fun/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>归档</title>
+        <link>https://logan.wssw.fun/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>相册</title>
+        <link>https://logan.wssw.fun/page/photos/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/page/photos/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://logan.wssw.fun/page/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/page/about/</guid>
+        <description>
+  &lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34;&gt;Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 最近看了一本很棒的书，里面提到了很多关于人类大脑的神奇的事。
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style>
-&lt;div class="chat --self">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta" style="text-align: right;">2023-09-12 14:29&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div>
-&lt;div class="chat__text">
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+
+  &lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;2023-09-12 14:29&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 哇，听起来很有意思！比如说？
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style>
-&lt;div class="chat --other">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta">Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div>
-&lt;div class="chat__text">
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+
+  &lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34;&gt;Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 比如，人类的大脑拥有约100亿个神经元，而每个神经元之间可以有数以千计的连接。
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style>
-&lt;div class="chat --self">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta" style="text-align: right;">2023-09-12 14:31&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div>
-&lt;div class="chat__text">
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+
+  &lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;2023-09-12 14:31&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 太惊人了！大脑真是一个神奇的器官。还有其他的吗？
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style>
-&lt;div class="chat --other">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta">Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:32&lt;/div>
-&lt;div class="chat__text">
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+
+  &lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34;&gt;Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:32&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 当然！比如，大脑的海马体负责记忆和空间导航，但它也是唯一能继续产生新神经元的地方之一。
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style>
-&lt;div class="chat --self">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta" style="text-align: right;">2023-09-12 14:33&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div>
-&lt;div class="chat__text">
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+
+  &lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;2023-09-12 14:33&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 这太有趣了！看来大脑真是个充满奇迹的地方。
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style>
-&lt;div class="chat --other">
-&lt;div class="chat__inner">
-&lt;div class="chat__meta">Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:34&lt;/div>
-&lt;div class="chat__text">
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+
+  &lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+      &lt;div class=&#34;chat__meta&#34;&gt;Logan&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:34&lt;/div&gt;
+      &lt;div class=&#34;chat__text&#34;&gt;
+          
 是的，我也觉得很惊讶。所以我对你的大脑的充满了好奇。
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;style>
-.chat {
-margin: 10px;
-padding: 10px;
-position: relative;
-transition: transform 0.2s;
-max-width: 80%;
-min-width: 15%;
-}
-.chat:hover {
-transform: scale(1.05);
-}
-.chat.--self {
-text-align: left;
-background-color: #ecf5ff;
-color: #000000;
-border-radius: 15px;
-width: fit-content;
-margin-left: auto;
-}
-.chat.--self::before {
-content: "";
-position: absolute;
-right: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 0 0 20px;
-border-style: solid;
-border-color: transparent transparent transparent #ecf5ff;
-}
-.chat.--other {
-text-align: left;
-background-color: #ffecec;
-color: #333;
-border-radius: 15px;
-position: relative;
-width: fit-content;
-}
-.chat.--other::before {
-content: "";
-position: absolute;
-left: -18px;
-bottom: 5px;
-transform: translateY(-50%);
-border-width: 15px 20px 0 0;
-border-style: solid;
-border-color: transparent #ffecec transparent transparent;
-}
-.chat__meta {
-font-weight: bold;
-font-size: 0.67em;
-color: #707070;
-margin-bottom: 5px;
-}
-.chat__text {
-font-size: 0.9em;
-margin-left: 10px;
-word-break: break-all;
-}
-[data-scheme="dark"] {
-.chat.--self {
-color: #fefefe;
-background-color: #253958;
-}
-.chat.--self::before {
-border-color: transparent transparent transparent #253958;
-}
-.chat.--other {
-color: #fefefe;
-background-color: #1a1a1a;
-}
-.chat.--other::before {
-border-color: transparent #1a1a1a transparent transparent;
-}
-.chat__meta {
-color: #b1b1b1;
-}
-}
-&lt;/style></description></item><item><title/><link>https://logan.wssw.fun/timeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/timeline/</guid><description>&lt;img src="https://logan.wssw.fun/timeline/cover.jpg" alt="Featured image of post " />&lt;p>&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2021-02-10&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">Whispers of love, carried by the breeze.&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-温柔的微风向树木低语着秘密
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2022-01-13&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">星星在你的眼中起舞&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-Love is blind
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2022-02-10&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">月光轻轻吻着大地&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-Echoes of laughter, memories untamed
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2022-03-14&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">森林的低语&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-Love is life
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2022-04-16&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">树叶的交响乐&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-在梦的花园里，我们徜徉
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2023-05-9&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">雨滴在玫瑰花瓣上舞动&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-雨滴在玫瑰花瓣舞动
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2023-05-1&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">在夜的心中，寂静有千言万语&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-Clouds drift lazily in the azure sky.
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="timeline__row">
-&lt;div class="timeline__time">
-&lt;div class="timeline__time">2024-04-2&lt;/div>
-&lt;div class="timeline__split-line">&lt;/div>
-&lt;/div>
-&lt;div class="timeline__content">
-&lt;div class="timeline__tags">
-&lt;span class="timeline__tag timeline__tag-article">文章&lt;/span>
-&lt;/div>
-&lt;a href="https://logan.wssw.fun/articles">
-&lt;div class="timeline__title">脚步在记忆的路上轻轻回响&lt;/div>
-&lt;/a>
-&lt;div class="timeline__description">
-Butterflies dance in fields of dreams.
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/p></description></item><item><title>搜索</title><link>https://logan.wssw.fun/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/search/</guid><description/></item><item><title>友链</title><link>https://logan.wssw.fun/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://logan.wssw.fun/page/links/</guid><description>&lt;p>&lt;a href="https://tablericons.com/" title="Tabler Icons" class="friend-link" target="_blank" rel="friend">
-&lt;div class="friend-link-div">
-&lt;div class="friend-link-avatar">
-&lt;img src=https://tablericons.com/ckissi.jpeg class="friend-avatar" loading="lazy" decoding="async" alt="Avatar">
-&lt;/div>
-&lt;div class="friend-link-info">
-&lt;i class="fa fa-link" aria-hidden="true">&lt;/i>
-&lt;i class="friend-name">Tabler Icons&lt;/i>
-&lt;p class="friend-bio">icon、svg&lt;/p>
-&lt;/div>
-&lt;/div>
-&lt;/a>
-&lt;a href="https://webgradients.com/" title="Web Gradients" class="friend-link" target="_blank" rel="friend">
-&lt;div class="friend-link-div">
-&lt;div class="friend-link-avatar">
-&lt;img src=https://webgradients.com/favicons/favicon-32x32.png class="friend-avatar" loading="lazy" decoding="async" alt="Avatar">
-&lt;/div>
-&lt;div class="friend-link-info">
-&lt;i class="fa fa-link" aria-hidden="true">&lt;/i>
-&lt;i class="friend-name">Web Gradients&lt;/i>
-&lt;p class="friend-bio">取色&lt;/p>
-&lt;/div>
-&lt;/div>
-&lt;/a>
-&lt;/p></description></item></channel></rss>
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;style&gt;
+  .chat {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+     
+    transition: transform 0.2s;
+     
+    max-width: 80%;
+    min-width: 15%;
+  }
+
+  .chat:hover {
+    transform: scale(1.05);
+  }
+
+  .chat.--self {
+    text-align: left;
+    background-color: #ecf5ff;
+    color: #000000;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+   
+
+  .chat.--self::before {
+    content: &#34;&#34;;
+    position: absolute;
+    right: -18px;
+     
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ecf5ff;
+     
+  }
+
+   
+
+  .chat.--other {
+    text-align: left;
+    background-color: #ffecec;
+    color: #333;
+    border-radius: 15px;
+    position: relative;
+    width: fit-content;
+  }
+
+   
+
+  .chat.--other::before {
+    content: &#34;&#34;;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    border-width: 15px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #ffecec transparent transparent;
+  }
+
+   
+
+  .chat__meta {
+    font-weight: bold;
+    font-size: 0.67em;
+    color: #707070;
+    margin-bottom: 5px;
+  }
+
+   
+
+  .chat__text {
+    font-size: 0.9em;
+    margin-left: 10px;
+    word-break: break-all;
+  }
+
+  [data-scheme=&#34;dark&#34;] {
+    .chat.--self {
+      color: #fefefe;
+      background-color: #253958;
+    }
+
+    .chat.--self::before {
+      border-color: transparent transparent transparent #253958;
+    }
+
+    .chat.--other {
+      color: #fefefe;
+      background-color: #1a1a1a;
+    }
+
+    .chat.--other::before {
+      border-color: transparent #1a1a1a transparent transparent;
+    }
+
+    .chat__meta {
+      color: #b1b1b1;
+    }
+  }
+&lt;/style&gt;
+
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://logan.wssw.fun/timeline/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/timeline/</guid>
+        <description>&lt;img src="https://logan.wssw.fun/timeline/cover.jpg" alt="Featured image of post " /&gt;&lt;p&gt;&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2021-02-10&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;Whispers of love, carried by the breeze.&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        温柔的微风向树木低语着秘密
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2022-01-13&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;星星在你的眼中起舞&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        Love is blind
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2022-02-10&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;月光轻轻吻着大地&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        Echoes of laughter, memories untamed
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2022-03-14&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;森林的低语&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        Love is life
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2022-04-16&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;树叶的交响乐&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        在梦的花园里，我们徜徉
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2023-05-9&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;雨滴在玫瑰花瓣上舞动&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        雨滴在玫瑰花瓣舞动
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2023-05-1&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;在夜的心中，寂静有千言万语&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        Clouds drift lazily in the azure sky.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+  &lt;div class=&#34;timeline__time&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;2024-04-2&lt;/div&gt;
+    &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;timeline__content&#34;&gt;
+    &lt;div class=&#34;timeline__tags&#34;&gt;
+          &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://logan.wssw.fun/articles&#34;&gt;
+      &lt;div class=&#34;timeline__title&#34;&gt;脚步在记忆的路上轻轻回响&lt;/div&gt;
+    &lt;/a&gt;
+    
+    &lt;div class=&#34;timeline__description&#34;&gt;
+        Butterflies dance in fields of dreams.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://logan.wssw.fun/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/page/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>友链</title>
+        <link>https://logan.wssw.fun/page/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/page/links/</guid>
+        <description>&lt;p&gt;&lt;a href=&#34;https://tablericons.com/&#34; title=&#34;Tabler Icons&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+  &lt;div class=&#34;friend-link-div&#34;&gt;
+    &lt;div class=&#34;friend-link-avatar&#34;&gt;
+      &lt;img src=https://tablericons.com/ckissi.jpeg class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; alt=&#34;Avatar&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;friend-link-info&#34;&gt;
+      &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;i class=&#34;friend-name&#34;&gt;Tabler Icons&lt;/i&gt;
+      &lt;p class=&#34;friend-bio&#34;&gt;icon、svg&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://webgradients.com/&#34; title=&#34;Web Gradients&#34; class=&#34;friend-link&#34; target=&#34;_blank&#34; rel=&#34;friend&#34;&gt;
+  &lt;div class=&#34;friend-link-div&#34;&gt;
+    &lt;div class=&#34;friend-link-avatar&#34;&gt;
+      &lt;img src=https://webgradients.com/favicons/favicon-32x32.png class=&#34;friend-avatar&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; alt=&#34;Avatar&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;friend-link-info&#34;&gt;
+      &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+      &lt;i class=&#34;friend-name&#34;&gt;Web Gradients&lt;/i&gt;
+      &lt;p class=&#34;friend-bio&#34;&gt;取色&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
