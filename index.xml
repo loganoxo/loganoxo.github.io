@@ -2319,7 +2319,7 @@ data-flex-grow="20"
 data-flex-basis="20px"
 >
 &lt;/p>
-&lt;hr/></description></item><item><title>03-JVM监控及诊断工具-GUI篇</title><link>https://logan.wssw.fun/p/2024/05/49167149/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/49167149/</guid><description>&lt;blockquote>
+&lt;hr/></description></item><item><title>03-JVM监控及诊断工具-GUI篇</title><link>https://logan.wssw.fun/p/2024/05/49167k49/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/49167k49/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -3281,7 +3281,7 @@ data-flex-basis="20px"
 &lt;li>能定位到某行代码&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>03-运行时数据区及程序计数器</title><link>https://logan.wssw.fun/p/2024/05/84511784/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/84511784/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>03-运行时数据区及程序计数器</title><link>https://logan.wssw.fun/p/2024/05/84511h84/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/84511h84/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -4711,7 +4711,7 @@ fill="currentColor">
 &lt;ul>
 &lt;li>工具很强大，但是只能打开由以下参数生成的 GC log，-verbose:gc -Xloggc:gc.log。添加其他参数生成的 gc.log 无法打开&lt;/li>
 &lt;li>HPjmeter 集成了以前的 HPjtune 功能，可以分析在 HP 机器上产生的垃圾回收日志文件&lt;/li>
-&lt;/ul></description></item><item><title>06-堆</title><link>https://logan.wssw.fun/p/2024/05/34916834/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/34916834/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>06-堆</title><link>https://logan.wssw.fun/p/2024/05/3491v834/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/3491v834/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -6006,7 +6006,7 @@ class="gallery-image link-image"
 data-flex-grow="20"
 data-flex-basis="20px"
 >
-&lt;/p></description></item><item><title>10-StringTable</title><link>https://logan.wssw.fun/p/2024/05/11784511/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/11784511/</guid><description>&lt;blockquote>
+&lt;/p></description></item><item><title>10-StringTable</title><link>https://logan.wssw.fun/p/2024/05/117q4511/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/117q4511/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -7466,7 +7466,7 @@ fill="currentColor">
 &lt;p>整理难免有疏忽和遗漏的地方，欢迎大家指正批评！&lt;/p>
 &lt;blockquote>
 &lt;p>署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。&lt;/p>
-&lt;/blockquote></description></item><item><title>JVM</title><link>https://logan.wssw.fun/p/2024/05/38956138/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/38956138/</guid><description>&lt;p>
+&lt;/blockquote></description></item><item><title>JVM</title><link>https://logan.wssw.fun/p/2024/05/38956h38/</link><pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/38956h38/</guid><description>&lt;p>
 &lt;img src="https://logan.1357810.xyz/img/20220418/20220418223747.jpg"
 width="900"
 height="600"
@@ -13887,7 +13887,7 @@ data-flex-grow="20"
 data-flex-basis="20px"
 >
 &lt;/p>
-&lt;hr/></description></item><item><title>03-类的加载过程（类的生命周期）详解</title><link>https://logan.wssw.fun/p/2024/05/73491673/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/73491673/</guid><description>&lt;blockquote>
+&lt;hr/></description></item><item><title>03-类的加载过程（类的生命周期）详解</title><link>https://logan.wssw.fun/p/2024/05/7f491673/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/7f491673/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -15329,7 +15329,7 @@ data-flex-basis="20px"
 &lt;/h3>&lt;p>如果&lt;mark>被调用的方法在编译期无法被确定下来，只能够在程序运行期将调用的方法的符号转换为直接引用&lt;/mark>，由于这种引用转换过程具备动态性，因此也被称之为动态链接。&lt;/p>
 &lt;p>&lt;mark>静态链接和动态链接不是名词，而是动词，这是理解的关键。&lt;/mark>&lt;/p>
 &lt;p>随着高级语言的横空出世，类似于 Java 一样的基于面向对象的编程语言如今越来越多，尽管这类编程语言在语法风格上存在一定的差别，但是它们彼此之间始终保持着一个共性，那就是都支持封装、继承和多态等面向对象特性，既然&lt;mark>这一类的编程语言具备多态特悄，那么自然也就具备早期绑定和晚期绑定两种绑定方式。&lt;/mark>&lt;/p>
-&lt;p>Java 中任何一个普通的方法其实都具备虚函数的特征，它们相当于 C++语言中的虚函数（C++中则需要使用关键字 virtual 来显式定义）。如果在 Java 程序中不希望某个方法拥有虚函数的特征时，则可以使用关键字 final 来标记这个方法。&lt;/p></description></item><item><title>04-再谈类的加载器</title><link>https://logan.wssw.fun/p/2024/05/13895613/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/13895613/</guid><description>&lt;blockquote>
+&lt;p>Java 中任何一个普通的方法其实都具备虚函数的特征，它们相当于 C++语言中的虚函数（C++中则需要使用关键字 virtual 来显式定义）。如果在 Java 程序中不希望某个方法拥有虚函数的特征时，则可以使用关键字 final 来标记这个方法。&lt;/p></description></item><item><title>04-再谈类的加载器</title><link>https://logan.wssw.fun/p/2024/05/13895tg3/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/13895tg3/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）
@@ -16474,7 +16474,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>05-本地方法接口和本地方法栈</title><link>https://logan.wssw.fun/p/2024/05/45117845/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/45117845/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>05-本地方法接口和本地方法栈</title><link>https://logan.wssw.fun/p/2024/05/4q117845/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/4q117845/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -17786,7 +17786,7 @@ data-flex-basis="20px"
 &lt;p>&lt;mark>美团&lt;/mark>：&lt;/p>
 &lt;p>java 内存分配 jvm 的永久代中会发生垃圾回收吗？&lt;/p>
 &lt;p>一面：jvm 内存分区，为什么要有新生代和老年代？&lt;/p>
-&lt;/blockquote></description></item><item><title>09-执行引擎</title><link>https://logan.wssw.fun/p/2024/05/95611895/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/95611895/</guid><description>&lt;blockquote>
+&lt;/blockquote></description></item><item><title>09-执行引擎</title><link>https://logan.wssw.fun/p/2024/05/95s11895/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/95s11895/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）
@@ -19541,7 +19541,7 @@ data-flex-basis="20px"
 &lt;h4 id="写到最后">
 &lt;a href="#%e5%86%99%e5%88%b0%e6%9c%80%e5%90%8e" class="header-anchor">#&lt;/a>
 写到最后
-&lt;/h4>&lt;p>注意，这些只是基本的算法思路，实际 GC 实现过程要复杂的多，目前还在发展中的前沿 GC 都是复合算法，并且并行和并发兼备。&lt;/p></description></item><item><title>12-垃圾回收相关概念</title><link>https://logan.wssw.fun/p/2024/05/91671491/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/91671491/</guid><description>&lt;blockquote>
+&lt;/h4>&lt;p>注意，这些只是基本的算法思路，实际 GC 实现过程要复杂的多，目前还在发展中的前沿 GC 都是复合算法，并且并行和并发兼备。&lt;/p></description></item><item><title>12-垃圾回收相关概念</title><link>https://logan.wssw.fun/p/2024/05/916f1491/</link><pubDate>Fri, 03 May 2024 03:17:32 +0800</pubDate><guid>https://logan.wssw.fun/p/2024/05/916f1491/</guid><description>&lt;blockquote>
 &lt;p>笔记来源：&lt;a class="link" href="https://www.bilibili.com/video/BV1PJ411n7xZ" title="尚硅谷JVM全套教程，百万播放，全网巅峰（宋红康详解java虚拟机）"
 target="_blank" rel="noopener"
 >尚硅谷 JVM 全套教程，百万播放，全网巅峰（宋红康详解 java 虚拟机）

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SpringCloud on Logan的博客</title><link>https://logan.wssw.fun/categories/springcloud/</link><description>Recent content in SpringCloud on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 03 Jan 2023 15:49:51 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/springcloud/index.xml" rel="self" type="application/rss+xml"/><item><title>1.SpringCloud实用篇01</title><link>https://logan.wssw.fun/p/2023/01/89461189/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/89461189/</guid><description>&lt;h1 id="springcloud01">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SpringCloud on Logan的博客</title><link>https://logan.wssw.fun/categories/springcloud/</link><description>Recent content in SpringCloud on Logan的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>logan</copyright><lastBuildDate>Tue, 03 Jan 2023 15:49:51 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/springcloud/index.xml" rel="self" type="application/rss+xml"/><item><title>1.SpringCloud实用篇01</title><link>https://logan.wssw.fun/p/2023/01/89c61189/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/89c61189/</guid><description>&lt;h1 id="springcloud01">
 &lt;a href="#springcloud01" class="header-anchor">#&lt;/a>
 SpringCloud01
 &lt;/h1>&lt;h1 id="1认识微服务">
@@ -1722,7 +1722,7 @@ data-flex-basis="20px"
 &lt;li>Nacos集群默认采用AP方式，当集群中存在非临时实例时，采用CP模式；Eureka采用AP方式&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>10.Redis集群</title><link>https://logan.wssw.fun/p/2023/01/91671491/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/91671491/</guid><description>&lt;h1 id="redis集群">
+&lt;/ul></description></item><item><title>10.Redis集群</title><link>https://logan.wssw.fun/p/2023/01/91a71491/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/91a71491/</guid><description>&lt;h1 id="redis集群">
 &lt;a href="#redis%e9%9b%86%e7%be%a4" class="header-anchor">#&lt;/a>
 Redis集群
 &lt;/h1>&lt;p>本章是基于CentOS7下的Redis集群教程，包括：&lt;/p>
@@ -4002,7 +4002,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="m">192.168.150.101&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">8003&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>11.安装Canal</title><link>https://logan.wssw.fun/p/2023/01/49167149/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/49167149/</guid><description>&lt;h1 id="安装和配置canal">
+&lt;/div></description></item><item><title>11.安装Canal</title><link>https://logan.wssw.fun/p/2023/01/49z67149/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/49z67149/</guid><description>&lt;h1 id="安装和配置canal">
 &lt;a href="#%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%aecanal" class="header-anchor">#&lt;/a>
 安装和配置Canal
 &lt;/h1>&lt;p>下面我们就开启mysql的主从同步机制，让Canal来模拟salve&lt;/p>
@@ -4228,7 +4228,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">5. 多个规则组合使用然后以逗号隔开：canal\\..*,mysql.test1,mysql.test2
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>11.安装OpenResty</title><link>https://logan.wssw.fun/p/2023/01/45117845/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/45117845/</guid><description>&lt;h1 id="安装openresty">
+&lt;/div></description></item><item><title>11.安装OpenResty</title><link>https://logan.wssw.fun/p/2023/01/451178u5/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/451178u5/</guid><description>&lt;h1 id="安装openresty">
 &lt;a href="#%e5%ae%89%e8%a3%85openresty" class="header-anchor">#&lt;/a>
 安装OpenResty
 &lt;/h1>&lt;h1 id="1安装">
@@ -5097,7 +5097,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>11.多级缓存</title><link>https://logan.wssw.fun/p/2023/01/38956138/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/38956138/</guid><description>&lt;h1 id="多级缓存">
+&lt;/div></description></item><item><title>11.多级缓存</title><link>https://logan.wssw.fun/p/2023/01/38u56138/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/38u56138/</guid><description>&lt;h1 id="多级缓存">
 &lt;a href="#%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98" class="header-anchor">#&lt;/a>
 多级缓存
 &lt;/h1>&lt;h1 id="0学习目标">
@@ -9244,7 +9244,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">virtual&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">host&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>13.Nacos源码分析</title><link>https://logan.wssw.fun/p/2023/01/91671491/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/91671491/</guid><description>&lt;h1 id="nacos源码分析">
+&lt;/div></description></item><item><title>13.Nacos源码分析</title><link>https://logan.wssw.fun/p/2023/01/9167149t/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/9167149t/</guid><description>&lt;h1 id="nacos源码分析">
 &lt;a href="#nacos%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90" class="header-anchor">#&lt;/a>
 Nacos源码分析
 &lt;/h1>&lt;h1 id="1下载nacos源码并运行">
@@ -16304,7 +16304,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>15.微服务常见面试题</title><link>https://logan.wssw.fun/p/2023/01/51178451/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/51178451/</guid><description>&lt;h1 id="常见面试题">
+&lt;/div></description></item><item><title>15.微服务常见面试题</title><link>https://logan.wssw.fun/p/2023/01/51178k51/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/51178k51/</guid><description>&lt;h1 id="常见面试题">
 &lt;a href="#%e5%b8%b8%e8%a7%81%e9%9d%a2%e8%af%95%e9%a2%98" class="header-anchor">#&lt;/a>
 常见面试题
 &lt;/h1>&lt;h1 id="1微服务篇">
@@ -17202,7 +17202,7 @@ data-flex-basis="20px"
 &lt;li>本地缓存同步：当前微服务的数据库数据与缓存数据同步，可以直接在数据库修改时加入对Redis的修改逻辑，保证一致。&lt;/li>
 &lt;li>跨服务缓存同步：服务A调用了服务B，并对查询结果缓存。服务B数据库修改，可以通过MQ通知服务A，服务A修改Redis缓存数据&lt;/li>
 &lt;li>通用方案：使用Canal框架，伪装成MySQL的salve节点，监听MySQL的binLog变化，然后修改Redis缓存数据&lt;/li>
-&lt;/ul></description></item><item><title>2.SpringCloud实用篇02</title><link>https://logan.wssw.fun/p/2023/01/13895613/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/13895613/</guid><description>&lt;h1 id="springcloud实用篇02">
+&lt;/ul></description></item><item><title>2.SpringCloud实用篇02</title><link>https://logan.wssw.fun/p/2023/01/138f5613/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/138f5613/</guid><description>&lt;h1 id="springcloud实用篇02">
 &lt;a href="#springcloud%e5%ae%9e%e7%94%a8%e7%af%8702" class="header-anchor">#&lt;/a>
 SpringCloud实用篇02
 &lt;/h1>&lt;h1 id="0学习目标">
@@ -22072,7 +22072,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>5.分布式搜索引擎01</title><link>https://logan.wssw.fun/p/2023/01/51178451/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/51178451/</guid><description>&lt;h1 id="分布式搜索引擎01">
+&lt;/div></description></item><item><title>5.分布式搜索引擎01</title><link>https://logan.wssw.fun/p/2023/01/5117b451/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/5117b451/</guid><description>&lt;h1 id="分布式搜索引擎01">
 &lt;a href="#%e5%88%86%e5%b8%83%e5%bc%8f%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e01" class="header-anchor">#&lt;/a>
 分布式搜索引擎01
 &lt;/h1>&lt;p>&amp;ndash; elasticsearch基础&lt;/p>
@@ -29721,7 +29721,7 @@ class="gallery-image link-image"
 data-flex-grow="20"
 data-flex-basis="20px"
 >
-&lt;/p></description></item><item><title>8.sentinel规则持久化</title><link>https://logan.wssw.fun/p/2023/01/49167149/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/49167149/</guid><description>&lt;h1 id="sentinel-规则持久化">
+&lt;/p></description></item><item><title>8.sentinel规则持久化</title><link>https://logan.wssw.fun/p/2023/01/4916u149/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/4916u149/</guid><description>&lt;h1 id="sentinel-规则持久化">
 &lt;a href="#sentinel-%e8%a7%84%e5%88%99%e6%8c%81%e4%b9%85%e5%8c%96" class="header-anchor">#&lt;/a>
 Sentinel 规则持久化
 &lt;/h1>&lt;h2 id="一修改order-service服务">
@@ -30004,7 +30004,7 @@ data-flex-basis="20px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">java -jar -Dnacos.addr&lt;span class="o">=&lt;/span>localhost:8848 sentinel-dashboard.jar
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>8.微服务保护</title><link>https://logan.wssw.fun/p/2023/01/15713815/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/15713815/</guid><description>&lt;h1 id="微服务保护">
+&lt;/div></description></item><item><title>8.微服务保护</title><link>https://logan.wssw.fun/p/2023/01/157v3815/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/157v3815/</guid><description>&lt;h1 id="微服务保护">
 &lt;a href="#%e5%be%ae%e6%9c%8d%e5%8a%a1%e4%bf%9d%e6%8a%a4" class="header-anchor">#&lt;/a>
 微服务保护
 &lt;/h1>&lt;h1 id="1初识sentinel">
@@ -34896,7 +34896,7 @@ class="gallery-image link-image"
 data-flex-grow="20"
 data-flex-basis="20px"
 >
-&lt;/p></description></item><item><title>Nacos安装指南</title><link>https://logan.wssw.fun/p/2023/01/38956138/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/38956138/</guid><description>&lt;h1 id="nacos安装指南">
+&lt;/p></description></item><item><title>Nacos安装指南</title><link>https://logan.wssw.fun/p/2023/01/38z56138/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/38z56138/</guid><description>&lt;h1 id="nacos安装指南">
 &lt;a href="#nacos%e5%ae%89%e8%a3%85%e6%8c%87%e5%8d%97" class="header-anchor">#&lt;/a>
 Nacos安装指南
 &lt;/h1>&lt;h1 id="1windows安装">
@@ -35257,7 +35257,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>nacos集群搭建</title><link>https://logan.wssw.fun/p/2023/01/95611895/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/95611895/</guid><description>&lt;h1 id="nacos集群搭建">
+&lt;/div></description></item><item><title>nacos集群搭建</title><link>https://logan.wssw.fun/p/2023/01/956118f5/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/956118f5/</guid><description>&lt;h1 id="nacos集群搭建">
 &lt;a href="#nacos%e9%9b%86%e7%be%a4%e6%90%ad%e5%bb%ba" class="header-anchor">#&lt;/a>
 Nacos集群搭建
 &lt;/h1>&lt;h1 id="1集群结构图">
@@ -35965,7 +35965,7 @@ data-flex-basis="20px"
 &lt;li>
 &lt;p>Nacos的各个节点应该部署到多个不同服务器，做好容灾和隔离&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>RabbitMQ部署指南1</title><link>https://logan.wssw.fun/p/2023/01/17845117/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/17845117/</guid><description>&lt;h1 id="rabbitmq部署指南">
+&lt;/ul></description></item><item><title>RabbitMQ部署指南1</title><link>https://logan.wssw.fun/p/2023/01/1784e117/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/1784e117/</guid><description>&lt;h1 id="rabbitmq部署指南">
 &lt;a href="#rabbitmq%e9%83%a8%e7%bd%b2%e6%8c%87%e5%8d%97" class="header-anchor">#&lt;/a>
 RabbitMQ部署指南
 &lt;/h1>&lt;h1 id="1单机部署">
@@ -36065,7 +36065,7 @@ data-flex-basis="20px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">192.168.150.103 mq3
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>并在每台机器上测试，是否可以ping通对方：&lt;/p></description></item><item><title>RabbitMQ部署指南2</title><link>https://logan.wssw.fun/p/2023/01/45117845/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/45117845/</guid><description>&lt;h1 id="rabbitmq部署指南">
+&lt;/div>&lt;p>并在每台机器上测试，是否可以ping通对方：&lt;/p></description></item><item><title>RabbitMQ部署指南2</title><link>https://logan.wssw.fun/p/2023/01/45yhgx45/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/45yhgx45/</guid><description>&lt;h1 id="rabbitmq部署指南">
 &lt;a href="#rabbitmq%e9%83%a8%e7%bd%b2%e6%8c%87%e5%8d%97" class="header-anchor">#&lt;/a>
 RabbitMQ部署指南
 &lt;/h1>&lt;h1 id="1单机部署">
@@ -37060,7 +37060,7 @@ class="gallery-image link-image"
 data-flex-grow="20"
 data-flex-basis="20px"
 >
-&lt;/p></description></item><item><title>安装elasticsearch1</title><link>https://logan.wssw.fun/p/2023/01/34916834/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/34916834/</guid><description>&lt;h1 id="安装elasticsearch">
+&lt;/p></description></item><item><title>安装elasticsearch1</title><link>https://logan.wssw.fun/p/2023/01/34a16834/</link><pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate><guid>https://logan.wssw.fun/p/2023/01/34a16834/</guid><description>&lt;h1 id="安装elasticsearch">
 &lt;a href="#%e5%ae%89%e8%a3%85elasticsearch" class="header-anchor">#&lt;/a>
 安装elasticsearch
 &lt;/h1>&lt;h1 id="1部署单点es">
