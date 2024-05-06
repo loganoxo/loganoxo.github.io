@@ -13,12 +13,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://logan.wssw.fun/articles/with-hugo/seo/</loc>
-    <lastmod>2024-04-29T03:45:05+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://logan.wssw.fun/articles/with-hugo/other-example/</loc>
     <lastmod>2024-04-30T17:36:58+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -441,6 +435,12 @@
   <url>
     <loc>https://logan.wssw.fun/p/2023/01/11784511/</loc>
     <lastmod>2024-05-04T05:39:32+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://logan.wssw.fun/articles/with-hugo/websearch/</loc>
+    <lastmod>2024-05-07T01:10:08+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
