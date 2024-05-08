@@ -6,8 +6,7 @@
         <description>Recent content in Redis on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>logan</copyright>
-        <lastBuildDate>Mon, 04 Sep 2023 02:02:09 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/redis/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>logan</copyright><atom:link href="https://logan.wssw.fun/categories/redis/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>redis</title>
         <link>https://logan.wssw.fun/p/2023/09/3895o138/</link>
         <pubDate>Mon, 04 Sep 2023 02:02:09 +0800</pubDate>

@@ -10,58 +10,58 @@
         <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Maven</title>
         <link>https://logan.wssw.fun/categories/maven/</link>
-        <pubDate>Sun, 03 Mar 2024 18:49:51 +0800</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://logan.wssw.fun/categories/maven/</guid>
-        <description></description>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_063.jpg" alt="Featured image of post Maven" /&gt;</description>
         </item>
         <item>
         <title>Java</title>
         <link>https://logan.wssw.fun/categories/java/</link>
-        <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://logan.wssw.fun/categories/java/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Mac</title>
-        <link>https://logan.wssw.fun/categories/mac/</link>
-        <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
-        
-        <guid>https://logan.wssw.fun/categories/mac/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Redis</title>
-        <link>https://logan.wssw.fun/categories/redis/</link>
-        <pubDate>Mon, 04 Sep 2023 02:02:09 +0800</pubDate>
-        
-        <guid>https://logan.wssw.fun/categories/redis/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Linux</title>
-        <link>https://logan.wssw.fun/categories/linux/</link>
-        <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
-        
-        <guid>https://logan.wssw.fun/categories/linux/</guid>
-        <description></description>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_077.jpg" alt="Featured image of post Java" /&gt;</description>
         </item>
         <item>
         <title>JVM</title>
         <link>https://logan.wssw.fun/categories/jvm/</link>
-        <pubDate>Wed, 03 May 2023 03:17:33 +0800</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://logan.wssw.fun/categories/jvm/</guid>
-        <description></description>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_062.jpg" alt="Featured image of post JVM" /&gt;</description>
         </item>
         <item>
-        <title>SpringCloud</title>
-        <link>https://logan.wssw.fun/categories/springcloud/</link>
-        <pubDate>Tue, 03 Jan 2023 15:49:51 +0800</pubDate>
+        <title>Linux</title>
+        <link>https://logan.wssw.fun/categories/linux/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/springcloud/</guid>
-        <description></description>
+        <guid>https://logan.wssw.fun/categories/linux/</guid>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_103.jpg" alt="Featured image of post Linux" /&gt;</description>
+        </item>
+        <item>
+        <title>Mac</title>
+        <link>https://logan.wssw.fun/categories/mac/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/categories/mac/</guid>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_091.jpg" alt="Featured image of post Mac" /&gt;</description>
+        </item>
+        <item>
+        <title>Redis</title>
+        <link>https://logan.wssw.fun/categories/redis/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/categories/redis/</guid>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_072.jpg" alt="Featured image of post Redis" /&gt;</description>
+        </item>
+        <item>
+        <title>Spring Cloud</title>
+        <link>https://logan.wssw.fun/categories/spring-cloud/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://logan.wssw.fun/categories/spring-cloud/</guid>
+        <description>&lt;img src="https://logan.1357810.xyz/cover/pic_095.jpg" alt="Featured image of post Spring Cloud" /&gt;</description>
         </item>
         <item>
         <title>博客搭建</title>
