@@ -1725,7 +1725,7 @@
 &lt;p&gt;
 
 
-    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220216/20220216231354.png&#34;
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220216/20220216231354.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -1828,7 +1828,7 @@
 &lt;p&gt;
 
 
-    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220216/20220216234640.png&#34;
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220216/20220216234640.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -2206,7 +2206,7 @@
 &lt;p&gt;
 
 
-    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220217/20220217022837.png&#34;
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217022837.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -2227,7 +2227,7 @@
     &gt;
 
 
-    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220217/20220217022747.png&#34;
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217022747.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -2355,7 +2355,7 @@
 &lt;p&gt;
 
 
-    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220217/20220217023108.png&#34;
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217023108.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -2385,7 +2385,7 @@
     &gt;
 
 
-    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220217/20220217022329.png&#34;
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217022329.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -2570,7 +2570,7 @@
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;直接 vim&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220217/20220217234648.png&#34; alt=&#34;image-20220217234647835&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217234648.png&#34; alt=&#34;image-20220217234647835&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;h2 id=&#34;1-normal模式&#34;&gt;
     &lt;a href=&#34;#1-normal%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     1⃣️ normal模式
@@ -2621,17 +2621,17 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;使用 &lt;code&gt;v&lt;/code&gt; 进入visual模式，从光标的位置开始用方向键接连选择文本&lt;/p&gt;
-&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220218/20220218002252.png&#34; alt=&#34;image-20220218002252142&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;https://logan.1357810.xyz/img/20220218/20220218002252.png&#34; alt=&#34;image-20220218002252142&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;使用 &lt;code&gt;V&lt;/code&gt;进入visual模式，默认选中当前行，用方向键接连选择上面或者下面的行，只能选整行&lt;/p&gt;
-&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220218/20220218002433.png&#34; alt=&#34;image-20220218002432784&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;https://logan.1357810.xyz/img/20220218/20220218002433.png&#34; alt=&#34;image-20220218002432784&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;使用 &lt;code&gt;control+v&lt;/code&gt;进入visual模式，可以从光标位置任意选择&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220218/20220218002526.png&#34; alt=&#34;image-20220218002525514&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;img src=&#34;https://logan.1357810.xyz/img/20220218/20220218002526.png&#34; alt=&#34;image-20220218002525514&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;选中之后可以进行批量操作，比如选中之后，按下 &lt;code&gt;d&lt;/code&gt;，则可删除选中的所有文本&lt;/li&gt;
 &lt;/ul&gt;
@@ -2848,8 +2848,8 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;p&gt;&lt;code&gt;text object&lt;/code&gt;  是要操作的文本对象 , 比如单词 &lt;code&gt;w&lt;/code&gt; word,   句子 &lt;code&gt;s&lt;/code&gt; sentence,  段落 &lt;code&gt;p&lt;/code&gt; paragraph&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;​		&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220219/20220219003547.png&#34; alt=&#34;image-20220219003547222&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;​		&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220219/20220219003728.png&#34; alt=&#34;image-20220219003728441&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;img src=&#34;https://logan.1357810.xyz/img/20220219/20220219003547.png&#34; alt=&#34;image-20220219003547222&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;img src=&#34;https://logan.1357810.xyz/img/20220219/20220219003728.png&#34; alt=&#34;image-20220219003728441&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;10-vim复制粘贴和寄存器&#34;&gt;
     &lt;a href=&#34;#10-vim%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     10 vim复制粘贴和寄存器
@@ -2861,7 +2861,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;使用 &lt;code&gt;q register_name&lt;/code&gt;  选择要保存的寄存器 , 把录制的命令保存其中
 使用 &lt;code&gt;@ register_name&lt;/code&gt; 回放寄存器中保存的一系列命令&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://cdn.jsdelivr.net/gh/loganoxo/file@master//img/20220219/20220219012228.png&#34; alt=&#34;image-20220219012228240&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;img src=&#34;https://logan.1357810.xyz/img/20220219/20220219012228.png&#34; alt=&#34;image-20220219012228240&#34; style=&#34;zoom: 50%;&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;先给一行加上双引号,然后再回放到其他所有行&lt;/p&gt;

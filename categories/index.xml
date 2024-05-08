@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Fri, 03 May 2024 03:17:33 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>JVM</title>
-        <link>https://logan.wssw.fun/categories/jvm/</link>
-        <pubDate>Fri, 03 May 2024 03:17:33 +0800</pubDate>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Maven</title>
+        <link>https://logan.wssw.fun/categories/maven/</link>
+        <pubDate>Sun, 03 Mar 2024 18:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/jvm/</guid>
+        <guid>https://logan.wssw.fun/categories/maven/</guid>
         <description></description>
         </item>
         <item>
@@ -29,6 +29,14 @@
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
         <guid>https://logan.wssw.fun/categories/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JVM</title>
+        <link>https://logan.wssw.fun/categories/jvm/</link>
+        <pubDate>Wed, 03 May 2023 03:17:33 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/categories/jvm/</guid>
         <description></description>
         </item>
         <item>

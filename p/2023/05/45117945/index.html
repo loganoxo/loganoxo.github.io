@@ -1,0 +1,647 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="JVM底层原理"><meta name=keywords content="JVM"><title>04-JVM运行时参数</title>
+<link rel=canonical href=https://logan.wssw.fun/p/2023/05/45117945/><link rel=stylesheet href=/scss/style.min.13aa7f8d1031a866f598038f5f109d260d836a6b68cfc49d43713498eb7a1e2b.css><meta property='og:title' content="04-JVM运行时参数"><meta property='og:description' content="JVM底层原理"><meta property='og:url' content='https://logan.wssw.fun/p/2023/05/45117945/'><meta property='og:site_name' content='Logan的博客'><meta property='og:type' content='article'><meta property='article:section' content='Draft'><meta property='article:tag' content='JVM'><meta property='article:published_time' content='2023-05-03T03:17:33+08:00'><meta property='article:modified_time' content='2024-05-08T20:36:17+08:00'><meta name=twitter:title content="04-JVM运行时参数"><meta name=twitter:description content="JVM底层原理"><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><script async src="https://www.googletagmanager.com/gtag/js?id=G-R7GQB9XXQW"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-R7GQB9XXQW")}</script><meta name=google-site-verification content="3CAZCWVpDIWQxfZCqLMpov13bCzaH1QdnlHZTNnNjfM"><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.min.js crossorigin=anonymous async></script><meta name=referrer content="no-referrer-when-downgrade"><script src=/js/sceneanimation.min.8c8c65611aaf0c8996e6d8a06f3e3bc82e6c8d2d2ab542e7cde8df7bceeeba9e.js integrity="sha256-jIxlYRqvDImW5tigbz47yC5sjS0qtULnzejfe87uup4=" crossorigin=anonymous async></script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"dark")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e==="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar-3K_hu560d426f92925c766fafa78be2429fd1_3226_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy decoding=async alt=Avatar>
+</a><span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/>Logan🌀</a></h1><h2 class=site-description>Starry serenade ✍️</h2></div></header><ol class=menu-social><li><a href=https://github.com/loganoxo target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://blog.csdn.net/u014229652 target=_blank title=my_csdn rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg></a></li><li><a href=https://twitter.com target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>主页</span></a></li><li><a href=/articles/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1112 6.006a5 5 0 117.5 6.572"/></svg>
+<span>我的</span></a></li><li><a href=/page/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>归档</span></a></li><li><a href=/page/photos/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7h1a2 2 0 002-2 1 1 0 011-1h6a1 1 0 011 1 2 2 0 002 2h1a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2"/><path d="M9 13a3 3 0 106 0 3 3 0 00-6 0"/></svg>
+<span>相册</span></a></li><li><a href=/page/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>搜索</span></a></li><li><a href=/timeline/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-fish-christianity" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7S16.354 17 9.692 17c-3.226.025-6.194-1.905-7.692-5 1.498-3.095 4.466-5.025 7.692-5C16.354 7 22 17 22 17"/></svg>
+<span>年轴</span></a></li><li><a href=/page/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>友链</span></a></li><li><a href=/page/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>关于</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" viewBox="0 0 1025 1024" xmlns="http://www.w3.org/2000/svg" p-id="14930" width="128" height="128"><path d="M253.939302 502.92736a269.74208 269.74208.0 00122.90048 235.84768 257.024 257.024.0 00259.95264 9.07264c81.46944-44.27776 135.70048-130.49856 139.0592-226.7136 5.14048-147.3536-107.37664-270.1312-250.63424-275.1488-145.32608-5.05856-266.1376 109.568-271.27808 256.94208zM531.730022.3072c16.384.57344 32.256 15.48288 31.62112 33.8944l-3.72736 106.43456c-.57344 16.384-15.4624 32.256-33.8944 31.60064-16.384-.57344-32.23552-15.4624-31.60064-33.8944l3.72736-106.43456c2.74432-20.3776 15.4624-32.23552 33.87392-31.60064zm493.89568 527.52384c-.57344 16.384-13.35296 30.26944-33.8944 31.60064l-104.36608-3.64544c-16.384-.57344-32.19456-17.53088-31.62112-33.8944.57344-16.384 15.48288-32.256 33.8944-31.60064l104.38656 3.64544a32.3584 32.3584.0 0131.60064 33.8944zm-855.53152-29.9008c-.57344 16.384-13.35296 30.28992-33.8944 31.62112l-104.38656-3.64544c-16.384-.57344-32.17408-17.5104-31.60064-33.8944.57344-16.384 15.4624-32.256 33.8944-31.60064l104.38656 3.64544a32.3584 32.3584.0 0131.60064 33.8944zm325.91872 525.76256c-16.384-.57344-32.256-15.48288-31.62112-33.8944l3.72736-106.43456c.57344-16.384 15.4624-32.256 33.8944-31.60064 16.384.57344 32.23552 15.4624 31.60064 33.8944l-3.72736 106.43456c-2.74432 20.3776-17.5104 32.1536-33.87392 31.60064zm401.32608-871.26016c11.85792 12.6976 11.0592 35.2256-1.6384 47.06304l-78.37696 73.09312c-12.6976 11.85792-33.1776 11.14112-47.08352-1.6384-11.83744-12.6976-11.0592-35.2256 1.6384-47.08352l78.39744-73.09312c16.85504-13.74208 35.2256-11.0592 47.06304 1.6384zm-15.50336 737.1776c-12.6976 11.85792-31.1296 11.22304-47.06304-1.6384l-70.9632-80.34304c-11.85792-12.6976-11.0592-35.2256 1.6384-47.08352s35.2256-11.0592 47.08352 1.6384l73.07264 78.37696c9.728 14.68416 8.94976 37.21216-3.76832 49.0496zm-596.31616-645.8368c-12.6976 11.85792-31.1296 11.20256-47.06304-1.6384l-73.09312-78.37696c-11.85792-12.6976-11.0592-35.2256 1.6384-47.08352s35.2256-11.0592 47.08352 1.6384l73.09312 78.37696c11.776 14.7456 11.0592 35.2256-1.6384 47.08352zm-138.24 614.05184c-11.85792-12.71808-11.0592-35.2256 1.6384-47.08352l78.37696-73.09312c12.6976-11.83744 33.1776-11.12064 47.08352 1.6384 11.83744 12.71808 11.0592 35.2256-1.6384 47.104l-78.39744 73.07264c-16.7936 11.71456-35.2256 11.0592-47.06304-1.6384z" fill="#ffb948"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="128" height="128"><path d="M578.256332 591.814252v-82.970701m0 95.54202a12.655127 12.655127.0 01-12.571318-12.571319v-82.970701a12.571318 12.571318.0 1125.142636.0v82.970701a12.571318 12.571318.0 01-12.571318 12.571319z" fill="#f89b1b"/><path d="M598.873294 479.342858a36.959676 36.959676.0 01-27.573092-61.59946 52.380493 52.380493.0 1062.521357 36.540632 36.875867 36.875867.0 01-34.948265 25.058828zm204.0744-109.035234v-82.970701m0 95.542019a12.571318 12.571318.0 01-12.571318-12.571318v-82.970701a12.571318 12.571318.0 1125.142636.0v82.970701a12.571318 12.571318.0 01-12.571318 12.571318z" fill="#f89b1b"/><path d="M823.9837 257.83623a36.959676 36.959676.0 01-27.6569-61.515651 52.129067 52.129067.0 1064.616576 50.285273 53.050963 53.050963.0 00-2.011411-14.163685A36.875867 36.875867.0 01823.9837 257.83623z" fill="#f89b1b"/><path d="M803.282929 328.822274a59.588049 59.588049.0 0159.588049 59.588048V785.66398H743.694881V388.410322a59.588049 59.588049.0 0159.588048-59.588048zM581.776301 551.16699a143.145411 143.145411.0 01143.145411 143.145411V837.54162H438.463272V694.312401A143.145411 143.145411.0 01581.776301 551.16699z" fill="#612273"/><path d="M600.968514 198.667225l-49.111951-4.693292a8.380879 8.380879.0 01-7.039938-5.196145l-17.599845-42.658674a8.380879 8.380879.0 00-15.672244.0l-17.432228 42.658674a8.380879 8.380879.0 01-7.039938 5.196145l-49.11195 4.693292a8.380879 8.380879.0 00-4.777101 14.750347l36.959676 32.51781a8.380879 8.380879.0 012.681881 8.380878l-11.06276 45.67579a8.380879 8.380879.0 0012.487509 9.302776L515.232123 285.074086a8.380879 8.380879.0 018.380879.0l40.982497 24.136931a8.380879 8.380879.0 0012.571319-9.302776l-10.978952-45.675789a8.380879 8.380879.0 012.681882-8.380879L606.08085 213.417572a8.380879 8.380879.0 00-5.028528-14.750347z" fill="#fed150"/><path d="M470.897274 246.77347l1.927602-8.380879a8.380879 8.380879.0 00-2.681881-8.380879l-35.032074-30.506399a8.380879 8.380879.0 00-1.927602 13.912259l36.959676 32.51781a6.788512 6.788512.0 01.754279.838088zM603.98563 199.589122l-34.948265 30.674016a8.380879 8.380879.0 00-2.681881 8.380879l1.927602 8.380879a6.788512 6.788512.0 01.754279-.838088l37.043485-32.769236a8.380879 8.380879.0 00-2.09522-13.82845zm-28.578797 92.189667a8.380879 8.380879.0 01-10.643716 1.759985l-40.982498-24.053123a8.380879 8.380879.0 00-8.380879.0L474.249625 293.454965a8.380879 8.380879.0 01-10.643716-1.676176l-1.927602 8.380879a8.380879 8.380879.0 0012.487509 9.302775l41.066307-24.388357a8.380879 8.380879.0 018.380879.0l40.982497 24.136931a8.380879 8.380879.0 0012.571319-9.302776z" fill="#fed150" opacity=".5"/><path d="M434.608068 426.543321l-28.159753-2.681881a4.86091 4.86091.0 01-4.022822-3.017117l-10.057054-24.388357a4.86091 4.86091.0 00-8.967541.0l-9.973245 24.388357a4.693292 4.693292.0 01-4.022822 3.017117l-28.159753 2.681881a4.86091 4.86091.0 00-2.76569 8.380879l21.203623 18.605551a4.944719 4.944719.0 011.592367 4.777101L354.654484 484.455194a4.86091 4.86091.0 007.123747 5.363762l23.466461-13.82845a5.196145 5.196145.0 014.944718.0l23.466461 13.82845a4.86091 4.86091.0 007.123747-5.363762l-6.285659-26.064533a4.86091 4.86091.0 011.508558-4.777101l21.203624-18.605551a4.86091 4.86091.0 00-2.849499-8.380879z" fill="#fed150"/><path d="M360.102055 454.032604l1.173323-4.609484a4.944719 4.944719.0 00-1.592367-5.112336l-20.0303-17.683654a4.944719 4.944719.0 00-1.173323 8.380879l21.203623 18.605551zm76.182189-26.98643-20.0303 17.26461a4.86091 4.86091.0 00-1.508559 4.777101l1.173323 4.693292v-.502852l21.203624-18.605551a4.86091 4.86091.0 00-.838088-7.6266zM419.94153 479.845711a4.777101 4.777101.0 01-6.034233 1.005705l-23.46646-13.82845a5.196145 5.196145.0 00-4.944719.0l-23.466461 13.82845a4.777101 4.777101.0 01-6.034233-1.005705l-1.089514 4.609483a4.86091 4.86091.0 007.123747 5.363762l23.466461-13.82845a5.196145 5.196145.0 014.944719.0l23.46646 13.82845a4.86091 4.86091.0 007.123747-5.363762z" fill="#fed150" opacity=".5"/><path d="M635.413926 803.68287A414.685886 414.685886.0 01459.41547 18.729756 9.805628 9.805628.0 00453.967898.124205a513.831683 513.831683.0 10567.050264 607.027056 9.805628 9.805628.0 00-18.186507-6.704704A414.350651 414.350651.0 01635.413926 803.68287z" fill="#fed150" p-id="22313"/><path d="M50.931434 292.868303a460.110249 460.110249.0 00275.311871 359.455895 413.847798 413.847798.0 01133.339782-633.594442A9.805628 9.805628.0 00453.967898.124205 513.915492 513.915492.0 0050.931434 292.868303z" fill="#fed150" opacity=".4" p-id="22314"/><path d="M1006.016389 597.261823A513.664065 513.664065.0 013.914704 475.320036c-.670471 10.308481-1.257132 20.616962-1.257132 31.093061a513.831683 513.831683.0 001018.36059 100.570546 9.805628 9.805628.0 00-15.001773-9.72182zM231.539373 332.258434c0 7.458982.67047 14.917964 1.257132 22.293138A414.769695 414.769695.0 01459.583087 18.729756 9.805628 9.805628.0 00453.967898.124205a505.869848 505.869848.0 00-94.620122 20.868388A413.177328 413.177328.0 00231.539373 332.258434z" fill="#fed150" opacity=".5" p-id="22315"/><path d="M715.032275 421.514794m17.683654.0h141.217809q17.683654.0 17.683655 17.683654v-.083809q0 17.683654-17.683655 17.683655H732.715929q-17.683654.0-17.683654-17.683655v.083809q0-17.683654 17.683654-17.683654z" fill="#eb3d72" p-id="22316"/><path d="M205.139605 319.603307c4.441866-6.872321 22.041711-45.340555-11.817039-67.047031s-51.626214 8.380879-51.626214 8.380879a25.142637 25.142637.0 1042.742482 27.489282s2.179029 5.950424-6.537085 18.437934-25.142637 12.236083-43.077718.754279-47.01673-65.789899-.67047-138.787354c1.592367-2.514264 3.352352-4.693292 5.028527-7.039938a26.818812 26.818812.0 00-23.047417-2.430455 33.523515 33.523515.0 00-18.689359 17.683654c-31.260678 64.36515-22.628373 127.724594 21.203623 155.884347 48.944333 31.093061 82.048804-6.453277 86.49067-13.325597zM734.224488 931.491272c6.453277-2.681881 37.713955-21.45505 24.304548-53.386198s-40.647262-19.35983-40.647262-19.35983a21.874094 21.874094.0 1016.761757 40.312027s-1.340941 5.363762-13.577023 9.973246S697.264812 905.259122 689.889638 888.497364s-1.340941-69.561295 67.047031-98.894371c2.346646-1.005705 4.693292-1.676176 7.039938-2.514263a31.931148 31.931148.0 00-1.927602-3.352352 28.578797 28.578797.0 00-38.635851-7.542791c-51.87764 30.841634-74.422204 81.545951-57.325212 122.277023 19.778874 46.262451 61.59946 35.786353 68.136546 33.020662zM279.813236 802.844782c-5.950424-3.687587-39.390131-18.354125-57.660447 11.146569s7.794217 44.334849 7.794217 44.334849a21.874094 21.874094.0 1023.047417-36.875867s5.112336-2.011411 16.007479 5.279954 10.811334 21.622667 1.173323 37.211102-55.984271 41.317733-119.511333 2.430455c-2.179029-1.340941-4.106631-2.849499-6.118041-4.274249a22.376947 22.376947.0 00-1.676176 3.51997 28.662606 28.662606.0 0016.342714 36.037779c55.146183 24.388357 109.538087 13.409406 132.920739-24.136931 26.399768-42.9101-6.369468-70.902235-12.319892-74.673631zM431.00429 694.312401h302.298301m0 20.952197H431.00429a20.952197 20.952197.0 010-41.904394h302.298301a20.952197 20.952197.0 010 41.904394z" fill="#eb3d72" p-id="22317"/><path d="M255.760113 683.082023m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22318"/><path d="M356.246851 840.977781m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22319"/><path d="M54.870447 472.135302m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22320"/><path d="M561.410765 873.914635m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".5" p-id="22321"/><path d="M445.167976 825.13792m-19.862683.0a19.862683 19.862683.0 1039.725365.0 19.862683 19.862683.0 10-39.725365.0z" fill="#fed150" opacity=".5" p-id="22322"/><path d="M149.406761 689.786726m-19.862683.0a19.862683 19.862683.0 1039.725365.0 19.862683 19.862683.0 10-39.725365.0z" fill="#fed150" opacity=".5" p-id="22323"/><path d="M132.225959 633.299603m-18.940786.0a18.940786 18.940786.0 1037.881572.0 18.940786 18.940786.0 10-37.881572.0z" fill="#fed150" opacity=".4" p-id="22324"/><path d="M475.339139 906.935297m-18.940786.0a18.940786 18.940786.0 1037.881573.0 18.940786 18.940786.0 10-37.881573.0z" fill="#fed150" opacity=".4" p-id="22325"/></svg>
+<span>主题</span></li></ol></li></ol></aside><main class="main full-width"><div class=breadcrumb><li><a href=/>首页</a></li><li><a href=/p/>未整理</a></li><li class=active><a href=/p/2023/05/45117945/>04-JVM运行时参数</a></li></div><article class=main-article><header class="article-header not-page"><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"/><use href="#gentle-wave" x="48" y="3"/><use href="#gentle-wave" x="48" y="5"/><use href="#gentle-wave" x="48" y="7"/></g></svg></section><style>.main-hero-waves-area{--icat-post-waveone:rgba(17, 17, 17, 0.78);--icat-post-wavetwo:rgba(17, 17, 17, 0.51);--icat-post-wavethree:rgba(17, 17, 17, 0.212);--icat-post-wavefour:rgb(17, 17, 17);opacity:1; [data-scheme="light"] & { --icat-post-waveone: rgba(255, 255, 255, 0.741); --icat-post-wavetwo: rgba(255, 255, 255, 0.51); --icat-post-wavethree: rgba(255, 255, 255, 0.212); --icat-post-wavefour: #fff; }}.waves-area{width:100%;position:absolute;left:0;bottom:0;z-index:5}.waves-area .waves-svg{width:100%;height:8rem}@media screen and (max-width:768px){.waves-area .waves-svg{height:40px;min-height:40px}}.waves-area .waves-svg .parallax>use{-webkit-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-moz-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-o-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-ms-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite}.waves-area .waves-svg .parallax>use:nth-child(1){-webkit-animation-delay:-2s;-moz-animation-delay:-2s;-o-animation-delay:-2s;-ms-animation-delay:-2s;animation-delay:-2s;-webkit-animation-duration:7s;-moz-animation-duration:7s;-o-animation-duration:7s;-ms-animation-duration:7s;animation-duration:7s;fill:var(--icat-post-waveone)}.waves-area .waves-svg .parallax>use:nth-child(2){-webkit-animation-delay:-3s;-moz-animation-delay:-3s;-o-animation-delay:-3s;-ms-animation-delay:-3s;animation-delay:-3s;-webkit-animation-duration:10s;-moz-animation-duration:10s;-o-animation-duration:10s;-ms-animation-duration:10s;animation-duration:10s;fill:var(--icat-post-wavetwo)}.waves-area .waves-svg .parallax>use:nth-child(3){-webkit-animation-delay:-4s;-moz-animation-delay:-4s;-o-animation-delay:-4s;-ms-animation-delay:-4s;animation-delay:-4s;-webkit-animation-duration:13s;-moz-animation-duration:13s;-o-animation-duration:13s;-ms-animation-duration:13s;animation-duration:13s;fill:var(--icat-post-wavethree)}.waves-area .waves-svg .parallax>use:nth-child(4){-webkit-animation-delay:-5s;-moz-animation-delay:-5s;-o-animation-delay:-5s;-ms-animation-delay:-5s;animation-delay:-5s;-webkit-animation-duration:20s;-moz-animation-duration:20s;-o-animation-duration:20s;-ms-animation-duration:20s;animation-duration:20s;fill:var(--icat-post-wavefour)}@keyframes move-forever{0%{transform:translate3d(-90px,0,0)}100%{transform:translate3d(85px,0,0)}}</style><div class=article-details><header class=article-category><a href=/categories/jvm/>JVM</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/2023/05/45117945/>04-JVM运行时参数</a></h2><h3 class=article-subtitle>JVM底层原理</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>2023年5月3日</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 15 分钟</time></div></footer></div></header><section class=article-content><h1 id=4-jvm-运行时参数><a href=#4-jvm-%e8%bf%90%e8%a1%8c%e6%97%b6%e5%8f%82%e6%95%b0 class=header-anchor>#</a>
+4. JVM 运行时参数</h1><h2 id=41-jvm-参数选项><a href=#41-jvm-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.1. JVM 参数选项</h2><p>官网地址：<a class=link href=https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html target=_blank rel=noopener>https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><h3 id=411-类型一标准参数选项><a href=#411-%e7%b1%bb%e5%9e%8b%e4%b8%80%e6%a0%87%e5%87%86%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.1.1. 类型一：标准参数选项</h3><ul><li>比较稳定，后续版本基本不会变化</li><li>直接在DOS窗口中运行java或者java -help可以看到所有的标准选项</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-0-1><a class=lnlinks href=#hl-0-1> 1</a>
+</span><span class=lnt id=hl-0-2><a class=lnlinks href=#hl-0-2> 2</a>
+</span><span class=lnt id=hl-0-3><a class=lnlinks href=#hl-0-3> 3</a>
+</span><span class=lnt id=hl-0-4><a class=lnlinks href=#hl-0-4> 4</a>
+</span><span class=lnt id=hl-0-5><a class=lnlinks href=#hl-0-5> 5</a>
+</span><span class=lnt id=hl-0-6><a class=lnlinks href=#hl-0-6> 6</a>
+</span><span class=lnt id=hl-0-7><a class=lnlinks href=#hl-0-7> 7</a>
+</span><span class=lnt id=hl-0-8><a class=lnlinks href=#hl-0-8> 8</a>
+</span><span class=lnt id=hl-0-9><a class=lnlinks href=#hl-0-9> 9</a>
+</span><span class=lnt id=hl-0-10><a class=lnlinks href=#hl-0-10>10</a>
+</span><span class=lnt id=hl-0-11><a class=lnlinks href=#hl-0-11>11</a>
+</span><span class=lnt id=hl-0-12><a class=lnlinks href=#hl-0-12>12</a>
+</span><span class=lnt id=hl-0-13><a class=lnlinks href=#hl-0-13>13</a>
+</span><span class=lnt id=hl-0-14><a class=lnlinks href=#hl-0-14>14</a>
+</span><span class=lnt id=hl-0-15><a class=lnlinks href=#hl-0-15>15</a>
+</span><span class=lnt id=hl-0-16><a class=lnlinks href=#hl-0-16>16</a>
+</span><span class=lnt id=hl-0-17><a class=lnlinks href=#hl-0-17>17</a>
+</span><span class=lnt id=hl-0-18><a class=lnlinks href=#hl-0-18>18</a>
+</span><span class=lnt id=hl-0-19><a class=lnlinks href=#hl-0-19>19</a>
+</span><span class=lnt id=hl-0-20><a class=lnlinks href=#hl-0-20>20</a>
+</span><span class=lnt id=hl-0-21><a class=lnlinks href=#hl-0-21>21</a>
+</span><span class=lnt id=hl-0-22><a class=lnlinks href=#hl-0-22>22</a>
+</span><span class=lnt id=hl-0-23><a class=lnlinks href=#hl-0-23>23</a>
+</span><span class=lnt id=hl-0-24><a class=lnlinks href=#hl-0-24>24</a>
+</span><span class=lnt id=hl-0-25><a class=lnlinks href=#hl-0-25>25</a>
+</span><span class=lnt id=hl-0-26><a class=lnlinks href=#hl-0-26>26</a>
+</span><span class=lnt id=hl-0-27><a class=lnlinks href=#hl-0-27>27</a>
+</span><span class=lnt id=hl-0-28><a class=lnlinks href=#hl-0-28>28</a>
+</span><span class=lnt id=hl-0-29><a class=lnlinks href=#hl-0-29>29</a>
+</span><span class=lnt id=hl-0-30><a class=lnlinks href=#hl-0-30>30</a>
+</span><span class=lnt id=hl-0-31><a class=lnlinks href=#hl-0-31>31</a>
+</span><span class=lnt id=hl-0-32><a class=lnlinks href=#hl-0-32>32</a>
+</span><span class=lnt id=hl-0-33><a class=lnlinks href=#hl-0-33>33</a>
+</span><span class=lnt id=hl-0-34><a class=lnlinks href=#hl-0-34>34</a>
+</span><span class=lnt id=hl-0-35><a class=lnlinks href=#hl-0-35>35</a>
+</span><span class=lnt id=hl-0-36><a class=lnlinks href=#hl-0-36>36</a>
+</span><span class=lnt id=hl-0-37><a class=lnlinks href=#hl-0-37>37</a>
+</span><span class=lnt id=hl-0-38><a class=lnlinks href=#hl-0-38>38</a>
+</span><span class=lnt id=hl-0-39><a class=lnlinks href=#hl-0-39>39</a>
+</span><span class=lnt id=hl-0-40><a class=lnlinks href=#hl-0-40>40</a>
+</span><span class=lnt id=hl-0-41><a class=lnlinks href=#hl-0-41>41</a>
+</span><span class=lnt id=hl-0-42><a class=lnlinks href=#hl-0-42>42</a>
+</span><span class=lnt id=hl-0-43><a class=lnlinks href=#hl-0-43>43</a>
+</span><span class=lnt id=hl-0-44><a class=lnlinks href=#hl-0-44>44</a>
+</span><span class=lnt id=hl-0-45><a class=lnlinks href=#hl-0-45>45</a>
+</span><span class=lnt id=hl-0-46><a class=lnlinks href=#hl-0-46>46</a>
+</span><span class=lnt id=hl-0-47><a class=lnlinks href=#hl-0-47>47</a>
+</span><span class=lnt id=hl-0-48><a class=lnlinks href=#hl-0-48>48</a>
+</span><span class=lnt id=hl-0-49><a class=lnlinks href=#hl-0-49>49</a>
+</span><span class=lnt id=hl-0-50><a class=lnlinks href=#hl-0-50>50</a>
+</span><span class=lnt id=hl-0-51><a class=lnlinks href=#hl-0-51>51</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>&gt; java -help
+</span></span><span class=line><span class=cl>用法: java <span class=o>[</span>-options<span class=o>]</span> class <span class=o>[</span>args...<span class=o>]</span>
+</span></span><span class=line><span class=cl>           <span class=o>(</span>执行类<span class=o>)</span>
+</span></span><span class=line><span class=cl>   或  java <span class=o>[</span>-options<span class=o>]</span> -jar jarfile <span class=o>[</span>args...<span class=o>]</span>
+</span></span><span class=line><span class=cl>           <span class=o>(</span>执行 jar 文件<span class=o>)</span>
+</span></span><span class=line><span class=cl>其中选项包括:
+</span></span><span class=line><span class=cl>    -d32          使用 <span class=m>32</span> 位数据模型 <span class=o>(</span>如果可用<span class=o>)</span>
+</span></span><span class=line><span class=cl>    -d64          使用 <span class=m>64</span> 位数据模型 <span class=o>(</span>如果可用<span class=o>)</span>
+</span></span><span class=line><span class=cl>    -server       选择 <span class=s2>&#34;server&#34;</span> VM
+</span></span><span class=line><span class=cl>                  默认 VM 是 server.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    -cp &lt;目录和 zip/jar 文件的类搜索路径&gt;
+</span></span><span class=line><span class=cl>    -classpath &lt;目录和 zip/jar 文件的类搜索路径&gt;
+</span></span><span class=line><span class=cl>                  用 <span class=p>;</span> 分隔的目录, JAR 档案
+</span></span><span class=line><span class=cl>                  和 ZIP 档案列表, 用于搜索类文件。
+</span></span><span class=line><span class=cl>    -D&lt;名称&gt;<span class=o>=</span>&lt;值&gt;
+</span></span><span class=line><span class=cl>                  设置系统属性
+</span></span><span class=line><span class=cl>    -verbose:<span class=o>[</span>class<span class=p>|</span>gc<span class=p>|</span>jni<span class=o>]</span>
+</span></span><span class=line><span class=cl>                  启用详细输出
+</span></span><span class=line><span class=cl>    -version      输出产品版本并退出
+</span></span><span class=line><span class=cl>    -version:&lt;值&gt;
+</span></span><span class=line><span class=cl>                  警告: 此功能已过时, 将在
+</span></span><span class=line><span class=cl>                  未来发行版中删除。
+</span></span><span class=line><span class=cl>                  需要指定的版本才能运行
+</span></span><span class=line><span class=cl>    -showversion  输出产品版本并继续
+</span></span><span class=line><span class=cl>    -jre-restrict-search <span class=p>|</span> -no-jre-restrict-search
+</span></span><span class=line><span class=cl>                  警告: 此功能已过时, 将在
+</span></span><span class=line><span class=cl>                  未来发行版中删除。
+</span></span><span class=line><span class=cl>                  在版本搜索中包括/排除用户专用 JRE
+</span></span><span class=line><span class=cl>    -? -help      输出此帮助消息
+</span></span><span class=line><span class=cl>    -X            输出非标准选项的帮助
+</span></span><span class=line><span class=cl>    -ea<span class=o>[</span>:&lt;packagename&gt;...<span class=p>|</span>:&lt;classname&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>    -enableassertions<span class=o>[</span>:&lt;packagename&gt;...<span class=p>|</span>:&lt;classname&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>                  按指定的粒度启用断言
+</span></span><span class=line><span class=cl>    -da<span class=o>[</span>:&lt;packagename&gt;...<span class=p>|</span>:&lt;classname&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>    -disableassertions<span class=o>[</span>:&lt;packagename&gt;...<span class=p>|</span>:&lt;classname&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>                  禁用具有指定粒度的断言
+</span></span><span class=line><span class=cl>    -esa <span class=p>|</span> -enablesystemassertions
+</span></span><span class=line><span class=cl>                  启用系统断言
+</span></span><span class=line><span class=cl>    -dsa <span class=p>|</span> -disablesystemassertions
+</span></span><span class=line><span class=cl>                  禁用系统断言
+</span></span><span class=line><span class=cl>    -agentlib:&lt;libname&gt;<span class=o>[=</span>&lt;选项&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>                  加载本机代理库 &lt;libname&gt;, 例如 -agentlib:hprof
+</span></span><span class=line><span class=cl>                  另请参阅 -agentlib:jdwp<span class=o>=</span><span class=nb>help</span> 和 -agentlib:hprof<span class=o>=</span><span class=nb>help</span>
+</span></span><span class=line><span class=cl>    -agentpath:&lt;pathname&gt;<span class=o>[=</span>&lt;选项&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>                  按完整路径名加载本机代理库
+</span></span><span class=line><span class=cl>    -javaagent:&lt;jarpath&gt;<span class=o>[=</span>&lt;选项&gt;<span class=o>]</span>
+</span></span><span class=line><span class=cl>                  加载 Java 编程语言代理, 请参阅 java.lang.instrument
+</span></span><span class=line><span class=cl>    -splash:&lt;imagepath&gt;
+</span></span><span class=line><span class=cl>                  使用指定的图像显示启动屏幕
+</span></span><span class=line><span class=cl>有关详细信息, 请参阅 http://www.oracle.com/technetwork/java/javase/documentation/index.html。
+</span></span></code></pre></td></tr></table></div></div><p><strong>Server 模式和 Client 模式</strong></p><p>Hotspot JVM 有两种模式，分别是 server 和 client，分别通过-server 和-client 模式设置</p><ul><li>32 位系统上，默认使用 Client 类型的 JVM。要想使用 Server 模式，机器配置至少有 2 个以上的 CPU 和 2G 以上的物理内存。client 模式适用于对内存要求较小的桌面应用程序，默认使用 Serial 串行垃圾收集器</li><li>64 位系统上，只支持 server 模式的 JVM，适用于需要大内存的应用程序，默认使用并行垃圾收集器</li></ul><p>官网地址：<a class=link href=https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html target=_blank rel=noopener>https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><p>如何知道系统默认使用的是那种模式呢？</p><p>通过 java -version 命令：可以看到 Server VM 字样，代表当前系统使用是 Server 模式</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-1-1><a class=lnlinks href=#hl-1-1>1</a>
+</span><span class=lnt id=hl-1-2><a class=lnlinks href=#hl-1-2>2</a>
+</span><span class=lnt id=hl-1-3><a class=lnlinks href=#hl-1-3>3</a>
+</span><span class=lnt id=hl-1-4><a class=lnlinks href=#hl-1-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>&gt; java -version
+</span></span><span class=line><span class=cl>java version <span class=s2>&#34;1.8.0_201&#34;</span>
+</span></span><span class=line><span class=cl>Java<span class=o>(</span>TM<span class=o>)</span> SE Runtime Environment <span class=o>(</span>build 1.8.0_201-b09<span class=o>)</span>
+</span></span><span class=line><span class=cl>Java HotSpot<span class=o>(</span>TM<span class=o>)</span> 64-Bit Server VM <span class=o>(</span>build 25.201-b09, mixed mode<span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=412-类型二-x-参数选项><a href=#412-%e7%b1%bb%e5%9e%8b%e4%ba%8c-x-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.1.2. 类型二：-X 参数选项</h3><ul><li>非标准化参数</li><li>功能还是比较稳定的。但官方说后续版本可能会变更</li><li>直接在DOS窗口中运行java -X命令可以看到所有的X选项</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-2-1><a class=lnlinks href=#hl-2-1> 1</a>
+</span><span class=lnt id=hl-2-2><a class=lnlinks href=#hl-2-2> 2</a>
+</span><span class=lnt id=hl-2-3><a class=lnlinks href=#hl-2-3> 3</a>
+</span><span class=lnt id=hl-2-4><a class=lnlinks href=#hl-2-4> 4</a>
+</span><span class=lnt id=hl-2-5><a class=lnlinks href=#hl-2-5> 5</a>
+</span><span class=lnt id=hl-2-6><a class=lnlinks href=#hl-2-6> 6</a>
+</span><span class=lnt id=hl-2-7><a class=lnlinks href=#hl-2-7> 7</a>
+</span><span class=lnt id=hl-2-8><a class=lnlinks href=#hl-2-8> 8</a>
+</span><span class=lnt id=hl-2-9><a class=lnlinks href=#hl-2-9> 9</a>
+</span><span class=lnt id=hl-2-10><a class=lnlinks href=#hl-2-10>10</a>
+</span><span class=lnt id=hl-2-11><a class=lnlinks href=#hl-2-11>11</a>
+</span><span class=lnt id=hl-2-12><a class=lnlinks href=#hl-2-12>12</a>
+</span><span class=lnt id=hl-2-13><a class=lnlinks href=#hl-2-13>13</a>
+</span><span class=lnt id=hl-2-14><a class=lnlinks href=#hl-2-14>14</a>
+</span><span class=lnt id=hl-2-15><a class=lnlinks href=#hl-2-15>15</a>
+</span><span class=lnt id=hl-2-16><a class=lnlinks href=#hl-2-16>16</a>
+</span><span class=lnt id=hl-2-17><a class=lnlinks href=#hl-2-17>17</a>
+</span><span class=lnt id=hl-2-18><a class=lnlinks href=#hl-2-18>18</a>
+</span><span class=lnt id=hl-2-19><a class=lnlinks href=#hl-2-19>19</a>
+</span><span class=lnt id=hl-2-20><a class=lnlinks href=#hl-2-20>20</a>
+</span><span class=lnt id=hl-2-21><a class=lnlinks href=#hl-2-21>21</a>
+</span><span class=lnt id=hl-2-22><a class=lnlinks href=#hl-2-22>22</a>
+</span><span class=lnt id=hl-2-23><a class=lnlinks href=#hl-2-23>23</a>
+</span><span class=lnt id=hl-2-24><a class=lnlinks href=#hl-2-24>24</a>
+</span><span class=lnt id=hl-2-25><a class=lnlinks href=#hl-2-25>25</a>
+</span><span class=lnt id=hl-2-26><a class=lnlinks href=#hl-2-26>26</a>
+</span><span class=lnt id=hl-2-27><a class=lnlinks href=#hl-2-27>27</a>
+</span><span class=lnt id=hl-2-28><a class=lnlinks href=#hl-2-28>28</a>
+</span><span class=lnt id=hl-2-29><a class=lnlinks href=#hl-2-29>29</a>
+</span><span class=lnt id=hl-2-30><a class=lnlinks href=#hl-2-30>30</a>
+</span><span class=lnt id=hl-2-31><a class=lnlinks href=#hl-2-31>31</a>
+</span><span class=lnt id=hl-2-32><a class=lnlinks href=#hl-2-32>32</a>
+</span><span class=lnt id=hl-2-33><a class=lnlinks href=#hl-2-33>33</a>
+</span><span class=lnt id=hl-2-34><a class=lnlinks href=#hl-2-34>34</a>
+</span><span class=lnt id=hl-2-35><a class=lnlinks href=#hl-2-35>35</a>
+</span><span class=lnt id=hl-2-36><a class=lnlinks href=#hl-2-36>36</a>
+</span><span class=lnt id=hl-2-37><a class=lnlinks href=#hl-2-37>37</a>
+</span><span class=lnt id=hl-2-38><a class=lnlinks href=#hl-2-38>38</a>
+</span><span class=lnt id=hl-2-39><a class=lnlinks href=#hl-2-39>39</a>
+</span><span class=lnt id=hl-2-40><a class=lnlinks href=#hl-2-40>40</a>
+</span><span class=lnt id=hl-2-41><a class=lnlinks href=#hl-2-41>41</a>
+</span><span class=lnt id=hl-2-42><a class=lnlinks href=#hl-2-42>42</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>&gt; java -X
+</span></span><span class=line><span class=cl>    -Xmixed           混合模式执行 <span class=o>(</span>默认<span class=o>)</span>
+</span></span><span class=line><span class=cl>    -Xint             仅解释模式执行
+</span></span><span class=line><span class=cl>    -Xbootclasspath:&lt;用 <span class=p>;</span> 分隔的目录和 zip/jar 文件&gt;
+</span></span><span class=line><span class=cl>                      设置搜索路径以引导类和资源
+</span></span><span class=line><span class=cl>    -Xbootclasspath/a:&lt;用 <span class=p>;</span> 分隔的目录和 zip/jar 文件&gt;
+</span></span><span class=line><span class=cl>                      附加在引导类路径末尾
+</span></span><span class=line><span class=cl>    -Xbootclasspath/p:&lt;用 <span class=p>;</span> 分隔的目录和 zip/jar 文件&gt;
+</span></span><span class=line><span class=cl>                      置于引导类路径之前
+</span></span><span class=line><span class=cl>    -Xdiag            显示附加诊断消息
+</span></span><span class=line><span class=cl>    -Xnoclassgc       禁用类垃圾收集
+</span></span><span class=line><span class=cl>    -Xincgc           启用增量垃圾收集
+</span></span><span class=line><span class=cl>    -Xloggc:&lt;file&gt;    将 GC 状态记录在文件中 <span class=o>(</span>带时间戳<span class=o>)</span>
+</span></span><span class=line><span class=cl>    -Xbatch           禁用后台编译
+</span></span><span class=line><span class=cl>    -Xms&lt;size&gt;        设置初始 Java 堆大小
+</span></span><span class=line><span class=cl>    -Xmx&lt;size&gt;        设置最大 Java 堆大小
+</span></span><span class=line><span class=cl>    -Xss&lt;size&gt;        设置 Java 线程堆栈大小
+</span></span><span class=line><span class=cl>    -Xprof            输出 cpu 配置文件数据
+</span></span><span class=line><span class=cl>    -Xfuture          启用最严格的检查, 预期将来的默认值
+</span></span><span class=line><span class=cl>    -Xrs              减少 Java/VM 对操作系统信号的使用 <span class=o>(</span>请参阅文档<span class=o>)</span>
+</span></span><span class=line><span class=cl>    -Xcheck:jni       对 JNI 函数执行其他检查
+</span></span><span class=line><span class=cl>    -Xshare:off       不尝试使用共享类数据
+</span></span><span class=line><span class=cl>    -Xshare:auto      在可能的情况下使用共享类数据 <span class=o>(</span>默认<span class=o>)</span>
+</span></span><span class=line><span class=cl>    -Xshare:on        要求使用共享类数据, 否则将失败。
+</span></span><span class=line><span class=cl>    -XshowSettings    显示所有设置并继续
+</span></span><span class=line><span class=cl>    -XshowSettings:all
+</span></span><span class=line><span class=cl>                      显示所有设置并继续
+</span></span><span class=line><span class=cl>    -XshowSettings:vm 显示所有与 vm 相关的设置并继续
+</span></span><span class=line><span class=cl>    -XshowSettings:properties
+</span></span><span class=line><span class=cl>                      显示所有属性设置并继续
+</span></span><span class=line><span class=cl>    -XshowSettings:locale
+</span></span><span class=line><span class=cl>                      显示所有与区域设置相关的设置并继续
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-X 选项是非标准选项, 如有更改, 恕不另行通知。
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>以下选项为 Mac OS X 特定的选项:
+</span></span><span class=line><span class=cl>    -XstartOnFirstThread
+</span></span><span class=line><span class=cl>                      在第一个 <span class=o>(</span>AppKit<span class=o>)</span> 线程上运行 main<span class=o>()</span> 方法
+</span></span><span class=line><span class=cl>    -Xdock:name<span class=o>=</span>&lt;应用程序名称&gt;<span class=s2>&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>                      覆盖停靠栏中显示的默认应用程序名称
+</span></span></span><span class=line><span class=cl><span class=s2>    -Xdock:icon=&lt;图标文件的路径&gt;
+</span></span></span><span class=line><span class=cl><span class=s2>                      覆盖停靠栏中显示的默认图标
+</span></span></span></code></pre></td></tr></table></div></div><p>如何知道 JVM 默认使用的是混合模式呢？</p><ul><li>-Xint 只使用解释器：所有字节码都被解释执行，这个模式的速度是很慢的</li><li>-Xcomp 只使用编译器：所有字节码第一次使用就被编译成本地代码，然后在执行</li><li>-Xmixed 混合模式：这是默认模式，刚开始的时候使用解释器慢慢解释执行，后来让JIT即时编译器根据程序运行的情况，有选择地将某些热点代码提前编译并缓存在本地，在执行的时候效率就非常高了</li></ul><p>同样地，通过 java -version 命令：可以看到 mixed mode 字样，代表当前系统使用的是混合模式</p><ul><li>-Xms<size> 设置初始 Java 堆大小 等价于 -XX:InitialHeapSize</li><li>-Xmx<size> 设置最大 Java 堆大小 等价于 -XX:MaxHeapSize</li><li>-Xss<size> 设置 Java 线程堆栈大小 等价于 -XX:ThradeStackSize</li></ul><h3 id=413-类型三-xx-参数选项><a href=#413-%e7%b1%bb%e5%9e%8b%e4%b8%89-xx-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.1.3. 类型三：-XX 参数选项</h3><ul><li>非标准化参数</li><li>使用的最多的参数类型</li><li>这类选项属于实验性，不稳定</li><li>用于开发和调试JVM</li></ul><p><strong>Boolean 类型格式</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-3-1><a class=lnlinks href=#hl-3-1>1</a>
+</span><span class=lnt id=hl-3-2><a class=lnlinks href=#hl-3-2>2</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:+&lt;option&gt;  启用option属性
+</span></span><span class=line><span class=cl>-XX:-&lt;option&gt;  禁用option属性
+</span></span></code></pre></td></tr></table></div></div><img src=https://logan.1357810.xyz/img/20220501/1651394664-0fa9b79f3d04ac.png alt=image-20220501164424376 style=zoom:50%><p><strong>非 Boolean 类型格式</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-4-1><a class=lnlinks href=#hl-4-1>1</a>
+</span><span class=lnt id=hl-4-2><a class=lnlinks href=#hl-4-2>2</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:&lt;option&gt;<span class=o>=</span>&lt;number&gt;  设置option数值，可以带单位如k/K/m/M/g/G
+</span></span><span class=line><span class=cl>-XX:&lt;option&gt;<span class=o>=</span>&lt;string&gt;  设置option字符值
+</span></span></code></pre></td></tr></table></div></div><img src=https://logan.1357810.xyz/img/20220501/1651394764-23e83186a25c7d.png alt=image-20220501164604011 style=zoom:50%>
+<img src=https://logan.1357810.xyz/img/20220501/1651394821-6a211baee893f6.png alt=image-20220501164701764 style=zoom:50%><p><strong>特别的</strong></p><ul><li>-XX:+PrintFlagsFinal<ul><li>输出所有参数的名称和默认值</li><li>默认不包括Diagnostic和Experimental的参数</li><li>可以配合-XX:+UnlockDiagnosticVMOptions和-XX:UnlockExperimentalVMOptions使用</li></ul></li></ul><h2 id=42-查看参数><a href=#42-%e6%9f%a5%e7%9c%8b%e5%8f%82%e6%95%b0 class=header-anchor>#</a>
+4.2 查看参数</h2><ul><li><p>java -XX:+PrintFlagsInitial 查看所有 JVM 参数启动的初始值</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-5-1><a class=lnlinks href=#hl-5-1>1</a>
+</span><span class=lnt id=hl-5-2><a class=lnlinks href=#hl-5-2>2</a>
+</span><span class=lnt id=hl-5-3><a class=lnlinks href=#hl-5-3>3</a>
+</span><span class=lnt id=hl-5-4><a class=lnlinks href=#hl-5-4>4</a>
+</span><span class=lnt id=hl-5-5><a class=lnlinks href=#hl-5-5>5</a>
+</span><span class=lnt id=hl-5-6><a class=lnlinks href=#hl-5-6>6</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=o>[</span>Global flags<span class=o>]</span>
+</span></span><span class=line><span class=cl>     intx <span class=nv>ActiveProcessorCount</span>                      <span class=o>=</span> -1                                  <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>    uintx <span class=nv>AdaptiveSizeDecrementScaleFactor</span>          <span class=o>=</span> <span class=m>4</span>                                   <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>    uintx <span class=nv>AdaptiveSizeMajorGCDecayTimeScale</span>         <span class=o>=</span> <span class=m>10</span>                                  <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>    uintx <span class=nv>AdaptiveSizePausePolicy</span>                   <span class=o>=</span> <span class=m>0</span>                                   <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>...
+</span></span></code></pre></td></tr></table></div></div></li><li><p>java -XX:+PrintFlagsFinal 查看所有 JVM 参数的最终值</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-6-1><a class=lnlinks href=#hl-6-1>1</a>
+</span><span class=lnt id=hl-6-2><a class=lnlinks href=#hl-6-2>2</a>
+</span><span class=lnt id=hl-6-3><a class=lnlinks href=#hl-6-3>3</a>
+</span><span class=lnt id=hl-6-4><a class=lnlinks href=#hl-6-4>4</a>
+</span><span class=lnt id=hl-6-5><a class=lnlinks href=#hl-6-5>5</a>
+</span><span class=lnt id=hl-6-6><a class=lnlinks href=#hl-6-6>6</a>
+</span><span class=lnt id=hl-6-7><a class=lnlinks href=#hl-6-7>7</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=o>[</span>Global flags<span class=o>]</span>
+</span></span><span class=line><span class=cl>     intx <span class=nv>ActiveProcessorCount</span>                      <span class=o>=</span> -1                                  <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>...
+</span></span><span class=line><span class=cl>     intx CICompilerCount                          :<span class=o>=</span> <span class=m>4</span>                                   <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>    uintx InitialHeapSize                          :<span class=o>=</span> <span class=m>333447168</span>                           <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>    uintx MaxHeapSize                              :<span class=o>=</span> <span class=m>1029701632</span>                          <span class=o>{</span>product<span class=o>}</span>
+</span></span><span class=line><span class=cl>    uintx MaxNewSize                               :<span class=o>=</span> <span class=m>1774714880</span>                          <span class=o>{</span>product<span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>java -XX:+PrintCommandLineFlags 查看哪些已经被用户或者 JVM 设置过的详细的 XX 参数的名称和值</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-7-1><a class=lnlinks href=#hl-7-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:InitialHeapSize<span class=o>=</span><span class=m>332790016</span> -XX:MaxHeapSize<span class=o>=</span><span class=m>5324640256</span> -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC
+</span></span></code></pre></td></tr></table></div></div></li></ul><h2 id=43-添加-jvm-参数选项><a href=#43-%e6%b7%bb%e5%8a%a0-jvm-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.3 添加 JVM 参数选项</h2><p>eclipse 和 idea 中配置不必多说，在 Run Configurations 中 VM Options 中配置即可，大同小异</p><p><strong>运行 jar 包</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-8-1><a class=lnlinks href=#hl-8-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>java -Xms100m -Xmx100m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -jar demo.jar
+</span></span></code></pre></td></tr></table></div></div><p><strong>Tomcat 运行 war 包</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-9-1><a class=lnlinks href=#hl-9-1>1</a>
+</span><span class=lnt id=hl-9-2><a class=lnlinks href=#hl-9-2>2</a>
+</span><span class=lnt id=hl-9-3><a class=lnlinks href=#hl-9-3>3</a>
+</span><span class=lnt id=hl-9-4><a class=lnlinks href=#hl-9-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># linux下catalina.sh添加</span>
+</span></span><span class=line><span class=cl><span class=nv>JAVA_OPTS</span><span class=o>=</span><span class=s2>&#34;-Xms512M -Xmx1024M&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># windows下catalina.bat添加</span>
+</span></span><span class=line><span class=cl><span class=nb>set</span> <span class=s2>&#34;JAVA_OPTS=-Xms512M -Xmx1024M&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>程序运行中</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-10-1><a class=lnlinks href=#hl-10-1>1</a>
+</span><span class=lnt id=hl-10-2><a class=lnlinks href=#hl-10-2>2</a>
+</span><span class=lnt id=hl-10-3><a class=lnlinks href=#hl-10-3>3</a>
+</span><span class=lnt id=hl-10-4><a class=lnlinks href=#hl-10-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 设置Boolean类型参数</span>
+</span></span><span class=line><span class=cl>jinfo -flag <span class=o>[</span>+<span class=p>|</span>-<span class=o>]</span>&lt;name&gt; &lt;pid&gt;
+</span></span><span class=line><span class=cl><span class=c1># 设置非Boolean类型参数</span>
+</span></span><span class=line><span class=cl>jinfo -flag &lt;name&gt;<span class=o>=</span>&lt;value&gt; &lt;pid&gt;
+</span></span></code></pre></td></tr></table></div></div><h2 id=44-常用的-jvm-参数选项><a href=#44-%e5%b8%b8%e7%94%a8%e7%9a%84-jvm-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.4. 常用的 JVM 参数选项</h2><h3 id=441-打印设置的-xx-选项及值><a href=#441-%e6%89%93%e5%8d%b0%e8%ae%be%e7%bd%ae%e7%9a%84-xx-%e9%80%89%e9%a1%b9%e5%8f%8a%e5%80%bc class=header-anchor>#</a>
+4.4.1. 打印设置的 XX 选项及值</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-11-1><a class=lnlinks href=#hl-11-1>1</a>
+</span><span class=lnt id=hl-11-2><a class=lnlinks href=#hl-11-2>2</a>
+</span><span class=lnt id=hl-11-3><a class=lnlinks href=#hl-11-3>3</a>
+</span><span class=lnt id=hl-11-4><a class=lnlinks href=#hl-11-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:+PrintCommandLineFlags <span class=c1>#程序运行时JVM默认设置或用户手动设置的XX选项</span>
+</span></span><span class=line><span class=cl>-XX:+PrintFlagsInitial <span class=c1>#打印所有XX选项的默认值</span>
+</span></span><span class=line><span class=cl>-XX:+PrintFlagsFinal <span class=c1>#打印所有XX选项的实际值</span>
+</span></span><span class=line><span class=cl>-XX:+PrintVMOptions <span class=c1>#打印JVM的参数</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=442-堆栈方法区等内存大小设置><a href=#442-%e5%a0%86%e6%a0%88%e6%96%b9%e6%b3%95%e5%8c%ba%e7%ad%89%e5%86%85%e5%ad%98%e5%a4%a7%e5%b0%8f%e8%ae%be%e7%bd%ae class=header-anchor>#</a>
+4.4.2. 堆、栈、方法区等内存大小设置</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-12-1><a class=lnlinks href=#hl-12-1> 1</a>
+</span><span class=lnt id=hl-12-2><a class=lnlinks href=#hl-12-2> 2</a>
+</span><span class=lnt id=hl-12-3><a class=lnlinks href=#hl-12-3> 3</a>
+</span><span class=lnt id=hl-12-4><a class=lnlinks href=#hl-12-4> 4</a>
+</span><span class=lnt id=hl-12-5><a class=lnlinks href=#hl-12-5> 5</a>
+</span><span class=lnt id=hl-12-6><a class=lnlinks href=#hl-12-6> 6</a>
+</span><span class=lnt id=hl-12-7><a class=lnlinks href=#hl-12-7> 7</a>
+</span><span class=lnt id=hl-12-8><a class=lnlinks href=#hl-12-8> 8</a>
+</span><span class=lnt id=hl-12-9><a class=lnlinks href=#hl-12-9> 9</a>
+</span><span class=lnt id=hl-12-10><a class=lnlinks href=#hl-12-10>10</a>
+</span><span class=lnt id=hl-12-11><a class=lnlinks href=#hl-12-11>11</a>
+</span><span class=lnt id=hl-12-12><a class=lnlinks href=#hl-12-12>12</a>
+</span><span class=lnt id=hl-12-13><a class=lnlinks href=#hl-12-13>13</a>
+</span><span class=lnt id=hl-12-14><a class=lnlinks href=#hl-12-14>14</a>
+</span><span class=lnt id=hl-12-15><a class=lnlinks href=#hl-12-15>15</a>
+</span><span class=lnt id=hl-12-16><a class=lnlinks href=#hl-12-16>16</a>
+</span><span class=lnt id=hl-12-17><a class=lnlinks href=#hl-12-17>17</a>
+</span><span class=lnt id=hl-12-18><a class=lnlinks href=#hl-12-18>18</a>
+</span><span class=lnt id=hl-12-19><a class=lnlinks href=#hl-12-19>19</a>
+</span><span class=lnt id=hl-12-20><a class=lnlinks href=#hl-12-20>20</a>
+</span><span class=lnt id=hl-12-21><a class=lnlinks href=#hl-12-21>21</a>
+</span><span class=lnt id=hl-12-22><a class=lnlinks href=#hl-12-22>22</a>
+</span><span class=lnt id=hl-12-23><a class=lnlinks href=#hl-12-23>23</a>
+</span><span class=lnt id=hl-12-24><a class=lnlinks href=#hl-12-24>24</a>
+</span><span class=lnt id=hl-12-25><a class=lnlinks href=#hl-12-25>25</a>
+</span><span class=lnt id=hl-12-26><a class=lnlinks href=#hl-12-26>26</a>
+</span><span class=lnt id=hl-12-27><a class=lnlinks href=#hl-12-27>27</a>
+</span><span class=lnt id=hl-12-28><a class=lnlinks href=#hl-12-28>28</a>
+</span><span class=lnt id=hl-12-29><a class=lnlinks href=#hl-12-29>29</a>
+</span><span class=lnt id=hl-12-30><a class=lnlinks href=#hl-12-30>30</a>
+</span><span class=lnt id=hl-12-31><a class=lnlinks href=#hl-12-31>31</a>
+</span><span class=lnt id=hl-12-32><a class=lnlinks href=#hl-12-32>32</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 栈</span>
+</span></span><span class=line><span class=cl>-Xss128k &lt;<span class=o>==</span>&gt; -XX:ThreadStackSize<span class=o>=</span>128k <span class=c1>#设置线程栈的大小为128K</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 堆</span>
+</span></span><span class=line><span class=cl>-Xms2048m &lt;<span class=o>==</span>&gt; -XX:InitialHeapSize<span class=o>=</span>2048m <span class=c1>#设置JVM初始堆内存为2048M</span>
+</span></span><span class=line><span class=cl>-Xmx2048m &lt;<span class=o>==</span>&gt; -XX:MaxHeapSize<span class=o>=</span>2048m <span class=c1>#设置JVM最大堆内存为2048M</span>
+</span></span><span class=line><span class=cl>-Xmn2g &lt;<span class=o>==</span>&gt; -XX:NewSize<span class=o>=</span>2g -XX:MaxNewSize<span class=o>=</span>2g <span class=c1>#设置年轻代大小为2G，官方推荐配置为整个堆大小的3/8</span>
+</span></span><span class=line><span class=cl>-XX:NewSize<span class=o>=</span>1024m   <span class=c1>#设置年轻代初始值为1024M</span>
+</span></span><span class=line><span class=cl>-XX:MaxNewSize<span class=o>=</span>1024m     <span class=c1>#设置年轻代最大值为1024M</span>
+</span></span><span class=line><span class=cl>-XX:SurvivorRatio<span class=o>=</span><span class=m>8</span> <span class=c1>#设置Eden区与Survivor区的比值，默认为8</span>
+</span></span><span class=line><span class=cl>-XX:NewRatio<span class=o>=</span><span class=m>2</span> <span class=c1>#设置老年代与年轻代(包括1个Eden区和2个Survivor区)的比例，默认为2</span>
+</span></span><span class=line><span class=cl>-XX:+UseAdaptiveSizePolicy <span class=c1>#设置新生代中各区大小比例自适应，默认开启</span>
+</span></span><span class=line><span class=cl><span class=c1>#默认情况下UseAdaptiveSizePolicy开启，导致SurvivorRatio=8失效；如果要让SurvivorRatio生效，则需要关闭UseAdaptiveSizePolicy并且显式的给SurvivorRatio赋值才行：-XX:-UseAdaptiveSizePolicy -XX:SurvivorRatio=8</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:PretenureSizeThreadshold<span class=o>=</span><span class=m>1024</span> <span class=c1>#设置让大于此阈值的对象直接分配在老年代，单位为字节，只对Serial、ParNew收集器有效</span>
+</span></span><span class=line><span class=cl>-XX:MaxTenuringThreshold<span class=o>=</span><span class=m>15</span> <span class=c1>#设置新生代晋升老年代的年龄限制，默认为15</span>
+</span></span><span class=line><span class=cl>-XX:+PrintTenuringDistribution   <span class=c1>#让JVM在每次MinorGC后打印出当前使用的Survivor中对象的年龄分布</span>
+</span></span><span class=line><span class=cl>-XX:TargetSurvivorRatio <span class=c1>#设置MinorGC结束后Survivor区中占用空间的期望比例</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 方法区</span>
+</span></span><span class=line><span class=cl>-XX:PermSize<span class=o>=</span>256m   <span class=c1>#设置永久代初始值为256M</span>
+</span></span><span class=line><span class=cl>-XX:MaxPermSize<span class=o>=</span>256m  <span class=c1>#设置永久代最大值为256M</span>
+</span></span><span class=line><span class=cl>-XX:MetaspaceSize   <span class=c1>#设置元空间初始值</span>
+</span></span><span class=line><span class=cl>-XX:MaxMetaspaceSize   <span class=c1>#设置元空间最大值，默认没有限制</span>
+</span></span><span class=line><span class=cl>-XX:+UseCompressedOops <span class=c1>#普通对象指针压缩，默认开启</span>
+</span></span><span class=line><span class=cl>-XX:+UseCompressedClassPointers <span class=c1>#类指针压缩，默认开启</span>
+</span></span><span class=line><span class=cl><span class=c1>#开启UseCompressedOops会默认开启UseCompressedClassPointers</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:CompressedClassSpaceSize <span class=c1>#设置Klass Metaspace的大小，默认1G</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 直接内存</span>
+</span></span><span class=line><span class=cl>-XX:MaxDirectMemorySize <span class=c1>#指定DirectMemory容量，默认等于Java堆最大值</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=443-outofmemory-相关的选项><a href=#443-outofmemory-%e7%9b%b8%e5%85%b3%e7%9a%84%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.4.3. OutOfMemory 相关的选项</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-13-1><a class=lnlinks href=#hl-13-1>1</a>
+</span><span class=lnt id=hl-13-2><a class=lnlinks href=#hl-13-2>2</a>
+</span><span class=lnt id=hl-13-3><a class=lnlinks href=#hl-13-3>3</a>
+</span><span class=lnt id=hl-13-4><a class=lnlinks href=#hl-13-4>4</a>
+</span><span class=lnt id=hl-13-5><a class=lnlinks href=#hl-13-5>5</a>
+</span><span class=lnt id=hl-13-6><a class=lnlinks href=#hl-13-6>6</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:+HeapDumpOnOutMemoryError <span class=c1>#内存出现OOM时生成Heap转储文件，以便后续分析</span>
+</span></span><span class=line><span class=cl>-XX:+HeapDumpBeforeFullGC <span class=c1>#出现FullGC时生成Heap转储文件，以便后续分析</span>
+</span></span><span class=line><span class=cl><span class=c1>#-XX:+HeapDumpBeforeFullGC和-XX:+HeapDumpOnOutMemoryError只能设置1个，请注意FullGC可能出现多次，那么dump文件也会生成多个</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:HeapDumpPath<span class=o>=</span>&lt;path&gt; <span class=c1>#指定heap转储文件的存储路径，默认当前目录</span>
+</span></span><span class=line><span class=cl>-XX:OnOutOfMemoryError<span class=o>=</span>&lt;path&gt; <span class=c1>#指定可行性程序或脚本的路径，当发生OOM时执行脚本</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=444-垃圾收集器相关选项><a href=#444-%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e7%9b%b8%e5%85%b3%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.4.4. 垃圾收集器相关选项</h3><p>首先需了解垃圾收集器之间的搭配使用关系</p><ul><li>红色虚线表示在 jdk8 时被 Deprecate，jdk9 时被删除</li><li>绿色虚线表示在 jdk14 时被 Deprecate</li><li>绿色虚框表示在 jdk9 时被 Deprecate，jdk14 时被删除</li></ul><p><img src=https://logan.1357810.xyz/img/20220422/153249743-68ff5c8f83.png width=900 height=600 loading=lazy decoding=async alt=image-20210506182458663 class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-14-1><a class=lnlinks href=#hl-14-1>1</a>
+</span><span class=lnt id=hl-14-2><a class=lnlinks href=#hl-14-2>2</a>
+</span><span class=lnt id=hl-14-3><a class=lnlinks href=#hl-14-3>3</a>
+</span><span class=lnt id=hl-14-4><a class=lnlinks href=#hl-14-4>4</a>
+</span><span class=lnt id=hl-14-5><a class=lnlinks href=#hl-14-5>5</a>
+</span><span class=lnt id=hl-14-6><a class=lnlinks href=#hl-14-6>6</a>
+</span><span class=lnt id=hl-14-7><a class=lnlinks href=#hl-14-7>7</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># Serial回收器(Serial使用复制算法，SerialOld使用标记整理算法)</span>
+</span></span><span class=line><span class=cl>-XX:+UseSerialGC  <span class=c1>#年轻代使用Serial GC， 老年代使用SerialOldGC</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># ParNew回收器(使用复制算法)</span>
+</span></span><span class=line><span class=cl>-XX:+UseParNewGC  <span class=c1>#年轻代使用ParNew GC 老年代默认为SerialOldGC，可以改为CMS</span>
+</span></span><span class=line><span class=cl>-XX:ParallelGCThreads  <span class=c1>#设置年轻代并行收集器的线程数。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#一般地，最好与CPU数量相等，以避免过多的线程数影响垃圾收集性能。</span>
+</span></span></code></pre></td></tr></table></div></div><p>$$
+ParallelGCThreads =
+\begin{cases}
+CPU_Count & \text (CPU_Count &lt;= 8) \
+3 + (5 * CPU＿Count / 8) & \text (CPU_Count > 8)
+\end{cases}
+$$</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-15-1><a class=lnlinks href=#hl-15-1> 1</a>
+</span><span class=lnt id=hl-15-2><a class=lnlinks href=#hl-15-2> 2</a>
+</span><span class=lnt id=hl-15-3><a class=lnlinks href=#hl-15-3> 3</a>
+</span><span class=lnt id=hl-15-4><a class=lnlinks href=#hl-15-4> 4</a>
+</span><span class=lnt id=hl-15-5><a class=lnlinks href=#hl-15-5> 5</a>
+</span><span class=lnt id=hl-15-6><a class=lnlinks href=#hl-15-6> 6</a>
+</span><span class=lnt id=hl-15-7><a class=lnlinks href=#hl-15-7> 7</a>
+</span><span class=lnt id=hl-15-8><a class=lnlinks href=#hl-15-8> 8</a>
+</span><span class=lnt id=hl-15-9><a class=lnlinks href=#hl-15-9> 9</a>
+</span><span class=lnt id=hl-15-10><a class=lnlinks href=#hl-15-10>10</a>
+</span><span class=lnt id=hl-15-11><a class=lnlinks href=#hl-15-11>11</a>
+</span><span class=lnt id=hl-15-12><a class=lnlinks href=#hl-15-12>12</a>
+</span><span class=lnt id=hl-15-13><a class=lnlinks href=#hl-15-13>13</a>
+</span><span class=lnt id=hl-15-14><a class=lnlinks href=#hl-15-14>14</a>
+</span><span class=lnt id=hl-15-15><a class=lnlinks href=#hl-15-15>15</a>
+</span><span class=lnt id=hl-15-16><a class=lnlinks href=#hl-15-16>16</a>
+</span><span class=lnt id=hl-15-17><a class=lnlinks href=#hl-15-17>17</a>
+</span><span class=lnt id=hl-15-18><a class=lnlinks href=#hl-15-18>18</a>
+</span><span class=lnt id=hl-15-19><a class=lnlinks href=#hl-15-19>19</a>
+</span><span class=lnt id=hl-15-20><a class=lnlinks href=#hl-15-20>20</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># Parallel回收器（JDK8默认使用的回收器，Parallel使用复制算法，ParallelOld使用标记整理算法）</span>
+</span></span><span class=line><span class=cl>-XX:+UseParallelGC  <span class=c1>#年轻代使用 Parallel Scavenge GC，互相激活</span>
+</span></span><span class=line><span class=cl>-XX:+UseParallelOldGC  <span class=c1>#老年代使用 Parallel Old GC，互相激活</span>
+</span></span><span class=line><span class=cl>-XX:ParallelGCThreads  <span class=c1>#设置年轻代并行回收器的线程数，默认情况下：</span>
+</span></span><span class=line><span class=cl><span class=c1>#CPU核心数小于8时，线程数==cpu核心数</span>
+</span></span><span class=line><span class=cl><span class=c1>#CPU核心数大于8时，线程数==3+(5*CPU核心数)/8</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:GCTimeRatio  <span class=c1>#垃圾收集时间占总时间的比例（1 / (N＋1)），用于衡量吞吐量的大小</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#取值范围（0,100），默认值99，也就是垃圾回收时间不超过1％。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#与MaxGCPauseMillis参数有一定矛盾性。暂停时间越长，Radio参数就容易超过设定的比例。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#GCTimeRatio越大，吞吐量越大</span>
+</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>-XX:MaxGCPauseMillis  <span class=c1>#设置垃圾收集器最大停顿时间（即STW的时间），单位是毫秒。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#为了尽可能地把停顿时间控制在MaxGCPauseMills以内，收集器在工作时会调整Java堆大小或者其他一些参数</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#对于用户来讲，停顿时间越短体验越好；但是服务器端注重高并发，整体的吞吐量。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#所以服务器端适合Parallel，进行控制。该参数使用需谨慎。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+UseAdaptiveSizePolicy  <span class=c1>#设置Parallel Scavenge收集器具有自适应调节策略。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#在这种模式下，年轻代的大小、Eden和Survivor的比例、晋升老年代的对象年龄等参数会被自动调整，以达到在堆大小、吞吐量和停顿时间之间的平衡点。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#在手动调优比较困难的场合，可以直接使用这种自适应的方式，仅指定虚拟机的最大堆、目标的吞吐量（GCTimeRatio）和停顿时间（MaxGCPauseMills），让虚拟机自己完成调优工作。</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-16-1><a class=lnlinks href=#hl-16-1> 1</a>
+</span><span class=lnt id=hl-16-2><a class=lnlinks href=#hl-16-2> 2</a>
+</span><span class=lnt id=hl-16-3><a class=lnlinks href=#hl-16-3> 3</a>
+</span><span class=lnt id=hl-16-4><a class=lnlinks href=#hl-16-4> 4</a>
+</span><span class=lnt id=hl-16-5><a class=lnlinks href=#hl-16-5> 5</a>
+</span><span class=lnt id=hl-16-6><a class=lnlinks href=#hl-16-6> 6</a>
+</span><span class=lnt id=hl-16-7><a class=lnlinks href=#hl-16-7> 7</a>
+</span><span class=lnt id=hl-16-8><a class=lnlinks href=#hl-16-8> 8</a>
+</span><span class=lnt id=hl-16-9><a class=lnlinks href=#hl-16-9> 9</a>
+</span><span class=lnt id=hl-16-10><a class=lnlinks href=#hl-16-10>10</a>
+</span><span class=lnt id=hl-16-11><a class=lnlinks href=#hl-16-11>11</a>
+</span><span class=lnt id=hl-16-12><a class=lnlinks href=#hl-16-12>12</a>
+</span><span class=lnt id=hl-16-13><a class=lnlinks href=#hl-16-13>13</a>
+</span><span class=lnt id=hl-16-14><a class=lnlinks href=#hl-16-14>14</a>
+</span><span class=lnt id=hl-16-15><a class=lnlinks href=#hl-16-15>15</a>
+</span><span class=lnt id=hl-16-16><a class=lnlinks href=#hl-16-16>16</a>
+</span><span class=lnt id=hl-16-17><a class=lnlinks href=#hl-16-17>17</a>
+</span><span class=lnt id=hl-16-18><a class=lnlinks href=#hl-16-18>18</a>
+</span><span class=lnt id=hl-16-19><a class=lnlinks href=#hl-16-19>19</a>
+</span><span class=lnt id=hl-16-20><a class=lnlinks href=#hl-16-20>20</a>
+</span><span class=lnt id=hl-16-21><a class=lnlinks href=#hl-16-21>21</a>
+</span><span class=lnt id=hl-16-22><a class=lnlinks href=#hl-16-22>22</a>
+</span><span class=lnt id=hl-16-23><a class=lnlinks href=#hl-16-23>23</a>
+</span><span class=lnt id=hl-16-24><a class=lnlinks href=#hl-16-24>24</a>
+</span><span class=lnt id=hl-16-25><a class=lnlinks href=#hl-16-25>25</a>
+</span><span class=lnt id=hl-16-26><a class=lnlinks href=#hl-16-26>26</a>
+</span><span class=lnt id=hl-16-27><a class=lnlinks href=#hl-16-27>27</a>
+</span><span class=lnt id=hl-16-28><a class=lnlinks href=#hl-16-28>28</a>
+</span><span class=lnt id=hl-16-29><a class=lnlinks href=#hl-16-29>29</a>
+</span><span class=lnt id=hl-16-30><a class=lnlinks href=#hl-16-30>30</a>
+</span><span class=lnt id=hl-16-31><a class=lnlinks href=#hl-16-31>31</a>
+</span><span class=lnt id=hl-16-32><a class=lnlinks href=#hl-16-32>32</a>
+</span><span class=lnt id=hl-16-33><a class=lnlinks href=#hl-16-33>33</a>
+</span><span class=lnt id=hl-16-34><a class=lnlinks href=#hl-16-34>34</a>
+</span><span class=lnt id=hl-16-35><a class=lnlinks href=#hl-16-35>35</a>
+</span><span class=lnt id=hl-16-36><a class=lnlinks href=#hl-16-36>36</a>
+</span><span class=lnt id=hl-16-37><a class=lnlinks href=#hl-16-37>37</a>
+</span><span class=lnt id=hl-16-38><a class=lnlinks href=#hl-16-38>38</a>
+</span><span class=lnt id=hl-16-39><a class=lnlinks href=#hl-16-39>39</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># CMS回收器(使用标记清除算法，ParNew+CMS)</span>
+</span></span><span class=line><span class=cl><span class=c1># JDK9中CMS被标记为Deprecate，JDK14中删除</span>
+</span></span><span class=line><span class=cl>-XX:+UseConcMarkSweepGC  <span class=c1>#老年代使用CMS GC。</span>
+</span></span><span class=line><span class=cl><span class=c1>#开启该参数后会自动将-XX：＋UseParNewGC打开。即：ParNew（Young区）+ CMS（Old区）+ Serial Old的组合</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:CMSInitiatingOccupanyFraction  <span class=c1>#设置堆内存使用率的阈值，一旦达到该阈值，便开始进行回收。JDK5及以前版本的默认值为68，DK6及以上版本默认值为92％。</span>
+</span></span><span class=line><span class=cl><span class=c1>#如果内存增长缓慢，则可以设置一个稍大的值，大的阈值可以有效降低CMS的触发频率，减少老年代回收的次数可以较为明显地改善应用程序性能。</span>
+</span></span><span class=line><span class=cl><span class=c1>#反之，如果应用程序内存使用率增长很快，则应该降低这个阈值，以避免频繁触发老年代串行收集器。</span>
+</span></span><span class=line><span class=cl><span class=c1>#因此通过该选项便可以有效降低Fu1l GC的执行次数。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+UseCMSInitiatingOccupancyOnly  <span class=c1>#是否动态可调，使CMS一直按CMSInitiatingOccupancyFraction设定的值启动；如果不指定，jvm仅在第一次使用设定值，后续会自动调整阈值，不要用</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+UseCMSCompactAtFullCollection  <span class=c1>#用于指定在执行完Full GC后对内存空间进行压缩整理</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#以此避免内存碎片的产生。不过由于内存压缩整理过程无法并发执行，所带来的问题就是停顿时间变得更长了。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:CMSFullGCsBeforeCompaction  <span class=c1>#设置在执行多少次Full GC后对内存空间进行压缩整理。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:ParallelCMSThreads  <span class=c1>#设置CMS的线程数量。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#CMS 默认启动的线程数是(ParallelGCThreads＋3)/4，ParallelGCThreads 是年轻代并行收集器的线程数。</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#当CPU 资源比较紧张时，受到CMS收集器线程的影响，应用程序的性能在垃圾回收阶段可能会非常糟糕。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>####补充参数：</span>
+</span></span><span class=line><span class=cl>-XX:ConcGCThreads  <span class=c1>#设置并发垃圾收集的线程数，默认该值是基于ParallelGCThreads计算出来的</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+CMSScavengeBeforeRemark  <span class=c1>#强制hotspot在cms remark阶段之前做一次minor gc，用于提高remark阶段的速度</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+CMSClassUnloadingEnable  <span class=c1>#如果有的话，启用回收Perm 区（JDK8之前）</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+CMSParallelInitialEnabled  <span class=c1>#用于开启CMS initial-mark阶段采用多线程的方式进行标记</span>
+</span></span><span class=line><span class=cl>	<span class=c1>#用于提高标记速度，在Java8开始已经默认开启</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+CMSParallelRemarkEnabled  <span class=c1>#用户开启CMS remark阶段采用多线程的方式进行重新标记，默认开启</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+ExplicitGCInvokesConcurrent
+</span></span><span class=line><span class=cl>-XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses
+</span></span><span class=line><span class=cl>	<span class=c1>#这两个参数用户指定hotspot虚拟在执行System.gc()时使用CMS周期</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+CMSPrecleaningEnabled  <span class=c1>#指定CMS是否需要进行Pre cleaning阶段</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-17-1><a class=lnlinks href=#hl-17-1> 1</a>
+</span><span class=lnt id=hl-17-2><a class=lnlinks href=#hl-17-2> 2</a>
+</span><span class=lnt id=hl-17-3><a class=lnlinks href=#hl-17-3> 3</a>
+</span><span class=lnt id=hl-17-4><a class=lnlinks href=#hl-17-4> 4</a>
+</span><span class=lnt id=hl-17-5><a class=lnlinks href=#hl-17-5> 5</a>
+</span><span class=lnt id=hl-17-6><a class=lnlinks href=#hl-17-6> 6</a>
+</span><span class=lnt id=hl-17-7><a class=lnlinks href=#hl-17-7> 7</a>
+</span><span class=lnt id=hl-17-8><a class=lnlinks href=#hl-17-8> 8</a>
+</span><span class=lnt id=hl-17-9><a class=lnlinks href=#hl-17-9> 9</a>
+</span><span class=lnt id=hl-17-10><a class=lnlinks href=#hl-17-10>10</a>
+</span><span class=lnt id=hl-17-11><a class=lnlinks href=#hl-17-11>11</a>
+</span><span class=lnt id=hl-17-12><a class=lnlinks href=#hl-17-12>12</a>
+</span><span class=lnt id=hl-17-13><a class=lnlinks href=#hl-17-13>13</a>
+</span><span class=lnt id=hl-17-14><a class=lnlinks href=#hl-17-14>14</a>
+</span><span class=lnt id=hl-17-15><a class=lnlinks href=#hl-17-15>15</a>
+</span><span class=lnt id=hl-17-16><a class=lnlinks href=#hl-17-16>16</a>
+</span><span class=lnt id=hl-17-17><a class=lnlinks href=#hl-17-17>17</a>
+</span><span class=lnt id=hl-17-18><a class=lnlinks href=#hl-17-18>18</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># G1回收器（使用分区复制算法，可以回收新生代和老年代）</span>
+</span></span><span class=line><span class=cl>-XX:+UseG1GC <span class=c1>#手动指定使用G1收集器执行内存回收任务。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:G1HeapRegionSize <span class=c1>#设置每个Region的大小。</span>
+</span></span><span class=line><span class=cl><span class=c1>#值是2的幂，范围是1MB到32MB之间，目标是根据最小的Java堆大小划分出约2048个区域。默认是堆内存的1/2000。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:MaxGCPauseMillis  <span class=c1>#设置期望达到的最大GC停顿时间指标（JVM会尽力实现，但不保证达到）。默认值是200ms</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:ParallelGCThread  <span class=c1>#设置STW时GC线程数的值。最多设置为8</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:ConcGCThreads  <span class=c1>#设置并发标记的线程数。将n设置为并行垃圾回收线程数（ParallelGCThreads）的1/4左右。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:InitiatingHeapOccupancyPercent <span class=c1>#设置触发并发GC周期的Java堆占用率阈值。超过此值，就触发GC。默认值是45。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#G1不要用 -Xmn和NewRatio设置新生代空间大小或比例，会影响默认设置的暂停时间</span>
+</span></span><span class=line><span class=cl>-XX:G1NewSizePercent  <span class=c1>#新生代占用整个堆内存的最小百分比（默认5％）</span>
+</span></span><span class=line><span class=cl>-XX:G1MaxNewSizePercent  <span class=c1>#新生代占用整个堆内存的最大百分比（默认60％）</span>
+</span></span><span class=line><span class=cl>-XX:G1ReservePercent<span class=o>=</span><span class=m>10</span>  <span class=c1>#默认10%。也就是老年代会预留10%的空间来给新生代的对象晋升，如果经常发生新生代晋升失败而导致Full GC，那么可以适当调高此阈值。但是调高此值同时也意味着降低了老年代的实际可用空间。</span>
+</span></span></code></pre></td></tr></table></div></div><p>怎么选择垃圾回收器？</p><ul><li>优先让 JVM 自适应，调整堆的大小</li><li>串行收集器：内存小于 100M；单核、单机程序，并且没有停顿时间的要求</li><li>并行收集器：多 CPU、高吞吐量、允许停顿时间超过 1 秒</li><li>并发收集器：多 CPU、追求低停顿时间、快速响应（比如延迟不能超过 1 秒，如互联网应用）</li><li>官方推荐 G1，性能高。现在互联网的项目，基本都是使用 G1</li></ul><p>特别说明：</p><ul><li>没有最好的收集器，更没有万能的收集器</li><li>调优永远是针对特定场景、特定需求，不存在一劳永逸的收集器</li></ul><h3 id=445-gc-日志相关选项><a href=#445-gc-%e6%97%a5%e5%bf%97%e7%9b%b8%e5%85%b3%e9%80%89%e9%a1%b9 class=header-anchor>#</a>
+4.4.5. GC 日志相关选项</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-18-1><a class=lnlinks href=#hl-18-1> 1</a>
+</span><span class=lnt id=hl-18-2><a class=lnlinks href=#hl-18-2> 2</a>
+</span><span class=lnt id=hl-18-3><a class=lnlinks href=#hl-18-3> 3</a>
+</span><span class=lnt id=hl-18-4><a class=lnlinks href=#hl-18-4> 4</a>
+</span><span class=lnt id=hl-18-5><a class=lnlinks href=#hl-18-5> 5</a>
+</span><span class=lnt id=hl-18-6><a class=lnlinks href=#hl-18-6> 6</a>
+</span><span class=lnt id=hl-18-7><a class=lnlinks href=#hl-18-7> 7</a>
+</span><span class=lnt id=hl-18-8><a class=lnlinks href=#hl-18-8> 8</a>
+</span><span class=lnt id=hl-18-9><a class=lnlinks href=#hl-18-9> 9</a>
+</span><span class=lnt id=hl-18-10><a class=lnlinks href=#hl-18-10>10</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:+PrintGC &lt;<span class=o>==</span>&gt; -verbose:gc  <span class=c1>#打印简要日志信息，可以独立使用</span>
+</span></span><span class=line><span class=cl>-XX:+PrintGCDetails     <span class=c1>#在发生垃圾回收时打印内存回收详细的日志，并在进程退出时输出当前内存各区域的分配情况，可以独立使用</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+PrintGCTimeStamps  <span class=c1>#打印程序启动到GC发生的秒数，不可以可以独立使用，搭配-XX:+PrintGCDetails使用</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+PrintGCDateStamps  <span class=c1>#打印GC发生时的时间戳(以日期的形式，例如：2013-05-04T21:53:59.234+0800)，不可以独立使用，搭配-XX:+PrintGCDetails使用</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+PrintHeapAtGC  <span class=c1>#每一次GC前和GC后，都打印堆信息，可以独立使用，如下图</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-Xloggc:&lt;file&gt; <span class=c1>#把GC日志写入到一个文件中去，而不是打印到标准输出中</span>
+</span></span></code></pre></td></tr></table></div></div><p><img src=https://logan.1357810.xyz/img/20220422/153249743-10b34c0afa.png width=900 height=600 loading=lazy decoding=async alt=image-20210506195156935 class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-19-1><a class=lnlinks href=#hl-19-1>1</a>
+</span><span class=lnt id=hl-19-2><a class=lnlinks href=#hl-19-2>2</a>
+</span><span class=lnt id=hl-19-3><a class=lnlinks href=#hl-19-3>3</a>
+</span><span class=lnt id=hl-19-4><a class=lnlinks href=#hl-19-4>4</a>
+</span><span class=lnt id=hl-19-5><a class=lnlinks href=#hl-19-5>5</a>
+</span><span class=lnt id=hl-19-6><a class=lnlinks href=#hl-19-6>6</a>
+</span><span class=lnt id=hl-19-7><a class=lnlinks href=#hl-19-7>7</a>
+</span><span class=lnt id=hl-19-8><a class=lnlinks href=#hl-19-8>8</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:+TraceClassLoading  <span class=c1>#监控 ，类的加载</span>
+</span></span><span class=line><span class=cl>-XX:+PrintGCApplicationStoppedTime  <span class=c1>#打印GC时线程的停顿时间</span>
+</span></span><span class=line><span class=cl>-XX:+PrintGCApplicationConcurrentTime  <span class=c1>#打印垃圾收集之前应用未中断的执行时间</span>
+</span></span><span class=line><span class=cl>-XX:+PrintReferenceGC <span class=c1>#打印回收了多少种不同引用类型的引用</span>
+</span></span><span class=line><span class=cl>-XX:+PrintTenuringDistribution  <span class=c1>#打印JVM在每次MinorGC后当前使用的Survivor中对象的年龄分布</span>
+</span></span><span class=line><span class=cl>-XX:+UseGCLogFileRotation <span class=c1>#启用GC日志文件的自动转储</span>
+</span></span><span class=line><span class=cl>-XX:NumberOfGCLogFiles<span class=o>=</span><span class=m>1</span>  <span class=c1>#设置GC日志文件的循环数目</span>
+</span></span><span class=line><span class=cl>-XX:GCLogFileSize<span class=o>=</span>1M  <span class=c1>#设置GC日志文件的大小</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=446-其他参数><a href=#446-%e5%85%b6%e4%bb%96%e5%8f%82%e6%95%b0 class=header-anchor>#</a>
+4.4.6. 其他参数</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-20-1><a class=lnlinks href=#hl-20-1> 1</a>
+</span><span class=lnt id=hl-20-2><a class=lnlinks href=#hl-20-2> 2</a>
+</span><span class=lnt id=hl-20-3><a class=lnlinks href=#hl-20-3> 3</a>
+</span><span class=lnt id=hl-20-4><a class=lnlinks href=#hl-20-4> 4</a>
+</span><span class=lnt id=hl-20-5><a class=lnlinks href=#hl-20-5> 5</a>
+</span><span class=lnt id=hl-20-6><a class=lnlinks href=#hl-20-6> 6</a>
+</span><span class=lnt id=hl-20-7><a class=lnlinks href=#hl-20-7> 7</a>
+</span><span class=lnt id=hl-20-8><a class=lnlinks href=#hl-20-8> 8</a>
+</span><span class=lnt id=hl-20-9><a class=lnlinks href=#hl-20-9> 9</a>
+</span><span class=lnt id=hl-20-10><a class=lnlinks href=#hl-20-10>10</a>
+</span><span class=lnt id=hl-20-11><a class=lnlinks href=#hl-20-11>11</a>
+</span><span class=lnt id=hl-20-12><a class=lnlinks href=#hl-20-12>12</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>-XX:+DisableExplicitGC  <span class=c1>#禁用hotspot执行System.gc()，默认关闭</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#指定代码缓存的大小</span>
+</span></span><span class=line><span class=cl>-XX:ReservedCodeCacheSize<span class=o>=</span>&lt;n&gt;<span class=o>[</span>g<span class=p>|</span>m<span class=p>|</span>k<span class=o>]</span>
+</span></span><span class=line><span class=cl>-XX:InitialCodeCacheSize<span class=o>=</span>&lt;n&gt;<span class=o>[</span>g<span class=p>|</span>m<span class=p>|</span>k<span class=o>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-XX:+UseCodeCacheFlushing  <span class=c1>#放弃一些被编译的代码，避免代码缓存被占满时JVM切换到interpreted-only的情况，默认开启</span>
+</span></span><span class=line><span class=cl>-XX:+DoEscapeAnalysis  <span class=c1>#开启逃逸分析,64位jvm默认开启</span>
+</span></span><span class=line><span class=cl>-XX:+UseBiasedLocking  <span class=c1>#开启偏向锁,64位jvm默认开启</span>
+</span></span><span class=line><span class=cl>-XX:+UseLargePages  <span class=c1>#开启使用大页面</span>
+</span></span><span class=line><span class=cl>-XX:+PrintTLAB  <span class=c1>#打印TLAB的使用情况</span>
+</span></span><span class=line><span class=cl>-XX:TLABSize  <span class=c1>#设置TLAB大小</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=45-通过-java-代码获取-jvm-参数><a href=#45-%e9%80%9a%e8%bf%87-java-%e4%bb%a3%e7%a0%81%e8%8e%b7%e5%8f%96-jvm-%e5%8f%82%e6%95%b0 class=header-anchor>#</a>
+4.5. 通过 Java 代码获取 JVM 参数</h2><p>Java 提供了 java.lang.management 包用于监视和管理 Java 虚拟机和 Java 运行时中的其他组件，它允许本地或远程监控和管理运行的 Java 虚拟机。其中 ManagementFactory 类较为常用，另外 Runtime 类可获取内存、CPU 核数等相关的数据。通过使用这些 api，可以监控应用服务器的堆内存使用情况，设置一些阈值进行报警等处理。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-21-1><a class=lnlinks href=#hl-21-1> 1</a>
+</span><span class=lnt id=hl-21-2><a class=lnlinks href=#hl-21-2> 2</a>
+</span><span class=lnt id=hl-21-3><a class=lnlinks href=#hl-21-3> 3</a>
+</span><span class=lnt id=hl-21-4><a class=lnlinks href=#hl-21-4> 4</a>
+</span><span class=lnt id=hl-21-5><a class=lnlinks href=#hl-21-5> 5</a>
+</span><span class=lnt id=hl-21-6><a class=lnlinks href=#hl-21-6> 6</a>
+</span><span class=lnt id=hl-21-7><a class=lnlinks href=#hl-21-7> 7</a>
+</span><span class=lnt id=hl-21-8><a class=lnlinks href=#hl-21-8> 8</a>
+</span><span class=lnt id=hl-21-9><a class=lnlinks href=#hl-21-9> 9</a>
+</span><span class=lnt id=hl-21-10><a class=lnlinks href=#hl-21-10>10</a>
+</span><span class=lnt id=hl-21-11><a class=lnlinks href=#hl-21-11>11</a>
+</span><span class=lnt id=hl-21-12><a class=lnlinks href=#hl-21-12>12</a>
+</span><span class=lnt id=hl-21-13><a class=lnlinks href=#hl-21-13>13</a>
+</span><span class=lnt id=hl-21-14><a class=lnlinks href=#hl-21-14>14</a>
+</span><span class=lnt id=hl-21-15><a class=lnlinks href=#hl-21-15>15</a>
+</span><span class=lnt id=hl-21-16><a class=lnlinks href=#hl-21-16>16</a>
+</span><span class=lnt id=hl-21-17><a class=lnlinks href=#hl-21-17>17</a>
+</span><span class=lnt id=hl-21-18><a class=lnlinks href=#hl-21-18>18</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>public</span><span class=w> </span><span class=kd>class</span> <span class=nc>MemoryMonitor</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>MemoryMXBean</span><span class=w> </span><span class=n>memorymbean</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>ManagementFactory</span><span class=p>.</span><span class=na>getMemoryMXBean</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>MemoryUsage</span><span class=w> </span><span class=n>usage</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>memorymbean</span><span class=p>.</span><span class=na>getHeapMemoryUsage</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;INIT HEAP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>usage</span><span class=p>.</span><span class=na>getInit</span><span class=p>()</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;m&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;MAX HEAP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>usage</span><span class=p>.</span><span class=na>getMax</span><span class=p>()</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;m&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;USE HEAP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>usage</span><span class=p>.</span><span class=na>getUsed</span><span class=p>()</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;m&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;\nFull Information:&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Heap Memory Usage: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>memorymbean</span><span class=p>.</span><span class=na>getHeapMemoryUsage</span><span class=p>());</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Non-Heap Memory Usage: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>memorymbean</span><span class=p>.</span><span class=na>getNonHeapMemoryUsage</span><span class=p>());</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;=======================通过java来获取相关系统状态============================ &#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;当前堆内存大小totalMemory &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=p>)</span><span class=w> </span><span class=n>Runtime</span><span class=p>.</span><span class=na>getRuntime</span><span class=p>().</span><span class=na>totalMemory</span><span class=p>()</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;m&#34;</span><span class=p>);</span><span class=c1>// 当前堆内存大小</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;空闲堆内存大小freeMemory &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=p>)</span><span class=w> </span><span class=n>Runtime</span><span class=p>.</span><span class=na>getRuntime</span><span class=p>().</span><span class=na>freeMemory</span><span class=p>()</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;m&#34;</span><span class=p>);</span><span class=c1>// 空闲堆内存大小</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;最大可用总堆内存maxMemory &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>Runtime</span><span class=p>.</span><span class=na>getRuntime</span><span class=p>().</span><span class=na>maxMemory</span><span class=p>()</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>/</span><span class=w> </span><span class=n>1024</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34;m&#34;</span><span class=p>);</span><span class=c1>// 最大可用总堆内存大小</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div></section><footer class=article-footer><section class=article-tags><a href=/tags/jvm/>JVM</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>true</span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<span>最后更新于 2024年5月8日 20:36</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/2023/05/11895611/><div class=article-details><h2 class=article-title>01-概述篇</h2></div></a></article><article><a href=/p/2023/05/14915117/><div class=article-details><h2 class=article-title>02-JVM监控及诊断工具-命令行篇</h2></div></a></article><article><a href=/p/2023/05/49167k49/><div class=article-details><h2 class=article-title>03-JVM监控及诊断工具-GUI篇</h2></div></a></article><article><a href=/p/2023/05/84511h84/><div class=article-details><h2 class=article-title>03-运行时数据区及程序计数器</h2></div></a></article><article><a href=/p/2023/05/95611835/><div class=article-details><h2 class=article-title>05-分析GC日志</h2></div></a></article></div></div></aside><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.js crossorigin=anonymous></script><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding);--waline-font-size:var(--article-font-size)}.waline-container .wl-count{color:var(--card-text-color-main)}</style><script>Waline.init({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],lang:"zh-cn",locale:{admin:"Admin",placeholder:null},requiredMeta:["nick"],serverURL:"https://waline.wssw.fun/"})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2024 &nbsp;&nbsp;by &nbsp; logan</section><section class=powerby>发表了85篇文章 ·
+总计465.46k字</section><section class=powerby><div class=powerby><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv></span>次
+</span><span id=busuanzi_container_site_uv>本站访客数<span id=busuanzi_value_site_uv></span>人次</span></div></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe.min.js crossorigin=anonymous defer></script><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js crossorigin=anonymous defer></script><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css crossorigin=anonymous></main></div><script type=text/javascript src=/ts/main.js defer></script><a href=javascript:void(0) class=right_things id=back-to-top title=返回顶部></a><style>html{scroll-behavior:smooth}#back-to-top{z-index:998!important;transition:1.5s ease,opacity 2s ease,visibility 2s ease,right .8s ease;opacity:0;display:inline-block;visibility:hidden;position:fixed;bottom:10px;right:10px;width:55px;height:55px;font-size:30px;text-align:center;line-height:50px;border-radius:20px;box-shadow:var(--shadow-l1);cursor:pointer;color:var(--body-text-color);background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #241348 0%, #4d0404 100%); }}#back-to-top:before{content:' ';display:inline-block;position:relative;top:0;transform:rotate(135deg);height:10px;width:10px;border-width:0 0 2px 2px;border-style:solid}#back-to-top:hover{transform:scale(1.1,1.1);background-image:linear-gradient(-225deg,#E3FDF5 0%,#FFE6FA 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #432581 0%, #861818 100%); }}#back-to-top:hover:before{border-color:#2674e0}@media screen and (max-width:768px){#back-to-top{width:35px;height:35px;font-size:10px;right:15px}}</style><script>function resizeRight(){var t=document.querySelectorAll(".right_things"),e=window.innerWidth;t.length>0&&t.forEach(function(t){e>2100?t.style.right="280px":e>1800?t.style.right="120px":e<1800&&(t.style.right="10px")})}window.addEventListener("resize",function(){requestAnimationFrame(resizeRight)});function backToTop(){window.scrollTo({top:0,behavior:"smooth"})}window.onload=function(){requestAnimationFrame(resizeRight);var t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t>0?(e.style.visibility="visible",e.style.opacity="1"):(e.style.opacity="0",e.style.visibility="hidden")},window.onscroll=function(){var t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t<400?(e.style.opacity="0",e.style.visibility="hidden"):(e.style.visibility="visible",e.style.opacity="1",e.addEventListener("click",backToTop,!1))}</script><style>.toggle-toc-inner,.toggle-toc-inner svg{z-index:1!important;pointer-events:none}.toggle-toc-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.toggle-toc-inner svg{display:none}#toc-container{display:none;position:fixed;bottom:120px;right:80px;padding:10px;border:1px solid #96979a50;border-radius:var(--card-border-radius);box-shadow:rgba(14,30,37,.12)0 2px 4px,rgba(14,30,37,.32)0 2px 16px;z-index:997!important;max-height:80vh;overflow-y:auto;width:auto;max-width:290px;background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); color: #FFFFFFB2; }}#TableOfContents{background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); }}#TableOfContents a:hover{font-weight:bolder}[data-scheme=dark] #TableOfContents a{color:#212223}[data-scheme=dark] #TableOfContents a:hover{color:#052ed3}#toggle-toc{transition:1.5s ease,opacity 2s ease,visibility 2s ease,right .8s ease;opacity:0;display:block;visibility:hidden;position:fixed;bottom:75px;right:10px;width:55px;height:55px;font-size:1.7rem;padding:5px;z-index:1000!important;border:0 solid #96979a50;border-radius:20px;box-shadow:var(--shadow-l1);color:#707070;cursor:pointer;background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #241348 0%, #4d0404 100%); color: #FFFFFFB2; } animation: jump 0.3s 4;animation-delay:.6s}#toggle-toc:hover{transform:scale(1.1,1.1);background-image:linear-gradient(-225deg,#E3FDF5 0%,#FFE6FA 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #432581 0%, #861818 100%); }}.widget--toc #TableOfContents{overflow-x:auto;max-height:66vh;width:auto}.toggle-toc-inner::before{content:'目录'}@media screen and (max-width:768px){#toggle-toc{width:35px;height:35px;font-size:10px;bottom:60px;right:15px}.toggle-toc-inner::before{content:''}.toggle-toc-inner svg{display:block}#toc-container{bottom:100px;right:60px}}</style><a id=toggle-toc class=right_things title=目录 href=javascript:void(0)><div class=toggle-toc-inner><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></div></a><section class="widget archives" id=toc-container><h2 class=section-title>目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#4-jvm-运行时参数>4. JVM 运行时参数</a><ol><li><a href=#41-jvm-参数选项>4.1. JVM 参数选项</a><ol><li><a href=#411-类型一标准参数选项>4.1.1. 类型一：标准参数选项</a></li><li><a href=#412-类型二-x-参数选项>4.1.2. 类型二：-X 参数选项</a></li><li><a href=#413-类型三-xx-参数选项>4.1.3. 类型三：-XX 参数选项</a></li></ol></li><li><a href=#42-查看参数>4.2 查看参数</a></li><li><a href=#43-添加-jvm-参数选项>4.3 添加 JVM 参数选项</a></li><li><a href=#44-常用的-jvm-参数选项>4.4. 常用的 JVM 参数选项</a><ol><li><a href=#441-打印设置的-xx-选项及值>4.4.1. 打印设置的 XX 选项及值</a></li><li><a href=#442-堆栈方法区等内存大小设置>4.4.2. 堆、栈、方法区等内存大小设置</a></li><li><a href=#443-outofmemory-相关的选项>4.4.3. OutOfMemory 相关的选项</a></li><li><a href=#444-垃圾收集器相关选项>4.4.4. 垃圾收集器相关选项</a></li><li><a href=#445-gc-日志相关选项>4.4.5. GC 日志相关选项</a></li><li><a href=#446-其他参数>4.4.6. 其他参数</a></li></ol></li><li><a href=#45-通过-java-代码获取-jvm-参数>4.5. 通过 Java 代码获取 JVM 参数</a></li></ol></li></ol></nav></div></section><script>var toggleButton=document.getElementById("toggle-toc"),tocContainer=document.getElementById("toc-container"),scrollThreshold=400;function extracted(){var e=window.scrollY||window.pageYOffset;e>=scrollThreshold?(toggleButton.style.visibility="visible",toggleButton.style.opacity="1"):(toggleButton.style.opacity="0",toggleButton.style.visibility="hidden")}window.addEventListener("scroll",function(){extracted()}),window.onload=function(){extracted()},toggleButton.addEventListener("click",function(e){tocContainer.style.display==="none"||tocContainer.style.display===""?tocContainer.style.display="block":tocContainer.style.display="none",e.stopPropagation()}),"ontouchstart"in window||toggleButton.addEventListener("mouseover",function(){tocContainer.style.display="block"}),document.addEventListener("click",function(e){!tocContainer.contains(e.target)&&!toggleButton.contains(e.target)&&e.target!==toggleButton&&e.target!==tocContainer&&(tocContainer.style.display="none")})</script><script src=https://cdn.bootcdn.net/ajax/libs/nprogress/0.2.0/nprogress.min.js crossorigin=anonymous></script><div class=top-scroll-bar></div><style>.top-scroll-bar,.page-load-progress-bar{position:fixed;top:0;left:0;z-index:9999;display:none;width:0;height:4px;border-radius:5px;background-image:linear-gradient(to right,#5a0ca6 0%,rgba(208,114,155,.84) 50%,#29d 100%); [data-scheme="light"] & { background-image: linear-gradient(to right, #78ee6e 0%, #5069e3 50%, #29d 100%); }}#nprogress{pointer-events:none}#nprogress .my_bar{background-image:linear-gradient(to right,#5a0ca6 0%,rgba(208,114,155,.84) 50%,#29d 100%); [data-scheme="light"] & { background-image: linear-gradient(to right, #78ee6e 0%, #5069e3 50%, #29d 100%); } position: fixed;z-index:9999;top:0;left:0;border-radius:10px;width:100%;height:5px}#nprogress .my_peg{display:block;position:absolute;right:0;width:100px;height:100%;box-shadow:0 0 10px #29d,0 0 5px #29d;opacity:1;-webkit-transform:rotate(3deg)translate(0,-4px);-ms-transform:rotate(3deg)translate(0,-4px);transform:rotate(3deg)translate(0,-4px)}#nprogress .my_spinner{display:block;position:fixed;z-index:1031;top:15px;right:15px}#nprogress .my_spinner-icon{width:25px;height:25px;box-sizing:border-box;border:solid 3px transparent;border-top-color:#29d;border-left-color:#29d;border-radius:50%;-webkit-animation:nprogress-spinner 400ms linear infinite;animation:nprogress-spinner 400ms linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .my_spinner,.nprogress-custom-parent #nprogress .my_bar{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><script>var my_template='<div class="my_bar" role="bar"><div class="my_peg"></div></div><div class="my_spinner" role="spinner"><div class="my_spinner-icon"></div></div>';NProgress.configure({template:my_template}),NProgress.start(),document.addEventListener("readystatechange",()=>{if(document.readyState==="interactive"&&NProgress.inc(.6),document.readyState==="complete"){NProgress.done(!0),NProgress.configure({template:my_template,minimum:0,trickle:!1,showSpinner:!1});var e=document.querySelector(".top-scroll-bar");window.addEventListener("scroll",function(){var t=document.documentElement.scrollTop||document.body.scrollTop,n=document.documentElement.scrollHeight-document.documentElement.clientHeight,s=t/n*100;e.style.width=s+"%",e.style.display="block"})}})</script><script>function loadScript(e,t){var n=document.querySelector('script[src="'+e+'"]'),s=!1;n.onload=function(){s||(s=!0,t&&window[t]())},n.onreadystatechange=function(){!s&&(n.readyState==="loaded"||n.readyState==="complete")&&(s=!0,t&&window[t]())}}</script></body></html>

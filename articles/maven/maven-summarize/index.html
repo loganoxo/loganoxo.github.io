@@ -1,0 +1,1114 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="maven的使用,maven概述"><meta name=keywords content="SpringBoot,分布式,maven,生产实践,概述"><title>maven概述</title>
+<link rel=canonical href=https://logan.wssw.fun/articles/maven/maven-summarize/><link rel=stylesheet href=/scss/style.min.13aa7f8d1031a866f598038f5f109d260d836a6b68cfc49d43713498eb7a1e2b.css><meta property='og:title' content="maven概述"><meta property='og:description' content="maven的使用,maven概述"><meta property='og:url' content='https://logan.wssw.fun/articles/maven/maven-summarize/'><meta property='og:site_name' content='Logan的博客'><meta property='og:type' content='article'><meta property='article:section' content='Articles'><meta property='article:tag' content='maven'><meta property='article:published_time' content='2024-03-03T12:49:51+08:00'><meta property='article:modified_time' content='2024-05-08T20:59:53+08:00'><meta name=twitter:title content="maven概述"><meta name=twitter:description content="maven的使用,maven概述"><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><script async src="https://www.googletagmanager.com/gtag/js?id=G-R7GQB9XXQW"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-R7GQB9XXQW")}</script><meta name=google-site-verification content="3CAZCWVpDIWQxfZCqLMpov13bCzaH1QdnlHZTNnNjfM"><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.min.js crossorigin=anonymous async></script><meta name=referrer content="no-referrer-when-downgrade"><script src=/js/sceneanimation.min.8c8c65611aaf0c8996e6d8a06f3e3bc82e6c8d2d2ab542e7cde8df7bceeeba9e.js integrity="sha256-jIxlYRqvDImW5tigbz47yC5sjS0qtULnzejfe87uup4=" crossorigin=anonymous async></script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"dark")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e==="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar-3K_hu560d426f92925c766fafa78be2429fd1_3226_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy decoding=async alt=Avatar>
+</a><span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/>Logan🌀</a></h1><h2 class=site-description>Starry serenade ✍️</h2></div></header><ol class=menu-social><li><a href=https://github.com/loganoxo target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://blog.csdn.net/u014229652 target=_blank title=my_csdn rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg></a></li><li><a href=https://twitter.com target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>主页</span></a></li><li class=current><a href=/articles/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1112 6.006a5 5 0 117.5 6.572"/></svg>
+<span>我的</span></a></li><li><a href=/page/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>归档</span></a></li><li><a href=/page/photos/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7h1a2 2 0 002-2 1 1 0 011-1h6a1 1 0 011 1 2 2 0 002 2h1a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2"/><path d="M9 13a3 3 0 106 0 3 3 0 00-6 0"/></svg>
+<span>相册</span></a></li><li><a href=/page/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>搜索</span></a></li><li><a href=/timeline/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-fish-christianity" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7S16.354 17 9.692 17c-3.226.025-6.194-1.905-7.692-5 1.498-3.095 4.466-5.025 7.692-5C16.354 7 22 17 22 17"/></svg>
+<span>年轴</span></a></li><li><a href=/page/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>友链</span></a></li><li><a href=/page/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>关于</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" viewBox="0 0 1025 1024" xmlns="http://www.w3.org/2000/svg" p-id="14930" width="128" height="128"><path d="M253.939302 502.92736a269.74208 269.74208.0 00122.90048 235.84768 257.024 257.024.0 00259.95264 9.07264c81.46944-44.27776 135.70048-130.49856 139.0592-226.7136 5.14048-147.3536-107.37664-270.1312-250.63424-275.1488-145.32608-5.05856-266.1376 109.568-271.27808 256.94208zM531.730022.3072c16.384.57344 32.256 15.48288 31.62112 33.8944l-3.72736 106.43456c-.57344 16.384-15.4624 32.256-33.8944 31.60064-16.384-.57344-32.23552-15.4624-31.60064-33.8944l3.72736-106.43456c2.74432-20.3776 15.4624-32.23552 33.87392-31.60064zm493.89568 527.52384c-.57344 16.384-13.35296 30.26944-33.8944 31.60064l-104.36608-3.64544c-16.384-.57344-32.19456-17.53088-31.62112-33.8944.57344-16.384 15.48288-32.256 33.8944-31.60064l104.38656 3.64544a32.3584 32.3584.0 0131.60064 33.8944zm-855.53152-29.9008c-.57344 16.384-13.35296 30.28992-33.8944 31.62112l-104.38656-3.64544c-16.384-.57344-32.17408-17.5104-31.60064-33.8944.57344-16.384 15.4624-32.256 33.8944-31.60064l104.38656 3.64544a32.3584 32.3584.0 0131.60064 33.8944zm325.91872 525.76256c-16.384-.57344-32.256-15.48288-31.62112-33.8944l3.72736-106.43456c.57344-16.384 15.4624-32.256 33.8944-31.60064 16.384.57344 32.23552 15.4624 31.60064 33.8944l-3.72736 106.43456c-2.74432 20.3776-17.5104 32.1536-33.87392 31.60064zm401.32608-871.26016c11.85792 12.6976 11.0592 35.2256-1.6384 47.06304l-78.37696 73.09312c-12.6976 11.85792-33.1776 11.14112-47.08352-1.6384-11.83744-12.6976-11.0592-35.2256 1.6384-47.08352l78.39744-73.09312c16.85504-13.74208 35.2256-11.0592 47.06304 1.6384zm-15.50336 737.1776c-12.6976 11.85792-31.1296 11.22304-47.06304-1.6384l-70.9632-80.34304c-11.85792-12.6976-11.0592-35.2256 1.6384-47.08352s35.2256-11.0592 47.08352 1.6384l73.07264 78.37696c9.728 14.68416 8.94976 37.21216-3.76832 49.0496zm-596.31616-645.8368c-12.6976 11.85792-31.1296 11.20256-47.06304-1.6384l-73.09312-78.37696c-11.85792-12.6976-11.0592-35.2256 1.6384-47.08352s35.2256-11.0592 47.08352 1.6384l73.09312 78.37696c11.776 14.7456 11.0592 35.2256-1.6384 47.08352zm-138.24 614.05184c-11.85792-12.71808-11.0592-35.2256 1.6384-47.08352l78.37696-73.09312c12.6976-11.83744 33.1776-11.12064 47.08352 1.6384 11.83744 12.71808 11.0592 35.2256-1.6384 47.104l-78.39744 73.07264c-16.7936 11.71456-35.2256 11.0592-47.06304-1.6384z" fill="#ffb948"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="128" height="128"><path d="M578.256332 591.814252v-82.970701m0 95.54202a12.655127 12.655127.0 01-12.571318-12.571319v-82.970701a12.571318 12.571318.0 1125.142636.0v82.970701a12.571318 12.571318.0 01-12.571318 12.571319z" fill="#f89b1b"/><path d="M598.873294 479.342858a36.959676 36.959676.0 01-27.573092-61.59946 52.380493 52.380493.0 1062.521357 36.540632 36.875867 36.875867.0 01-34.948265 25.058828zm204.0744-109.035234v-82.970701m0 95.542019a12.571318 12.571318.0 01-12.571318-12.571318v-82.970701a12.571318 12.571318.0 1125.142636.0v82.970701a12.571318 12.571318.0 01-12.571318 12.571318z" fill="#f89b1b"/><path d="M823.9837 257.83623a36.959676 36.959676.0 01-27.6569-61.515651 52.129067 52.129067.0 1064.616576 50.285273 53.050963 53.050963.0 00-2.011411-14.163685A36.875867 36.875867.0 01823.9837 257.83623z" fill="#f89b1b"/><path d="M803.282929 328.822274a59.588049 59.588049.0 0159.588049 59.588048V785.66398H743.694881V388.410322a59.588049 59.588049.0 0159.588048-59.588048zM581.776301 551.16699a143.145411 143.145411.0 01143.145411 143.145411V837.54162H438.463272V694.312401A143.145411 143.145411.0 01581.776301 551.16699z" fill="#612273"/><path d="M600.968514 198.667225l-49.111951-4.693292a8.380879 8.380879.0 01-7.039938-5.196145l-17.599845-42.658674a8.380879 8.380879.0 00-15.672244.0l-17.432228 42.658674a8.380879 8.380879.0 01-7.039938 5.196145l-49.11195 4.693292a8.380879 8.380879.0 00-4.777101 14.750347l36.959676 32.51781a8.380879 8.380879.0 012.681881 8.380878l-11.06276 45.67579a8.380879 8.380879.0 0012.487509 9.302776L515.232123 285.074086a8.380879 8.380879.0 018.380879.0l40.982497 24.136931a8.380879 8.380879.0 0012.571319-9.302776l-10.978952-45.675789a8.380879 8.380879.0 012.681882-8.380879L606.08085 213.417572a8.380879 8.380879.0 00-5.028528-14.750347z" fill="#fed150"/><path d="M470.897274 246.77347l1.927602-8.380879a8.380879 8.380879.0 00-2.681881-8.380879l-35.032074-30.506399a8.380879 8.380879.0 00-1.927602 13.912259l36.959676 32.51781a6.788512 6.788512.0 01.754279.838088zM603.98563 199.589122l-34.948265 30.674016a8.380879 8.380879.0 00-2.681881 8.380879l1.927602 8.380879a6.788512 6.788512.0 01.754279-.838088l37.043485-32.769236a8.380879 8.380879.0 00-2.09522-13.82845zm-28.578797 92.189667a8.380879 8.380879.0 01-10.643716 1.759985l-40.982498-24.053123a8.380879 8.380879.0 00-8.380879.0L474.249625 293.454965a8.380879 8.380879.0 01-10.643716-1.676176l-1.927602 8.380879a8.380879 8.380879.0 0012.487509 9.302775l41.066307-24.388357a8.380879 8.380879.0 018.380879.0l40.982497 24.136931a8.380879 8.380879.0 0012.571319-9.302776z" fill="#fed150" opacity=".5"/><path d="M434.608068 426.543321l-28.159753-2.681881a4.86091 4.86091.0 01-4.022822-3.017117l-10.057054-24.388357a4.86091 4.86091.0 00-8.967541.0l-9.973245 24.388357a4.693292 4.693292.0 01-4.022822 3.017117l-28.159753 2.681881a4.86091 4.86091.0 00-2.76569 8.380879l21.203623 18.605551a4.944719 4.944719.0 011.592367 4.777101L354.654484 484.455194a4.86091 4.86091.0 007.123747 5.363762l23.466461-13.82845a5.196145 5.196145.0 014.944718.0l23.466461 13.82845a4.86091 4.86091.0 007.123747-5.363762l-6.285659-26.064533a4.86091 4.86091.0 011.508558-4.777101l21.203624-18.605551a4.86091 4.86091.0 00-2.849499-8.380879z" fill="#fed150"/><path d="M360.102055 454.032604l1.173323-4.609484a4.944719 4.944719.0 00-1.592367-5.112336l-20.0303-17.683654a4.944719 4.944719.0 00-1.173323 8.380879l21.203623 18.605551zm76.182189-26.98643-20.0303 17.26461a4.86091 4.86091.0 00-1.508559 4.777101l1.173323 4.693292v-.502852l21.203624-18.605551a4.86091 4.86091.0 00-.838088-7.6266zM419.94153 479.845711a4.777101 4.777101.0 01-6.034233 1.005705l-23.46646-13.82845a5.196145 5.196145.0 00-4.944719.0l-23.466461 13.82845a4.777101 4.777101.0 01-6.034233-1.005705l-1.089514 4.609483a4.86091 4.86091.0 007.123747 5.363762l23.466461-13.82845a5.196145 5.196145.0 014.944719.0l23.46646 13.82845a4.86091 4.86091.0 007.123747-5.363762z" fill="#fed150" opacity=".5"/><path d="M635.413926 803.68287A414.685886 414.685886.0 01459.41547 18.729756 9.805628 9.805628.0 00453.967898.124205a513.831683 513.831683.0 10567.050264 607.027056 9.805628 9.805628.0 00-18.186507-6.704704A414.350651 414.350651.0 01635.413926 803.68287z" fill="#fed150" p-id="22313"/><path d="M50.931434 292.868303a460.110249 460.110249.0 00275.311871 359.455895 413.847798 413.847798.0 01133.339782-633.594442A9.805628 9.805628.0 00453.967898.124205 513.915492 513.915492.0 0050.931434 292.868303z" fill="#fed150" opacity=".4" p-id="22314"/><path d="M1006.016389 597.261823A513.664065 513.664065.0 013.914704 475.320036c-.670471 10.308481-1.257132 20.616962-1.257132 31.093061a513.831683 513.831683.0 001018.36059 100.570546 9.805628 9.805628.0 00-15.001773-9.72182zM231.539373 332.258434c0 7.458982.67047 14.917964 1.257132 22.293138A414.769695 414.769695.0 01459.583087 18.729756 9.805628 9.805628.0 00453.967898.124205a505.869848 505.869848.0 00-94.620122 20.868388A413.177328 413.177328.0 00231.539373 332.258434z" fill="#fed150" opacity=".5" p-id="22315"/><path d="M715.032275 421.514794m17.683654.0h141.217809q17.683654.0 17.683655 17.683654v-.083809q0 17.683654-17.683655 17.683655H732.715929q-17.683654.0-17.683654-17.683655v.083809q0-17.683654 17.683654-17.683654z" fill="#eb3d72" p-id="22316"/><path d="M205.139605 319.603307c4.441866-6.872321 22.041711-45.340555-11.817039-67.047031s-51.626214 8.380879-51.626214 8.380879a25.142637 25.142637.0 1042.742482 27.489282s2.179029 5.950424-6.537085 18.437934-25.142637 12.236083-43.077718.754279-47.01673-65.789899-.67047-138.787354c1.592367-2.514264 3.352352-4.693292 5.028527-7.039938a26.818812 26.818812.0 00-23.047417-2.430455 33.523515 33.523515.0 00-18.689359 17.683654c-31.260678 64.36515-22.628373 127.724594 21.203623 155.884347 48.944333 31.093061 82.048804-6.453277 86.49067-13.325597zM734.224488 931.491272c6.453277-2.681881 37.713955-21.45505 24.304548-53.386198s-40.647262-19.35983-40.647262-19.35983a21.874094 21.874094.0 1016.761757 40.312027s-1.340941 5.363762-13.577023 9.973246S697.264812 905.259122 689.889638 888.497364s-1.340941-69.561295 67.047031-98.894371c2.346646-1.005705 4.693292-1.676176 7.039938-2.514263a31.931148 31.931148.0 00-1.927602-3.352352 28.578797 28.578797.0 00-38.635851-7.542791c-51.87764 30.841634-74.422204 81.545951-57.325212 122.277023 19.778874 46.262451 61.59946 35.786353 68.136546 33.020662zM279.813236 802.844782c-5.950424-3.687587-39.390131-18.354125-57.660447 11.146569s7.794217 44.334849 7.794217 44.334849a21.874094 21.874094.0 1023.047417-36.875867s5.112336-2.011411 16.007479 5.279954 10.811334 21.622667 1.173323 37.211102-55.984271 41.317733-119.511333 2.430455c-2.179029-1.340941-4.106631-2.849499-6.118041-4.274249a22.376947 22.376947.0 00-1.676176 3.51997 28.662606 28.662606.0 0016.342714 36.037779c55.146183 24.388357 109.538087 13.409406 132.920739-24.136931 26.399768-42.9101-6.369468-70.902235-12.319892-74.673631zM431.00429 694.312401h302.298301m0 20.952197H431.00429a20.952197 20.952197.0 010-41.904394h302.298301a20.952197 20.952197.0 010 41.904394z" fill="#eb3d72" p-id="22317"/><path d="M255.760113 683.082023m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22318"/><path d="M356.246851 840.977781m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22319"/><path d="M54.870447 472.135302m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".4" p-id="22320"/><path d="M561.410765 873.914635m-30.171164.0a30.171164 30.171164.0 1060.342328.0 30.171164 30.171164.0 10-60.342328.0z" fill="#fed150" opacity=".5" p-id="22321"/><path d="M445.167976 825.13792m-19.862683.0a19.862683 19.862683.0 1039.725365.0 19.862683 19.862683.0 10-39.725365.0z" fill="#fed150" opacity=".5" p-id="22322"/><path d="M149.406761 689.786726m-19.862683.0a19.862683 19.862683.0 1039.725365.0 19.862683 19.862683.0 10-39.725365.0z" fill="#fed150" opacity=".5" p-id="22323"/><path d="M132.225959 633.299603m-18.940786.0a18.940786 18.940786.0 1037.881572.0 18.940786 18.940786.0 10-37.881572.0z" fill="#fed150" opacity=".4" p-id="22324"/><path d="M475.339139 906.935297m-18.940786.0a18.940786 18.940786.0 1037.881573.0 18.940786 18.940786.0 10-37.881573.0z" fill="#fed150" opacity=".4" p-id="22325"/></svg>
+<span>主题</span></li></ol></li></ol></aside><main class="main full-width"><div class=breadcrumb><li><a href=/>首页</a></li><li><a href=/articles/>我的发布</a></li><li class=active><a href=/articles/maven/maven-summarize/>maven概述</a></li></div><article class=main-article><header class="article-header not-page"><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"/><use href="#gentle-wave" x="48" y="3"/><use href="#gentle-wave" x="48" y="5"/><use href="#gentle-wave" x="48" y="7"/></g></svg></section><style>.main-hero-waves-area{--icat-post-waveone:rgba(17, 17, 17, 0.78);--icat-post-wavetwo:rgba(17, 17, 17, 0.51);--icat-post-wavethree:rgba(17, 17, 17, 0.212);--icat-post-wavefour:rgb(17, 17, 17);opacity:1; [data-scheme="light"] & { --icat-post-waveone: rgba(255, 255, 255, 0.741); --icat-post-wavetwo: rgba(255, 255, 255, 0.51); --icat-post-wavethree: rgba(255, 255, 255, 0.212); --icat-post-wavefour: #fff; }}.waves-area{width:100%;position:absolute;left:0;bottom:0;z-index:5}.waves-area .waves-svg{width:100%;height:8rem}@media screen and (max-width:768px){.waves-area .waves-svg{height:40px;min-height:40px}}.waves-area .waves-svg .parallax>use{-webkit-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-moz-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-o-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;-ms-animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite}.waves-area .waves-svg .parallax>use:nth-child(1){-webkit-animation-delay:-2s;-moz-animation-delay:-2s;-o-animation-delay:-2s;-ms-animation-delay:-2s;animation-delay:-2s;-webkit-animation-duration:7s;-moz-animation-duration:7s;-o-animation-duration:7s;-ms-animation-duration:7s;animation-duration:7s;fill:var(--icat-post-waveone)}.waves-area .waves-svg .parallax>use:nth-child(2){-webkit-animation-delay:-3s;-moz-animation-delay:-3s;-o-animation-delay:-3s;-ms-animation-delay:-3s;animation-delay:-3s;-webkit-animation-duration:10s;-moz-animation-duration:10s;-o-animation-duration:10s;-ms-animation-duration:10s;animation-duration:10s;fill:var(--icat-post-wavetwo)}.waves-area .waves-svg .parallax>use:nth-child(3){-webkit-animation-delay:-4s;-moz-animation-delay:-4s;-o-animation-delay:-4s;-ms-animation-delay:-4s;animation-delay:-4s;-webkit-animation-duration:13s;-moz-animation-duration:13s;-o-animation-duration:13s;-ms-animation-duration:13s;animation-duration:13s;fill:var(--icat-post-wavethree)}.waves-area .waves-svg .parallax>use:nth-child(4){-webkit-animation-delay:-5s;-moz-animation-delay:-5s;-o-animation-delay:-5s;-ms-animation-delay:-5s;animation-delay:-5s;-webkit-animation-duration:20s;-moz-animation-duration:20s;-o-animation-duration:20s;-ms-animation-duration:20s;animation-duration:20s;fill:var(--icat-post-wavefour)}@keyframes move-forever{0%{transform:translate3d(-90px,0,0)}100%{transform:translate3d(85px,0,0)}}</style><div class=article-details><header class=article-category><a href=/categories/maven/>Maven</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/articles/maven/maven-summarize/>maven概述</a></h2><h3 class=article-subtitle>maven的使用,maven概述</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>2024年3月3日</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>阅读时长: 20 分钟</time></div></footer></div></header><section class=article-content><p><a class=link href=http://heavy_code_industry.gitee.io/code_heavy_industry/ target=_blank rel=noopener>http://heavy_code_industry.gitee.io/code_heavy_industry/
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><p><a class=link href=https://maven.apache.org/index.html target=_blank rel=noopener>https://maven.apache.org/index.html
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><p><a class=link href=https://mvnrepository.com/ target=_blank rel=noopener>https://mvnrepository.com/
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><p><a class=link href="https://www.bilibili.com/video/BV12q4y147e4?spm_id_from=333.337.search-card.all.click" target=_blank rel=noopener>https://www.bilibili.com/video/BV12q4y147e4?spm_id_from=333.337.search-card.all.click
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><h1 id=1maven介绍><a href=#1maven%e4%bb%8b%e7%bb%8d class=header-anchor>#</a>
+1、maven介绍</h1><h2 id=概述><a href=#%e6%a6%82%e8%bf%b0 class=header-anchor>#</a>
+①、概述</h2><p>Maven 是一款『<strong>构建</strong>管理』和『<strong>依赖</strong>管理』的工具。但事实上这只是 Maven 的一部分功能。Maven 本身的产品定位是一款『<strong>项目</strong>管理工具』</p><h2 id=maven工作机制><a href=#maven%e5%b7%a5%e4%bd%9c%e6%9c%ba%e5%88%b6 class=header-anchor>#</a>
+②、maven工作机制</h2><img src=https://logan.1357810.xyz/img/20220410/20220410185552.png alt=img style=zoom:50%><p>maven仓库里有：自己项目打包成的jar、第三方jar、maven核心程序需要用到的插件jar（clean、test、package）</p><h2 id=功能><a href=#%e5%8a%9f%e8%83%bd class=header-anchor>#</a>
+③、功能</h2><p>从『项目管理』的角度来看，Maven 提供了如下这些功能：</p><ul><li>项目对象模型（POM）：将整个项目本身抽象、封装为应用程序中的一个对象，以便于管理和操作。</li><li>全局性构建逻辑重用：Maven 对整个构建过程进行封装之后，程序员只需要指定配置信息即可完成构建。让构建过程从 Ant 的『编程式』升级到了 Maven 的『声明式』。</li><li>构件的标准集合：在 Maven 提供的标准框架体系内，所有的构件都可以按照统一的规范生成和使用。</li><li>构件关系定义：Maven 定义了构件之间的三种基本关系，让大型应用系统可以使用 Maven 来进行管理<ul><li>继承关系：通过从上到下的继承关系，将各个子构件中的重复信息提取到父构件中统一管理</li><li>聚合关系：将多个构件聚合为一个整体，便于统一操作</li><li>依赖关系：Maven 定义了依赖的范围、依赖的传递、依赖的排除、版本仲裁机制等一系列规范和标准，让大型项目可以有序容纳数百甚至更多依赖</li></ul></li><li>插件目标系统：Maven 核心程序定义抽象的生命周期，然后将插件的目标绑定到生命周期中的特定阶段，实现了标准和具体实现解耦合，让 Maven 程序极具扩展性</li><li>项目描述信息的维护：我们不仅可以在 POM 中声明项目描述信息，更可以将整个项目相关信息收集起来生成 HTML 页面组成的一个可以直接访问的站点。这些项目描述信息包括：<ul><li>公司或组织信息 organization</li><li>项目许可证 licenses</li><li>开发成员信息 developers</li><li>issue 管理信息 issueManagement</li><li>SCM 信息 scm 远程仓库支持</li></ul></li></ul><h2 id=maven坐标><a href=#maven%e5%9d%90%e6%a0%87 class=header-anchor>#</a>
+④、maven坐标</h2><p>使用三个**『向量』<strong>在</strong>『Maven的仓库』<strong>中</strong>唯一<strong>的定位到一个</strong>『jar』**包。</p><ul><li><strong>groupId</strong>：公司或组织的 id</li><li><strong>artifactId</strong>：一个项目或者是项目中的一个模块的 id</li><li><strong>version</strong>：版本号</li></ul><p>三个向量的取值方式</p><ul><li>groupId：公司或组织域名的倒序，通常也会加上项目名称<ul><li>例如：com.atguigu.maven</li></ul></li><li>artifactId：模块的名称，将来作为 Maven 工程的工程名</li><li>version：模块的版本号，根据自己的需要设定<ul><li>例如：SNAPSHOT 表示快照版本，正在迭代过程中，不稳定的版本</li><li>例如：RELEASE 表示正式版本</li></ul></li></ul><h1 id=2pom介绍><a href=#2pom%e4%bb%8b%e7%bb%8d class=header-anchor>#</a>
+2、POM介绍</h1><h2 id=含义><a href=#%e5%90%ab%e4%b9%89 class=header-anchor>#</a>
+①、含义</h2><p>POM：<strong>P</strong>roject <strong>O</strong>bject <strong>M</strong>odel，项目对象模型。和 POM 类似的是：DOM（Document Object Model），文档对象模型。它们都是模型化思想的具体体现。</p><h2 id=模型化思想><a href=#%e6%a8%a1%e5%9e%8b%e5%8c%96%e6%80%9d%e6%83%b3 class=header-anchor>#</a>
+②、模型化思想</h2><p>POM 表示将工程抽象为一个模型，再用程序中的对象来描述这个模型。这样我们就可以用程序来管理项目了。我们在开发过程中，最基本的做法就是将现实生活中的事物抽象为模型，然后封装模型相关的数据作为一个对象，这样就可以在程序中计算与现实事物相关的数据。</p><h2 id=pom标签><a href=#pom%e6%a0%87%e7%ad%be class=header-anchor>#</a>
+③、pom标签</h2><p>POM 理念集中体现在 Maven 工程根目录下 <strong>pom.xml</strong> 这个配置文件中。所以这个 pom.xml 配置文件就是 Maven 工程的核心配置文件。其实学习 Maven 就是学这个文件怎么配置，各个配置有什么用。</p><p>下面是 spring-boot-starter 的 POM 文件，可以看到：除了我们熟悉的坐标标签、dependencies 标签，还有 description、url、organization、licenses、developers、scm、issueManagement 等这些描述项目信息的标签。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-0-1><a class=lnlinks href=#hl-0-1> 1</a>
+</span><span class=lnt id=hl-0-2><a class=lnlinks href=#hl-0-2> 2</a>
+</span><span class=lnt id=hl-0-3><a class=lnlinks href=#hl-0-3> 3</a>
+</span><span class=lnt id=hl-0-4><a class=lnlinks href=#hl-0-4> 4</a>
+</span><span class=lnt id=hl-0-5><a class=lnlinks href=#hl-0-5> 5</a>
+</span><span class=lnt id=hl-0-6><a class=lnlinks href=#hl-0-6> 6</a>
+</span><span class=lnt id=hl-0-7><a class=lnlinks href=#hl-0-7> 7</a>
+</span><span class=lnt id=hl-0-8><a class=lnlinks href=#hl-0-8> 8</a>
+</span><span class=lnt id=hl-0-9><a class=lnlinks href=#hl-0-9> 9</a>
+</span><span class=lnt id=hl-0-10><a class=lnlinks href=#hl-0-10>10</a>
+</span><span class=lnt id=hl-0-11><a class=lnlinks href=#hl-0-11>11</a>
+</span><span class=lnt id=hl-0-12><a class=lnlinks href=#hl-0-12>12</a>
+</span><span class=lnt id=hl-0-13><a class=lnlinks href=#hl-0-13>13</a>
+</span><span class=lnt id=hl-0-14><a class=lnlinks href=#hl-0-14>14</a>
+</span><span class=lnt id=hl-0-15><a class=lnlinks href=#hl-0-15>15</a>
+</span><span class=lnt id=hl-0-16><a class=lnlinks href=#hl-0-16>16</a>
+</span><span class=lnt id=hl-0-17><a class=lnlinks href=#hl-0-17>17</a>
+</span><span class=lnt id=hl-0-18><a class=lnlinks href=#hl-0-18>18</a>
+</span><span class=lnt id=hl-0-19><a class=lnlinks href=#hl-0-19>19</a>
+</span><span class=lnt id=hl-0-20><a class=lnlinks href=#hl-0-20>20</a>
+</span><span class=lnt id=hl-0-21><a class=lnlinks href=#hl-0-21>21</a>
+</span><span class=lnt id=hl-0-22><a class=lnlinks href=#hl-0-22>22</a>
+</span><span class=lnt id=hl-0-23><a class=lnlinks href=#hl-0-23>23</a>
+</span><span class=lnt id=hl-0-24><a class=lnlinks href=#hl-0-24>24</a>
+</span><span class=lnt id=hl-0-25><a class=lnlinks href=#hl-0-25>25</a>
+</span><span class=lnt id=hl-0-26><a class=lnlinks href=#hl-0-26>26</a>
+</span><span class=lnt id=hl-0-27><a class=lnlinks href=#hl-0-27>27</a>
+</span><span class=lnt id=hl-0-28><a class=lnlinks href=#hl-0-28>28</a>
+</span><span class=lnt id=hl-0-29><a class=lnlinks href=#hl-0-29>29</a>
+</span><span class=lnt id=hl-0-30><a class=lnlinks href=#hl-0-30>30</a>
+</span><span class=lnt id=hl-0-31><a class=lnlinks href=#hl-0-31>31</a>
+</span><span class=lnt id=hl-0-32><a class=lnlinks href=#hl-0-32>32</a>
+</span><span class=lnt id=hl-0-33><a class=lnlinks href=#hl-0-33>33</a>
+</span><span class=lnt id=hl-0-34><a class=lnlinks href=#hl-0-34>34</a>
+</span><span class=lnt id=hl-0-35><a class=lnlinks href=#hl-0-35>35</a>
+</span><span class=lnt id=hl-0-36><a class=lnlinks href=#hl-0-36>36</a>
+</span><span class=lnt id=hl-0-37><a class=lnlinks href=#hl-0-37>37</a>
+</span><span class=lnt id=hl-0-38><a class=lnlinks href=#hl-0-38>38</a>
+</span><span class=lnt id=hl-0-39><a class=lnlinks href=#hl-0-39>39</a>
+</span><span class=lnt id=hl-0-40><a class=lnlinks href=#hl-0-40>40</a>
+</span><span class=lnt id=hl-0-41><a class=lnlinks href=#hl-0-41>41</a>
+</span><span class=lnt id=hl-0-42><a class=lnlinks href=#hl-0-42>42</a>
+</span><span class=lnt id=hl-0-43><a class=lnlinks href=#hl-0-43>43</a>
+</span><span class=lnt id=hl-0-44><a class=lnlinks href=#hl-0-44>44</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=cp>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;project</span> <span class=na>xsi:schemaLocation=</span><span class=s>&#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&#34;</span> <span class=na>xmlns=</span><span class=s>&#34;http://maven.apache.org/POM/4.0.0&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=na>xmlns:xsi=</span><span class=s>&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span><span class=nt>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;modelVersion&gt;</span>4.0.0<span class=nt>&lt;/modelVersion&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;groupId&gt;</span>org.springframework.boot<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;artifactId&gt;</span>spring-boot-starter<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;version&gt;</span>2.5.6<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;name&gt;</span>spring-boot-starter<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;description&gt;</span>Core starter, including auto-configuration support, logging and YAML<span class=nt>&lt;/description&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;url&gt;</span>https://spring.io/projects/spring-boot<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;organization&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;name&gt;</span>Pivotal Software, Inc.<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;url&gt;</span>https://spring.io<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/organization&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;licenses&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;license&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;name&gt;</span>Apache License, Version 2.0<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;url&gt;</span>https://www.apache.org/licenses/LICENSE-2.0<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/license&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/licenses&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;developers&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;developer&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;name&gt;</span>Pivotal<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;email&gt;</span>info@pivotal.io<span class=nt>&lt;/email&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;organization&gt;</span>Pivotal Software, Inc.<span class=nt>&lt;/organization&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;organizationUrl&gt;</span>https://www.spring.io<span class=nt>&lt;/organizationUrl&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/developer&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/developers&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;scm&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;connection&gt;</span>scm:git:git://github.com/spring-projects/spring-boot.git<span class=nt>&lt;/connection&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;developerConnection&gt;</span>scm:git:ssh://git@github.com/spring-projects/spring-boot.git<span class=nt>&lt;/developerConnection&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;url&gt;</span>https://github.com/spring-projects/spring-boot<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/scm&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;issueManagement&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;system&gt;</span>GitHub<span class=nt>&lt;/system&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;url&gt;</span>https://github.com/spring-projects/spring-boot/issues<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/issueManagement&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;dependencies&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>      ……
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/dependency&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/dependencies&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/project&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h1 id=3pom的四个层次><a href=#3pom%e7%9a%84%e5%9b%9b%e4%b8%aa%e5%b1%82%e6%ac%a1 class=header-anchor>#</a>
+3、POM的四个层次</h1><h2 id=超级pom><a href=#%e8%b6%85%e7%ba%a7pom class=header-anchor>#</a>
+①、超级pom</h2><ul><li><p>经过我们前面的学习，我们看到 Maven 在构建过程中有很多默认的设定。例如：源文件存放的目录、测试源文件存放的目录、构建输出的目录……等等。但是其实这些要素也都是被 Maven 定义过的。定义的位置就是：<strong>超级 POM</strong>。</p></li><li><p>关于超级 POM，Maven 官网是这样介绍的：</p></li></ul><blockquote><p>The Super POM is Maven&rsquo;s default POM. All POMs extend the Super POM unless explicitly set, meaning the configuration specified in the Super POM is inherited by the POMs you created for your projects.</p><p>译文：Super POM 是 Maven 的默认 POM。除非明确设置，否则所有 POM 都扩展 Super POM，这意味着 Super POM 中指定的配置由您为项目创建的 POM 继承。</p></blockquote><ul><li><p>所以我们自己的 POM 即使没有明确指定一个父工程（父 POM），其实也默认继承了超级 POM。</p></li><li><p>就好比一个 Java 类默认继承了 Object 类。</p></li><li><p>位置：${MAVEN_HOME}/lib/maven-model-builder-3.5.0.jar里面
+org\apache\maven\model\pom-4.0.0.xml</p></li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-1-1><a class=lnlinks href=#hl-1-1>  1</a>
+</span><span class=lnt id=hl-1-2><a class=lnlinks href=#hl-1-2>  2</a>
+</span><span class=lnt id=hl-1-3><a class=lnlinks href=#hl-1-3>  3</a>
+</span><span class=lnt id=hl-1-4><a class=lnlinks href=#hl-1-4>  4</a>
+</span><span class=lnt id=hl-1-5><a class=lnlinks href=#hl-1-5>  5</a>
+</span><span class=lnt id=hl-1-6><a class=lnlinks href=#hl-1-6>  6</a>
+</span><span class=lnt id=hl-1-7><a class=lnlinks href=#hl-1-7>  7</a>
+</span><span class=lnt id=hl-1-8><a class=lnlinks href=#hl-1-8>  8</a>
+</span><span class=lnt id=hl-1-9><a class=lnlinks href=#hl-1-9>  9</a>
+</span><span class=lnt id=hl-1-10><a class=lnlinks href=#hl-1-10> 10</a>
+</span><span class=lnt id=hl-1-11><a class=lnlinks href=#hl-1-11> 11</a>
+</span><span class=lnt id=hl-1-12><a class=lnlinks href=#hl-1-12> 12</a>
+</span><span class=lnt id=hl-1-13><a class=lnlinks href=#hl-1-13> 13</a>
+</span><span class=lnt id=hl-1-14><a class=lnlinks href=#hl-1-14> 14</a>
+</span><span class=lnt id=hl-1-15><a class=lnlinks href=#hl-1-15> 15</a>
+</span><span class=lnt id=hl-1-16><a class=lnlinks href=#hl-1-16> 16</a>
+</span><span class=lnt id=hl-1-17><a class=lnlinks href=#hl-1-17> 17</a>
+</span><span class=lnt id=hl-1-18><a class=lnlinks href=#hl-1-18> 18</a>
+</span><span class=lnt id=hl-1-19><a class=lnlinks href=#hl-1-19> 19</a>
+</span><span class=lnt id=hl-1-20><a class=lnlinks href=#hl-1-20> 20</a>
+</span><span class=lnt id=hl-1-21><a class=lnlinks href=#hl-1-21> 21</a>
+</span><span class=lnt id=hl-1-22><a class=lnlinks href=#hl-1-22> 22</a>
+</span><span class=lnt id=hl-1-23><a class=lnlinks href=#hl-1-23> 23</a>
+</span><span class=lnt id=hl-1-24><a class=lnlinks href=#hl-1-24> 24</a>
+</span><span class=lnt id=hl-1-25><a class=lnlinks href=#hl-1-25> 25</a>
+</span><span class=lnt id=hl-1-26><a class=lnlinks href=#hl-1-26> 26</a>
+</span><span class=lnt id=hl-1-27><a class=lnlinks href=#hl-1-27> 27</a>
+</span><span class=lnt id=hl-1-28><a class=lnlinks href=#hl-1-28> 28</a>
+</span><span class=lnt id=hl-1-29><a class=lnlinks href=#hl-1-29> 29</a>
+</span><span class=lnt id=hl-1-30><a class=lnlinks href=#hl-1-30> 30</a>
+</span><span class=lnt id=hl-1-31><a class=lnlinks href=#hl-1-31> 31</a>
+</span><span class=lnt id=hl-1-32><a class=lnlinks href=#hl-1-32> 32</a>
+</span><span class=lnt id=hl-1-33><a class=lnlinks href=#hl-1-33> 33</a>
+</span><span class=lnt id=hl-1-34><a class=lnlinks href=#hl-1-34> 34</a>
+</span><span class=lnt id=hl-1-35><a class=lnlinks href=#hl-1-35> 35</a>
+</span><span class=lnt id=hl-1-36><a class=lnlinks href=#hl-1-36> 36</a>
+</span><span class=lnt id=hl-1-37><a class=lnlinks href=#hl-1-37> 37</a>
+</span><span class=lnt id=hl-1-38><a class=lnlinks href=#hl-1-38> 38</a>
+</span><span class=lnt id=hl-1-39><a class=lnlinks href=#hl-1-39> 39</a>
+</span><span class=lnt id=hl-1-40><a class=lnlinks href=#hl-1-40> 40</a>
+</span><span class=lnt id=hl-1-41><a class=lnlinks href=#hl-1-41> 41</a>
+</span><span class=lnt id=hl-1-42><a class=lnlinks href=#hl-1-42> 42</a>
+</span><span class=lnt id=hl-1-43><a class=lnlinks href=#hl-1-43> 43</a>
+</span><span class=lnt id=hl-1-44><a class=lnlinks href=#hl-1-44> 44</a>
+</span><span class=lnt id=hl-1-45><a class=lnlinks href=#hl-1-45> 45</a>
+</span><span class=lnt id=hl-1-46><a class=lnlinks href=#hl-1-46> 46</a>
+</span><span class=lnt id=hl-1-47><a class=lnlinks href=#hl-1-47> 47</a>
+</span><span class=lnt id=hl-1-48><a class=lnlinks href=#hl-1-48> 48</a>
+</span><span class=lnt id=hl-1-49><a class=lnlinks href=#hl-1-49> 49</a>
+</span><span class=lnt id=hl-1-50><a class=lnlinks href=#hl-1-50> 50</a>
+</span><span class=lnt id=hl-1-51><a class=lnlinks href=#hl-1-51> 51</a>
+</span><span class=lnt id=hl-1-52><a class=lnlinks href=#hl-1-52> 52</a>
+</span><span class=lnt id=hl-1-53><a class=lnlinks href=#hl-1-53> 53</a>
+</span><span class=lnt id=hl-1-54><a class=lnlinks href=#hl-1-54> 54</a>
+</span><span class=lnt id=hl-1-55><a class=lnlinks href=#hl-1-55> 55</a>
+</span><span class=lnt id=hl-1-56><a class=lnlinks href=#hl-1-56> 56</a>
+</span><span class=lnt id=hl-1-57><a class=lnlinks href=#hl-1-57> 57</a>
+</span><span class=lnt id=hl-1-58><a class=lnlinks href=#hl-1-58> 58</a>
+</span><span class=lnt id=hl-1-59><a class=lnlinks href=#hl-1-59> 59</a>
+</span><span class=lnt id=hl-1-60><a class=lnlinks href=#hl-1-60> 60</a>
+</span><span class=lnt id=hl-1-61><a class=lnlinks href=#hl-1-61> 61</a>
+</span><span class=lnt id=hl-1-62><a class=lnlinks href=#hl-1-62> 62</a>
+</span><span class=lnt id=hl-1-63><a class=lnlinks href=#hl-1-63> 63</a>
+</span><span class=lnt id=hl-1-64><a class=lnlinks href=#hl-1-64> 64</a>
+</span><span class=lnt id=hl-1-65><a class=lnlinks href=#hl-1-65> 65</a>
+</span><span class=lnt id=hl-1-66><a class=lnlinks href=#hl-1-66> 66</a>
+</span><span class=lnt id=hl-1-67><a class=lnlinks href=#hl-1-67> 67</a>
+</span><span class=lnt id=hl-1-68><a class=lnlinks href=#hl-1-68> 68</a>
+</span><span class=lnt id=hl-1-69><a class=lnlinks href=#hl-1-69> 69</a>
+</span><span class=lnt id=hl-1-70><a class=lnlinks href=#hl-1-70> 70</a>
+</span><span class=lnt id=hl-1-71><a class=lnlinks href=#hl-1-71> 71</a>
+</span><span class=lnt id=hl-1-72><a class=lnlinks href=#hl-1-72> 72</a>
+</span><span class=lnt id=hl-1-73><a class=lnlinks href=#hl-1-73> 73</a>
+</span><span class=lnt id=hl-1-74><a class=lnlinks href=#hl-1-74> 74</a>
+</span><span class=lnt id=hl-1-75><a class=lnlinks href=#hl-1-75> 75</a>
+</span><span class=lnt id=hl-1-76><a class=lnlinks href=#hl-1-76> 76</a>
+</span><span class=lnt id=hl-1-77><a class=lnlinks href=#hl-1-77> 77</a>
+</span><span class=lnt id=hl-1-78><a class=lnlinks href=#hl-1-78> 78</a>
+</span><span class=lnt id=hl-1-79><a class=lnlinks href=#hl-1-79> 79</a>
+</span><span class=lnt id=hl-1-80><a class=lnlinks href=#hl-1-80> 80</a>
+</span><span class=lnt id=hl-1-81><a class=lnlinks href=#hl-1-81> 81</a>
+</span><span class=lnt id=hl-1-82><a class=lnlinks href=#hl-1-82> 82</a>
+</span><span class=lnt id=hl-1-83><a class=lnlinks href=#hl-1-83> 83</a>
+</span><span class=lnt id=hl-1-84><a class=lnlinks href=#hl-1-84> 84</a>
+</span><span class=lnt id=hl-1-85><a class=lnlinks href=#hl-1-85> 85</a>
+</span><span class=lnt id=hl-1-86><a class=lnlinks href=#hl-1-86> 86</a>
+</span><span class=lnt id=hl-1-87><a class=lnlinks href=#hl-1-87> 87</a>
+</span><span class=lnt id=hl-1-88><a class=lnlinks href=#hl-1-88> 88</a>
+</span><span class=lnt id=hl-1-89><a class=lnlinks href=#hl-1-89> 89</a>
+</span><span class=lnt id=hl-1-90><a class=lnlinks href=#hl-1-90> 90</a>
+</span><span class=lnt id=hl-1-91><a class=lnlinks href=#hl-1-91> 91</a>
+</span><span class=lnt id=hl-1-92><a class=lnlinks href=#hl-1-92> 92</a>
+</span><span class=lnt id=hl-1-93><a class=lnlinks href=#hl-1-93> 93</a>
+</span><span class=lnt id=hl-1-94><a class=lnlinks href=#hl-1-94> 94</a>
+</span><span class=lnt id=hl-1-95><a class=lnlinks href=#hl-1-95> 95</a>
+</span><span class=lnt id=hl-1-96><a class=lnlinks href=#hl-1-96> 96</a>
+</span><span class=lnt id=hl-1-97><a class=lnlinks href=#hl-1-97> 97</a>
+</span><span class=lnt id=hl-1-98><a class=lnlinks href=#hl-1-98> 98</a>
+</span><span class=lnt id=hl-1-99><a class=lnlinks href=#hl-1-99> 99</a>
+</span><span class=lnt id=hl-1-100><a class=lnlinks href=#hl-1-100>100</a>
+</span><span class=lnt id=hl-1-101><a class=lnlinks href=#hl-1-101>101</a>
+</span><span class=lnt id=hl-1-102><a class=lnlinks href=#hl-1-102>102</a>
+</span><span class=lnt id=hl-1-103><a class=lnlinks href=#hl-1-103>103</a>
+</span><span class=lnt id=hl-1-104><a class=lnlinks href=#hl-1-104>104</a>
+</span><span class=lnt id=hl-1-105><a class=lnlinks href=#hl-1-105>105</a>
+</span><span class=lnt id=hl-1-106><a class=lnlinks href=#hl-1-106>106</a>
+</span><span class=lnt id=hl-1-107><a class=lnlinks href=#hl-1-107>107</a>
+</span><span class=lnt id=hl-1-108><a class=lnlinks href=#hl-1-108>108</a>
+</span><span class=lnt id=hl-1-109><a class=lnlinks href=#hl-1-109>109</a>
+</span><span class=lnt id=hl-1-110><a class=lnlinks href=#hl-1-110>110</a>
+</span><span class=lnt id=hl-1-111><a class=lnlinks href=#hl-1-111>111</a>
+</span><span class=lnt id=hl-1-112><a class=lnlinks href=#hl-1-112>112</a>
+</span><span class=lnt id=hl-1-113><a class=lnlinks href=#hl-1-113>113</a>
+</span><span class=lnt id=hl-1-114><a class=lnlinks href=#hl-1-114>114</a>
+</span><span class=lnt id=hl-1-115><a class=lnlinks href=#hl-1-115>115</a>
+</span><span class=lnt id=hl-1-116><a class=lnlinks href=#hl-1-116>116</a>
+</span><span class=lnt id=hl-1-117><a class=lnlinks href=#hl-1-117>117</a>
+</span><span class=lnt id=hl-1-118><a class=lnlinks href=#hl-1-118>118</a>
+</span><span class=lnt id=hl-1-119><a class=lnlinks href=#hl-1-119>119</a>
+</span><span class=lnt id=hl-1-120><a class=lnlinks href=#hl-1-120>120</a>
+</span><span class=lnt id=hl-1-121><a class=lnlinks href=#hl-1-121>121</a>
+</span><span class=lnt id=hl-1-122><a class=lnlinks href=#hl-1-122>122</a>
+</span><span class=lnt id=hl-1-123><a class=lnlinks href=#hl-1-123>123</a>
+</span><span class=lnt id=hl-1-124><a class=lnlinks href=#hl-1-124>124</a>
+</span><span class=lnt id=hl-1-125><a class=lnlinks href=#hl-1-125>125</a>
+</span><span class=lnt id=hl-1-126><a class=lnlinks href=#hl-1-126>126</a>
+</span><span class=lnt id=hl-1-127><a class=lnlinks href=#hl-1-127>127</a>
+</span><span class=lnt id=hl-1-128><a class=lnlinks href=#hl-1-128>128</a>
+</span><span class=lnt id=hl-1-129><a class=lnlinks href=#hl-1-129>129</a>
+</span><span class=lnt id=hl-1-130><a class=lnlinks href=#hl-1-130>130</a>
+</span><span class=lnt id=hl-1-131><a class=lnlinks href=#hl-1-131>131</a>
+</span><span class=lnt id=hl-1-132><a class=lnlinks href=#hl-1-132>132</a>
+</span><span class=lnt id=hl-1-133><a class=lnlinks href=#hl-1-133>133</a>
+</span><span class=lnt id=hl-1-134><a class=lnlinks href=#hl-1-134>134</a>
+</span><span class=lnt id=hl-1-135><a class=lnlinks href=#hl-1-135>135</a>
+</span><span class=lnt id=hl-1-136><a class=lnlinks href=#hl-1-136>136</a>
+</span><span class=lnt id=hl-1-137><a class=lnlinks href=#hl-1-137>137</a>
+</span><span class=lnt id=hl-1-138><a class=lnlinks href=#hl-1-138>138</a>
+</span><span class=lnt id=hl-1-139><a class=lnlinks href=#hl-1-139>139</a>
+</span><span class=lnt id=hl-1-140><a class=lnlinks href=#hl-1-140>140</a>
+</span><span class=lnt id=hl-1-141><a class=lnlinks href=#hl-1-141>141</a>
+</span><span class=lnt id=hl-1-142><a class=lnlinks href=#hl-1-142>142</a>
+</span><span class=lnt id=hl-1-143><a class=lnlinks href=#hl-1-143>143</a>
+</span><span class=lnt id=hl-1-144><a class=lnlinks href=#hl-1-144>144</a>
+</span><span class=lnt id=hl-1-145><a class=lnlinks href=#hl-1-145>145</a>
+</span><span class=lnt id=hl-1-146><a class=lnlinks href=#hl-1-146>146</a>
+</span><span class=lnt id=hl-1-147><a class=lnlinks href=#hl-1-147>147</a>
+</span><span class=lnt id=hl-1-148><a class=lnlinks href=#hl-1-148>148</a>
+</span><span class=lnt id=hl-1-149><a class=lnlinks href=#hl-1-149>149</a>
+</span><span class=lnt id=hl-1-150><a class=lnlinks href=#hl-1-150>150</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=cp>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!--
+</span></span></span><span class=line><span class=cl><span class=c>Licensed to the Apache Software Foundation (ASF) under one
+</span></span></span><span class=line><span class=cl><span class=c>or more contributor license agreements.  See the NOTICE file
+</span></span></span><span class=line><span class=cl><span class=c>distributed with this work for additional information
+</span></span></span><span class=line><span class=cl><span class=c>regarding copyright ownership.  The ASF licenses this file
+</span></span></span><span class=line><span class=cl><span class=c>to you under the Apache License, Version 2.0 (the
+</span></span></span><span class=line><span class=cl><span class=c>&#34;License&#34;); you may not use this file except in compliance
+</span></span></span><span class=line><span class=cl><span class=c>with the License.  You may obtain a copy of the License at
+</span></span></span><span class=line><span class=cl><span class=c>
+</span></span></span><span class=line><span class=cl><span class=c>    http://www.apache.org/licenses/LICENSE-2.0
+</span></span></span><span class=line><span class=cl><span class=c>
+</span></span></span><span class=line><span class=cl><span class=c>Unless required by applicable law or agreed to in writing,
+</span></span></span><span class=line><span class=cl><span class=c>software distributed under the License is distributed on an
+</span></span></span><span class=line><span class=cl><span class=c>&#34;AS IS&#34; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+</span></span></span><span class=line><span class=cl><span class=c>KIND, either express or implied.  See the License for the
+</span></span></span><span class=line><span class=cl><span class=c>specific language governing permissions and limitations
+</span></span></span><span class=line><span class=cl><span class=c>under the License.
+</span></span></span><span class=line><span class=cl><span class=c>--&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- START SNIPPET: superpom --&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;project&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;modelVersion&gt;</span>4.0.0<span class=nt>&lt;/modelVersion&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;repositories&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;repository&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;id&gt;</span>central<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;name&gt;</span>Central Repository<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;url&gt;</span>https://repo.maven.apache.org/maven2<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;layout&gt;</span>default<span class=nt>&lt;/layout&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;snapshots&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;enabled&gt;</span>false<span class=nt>&lt;/enabled&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/snapshots&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/repository&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/repositories&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;pluginRepositories&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;pluginRepository&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;id&gt;</span>central<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;name&gt;</span>Central Repository<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;url&gt;</span>https://repo.maven.apache.org/maven2<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;layout&gt;</span>default<span class=nt>&lt;/layout&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;snapshots&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;enabled&gt;</span>false<span class=nt>&lt;/enabled&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/snapshots&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;releases&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;updatePolicy&gt;</span>never<span class=nt>&lt;/updatePolicy&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/releases&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/pluginRepository&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/pluginRepositories&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;directory&gt;</span>${project.basedir}/target<span class=nt>&lt;/directory&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;outputDirectory&gt;</span>${project.build.directory}/classes<span class=nt>&lt;/outputDirectory&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;finalName&gt;</span>${project.artifactId}-${project.version}<span class=nt>&lt;/finalName&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;testOutputDirectory&gt;</span>${project.build.directory}/test-classes<span class=nt>&lt;/testOutputDirectory&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;sourceDirectory&gt;</span>${project.basedir}/src/main/java<span class=nt>&lt;/sourceDirectory&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;scriptSourceDirectory&gt;</span>${project.basedir}/src/main/scripts<span class=nt>&lt;/scriptSourceDirectory&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;testSourceDirectory&gt;</span>${project.basedir}/src/test/java<span class=nt>&lt;/testSourceDirectory&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;resources&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;resource&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;directory&gt;</span>${project.basedir}/src/main/resources<span class=nt>&lt;/directory&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/resource&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/resources&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;testResources&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;testResource&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;directory&gt;</span>${project.basedir}/src/test/resources<span class=nt>&lt;/directory&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/testResource&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/testResources&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;pluginManagement&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=c>&lt;!-- NOTE: These plugins will be removed from future versions of the super POM --&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=c>&lt;!-- They are kept for the moment as they are very unlikely to conflict with lifecycle mappings (MNG-4453) --&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;plugins&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;artifactId&gt;</span>maven-antrun-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;version&gt;</span>1.3<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;artifactId&gt;</span>maven-assembly-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;version&gt;</span>2.2-beta-5<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;artifactId&gt;</span>maven-dependency-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;version&gt;</span>2.8<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;artifactId&gt;</span>maven-release-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;version&gt;</span>2.5.3<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/plugins&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/pluginManagement&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/build&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;reporting&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;outputDirectory&gt;</span>${project.build.directory}/site<span class=nt>&lt;/outputDirectory&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/reporting&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;profiles&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=c>&lt;!-- NOTE: The release profile will be removed from future versions of the super POM --&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;id&gt;</span>release-profile<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;activation&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;property&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;name&gt;</span>performRelease<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;value&gt;</span>true<span class=nt>&lt;/value&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/property&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/activation&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;plugins&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;inherited&gt;</span>true<span class=nt>&lt;/inherited&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;artifactId&gt;</span>maven-source-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;executions&gt;</span>
+</span></span><span class=line><span class=cl>              <span class=nt>&lt;execution&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;id&gt;</span>attach-sources<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;goals&gt;</span>
+</span></span><span class=line><span class=cl>                  <span class=nt>&lt;goal&gt;</span>jar-no-fork<span class=nt>&lt;/goal&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;/goals&gt;</span>
+</span></span><span class=line><span class=cl>              <span class=nt>&lt;/execution&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/executions&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;inherited&gt;</span>true<span class=nt>&lt;/inherited&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;artifactId&gt;</span>maven-javadoc-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;executions&gt;</span>
+</span></span><span class=line><span class=cl>              <span class=nt>&lt;execution&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;id&gt;</span>attach-javadocs<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;goals&gt;</span>
+</span></span><span class=line><span class=cl>                  <span class=nt>&lt;goal&gt;</span>jar<span class=nt>&lt;/goal&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;/goals&gt;</span>
+</span></span><span class=line><span class=cl>              <span class=nt>&lt;/execution&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/executions&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;inherited&gt;</span>true<span class=nt>&lt;/inherited&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;artifactId&gt;</span>maven-deploy-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;configuration&gt;</span>
+</span></span><span class=line><span class=cl>              <span class=nt>&lt;updateReleaseInfo&gt;</span>true<span class=nt>&lt;/updateReleaseInfo&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/configuration&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/plugins&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/build&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/profile&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/profiles&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/project&gt;</span>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- END SNIPPET: superpom --&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=父pom><a href=#%e7%88%b6pom class=header-anchor>#</a>
+②、父POM</h2><p>和 Java 类一样，POM 之间其实也是<strong>单继承</strong>的。如果我们给一个 POM 指定了父 POM，那么继承关系如下图所示：</p><p><img src=#ZgotmplZ width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><h2 id=有效-pom><a href=#%e6%9c%89%e6%95%88-pom class=header-anchor>#</a>
+③、有效 POM</h2><ul><li><p>概念</p><p>有效 POM 英文翻译为 effective POM，它的概念是这样的——在 POM 的继承关系中，子 POM 可以覆盖父 POM 中的配置；如果子 POM 没有覆盖，那么父 POM 中的配置将会被继承。按照这个规则，继承关系中的所有 POM 叠加到一起，就得到了一个最终生效的 POM。显然 Maven 实际运行过程中，执行构建操作就是按照这个最终生效的 POM 来运行的。这个最终生效的 POM 就是<strong>有效 POM</strong>，英文叫<strong>effective POM</strong>。</p></li><li><p>查看有效 POM</p></li></ul><p>​ mvn help:effective-pom</p><p>​ 控制台会打印出来有效pom</p><h2 id=小结><a href=#%e5%b0%8f%e7%bb%93 class=header-anchor>#</a>
+④、小结</h2><p>综上所述，平时我们使用和配置的 POM 其实大致是由四个层次组成的：</p><ul><li>超级 POM：所有 POM 默认继承，只是有直接和间接之分。</li><li>父 POM：这一层可能没有，可能有一层，也可能有很多层。</li><li>当前 pom.xml 配置的 POM：我们最多关注和最多使用的一层。</li><li>有效 POM：隐含的一层，但是实际上真正生效的一层。</li></ul><h1 id=4生命周期><a href=#4%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f class=header-anchor>#</a>
+4、生命周期</h1><h2 id=构建过程><a href=#%e6%9e%84%e5%bb%ba%e8%bf%87%e7%a8%8b class=header-anchor>#</a>
+①、构建过程</h2><p>构建过程包含的主要的环节：</p><ul><li>清理：删除上一次构建的结果，为下一次构建做好准备</li><li>编译：Java 源程序编译成 *.class 字节码文件</li><li>测试：运行提前准备好的测试程序</li><li>报告：针对刚才测试的结果生成一个全面的信息</li><li>打包<ul><li>Java工程：jar包</li><li>Web工程：war包</li></ul></li><li>安装：把一个 Maven 工程经过打包操作生成的 jar 包或 war 包存入 Maven 仓库</li><li>部署<ul><li>部署 jar 包：把一个 jar 包部署到 Nexus 私服服务器上</li><li>部署 war 包：借助相关 Maven 插件（例如 cargo），将 war 包部署到 Tomcat 服务器上</li></ul></li></ul><p>为了让构建过程自动化完成，Maven 设定了三个生命周期，生命周期中的每一个环节对应构建过程中的一个操作。</p><h2 id=三个生命周期><a href=#%e4%b8%89%e4%b8%aa%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f class=header-anchor>#</a>
+②、三个生命周期</h2><div class=table-wrapper><table><thead><tr><th>生命周期名称</th><th><span style=display:inline-block;width:150px>作用</span></th><th style=text-align:left>各个环节</th></tr></thead><tbody><tr><td>Clean</td><td>清理操作相关</td><td style=text-align:left>pre-clean<br>clean<br>post-clean</td></tr><tr><td>Site</td><td>生成站点相关</td><td style=text-align:left>pre-site<br>site<br>post-site<br>deploy-site</td></tr><tr><td>Default</td><td>主要构建过程</td><td style=text-align:left>validate<br>generate-sources<br>process-sources<br>generate-resources<br>process-resources 复制并处理资源文件，至目标目录，准备打包。<br>compile 编译项目 main 目录下的源代码。<br>process-classes<br>generate-test-sources<br>process-test-sources<br>generate-test-resources<br>process-test-resources 复制并处理资源文件，至目标测试目录。<br>test-compile 编译测试源代码。<br>process-test-classes test 使用合适的单元测试框架运行测试。这些测试代码不会被打包或部署。 prepare-package package 接受编译好的代码，打包成可发布的格式，如JAR。<br>pre-integration-test<br>integration-test post-integration-test<br>verify<br>install将包安装至本地仓库，以让其它项目依赖。<br>deploy将最终的包复制到远程的仓库，以让其它开发人员共享；或者部署到服务器上运行（需借助插件，例如：cargo）。</td></tr></tbody></table></div><h2 id=特点><a href=#%e7%89%b9%e7%82%b9 class=header-anchor>#</a>
+③、特点</h2><ul><li>前面三个生命周期彼此是独立的。</li><li>在任何一个生命周期内部，执行任何一个具体环节的操作，都是从本周期最初的位置开始执行，直到指定的地方。（本节记住这句话就行了，其他的都不需要记）</li></ul><p>Maven 之所以这么设计其实就是为了提高构建过程的自动化程度：让使用者只关心最终要干的即可，过程中的各个环节是自动执行的。</p><h1 id=5仓库和镜像><a href=#5%e4%bb%93%e5%ba%93%e5%92%8c%e9%95%9c%e5%83%8f class=header-anchor>#</a>
+5、仓库和镜像</h1><h2 id=仓库><a href=#%e4%bb%93%e5%ba%93 class=header-anchor>#</a>
+①、仓库</h2><ul><li>本地仓库：在当前电脑上，为电脑上所有 Maven 工程服务</li><li>远程仓库：需要联网<ul><li>局域网：我们自己搭建的 Maven 私服，例如使用 Nexus 技术。</li><li>Internet<ul><li>中央仓库</li><li>镜像仓库：内容和中央仓库保持一致，但是能够分担中央仓库的负载，同时让用户能够就近访问提高下载速度，例如：Nexus aliyun</li></ul></li></ul></li></ul><p>建议：不要中央仓库和阿里云镜像混用，否则 jar 包来源不纯，彼此冲突。</p><p>专门搜索 Maven 依赖信息的网站：https://mvnrepository.com/</p><h2 id=镜像><a href=#%e9%95%9c%e5%83%8f class=header-anchor>#</a>
+②、镜像</h2><p>Maven 下载 jar 包默认访问境外的中央仓库，而国外网站速度很慢。改成阿里云提供的镜像仓库，<strong>访问国内网站</strong>，可以让 Maven 下载 jar 包的时候速度更快。配置的方式是：</p><p>将下面 mirror 标签整体复制到 settings.xml 文件的 mirrors 标签的内部。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-2-1><a class=lnlinks href=#hl-2-1>1</a>
+</span><span class=lnt id=hl-2-2><a class=lnlinks href=#hl-2-2>2</a>
+</span><span class=lnt id=hl-2-3><a class=lnlinks href=#hl-2-3>3</a>
+</span><span class=lnt id=hl-2-4><a class=lnlinks href=#hl-2-4>4</a>
+</span><span class=lnt id=hl-2-5><a class=lnlinks href=#hl-2-5>5</a>
+</span><span class=lnt id=hl-2-6><a class=lnlinks href=#hl-2-6>6</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl>	<span class=nt>&lt;mirror&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;id&gt;</span>nexus-aliyun<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;mirrorOf&gt;</span>central<span class=nt>&lt;/mirrorOf&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;name&gt;</span>Nexus aliyun<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;url&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class=nt>&lt;/url&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;/mirror&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h1 id=6约定的目录结构><a href=#6%e7%ba%a6%e5%ae%9a%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84 class=header-anchor>#</a>
+6、约定的目录结构</h1><h2 id=各个目录的作用><a href=#%e5%90%84%e4%b8%aa%e7%9b%ae%e5%bd%95%e7%9a%84%e4%bd%9c%e7%94%a8 class=header-anchor>#</a>
+①、各个目录的作用</h2><p><img src=https://logan.1357810.xyz/img/20220406/20220406001651.png width=900 height=600 loading=lazy decoding=async alt=./images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>另外还有一个 target 目录专门存放构建操作输出的结果。</p><h2 id=约定目录结构的意义><a href=#%e7%ba%a6%e5%ae%9a%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84%e7%9a%84%e6%84%8f%e4%b9%89 class=header-anchor>#</a>
+②、约定目录结构的意义</h2><p>Maven 为了让构建过程能够尽可能自动化完成，所以必须约定目录结构的作用。例如：Maven 执行编译操作，必须先去 Java 源程序目录读取 Java 源代码，然后执行编译，最后把编译结果存放在 target 目录。</p><h2 id=约定大于配置><a href=#%e7%ba%a6%e5%ae%9a%e5%a4%a7%e4%ba%8e%e9%85%8d%e7%bd%ae class=header-anchor>#</a>
+③、约定大于配置</h2><p>Maven 对于目录结构这个问题，没有采用配置的方式，而是基于约定。这样会让我们在开发过程中非常方便。如果每次创建 Maven 工程后，还需要针对各个目录的位置进行详细的配置，那肯定非常麻烦。</p><p>目前开发领域的技术发展趋势就是：约定大于配置，配置大于编码。</p><h1 id=7依赖的配置><a href=#7%e4%be%9d%e8%b5%96%e7%9a%84%e9%85%8d%e7%bd%ae class=header-anchor>#</a>
+7、依赖的配置</h1><h2 id=依赖的范围scope><a href=#%e4%be%9d%e8%b5%96%e7%9a%84%e8%8c%83%e5%9b%b4scope class=header-anchor>#</a>
+①、依赖的范围scope</h2><p>标签的位置：<code>dependencies/dependency/scope</code></p><p>标签的可选值：<code>compile/test/provided/system/runtime/import</code></p><ul><li>compile 和 test 对比</li></ul><div class=table-wrapper><table><thead><tr><th></th><th>main目录（空间）</th><th>test目录（空间）</th><th>开发过程（时间）</th><th>部署到服务器（时间）</th></tr></thead><tbody><tr><td>compile</td><td>有效</td><td>有效</td><td>有效</td><td>有效</td></tr><tr><td>test</td><td>无效</td><td>有效</td><td>有效</td><td>无效</td></tr></tbody></table></div><ul><li>compile 和 provided 对比</li></ul><div class=table-wrapper><table><thead><tr><th></th><th>main目录（空间）</th><th>test目录（空间）</th><th>开发过程（时间）</th><th>部署到服务器（时间）</th></tr></thead><tbody><tr><td>compile</td><td>有效</td><td>有效</td><td>有效</td><td>有效</td></tr><tr><td>provided</td><td>有效</td><td>有效</td><td>有效</td><td>无效</td></tr></tbody></table></div><ul><li>结论</li></ul><p>compile：通常使用的第三方框架的 jar 包这样在项目实际运行时真正要用到的 jar 包都是以 compile 范围进行依赖的。比如 SSM 框架所需jar包。</p><p>test：测试过程中使用的 jar 包，以 test 范围依赖进来。比如 junit。</p><p>provided：在开发过程中需要用到的“服务器上的 jar 包”通常以 provided 范围依赖进来。比如 servlet-api、jsp-api。而这个范围的 jar 包之所以不参与部署、不放进 war 包，就是避免和服务器上已有的同类 jar 包产生冲突，同时减轻服务器的负担。说白了就是：“<strong>服务器上已经有了，你就别带啦！</strong>”</p><blockquote><p>test scope 在springboot里不会参与打包，runtime provided会打进包里</p></blockquote><h2 id=依赖的传递性><a href=#%e4%be%9d%e8%b5%96%e7%9a%84%e4%bc%a0%e9%80%92%e6%80%a7 class=header-anchor>#</a>
+②、依赖的传递性</h2><ul><li><p>概念</p><p>A 依赖 B，B 依赖 C，那么在 A 没有配置对 C 的依赖的情况下，A 里面能不能直接使用 C？</p></li><li><p>传递的原则：</p><p>在 A 依赖 B，B 依赖 C 的前提下，C 是否能够传递到 A，取决于 B 依赖 C 时使用的依赖范围。</p><p>B 依赖 C 时使用 compile 范围：可以传递</p><p>B 依赖 C 时使用 test 或 provided 范围：不能传递，所以需要这样的 jar 包时，就必须在需要的地方明确配置依赖才可以。</p></li></ul><h2 id=依赖的排除><a href=#%e4%be%9d%e8%b5%96%e7%9a%84%e6%8e%92%e9%99%a4 class=header-anchor>#</a>
+③、依赖的排除</h2><ul><li><p>概念</p><p>当 A 依赖 B，B 依赖 C 而且 C 可以传递到 A 的时候，A 不想要 C，需要在 A 里面把 C 排除掉。而往往这种情况都是为了避免 jar 包之间的冲突。</p></li></ul><p><img src=https://logan.1357810.xyz/img/20220406/20220406012328.png width=900 height=600 loading=lazy decoding=async alt=./images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>​ 所以配置依赖的排除其实就是阻止某些 jar 包的传递。因为这样的 jar 包传递过来会和其他 jar 包冲突。</p><ul><li>配置方式</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-3-1><a class=lnlinks href=#hl-3-1> 1</a>
+</span><span class=lnt id=hl-3-2><a class=lnlinks href=#hl-3-2> 2</a>
+</span><span class=lnt id=hl-3-3><a class=lnlinks href=#hl-3-3> 3</a>
+</span><span class=lnt id=hl-3-4><a class=lnlinks href=#hl-3-4> 4</a>
+</span><span class=lnt id=hl-3-5><a class=lnlinks href=#hl-3-5> 5</a>
+</span><span class=lnt id=hl-3-6><a class=lnlinks href=#hl-3-6> 6</a>
+</span><span class=lnt id=hl-3-7><a class=lnlinks href=#hl-3-7> 7</a>
+</span><span class=lnt id=hl-3-8><a class=lnlinks href=#hl-3-8> 8</a>
+</span><span class=lnt id=hl-3-9><a class=lnlinks href=#hl-3-9> 9</a>
+</span><span class=lnt id=hl-3-10><a class=lnlinks href=#hl-3-10>10</a>
+</span><span class=lnt id=hl-3-11><a class=lnlinks href=#hl-3-11>11</a>
+</span><span class=lnt id=hl-3-12><a class=lnlinks href=#hl-3-12>12</a>
+</span><span class=lnt id=hl-3-13><a class=lnlinks href=#hl-3-13>13</a>
+</span><span class=lnt id=hl-3-14><a class=lnlinks href=#hl-3-14>14</a>
+</span><span class=lnt id=hl-3-15><a class=lnlinks href=#hl-3-15>15</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;groupId&gt;</span>com.atguigu.maven<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;artifactId&gt;</span>pro01-maven-java<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;version&gt;</span>1.0-SNAPSHOT<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;scope&gt;</span>compile<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=c>&lt;!-- 使用excludes标签配置依赖的排除	--&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;exclusions&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=c>&lt;!-- 在exclude标签中配置一个具体的排除 --&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;exclusion&gt;</span>
+</span></span><span class=line><span class=cl>			<span class=c>&lt;!-- 指定要排除的依赖的坐标（不需要写version） --&gt;</span>
+</span></span><span class=line><span class=cl>			<span class=nt>&lt;groupId&gt;</span>commons-logging<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>			<span class=nt>&lt;artifactId&gt;</span>commons-logging<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;/exclusion&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;/exclusions&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=scope-import><a href=#scope-import class=header-anchor>#</a>
+④、scope-import</h2><p>管理依赖最基本的办法是继承父工程，但是和 Java 类一样，Maven 也是单继承的。如果不同体系的依赖信息封装在不同 POM 中了，没办法继承多个父工程怎么办？这时就可以使用 import 依赖范围。</p><p>典型案例当然是在项目中引入 SpringBoot、SpringCloud 依赖：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-4-1><a class=lnlinks href=#hl-4-1> 1</a>
+</span><span class=lnt id=hl-4-2><a class=lnlinks href=#hl-4-2> 2</a>
+</span><span class=lnt id=hl-4-3><a class=lnlinks href=#hl-4-3> 3</a>
+</span><span class=lnt id=hl-4-4><a class=lnlinks href=#hl-4-4> 4</a>
+</span><span class=lnt id=hl-4-5><a class=lnlinks href=#hl-4-5> 5</a>
+</span><span class=lnt id=hl-4-6><a class=lnlinks href=#hl-4-6> 6</a>
+</span><span class=lnt id=hl-4-7><a class=lnlinks href=#hl-4-7> 7</a>
+</span><span class=lnt id=hl-4-8><a class=lnlinks href=#hl-4-8> 8</a>
+</span><span class=lnt id=hl-4-9><a class=lnlinks href=#hl-4-9> 9</a>
+</span><span class=lnt id=hl-4-10><a class=lnlinks href=#hl-4-10>10</a>
+</span><span class=lnt id=hl-4-11><a class=lnlinks href=#hl-4-11>11</a>
+</span><span class=lnt id=hl-4-12><a class=lnlinks href=#hl-4-12>12</a>
+</span><span class=lnt id=hl-4-13><a class=lnlinks href=#hl-4-13>13</a>
+</span><span class=lnt id=hl-4-14><a class=lnlinks href=#hl-4-14>14</a>
+</span><span class=lnt id=hl-4-15><a class=lnlinks href=#hl-4-15>15</a>
+</span><span class=lnt id=hl-4-16><a class=lnlinks href=#hl-4-16>16</a>
+</span><span class=lnt id=hl-4-17><a class=lnlinks href=#hl-4-17>17</a>
+</span><span class=lnt id=hl-4-18><a class=lnlinks href=#hl-4-18>18</a>
+</span><span class=lnt id=hl-4-19><a class=lnlinks href=#hl-4-19>19</a>
+</span><span class=lnt id=hl-4-20><a class=lnlinks href=#hl-4-20>20</a>
+</span><span class=lnt id=hl-4-21><a class=lnlinks href=#hl-4-21>21</a>
+</span><span class=lnt id=hl-4-22><a class=lnlinks href=#hl-4-22>22</a>
+</span><span class=lnt id=hl-4-23><a class=lnlinks href=#hl-4-23>23</a>
+</span><span class=lnt id=hl-4-24><a class=lnlinks href=#hl-4-24>24</a>
+</span><span class=lnt id=hl-4-25><a class=lnlinks href=#hl-4-25>25</a>
+</span><span class=lnt id=hl-4-26><a class=lnlinks href=#hl-4-26>26</a>
+</span><span class=lnt id=hl-4-27><a class=lnlinks href=#hl-4-27>27</a>
+</span><span class=lnt id=hl-4-28><a class=lnlinks href=#hl-4-28>28</a>
+</span><span class=lnt id=hl-4-29><a class=lnlinks href=#hl-4-29>29</a>
+</span><span class=lnt id=hl-4-30><a class=lnlinks href=#hl-4-30>30</a>
+</span><span class=lnt id=hl-4-31><a class=lnlinks href=#hl-4-31>31</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;dependencyManagement&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;dependencies&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c>&lt;!-- SpringCloud 依赖导入 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;groupId&gt;</span>org.springframework.cloud<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;artifactId&gt;</span>spring-cloud-dependencies<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;version&gt;</span>Hoxton.SR9<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;type&gt;</span>pom<span class=nt>&lt;/type&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;scope&gt;</span>import<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/dependency&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c>&lt;!-- SpringCloud Alibaba 依赖导入 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;groupId&gt;</span>com.alibaba.cloud<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;artifactId&gt;</span>spring-cloud-alibaba-dependencies<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;version&gt;</span>2.2.6.RELEASE<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;type&gt;</span>pom<span class=nt>&lt;/type&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;scope&gt;</span>import<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/dependency&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c>&lt;!-- SpringBoot 依赖导入 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;groupId&gt;</span>org.springframework.boot<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;artifactId&gt;</span>spring-boot-dependencies<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;version&gt;</span>2.3.6.RELEASE<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;type&gt;</span>pom<span class=nt>&lt;/type&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;scope&gt;</span>import<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/dependency&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/dependencies&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/dependencyManagement&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>import 依赖范围使用要求：</p><ul><li>打包类型必须是 pom</li><li>必须放在 dependencyManagement 中</li></ul><blockquote><p>官网说明如下：</p><p>This scope is only supported on a dependency of type <code>pom</code> in the <code>&lt;dependencyManagement></code>section. It indicates the dependency is to be replaced with the effective list of dependencies in the specified POM&rsquo;s <code>&lt;dependencyManagement></code> section. Since they are replaced, dependencies with a scope of <code>import</code> do not actually participate in limiting the transitivity of a dependency.</p></blockquote><h2 id=scope-system><a href=#scope-system class=header-anchor>#</a>
+⑤、scope-system</h2><p>以 Windows 系统环境下开发为例，假设现在 D:\tempare\atguigu-maven-test-aaa-1.0-SNAPSHOT.jar 想要引入到我们的项目中，此时我们就可以将依赖配置为 system 范围：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-5-1><a class=lnlinks href=#hl-5-1>1</a>
+</span><span class=lnt id=hl-5-2><a class=lnlinks href=#hl-5-2>2</a>
+</span><span class=lnt id=hl-5-3><a class=lnlinks href=#hl-5-3>3</a>
+</span><span class=lnt id=hl-5-4><a class=lnlinks href=#hl-5-4>4</a>
+</span><span class=lnt id=hl-5-5><a class=lnlinks href=#hl-5-5>5</a>
+</span><span class=lnt id=hl-5-6><a class=lnlinks href=#hl-5-6>6</a>
+</span><span class=lnt id=hl-5-7><a class=lnlinks href=#hl-5-7>7</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;groupId&gt;</span>com.atguigu.maven<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;artifactId&gt;</span>atguigu-maven-test-aaa<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;version&gt;</span>1.0-SNAPSHOT<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;systemPath&gt;</span>D:\tempare\atguigu-maven-test-aaa-1.0-SNAPSHOT.jar<span class=nt>&lt;/systemPath&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;scope&gt;</span>system<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>但是很明显：这样引入依赖完全不具有可移植性，所以<strong>不要使用</strong>。如果需要引入体系外 jar 包我们后面会讲专门的办法。</p><h2 id=scope-runtime><a href=#scope-runtime class=header-anchor>#</a>
+⑥、scope-runtime</h2><p>专门用于编译时不需要，但是运行时需要的 jar 包。比如：编译时我们根据接口调用方法，但是实际运行时需要的是接口的实现类。典型案例是：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-6-1><a class=lnlinks href=#hl-6-1>1</a>
+</span><span class=lnt id=hl-6-2><a class=lnlinks href=#hl-6-2>2</a>
+</span><span class=lnt id=hl-6-3><a class=lnlinks href=#hl-6-3>3</a>
+</span><span class=lnt id=hl-6-4><a class=lnlinks href=#hl-6-4>4</a>
+</span><span class=lnt id=hl-6-5><a class=lnlinks href=#hl-6-5>5</a>
+</span><span class=lnt id=hl-6-6><a class=lnlinks href=#hl-6-6>6</a>
+</span><span class=lnt id=hl-6-7><a class=lnlinks href=#hl-6-7>7</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=c>&lt;!--热部署 --&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;groupId&gt;</span>org.springframework.boot<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;artifactId&gt;</span>spring-boot-devtools<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;scope&gt;</span>runtime<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;optional&gt;</span>true<span class=nt>&lt;/optional&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>会参与依赖传递</li></ul><h2 id=optional><a href=#optional class=header-anchor>#</a>
+⑦、optional</h2><ul><li>配置</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-7-1><a class=lnlinks href=#hl-7-1>1</a>
+</span><span class=lnt id=hl-7-2><a class=lnlinks href=#hl-7-2>2</a>
+</span><span class=lnt id=hl-7-3><a class=lnlinks href=#hl-7-3>3</a>
+</span><span class=lnt id=hl-7-4><a class=lnlinks href=#hl-7-4>4</a>
+</span><span class=lnt id=hl-7-5><a class=lnlinks href=#hl-7-5>5</a>
+</span><span class=lnt id=hl-7-6><a class=lnlinks href=#hl-7-6>6</a>
+</span><span class=lnt id=hl-7-7><a class=lnlinks href=#hl-7-7>7</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=c>&lt;!--热部署 --&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;dependency&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;groupId&gt;</span>org.springframework.boot<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;artifactId&gt;</span>spring-boot-devtools<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;scope&gt;</span>runtime<span class=nt>&lt;/scope&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;optional&gt;</span>true<span class=nt>&lt;/optional&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p><scope>runtime</scope> <optional>true</optional></p><p>正常一个依赖加上这两个配置之后不影响springboot打包，但是springboot打包时没有包括spring-boot-devtools</p><p>应该是springboot自己做了处理</p></blockquote><ul><li>optional本质含义</li></ul><p>可选其实就是『可有可无』。官网的解释是：</p><p><img src=https://logan.1357810.xyz/img/20220411/20220411031835.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>其核心含义是：Project X 依赖 Project A，A 中一部分 X 用不到的代码依赖了 B，那么对 X 来说 B 就是『可有可无』的。</p><p><img src=https://logan.1357810.xyz/img/20220411/20220411031749.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><ul><li>optional不会参与依赖传递</li></ul><h2 id=依赖的版本仲裁><a href=#%e4%be%9d%e8%b5%96%e7%9a%84%e7%89%88%e6%9c%ac%e4%bb%b2%e8%a3%81 class=header-anchor>#</a>
+⑧、依赖的版本仲裁</h2><ul><li>最短路径优先</li></ul><p>​ 在下图的例子中，对模块 pro25-module-a 来说，Maven 会采纳 1.2.12 版本。</p><p>​ <img src=https://logan.1357810.xyz/img/20220411/20220411032055.png alt=image-20220411032055028 style=zoom:50%></p><ul><li>路径相同时先声明者优先</li></ul><p><img src=https://logan.1357810.xyz/img/20220411/20220411031932.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>此时 Maven 采纳哪个版本，取决于在 pro29-module-x 中，对 pro30-module-y 和 pro31-module-z 两个模块的依赖哪一个先声明。</p><p>其实 Maven 的版本仲裁机制只是在没有人为干预的情况下，自主决定 jar 包版本的一个办法。而实际上我们要使用具体的哪一个版本，还要取决于项目中的实际情况。所以在项目正常运行的情况下，jar 包版本可以由 Maven 仲裁，不必我们操心；而发生冲突时 Maven 仲裁决定的版本无法满足要求，此时就应该由程序员明确指定 jar 包版本。</p><h1 id=8继承><a href=#8%e7%bb%a7%e6%89%bf class=header-anchor>#</a>
+8、继承</h1><h2 id=概念><a href=#%e6%a6%82%e5%bf%b5 class=header-anchor>#</a>
+①、概念</h2><p>Maven工程之间，A 工程继承 B 工程</p><ul><li>B 工程：父工程</li><li>A 工程：子工程</li></ul><p>本质上是 A 工程的 pom.xml 中的配置继承了 B 工程中 pom.xml 的配置。</p><ul><li>只有打包方式为pom的工程才能作为父工程</li></ul><h2 id=作用><a href=#%e4%bd%9c%e7%94%a8 class=header-anchor>#</a>
+②、作用</h2><p>在父工程中统一管理项目中的依赖信息，具体来说是管理依赖信息的版本。</p><p>它的背景是：</p><ul><li>对一个比较大型的项目进行了模块拆分。</li><li>一个 project 下面，创建了很多个 module。</li><li>每一个 module 都需要配置自己的依赖信息。</li></ul><p>它背后的需求是：</p><ul><li>在每一个 module 中各自维护各自的依赖信息很容易发生出入，不易统一管理。</li><li>使用同一个框架内的不同 jar 包，它们应该是同一个版本，所以整个项目中使用的框架版本需要统一。</li><li>使用框架时所需要的 jar 包组合（或者说依赖信息组合）需要经过长期摸索和反复调试，最终确定一个可用组合。这个耗费很大精力总结出来的方案不应该在新的项目中重新摸索。</li></ul><p>通过在父工程中为整个项目维护依赖信息的组合既<strong>保证了整个项目使用规范、准确的 jar 包</strong>；又能够将<strong>以往的经验沉淀</strong>下来，节约时间和精力。</p><h1 id=9聚合><a href=#9%e8%81%9a%e5%90%88 class=header-anchor>#</a>
+9、聚合</h1><h2 id=聚合本身的含义><a href=#%e8%81%9a%e5%90%88%e6%9c%ac%e8%ba%ab%e7%9a%84%e5%90%ab%e4%b9%89 class=header-anchor>#</a>
+①、聚合本身的含义</h2><p>部分组成整体</p><p><img src=https://logan.1357810.xyz/img/20220406/20220406013533.png width=900 height=600 loading=lazy decoding=async alt=./images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>动画片《战神金刚》中的经典台词：“我来组成头部！我来组成手臂！”就是聚合关系最生动的体现。</p><h2 id=maven-中的聚合><a href=#maven-%e4%b8%ad%e7%9a%84%e8%81%9a%e5%90%88 class=header-anchor>#</a>
+②、Maven 中的聚合</h2><p>使用一个“总工程”将各个“模块工程”汇集起来，作为一个整体对应完整的项目。</p><ul><li>项目：整体</li><li>模块：部分</li></ul><blockquote><p>TIP</p><p>概念的对应关系：</p><p>从继承关系角度来看：</p><ul><li><p>父工程</p></li><li><p>子工程</p></li></ul><p>从聚合关系角度来看：</p><ul><li>总工程</li><li>模块工程</li></ul></blockquote><h2 id=好处><a href=#%e5%a5%bd%e5%a4%84 class=header-anchor>#</a>
+③、好处</h2><ul><li><p>一键执行 Maven 命令：很多构建命令都可以在“总工程”中一键执行。</p><p>以 mvn install 命令为例：Maven 要求有父工程时先安装父工程；有依赖的工程时，先安装被依赖的工程。我们自己考虑这些规则会很麻烦。但是工程聚合之后，在总工程执行 mvn install 可以一键完成安装，而且会自动按照正确的顺序执行。</p></li><li><p>配置聚合之后，各个模块工程会在总工程中展示一个列表，让项目中的各个模块一目了然。</p></li></ul><h2 id=聚合的配置><a href=#%e8%81%9a%e5%90%88%e7%9a%84%e9%85%8d%e7%bd%ae class=header-anchor>#</a>
+④、聚合的配置</h2><p>在总工程中配置 modules 即可：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-8-1><a class=lnlinks href=#hl-8-1>1</a>
+</span><span class=lnt id=hl-8-2><a class=lnlinks href=#hl-8-2>2</a>
+</span><span class=lnt id=hl-8-3><a class=lnlinks href=#hl-8-3>3</a>
+</span><span class=lnt id=hl-8-4><a class=lnlinks href=#hl-8-4>4</a>
+</span><span class=lnt id=hl-8-5><a class=lnlinks href=#hl-8-5>5</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;modules&gt;</span>  
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;module&gt;</span>pro04-maven-module<span class=nt>&lt;/module&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;module&gt;</span>pro05-maven-module<span class=nt>&lt;/module&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;module&gt;</span>pro06-maven-module<span class=nt>&lt;/module&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;/modules&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=依赖循环问题><a href=#%e4%be%9d%e8%b5%96%e5%be%aa%e7%8e%af%e9%97%ae%e9%a2%98 class=header-anchor>#</a>
+⑤、依赖循环问题</h2><p>如果 A 工程依赖 B 工程，B 工程依赖 C 工程，C 工程又反过来依赖 A 工程，那么在执行构建操作时会报下面的错误：</p><p>DANGER</p><p>[ERROR] [ERROR] The projects in the reactor contain a cyclic reference:</p><p>这个错误的含义是：循环引用。</p><h1 id=10定义jdk版本和编码><a href=#10%e5%ae%9a%e4%b9%89jdk%e7%89%88%e6%9c%ac%e5%92%8c%e7%bc%96%e7%a0%81 class=header-anchor>#</a>
+10、定义jdk版本和编码</h1><h2 id=直接使用默认取值><a href=#%e7%9b%b4%e6%8e%a5%e4%bd%bf%e7%94%a8%e9%bb%98%e8%ae%a4%e5%8f%96%e5%80%bc class=header-anchor>#</a>
+①、直接使用默认取值</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-9-1><a class=lnlinks href=#hl-9-1> 1</a>
+</span><span class=lnt id=hl-9-2><a class=lnlinks href=#hl-9-2> 2</a>
+</span><span class=lnt id=hl-9-3><a class=lnlinks href=#hl-9-3> 3</a>
+</span><span class=lnt id=hl-9-4><a class=lnlinks href=#hl-9-4> 4</a>
+</span><span class=lnt id=hl-9-5><a class=lnlinks href=#hl-9-5> 5</a>
+</span><span class=lnt id=hl-9-6><a class=lnlinks href=#hl-9-6> 6</a>
+</span><span class=lnt id=hl-9-7><a class=lnlinks href=#hl-9-7> 7</a>
+</span><span class=lnt id=hl-9-8><a class=lnlinks href=#hl-9-8> 8</a>
+</span><span class=lnt id=hl-9-9><a class=lnlinks href=#hl-9-9> 9</a>
+</span><span class=lnt id=hl-9-10><a class=lnlinks href=#hl-9-10>10</a>
+</span><span class=lnt id=hl-9-11><a class=lnlinks href=#hl-9-11>11</a>
+</span><span class=lnt id=hl-9-12><a class=lnlinks href=#hl-9-12>12</a>
+</span><span class=lnt id=hl-9-13><a class=lnlinks href=#hl-9-13>13</a>
+</span><span class=lnt id=hl-9-14><a class=lnlinks href=#hl-9-14>14</a>
+</span><span class=lnt id=hl-9-15><a class=lnlinks href=#hl-9-15>15</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;properties&gt;</span>
+</span></span><span class=line><span class=cl>      	<span class=c>&lt;!-- maven-resources-plugin和maven-compiler-plugin插件的默认取值 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;project.build.sourceEncoding&gt;</span>UTF-8<span class=nt>&lt;/project.build.sourceEncoding&gt;</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  			<span class=c>&lt;!-- maven-site-plugin等插件的默认取值 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;project.reporting.outputEncoding&gt;</span>UTF-8<span class=nt>&lt;/project.reporting.outputEncoding&gt;</span>
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>      	<span class=c>&lt;!-- maven-compiler-plugin插件的默认取值 --&gt;</span>
+</span></span><span class=line><span class=cl>      	<span class=nt>&lt;maven.compiler.source&gt;</span>1.8<span class=nt>&lt;/maven.compiler.source&gt;</span>
+</span></span><span class=line><span class=cl>    		<span class=nt>&lt;maven.compiler.target&gt;</span>1.8<span class=nt>&lt;/maven.compiler.target&gt;</span>
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>      	<span class=c>&lt;!-- spring-boot-starter-parent里定义的的默认取值 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;java.version&gt;</span>1.8<span class=nt>&lt;/java.version&gt;</span>
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl><span class=nt>&lt;/properties&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=或者在插件中定义><a href=#%e6%88%96%e8%80%85%e5%9c%a8%e6%8f%92%e4%bb%b6%e4%b8%ad%e5%ae%9a%e4%b9%89 class=header-anchor>#</a>
+②、或者在插件中定义</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-10-1><a class=lnlinks href=#hl-10-1> 1</a>
+</span><span class=lnt id=hl-10-2><a class=lnlinks href=#hl-10-2> 2</a>
+</span><span class=lnt id=hl-10-3><a class=lnlinks href=#hl-10-3> 3</a>
+</span><span class=lnt id=hl-10-4><a class=lnlinks href=#hl-10-4> 4</a>
+</span><span class=lnt id=hl-10-5><a class=lnlinks href=#hl-10-5> 5</a>
+</span><span class=lnt id=hl-10-6><a class=lnlinks href=#hl-10-6> 6</a>
+</span><span class=lnt id=hl-10-7><a class=lnlinks href=#hl-10-7> 7</a>
+</span><span class=lnt id=hl-10-8><a class=lnlinks href=#hl-10-8> 8</a>
+</span><span class=lnt id=hl-10-9><a class=lnlinks href=#hl-10-9> 9</a>
+</span><span class=lnt id=hl-10-10><a class=lnlinks href=#hl-10-10>10</a>
+</span><span class=lnt id=hl-10-11><a class=lnlinks href=#hl-10-11>11</a>
+</span><span class=lnt id=hl-10-12><a class=lnlinks href=#hl-10-12>12</a>
+</span><span class=lnt id=hl-10-13><a class=lnlinks href=#hl-10-13>13</a>
+</span><span class=lnt id=hl-10-14><a class=lnlinks href=#hl-10-14>14</a>
+</span><span class=lnt id=hl-10-15><a class=lnlinks href=#hl-10-15>15</a>
+</span><span class=lnt id=hl-10-16><a class=lnlinks href=#hl-10-16>16</a>
+</span><span class=lnt id=hl-10-17><a class=lnlinks href=#hl-10-17>17</a>
+</span><span class=lnt id=hl-10-18><a class=lnlinks href=#hl-10-18>18</a>
+</span><span class=lnt id=hl-10-19><a class=lnlinks href=#hl-10-19>19</a>
+</span><span class=lnt id=hl-10-20><a class=lnlinks href=#hl-10-20>20</a>
+</span><span class=lnt id=hl-10-21><a class=lnlinks href=#hl-10-21>21</a>
+</span><span class=lnt id=hl-10-22><a class=lnlinks href=#hl-10-22>22</a>
+</span><span class=lnt id=hl-10-23><a class=lnlinks href=#hl-10-23>23</a>
+</span><span class=lnt id=hl-10-24><a class=lnlinks href=#hl-10-24>24</a>
+</span><span class=lnt id=hl-10-25><a class=lnlinks href=#hl-10-25>25</a>
+</span><span class=lnt id=hl-10-26><a class=lnlinks href=#hl-10-26>26</a>
+</span><span class=lnt id=hl-10-27><a class=lnlinks href=#hl-10-27>27</a>
+</span><span class=lnt id=hl-10-28><a class=lnlinks href=#hl-10-28>28</a>
+</span><span class=lnt id=hl-10-29><a class=lnlinks href=#hl-10-29>29</a>
+</span><span class=lnt id=hl-10-30><a class=lnlinks href=#hl-10-30>30</a>
+</span><span class=lnt id=hl-10-31><a class=lnlinks href=#hl-10-31>31</a>
+</span><span class=lnt id=hl-10-32><a class=lnlinks href=#hl-10-32>32</a>
+</span><span class=lnt id=hl-10-33><a class=lnlinks href=#hl-10-33>33</a>
+</span><span class=lnt id=hl-10-34><a class=lnlinks href=#hl-10-34>34</a>
+</span><span class=lnt id=hl-10-35><a class=lnlinks href=#hl-10-35>35</a>
+</span><span class=lnt id=hl-10-36><a class=lnlinks href=#hl-10-36>36</a>
+</span><span class=lnt id=hl-10-37><a class=lnlinks href=#hl-10-37>37</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;project&gt;</span>
+</span></span><span class=line><span class=cl>  [...]
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>    [...]
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;plugins&gt;</span>
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>      <span class=c>&lt;!-- JDK版本 --&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;groupId&gt;</span>org.apache.maven.plugins<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;artifactId&gt;</span>maven-compiler-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;version&gt;</span>3.10.1<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;configuration&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;source&gt;</span>1.8<span class=nt>&lt;/source&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;target&gt;</span>1.8<span class=nt>&lt;/target&gt;</span>
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;encoding&gt;</span>UTF-8<span class=nt>&lt;/encoding&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/configuration&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    	<span class=c>&lt;!-- 编码 --&gt;</span>
+</span></span><span class=line><span class=cl>   		<span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;groupId&gt;</span>org.apache.maven.plugins<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;artifactId&gt;</span>maven-resources-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;version&gt;</span>3.2.0<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;configuration&gt;</span>
+</span></span><span class=line><span class=cl>          ...
+</span></span><span class=line><span class=cl>          <span class=nt>&lt;encoding&gt;</span>UTF-8<span class=nt>&lt;/encoding&gt;</span>
+</span></span><span class=line><span class=cl>          ...
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/configuration&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/plugins&gt;</span>
+</span></span><span class=line><span class=cl>    [...]
+</span></span><span class=line><span class=cl>  <span class=nt>&lt;/build&gt;</span>
+</span></span><span class=line><span class=cl>  [...]
+</span></span><span class=line><span class=cl><span class=nt>&lt;/project&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=或写在超级pom里全局设定><a href=#%e6%88%96%e5%86%99%e5%9c%a8%e8%b6%85%e7%ba%a7pom%e9%87%8c%e5%85%a8%e5%b1%80%e8%ae%be%e5%ae%9a class=header-anchor>#</a>
+③、或写在超级pom里，全局设定</h2><p>配置的方式是：将 profile 标签整个复制到 settings.xml 文件的 profiles 标签内。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-11-1><a class=lnlinks href=#hl-11-1> 1</a>
+</span><span class=lnt id=hl-11-2><a class=lnlinks href=#hl-11-2> 2</a>
+</span><span class=lnt id=hl-11-3><a class=lnlinks href=#hl-11-3> 3</a>
+</span><span class=lnt id=hl-11-4><a class=lnlinks href=#hl-11-4> 4</a>
+</span><span class=lnt id=hl-11-5><a class=lnlinks href=#hl-11-5> 5</a>
+</span><span class=lnt id=hl-11-6><a class=lnlinks href=#hl-11-6> 6</a>
+</span><span class=lnt id=hl-11-7><a class=lnlinks href=#hl-11-7> 7</a>
+</span><span class=lnt id=hl-11-8><a class=lnlinks href=#hl-11-8> 8</a>
+</span><span class=lnt id=hl-11-9><a class=lnlinks href=#hl-11-9> 9</a>
+</span><span class=lnt id=hl-11-10><a class=lnlinks href=#hl-11-10>10</a>
+</span><span class=lnt id=hl-11-11><a class=lnlinks href=#hl-11-11>11</a>
+</span><span class=lnt id=hl-11-12><a class=lnlinks href=#hl-11-12>12</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;id&gt;</span>jdk-1.8<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;activation&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;activeByDefault&gt;</span>true<span class=nt>&lt;/activeByDefault&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;jdk&gt;</span>1.8<span class=nt>&lt;/jdk&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;/activation&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;properties&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;maven.compiler.source&gt;</span>1.8<span class=nt>&lt;/maven.compiler.source&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;maven.compiler.target&gt;</span>1.8<span class=nt>&lt;/maven.compiler.target&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;maven.compiler.compilerVersion&gt;</span>1.8<span class=nt>&lt;/maven.compiler.compilerVersion&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;/properties&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profile&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>不推荐,仅在本地生效，如果脱离当前的settings.xml能够覆盖的范围，则无法生效</p><h1 id=11属性的声明与引用><a href=#11%e5%b1%9e%e6%80%a7%e7%9a%84%e5%a3%b0%e6%98%8e%e4%b8%8e%e5%bc%95%e7%94%a8 class=header-anchor>#</a>
+11、属性的声明与引用</h1><h2 id=help-插件的各个目标><a href=#help-%e6%8f%92%e4%bb%b6%e7%9a%84%e5%90%84%e4%b8%aa%e7%9b%ae%e6%a0%87 class=header-anchor>#</a>
+①、help 插件的各个目标</h2><p>官网说明地址：https://maven.apache.org/plugins/maven-help-plugin</p><div class=table-wrapper><table><thead><tr><th>目标</th><th>说明</th></tr></thead><tbody><tr><td>help:active-profiles</td><td>列出当前已激活的 profile</td></tr><tr><td>help:all-profiles</td><td>列出当前工程所有可用 profile</td></tr><tr><td>help:describe</td><td>描述一个插件和/或 Mojo 的属性</td></tr><tr><td>help:effective-pom</td><td>以 XML 格式展示有效 POM</td></tr><tr><td>help:effective-settings</td><td>为当前工程以 XML 格式展示计算得到的 settings 配置</td></tr><tr><td><strong>help:evaluate</strong></td><td>计算用户在交互模式下给出的 Maven 表达式</td></tr><tr><td>help:system</td><td>显示平台详细信息列表，如系统属性和环境变量</td></tr></tbody></table></div><h2 id=使用helpevaluate查看属性值><a href=#%e4%bd%bf%e7%94%a8helpevaluate%e6%9f%a5%e7%9c%8b%e5%b1%9e%e6%80%a7%e5%80%bc class=header-anchor>#</a>
+②、使用help:evaluate查看属性值</h2><ul><li>定义属性</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-12-1><a class=lnlinks href=#hl-12-1>1</a>
+</span><span class=lnt id=hl-12-2><a class=lnlinks href=#hl-12-2>2</a>
+</span><span class=lnt id=hl-12-3><a class=lnlinks href=#hl-12-3>3</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;properties&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;com.atguigu.hello&gt;</span>good morning maven<span class=nt>&lt;/com.atguigu.hello&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/properties&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>运行 mvn help:evaluate</li></ul><p><img src=https://logan.1357810.xyz/img/20220411/20220411021628.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><h2 id=通过-maven-访问系统属性><a href=#%e9%80%9a%e8%bf%87-maven-%e8%ae%bf%e9%97%ae%e7%b3%bb%e7%bb%9f%e5%b1%9e%e6%80%a7 class=header-anchor>#</a>
+③、通过 Maven 访问系统属性</h2><ul><li>java属性一览</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-13-1><a class=lnlinks href=#hl-13-1>1</a>
+</span><span class=lnt id=hl-13-2><a class=lnlinks href=#hl-13-2>2</a>
+</span><span class=lnt id=hl-13-3><a class=lnlinks href=#hl-13-3>3</a>
+</span><span class=lnt id=hl-13-4><a class=lnlinks href=#hl-13-4>4</a>
+</span><span class=lnt id=hl-13-5><a class=lnlinks href=#hl-13-5>5</a>
+</span><span class=lnt id=hl-13-6><a class=lnlinks href=#hl-13-6>6</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=n>Properties</span><span class=w> </span><span class=n>properties</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>System</span><span class=p>.</span><span class=na>getProperties</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=n>Set</span><span class=o>&lt;</span><span class=n>Object</span><span class=o>&gt;</span><span class=w> </span><span class=n>propNameSet</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>properties</span><span class=p>.</span><span class=na>keySet</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=n>Object</span><span class=w> </span><span class=n>propName</span><span class=w> </span><span class=p>:</span><span class=w> </span><span class=n>propNameSet</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>propValue</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>properties</span><span class=p>.</span><span class=na>getProperty</span><span class=p>((</span><span class=n>String</span><span class=p>)</span><span class=w> </span><span class=n>propName</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>propName</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34; = &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>propValue</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><blockquote><p>java.runtime.name = Java(TM) SE Runtime Environment
+sun.boot.library.path = D:\software\Java\jre\bin
+java.vm.version = 25.141-b15
+java.vm.vendor = Oracle Corporation
+java.vendor.url = <a class=link href=http://java.oracle.com/ target=_blank rel=noopener>http://java.oracle.com/
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></a></p><p>…………</p></blockquote><ul><li>使用 Maven 访问系统属性</li></ul><p><img src=https://logan.1357810.xyz/img/20220411/20220411021952.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><ul><li>访问系统环境变量</li></ul><p><img src=https://logan.1357810.xyz/img/20220411/20220411022011.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><ul><li>访问 project 属性</li></ul><p>​ 使用表达式 ${project.xxx} 可以访问当前 POM 中的元素值。</p><p>​ <strong><u>访问一级标签</u>:</strong></p><p>​ ${project.标签名}</p><p><img src=https://logan.1357810.xyz/img/20220411/20220411022248.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>​ <strong><u>访问子标签:</u></strong></p><p>​ ${project.标签名.子标签名}</p><p>​
+<img src=https://logan.1357810.xyz/img/20220411/20220411022748.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><p>​ <strong><u>访问列表标签:</u></strong></p><p>​ ${project.标签名[下标]}</p><p>​
+<img src=https://logan.1357810.xyz/img/20220411/20220411022841.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><ul><li>访问 settings 全局配置</li></ul><p>​ ${settings.标签名} 可以访问 settings.xml 中配置的元素值。</p><p>​
+<img src=https://logan.1357810.xyz/img/20220411/20220411022921.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><h2 id=用途><a href=#%e7%94%a8%e9%80%94 class=header-anchor>#</a>
+④、用途</h2><ul><li><p>在当前 pom.xml 文件中引用属性</p></li><li><p>资源过滤功能：在非 Maven 配置文件中引用属性，由 Maven 在处理资源时将引用属性的表达式替换为属性值</p></li><li><p>创建待处理的资源文件</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-14-1><a class=lnlinks href=#hl-14-1>1</a>
+</span><span class=lnt id=hl-14-2><a class=lnlinks href=#hl-14-2>2</a>
+</span><span class=lnt id=hl-14-3><a class=lnlinks href=#hl-14-3>3</a>
+</span><span class=lnt id=hl-14-4><a class=lnlinks href=#hl-14-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-properties data-lang=properties><span class=line><span class=cl><span class=na>dev.user</span><span class=o>=</span><span class=s>${dev.jdbc.user}</span>
+</span></span><span class=line><span class=cl><span class=na>dev.password</span><span class=o>=</span><span class=s>${dev.jdbc.password}</span>
+</span></span><span class=line><span class=cl><span class=na>dev.url</span><span class=o>=</span><span class=s>${dev.jdbc.url}</span>
+</span></span><span class=line><span class=cl><span class=na>dev.driver</span><span class=o>=</span><span class=s>${dev.jdbc.driver}</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><ul><li>配置 profile</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-15-1><a class=lnlinks href=#hl-15-1> 1</a>
+</span><span class=lnt id=hl-15-2><a class=lnlinks href=#hl-15-2> 2</a>
+</span><span class=lnt id=hl-15-3><a class=lnlinks href=#hl-15-3> 3</a>
+</span><span class=lnt id=hl-15-4><a class=lnlinks href=#hl-15-4> 4</a>
+</span><span class=lnt id=hl-15-5><a class=lnlinks href=#hl-15-5> 5</a>
+</span><span class=lnt id=hl-15-6><a class=lnlinks href=#hl-15-6> 6</a>
+</span><span class=lnt id=hl-15-7><a class=lnlinks href=#hl-15-7> 7</a>
+</span><span class=lnt id=hl-15-8><a class=lnlinks href=#hl-15-8> 8</a>
+</span><span class=lnt id=hl-15-9><a class=lnlinks href=#hl-15-9> 9</a>
+</span><span class=lnt id=hl-15-10><a class=lnlinks href=#hl-15-10>10</a>
+</span><span class=lnt id=hl-15-11><a class=lnlinks href=#hl-15-11>11</a>
+</span><span class=lnt id=hl-15-12><a class=lnlinks href=#hl-15-12>12</a>
+</span><span class=lnt id=hl-15-13><a class=lnlinks href=#hl-15-13>13</a>
+</span><span class=lnt id=hl-15-14><a class=lnlinks href=#hl-15-14>14</a>
+</span><span class=lnt id=hl-15-15><a class=lnlinks href=#hl-15-15>15</a>
+</span><span class=lnt id=hl-15-16><a class=lnlinks href=#hl-15-16>16</a>
+</span><span class=lnt id=hl-15-17><a class=lnlinks href=#hl-15-17>17</a>
+</span><span class=lnt id=hl-15-18><a class=lnlinks href=#hl-15-18>18</a>
+</span><span class=lnt id=hl-15-19><a class=lnlinks href=#hl-15-19>19</a>
+</span><span class=lnt id=hl-15-20><a class=lnlinks href=#hl-15-20>20</a>
+</span><span class=lnt id=hl-15-21><a class=lnlinks href=#hl-15-21>21</a>
+</span><span class=lnt id=hl-15-22><a class=lnlinks href=#hl-15-22>22</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profiles&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;id&gt;</span>devJDBCProfile<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;properties&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.user&gt;</span>root<span class=nt>&lt;/dev.jdbc.user&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.password&gt;</span>atguigu<span class=nt>&lt;/dev.jdbc.password&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.url&gt;</span>http://localhost:3306/db_good<span class=nt>&lt;/dev.jdbc.url&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.driver&gt;</span>com.mysql.jdbc.Driver<span class=nt>&lt;/dev.jdbc.driver&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/properties&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;resources&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;resource&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=c>&lt;!-- 表示为这里指定的目录开启资源过滤功能 --&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;directory&gt;</span>src/main/resources<span class=nt>&lt;/directory&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                    <span class=c>&lt;!-- 将资源过滤功能打开 --&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;filtering&gt;</span>true<span class=nt>&lt;/filtering&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;/resource&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/resources&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/build&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/profile&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profiles&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>执行处理资源命令</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-16-1><a class=lnlinks href=#hl-16-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>mvn clean resources:resources -PdevJDBCProfile
+</span></span></code></pre></td></tr></table></div></div><p><img src=https://logan.1357810.xyz/img/20220411/20220411023507.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><h1 id=12profile详解><a href=#12profile%e8%af%a6%e8%a7%a3 class=header-anchor>#</a>
+12、profile详解</h1><h2 id=profile-概述><a href=#profile-%e6%a6%82%e8%bf%b0 class=header-anchor>#</a>
+①、profile 概述</h2><h3 id=1-单词释义><a href=#1-%e5%8d%95%e8%af%8d%e9%87%8a%e4%b9%89 class=header-anchor>#</a>
+[1] 单词释义</h3><img src=https://logan.1357810.xyz/img/20220411/20220411040500.png alt=image-20220411040500120 style=zoom:50%><p>这里我们可以对接 profile 这个单词中『侧面』这个含义：项目的每一个运行环境，相当于是项目整体的一个侧面。</p><img src=https://logan.1357810.xyz/img/20220411/20220411040527.png alt=image-20220411040526761 style=zoom:50%><h3 id=2-项目的不同运行环境><a href=#2-%e9%a1%b9%e7%9b%ae%e7%9a%84%e4%b8%8d%e5%90%8c%e8%bf%90%e8%a1%8c%e7%8e%af%e5%a2%83 class=header-anchor>#</a>
+[2] 项目的不同运行环境</h3><img src=https://logan.1357810.xyz/img/20220411/20220411040314.png alt=images style=zoom:67%><p>通常情况下，我们至少有三种运行环境：</p><ul><li>开发环境：供不同开发工程师开发的各个模块之间互相调用、访问；内部使用</li><li>测试环境：供测试工程师对项目的各个模块进行功能测试；内部使用</li><li>生产环境：供最终用户访问——所以这是正式的运行环境，对外提供服务</li></ul><p>而我们这里的『环境』仍然只是一个笼统的说法，实际工作中一整套运行环境会包含很多种不同服务器：</p><ul><li>MySQL</li><li>Redis</li><li>ElasticSearch</li><li>RabbitMQ</li><li>FastDFS</li><li>Nginx</li><li>Tomcat</li><li>……</li></ul><p>就拿其中的 MySQL 来说，不同环境下的访问参数肯定完全不同：</p><div class=table-wrapper><table><thead><tr><th>开发环境</th><th>测试环境</th><th>生产环境</th></tr></thead><tbody><tr><td>dev.driver=com.mysql.jdbc.Driver dev.url=jdbc:mysql://124.71.36.17:3306/db-sys dev.username=root dev.password=atguigu</td><td>test.driver=com.mysql.jdbc.Driver test.url=jdbc:mysql://124.71.36.89:3306/db-sys test.username=dev-team test.password=atguigu</td><td>product.driver=com.mysql.jdbc.Driver product.url=jdbc:mysql://39.107.88.164:3306/prod-db-sys product.username=root product.password=atguigu</td></tr></tbody></table></div><p>可是代码只有一套。如果在 jdbc.properties 里面来回改，那就太麻烦了，而且很容易遗漏或写错，增加调试的难度和工作量。所以最好的办法就是把适用于各种不同环境的配置信息分别准备好，部署哪个环境就激活哪个配置。</p><p>在 Maven 中，使用 profile 机制来管理不同环境下的配置信息。但是解决同类问题的类似机制在其他框架中也有，而且从模块划分的角度来说，持久化层的信息放在构建工具中配置也违反了『高内聚，低耦合』的原则。</p><p>所以 Maven 的 profile 我们了解一下即可，不必深究。</p><h3 id=3-profile-声明和使用的基本逻辑><a href=#3-profile-%e5%a3%b0%e6%98%8e%e5%92%8c%e4%bd%bf%e7%94%a8%e7%9a%84%e5%9f%ba%e6%9c%ac%e9%80%bb%e8%be%91 class=header-anchor>#</a>
+[3] profile 声明和使用的基本逻辑</h3><ul><li>首先为每一个环境声明一个 profile<ul><li>环境 A：profile A</li><li>环境 B：profile B</li><li>环境 C：profile C</li><li>……</li></ul></li><li>然后激活某一个 profile</li></ul><h3 id=4-默认-profile><a href=#4-%e9%bb%98%e8%ae%a4-profile class=header-anchor>#</a>
+[4] 默认 profile</h3><p>其实即使我们在 pom.xml 中不配置 profile 标签，也已经用到 profile了。为什么呢？因为根标签 project 下所有标签相当于都是在设定默认的 profile。这样一来我们也就很容易理解下面这句话：project 标签下除了 modelVersion 和坐标标签之外，其它标签都可以配置到 profile 中。</p><h2 id=profile-配置><a href=#profile-%e9%85%8d%e7%bd%ae class=header-anchor>#</a>
+②、profile 配置</h2><h3 id=1-外部视角配置文件><a href=#1-%e5%a4%96%e9%83%a8%e8%a7%86%e8%a7%92%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6 class=header-anchor>#</a>
+[1] 外部视角：配置文件</h3><p>从外部视角来看，profile 可以在下面两种配置文件中配置：</p><ul><li><p>settings.xml：全局生效。其中我们最熟悉的就是配置 JDK 1.8。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-17-1><a class=lnlinks href=#hl-17-1> 1</a>
+</span><span class=lnt id=hl-17-2><a class=lnlinks href=#hl-17-2> 2</a>
+</span><span class=lnt id=hl-17-3><a class=lnlinks href=#hl-17-3> 3</a>
+</span><span class=lnt id=hl-17-4><a class=lnlinks href=#hl-17-4> 4</a>
+</span><span class=lnt id=hl-17-5><a class=lnlinks href=#hl-17-5> 5</a>
+</span><span class=lnt id=hl-17-6><a class=lnlinks href=#hl-17-6> 6</a>
+</span><span class=lnt id=hl-17-7><a class=lnlinks href=#hl-17-7> 7</a>
+</span><span class=lnt id=hl-17-8><a class=lnlinks href=#hl-17-8> 8</a>
+</span><span class=lnt id=hl-17-9><a class=lnlinks href=#hl-17-9> 9</a>
+</span><span class=lnt id=hl-17-10><a class=lnlinks href=#hl-17-10>10</a>
+</span><span class=lnt id=hl-17-11><a class=lnlinks href=#hl-17-11>11</a>
+</span><span class=lnt id=hl-17-12><a class=lnlinks href=#hl-17-12>12</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;id&gt;</span>jdk-1.8<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;activation&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;activeByDefault&gt;</span>true<span class=nt>&lt;/activeByDefault&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;jdk&gt;</span>1.8<span class=nt>&lt;/jdk&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;/activation&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;properties&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;maven.compiler.source&gt;</span>1.8<span class=nt>&lt;/maven.compiler.source&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;maven.compiler.target&gt;</span>1.8<span class=nt>&lt;/maven.compiler.target&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&lt;maven.compiler.compilerVersion&gt;</span>1.8<span class=nt>&lt;/maven.compiler.compilerVersion&gt;</span>
+</span></span><span class=line><span class=cl>	  <span class=nt>&lt;/properties&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profile&gt;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>pom.xml：当前 POM 生效</p></li></ul><h3 id=2-内部实现具体标签><a href=#2-%e5%86%85%e9%83%a8%e5%ae%9e%e7%8e%b0%e5%85%b7%e4%bd%93%e6%a0%87%e7%ad%be class=header-anchor>#</a>
+[2] 内部实现：具体标签</h3><p>从内部视角来看，配置 profile 有如下语法要求：</p><ul><li><p>profiles/profile 标签</p><p>由于 profile 天然代表众多可选配置中的一个所以由复数形式的 profiles 标签统一管理。</p><p>由于 profile 标签覆盖了 pom.xml 中的默认配置，所以 profiles 标签通常是 pom.xml 中的最后一个标签。</p></li><li><p>id 标签</p><p>每个 profile 都必须有一个 id 标签，指定该 profile 的唯一标识。这个 id 标签的值会在命令行调用 profile 时被用到。这个命令格式是：-D<profile id>。</p></li><li><p>其它允许出现的标签</p><p>一个 profile 可以覆盖项目的最终名称、项目依赖、插件配置等各个方面以影响构建行为。</p></li></ul><blockquote><ul><li>build<ul><li>defaultGoal</li><li>finalName</li><li>resources</li><li>testResources</li><li>plugins</li></ul></li><li>reporting</li><li>modules</li><li>dependencies</li><li>dependencyManagement</li><li>repositories</li><li>pluginRepositories</li><li>properties</li></ul></blockquote><h2 id=激活-profile><a href=#%e6%bf%80%e6%b4%bb-profile class=header-anchor>#</a>
+③、激活 profile</h2><h3 id=1-默认配置默认被激活><a href=#1-%e9%bb%98%e8%ae%a4%e9%85%8d%e7%bd%ae%e9%bb%98%e8%ae%a4%e8%a2%ab%e6%bf%80%e6%b4%bb class=header-anchor>#</a>
+[1] 默认配置默认被激活</h3><p>前面提到了，POM 中没有在 profile 标签里的就是默认的 profile，当然默认被激活。</p><h3 id=2-基于环境信息激活><a href=#2-%e5%9f%ba%e4%ba%8e%e7%8e%af%e5%a2%83%e4%bf%a1%e6%81%af%e6%bf%80%e6%b4%bb class=header-anchor>#</a>
+[2] 基于环境信息激活</h3><p>环境信息包含：JDK 版本、操作系统参数、文件、属性等各个方面。一个 profile 一旦被激活，那么它定义的所有配置都会覆盖原来 POM 中对应层次的元素。可以参考下面的标签结构：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-18-1><a class=lnlinks href=#hl-18-1> 1</a>
+</span><span class=lnt id=hl-18-2><a class=lnlinks href=#hl-18-2> 2</a>
+</span><span class=lnt id=hl-18-3><a class=lnlinks href=#hl-18-3> 3</a>
+</span><span class=lnt id=hl-18-4><a class=lnlinks href=#hl-18-4> 4</a>
+</span><span class=lnt id=hl-18-5><a class=lnlinks href=#hl-18-5> 5</a>
+</span><span class=lnt id=hl-18-6><a class=lnlinks href=#hl-18-6> 6</a>
+</span><span class=lnt id=hl-18-7><a class=lnlinks href=#hl-18-7> 7</a>
+</span><span class=lnt id=hl-18-8><a class=lnlinks href=#hl-18-8> 8</a>
+</span><span class=lnt id=hl-18-9><a class=lnlinks href=#hl-18-9> 9</a>
+</span><span class=lnt id=hl-18-10><a class=lnlinks href=#hl-18-10>10</a>
+</span><span class=lnt id=hl-18-11><a class=lnlinks href=#hl-18-11>11</a>
+</span><span class=lnt id=hl-18-12><a class=lnlinks href=#hl-18-12>12</a>
+</span><span class=lnt id=hl-18-13><a class=lnlinks href=#hl-18-13>13</a>
+</span><span class=lnt id=hl-18-14><a class=lnlinks href=#hl-18-14>14</a>
+</span><span class=lnt id=hl-18-15><a class=lnlinks href=#hl-18-15>15</a>
+</span><span class=lnt id=hl-18-16><a class=lnlinks href=#hl-18-16>16</a>
+</span><span class=lnt id=hl-18-17><a class=lnlinks href=#hl-18-17>17</a>
+</span><span class=lnt id=hl-18-18><a class=lnlinks href=#hl-18-18>18</a>
+</span><span class=lnt id=hl-18-19><a class=lnlinks href=#hl-18-19>19</a>
+</span><span class=lnt id=hl-18-20><a class=lnlinks href=#hl-18-20>20</a>
+</span><span class=lnt id=hl-18-21><a class=lnlinks href=#hl-18-21>21</a>
+</span><span class=lnt id=hl-18-22><a class=lnlinks href=#hl-18-22>22</a>
+</span><span class=lnt id=hl-18-23><a class=lnlinks href=#hl-18-23>23</a>
+</span><span class=lnt id=hl-18-24><a class=lnlinks href=#hl-18-24>24</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;id&gt;</span>dev<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;activation&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=c>&lt;!-- 配置是否默认激活 --&gt;</span>
+</span></span><span class=line><span class=cl>    		<span class=nt>&lt;activeByDefault&gt;</span>false<span class=nt>&lt;/activeByDefault&gt;</span>
+</span></span><span class=line><span class=cl>      
+</span></span><span class=line><span class=cl>      	<span class=c>&lt;!-- 配置激活条件 --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;jdk&gt;</span>1.5<span class=nt>&lt;/jdk&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;os&gt;</span>
+</span></span><span class=line><span class=cl>        	<span class=nt>&lt;name&gt;</span>Windows XP<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;family&gt;</span>Windows<span class=nt>&lt;/family&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;arch&gt;</span>x86<span class=nt>&lt;/arch&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;version&gt;</span>5.1.2600<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/os&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;property&gt;</span>
+</span></span><span class=line><span class=cl>        	<span class=nt>&lt;name&gt;</span>mavenVersion<span class=nt>&lt;/name&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;value&gt;</span>2.0.5<span class=nt>&lt;/value&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/property&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;file&gt;</span>
+</span></span><span class=line><span class=cl>        	<span class=nt>&lt;exists&gt;</span>file2.properties<span class=nt>&lt;/exists&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;missing&gt;</span>file1.properties<span class=nt>&lt;/missing&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/file&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/activation&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profile&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>这里有个问题是：多个激活条件之间是什么关系呢？</p><ul><li>Maven <strong>3.2.2 之前</strong>：遇到第一个满足的条件即可激活——<strong>或</strong>的关系。</li><li>Maven <strong>3.2.2 开始</strong>：各条件均需满足——<strong>且</strong>的关系。</li></ul><p>下面我们来看一个具体例子。假设有如下 profile 配置，在 JDK 版本为 1.6 时被激活：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-19-1><a class=lnlinks href=#hl-19-1> 1</a>
+</span><span class=lnt id=hl-19-2><a class=lnlinks href=#hl-19-2> 2</a>
+</span><span class=lnt id=hl-19-3><a class=lnlinks href=#hl-19-3> 3</a>
+</span><span class=lnt id=hl-19-4><a class=lnlinks href=#hl-19-4> 4</a>
+</span><span class=lnt id=hl-19-5><a class=lnlinks href=#hl-19-5> 5</a>
+</span><span class=lnt id=hl-19-6><a class=lnlinks href=#hl-19-6> 6</a>
+</span><span class=lnt id=hl-19-7><a class=lnlinks href=#hl-19-7> 7</a>
+</span><span class=lnt id=hl-19-8><a class=lnlinks href=#hl-19-8> 8</a>
+</span><span class=lnt id=hl-19-9><a class=lnlinks href=#hl-19-9> 9</a>
+</span><span class=lnt id=hl-19-10><a class=lnlinks href=#hl-19-10>10</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profiles&gt;</span>
+</span></span><span class=line><span class=cl>	<span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>    	<span class=nt>&lt;id&gt;</span>JDK1.6<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;activation&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=c>&lt;!-- 指定激活条件为：JDK 1.6 --&gt;</span>
+</span></span><span class=line><span class=cl>        	<span class=nt>&lt;jdk&gt;</span>1.6<span class=nt>&lt;/jdk&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/activation&gt;</span>
+</span></span><span class=line><span class=cl>        ……
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/profile&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profiles&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>这里需要指出的是：Maven 会自动检测当前环境安装的 JDK 版本，只要 JDK 版本是以 1.6 开头都算符合条件。下面几个例子都符合：</p><ul><li>1.6.0_03</li><li>1.6.0_02</li><li>……</li></ul><h3 id=3-命令行激活><a href=#3-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%bf%80%e6%b4%bb class=header-anchor>#</a>
+[3] 命令行激活</h3><ul><li>列出活动的 profile</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-20-1><a class=lnlinks href=#hl-20-1>1</a>
+</span><span class=lnt id=hl-20-2><a class=lnlinks href=#hl-20-2>2</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=c1># 列出所有激活的 profile，以及它们在哪里定义</span>
+</span></span><span class=line><span class=cl>mvn help:active-profiles
+</span></span></code></pre></td></tr></table></div></div><ul><li>指定某个具体 profile</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-21-1><a class=lnlinks href=#hl-21-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl>mvn compile -P<span class=nt>&lt;profile</span> <span class=err>id</span><span class=nt>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=操作举例><a href=#%e6%93%8d%e4%bd%9c%e4%b8%be%e4%be%8b class=header-anchor>#</a>
+④、操作举例</h2><h3 id=1-编写-lambda-表达式代码><a href=#1-%e7%bc%96%e5%86%99-lambda-%e8%a1%a8%e8%be%be%e5%bc%8f%e4%bb%a3%e7%a0%81 class=header-anchor>#</a>
+[1] 编写 Lambda 表达式代码</h3><p>Lambda 表达式代码要求 JDK 版本必须是 1.8，我们可以以此来判断某个指定更低 JDK 版本的 profile 是否被激活生效。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-22-1><a class=lnlinks href=#hl-22-1>1</a>
+</span><span class=lnt id=hl-22-2><a class=lnlinks href=#hl-22-2>2</a>
+</span><span class=lnt id=hl-22-3><a class=lnlinks href=#hl-22-3>3</a>
+</span><span class=lnt id=hl-22-4><a class=lnlinks href=#hl-22-4>4</a>
+</span><span class=lnt id=hl-22-5><a class=lnlinks href=#hl-22-5>5</a>
+</span><span class=lnt id=hl-22-6><a class=lnlinks href=#hl-22-6>6</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=nd>@Test</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>public</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>test</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>new</span><span class=w> </span><span class=n>Thread</span><span class=p>(()</span><span class=o>-&gt;</span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>Thread</span><span class=p>.</span><span class=na>currentThread</span><span class=p>().</span><span class=na>getName</span><span class=p>()</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=s>&#34; is working&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}).</span><span class=na>start</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>以目前配置运行这个测试方法：</p><img src=https://logan.1357810.xyz/img/20220411/20220411041730.png alt=image-20220411041730326 style=zoom:50%><h3 id=2-配置-profile><a href=#2-%e9%85%8d%e7%bd%ae-profile class=header-anchor>#</a>
+[2] 配置 profile</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-23-1><a class=lnlinks href=#hl-23-1> 1</a>
+</span><span class=lnt id=hl-23-2><a class=lnlinks href=#hl-23-2> 2</a>
+</span><span class=lnt id=hl-23-3><a class=lnlinks href=#hl-23-3> 3</a>
+</span><span class=lnt id=hl-23-4><a class=lnlinks href=#hl-23-4> 4</a>
+</span><span class=lnt id=hl-23-5><a class=lnlinks href=#hl-23-5> 5</a>
+</span><span class=lnt id=hl-23-6><a class=lnlinks href=#hl-23-6> 6</a>
+</span><span class=lnt id=hl-23-7><a class=lnlinks href=#hl-23-7> 7</a>
+</span><span class=lnt id=hl-23-8><a class=lnlinks href=#hl-23-8> 8</a>
+</span><span class=lnt id=hl-23-9><a class=lnlinks href=#hl-23-9> 9</a>
+</span><span class=lnt id=hl-23-10><a class=lnlinks href=#hl-23-10>10</a>
+</span><span class=lnt id=hl-23-11><a class=lnlinks href=#hl-23-11>11</a>
+</span><span class=lnt id=hl-23-12><a class=lnlinks href=#hl-23-12>12</a>
+</span><span class=lnt id=hl-23-13><a class=lnlinks href=#hl-23-13>13</a>
+</span><span class=lnt id=hl-23-14><a class=lnlinks href=#hl-23-14>14</a>
+</span><span class=lnt id=hl-23-15><a class=lnlinks href=#hl-23-15>15</a>
+</span><span class=lnt id=hl-23-16><a class=lnlinks href=#hl-23-16>16</a>
+</span><span class=lnt id=hl-23-17><a class=lnlinks href=#hl-23-17>17</a>
+</span><span class=lnt id=hl-23-18><a class=lnlinks href=#hl-23-18>18</a>
+</span><span class=lnt id=hl-23-19><a class=lnlinks href=#hl-23-19>19</a>
+</span><span class=lnt id=hl-23-20><a class=lnlinks href=#hl-23-20>20</a>
+</span><span class=lnt id=hl-23-21><a class=lnlinks href=#hl-23-21>21</a>
+</span><span class=lnt id=hl-23-22><a class=lnlinks href=#hl-23-22>22</a>
+</span><span class=lnt id=hl-23-23><a class=lnlinks href=#hl-23-23>23</a>
+</span><span class=lnt id=hl-23-24><a class=lnlinks href=#hl-23-24>24</a>
+</span><span class=lnt id=hl-23-25><a class=lnlinks href=#hl-23-25>25</a>
+</span><span class=lnt id=hl-23-26><a class=lnlinks href=#hl-23-26>26</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profiles&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;id&gt;</span>myJDKProfile<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=c>&lt;!-- build 标签：意思是告诉 Maven，你的构建行为，我要开始定制了！ --&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=c>&lt;!-- plugins 标签：Maven 你给我听好了，你给我构建的时候要用到这些插件！ --&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;plugins&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=c>&lt;!-- plugin 标签：这是我要指定的一个具体的插件 --&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;plugin&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=c>&lt;!-- 插件的坐标。此处引用的 maven-compiler-plugin 插件不是第三方的，是一个 Maven 自带的插件。 --&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;groupId&gt;</span>org.apache.maven.plugins<span class=nt>&lt;/groupId&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;artifactId&gt;</span>maven-compiler-plugin<span class=nt>&lt;/artifactId&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;version&gt;</span>3.1<span class=nt>&lt;/version&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                    <span class=c>&lt;!-- configuration 标签：配置 maven-compiler-plugin 插件 --&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;configuration&gt;</span>
+</span></span><span class=line><span class=cl>                        <span class=c>&lt;!-- 具体配置信息会因为插件不同、需求不同而有所差异 --&gt;</span>
+</span></span><span class=line><span class=cl>                        <span class=nt>&lt;source&gt;</span>1.6<span class=nt>&lt;/source&gt;</span>
+</span></span><span class=line><span class=cl>                        <span class=nt>&lt;target&gt;</span>1.6<span class=nt>&lt;/target&gt;</span>
+</span></span><span class=line><span class=cl>                        <span class=nt>&lt;encoding&gt;</span>UTF-8<span class=nt>&lt;/encoding&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;/configuration&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;/plugin&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/plugins&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/build&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/profile&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profiles&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=3-执行构建命令><a href=#3-%e6%89%a7%e8%a1%8c%e6%9e%84%e5%bb%ba%e5%91%bd%e4%bb%a4 class=header-anchor>#</a>
+[3] 执行构建命令</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-24-1><a class=lnlinks href=#hl-24-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>mvn clean <span class=nb>test</span> -PmyJDKProfile
+</span></span></code></pre></td></tr></table></div></div><p><img src=https://logan.1357810.xyz/img/20220411/20220411041816.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><h2 id=资源属性过滤><a href=#%e8%b5%84%e6%ba%90%e5%b1%9e%e6%80%a7%e8%bf%87%e6%bb%a4 class=header-anchor>#</a>
+⑤、资源属性过滤</h2><h3 id=1-简介><a href=#1-%e7%ae%80%e4%bb%8b class=header-anchor>#</a>
+[1] 简介</h3><p>Maven 为了能够通过 profile 实现各不同运行环境切换，提供了一种『资源属性过滤』的机制。通过属性替换实现不同环境使用不同的参数。</p><h3 id=2-操作演示><a href=#2-%e6%93%8d%e4%bd%9c%e6%bc%94%e7%a4%ba class=header-anchor>#</a>
+[2] 操作演示</h3><ul><li>配置 profile</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-25-1><a class=lnlinks href=#hl-25-1> 1</a>
+</span><span class=lnt id=hl-25-2><a class=lnlinks href=#hl-25-2> 2</a>
+</span><span class=lnt id=hl-25-3><a class=lnlinks href=#hl-25-3> 3</a>
+</span><span class=lnt id=hl-25-4><a class=lnlinks href=#hl-25-4> 4</a>
+</span><span class=lnt id=hl-25-5><a class=lnlinks href=#hl-25-5> 5</a>
+</span><span class=lnt id=hl-25-6><a class=lnlinks href=#hl-25-6> 6</a>
+</span><span class=lnt id=hl-25-7><a class=lnlinks href=#hl-25-7> 7</a>
+</span><span class=lnt id=hl-25-8><a class=lnlinks href=#hl-25-8> 8</a>
+</span><span class=lnt id=hl-25-9><a class=lnlinks href=#hl-25-9> 9</a>
+</span><span class=lnt id=hl-25-10><a class=lnlinks href=#hl-25-10>10</a>
+</span><span class=lnt id=hl-25-11><a class=lnlinks href=#hl-25-11>11</a>
+</span><span class=lnt id=hl-25-12><a class=lnlinks href=#hl-25-12>12</a>
+</span><span class=lnt id=hl-25-13><a class=lnlinks href=#hl-25-13>13</a>
+</span><span class=lnt id=hl-25-14><a class=lnlinks href=#hl-25-14>14</a>
+</span><span class=lnt id=hl-25-15><a class=lnlinks href=#hl-25-15>15</a>
+</span><span class=lnt id=hl-25-16><a class=lnlinks href=#hl-25-16>16</a>
+</span><span class=lnt id=hl-25-17><a class=lnlinks href=#hl-25-17>17</a>
+</span><span class=lnt id=hl-25-18><a class=lnlinks href=#hl-25-18>18</a>
+</span><span class=lnt id=hl-25-19><a class=lnlinks href=#hl-25-19>19</a>
+</span><span class=lnt id=hl-25-20><a class=lnlinks href=#hl-25-20>20</a>
+</span><span class=lnt id=hl-25-21><a class=lnlinks href=#hl-25-21>21</a>
+</span><span class=lnt id=hl-25-22><a class=lnlinks href=#hl-25-22>22</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;profiles&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;profile&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;id&gt;</span>devJDBCProfile<span class=nt>&lt;/id&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;properties&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.user&gt;</span>root<span class=nt>&lt;/dev.jdbc.user&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.password&gt;</span>atguigu<span class=nt>&lt;/dev.jdbc.password&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.url&gt;</span>http://localhost:3306/db_good<span class=nt>&lt;/dev.jdbc.url&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;dev.jdbc.driver&gt;</span>com.mysql.jdbc.Driver<span class=nt>&lt;/dev.jdbc.driver&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/properties&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;resources&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;resource&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=c>&lt;!-- 表示为这里指定的目录开启资源过滤功能 --&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;directory&gt;</span>src/main/resources<span class=nt>&lt;/directory&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                    <span class=c>&lt;!-- 将资源过滤功能打开 --&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=nt>&lt;filtering&gt;</span>true<span class=nt>&lt;/filtering&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;/resource&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/resources&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/build&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/profile&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/profiles&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>创建待处理的资源文件</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-26-1><a class=lnlinks href=#hl-26-1>1</a>
+</span><span class=lnt id=hl-26-2><a class=lnlinks href=#hl-26-2>2</a>
+</span><span class=lnt id=hl-26-3><a class=lnlinks href=#hl-26-3>3</a>
+</span><span class=lnt id=hl-26-4><a class=lnlinks href=#hl-26-4>4</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-properties data-lang=properties><span class=line><span class=cl><span class=na>dev.user</span><span class=o>=</span><span class=s>${dev.jdbc.user}</span>
+</span></span><span class=line><span class=cl><span class=na>dev.password</span><span class=o>=</span><span class=s>${dev.jdbc.password}</span>
+</span></span><span class=line><span class=cl><span class=na>dev.url</span><span class=o>=</span><span class=s>${dev.jdbc.url}</span>
+</span></span><span class=line><span class=cl><span class=na>dev.driver</span><span class=o>=</span><span class=s>${dev.jdbc.driver}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>执行处理资源命令</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-27-1><a class=lnlinks href=#hl-27-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>mvn clean resources:resources -PdevJDBCProfile
+</span></span></code></pre></td></tr></table></div></div><ul><li>找到处理得到的资源文件</li></ul><p><img src=https://logan.1357810.xyz/img/20220411/20220411040624.png width=900 height=600 loading=lazy decoding=async alt=images class="gallery-image link-image" data-flex-grow=20 data-flex-basis=20px></p><ul><li>延伸</li></ul><p>​ 我们时不时会在 resource 标签下看到 includes 和 excludes 标签。它们的作用是：</p><ul><li>includes：指定执行 resource 阶段时要包含到目标位置的资源</li><li>excludes：指定执行 resource 阶段时要排除的资源</li></ul><p>情看下面的例子：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-28-1><a class=lnlinks href=#hl-28-1> 1</a>
+</span><span class=lnt id=hl-28-2><a class=lnlinks href=#hl-28-2> 2</a>
+</span><span class=lnt id=hl-28-3><a class=lnlinks href=#hl-28-3> 3</a>
+</span><span class=lnt id=hl-28-4><a class=lnlinks href=#hl-28-4> 4</a>
+</span><span class=lnt id=hl-28-5><a class=lnlinks href=#hl-28-5> 5</a>
+</span><span class=lnt id=hl-28-6><a class=lnlinks href=#hl-28-6> 6</a>
+</span><span class=lnt id=hl-28-7><a class=lnlinks href=#hl-28-7> 7</a>
+</span><span class=lnt id=hl-28-8><a class=lnlinks href=#hl-28-8> 8</a>
+</span><span class=lnt id=hl-28-9><a class=lnlinks href=#hl-28-9> 9</a>
+</span><span class=lnt id=hl-28-10><a class=lnlinks href=#hl-28-10>10</a>
+</span><span class=lnt id=hl-28-11><a class=lnlinks href=#hl-28-11>11</a>
+</span><span class=lnt id=hl-28-12><a class=lnlinks href=#hl-28-12>12</a>
+</span><span class=lnt id=hl-28-13><a class=lnlinks href=#hl-28-13>13</a>
+</span><span class=lnt id=hl-28-14><a class=lnlinks href=#hl-28-14>14</a>
+</span><span class=lnt id=hl-28-15><a class=lnlinks href=#hl-28-15>15</a>
+</span><span class=lnt id=hl-28-16><a class=lnlinks href=#hl-28-16>16</a>
+</span><span class=lnt id=hl-28-17><a class=lnlinks href=#hl-28-17>17</a>
+</span><span class=lnt id=hl-28-18><a class=lnlinks href=#hl-28-18>18</a>
+</span><span class=lnt id=hl-28-19><a class=lnlinks href=#hl-28-19>19</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=line><span class=cl><span class=nt>&lt;build&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;resources&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;resource&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=c>&lt;!-- 表示为这里指定的目录开启资源过滤功能 --&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;directory&gt;</span>src/main/resources<span class=nt>&lt;/directory&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=c>&lt;!-- 将资源过滤功能打开 --&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;filtering&gt;</span>true<span class=nt>&lt;/filtering&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;includes&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;include&gt;</span>*.properties<span class=nt>&lt;/include&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/includes&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;excludes&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=nt>&lt;exclude&gt;</span>happy.properties<span class=nt>&lt;/exclude&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=nt>&lt;/excludes&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&lt;/resource&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&lt;/resources&gt;</span>
+</span></span><span class=line><span class=cl><span class=nt>&lt;/build&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>执行处理资源命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=hl-29-1><a class=lnlinks href=#hl-29-1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>mvn clean resources:resources -PdevJDBCProfile
+</span></span></code></pre></td></tr></table></div></div><p>执行效果如下：</p><img src=https://logan.1357810.xyz/img/20220411/20220411042137.png alt=image-20220411042136757 style=zoom:50%><p>当然我们这里只是以 properties 文件为例，并不是只能处理 properties 文件。</p></section><footer class=article-footer><section class=article-tags><a href=/tags/maven/>Maven</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>true</span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<span>最后更新于 2024年5月8日 20:59</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/articles/maven/maven-production/><div class=article-details><h2 class=article-title>6 生产实践</h2></div></a></article><article><a href=/articles/maven/maven-build/><div class=article-details><h2 class=article-title>5 build标签和插件</h2></div></a></article><article><a href=/articles/maven/maven-springboot/><div class=article-details><h2 class=article-title>4 springboot项目</h2></div></a></article><article><a href=/articles/maven/maven-parent/><div class=article-details><h2 class=article-title>3 父子工程-命令行</h2></div></a></article><article><a href=/articles/maven/maven-web/><div class=article-details><h2 class=article-title>2 web工程-命令行</h2></div></a></article></div></div></aside><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.js crossorigin=anonymous></script><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding);--waline-font-size:var(--article-font-size)}.waline-container .wl-count{color:var(--card-text-color-main)}</style><script>Waline.init({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],lang:"zh-cn",locale:{admin:"Admin",placeholder:null},requiredMeta:["nick"],serverURL:"https://waline.wssw.fun/"})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2024 &nbsp;&nbsp;by &nbsp; logan</section><section class=powerby>发表了85篇文章 ·
+总计465.46k字</section><section class=powerby><div class=powerby><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv></span>次
+</span><span id=busuanzi_container_site_uv>本站访客数<span id=busuanzi_value_site_uv></span>人次</span></div></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe.min.js crossorigin=anonymous defer></script><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe.min.css crossorigin=anonymous><script src=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js crossorigin=anonymous defer></script><link rel=preload as=style onload='this.rel="stylesheet"' href=https://cdn.bootcdn.net/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css crossorigin=anonymous></main></div><script type=text/javascript src=/ts/main.js defer></script><a href=javascript:void(0) class=right_things id=back-to-top title=返回顶部></a><style>html{scroll-behavior:smooth}#back-to-top{z-index:998!important;transition:1.5s ease,opacity 2s ease,visibility 2s ease,right .8s ease;opacity:0;display:inline-block;visibility:hidden;position:fixed;bottom:10px;right:10px;width:55px;height:55px;font-size:30px;text-align:center;line-height:50px;border-radius:20px;box-shadow:var(--shadow-l1);cursor:pointer;color:var(--body-text-color);background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #241348 0%, #4d0404 100%); }}#back-to-top:before{content:' ';display:inline-block;position:relative;top:0;transform:rotate(135deg);height:10px;width:10px;border-width:0 0 2px 2px;border-style:solid}#back-to-top:hover{transform:scale(1.1,1.1);background-image:linear-gradient(-225deg,#E3FDF5 0%,#FFE6FA 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #432581 0%, #861818 100%); }}#back-to-top:hover:before{border-color:#2674e0}@media screen and (max-width:768px){#back-to-top{width:35px;height:35px;font-size:10px;right:15px}}</style><script>function resizeRight(){var t=document.querySelectorAll(".right_things"),e=window.innerWidth;t.length>0&&t.forEach(function(t){e>2100?t.style.right="280px":e>1800?t.style.right="120px":e<1800&&(t.style.right="10px")})}window.addEventListener("resize",function(){requestAnimationFrame(resizeRight)});function backToTop(){window.scrollTo({top:0,behavior:"smooth"})}window.onload=function(){requestAnimationFrame(resizeRight);var t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t>0?(e.style.visibility="visible",e.style.opacity="1"):(e.style.opacity="0",e.style.visibility="hidden")},window.onscroll=function(){var t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t<400?(e.style.opacity="0",e.style.visibility="hidden"):(e.style.visibility="visible",e.style.opacity="1",e.addEventListener("click",backToTop,!1))}</script><style>.toggle-toc-inner,.toggle-toc-inner svg{z-index:1!important;pointer-events:none}.toggle-toc-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.toggle-toc-inner svg{display:none}#toc-container{display:none;position:fixed;bottom:120px;right:80px;padding:10px;border:1px solid #96979a50;border-radius:var(--card-border-radius);box-shadow:rgba(14,30,37,.12)0 2px 4px,rgba(14,30,37,.32)0 2px 16px;z-index:997!important;max-height:80vh;overflow-y:auto;width:auto;max-width:290px;background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); color: #FFFFFFB2; }}#TableOfContents{background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); }}#TableOfContents a:hover{font-weight:bolder}[data-scheme=dark] #TableOfContents a{color:#212223}[data-scheme=dark] #TableOfContents a:hover{color:#052ed3}#toggle-toc{transition:1.5s ease,opacity 2s ease,visibility 2s ease,right .8s ease;opacity:0;display:block;visibility:hidden;position:fixed;bottom:75px;right:10px;width:55px;height:55px;font-size:1.7rem;padding:5px;z-index:1000!important;border:0 solid #96979a50;border-radius:20px;box-shadow:var(--shadow-l1);color:#707070;cursor:pointer;background-image:linear-gradient(-20deg,#e9defa 0%,#fbfcdb 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #241348 0%, #4d0404 100%); color: #FFFFFFB2; } animation: jump 0.3s 4;animation-delay:.6s}#toggle-toc:hover{transform:scale(1.1,1.1);background-image:linear-gradient(-225deg,#E3FDF5 0%,#FFE6FA 100%); [data-scheme="dark"] & { background-image: linear-gradient(60deg, #432581 0%, #861818 100%); }}.widget--toc #TableOfContents{overflow-x:auto;max-height:66vh;width:auto}.toggle-toc-inner::before{content:'目录'}@media screen and (max-width:768px){#toggle-toc{width:35px;height:35px;font-size:10px;bottom:60px;right:15px}.toggle-toc-inner::before{content:''}.toggle-toc-inner svg{display:block}#toc-container{bottom:100px;right:60px}}</style><a id=toggle-toc class=right_things title=目录 href=javascript:void(0)><div class=toggle-toc-inner><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></div></a><section class="widget archives" id=toc-container><h2 class=section-title>目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#1maven介绍>1、maven介绍</a><ol><li><a href=#概述>①、概述</a></li><li><a href=#maven工作机制>②、maven工作机制</a></li><li><a href=#功能>③、功能</a></li><li><a href=#maven坐标>④、maven坐标</a></li></ol></li><li><a href=#2pom介绍>2、POM介绍</a><ol><li><a href=#含义>①、含义</a></li><li><a href=#模型化思想>②、模型化思想</a></li><li><a href=#pom标签>③、pom标签</a></li></ol></li><li><a href=#3pom的四个层次>3、POM的四个层次</a><ol><li><a href=#超级pom>①、超级pom</a></li><li><a href=#父pom>②、父POM</a></li><li><a href=#有效-pom>③、有效 POM</a></li><li><a href=#小结>④、小结</a></li></ol></li><li><a href=#4生命周期>4、生命周期</a><ol><li><a href=#构建过程>①、构建过程</a></li><li><a href=#三个生命周期>②、三个生命周期</a></li><li><a href=#特点>③、特点</a></li></ol></li><li><a href=#5仓库和镜像>5、仓库和镜像</a><ol><li><a href=#仓库>①、仓库</a></li><li><a href=#镜像>②、镜像</a></li></ol></li><li><a href=#6约定的目录结构>6、约定的目录结构</a><ol><li><a href=#各个目录的作用>①、各个目录的作用</a></li><li><a href=#约定目录结构的意义>②、约定目录结构的意义</a></li><li><a href=#约定大于配置>③、约定大于配置</a></li></ol></li><li><a href=#7依赖的配置>7、依赖的配置</a><ol><li><a href=#依赖的范围scope>①、依赖的范围scope</a></li><li><a href=#依赖的传递性>②、依赖的传递性</a></li><li><a href=#依赖的排除>③、依赖的排除</a></li><li><a href=#scope-import>④、scope-import</a></li><li><a href=#scope-system>⑤、scope-system</a></li><li><a href=#scope-runtime>⑥、scope-runtime</a></li><li><a href=#optional>⑦、optional</a></li><li><a href=#依赖的版本仲裁>⑧、依赖的版本仲裁</a></li></ol></li><li><a href=#8继承>8、继承</a><ol><li><a href=#概念>①、概念</a></li><li><a href=#作用>②、作用</a></li></ol></li><li><a href=#9聚合>9、聚合</a><ol><li><a href=#聚合本身的含义>①、聚合本身的含义</a></li><li><a href=#maven-中的聚合>②、Maven 中的聚合</a></li><li><a href=#好处>③、好处</a></li><li><a href=#聚合的配置>④、聚合的配置</a></li><li><a href=#依赖循环问题>⑤、依赖循环问题</a></li></ol></li><li><a href=#10定义jdk版本和编码>10、定义jdk版本和编码</a><ol><li><a href=#直接使用默认取值>①、直接使用默认取值</a></li><li><a href=#或者在插件中定义>②、或者在插件中定义</a></li><li><a href=#或写在超级pom里全局设定>③、或写在超级pom里，全局设定</a></li></ol></li><li><a href=#11属性的声明与引用>11、属性的声明与引用</a><ol><li><a href=#help-插件的各个目标>①、help 插件的各个目标</a></li><li><a href=#使用helpevaluate查看属性值>②、使用help:evaluate查看属性值</a></li><li><a href=#通过-maven-访问系统属性>③、通过 Maven 访问系统属性</a></li><li><a href=#用途>④、用途</a></li></ol></li><li><a href=#12profile详解>12、profile详解</a><ol><li><a href=#profile-概述>①、profile 概述</a><ol><li><a href=#1-单词释义>[1] 单词释义</a></li><li><a href=#2-项目的不同运行环境>[2] 项目的不同运行环境</a></li><li><a href=#3-profile-声明和使用的基本逻辑>[3] profile 声明和使用的基本逻辑</a></li><li><a href=#4-默认-profile>[4] 默认 profile</a></li></ol></li><li><a href=#profile-配置>②、profile 配置</a><ol><li><a href=#1-外部视角配置文件>[1] 外部视角：配置文件</a></li><li><a href=#2-内部实现具体标签>[2] 内部实现：具体标签</a></li></ol></li><li><a href=#激活-profile>③、激活 profile</a><ol><li><a href=#1-默认配置默认被激活>[1] 默认配置默认被激活</a></li><li><a href=#2-基于环境信息激活>[2] 基于环境信息激活</a></li><li><a href=#3-命令行激活>[3] 命令行激活</a></li></ol></li><li><a href=#操作举例>④、操作举例</a><ol><li><a href=#1-编写-lambda-表达式代码>[1] 编写 Lambda 表达式代码</a></li><li><a href=#2-配置-profile>[2] 配置 profile</a></li><li><a href=#3-执行构建命令>[3] 执行构建命令</a></li></ol></li><li><a href=#资源属性过滤>⑤、资源属性过滤</a><ol><li><a href=#1-简介>[1] 简介</a></li><li><a href=#2-操作演示>[2] 操作演示</a></li></ol></li></ol></li></ol></nav></div></section><script>var toggleButton=document.getElementById("toggle-toc"),tocContainer=document.getElementById("toc-container"),scrollThreshold=400;function extracted(){var e=window.scrollY||window.pageYOffset;e>=scrollThreshold?(toggleButton.style.visibility="visible",toggleButton.style.opacity="1"):(toggleButton.style.opacity="0",toggleButton.style.visibility="hidden")}window.addEventListener("scroll",function(){extracted()}),window.onload=function(){extracted()},toggleButton.addEventListener("click",function(e){tocContainer.style.display==="none"||tocContainer.style.display===""?tocContainer.style.display="block":tocContainer.style.display="none",e.stopPropagation()}),"ontouchstart"in window||toggleButton.addEventListener("mouseover",function(){tocContainer.style.display="block"}),document.addEventListener("click",function(e){!tocContainer.contains(e.target)&&!toggleButton.contains(e.target)&&e.target!==toggleButton&&e.target!==tocContainer&&(tocContainer.style.display="none")})</script><script src=https://cdn.bootcdn.net/ajax/libs/nprogress/0.2.0/nprogress.min.js crossorigin=anonymous></script><div class=top-scroll-bar></div><style>.top-scroll-bar,.page-load-progress-bar{position:fixed;top:0;left:0;z-index:9999;display:none;width:0;height:4px;border-radius:5px;background-image:linear-gradient(to right,#5a0ca6 0%,rgba(208,114,155,.84) 50%,#29d 100%); [data-scheme="light"] & { background-image: linear-gradient(to right, #78ee6e 0%, #5069e3 50%, #29d 100%); }}#nprogress{pointer-events:none}#nprogress .my_bar{background-image:linear-gradient(to right,#5a0ca6 0%,rgba(208,114,155,.84) 50%,#29d 100%); [data-scheme="light"] & { background-image: linear-gradient(to right, #78ee6e 0%, #5069e3 50%, #29d 100%); } position: fixed;z-index:9999;top:0;left:0;border-radius:10px;width:100%;height:5px}#nprogress .my_peg{display:block;position:absolute;right:0;width:100px;height:100%;box-shadow:0 0 10px #29d,0 0 5px #29d;opacity:1;-webkit-transform:rotate(3deg)translate(0,-4px);-ms-transform:rotate(3deg)translate(0,-4px);transform:rotate(3deg)translate(0,-4px)}#nprogress .my_spinner{display:block;position:fixed;z-index:1031;top:15px;right:15px}#nprogress .my_spinner-icon{width:25px;height:25px;box-sizing:border-box;border:solid 3px transparent;border-top-color:#29d;border-left-color:#29d;border-radius:50%;-webkit-animation:nprogress-spinner 400ms linear infinite;animation:nprogress-spinner 400ms linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .my_spinner,.nprogress-custom-parent #nprogress .my_bar{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><script>var my_template='<div class="my_bar" role="bar"><div class="my_peg"></div></div><div class="my_spinner" role="spinner"><div class="my_spinner-icon"></div></div>';NProgress.configure({template:my_template}),NProgress.start(),document.addEventListener("readystatechange",()=>{if(document.readyState==="interactive"&&NProgress.inc(.6),document.readyState==="complete"){NProgress.done(!0),NProgress.configure({template:my_template,minimum:0,trickle:!1,showSpinner:!1});var e=document.querySelector(".top-scroll-bar");window.addEventListener("scroll",function(){var t=document.documentElement.scrollTop||document.body.scrollTop,n=document.documentElement.scrollHeight-document.documentElement.clientHeight,s=t/n*100;e.style.width=s+"%",e.style.display="block"})}})</script><script>function loadScript(e,t){var n=document.querySelector('script[src="'+e+'"]'),s=!1;n.onload=function(){s||(s=!0,t&&window[t]())},n.onreadystatechange=function(){!s&&(n.readyState==="loaded"||n.readyState==="complete")&&(s=!0,t&&window[t]())}}</script></body></html>
