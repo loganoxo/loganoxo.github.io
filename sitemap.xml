@@ -61,6 +61,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://logan.wssw.fun/articles/mac/mac-brew/</loc>
+    <lastmod>2024-05-08T21:06:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://logan.wssw.fun/articles/mac/mac-scp/</loc>
+    <lastmod>2024-05-08T21:06:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://logan.wssw.fun/example/rich-content/</loc>
     <lastmod>2024-04-29T03:45:05+08:00</lastmod>
     <changefreq>daily</changefreq>

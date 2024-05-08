@@ -9054,6 +9054,310 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
+        <title>mac使用homebrew</title>
+        <link>https://logan.wssw.fun/articles/mac/mac-brew/</link>
+        <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/articles/mac/mac-brew/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;查看brew的帮助&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew –help
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;安装软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;卸载软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew uninstall git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;搜索软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew search git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示已经安装软件列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;更新homebrew自己，把所有的Formula目录更新，并且会对本机已经安装并有更新的软件用*标明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;更新某具体软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew upgrade git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示软件内容信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew info git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;用浏览器打开官网&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew home
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示已安装或者未安装的包的依赖&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew deps git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示包的依赖树&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew deps --installed --tree
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;显示包的依赖 –简化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew leaves &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xargs brew deps  --installed --for-each &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/^.*:/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;    tput setaf 4&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;tput sgr0&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;启动web服务器，可以通过浏览器访问http://localhost:4567/ 来同网页来管理包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew server &lt;span class=&#34;c1&#34;&gt;#要安装serve&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除程序旧版本，单个软件删除和所有程序老版删除。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew cleanup git 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew cleanup 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew cleanup -n &lt;span class=&#34;c1&#34;&gt;#不真的删除，打印出将会删除的旧包&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew cleanup --prune&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;all &lt;span class=&#34;c1&#34;&gt;#删除旧包，以及下载的包缓存&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看那些已安装的程序需要更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew outdated
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;管理后台软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;诸如 Nginx、MySQL 等软件，都是有一些服务端软件在后台运行，如果你希望对这些软件进行管理，可以使用 &lt;code&gt;brew services&lt;/code&gt; 命令来进行管理&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-5&#34;&gt;5&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew services list &lt;span class=&#34;c1&#34;&gt;#查看所有服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew services run &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;服务名&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#单次运行某个服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew services start &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;服务名&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#运行某个服务，并设置开机自动运行。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew services stop &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;服务名&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#停止某个服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew services restart  &lt;span class=&#34;c1&#34;&gt;#重启某个服务。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;检查 Hombrew 环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew doctor
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;添加一个新的 tap&lt;/p&gt;
+&lt;p&gt;homebrew 官方在安装的时候会有一些 tap 但是在使用时，依然会需要安装一些特殊的 tap ，这个时候，我们就要用到 tap 的命令来添加新的 tap.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew tap &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;user/repo&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;使用 Brewfile 完成环境迁移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;设备用久了，我们的电脑中会有大量的软件，如果你需要迁移环境，重新安装会是一个大麻烦，好在 Homebrew 本身为我们提供了一个非常好用的环境迁移的工具 —— Homebrew Bundle&lt;/p&gt;
+&lt;p&gt;你首先需要在之前的电脑中执行 &lt;code&gt;brew bundle dump&lt;/code&gt; 来完成当前环境的导出,导出完成后，你会得到一个 &lt;em&gt;Brewfile&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;然后将 &lt;em&gt;Brewfile&lt;/em&gt; 复制到新的电脑中，并执行 &lt;code&gt;brew bundle&lt;/code&gt; 来开始安装的过程。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cakebrew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cakebrew 是 Homebrew 的 GUI 管理器，在 Cakebrew 中，你可以看到当前所有已经安装的软件，并可以在 Caskbrew 中对其他软件执行升级等操作。&lt;/p&gt;
+&lt;p&gt;你只需要执行 &lt;code&gt;brew cask install cakebrew&lt;/code&gt; 就可以完成 Cakebrew 的安装。&lt;/p&gt;
+&lt;p&gt;安装完成后，在 LaunchPad 中打开即可。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;launchrocket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;launchrocket 可以用于管理 Homebrew 安装的服务，在使用时，你需要先添加对应的tap，然后再安装软件。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew tap jimbojsb/launchrocket
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew cask install launchrocket
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完成后，在 LaunchPad 中打开即可。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>mac使用scp</title>
+        <link>https://logan.wssw.fun/articles/mac/mac-scp/</link>
+        <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/articles/mac/mac-scp/</guid>
+        <description>&lt;h1 id=&#34;1-隐藏取消隐藏文件&#34;&gt;
+    &lt;a href=&#34;#1-%e9%9a%90%e8%97%8f%e5%8f%96%e6%b6%88%e9%9a%90%e8%97%8f%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    1 隐藏/取消隐藏文件
+&lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chflags hidden a.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chflags nohidden a.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;2-文件传输&#34;&gt;
+    &lt;a href=&#34;#2-%e6%96%87%e4%bb%b6%e4%bc%a0%e8%be%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    2 文件传输
+&lt;/h1&gt;&lt;p&gt;上传命令，下载就颠倒参数位置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt; 1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-2&#34;&gt; 2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-3&#34;&gt; 3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-4&#34;&gt; 4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-5&#34;&gt; 5&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-6&#34;&gt; 6&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-7&#34;&gt; 7&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-8&#34;&gt; 8&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-9&#34;&gt; 9&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-10&#34;&gt;10&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 在mac本地终端将mac本地的文件传输至远程服务器&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scp path/to/local_file remote_host:path/to/remote_file
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scp path/to/local_file root@remote_host:path/to/remote_file
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 在mac本地终端将mac本地的文件夹里的内容传输至远程服务器一个文件夹内&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scp -r path/to/local_directory remote_host:path/to/remote_directory 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 在mac本地终端，把两个远程服务器文件互传&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scp -3 host1:path/to/remote_file host2:path/to/remote_directory
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;以上是在mac本地执行命令，所以是mac端连接服务端，需要服务端开放22端口&lt;/p&gt;
+&lt;p&gt;但是如果在服务端执行命令，连接mac端，需要mac开放端口，即 设置-共享-远程登录&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Rich Content</title>
         <link>https://logan.wssw.fun/example/rich-content/</link>
         <pubDate>Fri, 09 Feb 2024 00:00:00 +0800</pubDate>
@@ -23337,1191 +23641,6 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
             
     &gt;
 &lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>04-JVM运行时参数</title>
-        <link>https://logan.wssw.fun/p/2023/05/45117945/</link>
-        <pubDate>Wed, 03 May 2023 03:17:33 +0800</pubDate>
-        
-        <guid>https://logan.wssw.fun/p/2023/05/45117945/</guid>
-        <description>&lt;h1 id=&#34;4-jvm-运行时参数&#34;&gt;
-    &lt;a href=&#34;#4-jvm-%e8%bf%90%e8%a1%8c%e6%97%b6%e5%8f%82%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4. JVM 运行时参数
-&lt;/h1&gt;&lt;h2 id=&#34;41-jvm-参数选项&#34;&gt;
-    &lt;a href=&#34;#41-jvm-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.1. JVM 参数选项
-&lt;/h2&gt;&lt;p&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;411-类型一标准参数选项&#34;&gt;
-    &lt;a href=&#34;#411-%e7%b1%bb%e5%9e%8b%e4%b8%80%e6%a0%87%e5%87%86%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.1.1. 类型一：标准参数选项
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;比较稳定，后续版本基本不会变化&lt;/li&gt;
-&lt;li&gt;直接在DOS窗口中运行java或者java -help可以看到所有的标准选项&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-19&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-19&#34;&gt;19&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-20&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-20&#34;&gt;20&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-21&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-21&#34;&gt;21&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-22&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-22&#34;&gt;22&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-23&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-23&#34;&gt;23&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-24&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-24&#34;&gt;24&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-25&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-25&#34;&gt;25&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-26&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-26&#34;&gt;26&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-27&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-27&#34;&gt;27&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-28&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-28&#34;&gt;28&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-29&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-29&#34;&gt;29&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-30&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-30&#34;&gt;30&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-31&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-31&#34;&gt;31&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-32&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-32&#34;&gt;32&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-33&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-33&#34;&gt;33&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-34&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-34&#34;&gt;34&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-35&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-35&#34;&gt;35&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-36&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-36&#34;&gt;36&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-37&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-37&#34;&gt;37&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-38&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-38&#34;&gt;38&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-39&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-39&#34;&gt;39&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-40&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-40&#34;&gt;40&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-41&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-41&#34;&gt;41&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-42&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-42&#34;&gt;42&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-43&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-43&#34;&gt;43&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-44&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-44&#34;&gt;44&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-45&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-45&#34;&gt;45&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-46&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-46&#34;&gt;46&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-47&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-47&#34;&gt;47&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-48&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-48&#34;&gt;48&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-49&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-49&#34;&gt;49&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-50&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-50&#34;&gt;50&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-51&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-51&#34;&gt;51&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; java -help
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;用法: java &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-options&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; class &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;args...&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;执行类&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   或  java &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-options&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; -jar jarfile &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;args...&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;执行 jar 文件&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;其中选项包括:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -d32          使用 &lt;span class=&#34;m&#34;&gt;32&lt;/span&gt; 位数据模型 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;如果可用&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -d64          使用 &lt;span class=&#34;m&#34;&gt;64&lt;/span&gt; 位数据模型 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;如果可用&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -server       选择 &lt;span class=&#34;s2&#34;&gt;&amp;#34;server&amp;#34;&lt;/span&gt; VM
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  默认 VM 是 server.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -cp &amp;lt;目录和 zip/jar 文件的类搜索路径&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -classpath &amp;lt;目录和 zip/jar 文件的类搜索路径&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  用 &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 分隔的目录, JAR 档案
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  和 ZIP 档案列表, 用于搜索类文件。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -D&amp;lt;名称&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;值&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  设置系统属性
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -verbose:&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;class&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;gc&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;jni&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  启用详细输出
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -version      输出产品版本并退出
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -version:&amp;lt;值&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  警告: 此功能已过时, 将在
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  未来发行版中删除。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  需要指定的版本才能运行
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -showversion  输出产品版本并继续
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -jre-restrict-search &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; -no-jre-restrict-search
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  警告: 此功能已过时, 将在
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  未来发行版中删除。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  在版本搜索中包括/排除用户专用 JRE
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -? -help      输出此帮助消息
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -X            输出非标准选项的帮助
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -ea&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;:&amp;lt;packagename&amp;gt;...&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;:&amp;lt;classname&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -enableassertions&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;:&amp;lt;packagename&amp;gt;...&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;:&amp;lt;classname&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  按指定的粒度启用断言
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -da&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;:&amp;lt;packagename&amp;gt;...&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;:&amp;lt;classname&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -disableassertions&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;:&amp;lt;packagename&amp;gt;...&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;:&amp;lt;classname&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  禁用具有指定粒度的断言
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -esa &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; -enablesystemassertions
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  启用系统断言
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -dsa &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; -disablesystemassertions
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  禁用系统断言
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -agentlib:&amp;lt;libname&amp;gt;&lt;span class=&#34;o&#34;&gt;[=&lt;/span&gt;&amp;lt;选项&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  加载本机代理库 &amp;lt;libname&amp;gt;, 例如 -agentlib:hprof
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  另请参阅 -agentlib:jdwp&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;help&lt;/span&gt; 和 -agentlib:hprof&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;help&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -agentpath:&amp;lt;pathname&amp;gt;&lt;span class=&#34;o&#34;&gt;[=&lt;/span&gt;&amp;lt;选项&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  按完整路径名加载本机代理库
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -javaagent:&amp;lt;jarpath&amp;gt;&lt;span class=&#34;o&#34;&gt;[=&lt;/span&gt;&amp;lt;选项&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  加载 Java 编程语言代理, 请参阅 java.lang.instrument
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -splash:&amp;lt;imagepath&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  使用指定的图像显示启动屏幕
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;有关详细信息, 请参阅 http://www.oracle.com/technetwork/java/javase/documentation/index.html。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Server 模式和 Client 模式&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Hotspot JVM 有两种模式，分别是 server 和 client，分别通过-server 和-client 模式设置&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;32 位系统上，默认使用 Client 类型的 JVM。要想使用 Server 模式，机器配置至少有 2 个以上的 CPU 和 2G 以上的物理内存。client 模式适用于对内存要求较小的桌面应用程序，默认使用 Serial 串行垃圾收集器&lt;/li&gt;
-&lt;li&gt;64 位系统上，只支持 server 模式的 JVM，适用于需要大内存的应用程序，默认使用并行垃圾收集器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如何知道系统默认使用的是那种模式呢？&lt;/p&gt;
-&lt;p&gt;通过 java -version 命令：可以看到 Server VM 字样，代表当前系统使用是 Server 模式&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; java -version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java version &lt;span class=&#34;s2&#34;&gt;&amp;#34;1.8.0_201&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Java&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;TM&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; SE Runtime Environment &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;build 1.8.0_201-b09&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Java HotSpot&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;TM&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 64-Bit Server VM &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;build 25.201-b09, mixed mode&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;412-类型二-x-参数选项&#34;&gt;
-    &lt;a href=&#34;#412-%e7%b1%bb%e5%9e%8b%e4%ba%8c-x-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.1.2. 类型二：-X 参数选项
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;非标准化参数&lt;/li&gt;
-&lt;li&gt;功能还是比较稳定的。但官方说后续版本可能会变更&lt;/li&gt;
-&lt;li&gt;直接在DOS窗口中运行java -X命令可以看到所有的X选项&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-19&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-19&#34;&gt;19&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-20&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-20&#34;&gt;20&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-21&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-21&#34;&gt;21&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-22&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-22&#34;&gt;22&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-23&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-23&#34;&gt;23&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-24&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-24&#34;&gt;24&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-25&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-25&#34;&gt;25&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-26&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-26&#34;&gt;26&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-27&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-27&#34;&gt;27&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-28&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-28&#34;&gt;28&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-29&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-29&#34;&gt;29&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-30&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-30&#34;&gt;30&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-31&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-31&#34;&gt;31&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-32&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-32&#34;&gt;32&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-33&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-33&#34;&gt;33&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-34&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-34&#34;&gt;34&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-35&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-35&#34;&gt;35&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-36&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-36&#34;&gt;36&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-37&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-37&#34;&gt;37&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-38&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-38&#34;&gt;38&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-39&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-39&#34;&gt;39&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-40&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-40&#34;&gt;40&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-41&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-41&#34;&gt;41&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-42&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-42&#34;&gt;42&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; java -X
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xmixed           混合模式执行 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;默认&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xint             仅解释模式执行
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xbootclasspath:&amp;lt;用 &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 分隔的目录和 zip/jar 文件&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      设置搜索路径以引导类和资源
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xbootclasspath/a:&amp;lt;用 &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 分隔的目录和 zip/jar 文件&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      附加在引导类路径末尾
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xbootclasspath/p:&amp;lt;用 &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 分隔的目录和 zip/jar 文件&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      置于引导类路径之前
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xdiag            显示附加诊断消息
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xnoclassgc       禁用类垃圾收集
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xincgc           启用增量垃圾收集
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xloggc:&amp;lt;file&amp;gt;    将 GC 状态记录在文件中 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;带时间戳&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xbatch           禁用后台编译
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xms&amp;lt;size&amp;gt;        设置初始 Java 堆大小
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xmx&amp;lt;size&amp;gt;        设置最大 Java 堆大小
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xss&amp;lt;size&amp;gt;        设置 Java 线程堆栈大小
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xprof            输出 cpu 配置文件数据
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xfuture          启用最严格的检查, 预期将来的默认值
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xrs              减少 Java/VM 对操作系统信号的使用 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;请参阅文档&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xcheck:jni       对 JNI 函数执行其他检查
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xshare:off       不尝试使用共享类数据
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xshare:auto      在可能的情况下使用共享类数据 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;默认&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xshare:on        要求使用共享类数据, 否则将失败。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -XshowSettings    显示所有设置并继续
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -XshowSettings:all
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      显示所有设置并继续
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -XshowSettings:vm 显示所有与 vm 相关的设置并继续
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -XshowSettings:properties
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      显示所有属性设置并继续
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -XshowSettings:locale
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      显示所有与区域设置相关的设置并继续
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-X 选项是非标准选项, 如有更改, 恕不另行通知。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;以下选项为 Mac OS X 特定的选项:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -XstartOnFirstThread
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      在第一个 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;AppKit&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 线程上运行 main&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; 方法
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -Xdock:name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;应用程序名称&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;                      覆盖停靠栏中显示的默认应用程序名称
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    -Xdock:icon=&amp;lt;图标文件的路径&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;                      覆盖停靠栏中显示的默认图标
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;如何知道 JVM 默认使用的是混合模式呢？&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;-Xint              只使用解释器：所有字节码都被解释执行，这个模式的速度是很慢的&lt;/li&gt;
-&lt;li&gt;-Xcomp        只使用编译器：所有字节码第一次使用就被编译成本地代码，然后在执行&lt;/li&gt;
-&lt;li&gt;-Xmixed      混合模式：这是默认模式，刚开始的时候使用解释器慢慢解释执行，后来让JIT即时编译器根据程序运行的情况，有选择地将某些热点代码提前编译并缓存在本地，在执行的时候效率就非常高了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;同样地，通过 java -version 命令：可以看到 mixed mode 字样，代表当前系统使用的是混合模式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;-Xms&lt;size&gt;        设置初始 Java 堆大小    等价于  -XX:InitialHeapSize&lt;/li&gt;
-&lt;li&gt;-Xmx&lt;size&gt;        设置最大 Java 堆大小    等价于  -XX:MaxHeapSize&lt;/li&gt;
-&lt;li&gt;-Xss&lt;size&gt;        设置 Java 线程堆栈大小    等价于  -XX:ThradeStackSize&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;413-类型三-xx-参数选项&#34;&gt;
-    &lt;a href=&#34;#413-%e7%b1%bb%e5%9e%8b%e4%b8%89-xx-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.1.3. 类型三：-XX 参数选项
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;非标准化参数&lt;/li&gt;
-&lt;li&gt;使用的最多的参数类型&lt;/li&gt;
-&lt;li&gt;这类选项属于实验性，不稳定&lt;/li&gt;
-&lt;li&gt;用于开发和调试JVM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Boolean 类型格式&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+&amp;lt;option&amp;gt;  启用option属性
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:-&amp;lt;option&amp;gt;  禁用option属性
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394664-0fa9b79f3d04ac.png&#34; alt=&#34;image-20220501164424376&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;p&gt;&lt;strong&gt;非 Boolean 类型格式&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:&amp;lt;option&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;number&amp;gt;  设置option数值，可以带单位如k/K/m/M/g/G
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:&amp;lt;option&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;string&amp;gt;  设置option字符值
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394764-23e83186a25c7d.png&#34; alt=&#34;image-20220501164604011&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394821-6a211baee893f6.png&#34; alt=&#34;image-20220501164701764&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;p&gt;&lt;strong&gt;特别的&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;-XX:+PrintFlagsFinal
-&lt;ul&gt;
-&lt;li&gt;输出所有参数的名称和默认值&lt;/li&gt;
-&lt;li&gt;默认不包括Diagnostic和Experimental的参数&lt;/li&gt;
-&lt;li&gt;可以配合-XX:+UnlockDiagnosticVMOptions和-XX:UnlockExperimentalVMOptions使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;42-查看参数&#34;&gt;
-    &lt;a href=&#34;#42-%e6%9f%a5%e7%9c%8b%e5%8f%82%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.2 查看参数
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;java -XX:+PrintFlagsInitial 查看所有 JVM 参数启动的初始值&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-5&#34;&gt;5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-6&#34;&gt;6&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Global flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     intx &lt;span class=&#34;nv&#34;&gt;ActiveProcessorCount&lt;/span&gt;                      &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; -1                                  &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    uintx &lt;span class=&#34;nv&#34;&gt;AdaptiveSizeDecrementScaleFactor&lt;/span&gt;          &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt;                                   &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    uintx &lt;span class=&#34;nv&#34;&gt;AdaptiveSizeMajorGCDecayTimeScale&lt;/span&gt;         &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;                                  &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    uintx &lt;span class=&#34;nv&#34;&gt;AdaptiveSizePausePolicy&lt;/span&gt;                   &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;                                   &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;java -XX:+PrintFlagsFinal 查看所有 JVM 参数的最终值&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-5&#34;&gt;5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-6&#34;&gt;6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-7&#34;&gt;7&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Global flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     intx &lt;span class=&#34;nv&#34;&gt;ActiveProcessorCount&lt;/span&gt;                      &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; -1                                  &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     intx CICompilerCount                          :&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt;                                   &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    uintx InitialHeapSize                          :&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;333447168&lt;/span&gt;                           &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    uintx MaxHeapSize                              :&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1029701632&lt;/span&gt;                          &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    uintx MaxNewSize                               :&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1774714880&lt;/span&gt;                          &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;product&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;java -XX:+PrintCommandLineFlags 查看哪些已经被用户或者 JVM 设置过的详细的 XX 参数的名称和值&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:InitialHeapSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;332790016&lt;/span&gt; -XX:MaxHeapSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;5324640256&lt;/span&gt; -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;43-添加-jvm-参数选项&#34;&gt;
-    &lt;a href=&#34;#43-%e6%b7%bb%e5%8a%a0-jvm-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.3 添加 JVM 参数选项
-&lt;/h2&gt;&lt;p&gt;eclipse 和 idea 中配置不必多说，在 Run Configurations 中 VM Options 中配置即可，大同小异&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;运行 jar 包&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -Xms100m -Xmx100m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -jar demo.jar
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Tomcat 运行 war 包&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# linux下catalina.sh添加&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;JAVA_OPTS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-Xms512M -Xmx1024M&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# windows下catalina.bat添加&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JAVA_OPTS=-Xms512M -Xmx1024M&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;程序运行中&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 设置Boolean类型参数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jinfo -flag &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;+&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;-&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&amp;lt;name&amp;gt; &amp;lt;pid&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 设置非Boolean类型参数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jinfo -flag &amp;lt;name&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;value&amp;gt; &amp;lt;pid&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;44-常用的-jvm-参数选项&#34;&gt;
-    &lt;a href=&#34;#44-%e5%b8%b8%e7%94%a8%e7%9a%84-jvm-%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4. 常用的 JVM 参数选项
-&lt;/h2&gt;&lt;h3 id=&#34;441-打印设置的-xx-选项及值&#34;&gt;
-    &lt;a href=&#34;#441-%e6%89%93%e5%8d%b0%e8%ae%be%e7%bd%ae%e7%9a%84-xx-%e9%80%89%e9%a1%b9%e5%8f%8a%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4.1. 打印设置的 XX 选项及值
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintCommandLineFlags &lt;span class=&#34;c1&#34;&gt;#程序运行时JVM默认设置或用户手动设置的XX选项&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintFlagsInitial &lt;span class=&#34;c1&#34;&gt;#打印所有XX选项的默认值&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintFlagsFinal &lt;span class=&#34;c1&#34;&gt;#打印所有XX选项的实际值&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintVMOptions &lt;span class=&#34;c1&#34;&gt;#打印JVM的参数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;442-堆栈方法区等内存大小设置&#34;&gt;
-    &lt;a href=&#34;#442-%e5%a0%86%e6%a0%88%e6%96%b9%e6%b3%95%e5%8c%ba%e7%ad%89%e5%86%85%e5%ad%98%e5%a4%a7%e5%b0%8f%e8%ae%be%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4.2. 堆、栈、方法区等内存大小设置
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-19&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-19&#34;&gt;19&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-20&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-20&#34;&gt;20&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-21&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-21&#34;&gt;21&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-22&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-22&#34;&gt;22&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-23&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-23&#34;&gt;23&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-24&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-24&#34;&gt;24&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-25&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-25&#34;&gt;25&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-26&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-26&#34;&gt;26&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-27&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-27&#34;&gt;27&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-28&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-28&#34;&gt;28&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-29&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-29&#34;&gt;29&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-30&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-30&#34;&gt;30&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-31&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-31&#34;&gt;31&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-32&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-32&#34;&gt;32&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 栈&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Xss128k &amp;lt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&amp;gt; -XX:ThreadStackSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;128k &lt;span class=&#34;c1&#34;&gt;#设置线程栈的大小为128K&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 堆&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Xms2048m &amp;lt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&amp;gt; -XX:InitialHeapSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2048m &lt;span class=&#34;c1&#34;&gt;#设置JVM初始堆内存为2048M&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Xmx2048m &amp;lt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&amp;gt; -XX:MaxHeapSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2048m &lt;span class=&#34;c1&#34;&gt;#设置JVM最大堆内存为2048M&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Xmn2g &amp;lt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&amp;gt; -XX:NewSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2g -XX:MaxNewSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2g &lt;span class=&#34;c1&#34;&gt;#设置年轻代大小为2G，官方推荐配置为整个堆大小的3/8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:NewSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1024m   &lt;span class=&#34;c1&#34;&gt;#设置年轻代初始值为1024M&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxNewSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1024m     &lt;span class=&#34;c1&#34;&gt;#设置年轻代最大值为1024M&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:SurvivorRatio&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;8&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#设置Eden区与Survivor区的比值，默认为8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:NewRatio&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#设置老年代与年轻代(包括1个Eden区和2个Survivor区)的比例，默认为2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseAdaptiveSizePolicy &lt;span class=&#34;c1&#34;&gt;#设置新生代中各区大小比例自适应，默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#默认情况下UseAdaptiveSizePolicy开启，导致SurvivorRatio=8失效；如果要让SurvivorRatio生效，则需要关闭UseAdaptiveSizePolicy并且显式的给SurvivorRatio赋值才行：-XX:-UseAdaptiveSizePolicy -XX:SurvivorRatio=8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:PretenureSizeThreadshold&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1024&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#设置让大于此阈值的对象直接分配在老年代，单位为字节，只对Serial、ParNew收集器有效&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxTenuringThreshold&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#设置新生代晋升老年代的年龄限制，默认为15&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintTenuringDistribution   &lt;span class=&#34;c1&#34;&gt;#让JVM在每次MinorGC后打印出当前使用的Survivor中对象的年龄分布&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:TargetSurvivorRatio &lt;span class=&#34;c1&#34;&gt;#设置MinorGC结束后Survivor区中占用空间的期望比例&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 方法区&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:PermSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;256m   &lt;span class=&#34;c1&#34;&gt;#设置永久代初始值为256M&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxPermSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;256m  &lt;span class=&#34;c1&#34;&gt;#设置永久代最大值为256M&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MetaspaceSize   &lt;span class=&#34;c1&#34;&gt;#设置元空间初始值&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxMetaspaceSize   &lt;span class=&#34;c1&#34;&gt;#设置元空间最大值，默认没有限制&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseCompressedOops &lt;span class=&#34;c1&#34;&gt;#普通对象指针压缩，默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseCompressedClassPointers &lt;span class=&#34;c1&#34;&gt;#类指针压缩，默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#开启UseCompressedOops会默认开启UseCompressedClassPointers&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:CompressedClassSpaceSize &lt;span class=&#34;c1&#34;&gt;#设置Klass Metaspace的大小，默认1G&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 直接内存&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxDirectMemorySize &lt;span class=&#34;c1&#34;&gt;#指定DirectMemory容量，默认等于Java堆最大值&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;443-outofmemory-相关的选项&#34;&gt;
-    &lt;a href=&#34;#443-outofmemory-%e7%9b%b8%e5%85%b3%e7%9a%84%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4.3. OutOfMemory 相关的选项
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-5&#34;&gt;5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-6&#34;&gt;6&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+HeapDumpOnOutMemoryError &lt;span class=&#34;c1&#34;&gt;#内存出现OOM时生成Heap转储文件，以便后续分析&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+HeapDumpBeforeFullGC &lt;span class=&#34;c1&#34;&gt;#出现FullGC时生成Heap转储文件，以便后续分析&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#-XX:+HeapDumpBeforeFullGC和-XX:+HeapDumpOnOutMemoryError只能设置1个，请注意FullGC可能出现多次，那么dump文件也会生成多个&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:HeapDumpPath&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;path&amp;gt; &lt;span class=&#34;c1&#34;&gt;#指定heap转储文件的存储路径，默认当前目录&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:OnOutOfMemoryError&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;path&amp;gt; &lt;span class=&#34;c1&#34;&gt;#指定可行性程序或脚本的路径，当发生OOM时执行脚本&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;444-垃圾收集器相关选项&#34;&gt;
-    &lt;a href=&#34;#444-%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e7%9b%b8%e5%85%b3%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4.4. 垃圾收集器相关选项
-&lt;/h3&gt;&lt;p&gt;首先需了解垃圾收集器之间的搭配使用关系&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;红色虚线表示在 jdk8 时被 Deprecate，jdk9 时被删除&lt;/li&gt;
-&lt;li&gt;绿色虚线表示在 jdk14 时被 Deprecate&lt;/li&gt;
-&lt;li&gt;绿色虚框表示在 jdk9 时被 Deprecate，jdk14 时被删除&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-    &lt;img src=&#34;https://logan.1357810.xyz/img/20220422/153249743-68ff5c8f83.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
-            
-         loading=&#34;lazy&#34;
-         decoding=&#34;async&#34;
-            
-              alt=&#34;image-20210506182458663&#34;
-            
-            
-              class=&#34;gallery-image link-image&#34;
-              data-flex-grow=&#34;20&#34;
-              data-flex-basis=&#34;20px&#34;
-            
-    &gt;
-&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-5&#34;&gt;5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-6&#34;&gt;6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-7&#34;&gt;7&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Serial回收器(Serial使用复制算法，SerialOld使用标记整理算法)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseSerialGC  &lt;span class=&#34;c1&#34;&gt;#年轻代使用Serial GC， 老年代使用SerialOldGC&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ParNew回收器(使用复制算法)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseParNewGC  &lt;span class=&#34;c1&#34;&gt;#年轻代使用ParNew GC 老年代默认为SerialOldGC，可以改为CMS&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ParallelGCThreads  &lt;span class=&#34;c1&#34;&gt;#设置年轻代并行收集器的线程数。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#一般地，最好与CPU数量相等，以避免过多的线程数影响垃圾收集性能。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;$$
-ParallelGCThreads =
-\begin{cases}
-CPU_Count &amp;amp; \text (CPU_Count &amp;lt;= 8) \
-3 + (5 * CPU＿Count / 8) &amp;amp; \text (CPU_Count &amp;gt; 8)
-\end{cases}
-$$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-19&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-19&#34;&gt;19&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-20&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-20&#34;&gt;20&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Parallel回收器（JDK8默认使用的回收器，Parallel使用复制算法，ParallelOld使用标记整理算法）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseParallelGC  &lt;span class=&#34;c1&#34;&gt;#年轻代使用 Parallel Scavenge GC，互相激活&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseParallelOldGC  &lt;span class=&#34;c1&#34;&gt;#老年代使用 Parallel Old GC，互相激活&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ParallelGCThreads  &lt;span class=&#34;c1&#34;&gt;#设置年轻代并行回收器的线程数，默认情况下：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#CPU核心数小于8时，线程数==cpu核心数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#CPU核心数大于8时，线程数==3+(5*CPU核心数)/8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:GCTimeRatio  &lt;span class=&#34;c1&#34;&gt;#垃圾收集时间占总时间的比例（1 / (N＋1)），用于衡量吞吐量的大小&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#取值范围（0,100），默认值99，也就是垃圾回收时间不超过1％。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#与MaxGCPauseMillis参数有一定矛盾性。暂停时间越长，Radio参数就容易超过设定的比例。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#GCTimeRatio越大，吞吐量越大&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxGCPauseMillis  &lt;span class=&#34;c1&#34;&gt;#设置垃圾收集器最大停顿时间（即STW的时间），单位是毫秒。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#为了尽可能地把停顿时间控制在MaxGCPauseMills以内，收集器在工作时会调整Java堆大小或者其他一些参数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#对于用户来讲，停顿时间越短体验越好；但是服务器端注重高并发，整体的吞吐量。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#所以服务器端适合Parallel，进行控制。该参数使用需谨慎。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseAdaptiveSizePolicy  &lt;span class=&#34;c1&#34;&gt;#设置Parallel Scavenge收集器具有自适应调节策略。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#在这种模式下，年轻代的大小、Eden和Survivor的比例、晋升老年代的对象年龄等参数会被自动调整，以达到在堆大小、吞吐量和停顿时间之间的平衡点。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#在手动调优比较困难的场合，可以直接使用这种自适应的方式，仅指定虚拟机的最大堆、目标的吞吐量（GCTimeRatio）和停顿时间（MaxGCPauseMills），让虚拟机自己完成调优工作。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-19&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-19&#34;&gt;19&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-20&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-20&#34;&gt;20&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-21&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-21&#34;&gt;21&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-22&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-22&#34;&gt;22&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-23&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-23&#34;&gt;23&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-24&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-24&#34;&gt;24&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-25&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-25&#34;&gt;25&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-26&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-26&#34;&gt;26&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-27&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-27&#34;&gt;27&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-28&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-28&#34;&gt;28&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-29&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-29&#34;&gt;29&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-30&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-30&#34;&gt;30&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-31&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-31&#34;&gt;31&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-32&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-32&#34;&gt;32&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-33&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-33&#34;&gt;33&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-34&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-34&#34;&gt;34&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-35&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-35&#34;&gt;35&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-36&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-36&#34;&gt;36&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-37&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-37&#34;&gt;37&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-38&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-38&#34;&gt;38&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-39&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-39&#34;&gt;39&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# CMS回收器(使用标记清除算法，ParNew+CMS)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# JDK9中CMS被标记为Deprecate，JDK14中删除&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseConcMarkSweepGC  &lt;span class=&#34;c1&#34;&gt;#老年代使用CMS GC。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#开启该参数后会自动将-XX：＋UseParNewGC打开。即：ParNew（Young区）+ CMS（Old区）+ Serial Old的组合&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:CMSInitiatingOccupanyFraction  &lt;span class=&#34;c1&#34;&gt;#设置堆内存使用率的阈值，一旦达到该阈值，便开始进行回收。JDK5及以前版本的默认值为68，DK6及以上版本默认值为92％。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#如果内存增长缓慢，则可以设置一个稍大的值，大的阈值可以有效降低CMS的触发频率，减少老年代回收的次数可以较为明显地改善应用程序性能。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#反之，如果应用程序内存使用率增长很快，则应该降低这个阈值，以避免频繁触发老年代串行收集器。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#因此通过该选项便可以有效降低Fu1l GC的执行次数。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseCMSInitiatingOccupancyOnly  &lt;span class=&#34;c1&#34;&gt;#是否动态可调，使CMS一直按CMSInitiatingOccupancyFraction设定的值启动；如果不指定，jvm仅在第一次使用设定值，后续会自动调整阈值，不要用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseCMSCompactAtFullCollection  &lt;span class=&#34;c1&#34;&gt;#用于指定在执行完Full GC后对内存空间进行压缩整理&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#以此避免内存碎片的产生。不过由于内存压缩整理过程无法并发执行，所带来的问题就是停顿时间变得更长了。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:CMSFullGCsBeforeCompaction  &lt;span class=&#34;c1&#34;&gt;#设置在执行多少次Full GC后对内存空间进行压缩整理。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ParallelCMSThreads  &lt;span class=&#34;c1&#34;&gt;#设置CMS的线程数量。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#CMS 默认启动的线程数是(ParallelGCThreads＋3)/4，ParallelGCThreads 是年轻代并行收集器的线程数。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#当CPU 资源比较紧张时，受到CMS收集器线程的影响，应用程序的性能在垃圾回收阶段可能会非常糟糕。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;####补充参数：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ConcGCThreads  &lt;span class=&#34;c1&#34;&gt;#设置并发垃圾收集的线程数，默认该值是基于ParallelGCThreads计算出来的&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+CMSScavengeBeforeRemark  &lt;span class=&#34;c1&#34;&gt;#强制hotspot在cms remark阶段之前做一次minor gc，用于提高remark阶段的速度&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+CMSClassUnloadingEnable  &lt;span class=&#34;c1&#34;&gt;#如果有的话，启用回收Perm 区（JDK8之前）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+CMSParallelInitialEnabled  &lt;span class=&#34;c1&#34;&gt;#用于开启CMS initial-mark阶段采用多线程的方式进行标记&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#用于提高标记速度，在Java8开始已经默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+CMSParallelRemarkEnabled  &lt;span class=&#34;c1&#34;&gt;#用户开启CMS remark阶段采用多线程的方式进行重新标记，默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+ExplicitGCInvokesConcurrent
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;#这两个参数用户指定hotspot虚拟在执行System.gc()时使用CMS周期&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+CMSPrecleaningEnabled  &lt;span class=&#34;c1&#34;&gt;#指定CMS是否需要进行Pre cleaning阶段&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# G1回收器（使用分区复制算法，可以回收新生代和老年代）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseG1GC &lt;span class=&#34;c1&#34;&gt;#手动指定使用G1收集器执行内存回收任务。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:G1HeapRegionSize &lt;span class=&#34;c1&#34;&gt;#设置每个Region的大小。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#值是2的幂，范围是1MB到32MB之间，目标是根据最小的Java堆大小划分出约2048个区域。默认是堆内存的1/2000。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:MaxGCPauseMillis  &lt;span class=&#34;c1&#34;&gt;#设置期望达到的最大GC停顿时间指标（JVM会尽力实现，但不保证达到）。默认值是200ms&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ParallelGCThread  &lt;span class=&#34;c1&#34;&gt;#设置STW时GC线程数的值。最多设置为8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ConcGCThreads  &lt;span class=&#34;c1&#34;&gt;#设置并发标记的线程数。将n设置为并行垃圾回收线程数（ParallelGCThreads）的1/4左右。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:InitiatingHeapOccupancyPercent &lt;span class=&#34;c1&#34;&gt;#设置触发并发GC周期的Java堆占用率阈值。超过此值，就触发GC。默认值是45。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#G1不要用 -Xmn和NewRatio设置新生代空间大小或比例，会影响默认设置的暂停时间&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:G1NewSizePercent  &lt;span class=&#34;c1&#34;&gt;#新生代占用整个堆内存的最小百分比（默认5％）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:G1MaxNewSizePercent  &lt;span class=&#34;c1&#34;&gt;#新生代占用整个堆内存的最大百分比（默认60％）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:G1ReservePercent&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;#默认10%。也就是老年代会预留10%的空间来给新生代的对象晋升，如果经常发生新生代晋升失败而导致Full GC，那么可以适当调高此阈值。但是调高此值同时也意味着降低了老年代的实际可用空间。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;怎么选择垃圾回收器？&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;优先让 JVM 自适应，调整堆的大小&lt;/li&gt;
-&lt;li&gt;串行收集器：内存小于 100M；单核、单机程序，并且没有停顿时间的要求&lt;/li&gt;
-&lt;li&gt;并行收集器：多 CPU、高吞吐量、允许停顿时间超过 1 秒&lt;/li&gt;
-&lt;li&gt;并发收集器：多 CPU、追求低停顿时间、快速响应（比如延迟不能超过 1 秒，如互联网应用）&lt;/li&gt;
-&lt;li&gt;官方推荐 G1，性能高。现在互联网的项目，基本都是使用 G1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;特别说明：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;没有最好的收集器，更没有万能的收集器&lt;/li&gt;
-&lt;li&gt;调优永远是针对特定场景、特定需求，不存在一劳永逸的收集器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;445-gc-日志相关选项&#34;&gt;
-    &lt;a href=&#34;#445-gc-%e6%97%a5%e5%bf%97%e7%9b%b8%e5%85%b3%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4.5. GC 日志相关选项
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintGC &amp;lt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&amp;gt; -verbose:gc  &lt;span class=&#34;c1&#34;&gt;#打印简要日志信息，可以独立使用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintGCDetails     &lt;span class=&#34;c1&#34;&gt;#在发生垃圾回收时打印内存回收详细的日志，并在进程退出时输出当前内存各区域的分配情况，可以独立使用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintGCTimeStamps  &lt;span class=&#34;c1&#34;&gt;#打印程序启动到GC发生的秒数，不可以可以独立使用，搭配-XX:+PrintGCDetails使用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintGCDateStamps  &lt;span class=&#34;c1&#34;&gt;#打印GC发生时的时间戳(以日期的形式，例如：2013-05-04T21:53:59.234+0800)，不可以独立使用，搭配-XX:+PrintGCDetails使用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintHeapAtGC  &lt;span class=&#34;c1&#34;&gt;#每一次GC前和GC后，都打印堆信息，可以独立使用，如下图&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Xloggc:&amp;lt;file&amp;gt; &lt;span class=&#34;c1&#34;&gt;#把GC日志写入到一个文件中去，而不是打印到标准输出中&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
-
-
-    &lt;img src=&#34;https://logan.1357810.xyz/img/20220422/153249743-10b34c0afa.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
-            
-         loading=&#34;lazy&#34;
-         decoding=&#34;async&#34;
-            
-              alt=&#34;image-20210506195156935&#34;
-            
-            
-              class=&#34;gallery-image link-image&#34;
-              data-flex-grow=&#34;20&#34;
-              data-flex-basis=&#34;20px&#34;
-            
-    &gt;
-&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-2&#34;&gt;2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-3&#34;&gt;3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-4&#34;&gt;4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-5&#34;&gt;5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-6&#34;&gt;6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-7&#34;&gt;7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-8&#34;&gt;8&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+TraceClassLoading  &lt;span class=&#34;c1&#34;&gt;#监控 ，类的加载&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintGCApplicationStoppedTime  &lt;span class=&#34;c1&#34;&gt;#打印GC时线程的停顿时间&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintGCApplicationConcurrentTime  &lt;span class=&#34;c1&#34;&gt;#打印垃圾收集之前应用未中断的执行时间&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintReferenceGC &lt;span class=&#34;c1&#34;&gt;#打印回收了多少种不同引用类型的引用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintTenuringDistribution  &lt;span class=&#34;c1&#34;&gt;#打印JVM在每次MinorGC后当前使用的Survivor中对象的年龄分布&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseGCLogFileRotation &lt;span class=&#34;c1&#34;&gt;#启用GC日志文件的自动转储&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:NumberOfGCLogFiles&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;#设置GC日志文件的循环数目&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:GCLogFileSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1M  &lt;span class=&#34;c1&#34;&gt;#设置GC日志文件的大小&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;446-其他参数&#34;&gt;
-    &lt;a href=&#34;#446-%e5%85%b6%e4%bb%96%e5%8f%82%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.4.6. 其他参数
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+DisableExplicitGC  &lt;span class=&#34;c1&#34;&gt;#禁用hotspot执行System.gc()，默认关闭&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#指定代码缓存的大小&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:ReservedCodeCacheSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;n&amp;gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;g&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;m&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;k&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:InitialCodeCacheSize&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;n&amp;gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;g&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;m&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;k&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseCodeCacheFlushing  &lt;span class=&#34;c1&#34;&gt;#放弃一些被编译的代码，避免代码缓存被占满时JVM切换到interpreted-only的情况，默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+DoEscapeAnalysis  &lt;span class=&#34;c1&#34;&gt;#开启逃逸分析,64位jvm默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseBiasedLocking  &lt;span class=&#34;c1&#34;&gt;#开启偏向锁,64位jvm默认开启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+UseLargePages  &lt;span class=&#34;c1&#34;&gt;#开启使用大页面&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:+PrintTLAB  &lt;span class=&#34;c1&#34;&gt;#打印TLAB的使用情况&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:TLABSize  &lt;span class=&#34;c1&#34;&gt;#设置TLAB大小&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;45-通过-java-代码获取-jvm-参数&#34;&gt;
-    &lt;a href=&#34;#45-%e9%80%9a%e8%bf%87-java-%e4%bb%a3%e7%a0%81%e8%8e%b7%e5%8f%96-jvm-%e5%8f%82%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4.5. 通过 Java 代码获取 JVM 参数
-&lt;/h2&gt;&lt;p&gt;Java 提供了 java.lang.management 包用于监视和管理 Java 虚拟机和 Java 运行时中的其他组件，它允许本地或远程监控和管理运行的 Java 虚拟机。其中 ManagementFactory 类较为常用，另外 Runtime 类可获取内存、CPU 核数等相关的数据。通过使用这些 api，可以监控应用服务器的堆内存使用情况，设置一些阈值进行报警等处理。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-1&#34;&gt; 1&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-2&#34;&gt; 2&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-3&#34;&gt; 3&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-4&#34;&gt; 4&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-5&#34;&gt; 5&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-6&#34;&gt; 6&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-7&#34;&gt; 7&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-8&#34;&gt; 8&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-9&#34;&gt; 9&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-10&#34;&gt;10&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-11&#34;&gt;11&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-12&#34;&gt;12&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-13&#34;&gt;13&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-14&#34;&gt;14&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-15&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-15&#34;&gt;15&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-16&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-16&#34;&gt;16&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-17&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-17&#34;&gt;17&lt;/a&gt;
-&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-18&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-18&#34;&gt;18&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;MemoryMonitor&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MemoryMXBean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;memorymbean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ManagementFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getMemoryMXBean&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MemoryUsage&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;usage&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;memorymbean&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getHeapMemoryUsage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;INIT HEAP: &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;usage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getInit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;MAX HEAP: &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;usage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getMax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;USE HEAP: &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;usage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getUsed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;\nFull Information:&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Heap Memory Usage: &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;memorymbean&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getHeapMemoryUsage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Non-Heap Memory Usage: &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;memorymbean&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getNonHeapMemoryUsage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;=======================通过java来获取相关系统状态============================ &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;当前堆内存大小totalMemory &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Runtime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getRuntime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;totalMemory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 当前堆内存大小&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;空闲堆内存大小freeMemory &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Runtime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getRuntime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;freeMemory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 空闲堆内存大小&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;最大可用总堆内存maxMemory &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Runtime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getRuntime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;maxMemory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 最大可用总堆内存大小&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>05-分析GC日志</title>
-        <link>https://logan.wssw.fun/p/2023/05/95611835/</link>
-        <pubDate>Wed, 03 May 2023 03:17:33 +0800</pubDate>
-        
-        <guid>https://logan.wssw.fun/p/2023/05/95611835/</guid>
-        <description>&lt;h1 id=&#34;5-分析-gc-日志&#34;&gt;
-    &lt;a href=&#34;#5-%e5%88%86%e6%9e%90-gc-%e6%97%a5%e5%bf%97&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5. 分析 GC 日志
-&lt;/h1&gt;&lt;h2 id=&#34;51-gc-分类&#34;&gt;
-    &lt;a href=&#34;#51-gc-%e5%88%86%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5.1. GC 分类
-&lt;/h2&gt;&lt;p&gt;针对 HotSpot VM 的实现，它里面的 GC 按照回收区域又分为两大种类型：一种是部分收集（Partial GC），一种是整堆收集（Full GC）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;部分收集（Partial GC）：不是完整收集整个 Java 堆的垃圾收集。其中又分为：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;新生代收集（Minor GC / Young GC）：只是新生代（Eden / S0, S1）的垃圾收集&lt;/li&gt;
-&lt;li&gt;老年代收集（Major GC / Old GC）：只是老年代的垃圾收集。目前，只有 CMS GC 会有单独收集老年代的行为。&lt;mark&gt;注意，很多时候 Major GC 会和 Full GC 混淆使用，需要具体分辨是老年代回收还是整堆回收。&lt;/mark&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;混合收集（Mixed GC）：收集整个新生代以及部分老年代的垃圾收集。目前，只有 G1 GC 会有这种行为&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;整堆收集（Full GC）：收集整个 java 堆和方法区的垃圾收集。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;发生FULL GC的情况：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651414462-a67ec07476d864.png&#34; alt=&#34;image-20220501221422080&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;h2 id=&#34;52-gc-日志分类&#34;&gt;
-    &lt;a href=&#34;#52-gc-%e6%97%a5%e5%bf%97%e5%88%86%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5.2. GC 日志分类
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;MinorGC&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;MinorGC（或 young GC 或 YGC）日志：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GC&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Allocation&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Failure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PSYoungGen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;31744K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;2192K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;36864K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;31744K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;2200K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;121856K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;0139308&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;secs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Times&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;05&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sys&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;real&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;01&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;secs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
-
-
-    &lt;img src=&#34;https://logan.1357810.xyz/img/20220422/153253019-4df8a830d2.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
-            
-         loading=&#34;lazy&#34;
-         decoding=&#34;async&#34;
-            
-              alt=&#34;image-20210506202126562&#34;
-            
-            
-              class=&#34;gallery-image link-image&#34;
-              data-flex-grow=&#34;20&#34;
-              data-flex-basis=&#34;20px&#34;
-            
-    &gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-    &lt;img src=&#34;https://logan.1357810.xyz/img/20220422/153253019-eeaffc8aad.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
-            
-         loading=&#34;lazy&#34;
-         decoding=&#34;async&#34;
-            
-              alt=&#34;image-20210506202156090&#34;
-            
-            
-              class=&#34;gallery-image link-image&#34;
-              data-flex-grow=&#34;20&#34;
-              data-flex-basis=&#34;20px&#34;
-            
-    &gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;FullGC&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Full&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;GC&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Metadata&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GC&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Threshold&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PSYoungGen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;5104K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;132096K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Par01dGen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;416K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;5453K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;50176K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;5520K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;5453K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;182272K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Metaspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;20637K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;20637K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1067008K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;0245883&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;secs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Times&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;06&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sys&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;real&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;02&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;secs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
-
-
-    &lt;img src=&#34;https://logan.1357810.xyz/img/20220422/153253019-6c2ccb574f.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
-            
-         loading=&#34;lazy&#34;
-         decoding=&#34;async&#34;
-            
-              alt=&#34;image-20210506202330868&#34;
-            
-            
-              class=&#34;gallery-image link-image&#34;
-              data-flex-grow=&#34;20&#34;
-              data-flex-basis=&#34;20px&#34;
-            
-    &gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-    &lt;img src=&#34;https://logan.1357810.xyz/img/20220422/153253019-83ca4ee702.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
-            
-         loading=&#34;lazy&#34;
-         decoding=&#34;async&#34;
-            
-              alt=&#34;image-20210506202349072&#34;
-            
-            
-              class=&#34;gallery-image link-image&#34;
-              data-flex-grow=&#34;20&#34;
-              data-flex-basis=&#34;20px&#34;
-            
-    &gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;53-gc-日志结构剖析&#34;&gt;
-    &lt;a href=&#34;#53-gc-%e6%97%a5%e5%bf%97%e7%bb%93%e6%9e%84%e5%89%96%e6%9e%90&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5.3. GC 日志结构剖析
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;透过日志看垃圾收集器&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Serial 收集器：新生代显示 &amp;ldquo;[DefNew&amp;rdquo;，即 Default New Generation&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ParNew 收集器：新生代显示 &amp;ldquo;[ParNew&amp;rdquo;，即 Parallel New Generation&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Parallel Scavenge 收集器：新生代显示&amp;quot;[PSYoungGen&amp;quot;，JDK1.7 使用的即 PSYoungGen&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Parallel Old 收集器：老年代显示&amp;quot;[ParoldGen&amp;quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;G1 收集器：显示”garbage-first heap“&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;透过日志看 GC 原因&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Allocation Failure：表明本次引起 GC 的原因是因为新生代中没有足够的区域存放需要分配的数据&lt;/li&gt;
-&lt;li&gt;Metadata GCThreshold：Metaspace 区不够用了&lt;/li&gt;
-&lt;li&gt;FErgonomics：JVM 自适应调整导致的 GC&lt;/li&gt;
-&lt;li&gt;System：调用了 System.gc()方法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;透过日志看 GC 前后情况&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;通过图示，我们可以发现 GC 日志格式的规律一般都是：GC 前内存占用-＞ GC 后内存占用（该区域内存总大小）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PSYoungGen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;5986K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;696K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;8704K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;5986K&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;704K&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;9216K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;中括号内：GC 回收前年轻代堆大小，回收后大小，（年轻代堆总大小）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;括号外：GC 回收前年轻代和老年代大小，回收后大小，（年轻代和老年代总大小）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;mark&gt;注意&lt;/mark&gt;：Minor GC 堆内存总容量 = 9/10 年轻代 + 老年代。原因是 Survivor 区只计算 from 部分，而 JVM 默认年轻代中 Eden 区和 Survivor 区的比例关系，Eden:S0:S1=8:1:1。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;透过日志看 GC 时间&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;GC 日志中有三个时间：user，sys 和 real&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;user：进程执行用户态代码（核心之外）所使用的时间。这是执行此进程所使用的实际 CPU 时间，其他进程和此进程阻塞的时间并不包括在内。在垃圾收集的情况下，表示 GC 线程执行所使用的 CPU 总时间。&lt;/li&gt;
-&lt;li&gt;sys：进程在内核态消耗的 CPU 时间，即在内核执行系统调用或等待系统事件所使用的 CPU 时间&lt;/li&gt;
-&lt;li&gt;real：程序从开始到结束所用的时钟时间。这个时间包括其他进程使用的时间片和进程阻塞的时间（比如等待 I/O 完成）。对于并行 gc，这个数字应该接近（用户时间＋系统时间）除以垃圾收集器使用的线程数。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;由于多核的原因，一般的 GC 事件中，real time 是小于 sys time ＋ user time 的，因为一般是多个线程并发的去做 GC，所以 real time 是要小于 sys ＋ user time 的。如果 real ＞ sys ＋ user 的话，则你的应用可能存在下列问题：IO 负载非常重或 CPU 不够用。&lt;/p&gt;
-&lt;h2 id=&#34;54-gc-日志分析工具&#34;&gt;
-    &lt;a href=&#34;#54-gc-%e6%97%a5%e5%bf%97%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5.4. GC 日志分析工具
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;GCEasy&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;GCEasy 是一款在线的 GC 日志分析器，可以通过 GC 日志分析进行内存泄露检测、GC 暂停原因分析、JVM 配置建议优化等功能，大多数功能是免费的。&lt;/p&gt;
-&lt;p&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://gceasy.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://gceasy.io/
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;GCViewer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;GCViewer 是一款离线的 GC 日志分析器，用于可视化 Java VM 选项 -verbose:gc 和 .NET 生成的数据 -Xloggc:&amp;lt;file&amp;gt;。还可以计算与垃圾回收相关的性能指标（吞吐量、累积的暂停、最长的暂停等）。当通过更改世代大小或设置初始堆大小来调整特定应用程序的垃圾回收时，此功能非常有用。&lt;/p&gt;
-&lt;p&gt;源码下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/chewiebug/GCViewer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/chewiebug/GCViewer
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;运行版本下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/chewiebug/GCViewer/wiki/Changelog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/chewiebug/GCViewer/wiki/Changelog
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;GChisto&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;官网上没有下载的地方，需要自己从 SVN 上拉下来编译&lt;/li&gt;
-&lt;li&gt;不过这个工具似乎没怎么维护了，存在不少 bug&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;HPjmeter&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;工具很强大，但是只能打开由以下参数生成的 GC log，-verbose:gc -Xloggc:gc.log。添加其他参数生成的 gc.log 无法打开&lt;/li&gt;
-&lt;li&gt;HPjmeter 集成了以前的 HPjtune 功能，可以分析在 HP 机器上产生的垃圾回收日志文件&lt;/li&gt;
-&lt;/ul&gt;
 </description>
         </item>
         
