@@ -1031,10 +1031,42 @@
 &lt;p&gt;举个例子，假设在编译生成的机器码中，某些对象的生命周期在两个安全点之间，那么:live 选项将无法探知到这些对象。&lt;/p&gt;
 &lt;p&gt;另外，如果某个线程长时间无法跑到安全点，jmap 将一直等下去。与前面讲的 jstat 则不同，垃圾回收器会主动将 jstat 所需要的摘要数据保存至固定位置之中，而 jstat 只需直接读取即可。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;使用一：导出内存映射文件&lt;/p&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651223902-f61ef38aed652f.png&#34; alt=&#34;image-20220429171822471&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651223981-0da50e1956a17f.png&#34; alt=&#34;image-20220429171941233&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;li&gt;使用一：导出内存映射文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651223902-f61ef38aed652f.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+
+
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651223981-0da50e1956a17f.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;注意：对于以上说明中的第1点是自动方式才会这样做，而手动不会在Full GC之后生成Dump使用手动方式生成dump文件，一般指令执行之后就会生成，不用等到快出现OOM的时候使用自动方式生成dump文件，当出现OOM之前先生成dump文件如果使用手动方式，一般使用第2种，毕竟生成堆中存活对象的dump文件是比较小的，我们通常关心的是GC没有回收的对象，便于传输和分析&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1055,14 +1087,29 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;自动方式：&lt;/p&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651224416-00d0d3a1e3505b.png&#34; alt=&#34;image-20220429172656270&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651224416-00d0d3a1e3505b.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* -XX:+HeapDumpOnOutOfMemoryError
+* -XX:HeapDumpPath=&amp;lt;filename.hprof&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;-XX:+HeapDumpOnOutOfMemoryError&lt;/li&gt;
-&lt;li&gt;-XX:HeapDumpPath=&amp;lt;filename.hprof&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;使用二：显示堆内存相关信息，和jstat -gc 类似&lt;/p&gt;
 &lt;ul&gt;
@@ -1100,7 +1147,23 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651224873-9553ea3ffec9b6.png&#34; alt=&#34;image-20220429173433142&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220429/1651224873-9553ea3ffec9b6.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;26-jhatjdk-自带堆分析工具&#34;&gt;
     &lt;a href=&#34;#26-jhatjdk-%e8%87%aa%e5%b8%a6%e5%a0%86%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     2.6. jhat：JDK 自带堆分析工具
@@ -3151,7 +3214,23 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:-&amp;lt;option&amp;gt;  禁用option属性
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394664-0fa9b79f3d04ac.png&#34; alt=&#34;image-20220501164424376&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;/div&gt;&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394664-0fa9b79f3d04ac.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;非 Boolean 类型格式&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3163,8 +3242,40 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-XX:&amp;lt;option&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;string&amp;gt;  设置option字符值
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394764-23e83186a25c7d.png&#34; alt=&#34;image-20220501164604011&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394821-6a211baee893f6.png&#34; alt=&#34;image-20220501164701764&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;/div&gt;&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394764-23e83186a25c7d.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+
+
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651394821-6a211baee893f6.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;特别的&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;-XX:+PrintFlagsFinal
@@ -3814,7 +3925,23 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;发生FULL GC的情况：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651414462-a67ec07476d864.png&#34; alt=&#34;image-20220501221422080&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651414462-a67ec07476d864.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;52-gc-日志分类&#34;&gt;
     &lt;a href=&#34;#52-gc-%e6%97%a5%e5%bf%97%e5%88%86%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     5.2. GC 日志分类
@@ -11831,7 +11958,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
             
-              alt=&#34;image-20220502210338634&#34;
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+
+
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220502/1651496923-87f270c8cabc5d.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
             
             
               class=&#34;gallery-image link-image&#34;
@@ -11839,9 +11981,8 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
               data-flex-basis=&#34;20px&#34;
             
     &gt;
-&lt;/p&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220502/1651496923-87f270c8cabc5d.png&#34; alt=&#34;image-20220502210843210&#34; style=&#34;zoom:50%;&#34; /&gt;
-&lt;p&gt;
+
+
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220502/1651496958-a352b8fd40e561.png&#34;
@@ -11851,19 +11992,17 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
             
-              alt=&#34;image-20220502210918310&#34;
-            
             
               class=&#34;gallery-image link-image&#34;
               data-flex-grow=&#34;20&#34;
               data-flex-basis=&#34;20px&#34;
             
     &gt;
-&lt;/p&gt;
-&lt;p&gt;
 
 
-    &lt;img src=&#34;https://img-blog.csdnimg.cn/img_convert/630bca9b1bbeeeb4f772fea5f94d43fc.png&#34;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715276713-c1d4038b.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -11879,7 +12018,8 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-    &lt;img src=&#34;https://img-blog.csdnimg.cn/img_convert/74bb5f23ad01f05a39f8eb171d205390.png&#34;
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715276708-2b1c46d8.png&#34;
          width=&#34;900&#34;
             height=&#34;600&#34;
             
@@ -11892,6 +12032,7 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
               data-flex-basis=&#34;20px&#34;
             
     &gt;
+
 
 
 
@@ -11901,8 +12042,6 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
-            
-              alt=&#34;img&#34;
             
             
               class=&#34;gallery-image link-image&#34;
@@ -11951,6 +12090,7 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
               data-flex-basis=&#34;20px&#34;
             
     &gt;
+
 
 
 
@@ -18424,8 +18564,24 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
               data-flex-basis=&#34;20px&#34;
             
     &gt;
+
+
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651407923-5e3ca4325c3ef1.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
 &lt;/p&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651407923-5e3ca4325c3ef1.png&#34; alt=&#34;image-20220501202523115&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;非数组&lt;/p&gt;
@@ -18451,7 +18607,23 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651405406-a7ec1b59f93ee7.png&#34; alt=&#34;image-20220501194326526&#34; style=&#34;zoom: 67%;&#34; /&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/20220501/1651405406-a7ec1b59f93ee7.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;mark&gt;Class对象是存放在堆区的，不是方法区，这点很多人容易犯错。类的元数据（元数据并不是类的Class对象！Class对象是加载的最终产品，类的方法代码，变量名，方法名，访问权限，返回值等等都是在方法区的）才是存在方法区的。&lt;/mark&gt;&lt;/p&gt;
 &lt;p&gt;jvm为每个加载的类型(译者：包括类和接口)都创建一个java.lang.Class的实例。而jvm必须以某种方式把Class的这个实例和存储在方法区中的类型数据联系起来。&lt;/p&gt;
 &lt;h3 id=&#34;oop&#34;&gt;
