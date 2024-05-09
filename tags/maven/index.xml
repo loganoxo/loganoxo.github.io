@@ -5012,7 +5012,23 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/blockquote&gt;
 &lt;img src=&#34;https://logan.1357810.xyz/img/20220411/20220411034143.png&#34; alt=&#34;image-20220411034142937&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;p&gt;翻译过来就是：调用 Java 编译器命令时传入的 -source 参数。那对编译器来说，-source 参数是啥意思呢？&lt;/p&gt;
-&lt;img src=&#34;http://127.0.0.1:3000/code_heavy_industry/assets/img/img109.6a115e94.png&#34; alt=&#34;images&#34; style=&#34;zoom: 67%;&#34; /&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715270426-7b0ca80d.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;p&gt;『提供与指定发行版的源兼容性』这句话我的理解是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;我们写代码是按 JDK 1.8 写的——这就是『源兼容性』里的『源』。&lt;/li&gt;
@@ -5139,8 +5155,24 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;很显然 spring-boot-maven-plugin 并不是 Maven 自带的插件，而是 SpringBoot 提供的，用来改变 Maven 默认的构建行为。具体来说是改变打包的行为。默认情况下 Maven 调用 maven-jar-plugin 插件的 jar 目标，生成普通的 jar 包。&lt;/p&gt;
 &lt;p&gt;普通 jar 包没法使用 java -jar xxx.jar 这样的命令来启动、运行，但是 SpringBoot 的设计理念就是每一个『微服务』导出为一个 jar 包，这个 jar 包可以使用 java -jar xxx.jar 这样的命令直接启动运行。&lt;/p&gt;
-&lt;p&gt;这样一来，打包的方式肯定要进行调整。所以 SpringBoot 提供了 spring-boot-maven-plugin 这个插件来定制打包行为。&lt;/p&gt;
-&lt;img src=&#34;http://127.0.0.1:3000/code_heavy_industry/assets/img/img118.48c7b12c.png&#34; alt=&#34;images&#34; style=&#34;zoom: 67%;&#34; /&gt;
+&lt;p&gt;这样一来，打包的方式肯定要进行调整。所以 SpringBoot 提供了 spring-boot-maven-plugin 这个插件来定制打包行为。
+
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715270540-2ff5adb8.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;2插件的七个目标&#34;&gt;
     &lt;a href=&#34;#2%e6%8f%92%e4%bb%b6%e7%9a%84%e4%b8%83%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     2、插件的七个目标
@@ -6542,37 +6574,67 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;h3 id=&#34;idea-的-maven-helper-插件&#34;&gt;
     &lt;a href=&#34;#idea-%e7%9a%84-maven-helper-%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     ②IDEA 的 Maven Helper 插件
-&lt;/h3&gt;&lt;p&gt;这个插件是 IDEA 中安装的插件，不是 Maven 插件。它能够给我们罗列出来同一个 jar 包的不同版本，以及它们的来源。但是对不同 jar 包中同名的类没有办法。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;这个插件是 IDEA 中安装的插件，不是 Maven 插件。它能够给我们罗列出来同一个 jar 包的不同版本，以及它们的来源。但是对不同 jar 包中同名的类没有办法。
+
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715269955-da0554fb.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+              alt=&#34;images&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://127.0.0.1:3000/code_heavy_industry/pro002-maven/chapter10/verse02-part01.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;在 IDEA 中安装 Maven helper 插件
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://127.0.0.1:3000/code_heavy_industry/pro002-maven/chapter10/verse02-part02.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;基于 pom.xml 的依赖冲突分析
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-
-&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;基于 pom.xml 的依赖冲突分析&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715270062-497a4b83.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+              alt=&#34;images&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715270086-77ed4369.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+              alt=&#34;images&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;maven-的-enforcer-插件&#34;&gt;
     &lt;a href=&#34;#maven-%e7%9a%84-enforcer-%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     ③Maven 的 enforcer 插件
@@ -7065,8 +7127,40 @@ tcp 0 0 0.0.0.0:&lt;strong&gt;8081&lt;/strong&gt; 0.0.0.0:* LISTEN 9872/java&lt;
     &lt;a href=&#34;#3%e8%ae%bf%e9%97%ae-nexus-%e9%a6%96%e9%a1%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     3、访问 Nexus 首页
 &lt;/h2&gt;&lt;p&gt;首页地址：http://[Linux 服务器地址]:8081/&lt;/p&gt;
-&lt;img src=&#34;http://127.0.0.1:3000/code_heavy_industry/assets/img/img002.e1ac8197.png&#34; alt=&#34;images&#34; style=&#34;zoom: 67%;&#34; /&gt;
-&lt;img src=&#34;http://127.0.0.1:3000/code_heavy_industry/assets/img/img003.97a620db.png&#34; alt=&#34;images&#34;  /&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715271034-33ce3b8c.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+    &lt;img src=&#34;https://logan.1357810.xyz/img/2024/1715271040-7ad35e93.png&#34;
+         width=&#34;900&#34;
+            height=&#34;600&#34;
+            
+         loading=&#34;lazy&#34;
+         decoding=&#34;async&#34;
+            
+            
+              class=&#34;gallery-image link-image&#34;
+              data-flex-grow=&#34;20&#34;
+              data-flex-basis=&#34;20px&#34;
+            
+    &gt;
+&lt;/p&gt;
 &lt;p&gt;这里参考提示：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;用户名：admin&lt;/li&gt;

@@ -50,13 +50,13 @@
   </url>
   <url>
     <loc>https://logan.wssw.fun/articles/maven/maven-build/</loc>
-    <lastmod>2024-05-09T00:55:00+08:00</lastmod>
+    <lastmod>2024-05-10T00:29:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://logan.wssw.fun/articles/maven/maven-production/</loc>
-    <lastmod>2024-05-09T00:55:00+08:00</lastmod>
+    <lastmod>2024-05-10T00:29:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -518,7 +518,7 @@
   </url>
   <url>
     <loc>https://logan.wssw.fun/about/</loc>
-    <lastmod>2024-05-09T23:14:07+08:00</lastmod>
+    <lastmod>2024-05-10T00:29:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
