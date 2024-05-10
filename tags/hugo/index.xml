@@ -1526,7 +1526,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
         <description>&lt;h1 id=&#34;a页面-包含b页面的超链接&#34;&gt;
     &lt;a href=&#34;#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     A页面-包含B页面的超链接
-&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;../page-B#titleb&#34; &gt;点击查看另一个Markdown文件
+&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;../page-b#titleb&#34; &gt;点击查看另一个Markdown文件
 
 
 
@@ -1549,7 +1549,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
         <description>&lt;h1 id=&#34;b页面-包含a页面的超链接&#34;&gt;
     &lt;a href=&#34;#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     B页面-包含A页面的超链接
-&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;../page-A#titlea&#34; &gt;点击查看另一个Markdown文件
+&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;../page-a#titlea&#34; &gt;点击查看另一个Markdown文件
 
 
 
