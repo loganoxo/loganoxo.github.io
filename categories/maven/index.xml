@@ -69,14 +69,14 @@
 
 &lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;1maven介绍&#34;&gt;
-    &lt;a href=&#34;#1maven%e4%bb%8b%e7%bb%8d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1maven%e4%bb%8b%e7%bb%8d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、maven介绍
 &lt;/h1&gt;&lt;h2 id=&#34;概述&#34;&gt;
-    &lt;a href=&#34;#%e6%a6%82%e8%bf%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%a6%82%e8%bf%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、概述
 &lt;/h2&gt;&lt;p&gt;Maven 是一款『&lt;strong&gt;构建&lt;/strong&gt;管理』和『&lt;strong&gt;依赖&lt;/strong&gt;管理』的工具。但事实上这只是 Maven 的一部分功能。Maven 本身的产品定位是一款『&lt;strong&gt;项目&lt;/strong&gt;管理工具』&lt;/p&gt;
 &lt;h2 id=&#34;maven工作机制&#34;&gt;
-    &lt;a href=&#34;#maven%e5%b7%a5%e4%bd%9c%e6%9c%ba%e5%88%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#maven%e5%b7%a5%e4%bd%9c%e6%9c%ba%e5%88%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、maven工作机制
 &lt;/h2&gt;&lt;p&gt;
 
@@ -97,7 +97,7 @@
 &lt;/p&gt;
 &lt;p&gt;maven仓库里有：自己项目打包成的jar、第三方jar、maven核心程序需要用到的插件jar（clean、test、package）&lt;/p&gt;
 &lt;h2 id=&#34;功能&#34;&gt;
-    &lt;a href=&#34;#%e5%8a%9f%e8%83%bd&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%8a%9f%e8%83%bd&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、功能
 &lt;/h2&gt;&lt;p&gt;从『项目管理』的角度来看，Maven 提供了如下这些功能：&lt;/p&gt;
 &lt;ul&gt;
@@ -123,7 +123,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;maven坐标&#34;&gt;
-    &lt;a href=&#34;#maven%e5%9d%90%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#maven%e5%9d%90%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④、maven坐标
 &lt;/h2&gt;&lt;p&gt;使用三个**『向量』&lt;strong&gt;在&lt;/strong&gt;『Maven的仓库』&lt;strong&gt;中&lt;/strong&gt;唯一&lt;strong&gt;的定位到一个&lt;/strong&gt;『jar』**包。&lt;/p&gt;
 &lt;ul&gt;
@@ -147,18 +147,18 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;2pom介绍&#34;&gt;
-    &lt;a href=&#34;#2pom%e4%bb%8b%e7%bb%8d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2pom%e4%bb%8b%e7%bb%8d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、POM介绍
 &lt;/h1&gt;&lt;h2 id=&#34;含义&#34;&gt;
-    &lt;a href=&#34;#%e5%90%ab%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%90%ab%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、含义
 &lt;/h2&gt;&lt;p&gt;POM：&lt;strong&gt;P&lt;/strong&gt;roject &lt;strong&gt;O&lt;/strong&gt;bject &lt;strong&gt;M&lt;/strong&gt;odel，项目对象模型。和 POM 类似的是：DOM（Document Object Model），文档对象模型。它们都是模型化思想的具体体现。&lt;/p&gt;
 &lt;h2 id=&#34;模型化思想&#34;&gt;
-    &lt;a href=&#34;#%e6%a8%a1%e5%9e%8b%e5%8c%96%e6%80%9d%e6%83%b3&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%a8%a1%e5%9e%8b%e5%8c%96%e6%80%9d%e6%83%b3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、模型化思想
 &lt;/h2&gt;&lt;p&gt;POM 表示将工程抽象为一个模型，再用程序中的对象来描述这个模型。这样我们就可以用程序来管理项目了。我们在开发过程中，最基本的做法就是将现实生活中的事物抽象为模型，然后封装模型相关的数据作为一个对象，这样就可以在程序中计算与现实事物相关的数据。&lt;/p&gt;
 &lt;h2 id=&#34;pom标签&#34;&gt;
-    &lt;a href=&#34;#pom%e6%a0%87%e7%ad%be&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#pom%e6%a0%87%e7%ad%be&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、pom标签
 &lt;/h2&gt;&lt;p&gt;POM 理念集中体现在 Maven 工程根目录下 &lt;strong&gt;pom.xml&lt;/strong&gt; 这个配置文件中。所以这个 pom.xml 配置文件就是 Maven 工程的核心配置文件。其实学习 Maven 就是学这个文件怎么配置，各个配置有什么用。&lt;/p&gt;
 &lt;p&gt;下面是 spring-boot-starter 的 POM 文件，可以看到：除了我们熟悉的坐标标签、dependencies 标签，还有 description、url、organization、licenses、developers、scm、issueManagement 等这些描述项目信息的标签。&lt;/p&gt;
@@ -257,10 +257,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;3pom的四个层次&#34;&gt;
-    &lt;a href=&#34;#3pom%e7%9a%84%e5%9b%9b%e4%b8%aa%e5%b1%82%e6%ac%a1&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3pom%e7%9a%84%e5%9b%9b%e4%b8%aa%e5%b1%82%e6%ac%a1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、POM的四个层次
 &lt;/h1&gt;&lt;h2 id=&#34;超级pom&#34;&gt;
-    &lt;a href=&#34;#%e8%b6%85%e7%ba%a7pom&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%b6%85%e7%ba%a7pom&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、超级pom
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -593,7 +593,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;父pom&#34;&gt;
-    &lt;a href=&#34;#%e7%88%b6pom&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e7%88%b6pom&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、父POM
 &lt;/h2&gt;&lt;p&gt;和 Java 类一样，POM 之间其实也是&lt;strong&gt;单继承&lt;/strong&gt;的。如果我们给一个 POM 指定了父 POM，那么继承关系如下图所示：&lt;/p&gt;
 &lt;p&gt;
@@ -616,7 +616,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;有效-pom&#34;&gt;
-    &lt;a href=&#34;#%e6%9c%89%e6%95%88-pom&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%9c%89%e6%95%88-pom&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、有效 POM
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -630,7 +630,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;p&gt;​		mvn help:effective-pom&lt;/p&gt;
 &lt;p&gt;​		控制台会打印出来有效pom&lt;/p&gt;
 &lt;h2 id=&#34;小结&#34;&gt;
-    &lt;a href=&#34;#%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④、小结
 &lt;/h2&gt;&lt;p&gt;综上所述，平时我们使用和配置的 POM 其实大致是由四个层次组成的：&lt;/p&gt;
 &lt;ul&gt;
@@ -640,10 +640,10 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;li&gt;有效 POM：隐含的一层，但是实际上真正生效的一层。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;4生命周期&#34;&gt;
-    &lt;a href=&#34;#4%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、生命周期
 &lt;/h1&gt;&lt;h2 id=&#34;构建过程&#34;&gt;
-    &lt;a href=&#34;#%e6%9e%84%e5%bb%ba%e8%bf%87%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%9e%84%e5%bb%ba%e8%bf%87%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、构建过程
 &lt;/h2&gt;&lt;p&gt;构建过程包含的主要的环节：&lt;/p&gt;
 &lt;ul&gt;
@@ -667,7 +667,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;为了让构建过程自动化完成，Maven 设定了三个生命周期，生命周期中的每一个环节对应构建过程中的一个操作。&lt;/p&gt;
 &lt;h2 id=&#34;三个生命周期&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89%e4%b8%aa%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89%e4%b8%aa%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、三个生命周期
 &lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -696,7 +696,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;特点&#34;&gt;
-    &lt;a href=&#34;#%e7%89%b9%e7%82%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e7%89%b9%e7%82%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、特点
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;前面三个生命周期彼此是独立的。&lt;/li&gt;
@@ -704,10 +704,10 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Maven 之所以这么设计其实就是为了提高构建过程的自动化程度：让使用者只关心最终要干的即可，过程中的各个环节是自动执行的。&lt;/p&gt;
 &lt;h1 id=&#34;5仓库和镜像&#34;&gt;
-    &lt;a href=&#34;#5%e4%bb%93%e5%ba%93%e5%92%8c%e9%95%9c%e5%83%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5%e4%bb%93%e5%ba%93%e5%92%8c%e9%95%9c%e5%83%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5、仓库和镜像
 &lt;/h1&gt;&lt;h2 id=&#34;仓库&#34;&gt;
-    &lt;a href=&#34;#%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、仓库
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;本地仓库：在当前电脑上，为电脑上所有 Maven 工程服务&lt;/li&gt;
@@ -726,7 +726,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;p&gt;建议：不要中央仓库和阿里云镜像混用，否则 jar 包来源不纯，彼此冲突。&lt;/p&gt;
 &lt;p&gt;专门搜索 Maven 依赖信息的网站：https://mvnrepository.com/&lt;/p&gt;
 &lt;h2 id=&#34;镜像&#34;&gt;
-    &lt;a href=&#34;#%e9%95%9c%e5%83%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e9%95%9c%e5%83%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、镜像
 &lt;/h2&gt;&lt;p&gt;Maven 下载 jar 包默认访问境外的中央仓库，而国外网站速度很慢。改成阿里云提供的镜像仓库，&lt;strong&gt;访问国内网站&lt;/strong&gt;，可以让 Maven 下载 jar 包的时候速度更快。配置的方式是：&lt;/p&gt;
 &lt;p&gt;将下面 mirror 标签整体复制到 settings.xml 文件的 mirrors 标签的内部。&lt;/p&gt;
@@ -749,10 +749,10 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;6约定的目录结构&#34;&gt;
-    &lt;a href=&#34;#6%e7%ba%a6%e5%ae%9a%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6%e7%ba%a6%e5%ae%9a%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6、约定的目录结构
 &lt;/h1&gt;&lt;h2 id=&#34;各个目录的作用&#34;&gt;
-    &lt;a href=&#34;#%e5%90%84%e4%b8%aa%e7%9b%ae%e5%bd%95%e7%9a%84%e4%bd%9c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%90%84%e4%b8%aa%e7%9b%ae%e5%bd%95%e7%9a%84%e4%bd%9c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、各个目录的作用
 &lt;/h2&gt;&lt;p&gt;
 
@@ -775,19 +775,19 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;另外还有一个 target 目录专门存放构建操作输出的结果。&lt;/p&gt;
 &lt;h2 id=&#34;约定目录结构的意义&#34;&gt;
-    &lt;a href=&#34;#%e7%ba%a6%e5%ae%9a%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84%e7%9a%84%e6%84%8f%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e7%ba%a6%e5%ae%9a%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84%e7%9a%84%e6%84%8f%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、约定目录结构的意义
 &lt;/h2&gt;&lt;p&gt;Maven 为了让构建过程能够尽可能自动化完成，所以必须约定目录结构的作用。例如：Maven 执行编译操作，必须先去 Java 源程序目录读取 Java 源代码，然后执行编译，最后把编译结果存放在 target 目录。&lt;/p&gt;
 &lt;h2 id=&#34;约定大于配置&#34;&gt;
-    &lt;a href=&#34;#%e7%ba%a6%e5%ae%9a%e5%a4%a7%e4%ba%8e%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e7%ba%a6%e5%ae%9a%e5%a4%a7%e4%ba%8e%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、约定大于配置
 &lt;/h2&gt;&lt;p&gt;Maven 对于目录结构这个问题，没有采用配置的方式，而是基于约定。这样会让我们在开发过程中非常方便。如果每次创建 Maven 工程后，还需要针对各个目录的位置进行详细的配置，那肯定非常麻烦。&lt;/p&gt;
 &lt;p&gt;目前开发领域的技术发展趋势就是：约定大于配置，配置大于编码。&lt;/p&gt;
 &lt;h1 id=&#34;7依赖的配置&#34;&gt;
-    &lt;a href=&#34;#7%e4%be%9d%e8%b5%96%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7%e4%be%9d%e8%b5%96%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7、依赖的配置
 &lt;/h1&gt;&lt;h2 id=&#34;依赖的范围scope&#34;&gt;
-    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e8%8c%83%e5%9b%b4scope&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e8%8c%83%e5%9b%b4scope&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、依赖的范围scope
 &lt;/h2&gt;&lt;p&gt;标签的位置：&lt;code&gt;dependencies/dependency/scope&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;标签的可选值：&lt;code&gt;compile/test/provided/system/runtime/import&lt;/code&gt;&lt;/p&gt;
@@ -861,7 +861,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;p&gt;test scope 在springboot里不会参与打包，runtime provided会打进包里&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;依赖的传递性&#34;&gt;
-    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e4%bc%a0%e9%80%92%e6%80%a7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e4%bc%a0%e9%80%92%e6%80%a7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、依赖的传递性
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -876,7 +876,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;依赖的排除&#34;&gt;
-    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e6%8e%92%e9%99%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e6%8e%92%e9%99%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、依赖的排除
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -944,7 +944,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;scope-import&#34;&gt;
-    &lt;a href=&#34;#scope-import&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#scope-import&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④、scope-import
 &lt;/h2&gt;&lt;p&gt;管理依赖最基本的办法是继承父工程，但是和 Java 类一样，Maven 也是单继承的。如果不同体系的依赖信息封装在不同 POM 中了，没办法继承多个父工程怎么办？这时就可以使用 import 依赖范围。&lt;/p&gt;
 &lt;p&gt;典型案例当然是在项目中引入 SpringBoot、SpringCloud 依赖：&lt;/p&gt;
@@ -1026,7 +1026,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;p&gt;This scope is only supported on a dependency of type &lt;code&gt;pom&lt;/code&gt; in the &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt;section. It indicates the dependency is to be replaced with the effective list of dependencies in the specified POM&amp;rsquo;s &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section. Since they are replaced, dependencies with a scope of &lt;code&gt;import&lt;/code&gt; do not actually participate in limiting the transitivity of a dependency.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;scope-system&#34;&gt;
-    &lt;a href=&#34;#scope-system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#scope-system&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ⑤、scope-system
 &lt;/h2&gt;&lt;p&gt;以 Windows 系统环境下开发为例，假设现在 D:\tempare\atguigu-maven-test-aaa-1.0-SNAPSHOT.jar 想要引入到我们的项目中，此时我们就可以将依赖配置为 system 范围：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1051,7 +1051,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;但是很明显：这样引入依赖完全不具有可移植性，所以&lt;strong&gt;不要使用&lt;/strong&gt;。如果需要引入体系外 jar 包我们后面会讲专门的办法。&lt;/p&gt;
 &lt;h2 id=&#34;scope-runtime&#34;&gt;
-    &lt;a href=&#34;#scope-runtime&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#scope-runtime&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ⑥、scope-runtime
 &lt;/h2&gt;&lt;p&gt;专门用于编译时不需要，但是运行时需要的 jar 包。比如：编译时我们根据接口调用方法，但是实际运行时需要的是接口的实现类。典型案例是：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1078,7 +1078,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;li&gt;会参与依赖传递&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;optional&#34;&gt;
-    &lt;a href=&#34;#optional&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#optional&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ⑦、optional
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;配置&lt;/li&gt;
@@ -1155,7 +1155,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;li&gt;optional不会参与依赖传递&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;依赖的版本仲裁&#34;&gt;
-    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e7%89%88%e6%9c%ac%e4%bb%b2%e8%a3%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e7%9a%84%e7%89%88%e6%9c%ac%e4%bb%b2%e8%a3%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ⑧、依赖的版本仲裁
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;最短路径优先&lt;/li&gt;
@@ -1203,10 +1203,10 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;p&gt;此时 Maven 采纳哪个版本，取决于在 pro29-module-x 中，对 pro30-module-y 和 pro31-module-z 两个模块的依赖哪一个先声明。&lt;/p&gt;
 &lt;p&gt;其实 Maven 的版本仲裁机制只是在没有人为干预的情况下，自主决定 jar 包版本的一个办法。而实际上我们要使用具体的哪一个版本，还要取决于项目中的实际情况。所以在项目正常运行的情况下，jar 包版本可以由 Maven 仲裁，不必我们操心；而发生冲突时 Maven 仲裁决定的版本无法满足要求，此时就应该由程序员明确指定 jar 包版本。&lt;/p&gt;
 &lt;h1 id=&#34;8继承&#34;&gt;
-    &lt;a href=&#34;#8%e7%bb%a7%e6%89%bf&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#8%e7%bb%a7%e6%89%bf&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     8、继承
 &lt;/h1&gt;&lt;h2 id=&#34;概念&#34;&gt;
-    &lt;a href=&#34;#%e6%a6%82%e5%bf%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%a6%82%e5%bf%b5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、概念
 &lt;/h2&gt;&lt;p&gt;Maven工程之间，A 工程继承 B 工程&lt;/p&gt;
 &lt;ul&gt;
@@ -1218,7 +1218,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;li&gt;只有打包方式为pom的工程才能作为父工程&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;作用&#34;&gt;
-    &lt;a href=&#34;#%e4%bd%9c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%bd%9c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、作用
 &lt;/h2&gt;&lt;p&gt;在父工程中统一管理项目中的依赖信息，具体来说是管理依赖信息的版本。&lt;/p&gt;
 &lt;p&gt;它的背景是：&lt;/p&gt;
@@ -1235,10 +1235,10 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;通过在父工程中为整个项目维护依赖信息的组合既&lt;strong&gt;保证了整个项目使用规范、准确的 jar 包&lt;/strong&gt;；又能够将&lt;strong&gt;以往的经验沉淀&lt;/strong&gt;下来，节约时间和精力。&lt;/p&gt;
 &lt;h1 id=&#34;9聚合&#34;&gt;
-    &lt;a href=&#34;#9%e8%81%9a%e5%90%88&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#9%e8%81%9a%e5%90%88&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     9、聚合
 &lt;/h1&gt;&lt;h2 id=&#34;聚合本身的含义&#34;&gt;
-    &lt;a href=&#34;#%e8%81%9a%e5%90%88%e6%9c%ac%e8%ba%ab%e7%9a%84%e5%90%ab%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%81%9a%e5%90%88%e6%9c%ac%e8%ba%ab%e7%9a%84%e5%90%ab%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、聚合本身的含义
 &lt;/h2&gt;&lt;p&gt;部分组成整体&lt;/p&gt;
 &lt;p&gt;
@@ -1262,7 +1262,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;动画片《战神金刚》中的经典台词：“我来组成头部！我来组成手臂！”就是聚合关系最生动的体现。&lt;/p&gt;
 &lt;h2 id=&#34;maven-中的聚合&#34;&gt;
-    &lt;a href=&#34;#maven-%e4%b8%ad%e7%9a%84%e8%81%9a%e5%90%88&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#maven-%e4%b8%ad%e7%9a%84%e8%81%9a%e5%90%88&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、Maven 中的聚合
 &lt;/h2&gt;&lt;p&gt;使用一个“总工程”将各个“模块工程”汇集起来，作为一个整体对应完整的项目。&lt;/p&gt;
 &lt;ul&gt;
@@ -1288,7 +1288,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;好处&#34;&gt;
-    &lt;a href=&#34;#%e5%a5%bd%e5%a4%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%a5%bd%e5%a4%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、好处
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -1300,7 +1300,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;聚合的配置&#34;&gt;
-    &lt;a href=&#34;#%e8%81%9a%e5%90%88%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%81%9a%e5%90%88%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④、聚合的配置
 &lt;/h2&gt;&lt;p&gt;在总工程中配置 modules 即可：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1320,17 +1320,17 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;依赖循环问题&#34;&gt;
-    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e5%be%aa%e7%8e%af%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%be%9d%e8%b5%96%e5%be%aa%e7%8e%af%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ⑤、依赖循环问题
 &lt;/h2&gt;&lt;p&gt;如果 A 工程依赖 B 工程，B 工程依赖 C 工程，C 工程又反过来依赖 A 工程，那么在执行构建操作时会报下面的错误：&lt;/p&gt;
 &lt;p&gt;DANGER&lt;/p&gt;
 &lt;p&gt;[ERROR] [ERROR] The projects in the reactor contain a cyclic reference:&lt;/p&gt;
 &lt;p&gt;这个错误的含义是：循环引用。&lt;/p&gt;
 &lt;h1 id=&#34;10定义jdk版本和编码&#34;&gt;
-    &lt;a href=&#34;#10%e5%ae%9a%e4%b9%89jdk%e7%89%88%e6%9c%ac%e5%92%8c%e7%bc%96%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#10%e5%ae%9a%e4%b9%89jdk%e7%89%88%e6%9c%ac%e5%92%8c%e7%bc%96%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     10、定义jdk版本和编码
 &lt;/h1&gt;&lt;h2 id=&#34;直接使用默认取值&#34;&gt;
-    &lt;a href=&#34;#%e7%9b%b4%e6%8e%a5%e4%bd%bf%e7%94%a8%e9%bb%98%e8%ae%a4%e5%8f%96%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e7%9b%b4%e6%8e%a5%e4%bd%bf%e7%94%a8%e9%bb%98%e8%ae%a4%e5%8f%96%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、直接使用默认取值
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1369,7 +1369,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;或者在插件中定义&#34;&gt;
-    &lt;a href=&#34;#%e6%88%96%e8%80%85%e5%9c%a8%e6%8f%92%e4%bb%b6%e4%b8%ad%e5%ae%9a%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%88%96%e8%80%85%e5%9c%a8%e6%8f%92%e4%bb%b6%e4%b8%ad%e5%ae%9a%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、或者在插件中定义
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1452,7 +1452,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;或写在超级pom里全局设定&#34;&gt;
-    &lt;a href=&#34;#%e6%88%96%e5%86%99%e5%9c%a8%e8%b6%85%e7%ba%a7pom%e9%87%8c%e5%85%a8%e5%b1%80%e8%ae%be%e5%ae%9a&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%88%96%e5%86%99%e5%9c%a8%e8%b6%85%e7%ba%a7pom%e9%87%8c%e5%85%a8%e5%b1%80%e8%ae%be%e5%ae%9a&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、或写在超级pom里，全局设定
 &lt;/h2&gt;&lt;p&gt;配置的方式是：将 profile 标签整个复制到 settings.xml 文件的 profiles 标签内。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1487,10 +1487,10 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;不推荐,仅在本地生效，如果脱离当前的settings.xml能够覆盖的范围，则无法生效&lt;/p&gt;
 &lt;h1 id=&#34;11属性的声明与引用&#34;&gt;
-    &lt;a href=&#34;#11%e5%b1%9e%e6%80%a7%e7%9a%84%e5%a3%b0%e6%98%8e%e4%b8%8e%e5%bc%95%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#11%e5%b1%9e%e6%80%a7%e7%9a%84%e5%a3%b0%e6%98%8e%e4%b8%8e%e5%bc%95%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     11、属性的声明与引用
 &lt;/h1&gt;&lt;h2 id=&#34;help-插件的各个目标&#34;&gt;
-    &lt;a href=&#34;#help-%e6%8f%92%e4%bb%b6%e7%9a%84%e5%90%84%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#help-%e6%8f%92%e4%bb%b6%e7%9a%84%e5%90%84%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、help 插件的各个目标
 &lt;/h2&gt;&lt;p&gt;官网说明地址：https://maven.apache.org/plugins/maven-help-plugin&lt;/p&gt;
 &lt;table&gt;
@@ -1532,7 +1532,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;使用helpevaluate查看属性值&#34;&gt;
-    &lt;a href=&#34;#%e4%bd%bf%e7%94%a8helpevaluate%e6%9f%a5%e7%9c%8b%e5%b1%9e%e6%80%a7%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%bd%bf%e7%94%a8helpevaluate%e6%9f%a5%e7%9c%8b%e5%b1%9e%e6%80%a7%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、使用help:evaluate查看属性值
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;定义属性&lt;/li&gt;
@@ -1572,7 +1572,7 @@ org\apache\maven\model\pom-4.0.0.xml&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;通过-maven-访问系统属性&#34;&gt;
-    &lt;a href=&#34;#%e9%80%9a%e8%bf%87-maven-%e8%ae%bf%e9%97%ae%e7%b3%bb%e7%bb%9f%e5%b1%9e%e6%80%a7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e9%80%9a%e8%bf%87-maven-%e8%ae%bf%e9%97%ae%e7%b3%bb%e7%bb%9f%e5%b1%9e%e6%80%a7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、通过 Maven 访问系统属性
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;java属性一览&lt;/li&gt;
@@ -1751,7 +1751,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;用途&#34;&gt;
-    &lt;a href=&#34;#%e7%94%a8%e9%80%94&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e7%94%a8%e9%80%94&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④、用途
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -1862,13 +1862,13 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;12profile详解&#34;&gt;
-    &lt;a href=&#34;#12profile%e8%af%a6%e8%a7%a3&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#12profile%e8%af%a6%e8%a7%a3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     12、profile详解
 &lt;/h1&gt;&lt;h2 id=&#34;profile-概述&#34;&gt;
-    &lt;a href=&#34;#profile-%e6%a6%82%e8%bf%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#profile-%e6%a6%82%e8%bf%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、profile 概述
 &lt;/h2&gt;&lt;h3 id=&#34;1-单词释义&#34;&gt;
-    &lt;a href=&#34;#1-%e5%8d%95%e8%af%8d%e9%87%8a%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e5%8d%95%e8%af%8d%e9%87%8a%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [1] 单词释义
 &lt;/h3&gt;&lt;p&gt;
 
@@ -1906,7 +1906,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;2-项目的不同运行环境&#34;&gt;
-    &lt;a href=&#34;#2-%e9%a1%b9%e7%9b%ae%e7%9a%84%e4%b8%8d%e5%90%8c%e8%bf%90%e8%a1%8c%e7%8e%af%e5%a2%83&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e9%a1%b9%e7%9b%ae%e7%9a%84%e4%b8%8d%e5%90%8c%e8%bf%90%e8%a1%8c%e7%8e%af%e5%a2%83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [2] 项目的不同运行环境
 &lt;/h3&gt;&lt;p&gt;
 
@@ -1963,7 +1963,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;p&gt;在 Maven 中，使用 profile 机制来管理不同环境下的配置信息。但是解决同类问题的类似机制在其他框架中也有，而且从模块划分的角度来说，持久化层的信息放在构建工具中配置也违反了『高内聚，低耦合』的原则。&lt;/p&gt;
 &lt;p&gt;所以 Maven 的 profile 我们了解一下即可，不必深究。&lt;/p&gt;
 &lt;h3 id=&#34;3-profile-声明和使用的基本逻辑&#34;&gt;
-    &lt;a href=&#34;#3-profile-%e5%a3%b0%e6%98%8e%e5%92%8c%e4%bd%bf%e7%94%a8%e7%9a%84%e5%9f%ba%e6%9c%ac%e9%80%bb%e8%be%91&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-profile-%e5%a3%b0%e6%98%8e%e5%92%8c%e4%bd%bf%e7%94%a8%e7%9a%84%e5%9f%ba%e6%9c%ac%e9%80%bb%e8%be%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [3] profile 声明和使用的基本逻辑
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;首先为每一个环境声明一个 profile
@@ -1977,14 +1977,14 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;li&gt;然后激活某一个 profile&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;4-默认-profile&#34;&gt;
-    &lt;a href=&#34;#4-%e9%bb%98%e8%ae%a4-profile&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4-%e9%bb%98%e8%ae%a4-profile&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [4] 默认 profile
 &lt;/h3&gt;&lt;p&gt;其实即使我们在 pom.xml 中不配置 profile 标签，也已经用到 profile了。为什么呢？因为根标签 project 下所有标签相当于都是在设定默认的 profile。这样一来我们也就很容易理解下面这句话：project 标签下除了 modelVersion 和坐标标签之外，其它标签都可以配置到 profile 中。&lt;/p&gt;
 &lt;h2 id=&#34;profile-配置&#34;&gt;
-    &lt;a href=&#34;#profile-%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#profile-%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、profile 配置
 &lt;/h2&gt;&lt;h3 id=&#34;1-外部视角配置文件&#34;&gt;
-    &lt;a href=&#34;#1-%e5%a4%96%e9%83%a8%e8%a7%86%e8%a7%92%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e5%a4%96%e9%83%a8%e8%a7%86%e8%a7%92%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [1] 外部视角：配置文件
 &lt;/h3&gt;&lt;p&gt;从外部视角来看，profile 可以在下面两种配置文件中配置：&lt;/p&gt;
 &lt;ul&gt;
@@ -2026,7 +2026,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2-内部实现具体标签&#34;&gt;
-    &lt;a href=&#34;#2-%e5%86%85%e9%83%a8%e5%ae%9e%e7%8e%b0%e5%85%b7%e4%bd%93%e6%a0%87%e7%ad%be&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e5%86%85%e9%83%a8%e5%ae%9e%e7%8e%b0%e5%85%b7%e4%bd%93%e6%a0%87%e7%ad%be&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [2] 内部实现：具体标签
 &lt;/h3&gt;&lt;p&gt;从内部视角来看，配置 profile 有如下语法要求：&lt;/p&gt;
 &lt;ul&gt;
@@ -2065,14 +2065,14 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;激活-profile&#34;&gt;
-    &lt;a href=&#34;#%e6%bf%80%e6%b4%bb-profile&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%bf%80%e6%b4%bb-profile&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、激活 profile
 &lt;/h2&gt;&lt;h3 id=&#34;1-默认配置默认被激活&#34;&gt;
-    &lt;a href=&#34;#1-%e9%bb%98%e8%ae%a4%e9%85%8d%e7%bd%ae%e9%bb%98%e8%ae%a4%e8%a2%ab%e6%bf%80%e6%b4%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e9%bb%98%e8%ae%a4%e9%85%8d%e7%bd%ae%e9%bb%98%e8%ae%a4%e8%a2%ab%e6%bf%80%e6%b4%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [1] 默认配置默认被激活
 &lt;/h3&gt;&lt;p&gt;前面提到了，POM 中没有在 profile 标签里的就是默认的 profile，当然默认被激活。&lt;/p&gt;
 &lt;h3 id=&#34;2-基于环境信息激活&#34;&gt;
-    &lt;a href=&#34;#2-%e5%9f%ba%e4%ba%8e%e7%8e%af%e5%a2%83%e4%bf%a1%e6%81%af%e6%bf%80%e6%b4%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e5%9f%ba%e4%ba%8e%e7%8e%af%e5%a2%83%e4%bf%a1%e6%81%af%e6%bf%80%e6%b4%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [2] 基于环境信息激活
 &lt;/h3&gt;&lt;p&gt;环境信息包含：JDK 版本、操作系统参数、文件、属性等各个方面。一个 profile 一旦被激活，那么它定义的所有配置都会覆盖原来 POM 中对应层次的元素。可以参考下面的标签结构：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2168,7 +2168,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;li&gt;……&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;3-命令行激活&#34;&gt;
-    &lt;a href=&#34;#3-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%bf%80%e6%b4%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%bf%80%e6%b4%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [3] 命令行激活
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;列出活动的 profile&lt;/li&gt;
@@ -2195,10 +2195,10 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;操作举例&#34;&gt;
-    &lt;a href=&#34;#%e6%93%8d%e4%bd%9c%e4%b8%be%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%93%8d%e4%bd%9c%e4%b8%be%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④、操作举例
 &lt;/h2&gt;&lt;h3 id=&#34;1-编写-lambda-表达式代码&#34;&gt;
-    &lt;a href=&#34;#1-%e7%bc%96%e5%86%99-lambda-%e8%a1%a8%e8%be%be%e5%bc%8f%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e7%bc%96%e5%86%99-lambda-%e8%a1%a8%e8%be%be%e5%bc%8f%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [1] 编写 Lambda 表达式代码
 &lt;/h3&gt;&lt;p&gt;Lambda 表达式代码要求 JDK 版本必须是 1.8，我们可以以此来判断某个指定更低 JDK 版本的 profile 是否被激活生效。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2238,7 +2238,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;2-配置-profile&#34;&gt;
-    &lt;a href=&#34;#2-%e9%85%8d%e7%bd%ae-profile&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e9%85%8d%e7%bd%ae-profile&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [2] 配置 profile
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2299,7 +2299,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;3-执行构建命令&#34;&gt;
-    &lt;a href=&#34;#3-%e6%89%a7%e8%a1%8c%e6%9e%84%e5%bb%ba%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e6%89%a7%e8%a1%8c%e6%9e%84%e5%bb%ba%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [3] 执行构建命令
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2329,14 +2329,14 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;资源属性过滤&#34;&gt;
-    &lt;a href=&#34;#%e8%b5%84%e6%ba%90%e5%b1%9e%e6%80%a7%e8%bf%87%e6%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%b5%84%e6%ba%90%e5%b1%9e%e6%80%a7%e8%bf%87%e6%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ⑤、资源属性过滤
 &lt;/h2&gt;&lt;h3 id=&#34;1-简介&#34;&gt;
-    &lt;a href=&#34;#1-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [1] 简介
 &lt;/h3&gt;&lt;p&gt;Maven 为了能够通过 profile 实现各不同运行环境切换，提供了一种『资源属性过滤』的机制。通过属性替换实现不同环境使用不同的参数。&lt;/p&gt;
 &lt;h3 id=&#34;2-操作演示&#34;&gt;
-    &lt;a href=&#34;#2-%e6%93%8d%e4%bd%9c%e6%bc%94%e7%a4%ba&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e6%93%8d%e4%bd%9c%e6%bc%94%e7%a4%ba&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [2] 操作演示
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;配置 profile&lt;/li&gt;
@@ -2531,10 +2531,10 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
         
         <guid>https://logan.wssw.fun/articles/maven/maven-common/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_018.jpg" alt="Featured image of post 1普通工程-命令行" /&gt;&lt;h1 id=&#34;一创建-maven-工程&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%ba-maven-%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%ba-maven-%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、创建 Maven 工程
 &lt;/h1&gt;&lt;h2 id=&#34;1使用命令生成maven工程&#34;&gt;
-    &lt;a href=&#34;#1%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e7%94%9f%e6%88%90maven%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e7%94%9f%e6%88%90maven%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、使用命令生成Maven工程
 &lt;/h2&gt;&lt;p&gt;
 
@@ -2568,7 +2568,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;p&gt;Confirm properties configuration: groupId: com.atguigu.maven artifactId: pro01-maven-java version: 1.0-SNAPSHOT package: com.atguigu.maven Y: :【直接回车，表示确认。如果前面有输入错误，想要重新输入，则输入 N 再回车。】&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;2调整&#34;&gt;
-    &lt;a href=&#34;#2%e8%b0%83%e6%95%b4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e8%b0%83%e6%95%b4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、调整
 &lt;/h2&gt;&lt;p&gt;Maven 默认生成的工程，对 junit 依赖的是较低的 3.8.1 版本，我们可以改成较适合的 4.12 版本。&lt;/p&gt;
 &lt;p&gt;自动生成的 App.java 和 AppTest.java 可以删除。&lt;/p&gt;
@@ -2607,7 +2607,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;3自动生成的-pomxml-解读&#34;&gt;
-    &lt;a href=&#34;#3%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90%e7%9a%84-pomxml-%e8%a7%a3%e8%af%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90%e7%9a%84-pomxml-%e8%a7%a3%e8%af%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、自动生成的 pom.xml 解读
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2686,10 +2686,10 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;二编写代码&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c%e7%bc%96%e5%86%99%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e7%bc%96%e5%86%99%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、编写代码
 &lt;/h1&gt;&lt;h2 id=&#34;1主体程序&#34;&gt;
-    &lt;a href=&#34;#1%e4%b8%bb%e4%bd%93%e7%a8%8b%e5%ba%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e4%b8%bb%e4%bd%93%e7%a8%8b%e5%ba%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、主体程序
 &lt;/h2&gt;&lt;p&gt;
 
@@ -2736,7 +2736,7 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2测试程序&#34;&gt;
-    &lt;a href=&#34;#2%e6%b5%8b%e8%af%95%e7%a8%8b%e5%ba%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%b5%8b%e8%af%95%e7%a8%8b%e5%ba%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、测试程序
 &lt;/h2&gt;&lt;p&gt;
 
@@ -2826,10 +2826,10 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;三执行maven构建&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89%e6%89%a7%e8%a1%8cmaven%e6%9e%84%e5%bb%ba&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89%e6%89%a7%e8%a1%8cmaven%e6%9e%84%e5%bb%ba&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     三、执行maven构建
 &lt;/h1&gt;&lt;h2 id=&#34;1要求&#34;&gt;
-    &lt;a href=&#34;#1%e8%a6%81%e6%b1%82&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e8%a6%81%e6%b1%82&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、要求
 &lt;/h2&gt;&lt;p&gt;运行 Maven 中和构建操作相关的命令时，必须进入到 pom.xml 所在的目录。如果没有在 pom.xml 所在的目录运行 Maven 的构建命令，那么会看到下面的错误信息：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;The goal you specified requires a project to execute but there is no POM in this directory&lt;/code&gt;&lt;/p&gt;
@@ -2838,24 +2838,24 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
 mvn -v 命令和构建操作无关，只要正确配置了 PATH，在任何目录下执行都可以。而构建相关的命令要在 pom.xml 所在目录下运行——操作哪个工程，就进入这个工程的 pom.xml 目录。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;2清理操作&#34;&gt;
-    &lt;a href=&#34;#2%e6%b8%85%e7%90%86%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%b8%85%e7%90%86%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、清理操作
 &lt;/h2&gt;&lt;p&gt;mvn clean&lt;/p&gt;
 &lt;p&gt;效果：删除 target 目录&lt;/p&gt;
 &lt;h2 id=&#34;3编译操作&#34;&gt;
-    &lt;a href=&#34;#3%e7%bc%96%e8%af%91%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e7%bc%96%e8%af%91%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、编译操作
 &lt;/h2&gt;&lt;p&gt;主程序编译：mvn compile&lt;/p&gt;
 &lt;p&gt;测试程序编译：mvn test-compile&lt;/p&gt;
 &lt;p&gt;主体程序编译结果存放的目录：target/classes&lt;/p&gt;
 &lt;p&gt;测试程序编译结果存放的目录：target/test-classes&lt;/p&gt;
 &lt;h2 id=&#34;4测试操作&#34;&gt;
-    &lt;a href=&#34;#4%e6%b5%8b%e8%af%95%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e6%b5%8b%e8%af%95%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、测试操作
 &lt;/h2&gt;&lt;p&gt;mvn test&lt;/p&gt;
 &lt;p&gt;测试的报告存放的目录：target/surefire-reports&lt;/p&gt;
 &lt;h2 id=&#34;5打包操作&#34;&gt;
-    &lt;a href=&#34;#5%e6%89%93%e5%8c%85%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5%e6%89%93%e5%8c%85%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5、打包操作
 &lt;/h2&gt;&lt;p&gt;mvn package&lt;/p&gt;
 &lt;p&gt;打包的结果——jar 包，存放的目录：target&lt;/p&gt;
@@ -2994,7 +2994,7 @@ mvn -v 命令和构建操作无关，只要正确配置了 PATH，在任何目�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;6安装操作&#34;&gt;
-    &lt;a href=&#34;#6%e5%ae%89%e8%a3%85%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6%e5%ae%89%e8%a3%85%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6、安装操作
 &lt;/h2&gt;&lt;p&gt;mvn install&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3033,10 +3033,10 @@ mvn -v 命令和构建操作无关，只要正确配置了 PATH，在任何目�
         
         <guid>https://logan.wssw.fun/articles/maven/maven-web/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_034.jpg" alt="Featured image of post 2 web工程-命令行" /&gt;&lt;h1 id=&#34;一创建web工程&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%baweb%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%baweb%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、创建web工程
 &lt;/h1&gt;&lt;h2 id=&#34;1说明&#34;&gt;
-    &lt;a href=&#34;#1%e8%af%b4%e6%98%8e&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e8%af%b4%e6%98%8e&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、说明
 &lt;/h2&gt;&lt;p&gt;使用 mvn archetype:generate 命令生成 Web 工程时，需要使用一个专门的 archetype。这个专门生成 Web 工程骨架的 archetype 可以参照官网看到它的用法：&lt;/p&gt;
 &lt;p&gt;
@@ -3060,7 +3060,7 @@ mvn -v 命令和构建操作无关，只要正确配置了 PATH，在任何目�
 &lt;/p&gt;
 &lt;p&gt;参数 archetypeGroupId、archetypeArtifactId、archetypeVersion 用来指定现在使用的 maven-archetype-webapp 的坐标。&lt;/p&gt;
 &lt;h2 id=&#34;2操作&#34;&gt;
-    &lt;a href=&#34;#2%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、操作
 &lt;/h2&gt;&lt;p&gt;注意：如果在上一个工程的目录下执行 mvn archetype:generate 命令，那么 Maven 会报错：不能在一个非 pom 的工程下再创建其他工程。所以不要再刚才创建的工程里再创建新的工程，请回到工作空间根目录来操作。&lt;/p&gt;
 &lt;p&gt;然后运行生成工程的命令：&lt;/p&gt;
@@ -3079,12 +3079,12 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
 &lt;p&gt;Define value for property &amp;lsquo;package&amp;rsquo; com.atguigu.maven: :【直接回车，使用默认值】 Confirm properties configuration: groupId: com.atguigu.maven artifactId: pro02-maven-web version: 1.0-SNAPSHOT package: com.atguigu.maven Y: :【直接回车，表示确认】&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;3生成的pomxml&#34;&gt;
-    &lt;a href=&#34;#3%e7%94%9f%e6%88%90%e7%9a%84pomxml&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e7%94%9f%e6%88%90%e7%9a%84pomxml&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、生成的pom.xml
 &lt;/h2&gt;&lt;p&gt;确认打包的方式是war包形式&lt;/p&gt;
 &lt;p&gt;&lt;packaging&gt;war&lt;/packaging&gt;&lt;/p&gt;
 &lt;h2 id=&#34;4生成的web工程的目录结构&#34;&gt;
-    &lt;a href=&#34;#4%e7%94%9f%e6%88%90%e7%9a%84web%e5%b7%a5%e7%a8%8b%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e7%94%9f%e6%88%90%e7%9a%84web%e5%b7%a5%e7%a8%8b%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、生成的Web工程的目录结构
 &lt;/h2&gt;&lt;p&gt;
 
@@ -3108,10 +3108,10 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
 &lt;p&gt;webapp 目录下有 index.jsp&lt;/p&gt;
 &lt;p&gt;WEB-INF 目录下有 web.xml&lt;/p&gt;
 &lt;h2 id=&#34;5创建-servlet&#34;&gt;
-    &lt;a href=&#34;#5%e5%88%9b%e5%bb%ba-servlet&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5%e5%88%9b%e5%bb%ba-servlet&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5、创建 Servlet
 &lt;/h2&gt;&lt;h3 id=&#34;在-main-目录下创建-java-目录&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8-main-%e7%9b%ae%e5%bd%95%e4%b8%8b%e5%88%9b%e5%bb%ba-java-%e7%9b%ae%e5%bd%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8-main-%e7%9b%ae%e5%bd%95%e4%b8%8b%e5%88%9b%e5%bb%ba-java-%e7%9b%ae%e5%bd%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①在 main 目录下创建 java 目录
 &lt;/h3&gt;&lt;p&gt;
 
@@ -3133,7 +3133,7 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;在-java-目录下创建-servlet-类所在的包的目录&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8-java-%e7%9b%ae%e5%bd%95%e4%b8%8b%e5%88%9b%e5%bb%ba-servlet-%e7%b1%bb%e6%89%80%e5%9c%a8%e7%9a%84%e5%8c%85%e7%9a%84%e7%9b%ae%e5%bd%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8-java-%e7%9b%ae%e5%bd%95%e4%b8%8b%e5%88%9b%e5%bb%ba-servlet-%e7%b1%bb%e6%89%80%e5%9c%a8%e7%9a%84%e5%8c%85%e7%9a%84%e7%9b%ae%e5%bd%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②在 java 目录下创建 Servlet 类所在的包的目录
 &lt;/h3&gt;&lt;p&gt;
 
@@ -3155,7 +3155,7 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;在包下创建-servlet-类&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8%e5%8c%85%e4%b8%8b%e5%88%9b%e5%bb%ba-servlet-%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8%e5%8c%85%e4%b8%8b%e5%88%9b%e5%bb%ba-servlet-%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③在包下创建 Servlet 类
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3198,7 +3198,7 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;在-webxml-中注册-servlet&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8-webxml-%e4%b8%ad%e6%b3%a8%e5%86%8c-servlet&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8-webxml-%e4%b8%ad%e6%b3%a8%e5%86%8c-servlet&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④在 web.xml 中注册 Servlet
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3224,7 +3224,7 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;​&lt;/p&gt;
 &lt;h2 id=&#34;6在-indexjsp-页面编写超链接&#34;&gt;
-    &lt;a href=&#34;#6%e5%9c%a8-indexjsp-%e9%a1%b5%e9%9d%a2%e7%bc%96%e5%86%99%e8%b6%85%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6%e5%9c%a8-indexjsp-%e9%a1%b5%e9%9d%a2%e7%bc%96%e5%86%99%e8%b6%85%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6、在 index.jsp 页面编写超链接
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3249,7 +3249,7 @@ Define value for property &amp;lsquo;groupId&amp;rsquo;: com.atguigu.maven Defin
 JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲染技术。这里我们不必关心 JSP 语法细节，编写一个超链接标签即可。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;7编译&#34;&gt;
-    &lt;a href=&#34;#7%e7%bc%96%e8%af%91&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7%e7%bc%96%e8%af%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7、编译
 &lt;/h2&gt;&lt;p&gt;此时直接执行 mvn compile 命令出错：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3299,7 +3299,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;8配置对-servlet-apijar-包的依赖&#34;&gt;
-    &lt;a href=&#34;#8%e9%85%8d%e7%bd%ae%e5%af%b9-servlet-apijar-%e5%8c%85%e7%9a%84%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#8%e9%85%8d%e7%bd%ae%e5%af%b9-servlet-apijar-%e5%8c%85%e7%9a%84%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     8、配置对 servlet-api.jar 包的依赖
 &lt;/h2&gt;&lt;p&gt;对于不知道详细信息的依赖可以到https://mvnrepository.com/网站查询。使用关键词搜索，然后在搜索结果列表中选择适合的使用。&lt;/p&gt;
 &lt;p&gt;
@@ -3344,7 +3344,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这样就可以把上面的信息加入 pom.xml。重新执行 mvn compile 命令。&lt;/p&gt;
 &lt;h2 id=&#34;9将-web-工程打包为-war-包&#34;&gt;
-    &lt;a href=&#34;#9%e5%b0%86-web-%e5%b7%a5%e7%a8%8b%e6%89%93%e5%8c%85%e4%b8%ba-war-%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#9%e5%b0%86-web-%e5%b7%a5%e7%a8%8b%e6%89%93%e5%8c%85%e4%b8%ba-war-%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     9、将 Web 工程打包为 war 包
 &lt;/h2&gt;&lt;p&gt;运行 mvn package 命令，生成 war 包的位置如下图所示：&lt;/p&gt;
 &lt;p&gt;
@@ -3385,7 +3385,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;10将-war-包部署到-tomcat-上运行&#34;&gt;
-    &lt;a href=&#34;#10%e5%b0%86-war-%e5%8c%85%e9%83%a8%e7%bd%b2%e5%88%b0-tomcat-%e4%b8%8a%e8%bf%90%e8%a1%8c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#10%e5%b0%86-war-%e5%8c%85%e9%83%a8%e7%bd%b2%e5%88%b0-tomcat-%e4%b8%8a%e8%bf%90%e8%a1%8c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     10、将 war 包部署到 Tomcat 上运行
 &lt;/h2&gt;&lt;p&gt;将 war 包复制到 Tomcat/webapps 目录下&lt;/p&gt;
 &lt;p&gt;
@@ -3448,14 +3448,14 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/p&gt;
 &lt;p&gt;通过浏览器尝试访问：http://localhost:8080/pro02-maven-web/index.jsp&lt;/p&gt;
 &lt;h1 id=&#34;二依赖一个jar包&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c%e4%be%9d%e8%b5%96%e4%b8%80%e4%b8%aajar%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e4%be%9d%e8%b5%96%e4%b8%80%e4%b8%aajar%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、依赖一个jar包
 &lt;/h1&gt;&lt;h2 id=&#34;1观念&#34;&gt;
-    &lt;a href=&#34;#1%e8%a7%82%e5%bf%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e8%a7%82%e5%bf%b5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、观念
 &lt;/h2&gt;&lt;p&gt;明确一个意识：从来只有 Web 工程依赖 Java 工程，没有反过来 Java 工程依赖 Web 工程。本质上来说，Web 工程依赖的 Java 工程其实就是 Web 工程里导入的 jar 包。最终 Java 工程会变成 jar 包，放在 Web 工程的 WEB-INF/lib 目录下&lt;/p&gt;
 &lt;h2 id=&#34;2操作-1&#34;&gt;
-    &lt;a href=&#34;#2%e6%93%8d%e4%bd%9c-1&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%93%8d%e4%bd%9c-1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、操作
 &lt;/h2&gt;&lt;p&gt;在 pro02-maven-web 工程的 pom.xml 中，找到 dependencies 标签，在 dependencies 标签中做如下配置：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3479,15 +3479,15 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;3执行maven命令&#34;&gt;
-    &lt;a href=&#34;#3%e6%89%a7%e8%a1%8cmaven%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e6%89%a7%e8%a1%8cmaven%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、执行maven命令
 &lt;/h2&gt;&lt;h3 id=&#34;测试命令&#34;&gt;
-    &lt;a href=&#34;#%e6%b5%8b%e8%af%95%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%b5%8b%e8%af%95%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①测试命令
 &lt;/h3&gt;&lt;p&gt;mvn test&lt;/p&gt;
 &lt;p&gt;说明：测试操作中会提前自动执行编译操作，测试成功就说明编译也是成功的。&lt;/p&gt;
 &lt;h3 id=&#34;打包命令&#34;&gt;
-    &lt;a href=&#34;#%e6%89%93%e5%8c%85%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%89%93%e5%8c%85%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②打包命令
 &lt;/h3&gt;&lt;p&gt;mvn package&lt;/p&gt;
 &lt;p&gt;
@@ -3530,7 +3530,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;查看当前-web-工程所依赖的-jar-包的列表&#34;&gt;
-    &lt;a href=&#34;#%e6%9f%a5%e7%9c%8b%e5%bd%93%e5%89%8d-web-%e5%b7%a5%e7%a8%8b%e6%89%80%e4%be%9d%e8%b5%96%e7%9a%84-jar-%e5%8c%85%e7%9a%84%e5%88%97%e8%a1%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%9f%a5%e7%9c%8b%e5%bd%93%e5%89%8d-web-%e5%b7%a5%e7%a8%8b%e6%89%80%e4%be%9d%e8%b5%96%e7%9a%84-jar-%e5%8c%85%e7%9a%84%e5%88%97%e8%a1%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③查看当前 Web 工程所依赖的 jar 包的列表
 &lt;/h3&gt;&lt;p&gt;mvn dependency:list&lt;/p&gt;
 &lt;blockquote&gt;
@@ -3547,7 +3547,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/blockquote&gt;
 &lt;p&gt;这样的格式虽然和我们 XML 配置文件中坐标的格式不同，但是本质上还是坐标信息，大家需要能够认识这样的格式，将来从 Maven 命令的日志或错误信息中看到这样格式的信息，就能够识别出来这是坐标。进而根据坐标到Maven 仓库找到对应的jar包，用这样的方式解决我们遇到的报错的情况。&lt;/p&gt;
 &lt;h3 id=&#34;以树形结构查看当前-web-工程的依赖信息&#34;&gt;
-    &lt;a href=&#34;#%e4%bb%a5%e6%a0%91%e5%bd%a2%e7%bb%93%e6%9e%84%e6%9f%a5%e7%9c%8b%e5%bd%93%e5%89%8d-web-%e5%b7%a5%e7%a8%8b%e7%9a%84%e4%be%9d%e8%b5%96%e4%bf%a1%e6%81%af&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%bb%a5%e6%a0%91%e5%bd%a2%e7%bb%93%e6%9e%84%e6%9f%a5%e7%9c%8b%e5%bd%93%e5%89%8d-web-%e5%b7%a5%e7%a8%8b%e7%9a%84%e4%be%9d%e8%b5%96%e4%bf%a1%e6%81%af&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ④以树形结构查看当前 Web 工程的依赖信息
 &lt;/h3&gt;&lt;p&gt;mvn dependency:tree&lt;/p&gt;
 &lt;blockquote&gt;
@@ -3568,7 +3568,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
         
         <guid>https://logan.wssw.fun/articles/maven/maven-parent/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_033.jpg" alt="Featured image of post 3 父子工程-命令行" /&gt;&lt;h1 id=&#34;一创建父工程&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%ba%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%ba%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、创建父工程
 &lt;/h1&gt;&lt;p&gt;创建的过程和前面创建普通工程 一样。&lt;/p&gt;
 &lt;p&gt;工程名称：pro03-maven-parent&lt;/p&gt;
@@ -3593,10 +3593,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;有打包方式为 pom 的 Maven 工程能够管理其他 Maven 工程。打包方式为 pom 的 Maven 工程中不写业务代码，它是专门管理其他 Maven 工程的工程。&lt;/p&gt;
 &lt;h3 id=&#34;heading&#34;&gt;
-    &lt;a href=&#34;#heading&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#heading&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     
 &lt;/h3&gt;&lt;h1 id=&#34;二创建模块工程&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c%e5%88%9b%e5%bb%ba%e6%a8%a1%e5%9d%97%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e5%88%9b%e5%bb%ba%e6%a8%a1%e5%9d%97%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、创建模块工程
 &lt;/h1&gt;&lt;p&gt;模块工程类似于 IDEA 中的 module，所以需要&lt;strong&gt;进入 pro03-maven-parent 工程的根目录&lt;/strong&gt;，然后运行 mvn archetype:generate 命令来创建模块工程。&lt;/p&gt;
 &lt;p&gt;假设，我们创建三个模块工程：&lt;/p&gt;
@@ -3620,7 +3620,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;三查看被添加新内容的父工程-pomxml&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89%e6%9f%a5%e7%9c%8b%e8%a2%ab%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%86%85%e5%ae%b9%e7%9a%84%e7%88%b6%e5%b7%a5%e7%a8%8b-pomxml&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89%e6%9f%a5%e7%9c%8b%e8%a2%ab%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%86%85%e5%ae%b9%e7%9a%84%e7%88%b6%e5%b7%a5%e7%a8%8b-pomxml&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     三、查看被添加新内容的父工程 pom.xml
 &lt;/h1&gt;&lt;p&gt;下面 modules 和 module 标签是聚合功能的配置&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3640,7 +3640,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;四解读子工程的pomxml&#34;&gt;
-    &lt;a href=&#34;#%e5%9b%9b%e8%a7%a3%e8%af%bb%e5%ad%90%e5%b7%a5%e7%a8%8b%e7%9a%84pomxml&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9b%9b%e8%a7%a3%e8%af%bb%e5%ad%90%e5%b7%a5%e7%a8%8b%e7%9a%84pomxml&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     四、解读子工程的pom.xml
 &lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3675,7 +3675,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;五在父工程中配置依赖的统一管理&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%94%e5%9c%a8%e7%88%b6%e5%b7%a5%e7%a8%8b%e4%b8%ad%e9%85%8d%e7%bd%ae%e4%be%9d%e8%b5%96%e7%9a%84%e7%bb%9f%e4%b8%80%e7%ae%a1%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%94%e5%9c%a8%e7%88%b6%e5%b7%a5%e7%a8%8b%e4%b8%ad%e9%85%8d%e7%bd%ae%e4%be%9d%e8%b5%96%e7%9a%84%e7%bb%9f%e4%b8%80%e7%ae%a1%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     五、在父工程中配置依赖的统一管理
 &lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3746,7 +3746,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;六子工程中引用那些被父工程管理的依赖&#34;&gt;
-    &lt;a href=&#34;#%e5%85%ad%e5%ad%90%e5%b7%a5%e7%a8%8b%e4%b8%ad%e5%bc%95%e7%94%a8%e9%82%a3%e4%ba%9b%e8%a2%ab%e7%88%b6%e5%b7%a5%e7%a8%8b%e7%ae%a1%e7%90%86%e7%9a%84%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%85%ad%e5%ad%90%e5%b7%a5%e7%a8%8b%e4%b8%ad%e5%bc%95%e7%94%a8%e9%82%a3%e4%ba%9b%e8%a2%ab%e7%88%b6%e5%b7%a5%e7%a8%8b%e7%ae%a1%e7%90%86%e7%9a%84%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     六、子工程中引用那些被父工程管理的依赖
 &lt;/h1&gt;&lt;p&gt;关键点：省略版本号&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3804,7 +3804,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;七在父工程中声明自定义属性&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%83%e5%9c%a8%e7%88%b6%e5%b7%a5%e7%a8%8b%e4%b8%ad%e5%a3%b0%e6%98%8e%e8%87%aa%e5%ae%9a%e4%b9%89%e5%b1%9e%e6%80%a7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%83%e5%9c%a8%e7%88%b6%e5%b7%a5%e7%a8%8b%e4%b8%ad%e5%a3%b0%e6%98%8e%e8%87%aa%e5%ae%9a%e4%b9%89%e5%b1%9e%e6%80%a7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     七、在父工程中声明自定义属性
 &lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3845,7 +3845,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;真正实现“一处修改，处处生效”。&lt;/p&gt;
 &lt;h1 id=&#34;八实际意义&#34;&gt;
-    &lt;a href=&#34;#%e5%85%ab%e5%ae%9e%e9%99%85%e6%84%8f%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%85%ab%e5%ae%9e%e9%99%85%e6%84%8f%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     八、实际意义
 &lt;/h1&gt;&lt;p&gt;
 
@@ -3869,10 +3869,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;p&gt;编写一套符合要求、开发各种功能都能正常工作的依赖组合并不容易。如果公司里已经有人总结了成熟的组合方案，那么再开发新项目时，如果不使用原有的积累，而是重新摸索，会浪费大量的时间。为了提高效率，我们可以使用工程继承的机制，让成熟的依赖组合方案能够保留下来。&lt;/p&gt;
 &lt;p&gt;如上图所示，公司级的父工程中管理的就是成熟的依赖组合方案，各个新项目、子系统各取所需即可。&lt;/p&gt;
 &lt;h2 id=&#34;实验-多重继承&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%9e%e9%aa%8c-%e5%a4%9a%e9%87%8d%e7%bb%a7%e6%89%bf&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%ae%9e%e9%aa%8c-%e5%a4%9a%e9%87%8d%e7%bb%a7%e6%89%bf&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     实验 多重继承：
 &lt;/h2&gt;&lt;h3 id=&#34;1aaa项目&#34;&gt;
-    &lt;a href=&#34;#1aaa%e9%a1%b9%e7%9b%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1aaa%e9%a1%b9%e7%9b%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、aaa项目：
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3919,7 +3919,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;2bbb项目继承aaa项目&#34;&gt;
-    &lt;a href=&#34;#2bbb%e9%a1%b9%e7%9b%ae%e7%bb%a7%e6%89%bfaaa%e9%a1%b9%e7%9b%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2bbb%e9%a1%b9%e7%9b%ae%e7%bb%a7%e6%89%bfaaa%e9%a1%b9%e7%9b%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、bbb项目继承aaa项目：
 &lt;/h3&gt;&lt;p&gt;重新定义 javassist的版本&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3965,7 +3965,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;3ccc项目继承bbb项目&#34;&gt;
-    &lt;a href=&#34;#3ccc%e9%a1%b9%e7%9b%ae%e7%bb%a7%e6%89%bfbbb%e9%a1%b9%e7%9b%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3ccc%e9%a1%b9%e7%9b%ae%e7%bb%a7%e6%89%bfbbb%e9%a1%b9%e7%9b%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、ccc项目继承bbb项目：
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4012,7 +4012,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;4发现&#34;&gt;
-    &lt;a href=&#34;#4%e5%8f%91%e7%8e%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e5%8f%91%e7%8e%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、发现
 &lt;/h3&gt;&lt;p&gt;这时 执行 mvn dependency:tree 发现：&lt;/p&gt;
 &lt;p&gt;1、javassist的版本是bbb项目定义的版本，被覆盖了；&lt;/p&gt;
@@ -4031,7 +4031,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
         
         <guid>https://logan.wssw.fun/articles/maven/maven-springboot/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_005.jpg" alt="Featured image of post 4 springboot项目" /&gt;&lt;h1 id=&#34;一模块划分&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80%e6%a8%a1%e5%9d%97%e5%88%92%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80%e6%a8%a1%e5%9d%97%e5%88%92%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、模块划分
 &lt;/h1&gt;&lt;p&gt;一个父工程，一个子工程微服务，一个普通maven子工程&lt;/p&gt;
 &lt;p&gt;
@@ -4052,10 +4052,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;二建父工程&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c%e5%bb%ba%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e5%bb%ba%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、建父工程
 &lt;/h1&gt;&lt;h2 id=&#34;1github建仓库&#34;&gt;
-    &lt;a href=&#34;#1github%e5%bb%ba%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1github%e5%bb%ba%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、github建仓库
 &lt;/h2&gt;&lt;p&gt;
 
@@ -4075,7 +4075,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;2idea新建maven项目父工程&#34;&gt;
-    &lt;a href=&#34;#2idea%e6%96%b0%e5%bb%bamaven%e9%a1%b9%e7%9b%ae%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2idea%e6%96%b0%e5%bb%bamaven%e9%a1%b9%e7%9b%ae%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、idea新建maven项目（父工程）
 &lt;/h2&gt;&lt;p&gt;
 
@@ -4112,7 +4112,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;3idea工程和github建立联系&#34;&gt;
-    &lt;a href=&#34;#3idea%e5%b7%a5%e7%a8%8b%e5%92%8cgithub%e5%bb%ba%e7%ab%8b%e8%81%94%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3idea%e5%b7%a5%e7%a8%8b%e5%92%8cgithub%e5%bb%ba%e7%ab%8b%e8%81%94%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、idea工程和github建立联系
 &lt;/h2&gt;&lt;p&gt;
 
@@ -4160,7 +4160,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;li&gt;接下来就可以直接开发了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;三建子工程&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89%e5%bb%ba%e5%ad%90%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89%e5%bb%ba%e5%ad%90%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     三、建子工程
 &lt;/h1&gt;&lt;p&gt;
 
@@ -4217,7 +4217,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;li&gt;另一个子工程以同样方式创建&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;四父子关系&#34;&gt;
-    &lt;a href=&#34;#%e5%9b%9b%e7%88%b6%e5%ad%90%e5%85%b3%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9b%9b%e7%88%b6%e5%ad%90%e5%85%b3%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     四、父子关系
 &lt;/h1&gt;&lt;p&gt;三个工程的pom文件内容是这样的：&lt;/p&gt;
 &lt;ul&gt;
@@ -4609,10 +4609,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;注意&#34;&gt;
-    &lt;a href=&#34;#%e6%b3%a8%e6%84%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%b3%a8%e6%84%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     注意
 &lt;/h1&gt;&lt;h2 id=&#34;1引入springboot的方式&#34;&gt;
-    &lt;a href=&#34;#1%e5%bc%95%e5%85%a5springboot%e7%9a%84%e6%96%b9%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e5%bc%95%e5%85%a5springboot%e7%9a%84%e6%96%b9%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、引入springboot的方式
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -4819,19 +4819,19 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
         
         <guid>https://logan.wssw.fun/articles/maven/maven-build/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_006.jpg" alt="Featured image of post 5 build标签和插件" /&gt;&lt;h1 id=&#34;一插件和目标&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80%e6%8f%92%e4%bb%b6%e5%92%8c%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80%e6%8f%92%e4%bb%b6%e5%92%8c%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、插件和目标
 &lt;/h1&gt;&lt;h2 id=&#34;1插件&#34;&gt;
-    &lt;a href=&#34;#1%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、插件
 &lt;/h2&gt;&lt;p&gt;Maven 的核心程序仅仅负责宏观调度，不做具体工作。具体工作都是由 Maven 插件完成的。例如：编译就是由 maven-compiler-plugin-3.1.jar 插件来执行的。&lt;/p&gt;
 &lt;h2 id=&#34;2目标&#34;&gt;
-    &lt;a href=&#34;#2%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、目标
 &lt;/h2&gt;&lt;p&gt;一个插件可以对应多个目标，而每一个目标都和生命周期中的某一个环节对应。&lt;/p&gt;
 &lt;p&gt;Default 生命周期中有 compile 和 test-compile 两个和编译相关的环节，这两个环节对应 compile 和 test-compile 两个目标，而这两个目标都是由 maven-compiler-plugin-3.1.jar 插件来执行的。&lt;/p&gt;
 &lt;h2 id=&#34;3调用插件的方法&#34;&gt;
-    &lt;a href=&#34;#3%e8%b0%83%e7%94%a8%e6%8f%92%e4%bb%b6%e7%9a%84%e6%96%b9%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e8%b0%83%e7%94%a8%e6%8f%92%e4%bb%b6%e7%9a%84%e6%96%b9%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、调用插件的方法
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;方式一&lt;/strong&gt;：通过生命周期映射的方式，将插件的goal绑定到生命周期中的phase上，然后调用phase。例如：maven-jar-plugin插件提供了一个叫jar的goal，默认会绑定到生命周期的package阶段(phase)。调用&lt;em&gt;mvn package&lt;/em&gt;就会自动调用&lt;em&gt;maven-jar-plugin:jar&lt;/em&gt;。&lt;strong&gt;生命周期中所有前置的phase会先自动执行。&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4864,18 +4864,18 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;二build标签&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8cbuild%e6%a0%87%e7%ad%be&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8cbuild%e6%a0%87%e7%ad%be&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、build标签
 &lt;/h1&gt;&lt;h2 id=&#34;1介绍&#34;&gt;
-    &lt;a href=&#34;#1%e4%bb%8b%e7%bb%8d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e4%bb%8b%e7%bb%8d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、介绍
 &lt;/h2&gt;&lt;p&gt;在实际使用 Maven 的过程中，我们会发现 build 标签有时候有，有时候没，这是怎么回事呢？其实通过有效 POM 我们能够看到，build 标签的相关配置其实一直都在，只是在我们需要定制构建过程的时候才会通过配置 build 标签覆盖默认值或补充配置。这一点我们可以通过打印有效 POM 来看到。&lt;/p&gt;
 &lt;p&gt;所以&lt;strong&gt;本质&lt;/strong&gt;上来说：我们配置的 build 标签都是对&lt;strong&gt;超级 POM 配置&lt;/strong&gt;的&lt;strong&gt;叠加&lt;/strong&gt;。那我们又为什么要在默认配置的基础上叠加呢？很简单，在默认配置无法满足需求的时候&lt;strong&gt;定制构建过程&lt;/strong&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;2build标签组成&#34;&gt;
-    &lt;a href=&#34;#2build%e6%a0%87%e7%ad%be%e7%bb%84%e6%88%90&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2build%e6%a0%87%e7%ad%be%e7%bb%84%e6%88%90&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、build标签组成
 &lt;/h2&gt;&lt;h3 id=&#34;定义约定的目录结构&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%9a%e4%b9%89%e7%ba%a6%e5%ae%9a%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%ae%9a%e4%b9%89%e7%ba%a6%e5%ae%9a%e7%9a%84%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、定义约定的目录结构
 &lt;/h3&gt;&lt;p&gt;参考示例中的如下部分：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4960,7 +4960,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;备用插件管理&#34;&gt;
-    &lt;a href=&#34;#%e5%a4%87%e7%94%a8%e6%8f%92%e4%bb%b6%e7%ae%a1%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%a4%87%e7%94%a8%e6%8f%92%e4%bb%b6%e7%ae%a1%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、备用插件管理
 &lt;/h3&gt;&lt;p&gt;pluginManagement 标签存放着几个极少用到的插件：&lt;/p&gt;
 &lt;ul&gt;
@@ -5023,7 +5023,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;插件结构&#34;&gt;
-    &lt;a href=&#34;#%e6%8f%92%e4%bb%b6%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%8f%92%e4%bb%b6%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、插件结构
 &lt;/h3&gt;&lt;p&gt;plugins 标签存放的是默认生命周期中实际会用到的插件，这些插件想必大家都不陌生，所以抛开插件本身不谈，我们来看看 plugin 标签的结构：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5073,13 +5073,13 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;1-坐标部分&#34;&gt;
-    &lt;a href=&#34;#1-%e5%9d%90%e6%a0%87%e9%83%a8%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e5%9d%90%e6%a0%87%e9%83%a8%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [1] 坐标部分
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;artifactId 和 version 标签定义了插件的坐标，作为 Maven 的自带插件这里省略了 groupId。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;2-执行部分&#34;&gt;
-    &lt;a href=&#34;#2-%e6%89%a7%e8%a1%8c%e9%83%a8%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e6%89%a7%e8%a1%8c%e9%83%a8%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     [2] 执行部分
 &lt;/h4&gt;&lt;p&gt;executions 标签内可以配置多个 execution 标签，execution 标签内：&lt;/p&gt;
 &lt;ul&gt;
@@ -5176,10 +5176,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;li&gt;&lt;strong&gt;结论&lt;/strong&gt;：每个插件能够做哪些设置都是各个插件自己规定的，无法一概而论。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;三定义jdk版本和编码&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89%e5%ae%9a%e4%b9%89jdk%e7%89%88%e6%9c%ac%e5%92%8c%e7%bc%96%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89%e5%ae%9a%e4%b9%89jdk%e7%89%88%e6%9c%ac%e5%92%8c%e7%bc%96%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     三、定义jdk版本和编码
 &lt;/h1&gt;&lt;h2 id=&#34;1直接使用默认取值&#34;&gt;
-    &lt;a href=&#34;#1%e7%9b%b4%e6%8e%a5%e4%bd%bf%e7%94%a8%e9%bb%98%e8%ae%a4%e5%8f%96%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e7%9b%b4%e6%8e%a5%e4%bd%bf%e7%94%a8%e9%bb%98%e8%ae%a4%e5%8f%96%e5%80%bc&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、直接使用默认取值
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5218,7 +5218,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2或者在插件中定义&#34;&gt;
-    &lt;a href=&#34;#2%e6%88%96%e8%80%85%e5%9c%a8%e6%8f%92%e4%bb%b6%e4%b8%ad%e5%ae%9a%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%88%96%e8%80%85%e5%9c%a8%e6%8f%92%e4%bb%b6%e4%b8%ad%e5%ae%9a%e4%b9%89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、或者在插件中定义
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5382,7 +5382,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;li&gt;整体意思就是源文件编译后，生成的 *.class 字节码文件要符合指定的 JVM 版本&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3或写在超级pom里全局设定&#34;&gt;
-    &lt;a href=&#34;#3%e6%88%96%e5%86%99%e5%9c%a8%e8%b6%85%e7%ba%a7pom%e9%87%8c%e5%85%a8%e5%b1%80%e8%ae%be%e5%ae%9a&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e6%88%96%e5%86%99%e5%9c%a8%e8%b6%85%e7%ba%a7pom%e9%87%8c%e5%85%a8%e5%b1%80%e8%ae%be%e5%ae%9a&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、或写在超级pom里，全局设定
 &lt;/h2&gt;&lt;p&gt;配置的方式是：将 profile 标签整个复制到 settings.xml 文件的 profiles 标签内。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5417,7 +5417,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;不推荐,仅在本地生效，如果脱离当前的settings.xml能够覆盖的范围，则无法生效&lt;/p&gt;
 &lt;h1 id=&#34;四help-插件的各个目标&#34;&gt;
-    &lt;a href=&#34;#%e5%9b%9bhelp-%e6%8f%92%e4%bb%b6%e7%9a%84%e5%90%84%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9b%9bhelp-%e6%8f%92%e4%bb%b6%e7%9a%84%e5%90%84%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     四、help 插件的各个目标
 &lt;/h1&gt;&lt;p&gt;官网说明地址：https://maven.apache.org/plugins/maven-help-plugin&lt;/p&gt;
 &lt;table&gt;
@@ -5459,10 +5459,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id=&#34;五springboot打包插件&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%94springboot%e6%89%93%e5%8c%85%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%94springboot%e6%89%93%e5%8c%85%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     五、springboot打包插件
 &lt;/h1&gt;&lt;h2 id=&#34;1打包&#34;&gt;
-    &lt;a href=&#34;#1%e6%89%93%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e6%89%93%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、打包
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5509,7 +5509,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;2插件的七个目标&#34;&gt;
-    &lt;a href=&#34;#2%e6%8f%92%e4%bb%b6%e7%9a%84%e4%b8%83%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%8f%92%e4%bb%b6%e7%9a%84%e4%b8%83%e4%b8%aa%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、插件的七个目标
 &lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -5550,10 +5550,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id=&#34;六自定义插件&#34;&gt;
-    &lt;a href=&#34;#%e5%85%ad%e8%87%aa%e5%ae%9a%e4%b9%89%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%85%ad%e8%87%aa%e5%ae%9a%e4%b9%89%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     六、自定义插件
 &lt;/h1&gt;&lt;h2 id=&#34;1创建工程&#34;&gt;
-    &lt;a href=&#34;#1%e5%88%9b%e5%bb%ba%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e5%88%9b%e5%bb%ba%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、创建工程
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -5653,10 +5653,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2插件配置&#34;&gt;
-    &lt;a href=&#34;#2%e6%8f%92%e4%bb%b6%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e6%8f%92%e4%bb%b6%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、插件配置
 &lt;/h2&gt;&lt;h3 id=&#34;mojo-类中的配置&#34;&gt;
-    &lt;a href=&#34;#mojo-%e7%b1%bb%e4%b8%ad%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#mojo-%e7%b1%bb%e4%b8%ad%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、Mojo 类中的配置
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;[1]文档注释中用注解&lt;/li&gt;
@@ -5708,11 +5708,11 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;安装插件&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%89%e8%a3%85%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%ae%89%e8%a3%85%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、安装插件
 &lt;/h3&gt;&lt;p&gt;要在后续使用插件，就必须至少将插件安装到本地仓库。 mvn install&lt;/p&gt;
 &lt;h3 id=&#34;注册插件&#34;&gt;
-    &lt;a href=&#34;#%e6%b3%a8%e5%86%8c%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%b3%a8%e5%86%8c%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、注册插件
 &lt;/h3&gt;&lt;p&gt;我们需要将插件坐标中的 groupId 部分注册到 &lt;strong&gt;settings.xml&lt;/strong&gt; 中。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5736,10 +5736,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;3使用插件&#34;&gt;
-    &lt;a href=&#34;#3%e4%bd%bf%e7%94%a8%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e4%bd%bf%e7%94%a8%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、使用插件
 &lt;/h2&gt;&lt;h3 id=&#34;识别插件前缀&#34;&gt;
-    &lt;a href=&#34;#%e8%af%86%e5%88%ab%e6%8f%92%e4%bb%b6%e5%89%8d%e7%bc%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%af%86%e5%88%ab%e6%8f%92%e4%bb%b6%e5%89%8d%e7%bc%80&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、识别插件前缀
 &lt;/h3&gt;&lt;p&gt;Maven 根据插件的 artifactId 来识别插件前缀。例如下面两种情况：&lt;/p&gt;
 &lt;p&gt;​    &lt;u&gt;&lt;strong&gt;[1]前置匹配&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
@@ -5755,7 +5755,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;li&gt;前缀：good&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;在命令行直接用&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e7%9b%b4%e6%8e%a5%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e7%9b%b4%e6%8e%a5%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②在命令行直接用
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;命令：&lt;/li&gt;
@@ -5793,7 +5793,7 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;配置到-build-标签里用&#34;&gt;
-    &lt;a href=&#34;#%e9%85%8d%e7%bd%ae%e5%88%b0-build-%e6%a0%87%e7%ad%be%e9%87%8c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e9%85%8d%e7%bd%ae%e5%88%b0-build-%e6%a0%87%e7%ad%be%e9%87%8c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③、配置到 build 标签里用
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5891,10 +5891,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;七maven常用插件&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%83maven%e5%b8%b8%e7%94%a8%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%83maven%e5%b8%b8%e7%94%a8%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     七、maven常用插件
 &lt;/h1&gt;&lt;h2 id=&#34;1maven-compiler-plugin&#34;&gt;
-    &lt;a href=&#34;#1maven-compiler-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1maven-compiler-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、maven-compiler-plugin
 &lt;/h2&gt;&lt;p&gt;默认绑定到comile phase。用于编译项目源代码。
 compile目标会编译&lt;code&gt;src/main/java&lt;/code&gt;目录下的源代码。
@@ -5954,10 +5954,10 @@ testCompile目标会编译&lt;code&gt;src/test/java&lt;/code&gt;目录下的测�
 &lt;p&gt;第二种方式是直接在命令行指定要执行的插件目标，例如&lt;strong&gt;mvn archetype:generate&lt;/strong&gt; 就表示调用maven-archetype-plugin的generate目标，这种带冒号的调用方式与生命周期无关。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;2maven-resources-plugin&#34;&gt;
-    &lt;a href=&#34;#2maven-resources-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2maven-resources-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、maven-resources-plugin
 &lt;/h2&gt;&lt;h3 id=&#34;分环境配置&#34;&gt;
-    &lt;a href=&#34;#%e5%88%86%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%88%86%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、分环境配置
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;配置目录&lt;/li&gt;
@@ -6104,7 +6104,7 @@ testCompile目标会编译&lt;code&gt;src/test/java&lt;/code&gt;目录下的测�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;打源码包&#34;&gt;
-    &lt;a href=&#34;#%e6%89%93%e6%ba%90%e7%a0%81%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%89%93%e6%ba%90%e7%a0%81%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、打源码包
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6149,7 +6149,7 @@ testCompile目标会编译&lt;code&gt;src/test/java&lt;/code&gt;目录下的测�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;3maven-surefire-plugin&#34;&gt;
-    &lt;a href=&#34;#3maven-surefire-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3maven-surefire-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、maven-surefire-plugin
 &lt;/h2&gt;&lt;p&gt;用于跑测试用例&lt;/p&gt;
 &lt;p&gt;此插件可以不在pom.xml里面声明，maven运行命令时，会自动调用该插件。
@@ -6187,7 +6187,7 @@ testCompile目标会编译&lt;code&gt;src/test/java&lt;/code&gt;目录下的测�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;4spring-boot-maven-plugin&#34;&gt;
-    &lt;a href=&#34;#4spring-boot-maven-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4spring-boot-maven-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、spring-boot-maven-plugin
 &lt;/h2&gt;&lt;p&gt;spring-boot开发必备插件。它能将spring-boot项目代码及其依赖jar打包成一个完整的可执行的jar包（fat jar）作用和插件&lt;code&gt;maven-shade-plugin&lt;/code&gt;差不多。
 repackage的goal绑定在生命周期的package阶段。
@@ -6271,7 +6271,7 @@ repackage的goal绑定在生命周期的package阶段。
 实践证明，如果没有定义&lt;code&gt;&amp;lt;start-class&amp;gt;&lt;/code&gt;，查找入口类的方法也是非常快的。
 在实际开发中，推荐手动定义&lt;code&gt;&amp;lt;start-class&amp;gt;&lt;/code&gt;。这样在一个项目工程中可以有多个&lt;code&gt;@SpringBootApplication&lt;/code&gt;注解的类，修改一下pom里的配置就能灵活切换入口了。&lt;/p&gt;
 &lt;h2 id=&#34;5maven-jar-plugin&#34;&gt;
-    &lt;a href=&#34;#5maven-jar-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5maven-jar-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5、maven-jar-plugin
 &lt;/h2&gt;&lt;p&gt;这个是普通java项目（非java web项目和其他特殊类型的java项目）package阶段默认绑定的插件，能够将编译好的class和资源打成jar包。&lt;/p&gt;
 &lt;ul&gt;
@@ -6586,7 +6586,7 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;6maven-assembly-plugin&#34;&gt;
-    &lt;a href=&#34;#6maven-assembly-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6maven-assembly-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6、maven-assembly-plugin
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6659,7 +6659,7 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;7maven-shade-plugin&#34;&gt;
-    &lt;a href=&#34;#7maven-shade-plugin&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7maven-shade-plugin&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7、maven-shade-plugin
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6724,22 +6724,22 @@ repackage的goal绑定在生命周期的package阶段。
         
         <guid>https://logan.wssw.fun/articles/maven/maven-production/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_008.jpg" alt="Featured image of post 6 生产实践" /&gt;&lt;h1 id=&#34;一jar包冲突问题&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80jar%e5%8c%85%e5%86%b2%e7%aa%81%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80jar%e5%8c%85%e5%86%b2%e7%aa%81%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、jar包冲突问题
 &lt;/h1&gt;&lt;h2 id=&#34;1谁需要面对-jar-包冲突&#34;&gt;
-    &lt;a href=&#34;#1%e8%b0%81%e9%9c%80%e8%a6%81%e9%9d%a2%e5%af%b9-jar-%e5%8c%85%e5%86%b2%e7%aa%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e8%b0%81%e9%9c%80%e8%a6%81%e9%9d%a2%e5%af%b9-jar-%e5%8c%85%e5%86%b2%e7%aa%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、谁需要面对 jar 包冲突？
 &lt;/h2&gt;&lt;p&gt;先给结论：编订依赖列表的程序员。初次设定一组依赖，因为尚未经过验证，所以确实有可能存在各种问题，需要做有针对性的调整。那么谁来做这件事呢？我们最不希望看到的就是：团队中每个程序员都需要自己去找依赖，即使是做同一个项目，每个模块也各加各的依赖，没有统一管理。那前人踩过的坑，后人还要再踩一遍。而且大家用的依赖有很多细节都不一样，版本更是五花八门，这就让事情变得更加复杂。&lt;/p&gt;
 &lt;p&gt;所以虽然初期需要根据项目开发和实际运行情况对依赖配置不断调整，最终确定一个各方面都 OK 的版本。但是一旦确定下来，放在父工程中做依赖管理，各个子模块各取所需，这样基本上就能很好的避免问题的扩散。&lt;/p&gt;
 &lt;p&gt;即使开发中遇到了新问题，也可以回到源头检查、调整 dependencyManagement 配置的列表——而不是每个模块都要改。所以学完这一节你应该就会对前面讲过的『继承』有了更深的理解。&lt;/p&gt;
 &lt;h2 id=&#34;2表现形式&#34;&gt;
-    &lt;a href=&#34;#2%e8%a1%a8%e7%8e%b0%e5%bd%a2%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e8%a1%a8%e7%8e%b0%e5%bd%a2%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、表现形式
 &lt;/h2&gt;&lt;p&gt;由于实际开发时我们往往都会整合使用很多大型框架，所以一个项目中哪怕只是一个模块也会涉及到大量 jar 包。数以百计的 jar 包要彼此协调、精密配合才能保证程序正常运行。而规模如此庞大的 jar 包组合在一起难免会有磕磕碰碰。最关键的是由于 jar 包冲突所导致的问题非常诡异，这里我们只能罗列较为典型的问题，而没法保证穷举。&lt;/p&gt;
 &lt;p&gt;但是我们仍然能够指出一点：一般来说，由于我们自己编写代码、配置文件写错所导致的问题通常能够在异常信息中看到我们自己类的全类名或配置文件的所在路径。如果整个错误信息中完全没有我们负责的部分，全部是框架、第三方工具包里面的类报错，这往往就是 jar 包的问题所引起的。&lt;/p&gt;
 &lt;p&gt;而具体的表现形式中，主要体现为找不到类或找不到方法。&lt;/p&gt;
 &lt;h3 id=&#34;抛异常找不到类&#34;&gt;
-    &lt;a href=&#34;#%e6%8a%9b%e5%bc%82%e5%b8%b8%e6%89%be%e4%b8%8d%e5%88%b0%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%8a%9b%e5%bc%82%e5%b8%b8%e6%89%be%e4%b8%8d%e5%88%b0%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①抛异常：找不到类
 &lt;/h3&gt;&lt;p&gt;此时抛出的常见的异常类型：&lt;/p&gt;
 &lt;ul&gt;
@@ -6786,7 +6786,7 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;p&gt;那当我们确实需要用到 NoopHostnameVerifier 这个类，我们看到 Maven 通过依赖传递机制引入了这个 jar 包，所以没有明确地显式声明对这个 jar 包的依赖。可是 Maven 传递过来的 jar 包是 4.3.6 版本，里面没有包含我们需要的类，就会抛出异常。&lt;/p&gt;
 &lt;p&gt;而『冲突』体现在：4.3.6 和 4.4 这两个版本的 jar 包都被框架所依赖的 jar 包给传递进来了，但是假设 Maven 根据**『版本仲裁』**规则实际采纳的是 4.3.6。&lt;/p&gt;
 &lt;h3 id=&#34;抛异常找不到方法&#34;&gt;
-    &lt;a href=&#34;#%e6%8a%9b%e5%bc%82%e5%b8%b8%e6%89%be%e4%b8%8d%e5%88%b0%e6%96%b9%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%8a%9b%e5%bc%82%e5%b8%b8%e6%89%be%e4%b8%8d%e5%88%b0%e6%96%b9%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②抛异常：找不到方法
 &lt;/h3&gt;&lt;p&gt;程序找不到符合预期的方法。这种情况多见于通过反射调用方法，所以经常会导致：java.lang.NoSuchMethodError。比如 antlr:antlr:x.x.x 这个包中有一个接口：antlr.collections.AST&lt;/p&gt;
 &lt;table&gt;
@@ -6808,7 +6808,7 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;没报错但结果不对&#34;&gt;
-    &lt;a href=&#34;#%e6%b2%a1%e6%8a%a5%e9%94%99%e4%bd%86%e7%bb%93%e6%9e%9c%e4%b8%8d%e5%af%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%b2%a1%e6%8a%a5%e9%94%99%e4%bd%86%e7%bb%93%e6%9e%9c%e4%b8%8d%e5%af%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③没报错但结果不对
 &lt;/h3&gt;&lt;p&gt;发生这种情况比较典型的原因是：两个 jar 包中的类分别实现了同一个接口，这本来是很正常的。但是问题在于：由于没有注意命名规范，两个不同实现类恰巧是同一个名字。&lt;/p&gt;
 &lt;p&gt;
@@ -6830,11 +6830,11 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;/p&gt;
 &lt;p&gt;具体例子是有的同学在实际工作中遇到过：项目中部分模块使用 log4j 打印日志；其它模块使用 logback，编译运行都不会冲突，但是会引起日志服务降级，让你的 log 配置文件失效。比如：你指定了 error 级别输出，但是冲突就会导致 info、debug 都在输出。&lt;/p&gt;
 &lt;h2 id=&#34;3本质&#34;&gt;
-    &lt;a href=&#34;#3%e6%9c%ac%e8%b4%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e6%9c%ac%e8%b4%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、本质
 &lt;/h2&gt;&lt;p&gt;以上表现形式归根到底是&lt;strong&gt;两种基本情况&lt;/strong&gt;导致的：&lt;/p&gt;
 &lt;h3 id=&#34;同一jar包的不同版本&#34;&gt;
-    &lt;a href=&#34;#%e5%90%8c%e4%b8%80jar%e5%8c%85%e7%9a%84%e4%b8%8d%e5%90%8c%e7%89%88%e6%9c%ac&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%90%8c%e4%b8%80jar%e5%8c%85%e7%9a%84%e4%b8%8d%e5%90%8c%e7%89%88%e6%9c%ac&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①同一jar包的不同版本
 &lt;/h3&gt;&lt;p&gt;
 
@@ -6856,7 +6856,7 @@ repackage的goal绑定在生命周期的package阶段。
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;不同jar包中包含同名类&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%8d%e5%90%8cjar%e5%8c%85%e4%b8%ad%e5%8c%85%e5%90%ab%e5%90%8c%e5%90%8d%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%8d%e5%90%8cjar%e5%8c%85%e4%b8%ad%e5%8c%85%e5%90%ab%e5%90%8c%e5%90%8d%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②不同jar包中包含同名类
 &lt;/h3&gt;&lt;p&gt;这里我们拿 netty 来举个例子，netty 是一个类似 Tomcat 的 Servlet 容器。通常我们不会直接依赖它，所以基本上都是框架传递进来的。那么当我们用到的框架很多时，就会有不同的框架用不同的坐标导入 netty。大家可以参照下表对比一下两组坐标：&lt;/p&gt;
 &lt;table&gt;
@@ -6941,10 +6941,10 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;4解决办法&#34;&gt;
-    &lt;a href=&#34;#4%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、解决办法
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;
-    &lt;a href=&#34;#%e6%a6%82%e8%bf%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%a6%82%e8%bf%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①概述
 &lt;/h3&gt;&lt;p&gt;很多情况下常用框架之间的整合容易出现的冲突问题都有人总结过了，拿抛出的异常搜索一下基本上就可以直接找到对应的 jar 包。我们接下来要说的是通用方法。&lt;/p&gt;
 &lt;p&gt;不管具体使用的是什么工具，基本思路无非是这么两步：&lt;/p&gt;
@@ -6953,7 +6953,7 @@ repackage的goal绑定在生命周期的package阶段。
 &lt;li&gt;第二步：在冲突的 jar 包中选定一个。具体做法无非是通过 exclusions 排除依赖，或是明确声明依赖。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;idea-的-maven-helper-插件&#34;&gt;
-    &lt;a href=&#34;#idea-%e7%9a%84-maven-helper-%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#idea-%e7%9a%84-maven-helper-%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②IDEA 的 Maven Helper 插件
 &lt;/h3&gt;&lt;p&gt;这个插件是 IDEA 中安装的插件，不是 Maven 插件。它能够给我们罗列出来同一个 jar 包的不同版本，以及它们的来源。但是对不同 jar 包中同名的类没有办法。
 
@@ -7017,7 +7017,7 @@ repackage的goal绑定在生命周期的package阶段。
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;maven-的-enforcer-插件&#34;&gt;
-    &lt;a href=&#34;#maven-%e7%9a%84-enforcer-%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#maven-%e7%9a%84-enforcer-%e6%8f%92%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③Maven 的 enforcer 插件
 &lt;/h3&gt;&lt;p&gt;使用 Maven 的 enforcer 插件既可以检测同一个 jar 包的不同版本，又可以检测不同 jar 包中同名的类。&lt;/p&gt;
 &lt;ul&gt;
@@ -7164,20 +7164,20 @@ org/jboss/netty/util/internal/ConcurrentHashMap$HashIterator.class&lt;/p&gt;
 &lt;p&gt;……&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;二体系外jar包导入&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c%e4%bd%93%e7%b3%bb%e5%a4%96jar%e5%8c%85%e5%af%bc%e5%85%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e4%bd%93%e7%b3%bb%e5%a4%96jar%e5%8c%85%e5%af%bc%e5%85%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、体系外jar包导入
 &lt;/h1&gt;&lt;h2 id=&#34;1提出问题&#34;&gt;
-    &lt;a href=&#34;#1%e6%8f%90%e5%87%ba%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e6%8f%90%e5%87%ba%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、提出问题
 &lt;/h2&gt;&lt;p&gt;目前来说我们在 Maven 工程中用到的 jar 包都是通过 Maven 本身的机制导入进来的。&lt;/p&gt;
 &lt;p&gt;而实际开发中确实有可能用到一些 jar 包并非是用 Maven 的方式发布，那自然也没法通过 Maven 导入。&lt;/p&gt;
 &lt;p&gt;此时如果我们能够拿到该 jar 包的源码那还可以自己建一个 Maven 工程，自己打包。可是如果连源码都没有呢？&lt;/p&gt;
 &lt;p&gt;这方面的例子包括一些人脸识别用的 jar 包、海康视频监控 jar 包等等。&lt;/p&gt;
 &lt;h2 id=&#34;2解决办法&#34;&gt;
-    &lt;a href=&#34;#2%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、解决办法
 &lt;/h2&gt;&lt;h3 id=&#34;准备一个体系外-jar-包&#34;&gt;
-    &lt;a href=&#34;#%e5%87%86%e5%a4%87%e4%b8%80%e4%b8%aa%e4%bd%93%e7%b3%bb%e5%a4%96-jar-%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%87%86%e5%a4%87%e4%b8%80%e4%b8%aa%e4%bd%93%e7%b3%bb%e5%a4%96-jar-%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①准备一个体系外 jar 包
 &lt;/h3&gt;&lt;p&gt;通过学 Maven 以前的方式创建一个 Java 工程，然后导出 jar 包即可用来测试。&lt;/p&gt;
 &lt;p&gt;
@@ -7306,7 +7306,7 @@ org/jboss/netty/util/internal/ConcurrentHashMap$HashIterator.class&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;将该-jar-包安装到-maven-仓库&#34;&gt;
-    &lt;a href=&#34;#%e5%b0%86%e8%af%a5-jar-%e5%8c%85%e5%ae%89%e8%a3%85%e5%88%b0-maven-%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%b0%86%e8%af%a5-jar-%e5%8c%85%e5%ae%89%e8%a3%85%e5%88%b0-maven-%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②将该 jar 包安装到 Maven 仓库
 &lt;/h3&gt;&lt;p&gt;这里我们使用 install 插件的 install-file 目标：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -7406,7 +7406,7 @@ org/jboss/netty/util/internal/ConcurrentHashMap$HashIterator.class&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;测试&#34;&gt;
-    &lt;a href=&#34;#%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ③测试
 &lt;/h3&gt;&lt;p&gt;在其它地方依赖这个 jar 包：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -7446,7 +7446,7 @@ org/jboss/netty/util/internal/ConcurrentHashMap$HashIterator.class&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;三nexus私服&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89nexus%e7%a7%81%e6%9c%8d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89nexus%e7%a7%81%e6%9c%8d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     三、Nexus私服
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://c.biancheng.net/nexus/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://c.biancheng.net/nexus/
@@ -7463,7 +7463,7 @@ org/jboss/netty/util/internal/ConcurrentHashMap$HashIterator.class&lt;/p&gt;
 
 &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1安装&#34;&gt;
-    &lt;a href=&#34;#1%e5%ae%89%e8%a3%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e5%ae%89%e8%a3%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、安装
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;下载&lt;/li&gt;
@@ -7527,7 +7527,7 @@ org/jboss/netty/util/internal/ConcurrentHashMap$HashIterator.class&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2启动nexus&#34;&gt;
-    &lt;a href=&#34;#2%e5%90%af%e5%8a%a8nexus&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e5%90%af%e5%8a%a8nexus&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、启动nexus
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -7601,7 +7601,7 @@ tcp 0 0 0.0.0.0:&lt;strong&gt;8081&lt;/strong&gt; 0.0.0.0:* LISTEN 9872/java&lt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;root为系统用户，前面要加上@&lt;/p&gt;
 &lt;h2 id=&#34;3访问-nexus-首页&#34;&gt;
-    &lt;a href=&#34;#3%e8%ae%bf%e9%97%ae-nexus-%e9%a6%96%e9%a1%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e8%ae%bf%e9%97%ae-nexus-%e9%a6%96%e9%a1%b5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、访问 Nexus 首页
 &lt;/h2&gt;&lt;p&gt;首页地址：http://[Linux 服务器地址]:8081/&lt;/p&gt;
 &lt;p&gt;
@@ -7688,7 +7688,7 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;4nexus各种库&#34;&gt;
-    &lt;a href=&#34;#4nexus%e5%90%84%e7%a7%8d%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4nexus%e5%90%84%e7%a7%8d%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、nexus各种库
 &lt;/h2&gt;&lt;p&gt;
 
@@ -7796,7 +7796,7 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
 &lt;li&gt;Maven 还可以从仓库组中下载构件，仓库组会从其包含的宿主仓库和代理仓库中获取构件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;5开启索引&#34;&gt;
-    &lt;a href=&#34;#5%e5%bc%80%e5%90%af%e7%b4%a2%e5%bc%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5%e5%bc%80%e5%90%af%e7%b4%a2%e5%bc%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5、开启索引
 &lt;/h2&gt;&lt;p&gt;
 
@@ -7856,7 +7856,7 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
 
 &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;6新建阿里云代理&#34;&gt;
-    &lt;a href=&#34;#6%e6%96%b0%e5%bb%ba%e9%98%bf%e9%87%8c%e4%ba%91%e4%bb%a3%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6%e6%96%b0%e5%bb%ba%e9%98%bf%e9%87%8c%e4%ba%91%e4%bb%a3%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6、新建阿里云代理
 &lt;/h2&gt;&lt;p&gt;
 
@@ -7966,11 +7966,11 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;7下载构件&#34;&gt;
-    &lt;a href=&#34;#7%e4%b8%8b%e8%bd%bd%e6%9e%84%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7%e4%b8%8b%e8%bd%bd%e6%9e%84%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7、下载构件
 &lt;/h2&gt;&lt;p&gt;两种方式：pom.xml 和 setting.xml&lt;/p&gt;
 &lt;h3 id=&#34;在-pomxml-中配置&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8-pomxml-%e4%b8%ad%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8-pomxml-%e4%b8%ad%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ①、在 pom.xml 中配置
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -8059,7 +8059,7 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;在-settingxml-中配置&#34;&gt;
-    &lt;a href=&#34;#%e5%9c%a8-settingxml-%e4%b8%ad%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9c%a8-settingxml-%e4%b8%ad%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     ②、在 setting.xml 中配置
 &lt;/h3&gt;&lt;p&gt;Nexus 私服通常会与镜像（mirror）结合使用，使 Nexus 成为所有远程仓库的私服，这样不仅可以从 Nexus 中获取所有所需构件，还能将配置集中到 Nexus 私服中，简化 Maven 本身的配置。&lt;/p&gt;
 &lt;p&gt;我们可以创建一个匹配任何仓库的镜像，镜像的地址为 Nexus 中仓库的地址，这样 Maven 对于任何构件的下载请求都会被拦截跳转到 Nexus 私服中，其具体配置如下。&lt;/p&gt;
@@ -8168,7 +8168,7 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;8上传构件&#34;&gt;
-    &lt;a href=&#34;#8%e4%b8%8a%e4%bc%a0%e6%9e%84%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#8%e4%b8%8a%e4%bc%a0%e6%9e%84%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     8、上传构件
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;首先pom.xml ：&lt;/li&gt;
@@ -8239,7 +8239,7 @@ ed5e96a8-67aa-4dca-9ee8-1930b1dd5415&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;四复制仓库&#34;&gt;
-    &lt;a href=&#34;#%e5%9b%9b%e5%a4%8d%e5%88%b6%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9b%9b%e5%a4%8d%e5%88%b6%e4%bb%93%e5%ba%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     四、复制仓库
 &lt;/h1&gt;&lt;p&gt;复制仓库，jar包的mirrorId不一样，所以不会用到本地包&lt;/p&gt;
 &lt;p&gt;_remote.repositories:   mine和central是mirrorId&lt;/p&gt;

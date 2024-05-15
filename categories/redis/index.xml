@@ -13,7 +13,7 @@
         
         <guid>https://logan.wssw.fun/p/2023/09/3895o138/</guid>
         <description>&lt;h2 id=&#34;一特点&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80%e7%89%b9%e7%82%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80%e7%89%b9%e7%82%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、特点
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;键值（key-value）型，value支持多种不同数据结构，功能丰富&lt;/li&gt;
@@ -26,7 +26,7 @@
 &lt;p&gt;1、redis是单线程的，保证原子性；6.0后网络请求是多线程，但是最终的命令执行依然是单线程&lt;/p&gt;
 &lt;p&gt;2、为什么快？低延迟，速度快（基于内存、10多路复用、良好的编码、c语言）&lt;/p&gt;
 &lt;h2 id=&#34;二安装&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c%e5%ae%89%e8%a3%85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e5%ae%89%e8%a3%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二、安装
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -322,21 +322,21 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;三应用&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%89%e5%ba%94%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%89%e5%ba%94%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     三、应用
 &lt;/h2&gt;&lt;h3 id=&#34;1全局id生成器&#34;&gt;
-    &lt;a href=&#34;#1%e5%85%a8%e5%b1%80id%e7%94%9f%e6%88%90%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e5%85%a8%e5%b1%80id%e7%94%9f%e6%88%90%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、全局ID生成器
 &lt;/h3&gt;&lt;p&gt;一位标志位(0)+42位时间戳+21位redis自增  100年&lt;/p&gt;
 &lt;h3 id=&#34;2缓存&#34;&gt;
-    &lt;a href=&#34;#2%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、缓存
 &lt;/h3&gt;&lt;p&gt;缓存预热
 缓存穿透 1、缓存null数据 2、布隆过滤&lt;br&gt;
 缓存雪崩 1、设置不同过期时间 2、redis高可用 3、多层缓存 4、缓存预热 5、降级限流&lt;br&gt;
 缓存击穿 1、互斥锁(性能差，有死锁风险) 2、逻辑过期&lt;/p&gt;
 &lt;h3 id=&#34;3秒杀&#34;&gt;
-    &lt;a href=&#34;#3%e7%a7%92%e6%9d%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e7%a7%92%e6%9d%80&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3、秒杀
 &lt;/h3&gt;&lt;p&gt;秒杀  一人一单、超卖问题 三种方式：&lt;/p&gt;
 &lt;ul&gt;
@@ -399,7 +399,7 @@ XPENDING&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;4点赞和关注&#34;&gt;
-    &lt;a href=&#34;#4%e7%82%b9%e8%b5%9e%e5%92%8c%e5%85%b3%e6%b3%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e7%82%b9%e8%b5%9e%e5%92%8c%e5%85%b3%e6%b3%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4、点赞和关注
 &lt;/h3&gt;&lt;p&gt;大V 普通 僵尸粉-活跃粉丝 ， 拉取关注的用户发布的内容，sortedSet 滚动分页查询，按照时间戳倒序排序。
 因为查完第一页后，可能会新增数据，所以不能用索引来查，所以用score存时间戳，用时间戳筛选数据
@@ -409,7 +409,7 @@ min=0 不变
 offset：第一次查询时，为0；后面查询时，offset为上一次查询结果中，与最后一个元素的score相等的元素个数，即跳过这些元素，避免重复显示
 count=3 不变，每页查多少数据&lt;/p&gt;
 &lt;h3 id=&#34;5附近商户-地理坐标&#34;&gt;
-    &lt;a href=&#34;#5%e9%99%84%e8%bf%91%e5%95%86%e6%88%b7-%e5%9c%b0%e7%90%86%e5%9d%90%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5%e9%99%84%e8%bf%91%e5%95%86%e6%88%b7-%e5%9c%b0%e7%90%86%e5%9d%90%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5、附近商户-地理坐标
 &lt;/h3&gt;&lt;p&gt;​	GEO数据结构，底层就时一个sortedset，经纬度转换为score
 ​	GEOADD：添加一个地理空间信息，包含：经度（longitude）、纬度（latitude）、值（member）
@@ -425,7 +425,7 @@ count=3 不变，每页查多少数据&lt;/p&gt;
 ​		GEOSEARCH g1 FROMLONLAT 116 39 BYRADIUS 300 km ASC WITHDIST
 ​	GEOSEARCHSTORE：与GEOSEARCH功能一致，不过可以把结果存储到一个指定的key。 6.2.新功能&lt;/p&gt;
 &lt;h3 id=&#34;6用户签到&#34;&gt;
-    &lt;a href=&#34;#6%e7%94%a8%e6%88%b7%e7%ad%be%e5%88%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6%e7%94%a8%e6%88%b7%e7%ad%be%e5%88%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6、用户签到
 &lt;/h3&gt;&lt;p&gt;BitMap - 位图 -  假设一次签到数据库中生成一行，每行占22字节，那么1000万个用户签到一个月=非常大的内存和行数
 BitMap把每天签到与否抽象为bit的0或1，一个月31天，4个字节就能存下
@@ -451,7 +451,7 @@ count++;
 num &amp;raquo;&amp;gt;= 1;
 }&lt;/p&gt;
 &lt;h3 id=&#34;7uv-pv统计&#34;&gt;
-    &lt;a href=&#34;#7uv-pv%e7%bb%9f%e8%ae%a1&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7uv-pv%e7%bb%9f%e8%ae%a1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7、UV PV统计
 &lt;/h3&gt;&lt;p&gt;HyperLogLog
 UV：Unique Visitor ，浏览网页的自然人，一天内同一个用户访问多次，只记录一次
@@ -463,11 +463,11 @@ PFCOUNT key [key &amp;hellip;]  统计数量
 PFMERGE destkey sourcekey [sourcekey &amp;hellip;]  合并
 HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;h3 id=&#34;8分布式锁&#34;&gt;
-    &lt;a href=&#34;#8%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#8%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     8、分布式锁
 &lt;/h3&gt;&lt;p&gt;redlock和mutilock  某台节点时钟漂移&lt;/p&gt;
 &lt;h2 id=&#34;四分布式&#34;&gt;
-    &lt;a href=&#34;#%e5%9b%9b%e5%88%86%e5%b8%83%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9b%9b%e5%88%86%e5%b8%83%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     四、分布式
 &lt;/h2&gt;&lt;p&gt;单点问题：&lt;/p&gt;
 &lt;ul&gt;
@@ -485,7 +485,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
         
         <guid>https://logan.wssw.fun/p/2023/09/4511zs45/</guid>
         <description>&lt;h1 id=&#34;分布式缓存&#34;&gt;
-    &lt;a href=&#34;#%e5%88%86%e5%b8%83%e5%bc%8f%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%88%86%e5%b8%83%e5%bc%8f%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     分布式缓存
 &lt;/h1&gt;&lt;p&gt;&amp;ndash; 基于Redis集群解决单机Redis存在的问题&lt;/p&gt;
 &lt;p&gt;单机的Redis存在四大问题：&lt;/p&gt;
@@ -509,10 +509,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;0学习目标&#34;&gt;
-    &lt;a href=&#34;#0%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#0%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     0.学习目标
 &lt;/h1&gt;&lt;h1 id=&#34;1redis持久化&#34;&gt;
-    &lt;a href=&#34;#1redis%e6%8c%81%e4%b9%85%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1redis%e6%8c%81%e4%b9%85%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.Redis持久化
 &lt;/h1&gt;&lt;p&gt;Redis有两种持久化方案：&lt;/p&gt;
 &lt;ul&gt;
@@ -520,11 +520,11 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;AOF持久化&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;11rdb持久化&#34;&gt;
-    &lt;a href=&#34;#11rdb%e6%8c%81%e4%b9%85%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#11rdb%e6%8c%81%e4%b9%85%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.1.RDB持久化
 &lt;/h2&gt;&lt;p&gt;RDB全称Redis Database Backup file（Redis数据备份文件），也被叫做Redis数据快照。简单来说就是把内存中的所有数据都记录到磁盘中。当Redis实例故障重启后，从磁盘读取快照文件，恢复数据。快照文件称为RDB文件，默认是保存在当前运行目录。&lt;/p&gt;
 &lt;h3 id=&#34;111执行时机&#34;&gt;
-    &lt;a href=&#34;#111%e6%89%a7%e8%a1%8c%e6%97%b6%e6%9c%ba&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#111%e6%89%a7%e8%a1%8c%e6%97%b6%e6%9c%ba&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.1.1.执行时机
 &lt;/h3&gt;&lt;p&gt;RDB持久化在四种情况下会执行：&lt;/p&gt;
 &lt;ul&gt;
@@ -622,7 +622,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;RDB&lt;/em&gt;是&lt;em&gt;从头开始&lt;/em&gt;创建，更健壮和稳定&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;112rdb原理&#34;&gt;
-    &lt;a href=&#34;#112rdb%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#112rdb%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.1.2.RDB原理
 &lt;/h3&gt;&lt;p&gt;bgsave开始时会fork主进程得到子进程，子进程共享主进程的内存数据。完成fork后读取内存数据并写入 RDB 文件。&lt;/p&gt;
 &lt;p&gt;fork采用的是copy-on-write技术：&lt;/p&gt;
@@ -650,7 +650,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;113小结&#34;&gt;
-    &lt;a href=&#34;#113%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#113%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.1.3.小结
 &lt;/h3&gt;&lt;p&gt;RDB方式bgsave的基本流程？&lt;/p&gt;
 &lt;ul&gt;
@@ -669,10 +669,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;fork子进程、压缩、写出RDB文件都比较耗时&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;12aof持久化&#34;&gt;
-    &lt;a href=&#34;#12aof%e6%8c%81%e4%b9%85%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#12aof%e6%8c%81%e4%b9%85%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.2.AOF持久化
 &lt;/h2&gt;&lt;h3 id=&#34;121aof原理&#34;&gt;
-    &lt;a href=&#34;#121aof%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#121aof%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.2.1.AOF原理
 &lt;/h3&gt;&lt;p&gt;AOF全称为Append Only File（追加文件）。Redis处理的每一个写命令都会记录在AOF文件，可以看做是命令日志文件。&lt;/p&gt;
 &lt;p&gt;
@@ -695,7 +695,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;122aof配置&#34;&gt;
-    &lt;a href=&#34;#122aof%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#122aof%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.2.2.AOF配置
 &lt;/h3&gt;&lt;p&gt;AOF默认是关闭的，需要修改redis.conf配置文件来开启AOF：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -752,7 +752,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;123aof文件重写&#34;&gt;
-    &lt;a href=&#34;#123aof%e6%96%87%e4%bb%b6%e9%87%8d%e5%86%99&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#123aof%e6%96%87%e4%bb%b6%e9%87%8d%e5%86%99&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.2.3.AOF文件重写
 &lt;/h3&gt;&lt;p&gt;因为是记录命令，AOF文件会比RDB文件大的多。而且AOF会记录对同一个key的多次写操作，但只有最后一次写操作才有意义。通过执行bgrewriteaof命令，可以让AOF文件执行重写功能，用最少的命令达到相同效果。&lt;/p&gt;
 &lt;p&gt;
@@ -792,7 +792,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;13rdb与aof对比&#34;&gt;
-    &lt;a href=&#34;#13rdb%e4%b8%8eaof%e5%af%b9%e6%af%94&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#13rdb%e4%b8%8eaof%e5%af%b9%e6%af%94&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.3.RDB与AOF对比
 &lt;/h2&gt;&lt;p&gt;RDB和AOF各有自己的优缺点，如果对数据安全性要求较高，在实际开发中往往会&lt;strong&gt;结合&lt;/strong&gt;两者来使用。&lt;/p&gt;
 &lt;ul&gt;
@@ -826,7 +826,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;14-rdb转aof&#34;&gt;
-    &lt;a href=&#34;#14-rdb%e8%bd%acaof&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#14-rdb%e8%bd%acaof&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.4 RDB转AOF
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;对数据进行cp 备份&lt;/li&gt;
@@ -862,10 +862,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;2redis主从&#34;&gt;
-    &lt;a href=&#34;#2redis%e4%b8%bb%e4%bb%8e&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2redis%e4%b8%bb%e4%bb%8e&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.Redis主从
 &lt;/h1&gt;&lt;h2 id=&#34;21搭建主从架构&#34;&gt;
-    &lt;a href=&#34;#21%e6%90%ad%e5%bb%ba%e4%b8%bb%e4%bb%8e%e6%9e%b6%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#21%e6%90%ad%e5%bb%ba%e4%b8%bb%e4%bb%8e%e6%9e%b6%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.1.搭建主从架构
 &lt;/h2&gt;&lt;p&gt;单节点Redis的并发能力是有上限的，要进一步提高Redis的并发能力，就需要搭建主从集群，实现读写分离。&lt;/p&gt;
 &lt;ul&gt;
@@ -911,10 +911,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;22主从数据同步原理&#34;&gt;
-    &lt;a href=&#34;#22%e4%b8%bb%e4%bb%8e%e6%95%b0%e6%8d%ae%e5%90%8c%e6%ad%a5%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#22%e4%b8%bb%e4%bb%8e%e6%95%b0%e6%8d%ae%e5%90%8c%e6%ad%a5%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2.主从数据同步原理
 &lt;/h2&gt;&lt;h3 id=&#34;221全量同步&#34;&gt;
-    &lt;a href=&#34;#221%e5%85%a8%e9%87%8f%e5%90%8c%e6%ad%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#221%e5%85%a8%e9%87%8f%e5%90%8c%e6%ad%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2.1.全量同步
 &lt;/h3&gt;&lt;p&gt;主从第一次建立连接时，会执行&lt;strong&gt;全量同步&lt;/strong&gt;，将master节点的所有数据都拷贝给slave节点，流程：&lt;/p&gt;
 &lt;p&gt;
@@ -977,7 +977,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;slave执行接收到的命令，保持与master之间的同步&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;222增量同步&#34;&gt;
-    &lt;a href=&#34;#222%e5%a2%9e%e9%87%8f%e5%90%8c%e6%ad%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#222%e5%a2%9e%e9%87%8f%e5%90%8c%e6%ad%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2.2.增量同步
 &lt;/h3&gt;&lt;p&gt;全量同步需要先做RDB，然后将RDB文件通过网络传输个slave，成本太高了。因此除了第一次做全量同步，其它大多数时候slave与master都是做&lt;strong&gt;增量同步&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;什么是增量同步？就是只更新slave与master存在差异的部分数据。如图：&lt;/p&gt;
@@ -1002,7 +1002,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;那么master怎么知道slave与自己的数据差异在哪里呢?&lt;/p&gt;
 &lt;h3 id=&#34;223repl_backlog原理&#34;&gt;
-    &lt;a href=&#34;#223repl_backlog%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#223repl_backlog%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2.3.repl_backlog原理
 &lt;/h3&gt;&lt;p&gt;master怎么知道slave与自己的数据差异在哪里呢?&lt;/p&gt;
 &lt;p&gt;这就要说到全量同步时的repl_baklog文件了。&lt;/p&gt;
@@ -1130,7 +1130,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;23主从同步优化&#34;&gt;
-    &lt;a href=&#34;#23%e4%b8%bb%e4%bb%8e%e5%90%8c%e6%ad%a5%e4%bc%98%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#23%e4%b8%bb%e4%bb%8e%e5%90%8c%e6%ad%a5%e4%bc%98%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.3.主从同步优化
 &lt;/h2&gt;&lt;p&gt;主从同步可以保证主从数据的一致性，非常重要。&lt;/p&gt;
 &lt;p&gt;可以从以下几个方面来优化Redis主从就集群：&lt;/p&gt;
@@ -1161,7 +1161,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;24小结&#34;&gt;
-    &lt;a href=&#34;#24%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#24%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.4.小结
 &lt;/h2&gt;&lt;p&gt;简述全量同步和增量同步区别？&lt;/p&gt;
 &lt;ul&gt;
@@ -1178,14 +1178,14 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;slave节点断开又恢复，并且在repl_baklog中能找到offset时&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3redis哨兵&#34;&gt;
-    &lt;a href=&#34;#3redis%e5%93%a8%e5%85%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3redis%e5%93%a8%e5%85%b5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.Redis哨兵
 &lt;/h1&gt;&lt;p&gt;Redis提供了哨兵（Sentinel）机制来实现主从集群的自动故障恢复。&lt;/p&gt;
 &lt;h2 id=&#34;31哨兵原理&#34;&gt;
-    &lt;a href=&#34;#31%e5%93%a8%e5%85%b5%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#31%e5%93%a8%e5%85%b5%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.哨兵原理
 &lt;/h2&gt;&lt;h3 id=&#34;311集群结构和作用&#34;&gt;
-    &lt;a href=&#34;#311%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84%e5%92%8c%e4%bd%9c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#311%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84%e5%92%8c%e4%bd%9c%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.1.集群结构和作用
 &lt;/h3&gt;&lt;p&gt;哨兵的结构如图：&lt;/p&gt;
 &lt;p&gt;
@@ -1214,7 +1214,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;通知&lt;/strong&gt;：Sentinel充当Redis客户端的服务发现来源，当集群发生故障转移时，会将最新信息推送给Redis的客户端&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;312集群监控原理&#34;&gt;
-    &lt;a href=&#34;#312%e9%9b%86%e7%be%a4%e7%9b%91%e6%8e%a7%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#312%e9%9b%86%e7%be%a4%e7%9b%91%e6%8e%a7%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.2.集群监控原理
 &lt;/h3&gt;&lt;p&gt;Sentinel基于心跳机制监测服务状态，每隔1秒向集群的每个实例发送ping命令：&lt;/p&gt;
 &lt;p&gt;•主观下线：如果某sentinel节点发现某实例未在规定时间响应，则认为该实例&lt;strong&gt;主观下线&lt;/strong&gt;。&lt;/p&gt;
@@ -1239,7 +1239,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;313集群故障恢复原理&#34;&gt;
-    &lt;a href=&#34;#313%e9%9b%86%e7%be%a4%e6%95%85%e9%9a%9c%e6%81%a2%e5%a4%8d%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#313%e9%9b%86%e7%be%a4%e6%95%85%e9%9a%9c%e6%81%a2%e5%a4%8d%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.3.集群故障恢复原理
 &lt;/h3&gt;&lt;p&gt;一旦发现master故障，sentinel需要在salve中选择一个作为新的master，选择依据是这样的：&lt;/p&gt;
 &lt;ul&gt;
@@ -1275,7 +1275,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;314小结&#34;&gt;
-    &lt;a href=&#34;#314%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#314%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.4.小结
 &lt;/h3&gt;&lt;p&gt;Sentinel的三个作用是什么？&lt;/p&gt;
 &lt;ul&gt;
@@ -1295,7 +1295,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;修改故障节点配置，添加slaveof 新master&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;32搭建哨兵集群&#34;&gt;
-    &lt;a href=&#34;#32%e6%90%ad%e5%bb%ba%e5%93%a8%e5%85%b5%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#32%e6%90%ad%e5%bb%ba%e5%93%a8%e5%85%b5%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.2.搭建哨兵集群
 &lt;/h2&gt;&lt;p&gt;具体搭建流程参考课前资料《Redis集群.md》：&lt;/p&gt;
 &lt;p&gt;
@@ -1318,12 +1318,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;33redistemplate&#34;&gt;
-    &lt;a href=&#34;#33redistemplate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#33redistemplate&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.RedisTemplate
 &lt;/h2&gt;&lt;p&gt;在Sentinel集群监管下的Redis主从集群，其节点会因为自动故障转移而发生变化，Redis的客户端必须感知这种变化，及时更新连接信息。Spring的RedisTemplate底层利用lettuce实现了节点的感知和自动切换。&lt;/p&gt;
 &lt;p&gt;下面，我们通过一个测试来实现RedisTemplate集成哨兵机制。&lt;/p&gt;
 &lt;h3 id=&#34;331导入demo工程&#34;&gt;
-    &lt;a href=&#34;#331%e5%af%bc%e5%85%a5demo%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#331%e5%af%bc%e5%85%a5demo%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.1.导入Demo工程
 &lt;/h3&gt;&lt;p&gt;首先，我们引入课前资料提供的Demo工程：&lt;/p&gt;
 &lt;p&gt;
@@ -1346,7 +1346,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;332引入依赖&#34;&gt;
-    &lt;a href=&#34;#332%e5%bc%95%e5%85%a5%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#332%e5%bc%95%e5%85%a5%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.2.引入依赖
 &lt;/h3&gt;&lt;p&gt;在项目的pom文件中引入依赖：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1364,7 +1364,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;333配置redis地址&#34;&gt;
-    &lt;a href=&#34;#333%e9%85%8d%e7%bd%aeredis%e5%9c%b0%e5%9d%80&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#333%e9%85%8d%e7%bd%aeredis%e5%9c%b0%e5%9d%80&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.3.配置Redis地址
 &lt;/h3&gt;&lt;p&gt;然后在配置文件application.yml中指定redis的sentinel相关信息：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1394,7 +1394,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;334配置读写分离&#34;&gt;
-    &lt;a href=&#34;#334%e9%85%8d%e7%bd%ae%e8%af%bb%e5%86%99%e5%88%86%e7%a6%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#334%e9%85%8d%e7%bd%ae%e8%af%bb%e5%86%99%e5%88%86%e7%a6%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.4.配置读写分离
 &lt;/h3&gt;&lt;p&gt;在项目的启动类中，添加一个新的bean：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1419,10 +1419,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;REPLICA _PREFERRED：优先从slave（replica）节点读取，所有的slave都不可用才读取master&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;4redis分片集群&#34;&gt;
-    &lt;a href=&#34;#4redis%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4redis%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.Redis分片集群
 &lt;/h1&gt;&lt;h2 id=&#34;41搭建分片集群&#34;&gt;
-    &lt;a href=&#34;#41%e6%90%ad%e5%bb%ba%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#41%e6%90%ad%e5%bb%ba%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.1.搭建分片集群
 &lt;/h2&gt;&lt;p&gt;主从和哨兵可以解决高可用、高并发读的问题。但是依然有两个问题没有解决：&lt;/p&gt;
 &lt;ul&gt;
@@ -1489,10 +1489,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;42散列插槽&#34;&gt;
-    &lt;a href=&#34;#42%e6%95%a3%e5%88%97%e6%8f%92%e6%a7%bd&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#42%e6%95%a3%e5%88%97%e6%8f%92%e6%a7%bd&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.散列插槽
 &lt;/h2&gt;&lt;h3 id=&#34;421插槽原理&#34;&gt;
-    &lt;a href=&#34;#421%e6%8f%92%e6%a7%bd%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#421%e6%8f%92%e6%a7%bd%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.1.插槽原理
 &lt;/h3&gt;&lt;p&gt;Redis会把每一个master节点映射到0~16383共16384个插槽（hash slot）上，查看集群信息时就能看到：&lt;/p&gt;
 &lt;p&gt;
@@ -1542,7 +1542,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;如图，在7001这个节点执行set a 1时，对a做hash运算，对16384取余，得到的结果是15495，因此要存储到103节点。&lt;/p&gt;
 &lt;p&gt;到了7003后，执行&lt;code&gt;get num&lt;/code&gt;时，对num做hash运算，对16384取余，得到的结果是2765，因此需要切换到7001节点&lt;/p&gt;
 &lt;h3 id=&#34;421小结&#34;&gt;
-    &lt;a href=&#34;#421%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#421%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.1.小结
 &lt;/h3&gt;&lt;p&gt;Redis如何判断某个key应该在哪个实例？&lt;/p&gt;
 &lt;ul&gt;
@@ -1555,7 +1555,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;这一类数据使用相同的有效部分，例如key都以{typeId}为前缀&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;43集群伸缩&#34;&gt;
-    &lt;a href=&#34;#43%e9%9b%86%e7%be%a4%e4%bc%b8%e7%bc%a9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#43%e9%9b%86%e7%be%a4%e4%bc%b8%e7%bc%a9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.集群伸缩
 &lt;/h2&gt;&lt;p&gt;redis-cli &amp;ndash;cluster提供了很多操作集群的命令，可以通过下面方式查看：&lt;/p&gt;
 &lt;p&gt;
@@ -1598,7 +1598,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;431需求分析&#34;&gt;
-    &lt;a href=&#34;#431%e9%9c%80%e6%b1%82%e5%88%86%e6%9e%90&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#431%e9%9c%80%e6%b1%82%e5%88%86%e6%9e%90&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.1.需求分析
 &lt;/h3&gt;&lt;p&gt;需求：向集群中添加一个新的master节点，并向其中存储 num = 10&lt;/p&gt;
 &lt;ul&gt;
@@ -1612,7 +1612,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;将部分插槽分配到新插槽&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;432创建新的redis实例&#34;&gt;
-    &lt;a href=&#34;#432%e5%88%9b%e5%bb%ba%e6%96%b0%e7%9a%84redis%e5%ae%9e%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#432%e5%88%9b%e5%bb%ba%e6%96%b0%e7%9a%84redis%e5%ae%9e%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.2.创建新的redis实例
 &lt;/h3&gt;&lt;p&gt;创建一个文件夹：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1651,7 +1651,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;433添加新节点到redis&#34;&gt;
-    &lt;a href=&#34;#433%e6%b7%bb%e5%8a%a0%e6%96%b0%e8%8a%82%e7%82%b9%e5%88%b0redis&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#433%e6%b7%bb%e5%8a%a0%e6%96%b0%e8%8a%82%e7%82%b9%e5%88%b0redis&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.3.添加新节点到redis
 &lt;/h3&gt;&lt;p&gt;添加节点的语法如下：&lt;/p&gt;
 &lt;p&gt;
@@ -1713,7 +1713,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;但是，可以看到7004节点的插槽数量为0，因此没有任何数据可以存储到7004上&lt;/p&gt;
 &lt;h3 id=&#34;434转移插槽&#34;&gt;
-    &lt;a href=&#34;#434%e8%bd%ac%e7%a7%bb%e6%8f%92%e6%a7%bd&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#434%e8%bd%ac%e7%a7%bb%e6%8f%92%e6%a7%bd&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.4.转移插槽
 &lt;/h3&gt;&lt;p&gt;我们要将num存储到7004节点，因此需要先看看num的插槽是多少：&lt;/p&gt;
 &lt;p&gt;
@@ -1948,7 +1948,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;目的达成。&lt;/p&gt;
 &lt;h2 id=&#34;44故障转移&#34;&gt;
-    &lt;a href=&#34;#44%e6%95%85%e9%9a%9c%e8%bd%ac%e7%a7%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#44%e6%95%85%e9%9a%9c%e8%bd%ac%e7%a7%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.故障转移
 &lt;/h2&gt;&lt;p&gt;集群初识状态是这样的：&lt;/p&gt;
 &lt;p&gt;
@@ -1972,7 +1972,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;其中7001、7002、7003都是master，我们计划让7002宕机。&lt;/p&gt;
 &lt;h3 id=&#34;441自动故障转移&#34;&gt;
-    &lt;a href=&#34;#441%e8%87%aa%e5%8a%a8%e6%95%85%e9%9a%9c%e8%bd%ac%e7%a7%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#441%e8%87%aa%e5%8a%a8%e6%95%85%e9%9a%9c%e8%bd%ac%e7%a7%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.1.自动故障转移
 &lt;/h3&gt;&lt;p&gt;当集群中有一个master宕机会发生什么呢？&lt;/p&gt;
 &lt;p&gt;直接停止一个redis实例，例如7002：&lt;/p&gt;
@@ -2046,7 +2046,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;442手动故障转移&#34;&gt;
-    &lt;a href=&#34;#442%e6%89%8b%e5%8a%a8%e6%95%85%e9%9a%9c%e8%bd%ac%e7%a7%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#442%e6%89%8b%e5%8a%a8%e6%95%85%e9%9a%9c%e8%bd%ac%e7%a7%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.2.手动故障转移
 &lt;/h3&gt;&lt;p&gt;利用cluster failover命令可以手动让集群中的某个master宕机，切换到执行cluster failover命令的这个slave节点，实现无感知的数据迁移。其流程如下：&lt;/p&gt;
 &lt;p&gt;
@@ -2119,7 +2119,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;45redistemplate访问分片集群&#34;&gt;
-    &lt;a href=&#34;#45redistemplate%e8%ae%bf%e9%97%ae%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#45redistemplate%e8%ae%bf%e9%97%ae%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.5.RedisTemplate访问分片集群
 &lt;/h2&gt;&lt;p&gt;RedisTemplate底层同样基于lettuce实现了分片集群的支持，而使用的步骤与哨兵模式基本一致：&lt;/p&gt;
 &lt;p&gt;1）引入redis的starter依赖&lt;/p&gt;
@@ -2163,10 +2163,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
         
         <guid>https://logan.wssw.fun/p/2023/09/78451671/</guid>
         <description>&lt;h1 id=&#34;配置&#34;&gt;
-    &lt;a href=&#34;#%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     配置
 &lt;/h1&gt;&lt;h2 id=&#34;单实例&#34;&gt;
-    &lt;a href=&#34;#%e5%8d%95%e5%ae%9e%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%8d%95%e5%ae%9e%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     单实例
 &lt;/h2&gt;&lt;p&gt;保持默认配置，然后修改以下&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2256,7 +2256,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;主从&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%bb%e4%bb%8e&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%bb%e4%bb%8e&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     主从
 &lt;/h2&gt;&lt;p&gt;修改以下，其他配置与单机相同&lt;/p&gt;
 &lt;ul&gt;
@@ -2326,7 +2326,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;哨兵&#34;&gt;
-    &lt;a href=&#34;#%e5%93%a8%e5%85%b5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%93%a8%e5%85%b5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     哨兵
 &lt;/h2&gt;&lt;p&gt;保持主从节点配置；以下是哨兵配置&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2368,7 +2368,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;分片集群&#34;&gt;
-    &lt;a href=&#34;#%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     分片集群
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2479,7 +2479,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;redis集群&#34;&gt;
-    &lt;a href=&#34;#redis%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#redis%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Redis集群
 &lt;/h1&gt;&lt;p&gt;本章是基于CentOS7下的Redis集群教程，包括：&lt;/p&gt;
 &lt;ul&gt;
@@ -2488,7 +2488,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;Redis分片集群&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;1单机安装redis&#34;&gt;
-    &lt;a href=&#34;#1%e5%8d%95%e6%9c%ba%e5%ae%89%e8%a3%85redis&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e5%8d%95%e6%9c%ba%e5%ae%89%e8%a3%85redis&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.单机安装Redis
 &lt;/h1&gt;&lt;p&gt;首先需要安装Redis所需要的依赖：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2625,10 +2625,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;2redis主从集群&#34;&gt;
-    &lt;a href=&#34;#2redis%e4%b8%bb%e4%bb%8e%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2redis%e4%b8%bb%e4%bb%8e%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.Redis主从集群
 &lt;/h1&gt;&lt;h2 id=&#34;21集群结构&#34;&gt;
-    &lt;a href=&#34;#21%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#21%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.1.集群结构
 &lt;/h2&gt;&lt;p&gt;我们搭建的主从集群结构如图：&lt;/p&gt;
 &lt;p&gt;
@@ -2679,7 +2679,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;22准备实例和配置&#34;&gt;
-    &lt;a href=&#34;#22%e5%87%86%e5%a4%87%e5%ae%9e%e4%be%8b%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#22%e5%87%86%e5%a4%87%e5%ae%9e%e4%be%8b%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2.准备实例和配置
 &lt;/h2&gt;&lt;p&gt;要在同一台虚拟机开启3个实例，必须准备三份不同的配置文件和目录，配置文件所在目录也就是工作目录。&lt;/p&gt;
 &lt;p&gt;1）创建目录&lt;/p&gt;
@@ -2813,7 +2813,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;6）修改pidfile&lt;/p&gt;
 &lt;h2 id=&#34;23启动&#34;&gt;
-    &lt;a href=&#34;#23%e5%90%af%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#23%e5%90%af%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.3.启动
 &lt;/h2&gt;&lt;p&gt;为了方便查看日志，我们打开3个ssh窗口，分别启动3个redis实例，启动命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2864,7 +2864,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;24开启主从关系&#34;&gt;
-    &lt;a href=&#34;#24%e5%bc%80%e5%90%af%e4%b8%bb%e4%bb%8e%e5%85%b3%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#24%e5%bc%80%e5%90%af%e4%b8%bb%e4%bb%8e%e5%85%b3%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.4.开启主从关系
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -2971,7 +2971,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;25测试&#34;&gt;
-    &lt;a href=&#34;#25%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#25%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.5.测试
 &lt;/h2&gt;&lt;p&gt;执行下列操作以测试：&lt;/p&gt;
 &lt;ul&gt;
@@ -2987,10 +2987,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;可以发现，只有在7001这个master节点上可以执行写操作，7002和7003这两个slave节点只能执行读操作。&lt;/p&gt;
 &lt;h1 id=&#34;3搭建哨兵集群&#34;&gt;
-    &lt;a href=&#34;#3%e6%90%ad%e5%bb%ba%e5%93%a8%e5%85%b5%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e6%90%ad%e5%bb%ba%e5%93%a8%e5%85%b5%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.搭建哨兵集群
 &lt;/h1&gt;&lt;h2 id=&#34;31集群结构&#34;&gt;
-    &lt;a href=&#34;#31%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#31%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.集群结构
 &lt;/h2&gt;&lt;p&gt;这里我们搭建一个三节点形成的Sentinel集群，来监管之前的Redis主从集群。如图：&lt;/p&gt;
 &lt;p&gt;
@@ -3040,7 +3040,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;32准备实例和配置&#34;&gt;
-    &lt;a href=&#34;#32%e5%87%86%e5%a4%87%e5%ae%9e%e4%be%8b%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#32%e5%87%86%e5%a4%87%e5%ae%9e%e4%be%8b%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.2.准备实例和配置
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;vim /etc/sysctl.conf&lt;/p&gt;
@@ -3167,7 +3167,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;33启动&#34;&gt;
-    &lt;a href=&#34;#33%e5%90%af%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#33%e5%90%af%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.启动
 &lt;/h2&gt;&lt;p&gt;为了方便查看日志，我们打开3个ssh窗口，分别启动3个redis实例，启动命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3209,7 +3209,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;34测试&#34;&gt;
-    &lt;a href=&#34;#34%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#34%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.4.测试
 &lt;/h2&gt;&lt;p&gt;尝试让master节点7001宕机，查看sentinel日志：&lt;/p&gt;
 &lt;p&gt;
@@ -3272,10 +3272,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;4搭建分片集群&#34;&gt;
-    &lt;a href=&#34;#4%e6%90%ad%e5%bb%ba%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e6%90%ad%e5%bb%ba%e5%88%86%e7%89%87%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.搭建分片集群
 &lt;/h1&gt;&lt;h2 id=&#34;41集群结构&#34;&gt;
-    &lt;a href=&#34;#41%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#41%e9%9b%86%e7%be%a4%e7%bb%93%e6%9e%84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.1.集群结构
 &lt;/h2&gt;&lt;p&gt;分片集群需要的节点数量较多，这里我们搭建一个最小的分片集群，包含3个master节点，每个master包含一个slave节点，结构如下：&lt;/p&gt;
 &lt;p&gt;
@@ -3340,7 +3340,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;42准备实例和配置&#34;&gt;
-    &lt;a href=&#34;#42%e5%87%86%e5%a4%87%e5%ae%9e%e4%be%8b%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#42%e5%87%86%e5%a4%87%e5%ae%9e%e4%be%8b%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.准备实例和配置
 &lt;/h2&gt;&lt;p&gt;删除之前的7001、7002、7003这几个目录，重新创建出7001、7002、7003、8001、8002、8003目录：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3441,7 +3441,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;43启动&#34;&gt;
-    &lt;a href=&#34;#43%e5%90%af%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#43%e5%90%af%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.启动
 &lt;/h2&gt;&lt;p&gt;因为已经配置了后台启动模式，所以可以直接启动服务：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3506,7 +3506,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;44创建集群&#34;&gt;
-    &lt;a href=&#34;#44%e5%88%9b%e5%bb%ba%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#44%e5%88%9b%e5%bb%ba%e9%9b%86%e7%be%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.创建集群
 &lt;/h2&gt;&lt;p&gt;虽然服务启动了，但是目前每个服务之间都是独立的，没有任何关联。&lt;/p&gt;
 &lt;p&gt;我们需要执行命令来创建集群，在Redis5.0之前创建集群比较麻烦，5.0之后集群管理命令都集成到了redis-cli中。&lt;/p&gt;
@@ -3624,7 +3624,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;45测试&#34;&gt;
-    &lt;a href=&#34;#45%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#45%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.5.测试
 &lt;/h2&gt;&lt;p&gt;尝试连接7001节点，存储一个数据：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3707,13 +3707,13 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
         
         <guid>https://logan.wssw.fun/p/2023/09/61784511/</guid>
         <description>&lt;h1 id=&#34;多级缓存&#34;&gt;
-    &lt;a href=&#34;#%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     多级缓存
 &lt;/h1&gt;&lt;h1 id=&#34;0学习目标&#34;&gt;
-    &lt;a href=&#34;#0%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#0%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     0.学习目标
 &lt;/h1&gt;&lt;h1 id=&#34;1什么是多级缓存&#34;&gt;
-    &lt;a href=&#34;#1%e4%bb%80%e4%b9%88%e6%98%af%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e4%bb%80%e4%b9%88%e6%98%af%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1.什么是多级缓存
 &lt;/h1&gt;&lt;p&gt;传统的缓存策略一般是请求到达Tomcat后，先查询Redis，如果未命中则查询数据库，如图：&lt;/p&gt;
 &lt;p&gt;
@@ -3820,11 +3820,11 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;其中Nginx编程则会用到OpenResty框架结合Lua这样的语言。&lt;/p&gt;
 &lt;p&gt;这也是今天课程的难点和重点。&lt;/p&gt;
 &lt;h1 id=&#34;2jvm进程缓存&#34;&gt;
-    &lt;a href=&#34;#2jvm%e8%bf%9b%e7%a8%8b%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2jvm%e8%bf%9b%e7%a8%8b%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.JVM进程缓存
 &lt;/h1&gt;&lt;p&gt;为了演示多级缓存的案例，我们先准备一个商品查询的业务。&lt;/p&gt;
 &lt;h2 id=&#34;21导入案例&#34;&gt;
-    &lt;a href=&#34;#21%e5%af%bc%e5%85%a5%e6%a1%88%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#21%e5%af%bc%e5%85%a5%e6%a1%88%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.1.导入案例
 &lt;/h2&gt;&lt;p&gt;参考课前资料的：《案例导入说明.md》&lt;/p&gt;
 &lt;p&gt;
@@ -3847,7 +3847,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;22初识caffeine&#34;&gt;
-    &lt;a href=&#34;#22%e5%88%9d%e8%af%86caffeine&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#22%e5%88%9d%e8%af%86caffeine&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2.初识Caffeine
 &lt;/h2&gt;&lt;p&gt;缓存在日常开发中启动至关重要的作用，由于是存储在内存中，数据的读取速度是非常快的，能大量减少对数据库的访问，减少数据库的压力。我们把缓存分为两类：&lt;/p&gt;
 &lt;ul&gt;
@@ -3987,10 +3987,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：在默认情况下，当一个缓存元素过期的时候，Caffeine不会自动立即将其清理和驱逐。而是在一次读或写操作后，或者在空闲时间完成对失效数据的驱逐。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;23实现jvm进程缓存&#34;&gt;
-    &lt;a href=&#34;#23%e5%ae%9e%e7%8e%b0jvm%e8%bf%9b%e7%a8%8b%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#23%e5%ae%9e%e7%8e%b0jvm%e8%bf%9b%e7%a8%8b%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.3.实现JVM进程缓存
 &lt;/h2&gt;&lt;h3 id=&#34;231需求&#34;&gt;
-    &lt;a href=&#34;#231%e9%9c%80%e6%b1%82&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#231%e9%9c%80%e6%b1%82&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.3.1.需求
 &lt;/h3&gt;&lt;p&gt;利用Caffeine实现下列需求：&lt;/p&gt;
 &lt;ul&gt;
@@ -4000,7 +4000,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;缓存上限为10000&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;232实现&#34;&gt;
-    &lt;a href=&#34;#232%e5%ae%9e%e7%8e%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#232%e5%ae%9e%e7%8e%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.3.2.实现
 &lt;/h3&gt;&lt;p&gt;首先，我们需要定义两个Caffeine的缓存对象，分别保存商品、库存的缓存数据。&lt;/p&gt;
 &lt;p&gt;在item-service的&lt;code&gt;com.heima.item.config&lt;/code&gt;包下定义&lt;code&gt;CaffeineConfig&lt;/code&gt;类：&lt;/p&gt;
@@ -4132,11 +4132,11 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;3lua语法入门&#34;&gt;
-    &lt;a href=&#34;#3lua%e8%af%ad%e6%b3%95%e5%85%a5%e9%97%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3lua%e8%af%ad%e6%b3%95%e5%85%a5%e9%97%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.Lua语法入门
 &lt;/h1&gt;&lt;p&gt;Nginx编程需要用到Lua语言，因此我们必须先入门Lua的基本语法。&lt;/p&gt;
 &lt;h2 id=&#34;31初识lua&#34;&gt;
-    &lt;a href=&#34;#31%e5%88%9d%e8%af%86lua&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#31%e5%88%9d%e8%af%86lua&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.初识Lua
 &lt;/h2&gt;&lt;p&gt;Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放， 其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。官网：https://www.lua.org/&lt;/p&gt;
 &lt;p&gt;
@@ -4161,7 +4161,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;Lua经常嵌入到C语言开发的程序中，例如游戏开发、游戏插件等。&lt;/p&gt;
 &lt;p&gt;Nginx本身也是C语言开发，因此也允许基于Lua做拓展。&lt;/p&gt;
 &lt;h2 id=&#34;31helloworld&#34;&gt;
-    &lt;a href=&#34;#31helloworld&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#31helloworld&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.1.HelloWorld
 &lt;/h2&gt;&lt;p&gt;CentOS7默认已经安装了Lua语言环境，所以可以直接运行Lua代码。&lt;/p&gt;
 &lt;p&gt;1）在Linux虚拟机的任意目录下，新建一个hello.lua文件&lt;/p&gt;
@@ -4214,11 +4214,11 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;32变量和循环&#34;&gt;
-    &lt;a href=&#34;#32%e5%8f%98%e9%87%8f%e5%92%8c%e5%be%aa%e7%8e%af&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#32%e5%8f%98%e9%87%8f%e5%92%8c%e5%be%aa%e7%8e%af&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.2.变量和循环
 &lt;/h2&gt;&lt;p&gt;学习任何语言必然离不开变量，而变量的声明必须先知道数据的类型。&lt;/p&gt;
 &lt;h3 id=&#34;321lua的数据类型&#34;&gt;
-    &lt;a href=&#34;#321lua%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#321lua%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.2.1.Lua的数据类型
 &lt;/h3&gt;&lt;p&gt;Lua中支持的常见数据类型包括：&lt;/p&gt;
 &lt;p&gt;
@@ -4261,7 +4261,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;322声明变量&#34;&gt;
-    &lt;a href=&#34;#322%e5%a3%b0%e6%98%8e%e5%8f%98%e9%87%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#322%e5%a3%b0%e6%98%8e%e5%8f%98%e9%87%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.2.2.声明变量
 &lt;/h3&gt;&lt;p&gt;Lua声明变量的时候无需指定数据类型，而是用local来声明变量为局部变量：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4326,7 +4326,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;323循环&#34;&gt;
-    &lt;a href=&#34;#323%e5%be%aa%e7%8e%af&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#323%e5%be%aa%e7%8e%af&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.2.3.循环
 &lt;/h3&gt;&lt;p&gt;对于table，我们可以利用for循环来遍历。不过数组和普通table遍历略有差异。&lt;/p&gt;
 &lt;p&gt;遍历数组：&lt;/p&gt;
@@ -4368,11 +4368,11 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;33条件控制函数&#34;&gt;
-    &lt;a href=&#34;#33%e6%9d%a1%e4%bb%b6%e6%8e%a7%e5%88%b6%e5%87%bd%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#33%e6%9d%a1%e4%bb%b6%e6%8e%a7%e5%88%b6%e5%87%bd%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.条件控制、函数
 &lt;/h2&gt;&lt;p&gt;Lua中的条件控制和函数声明与Java类似。&lt;/p&gt;
 &lt;h3 id=&#34;331函数&#34;&gt;
-    &lt;a href=&#34;#331%e5%87%bd%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#331%e5%87%bd%e6%95%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.1.函数
 &lt;/h3&gt;&lt;p&gt;定义函数的语法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4407,7 +4407,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;332条件控制&#34;&gt;
-    &lt;a href=&#34;#332%e6%9d%a1%e4%bb%b6%e6%8e%a7%e5%88%b6&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#332%e6%9d%a1%e4%bb%b6%e6%8e%a7%e5%88%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.2.条件控制
 &lt;/h3&gt;&lt;p&gt;类似Java的条件控制，例如if、else语法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4449,7 +4449,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;333案例&#34;&gt;
-    &lt;a href=&#34;#333%e6%a1%88%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#333%e6%a1%88%e4%be%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3.3.3.案例
 &lt;/h3&gt;&lt;p&gt;需求：自定义一个函数，可以打印table，当参数为nil时，打印错误信息&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4477,11 +4477,11 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;4实现多级缓存&#34;&gt;
-    &lt;a href=&#34;#4%e5%ae%9e%e7%8e%b0%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4%e5%ae%9e%e7%8e%b0%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.实现多级缓存
 &lt;/h1&gt;&lt;p&gt;多级缓存的实现离不开Nginx编程，而Nginx编程又离不开OpenResty。&lt;/p&gt;
 &lt;h2 id=&#34;41安装openresty&#34;&gt;
-    &lt;a href=&#34;#41%e5%ae%89%e8%a3%85openresty&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#41%e5%ae%89%e8%a3%85openresty&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.1.安装OpenResty
 &lt;/h2&gt;&lt;p&gt;OpenResty® 是一个基于 Nginx的高性能 Web 平台，用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。具备下列特点：&lt;/p&gt;
 &lt;ul&gt;
@@ -4543,7 +4543,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;42openresty快速入门&#34;&gt;
-    &lt;a href=&#34;#42openresty%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#42openresty%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.OpenResty快速入门
 &lt;/h2&gt;&lt;p&gt;我们希望达到的多级缓存架构如图：&lt;/p&gt;
 &lt;p&gt;
@@ -4575,7 +4575,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;421反向代理流程&#34;&gt;
-    &lt;a href=&#34;#421%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e6%b5%81%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#421%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e6%b5%81%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.1.反向代理流程
 &lt;/h3&gt;&lt;p&gt;现在，商品详情页使用的是假的商品数据。不过在浏览器中，可以看到页面有发起ajax请求查询真实商品数据。&lt;/p&gt;
 &lt;p&gt;这个请求如下：&lt;/p&gt;
@@ -4621,7 +4621,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;我们需要在OpenResty中编写业务，查询商品数据并返回到浏览器。&lt;/p&gt;
 &lt;p&gt;但是这次，我们先在OpenResty接收请求，返回假的商品数据。&lt;/p&gt;
 &lt;h3 id=&#34;422openresty监听请求&#34;&gt;
-    &lt;a href=&#34;#422openresty%e7%9b%91%e5%90%ac%e8%af%b7%e6%b1%82&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#422openresty%e7%9b%91%e5%90%ac%e8%af%b7%e6%b1%82&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.2.OpenResty监听请求
 &lt;/h3&gt;&lt;p&gt;OpenResty的很多功能都依赖于其目录下的Lua库，需要在nginx.conf中指定依赖库的目录，并导入依赖：&lt;/p&gt;
 &lt;p&gt;1）添加对OpenResty的Lua模块的加载&lt;/p&gt;
@@ -4663,7 +4663,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;这个监听，就类似于SpringMVC中的&lt;code&gt;@GetMapping(&amp;quot;/api/item&amp;quot;)&lt;/code&gt;做路径映射。&lt;/p&gt;
 &lt;p&gt;而&lt;code&gt;content_by_lua_file lua/item.lua&lt;/code&gt;则相当于调用item.lua这个文件，执行其中的业务，把结果返回给用户。相当于java中调用service。&lt;/p&gt;
 &lt;h3 id=&#34;423编写itemlua&#34;&gt;
-    &lt;a href=&#34;#423%e7%bc%96%e5%86%99itemlua&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#423%e7%bc%96%e5%86%99itemlua&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.2.3.编写item.lua
 &lt;/h3&gt;&lt;p&gt;1）在&lt;code&gt;/usr/loca/openresty/nginx&lt;/code&gt;目录创建文件夹：lua&lt;/p&gt;
 &lt;p&gt;
@@ -4745,13 +4745,13 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;43请求参数处理&#34;&gt;
-    &lt;a href=&#34;#43%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0%e5%a4%84%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#43%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0%e5%a4%84%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.请求参数处理
 &lt;/h2&gt;&lt;p&gt;上一节中，我们在OpenResty接收前端请求，但是返回的是假数据。&lt;/p&gt;
 &lt;p&gt;要返回真实数据，必须根据前端传递来的商品id，查询商品信息才可以。&lt;/p&gt;
 &lt;p&gt;那么如何获取前端传递的商品参数呢？&lt;/p&gt;
 &lt;h3 id=&#34;431获取参数的api&#34;&gt;
-    &lt;a href=&#34;#431%e8%8e%b7%e5%8f%96%e5%8f%82%e6%95%b0%e7%9a%84api&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#431%e8%8e%b7%e5%8f%96%e5%8f%82%e6%95%b0%e7%9a%84api&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.1.获取参数的API
 &lt;/h3&gt;&lt;p&gt;OpenResty中提供了一些API用来获取不同类型的前端请求参数：&lt;/p&gt;
 &lt;p&gt;
@@ -4774,7 +4774,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;432获取参数并返回&#34;&gt;
-    &lt;a href=&#34;#432%e8%8e%b7%e5%8f%96%e5%8f%82%e6%95%b0%e5%b9%b6%e8%bf%94%e5%9b%9e&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#432%e8%8e%b7%e5%8f%96%e5%8f%82%e6%95%b0%e5%b9%b6%e8%bf%94%e5%9b%9e&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.3.2.获取参数并返回
 &lt;/h3&gt;&lt;p&gt;在前端发起的ajax请求如图：&lt;/p&gt;
 &lt;p&gt;
@@ -4864,7 +4864,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;44查询tomcat&#34;&gt;
-    &lt;a href=&#34;#44%e6%9f%a5%e8%af%a2tomcat&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#44%e6%9f%a5%e8%af%a2tomcat&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.查询Tomcat
 &lt;/h2&gt;&lt;p&gt;拿到商品ID后，本应去缓存中查询商品信息，不过目前我们还未建立nginx、redis缓存。因此，这里我们先根据商品id去tomcat查询商品信息。我们实现如图部分：&lt;/p&gt;
 &lt;p&gt;
@@ -4907,7 +4907,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;441发送http请求的api&#34;&gt;
-    &lt;a href=&#34;#441%e5%8f%91%e9%80%81http%e8%af%b7%e6%b1%82%e7%9a%84api&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#441%e5%8f%91%e9%80%81http%e8%af%b7%e6%b1%82%e7%9a%84api&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.1.发送http请求的API
 &lt;/h3&gt;&lt;p&gt;nginx提供了内部API用以发送http请求：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4967,7 +4967,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;442封装http工具&#34;&gt;
-    &lt;a href=&#34;#442%e5%b0%81%e8%a3%85http%e5%b7%a5%e5%85%b7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#442%e5%b0%81%e8%a3%85http%e5%b7%a5%e5%85%b7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.2.封装http工具
 &lt;/h3&gt;&lt;p&gt;下面，我们封装一个发送Http请求的工具，基于ngx.location.capture来实现查询tomcat。&lt;/p&gt;
 &lt;p&gt;1）添加反向代理，到windows的Java服务&lt;/p&gt;
@@ -5112,7 +5112,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;这就需要我们先把JSON变为lua的table，完成数据整合后，再转为JSON。&lt;/p&gt;
 &lt;h3 id=&#34;443cjson工具类&#34;&gt;
-    &lt;a href=&#34;#443cjson%e5%b7%a5%e5%85%b7%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#443cjson%e5%b7%a5%e5%85%b7%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.3.CJSON工具类
 &lt;/h3&gt;&lt;p&gt;OpenResty提供了一个cjson的模块用来处理JSON的序列化和反序列化。&lt;/p&gt;
 &lt;p&gt;官方地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/openresty/lua-cjson/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -5173,7 +5173,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;444实现tomcat查询&#34;&gt;
-    &lt;a href=&#34;#444%e5%ae%9e%e7%8e%b0tomcat%e6%9f%a5%e8%af%a2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#444%e5%ae%9e%e7%8e%b0tomcat%e6%9f%a5%e8%af%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.4.实现Tomcat查询
 &lt;/h3&gt;&lt;p&gt;下面，我们修改之前的item.lua中的业务，添加json处理功能：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5229,7 +5229,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;445基于id负载均衡&#34;&gt;
-    &lt;a href=&#34;#445%e5%9f%ba%e4%ba%8eid%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#445%e5%9f%ba%e4%ba%8eid%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.4.5.基于ID负载均衡
 &lt;/h3&gt;&lt;p&gt;刚才的代码中，我们的tomcat是单机部署。而实际开发中，tomcat一定是集群模式：&lt;/p&gt;
 &lt;p&gt;
@@ -5263,7 +5263,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;如果能让同一个商品，每次查询时都访问同一个tomcat服务，那么JVM缓存就一定能生效了。&lt;/p&gt;
 &lt;p&gt;也就是说，我们需要根据商品id做负载均衡，而不是轮询。&lt;/p&gt;
 &lt;h4 id=&#34;1原理&#34;&gt;
-    &lt;a href=&#34;#1%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e5%8e%9f%e7%90%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1）原理
 &lt;/h4&gt;&lt;p&gt;nginx提供了基于请求路径做负载均衡的算法：&lt;/p&gt;
 &lt;p&gt;nginx根据请求路径做hash运算，把得到的数值对tomcat服务的数量取余，余数是几，就访问第几个服务，实现负载均衡。&lt;/p&gt;
@@ -5276,7 +5276,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;只要id不变，每次hash运算结果也不会变，那就可以保证同一个商品，一直访问同一个tomcat服务，确保JVM缓存生效。&lt;/p&gt;
 &lt;h4 id=&#34;2实现&#34;&gt;
-    &lt;a href=&#34;#2%e5%ae%9e%e7%8e%b0&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e5%ae%9e%e7%8e%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2）实现
 &lt;/h4&gt;&lt;p&gt;修改&lt;code&gt;/usr/local/openresty/nginx/conf/nginx.conf&lt;/code&gt;文件，实现基于ID做负载均衡。&lt;/p&gt;
 &lt;p&gt;首先，定义tomcat集群，并设置基于路径做负载均衡：&lt;/p&gt;
@@ -5319,7 +5319,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;3测试&#34;&gt;
-    &lt;a href=&#34;#3%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3%e6%b5%8b%e8%af%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3）测试
 &lt;/h4&gt;&lt;p&gt;启动两台tomcat服务：&lt;/p&gt;
 &lt;p&gt;
@@ -5401,7 +5401,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;45redis缓存预热&#34;&gt;
-    &lt;a href=&#34;#45redis%e7%bc%93%e5%ad%98%e9%a2%84%e7%83%ad&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#45redis%e7%bc%93%e5%ad%98%e9%a2%84%e7%83%ad&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.5.Redis缓存预热
 &lt;/h2&gt;&lt;p&gt;Redis缓存会面临冷启动问题：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;冷启动&lt;/strong&gt;：服务刚刚启动时，Redis中并没有缓存，如果所有商品数据都在第一次查询时添加缓存，可能会给数据库带来较大压力。&lt;/p&gt;
@@ -5558,7 +5558,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;46查询redis缓存&#34;&gt;
-    &lt;a href=&#34;#46%e6%9f%a5%e8%af%a2redis%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#46%e6%9f%a5%e8%af%a2redis%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.6.查询Redis缓存
 &lt;/h2&gt;&lt;p&gt;现在，Redis缓存已经准备就绪，我们可以再OpenResty中实现查询Redis的逻辑了。如下图红框所示：&lt;/p&gt;
 &lt;p&gt;
@@ -5586,7 +5586,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;li&gt;如果Redis缓存未命中，再查询Tomcat&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;461封装redis工具&#34;&gt;
-    &lt;a href=&#34;#461%e5%b0%81%e8%a3%85redis%e5%b7%a5%e5%85%b7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#461%e5%b0%81%e8%a3%85redis%e5%b7%a5%e5%85%b7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.6.1.封装Redis工具
 &lt;/h3&gt;&lt;p&gt;OpenResty提供了操作Redis的模块，我们只要引入该模块就能直接使用。但是为了方便，我们将Redis操作封装到之前的common.lua工具库中。&lt;/p&gt;
 &lt;p&gt;修改&lt;code&gt;/usr/local/openresty/lualib/common.lua&lt;/code&gt;文件：&lt;/p&gt;
@@ -5826,7 +5826,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;462实现redis查询&#34;&gt;
-    &lt;a href=&#34;#462%e5%ae%9e%e7%8e%b0redis%e6%9f%a5%e8%af%a2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#462%e5%ae%9e%e7%8e%b0redis%e6%9f%a5%e8%af%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.6.2.实现Redis查询
 &lt;/h3&gt;&lt;p&gt;接下来，我们就可以去修改item.lua文件，实现对Redis的查询了。&lt;/p&gt;
 &lt;p&gt;查询逻辑是：&lt;/p&gt;
@@ -5980,7 +5980,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;47nginx本地缓存&#34;&gt;
-    &lt;a href=&#34;#47nginx%e6%9c%ac%e5%9c%b0%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#47nginx%e6%9c%ac%e5%9c%b0%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.7.Nginx本地缓存
 &lt;/h2&gt;&lt;p&gt;现在，整个多级缓存中只差最后一环，也就是nginx的本地缓存了。如图：&lt;/p&gt;
 &lt;p&gt;
@@ -6003,7 +6003,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;471本地缓存api&#34;&gt;
-    &lt;a href=&#34;#471%e6%9c%ac%e5%9c%b0%e7%bc%93%e5%ad%98api&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#471%e6%9c%ac%e5%9c%b0%e7%bc%93%e5%ad%98api&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.7.1.本地缓存API
 &lt;/h3&gt;&lt;p&gt;OpenResty为Nginx提供了&lt;strong&gt;shard dict&lt;/strong&gt;的功能，可以在nginx的多个worker之间共享数据，实现缓存功能。&lt;/p&gt;
 &lt;p&gt;1）开启共享字典，在nginx.conf的http下添加配置：&lt;/p&gt;
@@ -6037,7 +6037,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;472实现本地缓存查询&#34;&gt;
-    &lt;a href=&#34;#472%e5%ae%9e%e7%8e%b0%e6%9c%ac%e5%9c%b0%e7%bc%93%e5%ad%98%e6%9f%a5%e8%af%a2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#472%e5%ae%9e%e7%8e%b0%e6%9c%ac%e5%9c%b0%e7%bc%93%e5%ad%98%e6%9f%a5%e8%af%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.7.2.实现本地缓存查询
 &lt;/h3&gt;&lt;p&gt;1）修改&lt;code&gt;/usr/local/openresty/lua/item.lua&lt;/code&gt;文件，修改read_data查询函数，添加本地缓存逻辑：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6217,12 +6217,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;5缓存同步&#34;&gt;
-    &lt;a href=&#34;#5%e7%bc%93%e5%ad%98%e5%90%8c%e6%ad%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5%e7%bc%93%e5%ad%98%e5%90%8c%e6%ad%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.缓存同步
 &lt;/h1&gt;&lt;p&gt;大多数情况下，浏览器查询到的都是缓存数据，如果缓存数据与数据库数据存在较大差异，可能会产生比较严重的后果。&lt;/p&gt;
 &lt;p&gt;所以我们必须保证数据库数据、缓存数据的一致性，这就是缓存与数据库的同步。&lt;/p&gt;
 &lt;h2 id=&#34;51数据同步策略&#34;&gt;
-    &lt;a href=&#34;#51%e6%95%b0%e6%8d%ae%e5%90%8c%e6%ad%a5%e7%ad%96%e7%95%a5&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#51%e6%95%b0%e6%8d%ae%e5%90%8c%e6%ad%a5%e7%ad%96%e7%95%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.1.数据同步策略
 &lt;/h2&gt;&lt;p&gt;缓存数据同步的常见方式有三种：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;设置有效期&lt;/strong&gt;：给缓存设置有效期，到期后自动删除。再次查询时更新&lt;/p&gt;
@@ -6298,10 +6298,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;代码零侵入&lt;/p&gt;
 &lt;h2 id=&#34;52安装canal&#34;&gt;
-    &lt;a href=&#34;#52%e5%ae%89%e8%a3%85canal&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#52%e5%ae%89%e8%a3%85canal&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.2.安装Canal
 &lt;/h2&gt;&lt;h3 id=&#34;521认识canal&#34;&gt;
-    &lt;a href=&#34;#521%e8%ae%a4%e8%af%86canal&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#521%e8%ae%a4%e8%af%86canal&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.2.1.认识Canal
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Canal [kə&amp;rsquo;næl]&lt;/strong&gt;，译意为水道/管道/沟渠，canal是阿里巴巴旗下的一款开源项目，基于Java开发。基于数据库增量日志解析，提供增量数据订阅&amp;amp;消费。GitHub的地址：https://github.com/alibaba/canal&lt;/p&gt;
 &lt;p&gt;Canal是基于mysql的主从同步来实现的，MySQL主从同步的原理如下：&lt;/p&gt;
@@ -6350,7 +6350,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;522安装canal&#34;&gt;
-    &lt;a href=&#34;#522%e5%ae%89%e8%a3%85canal&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#522%e5%ae%89%e8%a3%85canal&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.2.2.安装Canal
 &lt;/h3&gt;&lt;p&gt;安装和配置Canal参考课前资料文档：&lt;/p&gt;
 &lt;p&gt;
@@ -6373,7 +6373,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;53监听canal&#34;&gt;
-    &lt;a href=&#34;#53%e7%9b%91%e5%90%accanal&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#53%e7%9b%91%e5%90%accanal&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.3.监听Canal
 &lt;/h2&gt;&lt;p&gt;Canal提供了各种语言的客户端，当Canal监听到binlog变化时，会通知Canal的客户端。&lt;/p&gt;
 &lt;p&gt;
@@ -6399,7 +6399,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;p&gt;不过这里我们会使用GitHub上的第三方开源的canal-starter客户端。地址：https://github.com/NormanGyllenhaal/canal-client&lt;/p&gt;
 &lt;p&gt;与SpringBoot完美整合，自动装配，比官方客户端要简单好用很多。&lt;/p&gt;
 &lt;h3 id=&#34;531引入依赖&#34;&gt;
-    &lt;a href=&#34;#531%e5%bc%95%e5%85%a5%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#531%e5%bc%95%e5%85%a5%e4%be%9d%e8%b5%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.3.1.引入依赖：
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6418,7 +6418,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;532编写配置&#34;&gt;
-    &lt;a href=&#34;#532%e7%bc%96%e5%86%99%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#532%e7%bc%96%e5%86%99%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.3.2.编写配置：
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6433,7 +6433,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;533修改item实体类&#34;&gt;
-    &lt;a href=&#34;#533%e4%bf%ae%e6%94%b9item%e5%ae%9e%e4%bd%93%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#533%e4%bf%ae%e6%94%b9item%e5%ae%9e%e4%bd%93%e7%b1%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.3.3.修改Item实体类
 &lt;/h3&gt;&lt;p&gt;通过@Id、@Column、等注解完成Item与数据库表字段的映射：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6517,7 +6517,7 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;534编写监听器&#34;&gt;
-    &lt;a href=&#34;#534%e7%bc%96%e5%86%99%e7%9b%91%e5%90%ac%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#534%e7%bc%96%e5%86%99%e7%9b%91%e5%90%ac%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5.3.4.编写监听器
 &lt;/h3&gt;&lt;p&gt;通过实现&lt;code&gt;EntryHandler&amp;lt;T&amp;gt;&lt;/code&gt;接口编写监听器，监听Canal消息。注意两点：&lt;/p&gt;
 &lt;ul&gt;

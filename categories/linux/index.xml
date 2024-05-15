@@ -27,7 +27,7 @@
         
         <guid>https://logan.wssw.fun/p/2023/05/84s11784/</guid>
         <description>&lt;h2 id=&#34;1问题&#34;&gt;
-    &lt;a href=&#34;#1%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、问题
 &lt;/h2&gt;&lt;p&gt;我们把一个 SpringBoot 工程导出为 jar 包，jar 包上传到阿里云 ECS 服务器上，使用 java -jar xxx-xxx.jar 命令启动这个 SpringBoot 程序。此时我们本地的 xshell 客户端必须一直开着，一旦 xshell 客户端关闭，java -jar xxx-xxx.jar 进程就会被结束，SpringBoot 程序就访问不了了。&lt;/p&gt;
 &lt;p&gt;所以我们希望启动 SpringBoot 的 jar 包之后，对应的进程可以一直运行，不会因为 xshell 客户端关闭而被结束。&lt;/p&gt;
@@ -51,7 +51,7 @@
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;2解决&#34;&gt;
-    &lt;a href=&#34;#2%e8%a7%a3%e5%86%b3&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2%e8%a7%a3%e5%86%b3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2、解决
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;前台、后台运行&lt;/li&gt;
@@ -152,7 +152,7 @@
         
         <guid>https://logan.wssw.fun/p/2023/05/91571391/</guid>
         <description>&lt;h1 id=&#34;mac安装和配置ohmyzsh&#34;&gt;
-    &lt;a href=&#34;#mac%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%aeohmyzsh&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#mac%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%aeohmyzsh&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     mac安装和配置ohmyzsh
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -1425,7 +1425,7 @@
 &lt;/a&gt;.  自定义命令&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;默认前置键&#34;&gt;
-    &lt;a href=&#34;#%e9%bb%98%e8%ae%a4%e5%89%8d%e7%bd%ae%e9%94%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e9%bb%98%e8%ae%a4%e5%89%8d%e7%bd%ae%e9%94%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     默认前置键
 &lt;/h1&gt;&lt;p&gt;&lt;code&gt;g&lt;/code&gt; 	for navigation and tabs  导航和标签
 &lt;code&gt;r&lt;/code&gt; 	for :open_with command  打开文件
@@ -1439,7 +1439,7 @@
 &lt;code&gt;M&lt;/code&gt; for linemode					
 &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt; for setting access rights to files&lt;/p&gt;
 &lt;h1 id=&#34;常用命令&#34;&gt;
-    &lt;a href=&#34;#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     常用命令
 &lt;/h1&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1516,7 +1516,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id=&#34;文件和文件夹操作-复制粘贴&#34;&gt;
-    &lt;a href=&#34;#%e6%96%87%e4%bb%b6%e5%92%8c%e6%96%87%e4%bb%b6%e5%a4%b9%e6%93%8d%e4%bd%9c-%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%96%87%e4%bb%b6%e5%92%8c%e6%96%87%e4%bb%b6%e5%a4%b9%e6%93%8d%e4%bd%9c-%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     文件和文件夹操作 （复制粘贴）
 &lt;/h1&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1613,7 +1613,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id=&#34;tmux&#34;&gt;
-    &lt;a href=&#34;#tmux&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#tmux&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     tmux
 &lt;/h1&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1670,10 +1670,10 @@
         
         <guid>https://logan.wssw.fun/p/2023/05/149a6714/</guid>
         <description>&lt;h1 id=&#34;一-tmux-简介&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%80-tmux-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%b8%80-tmux-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一. tmux 简介
 &lt;/h1&gt;&lt;h2 id=&#34;指令全&#34;&gt;
-    &lt;a href=&#34;#%e6%8c%87%e4%bb%a4%e5%85%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e6%8c%87%e4%bb%a4%e5%85%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     指令全
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gist.github.com/ryerh/14b7c24dfd623ef8edc7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://gist.github.com/ryerh/14b7c24dfd623ef8edc7
@@ -1741,10 +1741,10 @@
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;二-tmux-安装和配置&#34;&gt;
-    &lt;a href=&#34;#%e4%ba%8c-tmux-%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e4%ba%8c-tmux-%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     二. tmux 安装和配置
 &lt;/h1&gt;&lt;h2 id=&#34;1-新建会话&#34;&gt;
-    &lt;a href=&#34;#1-%e6%96%b0%e5%bb%ba%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e6%96%b0%e5%bb%ba%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 新建会话
 &lt;/h2&gt;&lt;p&gt;新建一个tmux session非常简单，语法为&lt;code&gt;tmux new -s session-name&lt;/code&gt;，也可以简写为&lt;code&gt;tmux&lt;/code&gt;，为了方便管理，建议指定会话名称，如下。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1758,7 +1758,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2-断开当前会话&#34;&gt;
-    &lt;a href=&#34;#2-%e6%96%ad%e5%bc%80%e5%bd%93%e5%89%8d%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e6%96%ad%e5%bc%80%e5%bd%93%e5%89%8d%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2 断开当前会话
 &lt;/h2&gt;&lt;p&gt;会话中操作了一段时间，我希望断开会话同时下次还能接着用，怎么做？此时可以使用detach命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1771,7 +1771,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;也许你觉得这个太麻烦了，是的，tmux的会话中，我们已经可以使用tmux快捷键了。使用快捷键组合&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt;，三次按键就可以断开当前会话。&lt;/p&gt;
 &lt;h2 id=&#34;3-进入之前的会话&#34;&gt;
-    &lt;a href=&#34;#3-%e8%bf%9b%e5%85%a5%e4%b9%8b%e5%89%8d%e7%9a%84%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e8%bf%9b%e5%85%a5%e4%b9%8b%e5%89%8d%e7%9a%84%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3 进入之前的会话
 &lt;/h2&gt;&lt;p&gt;断开会话后，想要接着上次留下的现场继续工作，就要使用到tmux的attach命令了，语法为&lt;code&gt;tmux attach-session -t session-name&lt;/code&gt;，可简写为&lt;code&gt;tmux a -t session-name&lt;/code&gt; 或 &lt;code&gt;tmux a&lt;/code&gt;。通常我们使用如下两种方式之一即可：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1785,7 +1785,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;4-关闭会话&#34;&gt;
-    &lt;a href=&#34;#4-%e5%85%b3%e9%97%ad%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4-%e5%85%b3%e9%97%ad%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4 关闭会话
 &lt;/h2&gt;&lt;p&gt;会话的使命完成后，一定是要关闭的。我们可以使用tmux的kill命令，kill命令有&lt;code&gt;kill-pane&lt;/code&gt;、&lt;code&gt;kill-server&lt;/code&gt;、&lt;code&gt;kill-session&lt;/code&gt; 和 &lt;code&gt;kill-window&lt;/code&gt;共四种，其中&lt;code&gt;kill-session&lt;/code&gt;的语法为&lt;code&gt;tmux kill-session -t session-name&lt;/code&gt;。如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1810,7 +1810,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;5-查看会话&#34;&gt;
-    &lt;a href=&#34;#5-%e6%9f%a5%e7%9c%8b%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5-%e6%9f%a5%e7%9c%8b%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5 查看会话
 &lt;/h2&gt;&lt;p&gt;管理会话的第一步就是要查看所有的会话，我们可以使用如下命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1844,12 +1844,12 @@
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;6-tmux快捷命令&#34;&gt;
-    &lt;a href=&#34;#6-tmux%e5%bf%ab%e6%8d%b7%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6-tmux%e5%bf%ab%e6%8d%b7%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6 tmux快捷命令
 &lt;/h2&gt;&lt;p&gt;关于快捷指令，首先要认识到的是：tmux的所有指令，都包含同一个前缀，默认为&lt;code&gt;Ctrl+b&lt;/code&gt;，输入完前缀过后，控制台激活，命令按键才能生效。前面tmux会话相关的操作中，我们共用到了两个快捷键&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt;、&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;s&lt;/code&gt;，但这仅仅是冰山一角，欲窥tmux庞大的快捷键体系，请看下表。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;s&lt;/code&gt; 进入信息列表，然后选中某个session或者window或者pane，然后按 &lt;code&gt; x&lt;/code&gt;  ，都可以删除&lt;/p&gt;
 &lt;h3 id=&#34;表一系统指令&#34;&gt;
-    &lt;a href=&#34;#%e8%a1%a8%e4%b8%80%e7%b3%bb%e7%bb%9f%e6%8c%87%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%a1%a8%e4%b8%80%e7%b3%bb%e7%bb%9f%e6%8c%87%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     表一：系统指令。
 &lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1913,7 +1913,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;表二窗口window指令&#34;&gt;
-    &lt;a href=&#34;#%e8%a1%a8%e4%ba%8c%e7%aa%97%e5%8f%a3window%e6%8c%87%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%a1%a8%e4%ba%8c%e7%aa%97%e5%8f%a3window%e6%8c%87%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     表二：窗口（window）指令。
 &lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1977,7 +1977,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;表三面板pane指令&#34;&gt;
-    &lt;a href=&#34;#%e8%a1%a8%e4%b8%89%e9%9d%a2%e6%9d%bfpane%e6%8c%87%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e8%a1%a8%e4%b8%89%e9%9d%a2%e6%9d%bfpane%e6%8c%87%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     表三：面板（pane）指令。
 &lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -2082,7 +2082,7 @@
 &lt;/table&gt;
 &lt;p&gt;tmux的丝滑分屏功能正是得益于以上系统、窗口、面板的快捷指令，只要你愿意，你就可以解除任意的快捷指令，然后绑上你喜欢的指令，当然这就涉及到它的可配置性了&lt;/p&gt;
 &lt;h2 id=&#34;7-tmux滚屏&#34;&gt;
-    &lt;a href=&#34;#7-tmux%e6%bb%9a%e5%b1%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7-tmux%e6%bb%9a%e5%b1%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7 tmux滚屏
 &lt;/h2&gt;&lt;p&gt;使用快捷键进入 &lt;code&gt;copy-mode&lt;/code&gt; 模式，就可以利用方向键上下移动光标查看了，但是如果历史信息太多，一行一行未免太不爽了，该如何操作呢？&lt;/p&gt;
 &lt;p&gt;1.先打开配置文件：&lt;/p&gt;
@@ -2117,10 +2117,10 @@
 &lt;p&gt;&lt;strong&gt;根据某关键字搜索&lt;/strong&gt;：&lt;/p&gt;
 &lt;p&gt;使用快捷键进入 &lt;code&gt;copy-mode&lt;/code&gt; 模式，然后按 &lt;code&gt;/&lt;/code&gt; ，就可以输入关键字了，回车查找。&lt;/p&gt;
 &lt;h1 id=&#34;四-恢复用户空间&#34;&gt;
-    &lt;a href=&#34;#%e5%9b%9b-%e6%81%a2%e5%a4%8d%e7%94%a8%e6%88%b7%e7%a9%ba%e9%97%b4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%9b%9b-%e6%81%a2%e5%a4%8d%e7%94%a8%e6%88%b7%e7%a9%ba%e9%97%b4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     四. 恢复用户空间
 &lt;/h1&gt;&lt;h2 id=&#34;1-复制模式&#34;&gt;
-    &lt;a href=&#34;#1-%e5%a4%8d%e5%88%b6%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e5%a4%8d%e5%88%b6%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 复制模式
 &lt;/h2&gt;&lt;p&gt;tmux中操作文本，自然离不开复制模式，通常使用复制模式的步骤如下：&lt;/p&gt;
 &lt;ol&gt;
@@ -2175,7 +2175,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2-buffer缓存&#34;&gt;
-    &lt;a href=&#34;#2-buffer%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-buffer%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2 buffer缓存
 &lt;/h2&gt;&lt;p&gt;tmux复制操作的内容默认会存进&lt;code&gt;buffer&lt;/code&gt;里，&lt;code&gt;buffer&lt;/code&gt;是一个粘贴缓存区，新的缓存总是位于栈顶，它的操作命令如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2256,7 +2256,7 @@
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;默认情况下，buffers内容是独立于系统粘贴板的，它存在于tmux进程中，且可以在会话间共享。&lt;/p&gt;
 &lt;h2 id=&#34;3-使用系统粘贴板&#34;&gt;
-    &lt;a href=&#34;#3-%e4%bd%bf%e7%94%a8%e7%b3%bb%e7%bb%9f%e7%b2%98%e8%b4%b4%e6%9d%bf&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e4%bd%bf%e7%94%a8%e7%b3%bb%e7%bb%9f%e7%b2%98%e8%b4%b4%e6%9d%bf&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3 使用系统粘贴板
 &lt;/h2&gt;&lt;p&gt;存在于tmux进程中的buffer缓存，虽然可以在会话间共享，但不能直接与系统粘贴板共享，不免有些遗憾。幸运的是，现在我们有成熟的方案来实现这个功能。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在Linux上使用粘贴板&lt;/strong&gt;&lt;/p&gt;
@@ -2325,10 +2325,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;完成以上配置后记得重启tmux服务器。至此，复制模式中，按&lt;code&gt;y&lt;/code&gt;键将保存选中的文本到Mac系统粘贴板，随后按&lt;code&gt;Command&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键便可粘贴。&lt;/p&gt;
 &lt;h1 id=&#34;六保存tmux会话&#34;&gt;
-    &lt;a href=&#34;#%e5%85%ad%e4%bf%9d%e5%ad%98tmux%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%85%ad%e4%bf%9d%e5%ad%98tmux%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     六.保存Tmux会话
 &lt;/h1&gt;&lt;h2 id=&#34;1-结对编程&#34;&gt;
-    &lt;a href=&#34;#1-%e7%bb%93%e5%af%b9%e7%bc%96%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e7%bb%93%e5%af%b9%e7%bc%96%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 结对编程
 &lt;/h2&gt;&lt;p&gt;tmux多会话连接实时同步的功能，使得结对编程成为了可能，这也是开发者最喜欢的功能之一。现在就差一步了，就是借助tmate把tmux会话分享出去。&lt;/p&gt;
 &lt;p&gt;tmate是tmux的管理工具，它可以轻松的创建tmux会话，并且自动生成ssh链接。&lt;/p&gt;
@@ -2413,7 +2413,7 @@
 
 &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2-共享账号组会话&#34;&gt;
-    &lt;a href=&#34;#2-%e5%85%b1%e4%ba%ab%e8%b4%a6%e5%8f%b7%e7%bb%84%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e5%85%b1%e4%ba%ab%e8%b4%a6%e5%8f%b7%e7%bb%84%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2 共享账号&amp;amp;组会话
 &lt;/h2&gt;&lt;p&gt;使用tmate远程共享tmux会话，受制于多方的网络质量，必然会存在些许延迟。如果共享会话的多方拥有同一个远程服务器的账号，那么我们可以使用&lt;code&gt;组会话&lt;/code&gt;解决这个问题。&lt;/p&gt;
 &lt;p&gt;先在远程服务器上新建一个公共会话，命名为&lt;code&gt;groupSession&lt;/code&gt;。&lt;/p&gt;
@@ -2437,7 +2437,7 @@
 &lt;/div&gt;&lt;p&gt;此时两个用户都可以在同一个会话里操作，就会好像第二个用户连接到了&lt;code&gt;groupSession&lt;/code&gt;的会话一样。此时两个用户都可以创建新建的窗口，新窗口的内容依然会实时同步，但是其中一个用户切换到其它窗口，对另外一个用户没有任何影响，因此在这个共享的组会话中，用户各自的操作可以通过新建窗口来执行。即使第二个用户关闭&lt;code&gt;otherSession&lt;/code&gt;会话，共享会话&lt;code&gt;groupSession&lt;/code&gt;依然存在。&lt;/p&gt;
 &lt;p&gt;组会话在共享的同时，又保留了相对的独立，非常适合结对编程场景，它是结对编程最简单的方式，如果账号不能共享，我们就要使用下面的方案了。&lt;/p&gt;
 &lt;h2 id=&#34;3-独立账号socket共享会话&#34;&gt;
-    &lt;a href=&#34;#3-%e7%8b%ac%e7%ab%8b%e8%b4%a6%e5%8f%b7socket%e5%85%b1%e4%ba%ab%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e7%8b%ac%e7%ab%8b%e8%b4%a6%e5%8f%b7socket%e5%85%b1%e4%ba%ab%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3 独立账号&amp;amp;Socket共享会话
 &lt;/h2&gt;&lt;p&gt;开始之前我们需要确保用户对远程服务器上同一个目录拥有相同的读写权限，假设这个目录为&lt;code&gt;/var/tmux/&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;使用new-session（简写new）创建会话时，使用的是默认的socket位置，默认socket无法操作，所以我们需要创建一个指定socket文件的会话。&lt;/p&gt;
@@ -2461,7 +2461,7 @@
 &lt;/div&gt;&lt;p&gt;这样，两个不同的用户就可以共享同一个会话了。&lt;/p&gt;
 &lt;p&gt;通常情况下，不同的用户使用不同的配置文件来创建会话，但是，使用指定socket文件创建的tmux会话，会话加载的是第一个创建会话的用户的&lt;code&gt;~/.tmux.conf&lt;/code&gt;配置文件，随后加入会话的其他用户，依然使用同一份配置文件。&lt;/p&gt;
 &lt;h1 id=&#34;八tmux优化&#34;&gt;
-    &lt;a href=&#34;#%e5%85%abtmux%e4%bc%98%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%85%abtmux%e4%bc%98%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     八.Tmux优化
 &lt;/h1&gt;&lt;p&gt;tmux作为终端复用软件，支持纯命令行操作也是其一大亮点。你既可以启用可视化界面创建会话，也可以运行脚本生成会话，对于tmux依赖者而言，编写几个tmux脚本批量维护会话列表，快速重启、切换、甚至分享部分会话都是非常方便的。可能会有人说为什么不用Tmux Resurrect呢？是的，Tmux Resurrect很好，一键恢复也很诱人，但是对于一个维护大量tmux会话的用户而言，一键恢复可能不见得好，分批次恢复可能是他（她）更想要的，脚本化的tmux就很好地满足了这点。&lt;/p&gt;
 &lt;p&gt;脚本中创建tmux会话时，由于不需要开启可视化界面，需要输入&lt;code&gt;-d&lt;/code&gt;参数指定会话后台运行，如下。&lt;/p&gt;
@@ -2553,7 +2553,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;类似的脚本，我们可以编写一打，这样快速重启、切换、甚至分享会话都将更加便捷。&lt;/p&gt;
 &lt;h1 id=&#34;十-开机自动启用web服务器&#34;&gt;
-    &lt;a href=&#34;#%e5%8d%81-%e5%bc%80%e6%9c%ba%e8%87%aa%e5%8a%a8%e5%90%af%e7%94%a8web%e6%9c%8d%e5%8a%a1%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#%e5%8d%81-%e5%bc%80%e6%9c%ba%e8%87%aa%e5%8a%a8%e5%90%af%e7%94%a8web%e6%9c%8d%e5%8a%a1%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     十. 开机自动启用Web服务器
 &lt;/h1&gt;</description>
         </item>
@@ -2564,7 +2564,7 @@
         
         <guid>https://logan.wssw.fun/p/2023/05/91571491/</guid>
         <description>&lt;h1 id=&#34;1-简介&#34;&gt;
-    &lt;a href=&#34;#1-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 简介
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;直接 vim&lt;/li&gt;
@@ -2587,13 +2587,13 @@
     &gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;1-normal模式&#34;&gt;
-    &lt;a href=&#34;#1-normal%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-normal%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1⃣️ normal模式
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;快速移动到上次编辑位置&lt;/code&gt;，当光标移动到其他位置后，可以使用 gi 快速进入标记模式，并且光标位置是上一次编辑的位置&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2-编辑模式&#34;&gt;
-    &lt;a href=&#34;#2-%e7%bc%96%e8%be%91%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e7%bc%96%e8%be%91%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2⃣️ 编辑模式
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -2616,7 +2616,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3-命令模式&#34;&gt;
-    &lt;a href=&#34;#3-%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3⃣️ 命令模式
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:wq! 保存并强制退出  w保存  q推出  ！强制&lt;/li&gt;
@@ -2628,7 +2628,7 @@
 &lt;li&gt;&lt;code&gt;文本自动对齐&lt;/code&gt;，:set autoindent&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4-可视化模式&#34;&gt;
-    &lt;a href=&#34;#4-%e5%8f%af%e8%a7%86%e5%8c%96%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4-%e5%8f%af%e8%a7%86%e5%8c%96%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4⃣️ 可视化模式
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -2701,7 +2701,7 @@
 &lt;li&gt;选中之后可以进行批量操作，比如选中之后，按下 &lt;code&gt;d&lt;/code&gt;，则可删除选中的所有文本&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3-启动vim&#34;&gt;
-    &lt;a href=&#34;#3-%e5%90%af%e5%8a%a8vim&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e5%90%af%e5%8a%a8vim&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3 启动vim
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;vim&lt;/code&gt; 打开启动页面&lt;/li&gt;
@@ -2716,7 +2716,7 @@
 &lt;li&gt;&lt;code&gt;vim –remote file&lt;/code&gt;  ， 用已有的vim进程打开指定的文件。 如果你不想启用多个vim会话，这个很有用。但要注意， 如果你用vim，会寻找名叫VIM的服务器；如果你已经有一个gvim在运行了， 你可以用gvim –remote file在已有的gvim中打开文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;4-启动多个vim-标签或者窗口&#34;&gt;
-    &lt;a href=&#34;#4-%e5%90%af%e5%8a%a8%e5%a4%9a%e4%b8%aavim-%e6%a0%87%e7%ad%be%e6%88%96%e8%80%85%e7%aa%97%e5%8f%a3&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4-%e5%90%af%e5%8a%a8%e5%a4%9a%e4%b8%aavim-%e6%a0%87%e7%ad%be%e6%88%96%e8%80%85%e7%aa%97%e5%8f%a3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4 启动多个vim 标签或者窗口
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;:sp&lt;/code&gt; 和 &lt;code&gt;:vs&lt;/code&gt; 将窗口分割为4个，这时四个窗口都是相同的文件，即同一个文件buffer&lt;/li&gt;
@@ -2752,10 +2752,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;6-翻屏&#34;&gt;
-    &lt;a href=&#34;#6-%e7%bf%bb%e5%b1%8f&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6-%e7%bf%bb%e5%b1%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6 翻屏
 &lt;/h1&gt;&lt;h2 id=&#34;1-单词&#34;&gt;
-    &lt;a href=&#34;#1-%e5%8d%95%e8%af%8d&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e5%8d%95%e8%af%8d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1⃣️ 单词
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;w/W&lt;/code&gt; 移动到下一个 word/WORD 开头。 &lt;code&gt;e/E&lt;/code&gt; 下一个 word/WORD结尾&lt;/li&gt;
@@ -2772,7 +2772,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;2-当前行快速移动光标&#34;&gt;
-    &lt;a href=&#34;#2-%e5%bd%93%e5%89%8d%e8%a1%8c%e5%bf%ab%e9%80%9f%e7%a7%bb%e5%8a%a8%e5%85%89%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e5%bd%93%e5%89%8d%e8%a1%8c%e5%bf%ab%e9%80%9f%e7%a7%bb%e5%8a%a8%e5%85%89%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2⃣️ 当前行快速移动光标
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;$&lt;/code&gt; 移动到行的末尾&lt;/li&gt;
@@ -2781,7 +2781,7 @@
 &lt;li&gt;&lt;code&gt;g_&lt;/code&gt; 移动到最后一个非空白字符&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3-当前行搜索&#34;&gt;
-    &lt;a href=&#34;#3-%e5%bd%93%e5%89%8d%e8%a1%8c%e6%90%9c%e7%b4%a2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e5%bd%93%e5%89%8d%e8%a1%8c%e6%90%9c%e7%b4%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3⃣️ 当前行搜索
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;同一行快速移动的方式其实是搜索一个字符并且移动到该字符&lt;/li&gt;
@@ -2790,7 +2790,7 @@
 &lt;li&gt;&lt;code&gt;F&lt;/code&gt; 表示反过来搜前面的字符&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4-行间跳转&#34;&gt;
-    &lt;a href=&#34;#4-%e8%a1%8c%e9%97%b4%e8%b7%b3%e8%bd%ac&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4-%e8%a1%8c%e9%97%b4%e8%b7%b3%e8%bd%ac&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4⃣️ 行间跳转
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;: 行号&lt;/code&gt; 跳转到对应行&lt;/li&gt;
@@ -2810,7 +2810,7 @@
 &lt;li&gt;&lt;code&gt;m a&lt;/code&gt; 标记当前行为a，&lt;code&gt;单引号+a&lt;/code&gt;即可跳转&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;5-搜索和替换&#34;&gt;
-    &lt;a href=&#34;#5-%e6%90%9c%e7%b4%a2%e5%92%8c%e6%9b%bf%e6%8d%a2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5-%e6%90%9c%e7%b4%a2%e5%92%8c%e6%9b%bf%e6%8d%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5⃣️ 搜索和替换
 &lt;/h2&gt;&lt;p&gt;​					&lt;code&gt;搜索&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2857,7 +2857,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;6-快速删除&#34;&gt;
-    &lt;a href=&#34;#6-%e5%bf%ab%e9%80%9f%e5%88%a0%e9%99%a4&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6-%e5%bf%ab%e9%80%9f%e5%88%a0%e9%99%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6⃣️ 快速删除
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;v模式下通用&lt;/li&gt;
@@ -2871,7 +2871,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;&lt;code&gt;d$&lt;/code&gt;，删除光标位置到行尾&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;7-快速修改&#34;&gt;
-    &lt;a href=&#34;#7-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     7⃣️ 快速修改
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;常用有三个，&lt;code&gt;r&lt;/code&gt;（replace），&lt;code&gt;c&lt;/code&gt;（change），&lt;code&gt;s&lt;/code&gt;（substitute）&lt;/li&gt;
@@ -2880,15 +2880,15 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;使用&lt;code&gt;c&lt;/code&gt;配合文本对象，我们可以快速进行修改， &lt;code&gt;cw&lt;/code&gt;删除当前单词并进入插入模式&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;8-快速移动到下一行行首&#34;&gt;
-    &lt;a href=&#34;#8-%e5%bf%ab%e9%80%9f%e7%a7%bb%e5%8a%a8%e5%88%b0%e4%b8%8b%e4%b8%80%e8%a1%8c%e8%a1%8c%e9%a6%96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#8-%e5%bf%ab%e9%80%9f%e7%a7%bb%e5%8a%a8%e5%88%b0%e4%b8%8b%e4%b8%80%e8%a1%8c%e8%a1%8c%e9%a6%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     8⃣️ 快速移动到下一行行首
 &lt;/h2&gt;&lt;p&gt;ctrl+m&lt;/p&gt;
 &lt;h2 id=&#34;9-快速跳转到匹配的括号&#34;&gt;
-    &lt;a href=&#34;#9-%e5%bf%ab%e9%80%9f%e8%b7%b3%e8%bd%ac%e5%88%b0%e5%8c%b9%e9%85%8d%e7%9a%84%e6%8b%ac%e5%8f%b7&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#9-%e5%bf%ab%e9%80%9f%e8%b7%b3%e8%bd%ac%e5%88%b0%e5%8c%b9%e9%85%8d%e7%9a%84%e6%8b%ac%e5%8f%b7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     9⃣️ 快速跳转到匹配的括号
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;%&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id=&#34;8-重要操作&#34;&gt;
-    &lt;a href=&#34;#8-%e9%87%8d%e8%a6%81%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#8-%e9%87%8d%e8%a6%81%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     8 重要操作
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -2948,7 +2948,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;10-vim复制粘贴和寄存器&#34;&gt;
-    &lt;a href=&#34;#10-vim%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#10-vim%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     10 vim复制粘贴和寄存器
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;宏可以看成是一系列命令的集合&lt;/li&gt;
@@ -2993,7 +2993,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;12-vim补全&#34;&gt;
-    &lt;a href=&#34;#12-vim%e8%a1%a5%e5%85%a8&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#12-vim%e8%a1%a5%e5%85%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     12 vim补全
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;使用ctr+n和ctr+p补全单词&lt;/li&gt;
@@ -3001,7 +3001,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;使用ctrl+ x ctrl+o补全代码,需要开启文件类型检查,安装插件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;13-vim更换配色&#34;&gt;
-    &lt;a href=&#34;#13-vim%e6%9b%b4%e6%8d%a2%e9%85%8d%e8%89%b2&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#13-vim%e6%9b%b4%e6%8d%a2%e9%85%8d%e8%89%b2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     13 vim更换配色
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;使用 &lt;code&gt;:colorscheme&lt;/code&gt; 显示当前的主题配色,默认是 default&lt;/li&gt;
@@ -3025,7 +3025,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 安装之后就有大量的主题可以更换了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;14-vim配置&#34;&gt;
-    &lt;a href=&#34;#14-vim%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#14-vim%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     14 vim配置
 &lt;/h1&gt;</description>
         </item>
@@ -3036,7 +3036,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
         
         <guid>https://logan.wssw.fun/p/2023/05/84511784/</guid>
         <description>&lt;h1 id=&#34;1-关于vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34;&gt;
-    &lt;a href=&#34;#1-%e5%85%b3%e4%ba%8evimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#1-%e5%85%b3%e4%ba%8evimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id59&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;1. 关于Vim
 
@@ -3066,7 +3066,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;下第二强大的编辑器。 虽然emacs是公认的世界第一，我认为使用emacs并没有使用vi进行编辑来得高效。 如果是初学vi，运行一下vimtutor是个聪明的决定。 （如果你的系统环境不是中文，而你想使用中文的vimtutor，就运行vimtutor zh）&lt;/p&gt;
 &lt;h2 id=&#34;11-vim的几种模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34;&gt;
-    &lt;a href=&#34;#11-vim%e7%9a%84%e5%87%a0%e7%a7%8d%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#11-vim%e7%9a%84%e5%87%a0%e7%a7%8d%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id60&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;1.1 Vim的几种模式
 
@@ -3088,7 +3088,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;替换模式：正常模式下，按R进入。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;2-启动vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid61&#34;&gt;
-    &lt;a href=&#34;#2-%e5%90%af%e5%8a%a8vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid61&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#2-%e5%90%af%e5%8a%a8vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid61&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id61&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;2. 启动Vim
 
@@ -3115,7 +3115,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;vim –remote file: 用已有的vim进程打开指定的文件。 如果你不想启用多个vim会话，这个很有用。但要注意， 如果你用vim，会寻找名叫VIM的服务器；如果你已经有一个gvim在运行了， 你可以用gvim –remote file在已有的gvim中打开文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3-文档操作httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid62&#34;&gt;
-    &lt;a href=&#34;#3-%e6%96%87%e6%a1%a3%e6%93%8d%e4%bd%9chttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid62&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#3-%e6%96%87%e6%a1%a3%e6%93%8d%e4%bd%9chttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid62&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id62&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;3. 文档操作
 
@@ -3160,7 +3160,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:Vex – 垂直分割一个窗口，浏览文件系统；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;4-光标的移动httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid63&#34;&gt;
-    &lt;a href=&#34;#4-%e5%85%89%e6%a0%87%e7%9a%84%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid63&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#4-%e5%85%89%e6%a0%87%e7%9a%84%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid63&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id63&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4. 光标的移动
 
@@ -3176,7 +3176,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;41-基本移动httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34;&gt;
-    &lt;a href=&#34;#41-%e5%9f%ba%e6%9c%ac%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#41-%e5%9f%ba%e6%9c%ac%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.1 基本移动
 
@@ -3238,7 +3238,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;G: 到文件尾部。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;42-翻屏httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid65&#34;&gt;
-    &lt;a href=&#34;#42-%e7%bf%bb%e5%b1%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid65&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#42-%e7%bf%bb%e5%b1%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid65&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id65&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.2 翻屏
 
@@ -3266,7 +3266,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;zb: 将当前行移动到屏幕底端。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;43-标记httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid66&#34;&gt;
-    &lt;a href=&#34;#43-%e6%a0%87%e8%ae%b0httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid66&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#43-%e6%a0%87%e8%ae%b0httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid66&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id66&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.3 标记
 
@@ -3299,7 +3299,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:help mark-motions 查看更多关于mark的知识。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;5-插入文本httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid67&#34;&gt;
-    &lt;a href=&#34;#5-%e6%8f%92%e5%85%a5%e6%96%87%e6%9c%achttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid67&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#5-%e6%8f%92%e5%85%a5%e6%96%87%e6%9c%achttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid67&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id67&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5. 插入文本
 
@@ -3315,7 +3315,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;51-基本插入httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34;&gt;
-    &lt;a href=&#34;#51-%e5%9f%ba%e6%9c%ac%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#51-%e5%9f%ba%e6%9c%ac%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id68&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5.1 基本插入
 
@@ -3343,7 +3343,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:r !date 在光标处插入当前日期与时间。同理，:r !command可以将其它shell命令的输出插入当前文档。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;52-改写插入httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid69&#34;&gt;
-    &lt;a href=&#34;#52-%e6%94%b9%e5%86%99%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid69&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#52-%e6%94%b9%e5%86%99%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid69&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id69&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5.2 改写插入
 
@@ -3368,7 +3368,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/ul&gt;
 &lt;p&gt;注意，类似cnw,dnw,ynw的形式同样可以写为ncw,ndw,nyw。&lt;/p&gt;
 &lt;h1 id=&#34;6-剪切复制和寄存器httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid70&#34;&gt;
-    &lt;a href=&#34;#6-%e5%89%aa%e5%88%87%e5%a4%8d%e5%88%b6%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid70&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#6-%e5%89%aa%e5%88%87%e5%a4%8d%e5%88%b6%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid70&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id70&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6. 剪切复制和寄存器
 
@@ -3384,7 +3384,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;61-剪切和复制粘贴httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34;&gt;
-    &lt;a href=&#34;#61-%e5%89%aa%e5%88%87%e5%92%8c%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#61-%e5%89%aa%e5%88%87%e5%92%8c%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id71&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.1 剪切和复制、粘贴
 
@@ -3422,7 +3422,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;P: 在光标之前粘贴。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;62-文本对象httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid72&#34;&gt;
-    &lt;a href=&#34;#62-%e6%96%87%e6%9c%ac%e5%af%b9%e8%b1%a1httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid72&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#62-%e6%96%87%e6%9c%ac%e5%af%b9%e8%b1%a1httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid72&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id72&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.2 文本对象
 
@@ -3445,7 +3445,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/ul&gt;
 &lt;p&gt;y, d, c, v都可以跟文本对象。&lt;/p&gt;
 &lt;h2 id=&#34;63-寄存器httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid73&#34;&gt;
-    &lt;a href=&#34;#63-%e5%af%84%e5%ad%98%e5%99%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid73&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#63-%e5%af%84%e5%ad%98%e5%99%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid73&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id73&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.3 寄存器
 
@@ -3469,7 +3469,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;“+：系统剪贴板。”+yy把当前行的内容放入系统剪贴板。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;7-查找与替换httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid74&#34;&gt;
-    &lt;a href=&#34;#7-%e6%9f%a5%e6%89%be%e4%b8%8e%e6%9b%bf%e6%8d%a2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid74&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#7-%e6%9f%a5%e6%89%be%e4%b8%8e%e6%9b%bf%e6%8d%a2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid74&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id74&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7. 查找与替换
 
@@ -3485,7 +3485,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;71-查找httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34;&gt;
-    &lt;a href=&#34;#71-%e6%9f%a5%e6%89%behttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#71-%e6%9f%a5%e6%89%behttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id75&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.1 查找
 
@@ -3521,7 +3521,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;p&gt;然后用:cw或:copen查看结果，可以用C-w H把quickfix窗口移到左侧，&lt;/p&gt;
 &lt;p&gt;就更像个目录了。&lt;/p&gt;
 &lt;h2 id=&#34;72-替换httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid76&#34;&gt;
-    &lt;a href=&#34;#72-%e6%9b%bf%e6%8d%a2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid76&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#72-%e6%9b%bf%e6%8d%a2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid76&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id76&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.2 替换
 
@@ -3559,7 +3559,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;%: 所有行&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;73-正则表达式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid77&#34;&gt;
-    &lt;a href=&#34;#73-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid77&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#73-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid77&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id77&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.3 正则表达式
 
@@ -3588,7 +3588,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/ul&gt;
 &lt;p&gt;:help pattern得到更多帮助。&lt;/p&gt;
 &lt;h1 id=&#34;9-编辑多个文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid82&#34;&gt;
-    &lt;a href=&#34;#9-%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid82&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#9-%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid82&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9. 编辑多个文件
 
@@ -3604,7 +3604,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;91-一次编辑多个文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34;&gt;
-    &lt;a href=&#34;#91-%e4%b8%80%e6%ac%a1%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#91-%e4%b8%80%e6%ac%a1%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id83&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.1 一次编辑多个文件
 
@@ -3642,7 +3642,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;vi -O filenames 在垂直分割的多个窗口中编辑多个文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;92-多标签编辑httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid84&#34;&gt;
-    &lt;a href=&#34;#92-%e5%a4%9a%e6%a0%87%e7%ad%be%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid84&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#92-%e5%a4%9a%e6%a0%87%e7%ad%be%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id84&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.2 多标签编辑
 
@@ -3671,7 +3671,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:tabm[ove] [N] – 移动标签页，移动到第N个标签页之后。 如 tabm 0 当前标签页，就会变成第一个标签页。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;93-缓冲区httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid85&#34;&gt;
-    &lt;a href=&#34;#93-%e7%bc%93%e5%86%b2%e5%8c%bahttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid85&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#93-%e7%bc%93%e5%86%b2%e5%8c%bahttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id85&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.3 缓冲区
 
@@ -3698,7 +3698,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:ba[ll] – 把所有的缓冲区在当前页中打开，每个缓冲区占一个窗口。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;10-分屏编辑httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid86&#34;&gt;
-    &lt;a href=&#34;#10-%e5%88%86%e5%b1%8f%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid86&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#10-%e5%88%86%e5%b1%8f%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id86&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10. 分屏编辑
 
@@ -3718,7 +3718,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;vim -O file1 file2:垂直分割窗口，同时打开file1和file2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;101-水平分割httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid87&#34;&gt;
-    &lt;a href=&#34;#101-%e6%b0%b4%e5%b9%b3%e5%88%86%e5%89%b2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid87&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#101-%e6%b0%b4%e5%b9%b3%e5%88%86%e5%89%b2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id87&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.1 水平分割
 
@@ -3742,7 +3742,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;C-w C-^ – 水平分割一个窗口，打开刚才编辑的文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;102-垂直分割httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid88&#34;&gt;
-    &lt;a href=&#34;#102-%e5%9e%82%e7%9b%b4%e5%88%86%e5%89%b2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid88&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#102-%e5%9e%82%e7%9b%b4%e5%88%86%e5%89%b2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid88&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id88&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.2 垂直分割
 
@@ -3763,7 +3763,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:vertical 水平分割的命令： 相应的垂直分割。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;103-关闭子窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid89&#34;&gt;
-    &lt;a href=&#34;#103-%e5%85%b3%e9%97%ad%e5%ad%90%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid89&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#103-%e5%85%b3%e9%97%ad%e5%ad%90%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.3 关闭子窗口
 
@@ -3785,7 +3785,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:close – 关闭当前窗口，CTRL-W c能实现同样的功能。 (象 :q :x同样工作 )&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;104-调整窗口大小httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid90&#34;&gt;
-    &lt;a href=&#34;#104-%e8%b0%83%e6%95%b4%e7%aa%97%e5%8f%a3%e5%a4%a7%e5%b0%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid90&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#104-%e8%b0%83%e6%95%b4%e7%aa%97%e5%8f%a3%e5%a4%a7%e5%b0%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid90&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.4 调整窗口大小
 
@@ -3812,7 +3812,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;ctrl+w | –当前窗口尽可能的宽。也可以用n设定列数。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;105-切换和移动窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid91&#34;&gt;
-    &lt;a href=&#34;#105-%e5%88%87%e6%8d%a2%e5%92%8c%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid91&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#105-%e5%88%87%e6%8d%a2%e5%92%8c%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id91&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.5 切换和移动窗口
 
@@ -3838,7 +3838,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;ctrl+w T: 将当前的窗口移动到新的标签页上。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;11-快速编辑httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid92&#34;&gt;
-    &lt;a href=&#34;#11-%e5%bf%ab%e9%80%9f%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid92&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#11-%e5%bf%ab%e9%80%9f%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid92&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id92&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11. 快速编辑
 
@@ -3854,7 +3854,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;111-改变大小写httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34;&gt;
-    &lt;a href=&#34;#111-%e6%94%b9%e5%8f%98%e5%a4%a7%e5%b0%8f%e5%86%99httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#111-%e6%94%b9%e5%8f%98%e5%a4%a7%e5%b0%8f%e5%86%99httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.1 改变大小写
 
@@ -3875,7 +3875,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;gu(U)接范围（如$，或G），可以把从光标当前位置到指定位置之间字母全部 转换成小写或大写。如ggguG，就是把开头到最后一行之间的字母全部变为小 写。再如gu5j，把当前行和下面四行全部变成小写。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;112-替换normal模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid94&#34;&gt;
-    &lt;a href=&#34;#112-%e6%9b%bf%e6%8d%a2normal%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid94&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#112-%e6%9b%bf%e6%8d%a2normal%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid94&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id94&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.2 替换（normal模式）
 
@@ -3895,7 +3895,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;R: 进入替换模式，按esc回到正常模式。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;113-撤消与重做normal模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid95&#34;&gt;
-    &lt;a href=&#34;#113-%e6%92%a4%e6%b6%88%e4%b8%8e%e9%87%8d%e5%81%9anormal%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid95&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#113-%e6%92%a4%e6%b6%88%e4%b8%8e%e9%87%8d%e5%81%9anormal%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id95&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.3 撤消与重做（normal模式）
 
@@ -3920,7 +3920,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:later 55s – 前进55秒&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;114-宏httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid96&#34;&gt;
-    &lt;a href=&#34;#114-%e5%ae%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid96&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#114-%e5%ae%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id96&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.4 宏
 
@@ -3942,7 +3942,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;@a：播放宏a&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;12-编辑特殊文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid97&#34;&gt;
-    &lt;a href=&#34;#12-%e7%bc%96%e8%be%91%e7%89%b9%e6%ae%8a%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid97&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#12-%e7%bc%96%e8%be%91%e7%89%b9%e6%ae%8a%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12. 编辑特殊文件
 
@@ -3958,7 +3958,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;121-文件加解密httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34;&gt;
-    &lt;a href=&#34;#121-%e6%96%87%e4%bb%b6%e5%8a%a0%e8%a7%a3%e5%af%86httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#121-%e6%96%87%e4%bb%b6%e5%8a%a0%e8%a7%a3%e5%af%86httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id98&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.1 文件加解密
 
@@ -3993,7 +3993,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt; 滇狐总结的比较高级的vi技巧。&lt;/p&gt;
 &lt;h2 id=&#34;122-文件的编码httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34;&gt;
-    &lt;a href=&#34;#122-%e6%96%87%e4%bb%b6%e7%9a%84%e7%bc%96%e7%a0%81httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#122-%e6%96%87%e4%bb%b6%e7%9a%84%e7%bc%96%e7%a0%81httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id99&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.2 文件的编码
 
@@ -4029,7 +4029,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;123-文件格式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34;&gt;
-    &lt;a href=&#34;#123-%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#123-%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id100&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.3 文件格式
 
@@ -4052,7 +4052,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;在vimrc中添加set fileformats=unix,dos,mac，让vim自动识别文件格式。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;13-编程辅助httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid101&#34;&gt;
-    &lt;a href=&#34;#13-%e7%bc%96%e7%a8%8b%e8%be%85%e5%8a%a9httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid101&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#13-%e7%bc%96%e7%a8%8b%e8%be%85%e5%8a%a9httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid101&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id101&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13. 编程辅助
 
@@ -4068,7 +4068,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;131-一些按键httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34;&gt;
-    &lt;a href=&#34;#131-%e4%b8%80%e4%ba%9b%e6%8c%89%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#131-%e4%b8%80%e4%ba%9b%e6%8c%89%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id102&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.1 一些按键
 
@@ -4114,7 +4114,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;ca&amp;lt;, da&amp;lt;, ya&amp;lt;：修改、剪切或复制&amp;lt;&amp;gt;之间的内容，包含&amp;lt;&amp;gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;132-ctagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid103&#34;&gt;
-    &lt;a href=&#34;#132-ctagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid103&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#132-ctagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid103&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id103&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.2 ctags
 
@@ -4153,7 +4153,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:tag /xyz&lt;tab&gt; – 会用名字中含有xyz的tag名补全。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;133-cscopehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid104&#34;&gt;
-    &lt;a href=&#34;#133-cscopehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid104&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#133-cscopehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid104&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id104&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.3 cscope
 
@@ -4175,7 +4175,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:cw – 打开quickfix窗口查看结果&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;134-gtagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid105&#34;&gt;
-    &lt;a href=&#34;#134-gtagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid105&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#134-gtagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid105&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.4 gtags
 
@@ -4200,7 +4200,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:Gtags -P pattern 显示路径中包含特定模式的文件。 如 :Gtags -P .h$ 显示所有头文件， :Gtags -P /vm/ 显示vm目录下的文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;135-编译httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid106&#34;&gt;
-    &lt;a href=&#34;#135-%e7%bc%96%e8%af%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid106&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#135-%e7%bc%96%e8%af%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid106&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id106&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.5 编译
 
@@ -4249,7 +4249,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;%f表示文件名，%l表示行号， %m表示错误信息，其它的还不能理解。 请参考 :help errorformat。&lt;/p&gt;
 &lt;h2 id=&#34;136-快速修改窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34;&gt;
-    &lt;a href=&#34;#136-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#136-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id107&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.6 快速修改窗口
 
@@ -4277,7 +4277,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:cr – 定位到第一个错误。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;137-自动补全httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid108&#34;&gt;
-    &lt;a href=&#34;#137-%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid108&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#137-%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid108&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id108&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.7 自动补全
 
@@ -4311,7 +4311,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;C-y 退出下拉菜单，并接受当前选项。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;138-多行缩进缩出httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid109&#34;&gt;
-    &lt;a href=&#34;#138-%e5%a4%9a%e8%a1%8c%e7%bc%a9%e8%bf%9b%e7%bc%a9%e5%87%bahttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid109&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#138-%e5%a4%9a%e8%a1%8c%e7%bc%a9%e8%bf%9b%e7%bc%a9%e5%87%bahttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid109&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id109&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.8 多行缩进缩出
 
@@ -4335,7 +4335,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;或者n =，调整n行代码的缩排。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;139-折叠httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid110&#34;&gt;
-    &lt;a href=&#34;#139-%e6%8a%98%e5%8f%a0httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid110&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#139-%e6%8a%98%e5%8f%a0httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid110&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.9 折叠
 
@@ -4367,7 +4367,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;zi – enable/disable fold;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;14-命令行httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid111&#34;&gt;
-    &lt;a href=&#34;#14-%e5%91%bd%e4%bb%a4%e8%a1%8chttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid111&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#14-%e5%91%bd%e4%bb%a4%e8%a1%8chttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid111&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id111&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;14. 命令行
 
@@ -4384,7 +4384,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/a&gt;
 &lt;/h1&gt;&lt;p&gt;normal模式下按:进入命令行模式&lt;/p&gt;
 &lt;h2 id=&#34;141-命令行模式下的快捷键httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34;&gt;
-    &lt;a href=&#34;#141-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%a8%a1%e5%bc%8f%e4%b8%8b%e7%9a%84%e5%bf%ab%e6%8d%b7%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#141-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%a8%a1%e5%bc%8f%e4%b8%8b%e7%9a%84%e5%bf%ab%e6%8d%b7%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id112&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;14.1 命令行模式下的快捷键：
 
@@ -4414,7 +4414,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;q/和q? 可以打开查找历史记录。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;142-执行外部命令httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid113&#34;&gt;
-    &lt;a href=&#34;#142-%e6%89%a7%e8%a1%8c%e5%a4%96%e9%83%a8%e5%91%bd%e4%bb%a4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid113&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#142-%e6%89%a7%e8%a1%8c%e5%a4%96%e9%83%a8%e5%91%bd%e4%bb%a4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid113&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id113&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;14.2 执行外部命令
 
@@ -4437,7 +4437,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:m,nw !cmd 将文件的m行到n行之间的内容做为命令输入执行命令。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;15-其它httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid114&#34;&gt;
-    &lt;a href=&#34;#15-%e5%85%b6%e5%ae%83httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid114&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#15-%e5%85%b6%e5%ae%83httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid114&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id114&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15. 其它
 
@@ -4453,7 +4453,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/a&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;151-工作目录httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34;&gt;
-    &lt;a href=&#34;#151-%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#151-%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.1 工作目录
 
@@ -4474,7 +4474,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;:set autochdir 可以让vim 根据编辑的文件自动切换工作目录。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;152-一些快捷键收集中httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid116&#34;&gt;
-    &lt;a href=&#34;#152-%e4%b8%80%e4%ba%9b%e5%bf%ab%e6%8d%b7%e9%94%ae%e6%94%b6%e9%9b%86%e4%b8%adhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid116&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#152-%e4%b8%80%e4%ba%9b%e5%bf%ab%e6%8d%b7%e9%94%ae%e6%94%b6%e9%9b%86%e4%b8%adhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid116&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id116&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.2 一些快捷键（收集中）
 
@@ -4498,7 +4498,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;li&gt;g C-g: 统计全文或统计部分的字数。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;153-在线帮助httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid117&#34;&gt;
-    &lt;a href=&#34;#153-%e5%9c%a8%e7%ba%bf%e5%b8%ae%e5%8a%a9httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid117&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#153-%e5%9c%a8%e7%ba%bf%e5%b8%ae%e5%8a%a9httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid117&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id117&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.3 在线帮助
 

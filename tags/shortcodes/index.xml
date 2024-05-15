@@ -42,7 +42,7 @@
 &lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;
-    &lt;a href=&#34;#youtube-privacy-enhanced-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#youtube-privacy-enhanced-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     YouTube Privacy Enhanced Shortcode
 &lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
     &lt;iframe loading=&#34;lazy&#34; 
@@ -56,17 +56,17 @@
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;
-    &lt;a href=&#34;#twitter-simple-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#twitter-simple-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Twitter Simple Shortcode
 &lt;/h2&gt;&lt;p&gt;{{&amp;lt; twitter_simple user=&amp;ldquo;DesignReviewed&amp;rdquo; id=&amp;ldquo;1085870671291310081&amp;rdquo; &amp;gt;}}&lt;/p&gt;
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;
-    &lt;a href=&#34;#vimeo-simple-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#vimeo-simple-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Vimeo Simple Shortcode
 &lt;/h2&gt;&lt;p&gt;{{&amp;lt; vimeo_simple 48912912 &amp;gt;}}&lt;/p&gt;
 &lt;h2 id=&#34;bilibilibi-shortcode&#34;&gt;
-    &lt;a href=&#34;#bilibilibi-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#bilibilibi-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     bilibilibi Shortcode
 &lt;/h2&gt;
 
@@ -89,15 +89,15 @@
   &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;gist-shortcode&#34;&gt;
-    &lt;a href=&#34;#gist-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#gist-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Gist Shortcode
 &lt;/h2&gt;&lt;p&gt;{{&amp;lt; gist spf13 7896402 &amp;gt;}}&lt;/p&gt;
 &lt;h2 id=&#34;gitlab-snippets-shortcode&#34;&gt;
-    &lt;a href=&#34;#gitlab-snippets-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#gitlab-snippets-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Gitlab Snippets Shortcode
 &lt;/h2&gt;&lt;p&gt;{{&amp;lt; gitlab 2349278 &amp;gt;}}&lt;/p&gt;
 &lt;h2 id=&#34;quote-shortcode&#34;&gt;
-    &lt;a href=&#34;#quote-shortcode&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;a href=&#34;#quote-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Quote Shortcode
 &lt;/h2&gt;&lt;p&gt;Stack adds a &lt;code&gt;quote&lt;/code&gt; shortcode.  For example:&lt;/p&gt;
 &lt;blockquote&gt;
