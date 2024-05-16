@@ -104,16 +104,12 @@
     &gt;http://gceasy.io
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt; 来分析异常信息&lt;/li&gt;
+ 来分析异常信息&lt;/li&gt;
 &lt;li&gt;灵活运用命令行工具、jstack、jmap、jinfo 等&lt;/li&gt;
 &lt;li&gt;dump 出堆文件，使用内存分析工具分析文件&lt;/li&gt;
 &lt;li&gt;使用阿里 Arthas、jconsole、JVisualVM 来实时查看 JVM 状态&lt;/li&gt;
@@ -269,16 +265,12 @@
     &gt;http://hg.openjdk.java.net/jdk/jdk11/file/1ddf9a99e4ad/src/jdk.jcmd/share/classes/sun/tools
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;22-jps查看正在运行的-java-进程&#34;&gt;
     &lt;a href=&#34;#22-jps%e6%9f%a5%e7%9c%8b%e6%ad%a3%e5%9c%a8%e8%bf%90%e8%a1%8c%e7%9a%84-java-%e8%bf%9b%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2. jps：查看正在运行的 Java 进程
@@ -307,16 +299,12 @@
     &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;基本使用语法为：jstat -&amp;lt;option&amp;gt; [-t] [-h&amp;lt;lines&amp;gt;] &amp;lt;vmid&amp;gt; [&amp;lt;interval&amp;gt; [&amp;lt;count&amp;gt;]]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;interval：多久(ms)打印一次，默认只打印一次&lt;/li&gt;
@@ -964,16 +952,12 @@
     &gt;https://docs.oracle.com/en/java/javase/11/tools/jmap.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;基本使用语法为：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;jmap [option] &amp;lt;pid&amp;gt;&lt;/li&gt;
@@ -1230,16 +1214,12 @@
     &gt;https://docs.oracle.com/en/java/javase/11/tools/jstack.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;在 thread dump 中，要留意下面几种状态&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;mark&gt;死锁，Deadlock（重点关注）&lt;/mark&gt;&lt;/li&gt;
@@ -1289,16 +1269,12 @@
     &gt;https://docs.oracle.com/en/java/javase/11/tools/jcmd.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;jcmd 拥有 jmap 的大部分功能，并且在 Oracle 的官方网站上也推荐使用 jcmd 命令代 jmap 命令&lt;/p&gt;
 &lt;p&gt;**jcmd -l：**列出所有的 JVM 进程&lt;/p&gt;
 &lt;p&gt;**jcmd 进程号 help：**针对指定的进程，列出支持的所有具体命令&lt;/p&gt;
@@ -1405,16 +1381,12 @@
     &gt;https://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1526,16 +1498,12 @@
     &gt;https://visualvm.github.io/index.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1610,16 +1578,12 @@
     &gt;https://www.eclipse.org/mat/downloads.php
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1721,16 +1685,12 @@
     &gt;https://www.ej-technologies.com/products/jprofiler/overview.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;数据采集方式：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;JProfier 数据采集方式分为两种：Sampling（样本采集）和 Instrumentation（重构模式）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Instrumentation&lt;/strong&gt;：这是 JProfiler 全功能模式。在 class 加载之前，JProfier 把相关功能代码写入到需要分析的 class 的 bytecode 中，对正在运行的 jvm 有一定影响。&lt;/p&gt;
@@ -2071,16 +2031,12 @@
     &gt;https://arthas.aliyun.com/doc/quick-start.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;安装方式：如果速度较慢，可以尝试国内的码云 Gitee 下载。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2270,16 +2226,12 @@
     &gt;https://github.com/JDKMissionControl/jmc
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2460,16 +2412,12 @@
     &gt;http://new.brendangregg.com/flamegraphs.html 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2502,16 +2450,12 @@
     &gt;http://github.com/alibaba/Tprofiler
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Btrace&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;常见的动态追踪工具有 BTrace、HouseHD（该项目己经停止开发）、Greys-Anatomy（国人开发 个人开发者）、Byteman（JBoss 出品），注意 Java 运行时追踪工具井不限干这几种，但是这几个是相对比较常用的。&lt;/p&gt;
 &lt;p&gt;BTrace 是 SUN Kenai 云计算开发平台下的一个开源项目，旨在为 java 提供安全可靠的动态跟踪分析工具。先看一卜日 Trace 的官方定义：&lt;/p&gt;
@@ -2923,16 +2867,12 @@
     &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;411-类型一标准参数选项&#34;&gt;
     &lt;a href=&#34;#411-%e7%b1%bb%e5%9e%8b%e4%b8%80%e6%a0%87%e5%87%86%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.1.1. 类型一：标准参数选项
@@ -3058,16 +2998,12 @@
     &gt;https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;如何知道系统默认使用的是那种模式呢？&lt;/p&gt;
 &lt;p&gt;通过 java -version 命令：可以看到 Server VM 字样，代表当前系统使用是 Server 模式&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4104,46 +4040,34 @@ $$&lt;/p&gt;
     &gt;https://gceasy.io/
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GCViewer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;GCViewer 是一款离线的 GC 日志分析器，用于可视化 Java VM 选项 -verbose:gc 和 .NET 生成的数据 -Xloggc:&amp;lt;file&amp;gt;。还可以计算与垃圾回收相关的性能指标（吞吐量、累积的暂停、最长的暂停等）。当通过更改世代大小或设置初始堆大小来调整特定应用程序的垃圾回收时，此功能非常有用。&lt;/p&gt;
 &lt;p&gt;源码下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/chewiebug/GCViewer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/chewiebug/GCViewer
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;运行版本下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/chewiebug/GCViewer/wiki/Changelog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/chewiebug/GCViewer/wiki/Changelog
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GChisto&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;官网上没有下载的地方，需要自己从 SVN 上拉下来编译&lt;/li&gt;
@@ -4769,16 +4693,12 @@ $$&lt;/p&gt;
     &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt; 1&lt;/a&gt;
@@ -5618,16 +5538,12 @@ $$&lt;/p&gt;
     &gt;JEP 254: Compact Strings (java.net)
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;motivation&#34;&gt;
     &lt;a href=&#34;#motivation&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -6108,16 +6024,12 @@ $$&lt;/p&gt;
     &gt;JEP 192: String Deduplication in G1 (java.net)
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;motivation-1&#34;&gt;
     &lt;a href=&#34;#motivation-1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -6139,16 +6051,12 @@ $$&lt;/p&gt;
     &gt;JVM：String底层
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;p&gt;常量池包括class文件常量池、运行时常量池和字符串常量池。&lt;/p&gt;
 &lt;p&gt;*常量池查看方法参考“JVM：类加载&amp;amp;类加载器”/实验&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;运行时常量池&lt;/strong&gt;：一般意义上所指的常量池。是InstanceKlass的一个属性。存储于方法区（元空间）。&lt;/p&gt;
@@ -10400,16 +10308,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;index | TIOBE - The Software Quality Company
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -17334,16 +17238,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;Chapter 2. The Structure of the Java Virtual Machine (oracle.com)
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -17760,16 +17660,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-4.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -18312,16 +18208,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;JEP 122: Remove the Permanent Generation (java.net)
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -19485,16 +19377,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h4 id=&#34;担忧&#34;&gt;
     &lt;a href=&#34;#%e6%8b%85%e5%bf%a7&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     担忧
@@ -19887,16 +19775,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;http://www.eclipse.org/mat/
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt; 下载并使用 MAT&lt;/p&gt;
+ 下载并使用 MAT&lt;/p&gt;
 &lt;h4 id=&#34;获取-dump-文件&#34;&gt;
     &lt;a href=&#34;#%e8%8e%b7%e5%8f%96-dump-%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     获取 dump 文件
@@ -20206,30 +20090,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86-%e5%88%9d%e5%a7%8b%e7%8a%b6%e6%80%81.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;标记整理-初始状态
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;标记结束后：
 &lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86-%e6%a0%87%e8%ae%b0%e5%90%8e.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;
@@ -20253,30 +20129,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86-%e6%a0%87%e8%ae%b0%e5%90%8e.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;标记整理-标记后
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;在垃圾回收后：
 &lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86-%e6%95%b4%e7%90%86%e5%90%8e.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;
@@ -20300,30 +20168,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86-%e6%95%b4%e7%90%86%e5%90%8e.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;标记整理-整理后
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;标记阶段算法&lt;/li&gt;
 &lt;/ul&gt;
@@ -20385,30 +20245,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/lisp2%e4%b8%ad%e7%9a%84%e5%af%b9%e8%b1%a1.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;lisp2中的对象
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;步骤：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;设置forwarding指针&lt;/li&gt;
@@ -20478,30 +20330,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/lisp2%e8%ae%be%e7%bd%aeforwarding%e6%8c%87%e9%92%88.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;lisp2设置forwarding指针
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;这样做的原因是整理前的堆和整理后的堆是同一个空间，不像复制算法中的from和to可以切换。因此有必要设置forwarding的指针。&lt;/p&gt;
 &lt;p&gt;2.更新指针&lt;/p&gt;
 &lt;p&gt;第2步需要让每一个对象知道移动后子对象将来的位置。因此需要修改指针.&lt;/p&gt;
@@ -20560,30 +20404,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/lisp2%e6%9b%b4%e6%94%b9%e6%8c%87%e9%92%88.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;更改指针
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;3.移动对象&lt;/p&gt;
 &lt;p&gt;第3步，移动对象，过程很简单，每个对象都知道要去的地址，只需要顺序移动便可，然后清除之前的标记。注意要顺序移动，不然会覆盖掉活动对象。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -20636,30 +20472,22 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gentlezuo.github.io/2019/08/10/gc-%e6%a0%87%e8%ae%b0%e6%95%b4%e7%90%86%e7%ae%97%e6%b3%95%e7%9a%84%e4%b8%a4%e7%a7%8d%e5%ae%9e%e7%8e%b0/lisp2%e6%95%b4%e7%90%86%e5%90%8e.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;lisp2整理后
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;时间复杂度&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;标记阶段：遍历所有的存活对象，与活动对象数成正比&lt;/li&gt;
@@ -20678,16 +20506,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;https://gentlezuo.github.io/2019/08/10/gc-
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;标记整理算法的两种实现/#双指针算法&lt;/p&gt;
+标记整理算法的两种实现/#双指针算法&lt;/p&gt;
 &lt;h3 id=&#34;1128-小结&#34;&gt;
     &lt;a href=&#34;#1128-%e5%b0%8f%e7%bb%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     11.2.8. 小结
@@ -22046,16 +21870,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;https://www.oracle.com/technetwork/java/javase/tech/memorymanagement-whitepaper-1-150020.pdf
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -23679,30 +23499,22 @@ Objects can die during a G1 collection and not be collected. G1 uses a technique
     &gt;http://openidk.iava.net/jeps/318
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;ZGC:A Scalable Low-Latency Garbage Collector（Experimental）（ZGC：可伸缩的低延迟垃圾回收器，处于实验性阶段）&lt;a class=&#34;link&#34; href=&#34;http://openidk.iava.net/jeps/318&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://openidk.iava.net/jeps/333
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -23785,31 +23597,23 @@ Objects can die during a G1 collection and not be collected. G1 uses a technique
     &gt;http://www.atguigu.com/download_detail.shtml?v=222
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;或&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1jJ411M7kQ?from=search&amp;amp;seid=12339069673726242866&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.bilibili.com/video/BV1jJ411M7kQ?from=search&amp;amp;seid=12339069673726242866
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;13x3-令人震惊革命性的-zgc&#34;&gt;
     &lt;a href=&#34;#13x3-%e4%bb%a4%e4%ba%ba%e9%9c%87%e6%83%8a%e9%9d%a9%e5%91%bd%e6%80%a7%e7%9a%84-zgc&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     13.X.3. 令人震惊、革命性的 ZGC
@@ -23817,16 +23621,12 @@ Objects can die during a G1 collection and not be collected. G1 uses a technique
     &gt;https://docs.oracle.com/en/java/javase/12/gctuning/
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -24014,16 +23814,12 @@ Objects can die during a G1 collection and not be collected. G1 uses a technique
     &gt;https://www.infoq.com/articles/azul_gc_in_detail
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 </description>
         </item>
         

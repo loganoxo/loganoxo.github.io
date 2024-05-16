@@ -4493,16 +4493,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://openresty.org/cn/
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -5119,16 +5115,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://github.com/openresty/lua-cjson/
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;1）引入cjson模块：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6929,16 +6921,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://github.com/zsh-users/zsh-syntax-highlighting
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;  ~/.oh-my-zsh/custom/plugins&lt;/p&gt;
+  ~/.oh-my-zsh/custom/plugins&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6955,16 +6943,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://github.com/zsh-users/zsh-autosuggestions
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;  ~/.oh-my-zsh/custom/plugins&lt;/p&gt;
+  ~/.oh-my-zsh/custom/plugins&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6981,16 +6965,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://github.com/wting/autojump
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -7029,16 +7009,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://draculatheme.com/zsh
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;软连接方式&lt;/p&gt;
@@ -8162,16 +8138,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;Custom Commands
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;.  自定义命令&lt;/li&gt;
+.  自定义命令&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;默认前置键&#34;&gt;
     &lt;a href=&#34;#%e9%bb%98%e8%ae%a4%e5%89%8d%e7%bd%ae%e9%94%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -8428,16 +8400,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
     &gt;https://gist.github.com/ryerh/14b7c24dfd623ef8edc7
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;tmux是一款优秀的终端复用软件，它比Screen更加强大，至于如何强大，网上有大量的文章讨论了这点，本文不再重复。tmux之所以受人们喜爱，主要得益于以下三处功能：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;丝滑分屏（split），虽然iTem2也提供了横向和竖向分屏功能，但这种分屏功能非常拙劣，完全等同于屏幕新开一个窗口，新开的pane不会自动进入到当前目录，也没有记住当前登录状态。这意味着如果我ssh进入到远程服务器时，iTem2新开的pane中，我依然要重新走一遍ssh登录的老路（omg）。tmux就不会这样，tmux窗口中，新开的pane，默认进入到之前的路径，如果是ssh连接，登录状态也依旧保持着，如此一来，我就可以随意的增删pane，这种灵活性，好处不言而喻。&lt;/li&gt;
@@ -8993,16 +8961,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;默认情况下，buffers内容是独立于系统粘贴板的，它存在于tmux进程中，且可以在会话间共享。&lt;/p&gt;
 &lt;h2 id=&#34;3-使用系统粘贴板&#34;&gt;
     &lt;a href=&#34;#3-%e4%bd%bf%e7%94%a8%e7%b3%bb%e7%bb%9f%e7%b2%98%e8%b4%b4%e6%9d%bf&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -9151,16 +9115,12 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;2-共享账号组会话&#34;&gt;
     &lt;a href=&#34;#2-%e5%85%b1%e4%ba%ab%e8%b4%a6%e5%8f%b7%e7%bb%84%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2 共享账号&amp;amp;组会话
@@ -9761,16 +9721,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://github.com/flazz/vim-colorschemes
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 安装之后就有大量的主题可以更换了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;14-vim配置&#34;&gt;
@@ -9790,46 +9746,34 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;1. 关于Vim
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;p&gt;vim是我最喜欢的编辑器，也是&lt;a class=&#34;link&#34; href=&#34;http://lib.csdn.net/base/linux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;下第二强大的编辑器。 虽然emacs是公认的世界第一，我认为使用emacs并没有使用vi进行编辑来得高效。 如果是初学vi，运行一下vimtutor是个聪明的决定。 （如果你的系统环境不是中文，而你想使用中文的vimtutor，就运行vimtutor zh）&lt;/p&gt;
+下第二强大的编辑器。 虽然emacs是公认的世界第一，我认为使用emacs并没有使用vi进行编辑来得高效。 如果是初学vi，运行一下vimtutor是个聪明的决定。 （如果你的系统环境不是中文，而你想使用中文的vimtutor，就运行vimtutor zh）&lt;/p&gt;
 &lt;h2 id=&#34;11-vim的几种模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34;&gt;
     &lt;a href=&#34;#11-vim%e7%9a%84%e5%87%a0%e7%a7%8d%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id60&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;1.1 Vim的几种模式
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;正常模式：可以使用快捷键命令，或按:输入命令行。&lt;/li&gt;
 &lt;li&gt;插入模式：可以输入文本，在正常模式下，按i、a、o等都可以进入插入模式。&lt;/li&gt;
@@ -9842,16 +9786,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;2. 启动Vim
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;vim -c cmd file: 在打开文件前，先执行指定的命令；&lt;/li&gt;
 &lt;li&gt;vim -r file: 恢复上次异常退出的文件；&lt;/li&gt;
@@ -9869,16 +9809,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;3. 文档操作
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;:e file –关闭当前编辑的文件，并开启新的文件。 如果对当前文件的修改未保存，vi会警告。&lt;/li&gt;
 &lt;li&gt;:e! file –放弃对当前文件的修改，编辑新的文件。&lt;/li&gt;
@@ -9914,32 +9850,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4. 光标的移动
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;41-基本移动httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34;&gt;
     &lt;a href=&#34;#41-%e5%9f%ba%e6%9c%ac%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.1 基本移动
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;以下移动都是在normal模式下。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;h或退格: 左移一个字符；&lt;/li&gt;
@@ -9992,16 +9920,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4.2 翻屏
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;ctrl+f: 下翻一屏。&lt;/li&gt;
 &lt;li&gt;ctrl+b: 上翻一屏。&lt;/li&gt;
@@ -10020,16 +9944,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4.3 标记
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;使用标记可以快速移动。到达标记后，可以用Ctrl+o返回原来的位置。 Ctrl+o和Ctrl+i 很像浏览器上的 后退 和 前进 。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;m{a-z}: 标记光标所在位置，局部标记，只用于当前文件。&lt;/li&gt;
@@ -10053,32 +9973,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;5. 插入文本
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;51-基本插入httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34;&gt;
     &lt;a href=&#34;#51-%e5%9f%ba%e6%9c%ac%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id68&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5.1 基本插入
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;i: 在光标前插入；一个小技巧：按8，再按i，进入插入模式，输入=， 按esc进入命令模式，就会出现8个=。 这在插入分割线时非常有用，如30i+&lt;esc&gt;就插入了36个+组成的分割线。&lt;/li&gt;
 &lt;li&gt;I: 在当前行第一个非空字符前插入；&lt;/li&gt;
@@ -10097,16 +10009,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;5.2 改写插入
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;c[n]w: 改写光标后1(n)个词。&lt;/li&gt;
 &lt;li&gt;c[n]l: 改写光标后n个字母。&lt;/li&gt;
@@ -10122,32 +10030,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6. 剪切复制和寄存器
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;61-剪切和复制粘贴httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34;&gt;
     &lt;a href=&#34;#61-%e5%89%aa%e5%88%87%e5%92%8c%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id71&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.1 剪切和复制、粘贴
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;[n]x: 剪切光标右边n个字符，相当于d[n]l。&lt;/li&gt;
 &lt;li&gt;[n]X: 剪切光标左边n个字符，相当于d[n]h。&lt;/li&gt;
@@ -10176,16 +10076,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6.2 文本对象
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;aw：一个词&lt;/li&gt;
 &lt;li&gt;as：一句。&lt;/li&gt;
@@ -10199,16 +10095,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6.3 寄存器
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;a-z：都可以用作寄存器名。”ayy把当前行的内容放入a寄存器。&lt;/li&gt;
 &lt;li&gt;A-Z：用大写字母索引寄存器，可以在寄存器中追加内容。 如”Ayy把当前行的内容追加到a寄存器中。&lt;/li&gt;
@@ -10223,32 +10115,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7. 查找与替换
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;71-查找httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34;&gt;
     &lt;a href=&#34;#71-%e6%9f%a5%e6%89%behttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id75&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.1 查找
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;/something: 在后面的文本中查找something。&lt;/li&gt;
 &lt;li&gt;?something: 在前面的文本中查找something。&lt;/li&gt;
@@ -10275,16 +10159,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7.2 替换
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:s/old/new - 用new替换当前行第一个old。&lt;/li&gt;
 &lt;li&gt;:s/old/new/g - 用new替换当前行所有的old。&lt;/li&gt;
@@ -10313,16 +10193,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7.3 正则表达式
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;高级的查找替换就要用到正则表达式。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;\d: 表示十进制数（我猜的）&lt;/li&gt;
@@ -10342,32 +10218,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9. 编辑多个文件
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;91-一次编辑多个文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34;&gt;
     &lt;a href=&#34;#91-%e4%b8%80%e6%ac%a1%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id83&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.1 一次编辑多个文件
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;我们可以一次打开多个文件，如&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -10396,16 +10264,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9.2 多标签编辑
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;vim -p files: 打开多个文件，每个文件占用一个标签页。&lt;/li&gt;
 &lt;li&gt;:tabe, tabnew – 如果加文件名，就在新的标签中打开这个文件， 否则打开一个空缓冲区。&lt;/li&gt;
@@ -10425,16 +10289,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9.3 缓冲区
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:buffers或:ls或:files 显示缓冲区列表。&lt;/li&gt;
 &lt;li&gt;ctrl+^：在最近两个缓冲区间切换。&lt;/li&gt;
@@ -10452,16 +10312,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10. 分屏编辑
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;vim -o file1 file2:水平分割窗口，同时打开file1和file2&lt;/li&gt;
 &lt;li&gt;vim -O file1 file2:垂直分割窗口，同时打开file1和file2&lt;/li&gt;
@@ -10472,16 +10328,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.1 水平分割
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:split(:sp) – 把当前窗水平分割成两个窗口。(CTRL-W s 或 CTRL-W CTRL-S) 注意如果在终端下，CTRL-S可能会冻结终端，请按CTRL-Q继续。&lt;/li&gt;
 &lt;li&gt;:split filename – 水平分割窗口，并在新窗口中显示另一个文件。&lt;/li&gt;
@@ -10496,16 +10348,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.2 垂直分割
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:vsplit(:vsp) – 把当前窗口分割成水平分布的两个窗口。 (CTRL-W v或CTRL CTRL-V)&lt;/li&gt;
 &lt;li&gt;:[N]vne[w] – 垂直分割出一个新窗口。&lt;/li&gt;
@@ -10517,16 +10365,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.3 关闭子窗口
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:qall – 关闭所有窗口，退出vim。&lt;/li&gt;
 &lt;li&gt;:wall – 保存所有修改过的窗口。&lt;/li&gt;
@@ -10539,16 +10383,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.4 调整窗口大小
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;ctrl+w + –当前窗口增高一行。也可以用n增高n行。&lt;/li&gt;
 &lt;li&gt;ctrl+w - –当前窗口减小一行。也可以用n减小n行。&lt;/li&gt;
@@ -10566,16 +10406,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.5 切换和移动窗口
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;如果支持鼠标，切换和调整子窗口的大小就简单了。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ctrl+w ctrl+w: 切换到下一个窗口。或者是ctrl+w w。&lt;/li&gt;
@@ -10592,32 +10428,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11. 快速编辑
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;111-改变大小写httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34;&gt;
     &lt;a href=&#34;#111-%e6%94%b9%e5%8f%98%e5%a4%a7%e5%b0%8f%e5%86%99httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.1 改变大小写
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;~: 反转光标所在字符的大小写。&lt;/li&gt;
 &lt;li&gt;可视模式下的U或u：把选中的文本变为大写或小写。&lt;/li&gt;
@@ -10629,16 +10457,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.2 替换（normal模式）
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;r: 替换光标处的字符，同样支持汉字。&lt;/li&gt;
 &lt;li&gt;R: 进入替换模式，按esc回到正常模式。&lt;/li&gt;
@@ -10649,16 +10473,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.3 撤消与重做（normal模式）
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;[n] u: 取消一(n)个改动。&lt;/li&gt;
 &lt;li&gt;:undo 5 – 撤销5个改变。&lt;/li&gt;
@@ -10674,16 +10494,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.4 宏
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;. –重复上一个编辑动作&lt;/li&gt;
 &lt;li&gt;qa：开始录制宏a（键盘操作记录）&lt;/li&gt;
@@ -10696,32 +10512,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;12. 编辑特殊文件
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;121-文件加解密httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34;&gt;
     &lt;a href=&#34;#121-%e6%96%87%e4%bb%b6%e5%8a%a0%e8%a7%a3%e5%af%86httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id98&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.1 文件加解密
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;vim -x file: 开始编辑一个加密的文件。&lt;/li&gt;
 &lt;li&gt;:X – 为当前文件设置密码。&lt;/li&gt;
@@ -10731,32 +10539,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;这里是
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt; 滇狐总结的比较高级的vi技巧。&lt;/p&gt;
+ 滇狐总结的比较高级的vi技巧。&lt;/p&gt;
 &lt;h2 id=&#34;122-文件的编码httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34;&gt;
     &lt;a href=&#34;#122-%e6%96%87%e4%bb%b6%e7%9a%84%e7%bc%96%e7%a0%81httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id99&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.2 文件的编码
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:e ++enc=utf8 filename, 让vim用utf-8的编码打开这个文件。&lt;/li&gt;
 &lt;li&gt;:w ++enc=gbk，不管当前文件什么编码，把它转存成gbk编码。&lt;/li&gt;
@@ -10767,32 +10567,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;~/.vimrc的正确配置
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;123-文件格式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34;&gt;
     &lt;a href=&#34;#123-%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id100&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.3 文件格式
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;大致有三种文件格式：unix, dos, mac. 三种格式的区别主要在于回车键的编码：dos 下是回车加换行，unix 下只有 换行符，mac 下只有回车符。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;:e ++ff=dos filename, 让vim用dos格式打开这个文件。&lt;/li&gt;
@@ -10806,32 +10598,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13. 编程辅助
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;131-一些按键httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34;&gt;
     &lt;a href=&#34;#131-%e4%b8%80%e4%ba%9b%e6%8c%89%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id102&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.1 一些按键
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;gd: 跳转到局部变量的定义处；&lt;/li&gt;
 &lt;li&gt;gD: 跳转到全局变量的定义处，从当前文件开头开始搜索；&lt;/li&gt;
@@ -10868,16 +10652,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.2 ctags
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;ctags -R: 生成tag文件，-R表示也为子目录中的文件生成tags&lt;/li&gt;
 &lt;li&gt;:set tags=path/tags – 告诉ctags使用哪个tag文件&lt;/li&gt;
@@ -10907,16 +10687,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.3 cscope
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;cscope -Rbq: 生成cscope.out文件&lt;/li&gt;
 &lt;li&gt;:cs add /path/to/cscope.out /your/work/dir&lt;/li&gt;
@@ -10929,16 +10705,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.4 gtags
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;Gtags综合了ctags和cscope的功能。 使用Gtags之前，你需要安装GNU Gtags。 然后在工程目录运行 gtags 。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;:Gtags funcname 定位到 funcname 的定义处。&lt;/li&gt;
@@ -10954,31 +10726,23 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.5 编译
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;vim提供了:make来编译程序，默认调用的是make， 如果你当前目录下有makefile，简单地:make即可。&lt;/p&gt;
 &lt;p&gt;如果你没有make程序，你可以通过配置makeprg选项来更改make调用的程序。 如果你只有一个abc.&lt;a class=&#34;link&#34; href=&#34;http://lib.csdn.net/base/java&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Java
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;文件，你可以这样设置：&lt;/p&gt;
+文件，你可以这样设置：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
@@ -11003,16 +10767,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.6 快速修改窗口
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;p&gt;其实是quickfix插件提供的功能， 对编译调试程序非常有用 :)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;:copen – 打开快速修改窗口。&lt;/li&gt;
@@ -11031,16 +10791,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.7 自动补全
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;C-x C-s – 拼写建议。&lt;/li&gt;
 &lt;li&gt;C-x C-v – 补全vim选项和命令。&lt;/li&gt;
@@ -11065,16 +10821,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.8 多行缩进缩出
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;正常模式下，按两下&amp;gt;;光标所在行会缩进。&lt;/li&gt;
 &lt;li&gt;如果先按了n，再按两下&amp;gt;;，光标以下的n行会缩进。&lt;/li&gt;
@@ -11089,16 +10841,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.9 折叠
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;zf – 创建折叠的命令，可以在一个可视区域上使用该命令；&lt;/li&gt;
 &lt;li&gt;zd – 删除当前行的折叠；&lt;/li&gt;
@@ -11121,16 +10869,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;14. 命令行
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;p&gt;normal模式下按:进入命令行模式&lt;/p&gt;
 &lt;h2 id=&#34;141-命令行模式下的快捷键httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34;&gt;
     &lt;a href=&#34;#141-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%a8%a1%e5%bc%8f%e4%b8%8b%e7%9a%84%e5%bf%ab%e6%8d%b7%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -11138,16 +10882,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;14.1 命令行模式下的快捷键：
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;上下方向键：上一条或者下一条命令。如果已经输入了部分命令，则找上一 条或者下一条匹配的命令。&lt;/li&gt;
 &lt;li&gt;左右方向键：左/右移一个字符。&lt;/li&gt;
@@ -11168,16 +10908,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;14.2 执行外部命令
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:! cmd 执行外部命令。&lt;/li&gt;
 &lt;li&gt;:!! 执行上一次的外部命令。&lt;/li&gt;
@@ -11191,32 +10927,24 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15. 其它
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;h2 id=&#34;151-工作目录httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34;&gt;
     &lt;a href=&#34;#151-%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.1 工作目录
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:pwd 显示vim的工作目录。&lt;/li&gt;
 &lt;li&gt;:cd path 改变vim的工作目录。&lt;/li&gt;
@@ -11228,16 +10956,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15.2 一些快捷键（收集中）
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;K: 打开光标所在词的manpage。&lt;/li&gt;
 &lt;li&gt;*: 向下搜索光标所在词。&lt;/li&gt;
@@ -11252,16 +10976,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15.3 在线帮助
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;:h(elp)或F1 打开总的帮助。&lt;/li&gt;
 &lt;li&gt;:help user-manual 打开用户手册。&lt;/li&gt;
@@ -11371,16 +11091,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;http://gceasy.io
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt; 来分析异常信息&lt;/li&gt;
+ 来分析异常信息&lt;/li&gt;
 &lt;li&gt;灵活运用命令行工具、jstack、jmap、jinfo 等&lt;/li&gt;
 &lt;li&gt;dump 出堆文件，使用内存分析工具分析文件&lt;/li&gt;
 &lt;li&gt;使用阿里 Arthas、jconsole、JVisualVM 来实时查看 JVM 状态&lt;/li&gt;
@@ -11536,16 +11252,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;http://hg.openjdk.java.net/jdk/jdk11/file/1ddf9a99e4ad/src/jdk.jcmd/share/classes/sun/tools
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;22-jps查看正在运行的-java-进程&#34;&gt;
     &lt;a href=&#34;#22-jps%e6%9f%a5%e7%9c%8b%e6%ad%a3%e5%9c%a8%e8%bf%90%e8%a1%8c%e7%9a%84-java-%e8%bf%9b%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2. jps：查看正在运行的 Java 进程
@@ -11574,16 +11286,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;基本使用语法为：jstat -&amp;lt;option&amp;gt; [-t] [-h&amp;lt;lines&amp;gt;] &amp;lt;vmid&amp;gt; [&amp;lt;interval&amp;gt; [&amp;lt;count&amp;gt;]]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;interval：多久(ms)打印一次，默认只打印一次&lt;/li&gt;
@@ -12231,16 +11939,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/en/java/javase/11/tools/jmap.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;基本使用语法为：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;jmap [option] &amp;lt;pid&amp;gt;&lt;/li&gt;
@@ -12497,16 +12201,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/en/java/javase/11/tools/jstack.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;在 thread dump 中，要留意下面几种状态&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;mark&gt;死锁，Deadlock（重点关注）&lt;/mark&gt;&lt;/li&gt;
@@ -12556,16 +12256,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/en/java/javase/11/tools/jcmd.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;jcmd 拥有 jmap 的大部分功能，并且在 Oracle 的官方网站上也推荐使用 jcmd 命令代 jmap 命令&lt;/p&gt;
 &lt;p&gt;**jcmd -l：**列出所有的 JVM 进程&lt;/p&gt;
 &lt;p&gt;**jcmd 进程号 help：**针对指定的进程，列出支持的所有具体命令&lt;/p&gt;
@@ -12672,16 +12368,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -12793,16 +12485,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://visualvm.github.io/index.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -12877,16 +12565,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://www.eclipse.org/mat/downloads.php
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -12988,16 +12672,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://www.ej-technologies.com/products/jprofiler/overview.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;数据采集方式：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;JProfier 数据采集方式分为两种：Sampling（样本采集）和 Instrumentation（重构模式）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Instrumentation&lt;/strong&gt;：这是 JProfiler 全功能模式。在 class 加载之前，JProfier 把相关功能代码写入到需要分析的 class 的 bytecode 中，对正在运行的 jvm 有一定影响。&lt;/p&gt;
@@ -13338,16 +13018,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://arthas.aliyun.com/doc/quick-start.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;安装方式：如果速度较慢，可以尝试国内的码云 Gitee 下载。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -13537,16 +13213,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://github.com/JDKMissionControl/jmc
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -13727,16 +13399,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;http://new.brendangregg.com/flamegraphs.html 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -13769,16 +13437,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;http://github.com/alibaba/Tprofiler
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Btrace&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;常见的动态追踪工具有 BTrace、HouseHD（该项目己经停止开发）、Greys-Anatomy（国人开发 个人开发者）、Byteman（JBoss 出品），注意 Java 运行时追踪工具井不限干这几种，但是这几个是相对比较常用的。&lt;/p&gt;
 &lt;p&gt;BTrace 是 SUN Kenai 云计算开发平台下的一个开源项目，旨在为 java 提供安全可靠的动态跟踪分析工具。先看一卜日 Trace 的官方定义：&lt;/p&gt;
@@ -14190,16 +13854,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;411-类型一标准参数选项&#34;&gt;
     &lt;a href=&#34;#411-%e7%b1%bb%e5%9e%8b%e4%b8%80%e6%a0%87%e5%87%86%e5%8f%82%e6%95%b0%e9%80%89%e9%a1%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4.1.1. 类型一：标准参数选项
@@ -14325,16 +13985,12 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;如何知道系统默认使用的是那种模式呢？&lt;/p&gt;
 &lt;p&gt;通过 java -version 命令：可以看到 Server VM 字样，代表当前系统使用是 Server 模式&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -15371,46 +15027,34 @@ $$&lt;/p&gt;
     &gt;https://gceasy.io/
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GCViewer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;GCViewer 是一款离线的 GC 日志分析器，用于可视化 Java VM 选项 -verbose:gc 和 .NET 生成的数据 -Xloggc:&amp;lt;file&amp;gt;。还可以计算与垃圾回收相关的性能指标（吞吐量、累积的暂停、最长的暂停等）。当通过更改世代大小或设置初始堆大小来调整特定应用程序的垃圾回收时，此功能非常有用。&lt;/p&gt;
 &lt;p&gt;源码下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/chewiebug/GCViewer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/chewiebug/GCViewer
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;运行版本下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/chewiebug/GCViewer/wiki/Changelog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/chewiebug/GCViewer/wiki/Changelog
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GChisto&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;官网上没有下载的地方，需要自己从 SVN 上拉下来编译&lt;/li&gt;
@@ -16036,16 +15680,12 @@ $$&lt;/p&gt;
     &gt;https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt; 1&lt;/a&gt;
@@ -16885,16 +16525,12 @@ $$&lt;/p&gt;
     &gt;JEP 254: Compact Strings (java.net)
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;motivation&#34;&gt;
     &lt;a href=&#34;#motivation&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -17375,16 +17011,12 @@ $$&lt;/p&gt;
     &gt;JEP 192: String Deduplication in G1 (java.net)
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;motivation-1&#34;&gt;
     &lt;a href=&#34;#motivation-1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -17406,16 +17038,12 @@ $$&lt;/p&gt;
     &gt;JVM：String底层
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
+
+
+
 &lt;/h1&gt;&lt;p&gt;常量池包括class文件常量池、运行时常量池和字符串常量池。&lt;/p&gt;
 &lt;p&gt;*常量池查看方法参考“JVM：类加载&amp;amp;类加载器”/实验&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;运行时常量池&lt;/strong&gt;：一般意义上所指的常量池。是InstanceKlass的一个属性。存储于方法区（元空间）。&lt;/p&gt;
@@ -21667,16 +21295,12 @@ CONSTANT_Integer_info 是用来描述常量池中字面量信息的，而且只�
     &gt;index | TIOBE - The Software Quality Company
 
 
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-                                        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-          fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont icon-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 
 
-
-&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
