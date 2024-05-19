@@ -22,7 +22,7 @@
     &gt;Daring Fireball
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -31,7 +31,7 @@
     &gt;这里
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -521,7 +521,7 @@
     &gt;an example
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -531,7 +531,7 @@
     &gt;This link
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -615,7 +615,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &gt;百度
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -648,7 +648,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &gt;Google
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -669,7 +669,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &gt;www.google.com
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -820,8 +820,8 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
 
 
     &lt;img src=&#34;https://typora.io/img/inline-math.gif&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -894,7 +894,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &gt;这里
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 

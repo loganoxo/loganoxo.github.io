@@ -298,8 +298,8 @@
 
 
     &lt;img src=&#34;https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -315,7 +315,7 @@
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -329,7 +329,7 @@
     &gt;talk
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 

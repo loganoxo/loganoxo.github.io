@@ -36,8 +36,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220410/20220410054728.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -91,8 +91,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220410/20220410054847.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -111,8 +111,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220410/20220410054858.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -157,8 +157,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220410/20220410055051.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -223,7 +223,7 @@
     &gt;https://github.com/zsh-users/zsh-syntax-highlighting
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -259,7 +259,7 @@
     &gt;https://github.com/zsh-users/zsh-autosuggestions
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -295,7 +295,7 @@
     &gt;https://github.com/wting/autojump
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -367,7 +367,7 @@
     &gt;https://draculatheme.com/zsh
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -1622,7 +1622,7 @@
     &gt;Custom Commands
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -1884,7 +1884,7 @@
     &gt;https://gist.github.com/ryerh/14b7c24dfd623ef8edc7
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -1926,8 +1926,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220216/20220216231354.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -2113,8 +2113,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220216/20220216234640.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -2603,8 +2603,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217022837.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -2624,8 +2624,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217022747.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -2641,7 +2641,7 @@
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -2832,8 +2832,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217023108.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -2876,8 +2876,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217022329.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -2893,7 +2893,7 @@
 
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3214,8 +3214,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220217/20220217234648.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3283,8 +3283,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220218/20220218002252.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3303,8 +3303,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220218/20220218002433.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3325,8 +3325,8 @@
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220218/20220218002526.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3586,8 +3586,8 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220219/20220219003547.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3603,8 +3603,8 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220219/20220219003728.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3631,8 +3631,8 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220219/20220219012228.png&#34;
-         width=&#34;900&#34;
-            height=&#34;600&#34;
+         width=&#34;200&#34;
+            height=&#34;200&#34;
             
          loading=&#34;lazy&#34;
          decoding=&#34;async&#34;
@@ -3681,7 +3681,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;https://github.com/flazz/vim-colorschemes
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3706,7 +3706,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;1. 关于Vim
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3716,7 +3716,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;Linux
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3728,7 +3728,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;1.1 Vim的几种模式
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3746,7 +3746,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;2. 启动Vim
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3769,7 +3769,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;3. 文档操作
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3810,7 +3810,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4. 光标的移动
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3822,7 +3822,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4.1 基本移动
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3880,7 +3880,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4.2 翻屏
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3904,7 +3904,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;4.3 标记
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3933,7 +3933,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;5. 插入文本
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3945,7 +3945,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;5.1 基本插入
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3969,7 +3969,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;5.2 改写插入
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -3990,7 +3990,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6. 剪切复制和寄存器
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4002,7 +4002,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6.1 剪切和复制、粘贴
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4036,7 +4036,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6.2 文本对象
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4055,7 +4055,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;6.3 寄存器
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4075,7 +4075,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7. 查找与替换
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4087,7 +4087,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7.1 查找
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4119,7 +4119,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7.2 替换
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4153,7 +4153,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;7.3 正则表达式
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4178,7 +4178,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9. 编辑多个文件
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4190,7 +4190,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9.1 一次编辑多个文件
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4238,7 +4238,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9.2 多标签编辑
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4263,7 +4263,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;9.3 缓冲区
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4286,7 +4286,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10. 分屏编辑
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4302,7 +4302,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.1 水平分割
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4322,7 +4322,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.2 垂直分割
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4339,7 +4339,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.3 关闭子窗口
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4357,7 +4357,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.4 调整窗口大小
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4380,7 +4380,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;10.5 切换和移动窗口
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4402,7 +4402,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11. 快速编辑
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4414,7 +4414,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.1 改变大小写
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4431,7 +4431,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.2 替换（normal模式）
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4447,7 +4447,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.3 撤消与重做（normal模式）
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4468,7 +4468,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;11.4 宏
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4486,7 +4486,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;12. 编辑特殊文件
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4498,7 +4498,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;12.1 文件加解密
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4513,7 +4513,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;这里是
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4525,7 +4525,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;12.2 文件的编码
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4541,7 +4541,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;~/.vimrc的正确配置
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4553,7 +4553,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;12.3 文件格式
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4572,7 +4572,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13. 编程辅助
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4584,7 +4584,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.1 一些按键
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4626,7 +4626,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.2 ctags
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4661,7 +4661,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.3 cscope
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4679,7 +4679,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.4 gtags
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4700,7 +4700,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.5 编译
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4711,7 +4711,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;Java
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4769,7 +4769,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.6 快速修改窗口
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4793,7 +4793,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.7 自动补全
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4823,7 +4823,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.8 多行缩进缩出
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4843,7 +4843,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;13.9 折叠
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4871,7 +4871,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;14. 命令行
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4884,7 +4884,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;14.1 命令行模式下的快捷键：
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4910,7 +4910,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;14.2 执行外部命令
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4929,7 +4929,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15. 其它
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4941,7 +4941,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15.1 工作目录
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4958,7 +4958,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15.2 一些快捷键（收集中）
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
@@ -4978,7 +4978,7 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
     &gt;15.3 在线帮助
 
 
-&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;white-space: nowrap;&#34; class=&#34;link-text iconfont-logan icon-logan-arrow-up-right-from-square-solid&#34;&gt;&lt;/span&gt;
 
 &lt;/a&gt;
 
