@@ -24,37 +24,79 @@
 &lt;li&gt;生成的public里的html中的url都不会是你配置文件里的&lt;code&gt;baseUrl&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;-D包含草稿&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;除非在后面加上---baseurl&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;除非在后面加上---baseurl&#34;&gt;
     &lt;a href=&#34;#%e9%99%a4%e9%9d%9e%e5%9c%a8%e5%90%8e%e9%9d%a2%e5%8a%a0%e4%b8%8a---baseurl&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     除非在后面加上 &amp;ndash;baseURL
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D --baseURL http://www.xxx.com/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D --baseURL http://www.xxx.com/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;启动局域网连接&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;启动局域网连接&#34;&gt;
     &lt;a href=&#34;#%e5%90%af%e5%8a%a8%e5%b1%80%e5%9f%9f%e7%bd%91%e8%bf%9e%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     启动局域网连接
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D --bind&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0.0.0.0 --port&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1313&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D --bind&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0.0.0.0 --port&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1313&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
 &lt;li&gt;所以本地开发测试时，不需要关心&lt;code&gt;baseUrl&lt;/code&gt;，server启动时就一定是&lt;code&gt;localhost&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;本地或服务器打包&#34;&gt;
@@ -64,15 +106,29 @@
 &lt;li&gt;打包时，hugo会严格按照配置文件中的&lt;code&gt;baseUrl&lt;/code&gt;创建静态页面，与&lt;code&gt;--environment&lt;/code&gt;无关&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;--gc&lt;/code&gt;构建站点时会自动执行垃圾回收;&lt;code&gt;--minify&lt;/code&gt;对输出的 HTML、CSS 和 JavaScript 进行压缩和优化&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;服务器多环境打包&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;服务器多环境打包&#34;&gt;
     &lt;a href=&#34;#%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%a4%9a%e7%8e%af%e5%a2%83%e6%89%93%e5%8c%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     服务器多环境打包
 &lt;/h2&gt;&lt;p&gt;我的博客，同一套代码在&lt;code&gt;github pages&lt;/code&gt;和&lt;code&gt;vercel&lt;/code&gt;上都有部署,分别是不同的域名，所以就需要区分两个环境的&lt;code&gt;baseUrl&lt;/code&gt;,我是这样做的：&lt;/p&gt;
@@ -81,17 +137,31 @@
 &lt;li&gt;两个文件只有&lt;code&gt;baseUrl&lt;/code&gt;不同&lt;/li&gt;
 &lt;li&gt;在启动Hugo打包的时候，需要加具体的配置文件名参数&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify --config hugo.yaml &lt;span class=&#34;c1&#34;&gt;# 在vercel上使用，默认为vercel&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify --config hugo_git.yaml &lt;span class=&#34;c1&#34;&gt;#在github action中使用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify --config hugo_git.yaml &lt;span class=&#34;c1&#34;&gt;#在github action中使用&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
         </item>
         <item>
         <title>图片相关模板</title>
@@ -709,7 +779,9 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_057.jpg" alt="Featured image of post 其他模板" /&gt;&lt;h2 id=&#34;原生代码块&#34;&gt;
     &lt;a href=&#34;#%e5%8e%9f%e7%94%9f%e4%bb%a3%e7%a0%81%e5%9d%97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     原生代码块
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt;2&lt;/a&gt;
@@ -722,10 +794,22 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;yzhanweather&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;clear&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Stop and clear all animations
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;//yzhanweather.destory() // Destory the instance and free up memory
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;nx&#34;&gt;yzhanweather_fun&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;highlight-shortcode-高亮代码&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;highlight-shortcode-高亮代码&#34;&gt;
     &lt;a href=&#34;#highlight-shortcode-%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     highlight shortcode 高亮代码
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34; id=&#34;42&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#42&#34;&gt;42&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Pages&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
@@ -734,15 +818,29 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 &lt;h2 id=&#34;md高亮代码&#34;&gt;
     &lt;a href=&#34;#md%e9%ab%98%e4%ba%ae%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     md高亮代码
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;gitlab-snippets-shortcode&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;gitlab-snippets-shortcode&#34;&gt;
     &lt;a href=&#34;#gitlab-snippets-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Gitlab Snippets Shortcode
 &lt;/h2&gt;&lt;script
@@ -752,15 +850,29 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 &lt;h2 id=&#34;github-card&#34;&gt;
     &lt;a href=&#34;#github-card&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Github Card
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\{\{&amp;lt; github title=&amp;#34;gohugoio/hugo&amp;#34; &amp;gt;\}\}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\{\{&amp;lt; github title=&amp;#34;gohugoio/hugo&amp;#34; &amp;gt;\}\}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;quote-shortcode&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;quote-shortcode&#34;&gt;
     &lt;a href=&#34;#quote-shortcode&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Quote Shortcode
 &lt;/h2&gt;&lt;p&gt;Stack adds a &lt;code&gt;quote&lt;/code&gt; shortcode. For example:&lt;/p&gt;
@@ -1257,7 +1369,9 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;h2 id=&#34;代码折叠&#34;&gt;
     &lt;a href=&#34;#%e4%bb%a3%e7%a0%81%e6%8a%98%e5%8f%a0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     代码折叠
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt; 1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-2&#34;&gt; 2&lt;/a&gt;
@@ -1352,10 +1466,22 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;redisTemplate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setConnectionFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lettuceConnectionFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;redisTemplate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;卡片链接&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;卡片链接&#34;&gt;
     &lt;a href=&#34;#%e5%8d%a1%e7%89%87%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     卡片链接
 &lt;/h2&gt;&lt;a1 href=&#34;https://github.com/Ice-Hazymoon/hugo-theme-luna&#34; target=&#34;_blank&#34;&gt;
@@ -1536,25 +1662,67 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &lt;a href=&#34;#%e6%a0%87%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     标题
 &lt;/h3&gt;&lt;p&gt;标题在行的开头使用1-6个&lt;code&gt;＃&lt;/code&gt;字符，对应于标题级别1-6。例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# 这是一级标题
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# 这是一级标题
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 这是二级标题
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;###### 这是六级标题
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在typora中，输入&lt;code&gt;＃&lt;/code&gt;后跟标题内容，按下 &lt;code&gt;Return&lt;/code&gt; 键将创建标题。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;###### 这是六级标题&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;在typora中，输入&lt;code&gt;＃&lt;/code&gt;后跟标题内容，按下 &lt;code&gt;Return&lt;/code&gt; 键将创建标题。&lt;/p&gt;
 &lt;h3 id=&#34;引用文字&#34;&gt;
     &lt;a href=&#34;#%e5%bc%95%e7%94%a8%e6%96%87%e5%ad%97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     引用文字
 &lt;/h3&gt;&lt;p&gt;Markdown 使用 &lt;code&gt;&amp;gt;&lt;/code&gt; 字符进行块引用。在typora中，只需输入&amp;rsquo;&amp;gt;&amp;lsquo;后跟引用内容即可生成块引用。Typora将为您插入正确的“&amp;gt;”或换行符。通过添加额外级别的“&amp;gt;”允许在块引用内嵌入另一个块引用。它们表示为：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; 这是一级缩进
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-5&#34;&gt;5&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-6&#34;&gt;6&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-7&#34;&gt;7&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-8&#34;&gt;8&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; 这是一级缩进
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是二级缩进
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 这是三级缩进
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 再来一个二级缩进
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 再来一个三级缩进
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是新的块引用
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果如下：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是新的块引用&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果如下：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这是一级缩进&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1580,7 +1748,9 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     列表
 &lt;/h3&gt;&lt;p&gt;输入 &lt;code&gt;* list item 1&lt;/code&gt; 将创建一个无序列表，该 &lt;code&gt;*&lt;/code&gt; 符号可以替换为 &lt;code&gt;+&lt;/code&gt; 或 &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;输入 &lt;code&gt;1. list item 1&lt;/code&gt; 将创建一个有序列表，有序和无序列表都可以缩进, 其 markdown 源代码如下：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### 无序列表
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### 无序列表
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; 红色
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; 绿色
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; 蓝色
@@ -1588,8 +1758,20 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### 有序列表
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 红色
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 绿色
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 蓝色
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2. 蓝色&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;h4 id=&#34;无序列表&#34;&gt;
     &lt;a href=&#34;#%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     无序列表
@@ -1616,12 +1798,26 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &lt;a href=&#34;#%e4%bb%bb%e5%8a%a1%e5%88%97%e8%a1%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     任务列表
 &lt;/h3&gt;&lt;p&gt;任务列表是标记为[ ]或[x]（未完成或完成）的项目的列表。例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; 这是一个任务列表项
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; 这是一个任务列表项
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; 需要在前面使用列表的语法
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; normal &lt;span class=&#34;gs&#34;&gt;**formatting**&lt;/span&gt;, &lt;span class=&#34;ni&#34;&gt;@mentions&lt;/span&gt;, &lt;span class=&#34;ni&#34;&gt;#1234&lt;/span&gt; refs
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; 未完成
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; 完成
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- [x] 完成&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 这是一个任务列表项&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 需要在前面使用列表的语法&lt;/li&gt;
@@ -1635,7 +1831,27 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     （栅栏式）代码块
 &lt;/h3&gt;&lt;p&gt;Typora仅支持 Github Flavored Markdown 中的栅栏式代码块。不支持 markdown 中的原始代码块。&lt;/p&gt;
 &lt;p&gt;使用栅栏式代码块很简单：输入```之后输入一个可选的语言标识符，然后按&lt;code&gt;return&lt;/code&gt;键后输入代码，我们将通过语法高亮显示它：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个例子：
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt; 1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-2&#34;&gt; 2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-3&#34;&gt; 3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-4&#34;&gt; 4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-5&#34;&gt; 5&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-6&#34;&gt; 6&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-7&#34;&gt; 7&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-8&#34;&gt; 8&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-9&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-9&#34;&gt; 9&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-10&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-10&#34;&gt;10&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-11&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-11&#34;&gt;11&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-12&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-12&#34;&gt;12&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-13&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-13&#34;&gt;13&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-14&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-14&#34;&gt;14&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个例子：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function test() {
@@ -1648,38 +1864,115 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function test() {
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  console.log(&amp;#34;notice the blank line before this function?&amp;#34;);
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;还可以给代码块设置额外的class、行号是否显示、缩进等&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```javascript{class=&amp;#34;md-reference-block&amp;#34; lineNos=false tabWidth=2}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;还可以给代码块设置额外的class、行号是否显示、缩进等&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-5&#34;&gt;5&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```javascript{class=&amp;#34;md-reference-block&amp;#34; lineNos=false tabWidth=2}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function test() {
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  console.log(&amp;#34;notice the blank line before this function?&amp;#34;);
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;数学公式块&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;数学公式块&#34;&gt;
     &lt;a href=&#34;#%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e5%9d%97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     数学公式块
 &lt;/h3&gt;&lt;p&gt;您可以使用 &lt;strong&gt;MathJax&lt;/strong&gt; 渲染 &lt;em&gt;LaTeX&lt;/em&gt; 数学表达式。&lt;/p&gt;
 &lt;p&gt;typora中输入 &lt;code&gt;$$&lt;/code&gt;, 然后按“return”键将触发一个接受&lt;em&gt;Tex / LaTex&lt;/em&gt;源代码的输入区域。
 在 markdown 源文件中，数学公式块是由&amp;rsquo;$$&amp;lsquo;标记包装的 &lt;em&gt;LaTeX&lt;/em&gt; 表达式：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\mathbf{i} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; \mathbf{j} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; \mathbf{k} \\
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\frac{\partial X}{\partial u} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt;  \frac{\partial Y}{\partial u} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; 0 \\
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\frac{\partial X}{\partial v} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt;  \frac{\partial Y}{\partial v} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; 0 \\
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{vmatrix}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;表格&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;表格&#34;&gt;
     &lt;a href=&#34;#%e8%a1%a8%e6%a0%bc&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     表格
 &lt;/h3&gt;&lt;p&gt;输入 &lt;code&gt;| First Header | Second Header |&lt;/code&gt; 并按下 &lt;code&gt;return&lt;/code&gt; 键将创建一个包含两列的表。&lt;/p&gt;
 &lt;p&gt;创建表后，焦点在该表上将弹出一个表格工具栏，您可以在其中调整表格，对齐或删除表格。您还可以使用上下文菜单来复制和添加/删除列/行。&lt;/p&gt;
 &lt;p&gt;可以跳过以下描述，因为表格的 markdown 源代码是由typora自动生成的。&lt;/p&gt;
 &lt;p&gt;在 markdown 源代码中，它们看起来像这样：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| First Header  | Second Header |
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| First Header  | Second Header |
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| ------------- | ------------- |
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Content Cell  | Content Cell  |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Content Cell  | Content Cell  |
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Content Cell  | Content Cell  |&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1700,12 +1993,37 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/table&gt;
 &lt;p&gt;您还可以在表格中包括内联 Markdown 语法，例如链接，粗体，斜体或删除线。&lt;/p&gt;
 &lt;p&gt;最后，通过在标题行中包含冒号：您可以将文本定义为左对齐，右对齐或居中对齐：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Left-Aligned  | Center Aligned  | Right Aligned |
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-5&#34;&gt;5&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Left-Aligned  | Center Aligned  | Right Aligned |
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| :------------ |:---------------:| -----:|
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| col 3 is      | some wordy text | $1600 |
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| col 2 is      | centered        |   $12 |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| zebra stripes | are neat        |    $1 |
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| zebra stripes | are neat        |    $1 |&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1737,10 +2055,38 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &lt;a href=&#34;#%e8%84%9a%e6%b3%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     脚注
 &lt;/h3&gt;&lt;p&gt;您可以在任何位置像这样创建脚注，他会显示在文章结尾处：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[^1]: 这是脚注的内容
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用脚注：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个需要添加脚注的文本[^1]。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[^1]: 这是脚注的内容&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;使用脚注：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个需要添加脚注的文本[^1]。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：
 这是一个需要添加脚注的文本&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
 &lt;p&gt;鼠标移动到‘1’上标中查看脚注的内容。&lt;/p&gt;
 &lt;h3 id=&#34;水平线&#34;&gt;
@@ -1765,10 +2111,24 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/h3&gt;&lt;p&gt;Markdown 支持两种类型的链接：内联和引用。&lt;/p&gt;
 &lt;p&gt;在这两种样式中，链接文本都写在[方括号]内。&lt;/p&gt;
 &lt;p&gt;要创建内联链接，请在链接文本的结束方括号后立即使用一组常规括号。在常规括号内，输入URL地址，以及可选的用引号括起来的链接标题。例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is [&lt;span class=&#34;nt&#34;&gt;an example&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.com/ &amp;#34;Title&amp;#34;&lt;/span&gt;) inline link.
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is [&lt;span class=&#34;nt&#34;&gt;an example&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.com/ &amp;#34;Title&amp;#34;&lt;/span&gt;) inline link.
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;This link&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.net/&lt;/span&gt;) has no title attribute.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;This link&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.net/&lt;/span&gt;) has no title attribute.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;p&gt;This is &lt;a class=&#34;link&#34; href=&#34;http://example.com/%22Title%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;an example
 
@@ -1794,9 +2154,23 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     内部链接
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;您可以将常规括号内的 href 设置为文档内的某一个标题&lt;/strong&gt;，这将创建一个书签，允许您在单击后跳转到该部分。
 typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;code&gt;块元素&lt;/code&gt;处。&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;内部跳转&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;#脚注&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;外部跳转&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/articles/with-hugo/page-a#title_a&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;内部跳转&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;#脚注&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;外部跳转&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/articles/with-hugo/page-a#title_a&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：
 &lt;a class=&#34;link&#34; href=&#34;#%e8%84%9a%e6%b3%a8&#34; &gt;内部跳转
 
 
@@ -1816,10 +2190,38 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     链接引用
 &lt;/h4&gt;&lt;p&gt;这种方法使得你可以在文档中的多个地方引用同一个链接，而不需要重复输入链接的地址和标题。
 在文档中的任何位置,创建一个&lt;code&gt;链接引用&lt;/code&gt;：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[bd]: https://www.baidu.com	&amp;#34;百度搜索&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用方式：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个[百度][bd]链接。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[bd]: https://www.baidu.com	&amp;#34;百度搜索&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;使用方式：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个[百度][bd]链接。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：
 这是一个&lt;a class=&#34;link&#34; href=&#34;https://www.baidu.com&#34;  title=&#34;百度搜索&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;百度
@@ -1832,14 +2234,28 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
 
 链接。&lt;/p&gt;
 &lt;p&gt;隐式链接名称快捷方式允许您省略链接的名称，在这种情况下，链接文本本身将用作名称：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;创建：
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;创建：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Google]: https://www.google.com
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;效果：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个[Google][]链接。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个[Google][]链接。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;p&gt;这是一个&lt;a class=&#34;link&#34; href=&#34;https://www.google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Google
 
@@ -1875,26 +2291,90 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &lt;a href=&#34;#%e5%9b%be%e7%89%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     图片
 &lt;/h3&gt;&lt;p&gt;图像与链接类似， 但在链接语法之前需要添加额外的 &lt;code&gt;!&lt;/code&gt; 字符。 图像语法如下所示：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;替代文字&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg&lt;/span&gt;)
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;替代文字&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;替代文字&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg &amp;#34;可选标题&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在typora中您可以使用拖放操作从图像文件或浏览器来插入图像。并通过单击图像修改 markdown 源代码。如果图像在拖放时与当前编辑文档位于同一目录或子目录中，则将使用相对路径。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;替代文字&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg &amp;#34;可选标题&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;在typora中您可以使用拖放操作从图像文件或浏览器来插入图像。并通过单击图像修改 markdown 源代码。如果图像在拖放时与当前编辑文档位于同一目录或子目录中，则将使用相对路径。&lt;/p&gt;
 &lt;h3 id=&#34;强调斜体&#34;&gt;
     &lt;a href=&#34;#%e5%bc%ba%e8%b0%83%e6%96%9c%e4%bd%93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     强调（斜体）
 &lt;/h3&gt;&lt;p&gt;Markdown 将星号 (&lt;code&gt;*&lt;/code&gt;) 和下划线(&lt;code&gt;_&lt;/code&gt;) 视为强调的指示。用一个 &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt; 包裹文本将使用HTML  &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; 标签包裹文本。用两个 &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt; 包裹文本将使用HTML  &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; 标签包裹文本。&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;em&amp;gt; 元素用于表示强调文本，通常以斜体样式显示。它的语义意义是“强调”或“重点”，而不是特定的样式。浏览器默认会以斜体显示 &amp;lt;em&amp;gt; 元素的内容，但是它的确切样式取决于 CSS 样式表中的定义。
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;em&amp;gt; 元素用于表示强调文本，通常以斜体样式显示。它的语义意义是“强调”或“重点”，而不是特定的样式。浏览器默认会以斜体显示 &amp;lt;em&amp;gt; 元素的内容，但是它的确切样式取决于 CSS 样式表中的定义。
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;strong&amp;gt; 元素用于表示重要文本，通常以加粗样式显示。它的语义意义是“重要”，而不是特定的样式。浏览器默认会以加粗显示 &amp;lt;strong&amp;gt; 元素的内容，但是它的确切样式同样取决于 CSS 样式表中的定义。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*一个星号*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;strong&amp;gt; 元素用于表示重要文本，通常以加粗样式显示。它的语义意义是“重要”，而不是特定的样式。浏览器默认会以加粗显示 &amp;lt;strong&amp;gt; 元素的内容，但是它的确切样式同样取决于 CSS 样式表中的定义。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34; linenos=&#34;false&#34; tabwidth=&#34;2&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-1&#34;&gt;1&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-2&#34;&gt;2&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-3&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-3&#34;&gt;3&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-4&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-4&#34;&gt;4&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-5&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-5&#34;&gt;5&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-6&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-6&#34;&gt;6&lt;/a&gt;
+&lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-7&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-7&#34;&gt;7&lt;/a&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*一个星号*
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;_一个下划线_
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**两个星号**
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;__两个下划线__
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;__两个下划线__&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;一个星号&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;一个下划线&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;两个星号&lt;/strong&gt;&lt;/p&gt;
@@ -1911,8 +2391,22 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &lt;a href=&#34;#%e4%bb%a3%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     代码
 &lt;/h3&gt;&lt;p&gt;要指示代码范围，请使用反引号（`）进行包裹。与预格式化的代码块不同，代码跨度表示正常段落中的代码。例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;aa`bb`cc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;aa`bb`cc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
 &lt;p&gt;aa&lt;code&gt;bb&lt;/code&gt;cc&lt;/p&gt;
 &lt;h3 id=&#34;删除线&#34;&gt;
     &lt;a href=&#34;#%e5%88%a0%e9%99%a4%e7%ba%bf&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -1971,13 +2465,41 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &lt;a href=&#34;#%e5%b5%8c%e5%85%a5%e5%86%85%e5%ae%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     嵌入内容
 &lt;/h3&gt;&lt;p&gt;有些网站提供基于iframe的嵌入代码，您也可以将其粘贴到Markdown中，例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;iframe&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;265&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;scrolling&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;no&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;Fancy Animated SVG Menu&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;http://codepen.io/jeangontijo/embed/OxVywj/?height=265&amp;amp;theme-id=0&amp;amp;default-tab=css,result&amp;amp;embed-version=2&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;frameborder&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;no&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;allowtransparency&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;true&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;true&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;width: 100%;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;iframe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;视频&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;iframe&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;265&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;scrolling&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;no&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;Fancy Animated SVG Menu&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;http://codepen.io/jeangontijo/embed/OxVywj/?height=265&amp;amp;theme-id=0&amp;amp;default-tab=css,result&amp;amp;embed-version=2&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;frameborder&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;no&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;allowtransparency&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;true&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;true&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;width: 100%;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;iframe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;视频&#34;&gt;
     &lt;a href=&#34;#%e8%a7%86%e9%a2%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     视频
 &lt;/h3&gt;&lt;p&gt;您可以使用 &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; HTML标记嵌入视频，例如：&lt;/p&gt;
-&lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Markdown&#34; data-lang=&#34;Markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;video&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;xxx.mp4&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;其他-html-支持&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Markdown&#34; data-lang=&#34;Markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;video&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;xxx.mp4&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;其他-html-支持&#34;&gt;
     &lt;a href=&#34;#%e5%85%b6%e4%bb%96-html-%e6%94%af%e6%8c%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     其他 HTML 支持
 &lt;/h3&gt;&lt;p&gt;你可以在&lt;a class=&#34;link&#34; href=&#34;http://support.typora.io/HTML/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

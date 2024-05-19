@@ -58,7 +58,9 @@
 &lt;li&gt;前台、后台运行&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;​	默认情况下 Linux 命令都是前台运行的，前台运行的特点是前面命令不执行完，命令行就一直被前面的命令占用，不能再输入、执行新的命令。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt;2&lt;/a&gt;
@@ -69,10 +71,22 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello before sleep&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sleep &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello after sleep&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello after sleep&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;前台（默认情况）运行上面脚本的效果是：&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;前台（默认情况）运行上面脚本的效果是：&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -117,15 +131,29 @@
 &lt;li&gt;不挂断运行&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;所谓“不挂断”就是指客户端断开连接后，命令启动的进程仍然运行。nohup 命令就是 ”no hang up“ 的缩写。使用nohup 命令启动 SpringBoot 微服务工程的完整写法是：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nohup java -jar spring-boot-demo.jar&amp;gt;springboot.log 2&amp;gt;&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nohup java -jar spring-boot-demo.jar&amp;gt;springboot.log 2&amp;gt;&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
 
 
     &lt;img src=&#34;https://logan.1357810.xyz/img/20220410/20220410055051.png&#34;
@@ -164,15 +192,29 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;3、安装ohmyzsh&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sh -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sh -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;4、安装插件&lt;/p&gt;
 &lt;ul&gt;
@@ -189,15 +231,29 @@
   ~/.oh-my-zsh/custom/plugins&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;~/.oh-my-zsh/custom&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/plugins/zsh-syntax-highlighting
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;~/.oh-my-zsh/custom&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/plugins/zsh-syntax-highlighting&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/zsh-users/zsh-autosuggestions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/zsh-users/zsh-autosuggestions
@@ -211,15 +267,29 @@
   ~/.oh-my-zsh/custom/plugins&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/zsh-users/zsh-autosuggestions &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;~/.oh-my-zsh/custom&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/plugins/zsh-autosuggestions
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/zsh-users/zsh-autosuggestions &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;:-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;~/.oh-my-zsh/custom&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/plugins/zsh-autosuggestions&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/wting/autojump&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/wting/autojump
@@ -233,7 +303,9 @@
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-2&#34;&gt;2&lt;/a&gt;
@@ -244,10 +316,22 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install autojump
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 直接配置在zshrc中的plugins里&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zsh直接通过.oh-my-zsh/plugins/autojump/autojump.plugin.zsh寻找autojump安装路径&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 从而实现功能&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 从而实现功能&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -255,15 +339,29 @@
 &lt;p&gt;4、安装字体 font-hack-nerd-font&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install font-hack-nerd-font --cask
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install font-hack-nerd-font --cask&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;5、安装主题 dracula  &lt;a class=&#34;link&#34; href=&#34;https://draculatheme.com/zsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://draculatheme.com/zsh
@@ -280,22 +378,38 @@
 &lt;p&gt;软连接方式&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/dracula/zsh.git
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln -s $DRACULA_THEME/dracula.zsh-theme $OH_MY_ZSH/themes/dracula.zsh-theme
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln -s $DRACULA_THEME/dracula.zsh-theme $OH_MY_ZSH/themes/dracula.zsh-theme&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;文件方式&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-2&#34;&gt;2&lt;/a&gt;
@@ -304,15 +418,29 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;1、Download using the GitHub .zip download option and unzip them.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;2、Move dracula.zsh-theme file to oh-my-zsh&amp;#39;s theme folder: oh-my-zsh/themes/dracula.zsh-theme.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;3、Move /lib to oh-my-zsh&amp;#39;s theme folder: oh-my-zsh/themes/lib.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;3、Move /lib to oh-my-zsh&amp;#39;s theme folder: oh-my-zsh/themes/lib.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;我自己修改的 放在 ~/.oh-my-zsh/custom/themes/mydracula.zsh-theme&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-1&#34;&gt;  1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-2&#34;&gt;  2&lt;/a&gt;
@@ -763,15 +891,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dracula_defwidget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;zle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;keymap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dracula_zle_update&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ensure effects are reset&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;PROMPT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%f&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;%b&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;PROMPT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%f&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;%b&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;6、配置文件 ～/.zshrc&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-1&#34;&gt;  1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-2&#34;&gt;  2&lt;/a&gt;
@@ -1134,15 +1276,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;autoload -U setproxy unproxy getproxy
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 重载配置文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;rr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;echo &amp;#39;reloading...&amp;#39;&amp;amp;&amp;amp;source ~/.zshrc&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;rr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;echo &amp;#39;reloading...&amp;#39;&amp;amp;&amp;amp;source ~/.zshrc&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;7、其他安装&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-1&#34;&gt; 1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-2&#34;&gt; 2&lt;/a&gt;
@@ -1253,10 +1409,22 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# https://github.com/skywind3000/z.lua&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# clone z.lua 到 ~/Data/Software/z.lua&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install trash &lt;span class=&#34;c1&#34;&gt;#rm 废纸篓&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install trash &lt;span class=&#34;c1&#34;&gt;#rm 废纸篓&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;8、自定义函数  ～/Data/Config/my-functions目录下&lt;/p&gt;
 &lt;ul&gt;
@@ -1264,7 +1432,9 @@
 &lt;p&gt;getproxy&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-2&#34;&gt;2&lt;/a&gt;
@@ -1273,15 +1443,29 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;http=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$http_proxy&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;https=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$https_proxy&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;all=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$all_proxy&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;HTTP=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HTTP_PROXY&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;HTTPS=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HTTPS_PROXY&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;ALL=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$ALL_PROXY&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;gh=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;git config --get http.proxy&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;ghs=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;git config --get https.proxy&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;gh=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;git config --get http.proxy&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;ghs=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;git config --get https.proxy&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;;&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;setproxy&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-1&#34;&gt; 1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-2&#34;&gt; 2&lt;/a&gt;
@@ -1318,15 +1502,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;HTTPS_PROXY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;http://127.0.0.1:7890
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;HTTP_PROXY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;http://127.0.0.1:7890
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ALL_PROXY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;socks5://127.0.0.1:7890
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;unproxy&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-1&#34;&gt; 1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-2&#34;&gt; 2&lt;/a&gt;
@@ -1363,10 +1561,22 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;unset&lt;/span&gt; HTTPS_PROXY
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;unset&lt;/span&gt; HTTP_PROXY
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;unset&lt;/span&gt; ALL_PROXY
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1380,17 +1590,31 @@
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
         <guid>https://logan.wssw.fun/p/2023/05/51x78451/</guid>
-        <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ranger --copy-config&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;all
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; RANGER_LOAD_DEFAULT_RC FALSE
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; RANGER_LOAD_DEFAULT_RC FALSE&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;rc.conf&lt;/code&gt; is used for setting various options and binding keys to functions.  设置和快捷键绑定&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;rifle.conf&lt;/code&gt; decides which program to use for opening a file.                   文件打开方式&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;scope.sh&lt;/code&gt; is a shell script used to generate previews for various file types.  文件预览方式&lt;/li&gt;
@@ -1724,83 +1948,167 @@
     &lt;a href=&#34;#1-%e6%96%b0%e5%bb%ba%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 新建会话
 &lt;/h2&gt;&lt;p&gt;新建一个tmux session非常简单，语法为&lt;code&gt;tmux new -s session-name&lt;/code&gt;，也可以简写为&lt;code&gt;tmux&lt;/code&gt;，为了方便管理，建议指定会话名称，如下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux &lt;span class=&#34;c1&#34;&gt;# 新建一个无名称的会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s demo &lt;span class=&#34;c1&#34;&gt;# 新建一个名称为demo的会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s demo &lt;span class=&#34;c1&#34;&gt;# 新建一个名称为demo的会话&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;2-断开当前会话&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;2-断开当前会话&#34;&gt;
     &lt;a href=&#34;#2-%e6%96%ad%e5%bc%80%e5%bd%93%e5%89%8d%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2 断开当前会话
 &lt;/h2&gt;&lt;p&gt;会话中操作了一段时间，我希望断开会话同时下次还能接着用，怎么做？此时可以使用detach命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux detach &lt;span class=&#34;c1&#34;&gt;# 断开当前会话，会话在后台运行&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux detach &lt;span class=&#34;c1&#34;&gt;# 断开当前会话，会话在后台运行&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;也许你觉得这个太麻烦了，是的，tmux的会话中，我们已经可以使用tmux快捷键了。使用快捷键组合&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt;，三次按键就可以断开当前会话。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;也许你觉得这个太麻烦了，是的，tmux的会话中，我们已经可以使用tmux快捷键了。使用快捷键组合&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt;，三次按键就可以断开当前会话。&lt;/p&gt;
 &lt;h2 id=&#34;3-进入之前的会话&#34;&gt;
     &lt;a href=&#34;#3-%e8%bf%9b%e5%85%a5%e4%b9%8b%e5%89%8d%e7%9a%84%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3 进入之前的会话
 &lt;/h2&gt;&lt;p&gt;断开会话后，想要接着上次留下的现场继续工作，就要使用到tmux的attach命令了，语法为&lt;code&gt;tmux attach-session -t session-name&lt;/code&gt;，可简写为&lt;code&gt;tmux a -t session-name&lt;/code&gt; 或 &lt;code&gt;tmux a&lt;/code&gt;。通常我们使用如下两种方式之一即可：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a &lt;span class=&#34;c1&#34;&gt;# 默认进入第一个会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a -t demo &lt;span class=&#34;c1&#34;&gt;# 进入到名称为demo的会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a -t demo &lt;span class=&#34;c1&#34;&gt;# 进入到名称为demo的会话&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;4-关闭会话&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;4-关闭会话&#34;&gt;
     &lt;a href=&#34;#4-%e5%85%b3%e9%97%ad%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     4 关闭会话
 &lt;/h2&gt;&lt;p&gt;会话的使命完成后，一定是要关闭的。我们可以使用tmux的kill命令，kill命令有&lt;code&gt;kill-pane&lt;/code&gt;、&lt;code&gt;kill-server&lt;/code&gt;、&lt;code&gt;kill-session&lt;/code&gt; 和 &lt;code&gt;kill-window&lt;/code&gt;共四种，其中&lt;code&gt;kill-session&lt;/code&gt;的语法为&lt;code&gt;tmux kill-session -t session-name&lt;/code&gt;。如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux kill-session -t demo &lt;span class=&#34;c1&#34;&gt;# 关闭demo会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux kill-server &lt;span class=&#34;c1&#34;&gt;# 关闭服务器，所有的会话都将关闭&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux kill-server &lt;span class=&#34;c1&#34;&gt;# 关闭服务器，所有的会话都将关闭&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在会话内退出并删除session&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;在会话内退出并删除session&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-elixir&#34; data-lang=&#34;elixir&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nc&#34;&gt;Ctrl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:kill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:kill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;5-查看会话&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;5-查看会话&#34;&gt;
     &lt;a href=&#34;#5-%e6%9f%a5%e7%9c%8b%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     5 查看会话
 &lt;/h2&gt;&lt;p&gt;管理会话的第一步就是要查看所有的会话，我们可以使用如下命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-5-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-5-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux list-session &lt;span class=&#34;c1&#34;&gt;# 查看所有会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux ls &lt;span class=&#34;c1&#34;&gt;# 查看所有会话，提倡使用简写形式&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux ls &lt;span class=&#34;c1&#34;&gt;# 查看所有会话，提倡使用简写形式&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;如果刚好处于会话中怎么办？别担心，我们可以使用对应的tmux快捷键&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;s&lt;/code&gt;，此时tmux将打开一个会话列表，按上下键(⬆︎⬇︎)或者鼠标滚轮，可选中目标会话，按左右键（⬅︎➜）可收起或展开会话的窗口，选中目标会话或窗口后，按回车键即可完成切换。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;如果刚好处于会话中怎么办？别担心，我们可以使用对应的tmux快捷键&lt;code&gt;Ctrl+b&lt;/code&gt; + &lt;code&gt;s&lt;/code&gt;，此时tmux将打开一个会话列表，按上下键(⬆︎⬇︎)或者鼠标滚轮，可选中目标会话，按左右键（⬅︎➜）可收起或展开会话的窗口，选中目标会话或窗口后，按回车键即可完成切换。&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2063,33 +2371,75 @@
     7 tmux滚屏
 &lt;/h2&gt;&lt;p&gt;使用快捷键进入 &lt;code&gt;copy-mode&lt;/code&gt; 模式，就可以利用方向键上下移动光标查看了，但是如果历史信息太多，一行一行未免太不爽了，该如何操作呢？&lt;/p&gt;
 &lt;p&gt;1.先打开配置文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-6-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-6-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;vim&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/.tmux.conf&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;vim&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/.tmux.conf&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;2.将下面设置输入：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;2.将下面设置输入：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-7-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-7-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;setw&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keys&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;vi&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;setw&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;g&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keys&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;vi&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;3.重新载入配置文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;3.重新载入配置文件：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-8-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-8-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/.tmux.conf&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/.tmux.conf&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;4.使用快捷键进入 &lt;code&gt;copy-mode&lt;/code&gt; 模式，然后就可以像 &lt;code&gt;vi&lt;/code&gt; 中一样操作了。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;4.使用快捷键进入 &lt;code&gt;copy-mode&lt;/code&gt; 模式，然后就可以像 &lt;code&gt;vi&lt;/code&gt; 中一样操作了。&lt;/p&gt;
 &lt;p&gt;比如：&lt;code&gt;Ctrl-u&lt;/code&gt; 向上滚半屏， &lt;code&gt;Ctrl-d&lt;/code&gt; 向下滚半屏。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;根据某关键字搜索&lt;/strong&gt;：&lt;/p&gt;
 &lt;p&gt;使用快捷键进入 &lt;code&gt;copy-mode&lt;/code&gt; 模式，然后按 &lt;code&gt;/&lt;/code&gt; ，就可以输入关键字了，回车查找。&lt;/p&gt;
@@ -2107,26 +2457,56 @@
 &lt;li&gt;按下 ``+]` 粘贴文本&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;查看复制模式默认的快捷键风格：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-9-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-9-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux show-window-options -g mode-keys # mode-keys emacs
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux show-window-options -g mode-keys # mode-keys emacs&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;默认情况下，快捷键为&lt;code&gt;emacs&lt;/code&gt;风格。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;默认情况下，快捷键为&lt;code&gt;emacs&lt;/code&gt;风格。&lt;/p&gt;
 &lt;p&gt;为了让复制模式更加方便，我们可以将快捷键设置为熟悉的&lt;code&gt;vi&lt;/code&gt;风格，如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-10-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-10-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;setw -g mode-keys vi # 开启vi风格后，支持vi的C-d、C-u、hjkl等快捷键
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;setw -g mode-keys vi # 开启vi风格后，支持vi的C-d、C-u、hjkl等快捷键&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;除了快捷键外，复制模式的启用、选择、复制、粘贴等按键也可以向&lt;code&gt;vi&lt;/code&gt;风格靠拢。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;除了快捷键外，复制模式的启用、选择、复制、粘贴等按键也可以向&lt;code&gt;vi&lt;/code&gt;风格靠拢。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-11-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-11-2&#34;&gt;2&lt;/a&gt;
@@ -2137,25 +2517,53 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind Escape copy-mode # 绑定esc键为进入复制模式
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind -t vi-copy v begin-selection # 绑定v键为开始选择文本
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind -t vi-copy y copy-selection # 绑定y键为复制选中文本
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind p pasteb # 绑定p键为粘贴文本（p键默认用于进入上一个窗口，不建议覆盖）
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind p pasteb # 绑定p键为粘贴文本（p键默认用于进入上一个窗口，不建议覆盖）&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;以上，绑定 &lt;code&gt;v&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt;两键的设置只在tmux v2.4版本以下才有效，对于v2.4及以上的版本，绑定快捷键需要使用 &lt;code&gt;-T&lt;/code&gt; 选项，发送指令需要使用 &lt;code&gt;-X&lt;/code&gt; 选项，请参考如下设置：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;以上，绑定 &lt;code&gt;v&lt;/code&gt;、&lt;code&gt;y&lt;/code&gt;两键的设置只在tmux v2.4版本以下才有效，对于v2.4及以上的版本，绑定快捷键需要使用 &lt;code&gt;-T&lt;/code&gt; 选项，发送指令需要使用 &lt;code&gt;-X&lt;/code&gt; 选项，请参考如下设置：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-12-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-12-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind -T copy-mode-vi v send-keys -X begin-selection
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind -T copy-mode-vi y send-keys -X copy-selection-and-cancel
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind -T copy-mode-vi y send-keys -X copy-selection-and-cancel&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;2-buffer缓存&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;2-buffer缓存&#34;&gt;
     &lt;a href=&#34;#2-buffer%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2 buffer缓存
 &lt;/h2&gt;&lt;p&gt;tmux复制操作的内容默认会存进&lt;code&gt;buffer&lt;/code&gt;里，&lt;code&gt;buffer&lt;/code&gt;是一个粘贴缓存区，新的缓存总是位于栈顶，它的操作命令如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-13-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-13-2&#34;&gt;2&lt;/a&gt;
@@ -2174,10 +2582,22 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;load&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 从文件中加载文本到buffer缓存&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 保存tmux的buffer缓存到本地&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;paste&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 粘贴buffer内容到会话中&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 删除指定名称的buffer&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;buffer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 删除指定名称的buffer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;以上buffer操作在不指定buffer-name时，默认处理是栈顶的buffer缓存。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;以上buffer操作在不指定buffer-name时，默认处理是栈顶的buffer缓存。&lt;/p&gt;
 &lt;p&gt;在tmux会话的命令行输入时，可以省略上述tmux前缀，其中list-buffers的操作如下所示：&lt;/p&gt;
 &lt;p&gt;
 
@@ -2235,16 +2655,32 @@
 &lt;p&gt;&lt;strong&gt;在Linux上使用粘贴板&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;通常，Linux中可以使用&lt;code&gt;xclip&lt;/code&gt;工具来接入系统粘贴板。&lt;/p&gt;
 &lt;p&gt;首先，需要安装&lt;code&gt;xclip&lt;/code&gt;。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-14-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-14-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install xclip
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install xclip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;然后，&lt;code&gt;.tmux.conf&lt;/code&gt;的配置如下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;然后，&lt;code&gt;.tmux.conf&lt;/code&gt;的配置如下。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-15-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-15-2&#34;&gt;2&lt;/a&gt;
@@ -2255,10 +2691,22 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# buffer缓存复制到Linux系统粘贴板
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind C-c run &amp;#34; tmux save-buffer - | xclip -i -sel clipboard&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# Linux系统粘贴板内容复制到会话
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind C-v run &amp;#34; tmux set-buffer \&amp;#34;$(xclip -o -sel clipboard)\&amp;#34;; tmux paste-buffer&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind C-v run &amp;#34; tmux set-buffer \&amp;#34;$(xclip -o -sel clipboard)\&amp;#34;; tmux paste-buffer&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;c&lt;/code&gt; 键，buffer缓存的内容将通过&lt;code&gt;xlip&lt;/code&gt;程序复制到粘贴板，按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键，tmux将通过&lt;code&gt;xclip&lt;/code&gt;访问粘贴板，然后由set-buffer命令设置给buffer缓存，最后由paste-buffer粘贴到tmux会话中。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;c&lt;/code&gt; 键，buffer缓存的内容将通过&lt;code&gt;xlip&lt;/code&gt;程序复制到粘贴板，按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键，tmux将通过&lt;code&gt;xclip&lt;/code&gt;访问粘贴板，然后由set-buffer命令设置给buffer缓存，最后由paste-buffer粘贴到tmux会话中。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在Mac上使用粘贴板&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我们都知道，Mac自带 &lt;code&gt;pbcopy&lt;/code&gt; 和 &lt;code&gt;pbpaste&lt;/code&gt;命令，分别用于复制和粘贴，但在tmux命令中它们却不能正常运行。这里我将详细介绍下原因：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2266,7 +2714,9 @@
 &lt;/blockquote&gt;
 &lt;p&gt;如此，我们可以使用一个小小的包装程序来重新连接到合适的命名空间，然后执行访问用户级命名空间的粘贴板服务，这个包装程序就是&lt;code&gt;reattach-to-user-namespace&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;那么，Mac下&lt;code&gt;.tmux.conf&lt;/code&gt;的配置如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-16-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-16-2&#34;&gt;2&lt;/a&gt;
@@ -2277,12 +2727,26 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# buffer缓存复制到Mac系统粘贴板&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;bind&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tmux save-buffer - | reattach-to-user-namespace pbcopy&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Mac系统粘贴板内容复制到会话&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;bind&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;reattach-to-user-namespace pbpaste | tmux load-buffer - \; paste-buffer -d&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;bind&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;reattach-to-user-namespace pbpaste | tmux load-buffer - \; paste-buffer -d&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;code&gt;reattach-to-user-namespace&lt;/code&gt; 作为包装程序来访问Mac粘贴板，按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;c&lt;/code&gt; 键，buffer缓存的内容将复制到粘贴板，按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键，粘贴板的内容将通过 load-buffer 加载，然后由 paste-buffer 粘贴到tmux会话中。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;reattach-to-user-namespace&lt;/code&gt; 作为包装程序来访问Mac粘贴板，按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;c&lt;/code&gt; 键，buffer缓存的内容将复制到粘贴板，按下&lt;code&gt;prefix&lt;/code&gt; + &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键，粘贴板的内容将通过 load-buffer 加载，然后由 paste-buffer 粘贴到tmux会话中。&lt;/p&gt;
 &lt;p&gt;为了在复制模式中使用Mac系统的粘贴板，可做如下配置：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-17-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-17-2&#34;&gt;2&lt;/a&gt;
@@ -2293,10 +2757,22 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 绑定y键为复制选中文本到Mac系统粘贴板
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind-key -T copy-mode-vi &amp;#39;y&amp;#39; send-keys -X copy-pipe-and-cancel &amp;#39;reattach-to-user-namespace pbcopy&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 鼠标拖动选中文本，并复制到Mac系统粘贴板
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind-key -T copy-mode-vi MouseDragEnd1Pane send -X copy-pipe-and-cancel &amp;#34;pbcopy&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bind-key -T copy-mode-vi MouseDragEnd1Pane send -X copy-pipe-and-cancel &amp;#34;pbcopy&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;完成以上配置后记得重启tmux服务器。至此，复制模式中，按&lt;code&gt;y&lt;/code&gt;键将保存选中的文本到Mac系统粘贴板，随后按&lt;code&gt;Command&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键便可粘贴。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;完成以上配置后记得重启tmux服务器。至此，复制模式中，按&lt;code&gt;y&lt;/code&gt;键将保存选中的文本到Mac系统粘贴板，随后按&lt;code&gt;Command&lt;/code&gt; + &lt;code&gt;v&lt;/code&gt;键便可粘贴。&lt;/p&gt;
 &lt;h1 id=&#34;六保存tmux会话&#34;&gt;
     &lt;a href=&#34;#%e5%85%ad%e4%bf%9d%e5%ad%98tmux%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     六.保存Tmux会话
@@ -2306,24 +2782,52 @@
 &lt;/h2&gt;&lt;p&gt;tmux多会话连接实时同步的功能，使得结对编程成为了可能，这也是开发者最喜欢的功能之一。现在就差一步了，就是借助tmate把tmux会话分享出去。&lt;/p&gt;
 &lt;p&gt;tmate是tmux的管理工具，它可以轻松的创建tmux会话，并且自动生成ssh链接。&lt;/p&gt;
 &lt;p&gt;安装tmate&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-18-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-18-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install tmate
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install tmate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;使用tmate新建一个tmux会话&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;使用tmate新建一个tmux会话&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-19-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-19-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmate
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;此时屏幕下方会显示ssh url，如下所示：&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;此时屏幕下方会显示ssh url，如下所示：&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2344,15 +2848,29 @@
     &gt;
 &lt;/p&gt;
 &lt;p&gt;查看tmate生成的ssh链接&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-20-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-20-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmate show-messages
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmate show-messages&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;生成的ssh url如下所示，其中一个为只读，另一个可编辑。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;生成的ssh url如下所示，其中一个为只读，另一个可编辑。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://louiszhai.github.io/docImages/tmux08.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;
 
@@ -2386,86 +2904,186 @@
     2 共享账号&amp;amp;组会话
 &lt;/h2&gt;&lt;p&gt;使用tmate远程共享tmux会话，受制于多方的网络质量，必然会存在些许延迟。如果共享会话的多方拥有同一个远程服务器的账号，那么我们可以使用&lt;code&gt;组会话&lt;/code&gt;解决这个问题。&lt;/p&gt;
 &lt;p&gt;先在远程服务器上新建一个公共会话，命名为&lt;code&gt;groupSession&lt;/code&gt;。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-21-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-21-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s groupSession
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s groupSession&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;其他用户不去直接连接这个会话，而是通过创建一个新的会话来加入上面的公共会话&lt;code&gt;groupSession&lt;/code&gt;。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;其他用户不去直接连接这个会话，而是通过创建一个新的会话来加入上面的公共会话&lt;code&gt;groupSession&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-22-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-22-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -t groupSession -s otherSession
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -t groupSession -s otherSession&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;此时两个用户都可以在同一个会话里操作，就会好像第二个用户连接到了&lt;code&gt;groupSession&lt;/code&gt;的会话一样。此时两个用户都可以创建新建的窗口，新窗口的内容依然会实时同步，但是其中一个用户切换到其它窗口，对另外一个用户没有任何影响，因此在这个共享的组会话中，用户各自的操作可以通过新建窗口来执行。即使第二个用户关闭&lt;code&gt;otherSession&lt;/code&gt;会话，共享会话&lt;code&gt;groupSession&lt;/code&gt;依然存在。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;此时两个用户都可以在同一个会话里操作，就会好像第二个用户连接到了&lt;code&gt;groupSession&lt;/code&gt;的会话一样。此时两个用户都可以创建新建的窗口，新窗口的内容依然会实时同步，但是其中一个用户切换到其它窗口，对另外一个用户没有任何影响，因此在这个共享的组会话中，用户各自的操作可以通过新建窗口来执行。即使第二个用户关闭&lt;code&gt;otherSession&lt;/code&gt;会话，共享会话&lt;code&gt;groupSession&lt;/code&gt;依然存在。&lt;/p&gt;
 &lt;p&gt;组会话在共享的同时，又保留了相对的独立，非常适合结对编程场景，它是结对编程最简单的方式，如果账号不能共享，我们就要使用下面的方案了。&lt;/p&gt;
 &lt;h2 id=&#34;3-独立账号socket共享会话&#34;&gt;
     &lt;a href=&#34;#3-%e7%8b%ac%e7%ab%8b%e8%b4%a6%e5%8f%b7socket%e5%85%b1%e4%ba%ab%e4%bc%9a%e8%af%9d&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     3 独立账号&amp;amp;Socket共享会话
 &lt;/h2&gt;&lt;p&gt;开始之前我们需要确保用户对远程服务器上同一个目录拥有相同的读写权限，假设这个目录为&lt;code&gt;/var/tmux/&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;使用new-session（简写new）创建会话时，使用的是默认的socket位置，默认socket无法操作，所以我们需要创建一个指定socket文件的会话。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-23-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-23-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sharefile&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sharefile&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;另一个用户进入时，需要指定socket文件加入会话。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;另一个用户进入时，需要指定socket文件加入会话。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-24-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-24-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sharefile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;attach&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sharefile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;attach&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这样，两个不同的用户就可以共享同一个会话了。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;这样，两个不同的用户就可以共享同一个会话了。&lt;/p&gt;
 &lt;p&gt;通常情况下，不同的用户使用不同的配置文件来创建会话，但是，使用指定socket文件创建的tmux会话，会话加载的是第一个创建会话的用户的&lt;code&gt;~/.tmux.conf&lt;/code&gt;配置文件，随后加入会话的其他用户，依然使用同一份配置文件。&lt;/p&gt;
 &lt;h1 id=&#34;八tmux优化&#34;&gt;
     &lt;a href=&#34;#%e5%85%abtmux%e4%bc%98%e5%8c%96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     八.Tmux优化
 &lt;/h1&gt;&lt;p&gt;tmux作为终端复用软件，支持纯命令行操作也是其一大亮点。你既可以启用可视化界面创建会话，也可以运行脚本生成会话，对于tmux依赖者而言，编写几个tmux脚本批量维护会话列表，快速重启、切换、甚至分享部分会话都是非常方便的。可能会有人说为什么不用Tmux Resurrect呢？是的，Tmux Resurrect很好，一键恢复也很诱人，但是对于一个维护大量tmux会话的用户而言，一键恢复可能不见得好，分批次恢复可能是他（她）更想要的，脚本化的tmux就很好地满足了这点。&lt;/p&gt;
 &lt;p&gt;脚本中创建tmux会话时，由于不需要开启可视化界面，需要输入&lt;code&gt;-d&lt;/code&gt;参数指定会话后台运行，如下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-25-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-25-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s init -d # 后台创建一个名称为init的会话
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s init -d # 后台创建一个名称为init的会话&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;新建的会话，建议&lt;strong&gt;重命令会话的窗口名称&lt;/strong&gt;，以便后续维护。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;新建的会话，建议&lt;strong&gt;重命令会话的窗口名称&lt;/strong&gt;，以便后续维护。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-26-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-26-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-26-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-26-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 重命名init会话的第一个窗口名称为service
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux rename-window -t &amp;#34;init:1&amp;#34; service
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux rename-window -t &amp;#34;init:1&amp;#34; service&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;现在，可以在刚才的窗口中&lt;strong&gt;输入指令&lt;/strong&gt;了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;现在，可以在刚才的窗口中&lt;strong&gt;输入指令&lt;/strong&gt;了。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-27-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-27-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-27-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-27-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 切换到指定目录并运行python服务
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux send -t &amp;#34;init:service&amp;#34; &amp;#34;cd ~/workspace/language/python/;python2.7 server.py&amp;#34; Enter
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux send -t &amp;#34;init:service&amp;#34; &amp;#34;cd ~/workspace/language/python/;python2.7 server.py&amp;#34; Enter&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;一个面板占用一个窗口可能太浪费了，我们来&lt;strong&gt;分个屏&lt;/strong&gt;吧。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;一个面板占用一个窗口可能太浪费了，我们来&lt;strong&gt;分个屏&lt;/strong&gt;吧。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-28-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-28-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-28-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-28-2&#34;&gt;2&lt;/a&gt;
@@ -2476,11 +3094,25 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 默认上下分屏
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux split-window -t &amp;#34;init:service&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 切换到指定目录并运行node服务
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux send -t &amp;#34;init:service&amp;#34; &amp;#39;cd ~/data/louiszhai/node-webserver/;npm start&amp;#39; Enter
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux send -t &amp;#34;init:service&amp;#34; &amp;#39;cd ~/data/louiszhai/node-webserver/;npm start&amp;#39; Enter&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;现在一个窗口拥有上下两个面板，是时候&lt;strong&gt;创建一个新的窗口&lt;/strong&gt;来运行更多的程序了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;现在一个窗口拥有上下两个面板，是时候&lt;strong&gt;创建一个新的窗口&lt;/strong&gt;来运行更多的程序了。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-29-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-29-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-29-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-29-2&#34;&gt;2&lt;/a&gt;
@@ -2491,22 +3123,50 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 新建一个名称为tool的窗口&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neww&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;tool&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;init&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# neww等同于new window&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 运行weinre调试工具&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;init:tool&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;weinre --httpPort 8881 --boundHost -all-&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Enter&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;init:tool&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;weinre --httpPort 8881 --boundHost -all-&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Enter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;另外新建窗口运行程序，有更方便的方式，比如使用 &lt;code&gt;processes&lt;/code&gt; 选项。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;另外新建窗口运行程序，有更方便的方式，比如使用 &lt;code&gt;processes&lt;/code&gt; 选项。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-30-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-30-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-30-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-30-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux neww-n processes ls # 新建窗口并执行命令，命令执行结束后窗口将关闭
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux neww-n processes top # 由于top命令持续在前台运行，因此窗口将保留，直到top命令退出
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux neww-n processes top # 由于top命令持续在前台运行，因此窗口将保留，直到top命令退出&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;新的窗口，我们尝试下水平分屏。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;新的窗口，我们尝试下水平分屏。&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-31-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-31-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-31-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-31-2&#34;&gt;2&lt;/a&gt;
@@ -2517,10 +3177,22 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 水平分屏&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;window&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;init:tool&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 切换到指定目录并启用aria2 web管理后台&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;init:tool&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;cd ~/data/tools/AriaNg/dist/;python -m SimpleHTTPServer 10108&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Enter&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;tmux&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;init:tool&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;cd ~/data/tools/AriaNg/dist/;python -m SimpleHTTPServer 10108&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Enter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;类似的脚本，我们可以编写一打，这样快速重启、切换、甚至分享会话都将更加便捷。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;类似的脚本，我们可以编写一打，这样快速重启、切换、甚至分享会话都将更加便捷。&lt;/p&gt;
 &lt;h1 id=&#34;十-开机自动启用web服务器&#34;&gt;
     &lt;a href=&#34;#%e5%8d%81-%e5%bc%80%e6%9c%ba%e8%87%aa%e5%8a%a8%e5%90%af%e7%94%a8web%e6%9c%8d%e5%8a%a1%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     十. 开机自动启用Web服务器
@@ -2732,15 +3404,29 @@
 &lt;li&gt;前面可以加上数字，表示命令重复几次，比如3w等同于按下三次w&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;word&lt;/code&gt;指的是以&lt;code&gt;非&lt;/code&gt;空白符分割的单词，&lt;code&gt;WORD&lt;/code&gt;以空白符分割的单词  例如 List是一个word，List&amp;lt;AuditItemVO.AuditItem&amp;gt;是一个Word&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AuditItemVO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;AuditItem&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Lists&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;newArrayListWithExpectedSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AuditItemVO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;AuditItem&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Lists&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;newArrayListWithExpectedSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;2-当前行快速移动光标&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;2-当前行快速移动光标&#34;&gt;
     &lt;a href=&#34;#2-%e5%bd%93%e5%89%8d%e8%a1%8c%e5%bf%ab%e9%80%9f%e7%a7%bb%e5%8a%a8%e5%85%89%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2⃣️ 当前行快速移动光标
 &lt;/h2&gt;&lt;ul&gt;
@@ -2805,7 +3491,9 @@ c( confirm)表示确认,可以确认或者拒绝修改
 n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-2&#34;&gt;2&lt;/a&gt;
@@ -2822,10 +3510,22 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:% s/im/l/g    &lt;span class=&#34;c1&#34;&gt;#全局把im替换为l&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## 正则&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:% s/&lt;span class=&#34;se&#34;&gt;\&amp;lt;&lt;/span&gt;aa&lt;span class=&#34;se&#34;&gt;\&amp;gt;&lt;/span&gt;/bb/g  &lt;span class=&#34;c1&#34;&gt;# 全局把aa替换为bb，并且aa是一个单独的词&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:% s/&lt;span class=&#34;se&#34;&gt;\&amp;lt;&lt;/span&gt;aa&lt;span class=&#34;se&#34;&gt;\&amp;gt;&lt;/span&gt;/bb/g  &lt;span class=&#34;c1&#34;&gt;# 全局把aa替换为bb，并且aa是一个单独的词&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;6-快速删除&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;6-快速删除&#34;&gt;
     &lt;a href=&#34;#6-%e5%bf%ab%e9%80%9f%e5%88%a0%e9%99%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     6⃣️ 快速删除
 &lt;/h2&gt;&lt;ul&gt;
@@ -3498,15 +4198,29 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 &lt;/h2&gt;&lt;p&gt;我们可以一次打开多个文件，如&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vi a.txt b.txt c.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vi a.txt b.txt c.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;使用:next(:n)编辑下一个文件。&lt;/li&gt;
 &lt;li&gt;:2n 编辑下2个文件。&lt;/li&gt;
@@ -4003,24 +4717,52 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 
 
 文件，你可以这样设置：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set makeprg=javac\ abc.java
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set makeprg=javac\ abc.java&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;然后:make即可。如果程序有错，可以通过quickfix窗口查看错误。 不过如果要正确定位错误，需要设置好errorformat，让vim识别错误信息。 如：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;然后:make即可。如果程序有错，可以通过quickfix窗口查看错误。 不过如果要正确定位错误，需要设置好errorformat，让vim识别错误信息。 如：&lt;/p&gt;
+
+&lt;div class=&#34;logan-code-block&#34;&gt;
+    &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:setl efm=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:setl efm=%A%f:%l:\ %m,%-Z%p^,%-C%.%#&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;%f表示文件名，%l表示行号， %m表示错误信息，其它的还不能理解。 请参考 :help errorformat。&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;code-scroll&#34; aria-label=&#34;代码块滚动工具栏&#34;&gt;
+    &lt;button class=&#34;code-scroll-left iconfont-logan icon-logan-circle-left-solid&#34; aria-label=&#34;向左滚动&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;code-scroll-right iconfont-logan icon-logan-circle-right-solid&#34; aria-label=&#34;向右滚动&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;code-tools&#34; aria-label=&#34;代码块工具栏&#34;&gt;
+    &lt;div class=&#34;copy-text&#34;&gt;Copied!&lt;/div&gt;
+    &lt;button class=&#34;copy-code-button iconfont-logan icon-logan-copy-round3&#34; aria-label=&#34;复制&#34;&gt;&lt;/button&gt;
+    &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;%f表示文件名，%l表示行号， %m表示错误信息，其它的还不能理解。 请参考 :help errorformat。&lt;/p&gt;
 &lt;h2 id=&#34;136-快速修改窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34;&gt;
     &lt;a href=&#34;#136-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id107&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
