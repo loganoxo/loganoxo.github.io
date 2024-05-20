@@ -2,10 +2,3 @@
 /*!
 *  页面加载后执行的js操作
 */
-/*!
-*   Hugo Theme Stack
-*
-*   @author: Jimmy Cai
-*   @website: https://jimmycai.com
-*   @link: https://github.com/CaiJimmy/hugo-theme-stack
-*/
