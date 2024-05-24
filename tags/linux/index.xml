@@ -9,10 +9,10 @@
         <copyright>logan</copyright>
         <lastBuildDate>Wed, 03 May 2023 03:49:51 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>linux常用命令</title>
-        <link>https://logan.wssw.fun/p/2023/05/14916714/</link>
+        <link>https://logan.wssw.fun/articles/linux/linux-command/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/14916714/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/linux-command/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;ctrl+u 删除一行&lt;/li&gt;
 &lt;li&gt;ctrl+w 删除上一个字符&lt;/li&gt;
@@ -22,11 +22,11 @@
 </description>
         </item>
         <item>
-        <title>nohup</title>
-        <link>https://logan.wssw.fun/p/2023/05/84s11784/</link>
+        <title>nohup命令</title>
+        <link>https://logan.wssw.fun/articles/linux/linux-nohup/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/84s11784/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/linux-nohup/</guid>
         <description>&lt;h2 id=&#34;1问题&#34;&gt;
     &lt;a href=&#34;#1%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1、问题
@@ -175,11 +175,11 @@
 </description>
         </item>
         <item>
-        <title>ohmyzsh</title>
-        <link>https://logan.wssw.fun/p/2023/05/91571391/</link>
+        <title>ohmyzsh使用教程</title>
+        <link>https://logan.wssw.fun/articles/linux/ohmyzsh/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/91571391/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/ohmyzsh/</guid>
         <description>&lt;h1 id=&#34;mac安装和配置ohmyzsh&#34;&gt;
     &lt;a href=&#34;#mac%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%aeohmyzsh&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     mac安装和配置ohmyzsh
@@ -1585,11 +1585,11 @@
 </description>
         </item>
         <item>
-        <title>ranger</title>
-        <link>https://logan.wssw.fun/p/2023/05/51x78451/</link>
+        <title>ranger使用教程</title>
+        <link>https://logan.wssw.fun/articles/linux/ranger/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/51x78451/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/ranger/</guid>
         <description>
 &lt;div class=&#34;logan-code-block&#34;&gt;
     &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1869,11 +1869,11 @@
 </description>
         </item>
         <item>
-        <title>Tmux</title>
-        <link>https://logan.wssw.fun/p/2023/05/149a6714/</link>
+        <title>Tmux使用教程</title>
+        <link>https://logan.wssw.fun/articles/linux/tmux/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/149a6714/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/tmux/</guid>
         <description>&lt;h1 id=&#34;一-tmux-简介&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80-tmux-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一. tmux 简介
@@ -3199,11 +3199,11 @@
 &lt;/h1&gt;</description>
         </item>
         <item>
-        <title>Vim</title>
-        <link>https://logan.wssw.fun/p/2023/05/91571491/</link>
+        <title>Vim使用教程</title>
+        <link>https://logan.wssw.fun/articles/linux/vim/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/91571491/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/vim/</guid>
         <description>&lt;h1 id=&#34;1-简介&#34;&gt;
     &lt;a href=&#34;#1-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 简介
@@ -3695,11 +3695,11 @@ n( number)报告匹配到的次数而不替換,可以用来查询匹配次数&lt
 &lt;/h1&gt;</description>
         </item>
         <item>
-        <title>vimother</title>
-        <link>https://logan.wssw.fun/p/2023/05/84511784/</link>
+        <title>vim相关操作</title>
+        <link>https://logan.wssw.fun/articles/linux/vimother/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/05/84511784/</guid>
+        <guid>https://logan.wssw.fun/articles/linux/vimother/</guid>
         <description>&lt;h1 id=&#34;1-关于vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34;&gt;
     &lt;a href=&#34;#1-%e5%85%b3%e4%ba%8evimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id59&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

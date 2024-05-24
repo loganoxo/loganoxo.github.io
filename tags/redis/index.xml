@@ -8,11 +8,11 @@
         <language>zh-cn</language>
         <copyright>logan</copyright>
         <lastBuildDate>Mon, 04 Sep 2023 02:02:09 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/redis/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>redis</title>
-        <link>https://logan.wssw.fun/p/2023/09/3895o138/</link>
+        <title>redis概述</title>
+        <link>https://logan.wssw.fun/articles/redis/redis/</link>
         <pubDate>Mon, 04 Sep 2023 02:02:09 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/09/3895o138/</guid>
+        <guid>https://logan.wssw.fun/articles/redis/redis/</guid>
         <description>&lt;h2 id=&#34;一特点&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80%e7%89%b9%e7%82%b9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、特点
@@ -663,10 +663,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
         </item>
         <item>
         <title>Redis高级-分布式缓存</title>
-        <link>https://logan.wssw.fun/p/2023/09/4511zs45/</link>
+        <link>https://logan.wssw.fun/articles/redis/redis-cache/</link>
         <pubDate>Mon, 04 Sep 2023 02:02:09 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/09/4511zs45/</guid>
+        <guid>https://logan.wssw.fun/articles/redis/redis-cache/</guid>
         <description>&lt;h1 id=&#34;分布式缓存&#34;&gt;
     &lt;a href=&#34;#%e5%88%86%e5%b8%83%e5%bc%8f%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     分布式缓存
@@ -2579,10 +2579,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
         </item>
         <item>
         <title>Redis集群</title>
-        <link>https://logan.wssw.fun/p/2023/09/78451671/</link>
+        <link>https://logan.wssw.fun/articles/redis/redis-cluster/</link>
         <pubDate>Mon, 04 Sep 2023 02:02:09 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/09/78451671/</guid>
+        <guid>https://logan.wssw.fun/articles/redis/redis-cluster/</guid>
         <description>&lt;h1 id=&#34;配置&#34;&gt;
     &lt;a href=&#34;#%e9%85%8d%e7%bd%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     配置
@@ -4753,10 +4753,10 @@ HyperLogLog存储数据天生是唯一的，适合做UV&lt;/p&gt;
         </item>
         <item>
         <title>多级缓存</title>
-        <link>https://logan.wssw.fun/p/2023/09/61784511/</link>
+        <link>https://logan.wssw.fun/articles/redis/multistage-cache/</link>
         <pubDate>Mon, 04 Sep 2023 02:02:09 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/p/2023/09/61784511/</guid>
+        <guid>https://logan.wssw.fun/articles/redis/multistage-cache/</guid>
         <description>&lt;h1 id=&#34;多级缓存&#34;&gt;
     &lt;a href=&#34;#%e5%a4%9a%e7%ba%a7%e7%bc%93%e5%ad%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     多级缓存
