@@ -303,7 +303,7 @@
     数学公式块
 &lt;/h3&gt;&lt;p&gt;您可以使用 &lt;strong&gt;MathJax&lt;/strong&gt; 渲染 &lt;em&gt;LaTeX&lt;/em&gt; 数学表达式。&lt;/p&gt;
 &lt;p&gt;typora中输入 &lt;code&gt;$$&lt;/code&gt;, 然后按“return”键将触发一个接受&lt;em&gt;Tex / LaTex&lt;/em&gt;源代码的输入区域。
-在 markdown 源文件中，数学公式块是由&amp;rsquo;$$&amp;lsquo;标记包装的 &lt;em&gt;LaTeX&lt;/em&gt; 表达式：&lt;/p&gt;
+在 markdown 源文件中，数学公式块是由&lt;code&gt;$$&lt;/code&gt;标记包装的 &lt;em&gt;LaTeX&lt;/em&gt; 表达式：&lt;/p&gt;
 
 &lt;div class=&#34;logan-code-block&#34;&gt;
     &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$
@@ -517,7 +517,8 @@
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;效果：&lt;/p&gt;
-&lt;p&gt;This is &lt;a class=&#34;link&#34; href=&#34;http://example.com/%22Title%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;This is &lt;a class=&#34;link&#34; href=&#34;http://example.com/&#34;  title=&#34;Title&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;an example
 
 
@@ -836,15 +837,21 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
 &lt;h3 id=&#34;下标&#34;&gt;
     &lt;a href=&#34;#%e4%b8%8b%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     下标
-&lt;/h3&gt;&lt;p&gt;在typora中，要使用此功能，首先，请在 &lt;code&gt;偏好设置&lt;/code&gt; 面板 -&amp;gt; &lt;code&gt;Markdown扩展语法&lt;/code&gt; 选项卡中启用它。然后用 &lt;code&gt;~&lt;/code&gt; 来包裹下标内容，例如： &lt;code&gt;H~2~O&lt;/code&gt;, &lt;code&gt;X~long\ text~&lt;/code&gt;/&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;在typora中，要使用此功能，首先，请在 &lt;code&gt;偏好设置&lt;/code&gt; 面板 -&amp;gt; &lt;code&gt;Markdown扩展语法&lt;/code&gt; 选项卡中启用它。然后用 &lt;code&gt;~&lt;/code&gt; 来包裹下标内容，例如： &lt;code&gt;H~2~O&lt;/code&gt;, &lt;code&gt;X~long\ text~Y&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果:&lt;/p&gt;
+&lt;p&gt;H~2~O     X~long\ text~Y&lt;/p&gt;
 &lt;h3 id=&#34;上标&#34;&gt;
     &lt;a href=&#34;#%e4%b8%8a%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     上标
 &lt;/h3&gt;&lt;p&gt;在typora中，要使用此功能，首先，请在 &lt;code&gt;偏好设置&lt;/code&gt; 面板 -&amp;gt; &lt;code&gt;Markdown扩展语法&lt;/code&gt; 选项卡中启用它。然后用 &lt;code&gt;^&lt;/code&gt; 来包裹上标内容，例如： &lt;code&gt;X^2^&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;效果:&lt;/p&gt;
+&lt;p&gt;X^2^&lt;/p&gt;
 &lt;h3 id=&#34;高亮&#34;&gt;
     &lt;a href=&#34;#%e9%ab%98%e4%ba%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     高亮
 &lt;/h3&gt;&lt;p&gt;在typora中，要使用此功能，首先，请在 &lt;code&gt;偏好设置&lt;/code&gt; 面板 -&amp;gt; &lt;code&gt;Markdown扩展语法&lt;/code&gt; 选项卡中启用它。然后用 &lt;code&gt;==&lt;/code&gt; 来包裹高亮内容，例如： &lt;code&gt;==highlight==&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;效果:&lt;/p&gt;
+&lt;p&gt;==highlight==&lt;/p&gt;
 &lt;h2 id=&#34;html&#34;&gt;
     &lt;a href=&#34;#html&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     HTML
