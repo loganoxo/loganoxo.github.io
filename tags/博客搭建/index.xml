@@ -1648,7 +1648,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/a&gt;
 
 
-。但是，它的语法因不同的解析器或编辑器而异。&lt;strong&gt;Typora&lt;/strong&gt;
+。但是，它的语法因不同的解析器或编辑器而异。&lt;strong&gt;Typora&lt;/strong&gt;&lt;br&gt;
 正在使用 [GitHub Flavored Markdown][GFM]。&lt;/p&gt;
 &lt;h2 id=&#34;块元素&#34;&gt;
     &lt;a href=&#34;#%e5%9d%97%e5%85%83%e7%b4%a0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
@@ -1682,7 +1682,8 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &gt;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;注意某些非markdown的编辑器会自动删除行尾空格，比如使用了 &lt;code&gt;EditorConfig&lt;/code&gt; 的, 需要设置:
+&lt;li&gt;
+&lt;p&gt;注意某些非markdown的编辑器会自动删除行尾空格，比如使用了 &lt;code&gt;EditorConfig&lt;/code&gt; 的, 需要设置:&lt;/p&gt;
 
 &lt;div class=&#34;logan-code-block&#34;&gt;
     &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1691,8 +1692,8 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-2&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-2&#34;&gt;2&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[*.md] # 对所有 md 文件生效  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;trim_trailing_whitespace = false # 保留行末的空格&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;md&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;对所有&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;md&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;文件生效&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;trim_trailing_whitespace&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;保留行末的空格&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1711,7 +1712,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;也可以在段落后面使用一个空行来表示重新开始一个段落
+&lt;p&gt;也可以在段落后面使用一个空行来表示重新开始一个段落&lt;br&gt;
 
 
 
@@ -1800,14 +1801,14 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;/span&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-8&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-8&#34;&gt;8&lt;/a&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; 这是一级缩进
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是二级缩进
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 这是三级缩进
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; 这是一级缩进  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是二级缩进  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 这是三级缩进  
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 再来一个二级缩进
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 再来一个三级缩进
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 再来一个二级缩进  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 再来一个三级缩进  
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是新的块引用&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; 这是新的块引用  &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1846,14 +1847,14 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;h3 id=&#34;列表&#34;&gt;
     &lt;a href=&#34;#%e5%88%97%e8%a1%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     列表
-&lt;/h3&gt;&lt;p&gt;输入 &lt;code&gt;* list item 1&lt;/code&gt; 将创建一个无序列表，该 &lt;code&gt;*&lt;/code&gt; 符号可以替换为 &lt;code&gt;+&lt;/code&gt; 或 &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;输入 &lt;code&gt;- list item 1&lt;/code&gt; 将创建一个无序列表，该 &lt;code&gt;-&lt;/code&gt; 符号可以替换为 &lt;code&gt;+&lt;/code&gt; 或 &lt;code&gt;*&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;输入 &lt;code&gt;1. list item 1&lt;/code&gt; 将创建一个有序列表，有序和无序列表都可以缩进, 其 markdown 源代码如下：&lt;/p&gt;
 
 &lt;div class=&#34;logan-code-block&#34;&gt;
     &lt;div class=&#34;highlight md-reference-block&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### 无序列表
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; 红色
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; 绿色
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; 蓝色
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 红色
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 绿色
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 蓝色
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### 有序列表
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 红色
@@ -2014,7 +2015,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &lt;a href=&#34;#%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e5%9d%97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     数学公式块
 &lt;/h3&gt;&lt;p&gt;您可以使用 &lt;strong&gt;MathJax&lt;/strong&gt; 渲染 &lt;em&gt;LaTeX&lt;/em&gt; 数学表达式。&lt;/p&gt;
-&lt;p&gt;typora中输入 &lt;code&gt;$$&lt;/code&gt;, 然后按“return”键将触发一个接受&lt;em&gt;Tex / LaTex&lt;/em&gt;源代码的输入区域。
+&lt;p&gt;typora中输入 &lt;code&gt;$$&lt;/code&gt;, 然后按“return”键将触发一个接受&lt;em&gt;Tex / LaTex&lt;/em&gt;源代码的输入区域。&lt;br&gt;
 在 markdown 源文件中，数学公式块是由&lt;code&gt;$$&lt;/code&gt;标记包装的 &lt;em&gt;LaTeX&lt;/em&gt; 表达式：&lt;/p&gt;
 
 &lt;div class=&#34;logan-code-block&#34;&gt;
@@ -2186,13 +2187,13 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;效果：
+&lt;p&gt;效果：&lt;br&gt;
 这是一个需要添加脚注的文本&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
 &lt;p&gt;鼠标移动到‘1’上标中查看脚注的内容。&lt;/p&gt;
 &lt;h3 id=&#34;水平线&#34;&gt;
     &lt;a href=&#34;#%e6%b0%b4%e5%b9%b3%e7%ba%bf&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     水平线
-&lt;/h3&gt;&lt;p&gt;输入 &lt;code&gt;***&lt;/code&gt; 或 &lt;code&gt;---&lt;/code&gt; 或&lt;code&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt;在空行上按 &lt;code&gt;return&lt;/code&gt; 键将绘制一条水平线。
+&lt;/h3&gt;&lt;p&gt;输入 &lt;code&gt;***&lt;/code&gt; 或 &lt;code&gt;---&lt;/code&gt; 或&lt;code&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt;在空行上按 &lt;code&gt;return&lt;/code&gt; 键将绘制一条水平线。&lt;br&gt;
 效果：&lt;/p&gt;
 &lt;hr&gt;
 &lt;hr&gt;
@@ -2212,6 +2213,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     1.1 在列表中
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;列表中某个层级按下回车后，继续按回车直到光标在无缩进的行首，再粘贴图片语句，移动光标到行首，按下tab键调整缩进，经渲染后图片会配合列表自动缩进；&lt;/li&gt;
+&lt;li&gt;如果是有序列表，直接按回车到行首会影响后面的前标，要不影响的话，可以使用shift+return，然后删除缩进到行首，然后再回车换行，插入语句，回车换行&lt;/li&gt;
 &lt;li&gt;但是在普通段落中，用tab键调整图片的缩进，是不可行的，必须要和列表配合;&lt;/li&gt;
 &lt;li&gt;图片的上下必须用空行与列表隔开；&lt;/li&gt;
 &lt;/ul&gt;
@@ -2269,9 +2271,10 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     &lt;a href=&#34;#21-%e5%9c%a8%e5%88%97%e8%a1%a8%e4%b8%ad&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.1 在列表中
 &lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;列表中某个层级按下回车后，继续按回车直到光标在无缩进的行首，再粘贴图片语句，移动光标到行首，按下tab键调整缩进，经渲染后图片会配合列表自动缩进；&lt;/li&gt;
-&lt;li&gt;但是在普通段落中，用tab键调整图片的缩进，是不可行的，必须要和列表配合;&lt;/li&gt;
-&lt;li&gt;图片的上下必须用空行与列表隔开；&lt;/li&gt;
+&lt;li&gt;列表中某个层级按下回车后，继续按回车直到光标在无缩进的行首，再粘贴代码块语句，选中整个代码块语句，按下tab键调整缩进，经渲染后代码块会配合列表自动缩进；&lt;/li&gt;
+&lt;li&gt;如果是有序列表，直接按回车到行首会影响后面的前标，要不影响的话，可以使用shift+return，然后删除缩进到行首，然后再回车换行，插入语句，回车换行&lt;/li&gt;
+&lt;li&gt;但是在普通段落中，用tab键调整代码块的缩进，是不可行的，必须要和列表配合;&lt;/li&gt;
+&lt;li&gt;代码块的上下必须用空行与列表隔开；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如：&lt;/p&gt;
 &lt;ol&gt;
@@ -2321,7 +2324,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 &lt;h4 id=&#34;22-使用css&#34;&gt;
     &lt;a href=&#34;#22-%e4%bd%bf%e7%94%a8css&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     2.2 使用css
-&lt;/h4&gt;&lt;p&gt;与图片用css缩进蕾丝，在某些渲染环境中不能正常显示（如github的渲染）&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;与图片用css缩进类似，在某些渲染环境中不能正常显示（如github的渲染）&lt;/p&gt;
 &lt;pre style=&#34;margin-left: 120px;&#34;&gt;
 &lt;code&gt;
 function calculate(t, i) {  
@@ -2381,7 +2384,7 @@ function calculate(t, i) {
 &lt;h4 id=&#34;内部链接&#34;&gt;
     &lt;a href=&#34;#%e5%86%85%e9%83%a8%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     内部链接
-&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;您可以将常规括号内的 href 设置为文档内的某一个标题&lt;/strong&gt;，这将创建一个书签，允许您在单击后跳转到该部分。
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;您可以将常规括号内的 href 设置为文档内的某一个标题&lt;/strong&gt;，这将创建一个书签，允许您在单击后跳转到该部分。&lt;br&gt;
 typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;code&gt;块元素&lt;/code&gt;处。&lt;/p&gt;
 
 &lt;div class=&#34;logan-code-block&#34;&gt;
@@ -2399,14 +2402,14 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;效果：
+&lt;p&gt;效果：&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;#%e8%84%9a%e6%b3%a8&#34; &gt;内部跳转
 
 
 &lt;/a&gt;
 
 
-
+&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://logan.wssw.fun/articles/with-hugo/page-a#title_a&#34; &gt;外部跳转
 
 
@@ -2417,7 +2420,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
 &lt;h4 id=&#34;链接引用&#34;&gt;
     &lt;a href=&#34;#%e9%93%be%e6%8e%a5%e5%bc%95%e7%94%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     链接引用
-&lt;/h4&gt;&lt;p&gt;这种方法使得你可以在文档中的多个地方引用同一个链接，而不需要重复输入链接的地址和标题。
+&lt;/h4&gt;&lt;p&gt;这种方法使得你可以在文档中的多个地方引用同一个链接，而不需要重复输入链接的地址和标题。&lt;br&gt;
 在文档中的任何位置,创建一个&lt;code&gt;链接引用&lt;/code&gt;：&lt;/p&gt;
 
 &lt;div class=&#34;logan-code-block&#34;&gt;
@@ -2450,7 +2453,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;效果：
+&lt;p&gt;效果：&lt;br&gt;
 这是一个&lt;a class=&#34;link&#34; href=&#34;https://www.baidu.com&#34;  title=&#34;百度搜索&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;百度
@@ -2656,7 +2659,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
     &lt;a href=&#34;#%e5%86%85%e8%81%94%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     内联数学公式
 &lt;/h3&gt;&lt;p&gt;在typora中，要使用此功能，首先，请在 &lt;code&gt;偏好设置&lt;/code&gt; 面板 -&amp;gt; &lt;code&gt;Markdown扩展语法&lt;/code&gt; 选项卡中启用它。然后使用 &lt;code&gt;$&lt;/code&gt; 来包裹TeX命令，例如： &lt;code&gt;$\lim_{x \to \infty} \exp(-x) = 0$&lt;/code&gt; 将呈现为LaTeX命令。&lt;/p&gt;
-&lt;p&gt;要触发内联公式的预览提示功能：输入“$”, 然后按 &lt;code&gt;ESC&lt;/code&gt; 键, 然后输入TeX命令, 预览工具提示将如下所示：
+&lt;p&gt;要触发内联公式的预览提示功能：输入“$”, 然后按 &lt;code&gt;ESC&lt;/code&gt; 键, 然后输入TeX命令, 预览工具提示将如下所示：&lt;br&gt;
 
 
 
