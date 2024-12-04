@@ -7,10 +7,18 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Mon, 03 Jun 2024 03:49:51 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Debian</title>
+        <link>https://logan.wssw.fun/tags/debian/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://logan.wssw.fun/tags/debian/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Linux</title>
         <link>https://logan.wssw.fun/tags/linux/</link>
-        <pubDate>Mon, 03 Jun 2024 03:49:51 +0800</pubDate>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0800</pubDate>
         
         <guid>https://logan.wssw.fun/tags/linux/</guid>
         <description></description>

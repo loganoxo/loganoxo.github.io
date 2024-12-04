@@ -20,7 +20,7 @@
   &lt;img src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg&#34;
        width=&#34;342&#34;
           height=&#34;512&#34;
-          srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w&#34;
+          srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu10637281029333424214.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu13988585915071694157.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -38,7 +38,7 @@
   &lt;img src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/b.jpg&#34;
        width=&#34;342&#34;
           height=&#34;512&#34;
-          srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu3d03a01dcc18bc5be0e67db3d8d209a6_20719_1024x0_resize_q75_box.jpg 1024w&#34;
+          srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu2149742280328242222.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu15015193516533271398.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -154,7 +154,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
   &lt;img src=&#34;https://logan.wssw.fun/img/ttt.jpg&#34;
        width=&#34;1050&#34;
           height=&#34;591&#34;
-          srcset=&#34;https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w&#34;
+          srcset=&#34;https://logan.wssw.fun/img/ttt_hu15221171164770818678.jpg 480w, https://logan.wssw.fun/img/ttt_hu17306501928335357851.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -196,7 +196,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;figure class=&#34;all-logan-image gallery-image&#34; style=&#34;flex-grow: 66;
   flex-basis: 160px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg&#34;width=&#34;342&#34;
-                height=&#34;512&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_1024x0_resize_q75_box.jpg 1024w&#34;
+                height=&#34;512&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu10637281029333424214.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu13988585915071694157.jpg 1024w&#34;
                 
                   class=&#34;gallery-image&#34;
                   data-flex-grow=&#34;66&#34;
@@ -210,7 +210,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
   &lt;/figure&gt;
 &lt;figure class=&#34;all-logan-image gallery-image&#34; style=&#34;flex-grow: 177;
   flex-basis: 426px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.wssw.fun/img/ttt.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.wssw.fun/img/ttt.jpg&#34;width=&#34;1050&#34;
-                height=&#34;591&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_480x0_resize_q75_box.jpg 480w, https://logan.wssw.fun/img/ttt_hu3b5707cfe09b0f44f7f47d44e645a017_158610_1024x0_resize_q75_box.jpg 1024w&#34;
+                height=&#34;591&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.wssw.fun/img/ttt_hu15221171164770818678.jpg 480w, https://logan.wssw.fun/img/ttt_hu17306501928335357851.jpg 1024w&#34;
                 
                   class=&#34;gallery-image&#34;
                   data-flex-grow=&#34;177&#34;
@@ -402,7 +402,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
     使用imgproc，不能使用网络链接
 &lt;/h2&gt;
               &lt;figure style=&#34;padding: 0.25rem; margin: 2rem 0;&#34;&gt;
-                &lt;img style=&#34;max-width: 100%; width: auto; height: auto;&#34; src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu3d03a01dcc18bc5be0e67db3d8d209a6_25255_200x0_resize_q75_box.jpg&#34; width=&#34;200&#34;
+                &lt;img style=&#34;max-width: 100%; width: auto; height: auto;&#34; src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu7097723908468382468.jpg&#34; width=&#34;200&#34;
                      height=&#34;299&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
                 &lt;figcaption&gt;
                   &lt;small&gt;
