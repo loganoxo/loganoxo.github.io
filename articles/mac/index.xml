@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>mac相关内容 on Logan的博客</title>
-        <link>https://logan.wssw.fun/articles/mac/</link>
+        <link>https://logan.qinhe.site/articles/mac/</link>
         <description>Recent content in mac相关内容 on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/articles/mac/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/articles/mac/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>mac使用homebrew</title>
-        <link>https://logan.wssw.fun/articles/mac/mac-brew/</link>
+        <link>https://logan.qinhe.site/articles/mac/mac-brew/</link>
         <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/mac/mac-brew/</guid>
+        <guid>https://logan.qinhe.site/articles/mac/mac-brew/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;查看brew的帮助&lt;/li&gt;
 &lt;/ul&gt;
@@ -526,10 +526,10 @@
         </item>
         <item>
         <title>mac使用scp</title>
-        <link>https://logan.wssw.fun/articles/mac/mac-scp/</link>
+        <link>https://logan.qinhe.site/articles/mac/mac-scp/</link>
         <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/mac/mac-scp/</guid>
+        <guid>https://logan.qinhe.site/articles/mac/mac-scp/</guid>
         <description>&lt;h1 id=&#34;1-隐藏取消隐藏文件&#34;&gt;
     &lt;a href=&#34;#1-%e9%9a%90%e8%97%8f%e5%8f%96%e6%b6%88%e9%9a%90%e8%97%8f%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 隐藏/取消隐藏文件

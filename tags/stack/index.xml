@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Stack on Logan的博客</title>
-        <link>https://logan.wssw.fun/tags/stack/</link>
+        <link>https://logan.qinhe.site/tags/stack/</link>
         <description>Recent content in Stack on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/stack/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/tags/stack/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>hugo博客-配置baseUrl的坑</title>
-        <link>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</link>
+        <link>https://logan.qinhe.site/articles/with-hugo/hugo-baseurl/</link>
         <pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/with-hugo/hugo-baseurl/</guid>
+        <guid>https://logan.qinhe.site/articles/with-hugo/hugo-baseurl/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_075.jpg" alt="Featured image of post hugo博客-配置baseUrl的坑" /&gt;&lt;h1 id=&#34;hugo博客-配置baseurl的坑&#34;&gt;
     &lt;a href=&#34;#hugo%e5%8d%9a%e5%ae%a2-%e9%85%8d%e7%bd%aebaseurl%e7%9a%84%e5%9d%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     hugo博客 配置baseUrl的坑
@@ -165,18 +165,18 @@
         </item>
         <item>
         <title>图片相关模板</title>
-        <link>https://logan.wssw.fun/articles/with-hugo/picture-example/</link>
+        <link>https://logan.qinhe.site/articles/with-hugo/picture-example/</link>
         <pubDate>Sat, 20 Apr 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/with-hugo/picture-example/</guid>
+        <guid>https://logan.qinhe.site/articles/with-hugo/picture-example/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_105.jpg" alt="Featured image of post 图片相关模板" /&gt;&lt;h2 id=&#34;放在同一个目录下的图片支持photoswipe图册&#34;&gt;
     &lt;a href=&#34;#%e6%94%be%e5%9c%a8%e5%90%8c%e4%b8%80%e4%b8%aa%e7%9b%ae%e5%bd%95%e4%b8%8b%e7%9a%84%e5%9b%be%e7%89%87%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     放在同一个目录下的图片，支持PhotoSwipe图册
 &lt;/h2&gt;&lt;p&gt;
-  &lt;img src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg&#34;
+  &lt;img src=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/a.jpg&#34;
        width=&#34;342&#34;
           height=&#34;512&#34;
-          srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu10637281029333424214.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu13988585915071694157.jpg 1024w&#34;
+          srcset=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/a_hu10637281029333424214.jpg 480w, https://logan.qinhe.site/articles/with-hugo/picture-example/a_hu13988585915071694157.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -191,10 +191,10 @@
 
 
   
-  &lt;img src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/b.jpg&#34;
+  &lt;img src=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/b.jpg&#34;
        width=&#34;342&#34;
           height=&#34;512&#34;
-          srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu2149742280328242222.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/b_hu15015193516533271398.jpg 1024w&#34;
+          srcset=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/b_hu2149742280328242222.jpg 480w, https://logan.qinhe.site/articles/with-hugo/picture-example/b_hu15015193516533271398.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -287,7 +287,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 &lt;/h1&gt;&lt;p&gt;
 
 
-    &lt;img src=&#34;https://logan.wssw.fun/photos/a.png&#34;
+    &lt;img src=&#34;https://logan.qinhe.site/photos/a.png&#34;
          width=&#34;200&#34;
             height=&#34;200&#34;
             
@@ -307,10 +307,10 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
     &lt;a href=&#34;#assets%e7%9b%ae%e5%bd%95%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     assets目录支持PhotoSwipe图册
 &lt;/h1&gt;&lt;p&gt;
-  &lt;img src=&#34;https://logan.wssw.fun/img/ttt.jpg&#34;
+  &lt;img src=&#34;https://logan.qinhe.site/img/ttt.jpg&#34;
        width=&#34;1050&#34;
           height=&#34;591&#34;
-          srcset=&#34;https://logan.wssw.fun/img/ttt_hu15221171164770818678.jpg 480w, https://logan.wssw.fun/img/ttt_hu17306501928335357851.jpg 1024w&#34;
+          srcset=&#34;https://logan.qinhe.site/img/ttt_hu15221171164770818678.jpg 480w, https://logan.qinhe.site/img/ttt_hu17306501928335357851.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -329,7 +329,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
     &lt;a href=&#34;#svg%e4%b8%8d%e6%94%af%e6%8c%81photoswipe%e5%9b%be%e5%86%8c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     svg不支持PhotoSwipe图册
 &lt;/h1&gt;&lt;p&gt;
-  &lt;img src=&#34;https://logan.wssw.fun/icons/back.svg&#34;
+  &lt;img src=&#34;https://logan.qinhe.site/icons/back.svg&#34;
        
           
           
@@ -351,8 +351,8 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 短代码的 页绑定图片 和 全局图片 都可以使用PhotoSwipe图册，网络链接不可以&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;figure class=&#34;all-logan-image gallery-image&#34; style=&#34;flex-grow: 66;
-  flex-basis: 160px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a.jpg&#34;width=&#34;342&#34;
-                height=&#34;512&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu10637281029333424214.jpg 480w, https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu13988585915071694157.jpg 1024w&#34;
+  flex-basis: 160px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/a.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/a.jpg&#34;width=&#34;342&#34;
+                height=&#34;512&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/a_hu10637281029333424214.jpg 480w, https://logan.qinhe.site/articles/with-hugo/picture-example/a_hu13988585915071694157.jpg 1024w&#34;
                 
                   class=&#34;gallery-image&#34;
                   data-flex-grow=&#34;66&#34;
@@ -365,8 +365,8 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
           &lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;figure class=&#34;all-logan-image gallery-image&#34; style=&#34;flex-grow: 177;
-  flex-basis: 426px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.wssw.fun/img/ttt.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.wssw.fun/img/ttt.jpg&#34;width=&#34;1050&#34;
-                height=&#34;591&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.wssw.fun/img/ttt_hu15221171164770818678.jpg 480w, https://logan.wssw.fun/img/ttt_hu17306501928335357851.jpg 1024w&#34;
+  flex-basis: 426px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.qinhe.site/img/ttt.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.qinhe.site/img/ttt.jpg&#34;width=&#34;1050&#34;
+                height=&#34;591&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34; decoding=&#34;async&#34;srcset=&#34;https://logan.qinhe.site/img/ttt_hu15221171164770818678.jpg 480w, https://logan.qinhe.site/img/ttt_hu17306501928335357851.jpg 1024w&#34;
                 
                   class=&#34;gallery-image&#34;
                   data-flex-grow=&#34;177&#34;
@@ -438,11 +438,11 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 
     &lt;div class=&#34;swiper-container&#34;&gt;
       &lt;div class=&#34;swiper-wrapper&#34;&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                      &lt;img src=&#34;https://logan.wssw.fun/photos/%e4%ba%ba%e7%89%a92.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+                      &lt;img src=&#34;https://logan.qinhe.site/photos/%e4%ba%ba%e7%89%a92.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
                     &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                      &lt;img src=&#34;https://logan.wssw.fun/photos/%e6%97%a5%e5%b8%b81.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+                      &lt;img src=&#34;https://logan.qinhe.site/photos/%e6%97%a5%e5%b8%b81.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
                     &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                      &lt;img src=&#34;https://logan.wssw.fun/photos/a.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+                      &lt;img src=&#34;https://logan.qinhe.site/photos/a.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
                     &lt;/div&gt;&lt;/div&gt;
       
       &lt;div class=&#34;swiper-pagination&#34;&gt;&lt;/div&gt;
@@ -558,7 +558,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
     使用imgproc，不能使用网络链接
 &lt;/h2&gt;
               &lt;figure style=&#34;padding: 0.25rem; margin: 2rem 0;&#34;&gt;
-                &lt;img style=&#34;max-width: 100%; width: auto; height: auto;&#34; src=&#34;https://logan.wssw.fun/articles/with-hugo/picture-example/a_hu7097723908468382468.jpg&#34; width=&#34;200&#34;
+                &lt;img style=&#34;max-width: 100%; width: auto; height: auto;&#34; src=&#34;https://logan.qinhe.site/articles/with-hugo/picture-example/a_hu7097723908468382468.jpg&#34; width=&#34;200&#34;
                      height=&#34;299&#34; alt=&#34;&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
                 &lt;figcaption&gt;
                   &lt;small&gt;
@@ -619,7 +619,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 
 
             &lt;script
-                    src=&#34;https://logan.wssw.fun/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js&#34;crossorigin=&#34;anonymous&#34;
+                    src=&#34;https://logan.qinhe.site/js/imgStatus.min.e35c8c5db5516c35823cd668bf90a707cca8c4c1d6137734abcc59f9b41445d4.js&#34;crossorigin=&#34;anonymous&#34;
                           defer
                           
                   &gt;
@@ -647,7 +647,7 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
 
 
             &lt;script
-                    src=&#34;https://logan.wssw.fun/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js&#34;crossorigin=&#34;anonymous&#34;
+                    src=&#34;https://logan.qinhe.site/js/view-image.min.7b0e1ef4d091c9cce129c81dd0c9ad9a84ec067e575b2f800d8c7b214e30e2ee.js&#34;crossorigin=&#34;anonymous&#34;
                           defer
                           
                   &gt;
@@ -772,10 +772,10 @@ Photo by &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/@mymind&#34; 
         </item>
         <item>
         <title>其他模板</title>
-        <link>https://logan.wssw.fun/articles/with-hugo/other-example/</link>
+        <link>https://logan.qinhe.site/articles/with-hugo/other-example/</link>
         <pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/with-hugo/other-example/</guid>
+        <guid>https://logan.qinhe.site/articles/with-hugo/other-example/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_057.jpg" alt="Featured image of post 其他模板" /&gt;&lt;h2 id=&#34;原生代码块&#34;&gt;
     &lt;a href=&#34;#%e5%8e%9f%e7%94%9f%e4%bb%a3%e7%a0%81%e5%9d%97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     原生代码块
@@ -1620,10 +1620,10 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
         </item>
         <item>
         <title>网站收录</title>
-        <link>https://logan.wssw.fun/articles/with-hugo/websearch/</link>
+        <link>https://logan.qinhe.site/articles/with-hugo/websearch/</link>
         <pubDate>Sat, 09 Apr 2022 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/with-hugo/websearch/</guid>
+        <guid>https://logan.qinhe.site/articles/with-hugo/websearch/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_099.jpg" alt="Featured image of post 网站收录" /&gt;&lt;blockquote&gt;
 &lt;p&gt;在google搜索页面输入“site:www.xx.com”就可以看到这个网页是否被google索引到，
 如果没被索引到在搜索结果页面就会直接提示你使用Google Search Console。
@@ -1717,10 +1717,10 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
         </item>
         <item>
         <title>A页面</title>
-        <link>https://logan.wssw.fun/articles/with-hugo/page-a/</link>
+        <link>https://logan.qinhe.site/articles/with-hugo/page-a/</link>
         <pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/with-hugo/page-a/</guid>
+        <guid>https://logan.qinhe.site/articles/with-hugo/page-a/</guid>
         <description>&lt;h1 id=&#34;a页面-包含b页面的超链接&#34;&gt;
     &lt;a href=&#34;#a%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%abb%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     A页面-包含B页面的超链接
@@ -1741,10 +1741,10 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
         </item>
         <item>
         <title>B页面</title>
-        <link>https://logan.wssw.fun/articles/with-hugo/page-b/</link>
+        <link>https://logan.qinhe.site/articles/with-hugo/page-b/</link>
         <pubDate>Wed, 09 Apr 2008 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/with-hugo/page-b/</guid>
+        <guid>https://logan.qinhe.site/articles/with-hugo/page-b/</guid>
         <description>&lt;h1 id=&#34;b页面-包含a页面的超链接&#34;&gt;
     &lt;a href=&#34;#b%e9%a1%b5%e9%9d%a2-%e5%8c%85%e5%90%aba%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%b6%85%e9%93%be%e6%8e%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     B页面-包含A页面的超链接

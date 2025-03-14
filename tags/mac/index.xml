@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Mac on Logan的博客</title>
-        <link>https://logan.wssw.fun/tags/mac/</link>
+        <link>https://logan.qinhe.site/tags/mac/</link>
         <description>Recent content in Mac on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Mon, 03 Jun 2024 03:49:51 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/mac/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 03 Jun 2024 03:49:51 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/tags/mac/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Vim使用教程</title>
-        <link>https://logan.wssw.fun/articles/linux/vim/</link>
+        <link>https://logan.qinhe.site/articles/linux/vim/</link>
         <pubDate>Mon, 03 Jun 2024 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/linux/vim/</guid>
+        <guid>https://logan.qinhe.site/articles/linux/vim/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_105.jpg" alt="Featured image of post Vim使用教程" /&gt;&lt;h2 id=&#34;目录&#34;&gt;
     &lt;a href=&#34;#%e7%9b%ae%e5%bd%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     目录
@@ -5376,10 +5376,10 @@
         </item>
         <item>
         <title>mac使用homebrew</title>
-        <link>https://logan.wssw.fun/articles/mac/mac-brew/</link>
+        <link>https://logan.qinhe.site/articles/mac/mac-brew/</link>
         <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/mac/mac-brew/</guid>
+        <guid>https://logan.qinhe.site/articles/mac/mac-brew/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;查看brew的帮助&lt;/li&gt;
 &lt;/ul&gt;
@@ -5893,10 +5893,10 @@
         </item>
         <item>
         <title>mac使用scp</title>
-        <link>https://logan.wssw.fun/articles/mac/mac-scp/</link>
+        <link>https://logan.qinhe.site/articles/mac/mac-scp/</link>
         <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/mac/mac-scp/</guid>
+        <guid>https://logan.qinhe.site/articles/mac/mac-scp/</guid>
         <description>&lt;h1 id=&#34;1-隐藏取消隐藏文件&#34;&gt;
     &lt;a href=&#34;#1-%e9%9a%90%e8%97%8f%e5%8f%96%e6%b6%88%e9%9a%90%e8%97%8f%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     1 隐藏/取消隐藏文件
@@ -5974,10 +5974,10 @@
         </item>
         <item>
         <title>ohmyzsh使用教程</title>
-        <link>https://logan.wssw.fun/articles/linux/ohmyzsh/</link>
+        <link>https://logan.qinhe.site/articles/linux/ohmyzsh/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/linux/ohmyzsh/</guid>
+        <guid>https://logan.qinhe.site/articles/linux/ohmyzsh/</guid>
         <description>&lt;h1 id=&#34;mac安装和配置ohmyzsh&#34;&gt;
     &lt;a href=&#34;#mac%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%aeohmyzsh&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     mac安装和配置ohmyzsh
@@ -7384,10 +7384,10 @@
         </item>
         <item>
         <title>ranger使用教程</title>
-        <link>https://logan.wssw.fun/articles/linux/ranger/</link>
+        <link>https://logan.qinhe.site/articles/linux/ranger/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/linux/ranger/</guid>
+        <guid>https://logan.qinhe.site/articles/linux/ranger/</guid>
         <description>
 &lt;div class=&#34;logan-code-block&#34;&gt;
     &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -7668,10 +7668,10 @@
         </item>
         <item>
         <title>Tmux使用教程</title>
-        <link>https://logan.wssw.fun/articles/linux/tmux/</link>
+        <link>https://logan.qinhe.site/articles/linux/tmux/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/linux/tmux/</guid>
+        <guid>https://logan.qinhe.site/articles/linux/tmux/</guid>
         <description>&lt;h1 id=&#34;一-tmux-简介&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80-tmux-%e7%ae%80%e4%bb%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一. tmux 简介
@@ -8998,10 +8998,10 @@
         </item>
         <item>
         <title>vim相关操作</title>
-        <link>https://logan.wssw.fun/articles/linux/vimother/</link>
+        <link>https://logan.qinhe.site/articles/linux/vimother/</link>
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/linux/vimother/</guid>
+        <guid>https://logan.qinhe.site/articles/linux/vimother/</guid>
         <description>&lt;h1 id=&#34;1-关于vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34;&gt;
     &lt;a href=&#34;#1-%e5%85%b3%e4%ba%8evimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id59&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

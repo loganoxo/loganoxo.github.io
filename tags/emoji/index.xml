@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Emoji on Logan的博客</title>
-        <link>https://logan.wssw.fun/tags/emoji/</link>
+        <link>https://logan.qinhe.site/tags/emoji/</link>
         <description>Recent content in Emoji on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/emoji/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/tags/emoji/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Emoji Support</title>
-        <link>https://logan.wssw.fun/example/emoji-support/</link>
+        <link>https://logan.qinhe.site/example/emoji-support/</link>
         <pubDate>Sat, 05 Mar 2022 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/example/emoji-support/</guid>
+        <guid>https://logan.qinhe.site/example/emoji-support/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_072.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;

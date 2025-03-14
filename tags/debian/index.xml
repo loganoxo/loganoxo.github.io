@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Debian on Logan的博客</title>
-        <link>https://logan.wssw.fun/tags/debian/</link>
+        <link>https://logan.qinhe.site/tags/debian/</link>
         <description>Recent content in Debian on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/tags/debian/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/tags/debian/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>debian的安装</title>
-        <link>https://logan.wssw.fun/articles/linux/debian/install/</link>
+        <link>https://logan.qinhe.site/articles/linux/debian/install/</link>
         <pubDate>Mon, 25 Nov 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/linux/debian/install/</guid>
+        <guid>https://logan.qinhe.site/articles/linux/debian/install/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/debiancover.png" alt="Featured image of post debian的安装" /&gt;&lt;h1 id=&#34;debian的安装&#34;&gt;
     &lt;a href=&#34;#debian%e7%9a%84%e5%ae%89%e8%a3%85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     debian的安装

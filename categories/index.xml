@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Logan的博客</title>
-        <link>https://logan.wssw.fun/categories/</link>
+        <link>https://logan.qinhe.site/categories/</link>
         <description>Recent content in Categories on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Maven</title>
-        <link>https://logan.wssw.fun/categories/maven/</link>
+        <link>https://logan.qinhe.site/categories/maven/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/maven/</guid>
+        <guid>https://logan.qinhe.site/categories/maven/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_063.jpg" alt="Featured image of post Maven" /&gt;</description>
         </item>
         <item>
         <title>Java</title>
-        <link>https://logan.wssw.fun/categories/java/</link>
+        <link>https://logan.qinhe.site/categories/java/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/java/</guid>
+        <guid>https://logan.qinhe.site/categories/java/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_077.jpg" alt="Featured image of post Java" /&gt;</description>
         </item>
         <item>
         <title>JVM</title>
-        <link>https://logan.wssw.fun/categories/jvm/</link>
+        <link>https://logan.qinhe.site/categories/jvm/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/jvm/</guid>
+        <guid>https://logan.qinhe.site/categories/jvm/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_062.jpg" alt="Featured image of post JVM" /&gt;</description>
         </item>
         <item>
         <title>Linux</title>
-        <link>https://logan.wssw.fun/categories/linux/</link>
+        <link>https://logan.qinhe.site/categories/linux/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/linux/</guid>
+        <guid>https://logan.qinhe.site/categories/linux/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_103.jpg" alt="Featured image of post Linux" /&gt;</description>
         </item>
         <item>
         <title>Mac</title>
-        <link>https://logan.wssw.fun/categories/mac/</link>
+        <link>https://logan.qinhe.site/categories/mac/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/mac/</guid>
+        <guid>https://logan.qinhe.site/categories/mac/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_091.jpg" alt="Featured image of post Mac" /&gt;</description>
         </item>
         <item>
         <title>Redis</title>
-        <link>https://logan.wssw.fun/categories/redis/</link>
+        <link>https://logan.qinhe.site/categories/redis/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/redis/</guid>
+        <guid>https://logan.qinhe.site/categories/redis/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_072.jpg" alt="Featured image of post Redis" /&gt;</description>
         </item>
         <item>
         <title>Spring Cloud</title>
-        <link>https://logan.wssw.fun/categories/spring-cloud/</link>
+        <link>https://logan.qinhe.site/categories/spring-cloud/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/spring-cloud/</guid>
+        <guid>https://logan.qinhe.site/categories/spring-cloud/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_095.jpg" alt="Featured image of post Spring Cloud" /&gt;</description>
         </item>
         <item>
         <title>博客搭建</title>
-        <link>https://logan.wssw.fun/categories/blog-build/</link>
+        <link>https://logan.qinhe.site/categories/blog-build/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/blog-build/</guid>
-        <description>&lt;img src="https://logan.wssw.fun/categories/blog-build/cover.jpg" alt="Featured image of post 博客搭建" /&gt;</description>
+        <guid>https://logan.qinhe.site/categories/blog-build/</guid>
+        <description>&lt;img src="https://logan.qinhe.site/categories/blog-build/cover.jpg" alt="Featured image of post 博客搭建" /&gt;</description>
         </item>
         <item>
         <title>测试用例</title>
-        <link>https://logan.wssw.fun/categories/test-example/</link>
+        <link>https://logan.qinhe.site/categories/test-example/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/test-example/</guid>
-        <description>&lt;img src="https://logan.wssw.fun/categories/test-example/cover.jpg" alt="Featured image of post 测试用例" /&gt;</description>
+        <guid>https://logan.qinhe.site/categories/test-example/</guid>
+        <description>&lt;img src="https://logan.qinhe.site/categories/test-example/cover.jpg" alt="Featured image of post 测试用例" /&gt;</description>
         </item>
         <item>
         <title>杂项</title>
-        <link>https://logan.wssw.fun/categories/misc/</link>
+        <link>https://logan.qinhe.site/categories/misc/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.wssw.fun/categories/misc/</guid>
+        <guid>https://logan.qinhe.site/categories/misc/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_026.jpg" alt="Featured image of post 杂项" /&gt;</description>
         </item>
         

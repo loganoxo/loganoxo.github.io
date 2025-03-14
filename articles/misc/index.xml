@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>杂项 on Logan的博客</title>
-        <link>https://logan.wssw.fun/articles/misc/</link>
+        <link>https://logan.qinhe.site/articles/misc/</link>
         <description>Recent content in 杂项 on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>logan</copyright>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.wssw.fun/articles/misc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://logan.qinhe.site/articles/misc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown语法指南</title>
-        <link>https://logan.wssw.fun/articles/misc/md/markdown-reference/</link>
+        <link>https://logan.qinhe.site/articles/misc/md/markdown-reference/</link>
         <pubDate>Fri, 10 May 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.wssw.fun/articles/misc/md/markdown-reference/</guid>
+        <guid>https://logan.qinhe.site/articles/misc/md/markdown-reference/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_043.jpg" alt="Featured image of post Markdown语法指南" /&gt;&lt;h1 id=&#34;markdown语法指南&#34;&gt;
     &lt;a href=&#34;#markdown%e8%af%ad%e6%b3%95%e6%8c%87%e5%8d%97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     Markdown语法指南
@@ -799,7 +799,7 @@ typora中需要Command(在Windows上：Ctrl) + 单击  将跳转到标题 &lt;co
 
 
 &lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://logan.wssw.fun/articles/with-hugo/page-a#title_a&#34; &gt;外部跳转
+&lt;a class=&#34;link&#34; href=&#34;https://logan.qinhe.site/articles/with-hugo/page-a#title_a&#34; &gt;外部跳转
 
 
 &lt;/a&gt;

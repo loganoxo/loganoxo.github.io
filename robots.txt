@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://logan.wssw.fun/sitemap.xml
+Sitemap: https://logan.qinhe.site/sitemap.xml
