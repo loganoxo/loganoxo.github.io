@@ -190,7 +190,7 @@
   &lt;img src=&#34;https://logan.qinhe.site/example/image-gallery/1.jpg&#34;
        width=&#34;2000&#34;
           height=&#34;1400&#34;
-          srcset=&#34;https://logan.qinhe.site/example/image-gallery/1_hu4574578169203714971.jpg 480w, https://logan.qinhe.site/example/image-gallery/1_hu9042511268598201431.jpg 1024w&#34;
+          srcset=&#34;https://logan.qinhe.site/example/image-gallery/1_hu_32a169d2afcbcc04.jpg 480w, https://logan.qinhe.site/example/image-gallery/1_hu_3a73c825de3f86b8.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -208,7 +208,7 @@
   &lt;img src=&#34;https://logan.qinhe.site/example/image-gallery/2.jpg&#34;
        width=&#34;780&#34;
           height=&#34;520&#34;
-          srcset=&#34;https://logan.qinhe.site/example/image-gallery/2_hu11519969274903682165.jpg 480w, https://logan.qinhe.site/example/image-gallery/2_hu4580368213684021866.jpg 1024w&#34;
+          srcset=&#34;https://logan.qinhe.site/example/image-gallery/2_hu_9e903f888323b6e6.jpg 480w, https://logan.qinhe.site/example/image-gallery/2_hu_46a75ce2cff96314.jpg 1024w&#34;
        loading=&#34;lazy&#34;
        decoding=&#34;async&#34;
           
@@ -255,7 +255,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;figure class=&#34;all-logan-image gallery-image&#34; style=&#34;flex-grow: 142;
   flex-basis: 342px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.qinhe.site/example/image-gallery/1.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.qinhe.site/example/image-gallery/1.jpg&#34;width=&#34;2000&#34;
-                height=&#34;1400&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34;srcset=&#34;https://logan.qinhe.site/example/image-gallery/1_hu4574578169203714971.jpg 480w, https://logan.qinhe.site/example/image-gallery/1_hu9042511268598201431.jpg 1024w&#34;
+                height=&#34;1400&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34;srcset=&#34;https://logan.qinhe.site/example/image-gallery/1_hu_32a169d2afcbcc04.jpg 480w, https://logan.qinhe.site/example/image-gallery/1_hu_3a73c825de3f86b8.jpg 1024w&#34;
                 
                   class=&#34;gallery-image&#34;
                   data-flex-grow=&#34;142&#34;
@@ -269,7 +269,7 @@
   &lt;/figure&gt;
 &lt;figure class=&#34;all-logan-image gallery-image&#34; style=&#34;flex-grow: 177;
   flex-basis: 426px;&#34;&gt;&lt;a style=&#34;display: inline-block;&#34; href=&#34;https://logan.qinhe.site/img/ttt.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://logan.qinhe.site/img/ttt.jpg&#34;width=&#34;1050&#34;
-                height=&#34;591&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34;srcset=&#34;https://logan.qinhe.site/img/ttt_hu15221171164770818678.jpg 480w, https://logan.qinhe.site/img/ttt_hu17306501928335357851.jpg 1024w&#34;
+                height=&#34;591&#34; style=&#34;height: 60vh ! important&#34;  style=&#34;max-width: 60% &#34;  loading=&#34;lazy&#34;srcset=&#34;https://logan.qinhe.site/img/ttt_hu_5be5a0f8be09200.jpg 480w, https://logan.qinhe.site/img/ttt_hu_6d9e8dc562661acb.jpg 1024w&#34;
                 
                   class=&#34;gallery-image&#34;
                   data-flex-grow=&#34;177&#34;
@@ -505,7 +505,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;- features = [&amp;#34;dynamic&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;

@@ -1621,7 +1621,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/.undodir ~/.vim
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install vim
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fLo ~/.vim/autoload/plug.vim --create-dirs &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 测试 :PlugStatus :PlugInstall  :PlugClean&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim -c &lt;span class=&#34;s1&#34;&gt;&amp;#39;:PlugStatus&amp;#39;&lt;/span&gt; -c &lt;span class=&#34;s1&#34;&gt;&amp;#39;:PlugInstall&amp;#39;&lt;/span&gt; -c &lt;span class=&#34;s1&#34;&gt;&amp;#39;:PlugClean&amp;#39;&lt;/span&gt; -c &lt;span class=&#34;s1&#34;&gt;&amp;#39;:qa!&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1840,9 +1840,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add the repository to Apt sources:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;s2&#34;&gt;&amp;#34;deb [arch=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;dpkg --print-architecture&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;s2&#34;&gt;&amp;#34;deb [arch=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;dpkg --print-architecture&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;. /etc/os-release &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$VERSION_CODENAME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; stable&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  sudo tee /etc/apt/sources.list.d/docker.list &amp;gt; /dev/null
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  sudo tee /etc/apt/sources.list.d/docker.list &amp;gt; /dev/null
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get update
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install the Docker packages&lt;/span&gt;
@@ -2010,7 +2010,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 可断点上传&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;upload_offset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -I -s http://127.0.0.1:5000/file &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;\r&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed -n &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/content-length: //p&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dd &lt;span class=&#34;nv&#34;&gt;skip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$upload_offset&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;file &lt;span class=&#34;nv&#34;&gt;status&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;none &lt;span class=&#34;nv&#34;&gt;ibs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  curl -X PATCH -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;X-Update-Range: append&amp;#34;&lt;/span&gt; --data-binary @- http://127.0.0.1:5000/file&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  curl -X PATCH -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;X-Update-Range: append&amp;#34;&lt;/span&gt; --data-binary @- http://127.0.0.1:5000/file&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2084,12 +2084,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ufw allow &lt;span class=&#34;m&#34;&gt;12786&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -v ~/share/filebrowser/files:/srv &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -v ~/share/filebrowser/filebrowser.db:/database/filebrowser.db &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -v ~/share/filebrowser/filebrowser.json:/.filebrowser.json &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -u &lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;id -u&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;:&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;id -g&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -p 12786:80 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    filebrowser/filebrowser
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -v ~/share/filebrowser/files:/srv &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -v ~/share/filebrowser/filebrowser.db:/database/filebrowser.db &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -v ~/share/filebrowser/filebrowser.json:/.filebrowser.json &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -u &lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;id -u&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;:&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;id -g&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -p 12786:80 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    filebrowser/filebrowser
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 默认情况下，镜像里已经有一个包含一些默认值的配置文件，因此您只需挂载根目录和数据库即可; 默认配置文件:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# https://github.com/filebrowser/filebrowser/blob/master/docker/root/defaults/settings.json&lt;/span&gt;
@@ -2563,8 +2563,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ufw allow from any to any port 19000,19001 proto tcp
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d -p 19000:9000 -p 19001:9001 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -v ~/software/minio/share:/data &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  quay.io/minio/minio server /data --console-address &lt;span class=&#34;s2&#34;&gt;&amp;#34;:9001&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  -v ~/software/minio/share:/data &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  quay.io/minio/minio server /data --console-address &lt;span class=&#34;s2&#34;&gt;&amp;#34;:9001&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://ip:19001    minioadmin:minioadmin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -8287,7 +8287,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello before sleep&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello before sleep&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sleep &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello after sleep&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -11422,8 +11422,8 @@
         <pubDate>Wed, 03 May 2023 03:49:51 +0800</pubDate>
         
         <guid>https://logan.qinhe.site/articles/linux/vimother/</guid>
-        <description>&lt;h1 id=&#34;1-关于vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34;&gt;
-    &lt;a href=&#34;#1-%e5%85%b3%e4%ba%8evimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid59&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+        <description>&lt;h1 id=&#34;1-关于vim&#34;&gt;
+    &lt;a href=&#34;#1-%e5%85%b3%e4%ba%8evim&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id59&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;1. 关于Vim
 
@@ -11444,8 +11444,8 @@
 
 
 下第二强大的编辑器。 虽然emacs是公认的世界第一，我认为使用emacs并没有使用vi进行编辑来得高效。 如果是初学vi，运行一下vimtutor是个聪明的决定。 （如果你的系统环境不是中文，而你想使用中文的vimtutor，就运行vimtutor zh）&lt;/p&gt;
-&lt;h2 id=&#34;11-vim的几种模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34;&gt;
-    &lt;a href=&#34;#11-vim%e7%9a%84%e5%87%a0%e7%a7%8d%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid60&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;11-vim的几种模式&#34;&gt;
+    &lt;a href=&#34;#11-vim%e7%9a%84%e5%87%a0%e7%a7%8d%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id60&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;1.1 Vim的几种模式
 
@@ -11462,8 +11462,8 @@
 &lt;li&gt;可视模式：正常模式下按v可以进入可视模式， 在可视模式下，移动光标可以选择文本。按V进入可视行模式， 总是整行整行的选中。ctrl+v进入可视块模式。&lt;/li&gt;
 &lt;li&gt;替换模式：正常模式下，按R进入。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2-启动vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid61&#34;&gt;
-    &lt;a href=&#34;#2-%e5%90%af%e5%8a%a8vimhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid61&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;2-启动vim&#34;&gt;
+    &lt;a href=&#34;#2-%e5%90%af%e5%8a%a8vim&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id61&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;2. 启动Vim
 
@@ -11485,8 +11485,8 @@
 &lt;li&gt;vim +/string file: 打开file，并将光标停留在第一个找到的string上。&lt;/li&gt;
 &lt;li&gt;vim –remote file: 用已有的vim进程打开指定的文件。 如果你不想启用多个vim会话，这个很有用。但要注意， 如果你用vim，会寻找名叫VIM的服务器；如果你已经有一个gvim在运行了， 你可以用gvim –remote file在已有的gvim中打开文件。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;3-文档操作httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid62&#34;&gt;
-    &lt;a href=&#34;#3-%e6%96%87%e6%a1%a3%e6%93%8d%e4%bd%9chttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid62&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;3-文档操作&#34;&gt;
+    &lt;a href=&#34;#3-%e6%96%87%e6%a1%a3%e6%93%8d%e4%bd%9c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id62&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;3. 文档操作
 
@@ -11526,8 +11526,8 @@
 &lt;li&gt;:Sex – 水平分割一个窗口，浏览文件系统；&lt;/li&gt;
 &lt;li&gt;:Vex – 垂直分割一个窗口，浏览文件系统；&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;4-光标的移动httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid63&#34;&gt;
-    &lt;a href=&#34;#4-%e5%85%89%e6%a0%87%e7%9a%84%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid63&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;4-光标的移动&#34;&gt;
+    &lt;a href=&#34;#4-%e5%85%89%e6%a0%87%e7%9a%84%e7%a7%bb%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id63&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4. 光标的移动
 
@@ -11538,8 +11538,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;41-基本移动httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34;&gt;
-    &lt;a href=&#34;#41-%e5%9f%ba%e6%9c%ac%e7%a7%bb%e5%8a%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid64&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;41-基本移动&#34;&gt;
+    &lt;a href=&#34;#41-%e5%9f%ba%e6%9c%ac%e7%a7%bb%e5%8a%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.1 基本移动
 
@@ -11596,8 +11596,8 @@
 &lt;li&gt;gg: 到文件头部。&lt;/li&gt;
 &lt;li&gt;G: 到文件尾部。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-翻屏httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid65&#34;&gt;
-    &lt;a href=&#34;#42-%e7%bf%bb%e5%b1%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid65&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;42-翻屏&#34;&gt;
+    &lt;a href=&#34;#42-%e7%bf%bb%e5%b1%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id65&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.2 翻屏
 
@@ -11620,8 +11620,8 @@
 &lt;li&gt;zt: 将当前行移动到屏幕顶端。&lt;/li&gt;
 &lt;li&gt;zb: 将当前行移动到屏幕底端。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;43-标记httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid66&#34;&gt;
-    &lt;a href=&#34;#43-%e6%a0%87%e8%ae%b0httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid66&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;43-标记&#34;&gt;
+    &lt;a href=&#34;#43-%e6%a0%87%e8%ae%b0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id66&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;4.3 标记
 
@@ -11649,8 +11649,8 @@
 &lt;li&gt;:delmarks! – 删除当前缓冲区的所有标记。&lt;/li&gt;
 &lt;li&gt;:help mark-motions 查看更多关于mark的知识。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;5-插入文本httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid67&#34;&gt;
-    &lt;a href=&#34;#5-%e6%8f%92%e5%85%a5%e6%96%87%e6%9c%achttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid67&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;5-插入文本&#34;&gt;
+    &lt;a href=&#34;#5-%e6%8f%92%e5%85%a5%e6%96%87%e6%9c%ac&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id67&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5. 插入文本
 
@@ -11661,8 +11661,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;51-基本插入httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34;&gt;
-    &lt;a href=&#34;#51-%e5%9f%ba%e6%9c%ac%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid68&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;51-基本插入&#34;&gt;
+    &lt;a href=&#34;#51-%e5%9f%ba%e6%9c%ac%e6%8f%92%e5%85%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id68&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5.1 基本插入
 
@@ -11685,8 +11685,8 @@
 &lt;li&gt;:[n]r filename在第n行插入另一个文件的内容。&lt;/li&gt;
 &lt;li&gt;:r !date 在光标处插入当前日期与时间。同理，:r !command可以将其它shell命令的输出插入当前文档。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;52-改写插入httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid69&#34;&gt;
-    &lt;a href=&#34;#52-%e6%94%b9%e5%86%99%e6%8f%92%e5%85%a5httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid69&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;52-改写插入&#34;&gt;
+    &lt;a href=&#34;#52-%e6%94%b9%e5%86%99%e6%8f%92%e5%85%a5&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id69&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;5.2 改写插入
 
@@ -11706,8 +11706,8 @@
 &lt;li&gt;[n]S: 删除指定数目的行，并以所输入文本代替之。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;注意，类似cnw,dnw,ynw的形式同样可以写为ncw,ndw,nyw。&lt;/p&gt;
-&lt;h1 id=&#34;6-剪切复制和寄存器httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid70&#34;&gt;
-    &lt;a href=&#34;#6-%e5%89%aa%e5%88%87%e5%a4%8d%e5%88%b6%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid70&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;6-剪切复制和寄存器&#34;&gt;
+    &lt;a href=&#34;#6-%e5%89%aa%e5%88%87%e5%a4%8d%e5%88%b6%e5%92%8c%e5%af%84%e5%ad%98%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id70&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6. 剪切复制和寄存器
 
@@ -11718,8 +11718,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;61-剪切和复制粘贴httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34;&gt;
-    &lt;a href=&#34;#61-%e5%89%aa%e5%88%87%e5%92%8c%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid71&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;61-剪切和复制粘贴&#34;&gt;
+    &lt;a href=&#34;#61-%e5%89%aa%e5%88%87%e5%92%8c%e5%a4%8d%e5%88%b6%e7%b2%98%e8%b4%b4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id71&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.1 剪切和复制、粘贴
 
@@ -11752,8 +11752,8 @@
 &lt;li&gt;p: 在光标之后粘贴。&lt;/li&gt;
 &lt;li&gt;P: 在光标之前粘贴。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;62-文本对象httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid72&#34;&gt;
-    &lt;a href=&#34;#62-%e6%96%87%e6%9c%ac%e5%af%b9%e8%b1%a1httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid72&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;62-文本对象&#34;&gt;
+    &lt;a href=&#34;#62-%e6%96%87%e6%9c%ac%e5%af%b9%e8%b1%a1&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id72&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.2 文本对象
 
@@ -11771,8 +11771,8 @@
 &lt;li&gt;ab：一块（包含在圆括号中的）。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;y, d, c, v都可以跟文本对象。&lt;/p&gt;
-&lt;h2 id=&#34;63-寄存器httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid73&#34;&gt;
-    &lt;a href=&#34;#63-%e5%af%84%e5%ad%98%e5%99%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid73&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;63-寄存器&#34;&gt;
+    &lt;a href=&#34;#63-%e5%af%84%e5%ad%98%e5%99%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id73&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;6.3 寄存器
 
@@ -11791,8 +11791,8 @@
 &lt;li&gt;“*：当前选择缓冲区，”*yy把当前行的内容放入当前选择缓冲区。&lt;/li&gt;
 &lt;li&gt;“+：系统剪贴板。”+yy把当前行的内容放入系统剪贴板。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;7-查找与替换httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid74&#34;&gt;
-    &lt;a href=&#34;#7-%e6%9f%a5%e6%89%be%e4%b8%8e%e6%9b%bf%e6%8d%a2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid74&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;7-查找与替换&#34;&gt;
+    &lt;a href=&#34;#7-%e6%9f%a5%e6%89%be%e4%b8%8e%e6%9b%bf%e6%8d%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id74&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7. 查找与替换
 
@@ -11803,8 +11803,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;71-查找httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34;&gt;
-    &lt;a href=&#34;#71-%e6%9f%a5%e6%89%behttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid75&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;71-查找&#34;&gt;
+    &lt;a href=&#34;#71-%e6%9f%a5%e6%89%be&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id75&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.1 查找
 
@@ -11835,8 +11835,8 @@
 &lt;p&gt;:vim/^d{1,}./ %&lt;/p&gt;
 &lt;p&gt;然后用:cw或:copen查看结果，可以用C-w H把quickfix窗口移到左侧，&lt;/p&gt;
 &lt;p&gt;就更像个目录了。&lt;/p&gt;
-&lt;h2 id=&#34;72-替换httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid76&#34;&gt;
-    &lt;a href=&#34;#72-%e6%9b%bf%e6%8d%a2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid76&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;72-替换&#34;&gt;
+    &lt;a href=&#34;#72-%e6%9b%bf%e6%8d%a2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id76&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.2 替换
 
@@ -11869,8 +11869,8 @@
 &lt;li&gt;.: 当前行&lt;/li&gt;
 &lt;li&gt;%: 所有行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;73-正则表达式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid77&#34;&gt;
-    &lt;a href=&#34;#73-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid77&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;73-正则表达式&#34;&gt;
+    &lt;a href=&#34;#73-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id77&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;7.3 正则表达式
 
@@ -11894,8 +11894,8 @@
 &lt;li&gt;**: 当前目录下的所有子目录。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;:help pattern得到更多帮助。&lt;/p&gt;
-&lt;h1 id=&#34;9-编辑多个文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid82&#34;&gt;
-    &lt;a href=&#34;#9-%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid82&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;9-编辑多个文件&#34;&gt;
+    &lt;a href=&#34;#9-%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9. 编辑多个文件
 
@@ -11906,8 +11906,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;91-一次编辑多个文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34;&gt;
-    &lt;a href=&#34;#91-%e4%b8%80%e6%ac%a1%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;91-一次编辑多个文件&#34;&gt;
+    &lt;a href=&#34;#91-%e4%b8%80%e6%ac%a1%e7%bc%96%e8%be%91%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id83&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.1 一次编辑多个文件
 
@@ -11954,8 +11954,8 @@
 &lt;li&gt;vi -o filenames 在水平分割的多个窗口中编辑多个文件。&lt;/li&gt;
 &lt;li&gt;vi -O filenames 在垂直分割的多个窗口中编辑多个文件。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;92-多标签编辑httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid84&#34;&gt;
-    &lt;a href=&#34;#92-%e5%a4%9a%e6%a0%87%e7%ad%be%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid84&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;92-多标签编辑&#34;&gt;
+    &lt;a href=&#34;#92-%e5%a4%9a%e6%a0%87%e7%ad%be%e7%bc%96%e8%be%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id84&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.2 多标签编辑
 
@@ -11979,8 +11979,8 @@
 &lt;li&gt;:tabs – 列出所有的标签页和它们包含的窗口。&lt;/li&gt;
 &lt;li&gt;:tabm[ove] [N] – 移动标签页，移动到第N个标签页之后。 如 tabm 0 当前标签页，就会变成第一个标签页。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;93-缓冲区httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid85&#34;&gt;
-    &lt;a href=&#34;#93-%e7%bc%93%e5%86%b2%e5%8c%bahttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid85&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;93-缓冲区&#34;&gt;
+    &lt;a href=&#34;#93-%e7%bc%93%e5%86%b2%e5%8c%ba&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id85&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;9.3 缓冲区
 
@@ -12002,8 +12002,8 @@
 &lt;li&gt;:nbd(elete) – 删除第n个缓冲区，并未真正删除，还在unlisted列表中。&lt;/li&gt;
 &lt;li&gt;:ba[ll] – 把所有的缓冲区在当前页中打开，每个缓冲区占一个窗口。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;10-分屏编辑httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid86&#34;&gt;
-    &lt;a href=&#34;#10-%e5%88%86%e5%b1%8f%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;10-分屏编辑&#34;&gt;
+    &lt;a href=&#34;#10-%e5%88%86%e5%b1%8f%e7%bc%96%e8%be%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id86&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10. 分屏编辑
 
@@ -12018,8 +12018,8 @@
 &lt;li&gt;vim -o file1 file2:水平分割窗口，同时打开file1和file2&lt;/li&gt;
 &lt;li&gt;vim -O file1 file2:垂直分割窗口，同时打开file1和file2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;101-水平分割httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid87&#34;&gt;
-    &lt;a href=&#34;#101-%e6%b0%b4%e5%b9%b3%e5%88%86%e5%89%b2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;101-水平分割&#34;&gt;
+    &lt;a href=&#34;#101-%e6%b0%b4%e5%b9%b3%e5%88%86%e5%89%b2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id87&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.1 水平分割
 
@@ -12038,8 +12038,8 @@
 &lt;li&gt;ctrl+w f –水平分割出一个窗口，并在新窗口打开名称为光标所在词的文件 。&lt;/li&gt;
 &lt;li&gt;C-w C-^ – 水平分割一个窗口，打开刚才编辑的文件。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;102-垂直分割httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid88&#34;&gt;
-    &lt;a href=&#34;#102-%e5%9e%82%e7%9b%b4%e5%88%86%e5%89%b2httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid88&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;102-垂直分割&#34;&gt;
+    &lt;a href=&#34;#102-%e5%9e%82%e7%9b%b4%e5%88%86%e5%89%b2&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id88&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.2 垂直分割
 
@@ -12055,8 +12055,8 @@
 &lt;li&gt;:[N]vne[w] – 垂直分割出一个新窗口。&lt;/li&gt;
 &lt;li&gt;:vertical 水平分割的命令： 相应的垂直分割。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;103-关闭子窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid89&#34;&gt;
-    &lt;a href=&#34;#103-%e5%85%b3%e9%97%ad%e5%ad%90%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid89&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;103-关闭子窗口&#34;&gt;
+    &lt;a href=&#34;#103-%e5%85%b3%e9%97%ad%e5%ad%90%e7%aa%97%e5%8f%a3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.3 关闭子窗口
 
@@ -12073,8 +12073,8 @@
 &lt;li&gt;:only – 只保留当前窗口，关闭其它窗口。(CTRL-W o)&lt;/li&gt;
 &lt;li&gt;:close – 关闭当前窗口，CTRL-W c能实现同样的功能。 (象 :q :x同样工作 )&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;104-调整窗口大小httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid90&#34;&gt;
-    &lt;a href=&#34;#104-%e8%b0%83%e6%95%b4%e7%aa%97%e5%8f%a3%e5%a4%a7%e5%b0%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid90&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;104-调整窗口大小&#34;&gt;
+    &lt;a href=&#34;#104-%e8%b0%83%e6%95%b4%e7%aa%97%e5%8f%a3%e5%a4%a7%e5%b0%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.4 调整窗口大小
 
@@ -12096,8 +12096,8 @@
 &lt;li&gt;ctrl+w &amp;gt; –当前窗口增宽一列。也可以用n增宽n列。&lt;/li&gt;
 &lt;li&gt;ctrl+w | –当前窗口尽可能的宽。也可以用n设定列数。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;105-切换和移动窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid91&#34;&gt;
-    &lt;a href=&#34;#105-%e5%88%87%e6%8d%a2%e5%92%8c%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;105-切换和移动窗口&#34;&gt;
+    &lt;a href=&#34;#105-%e5%88%87%e6%8d%a2%e5%92%8c%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id91&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;10.5 切换和移动窗口
 
@@ -12118,8 +12118,8 @@
 &lt;li&gt;ctrl+w r：旋转窗口的位置。&lt;/li&gt;
 &lt;li&gt;ctrl+w T: 将当前的窗口移动到新的标签页上。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;11-快速编辑httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid92&#34;&gt;
-    &lt;a href=&#34;#11-%e5%bf%ab%e9%80%9f%e7%bc%96%e8%be%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid92&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;11-快速编辑&#34;&gt;
+    &lt;a href=&#34;#11-%e5%bf%ab%e9%80%9f%e7%bc%96%e8%be%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id92&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11. 快速编辑
 
@@ -12130,8 +12130,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;111-改变大小写httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34;&gt;
-    &lt;a href=&#34;#111-%e6%94%b9%e5%8f%98%e5%a4%a7%e5%b0%8f%e5%86%99httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid93&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;111-改变大小写&#34;&gt;
+    &lt;a href=&#34;#111-%e6%94%b9%e5%8f%98%e5%a4%a7%e5%b0%8f%e5%86%99&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.1 改变大小写
 
@@ -12147,8 +12147,8 @@
 &lt;li&gt;可视模式下的U或u：把选中的文本变为大写或小写。&lt;/li&gt;
 &lt;li&gt;gu(U)接范围（如$，或G），可以把从光标当前位置到指定位置之间字母全部 转换成小写或大写。如ggguG，就是把开头到最后一行之间的字母全部变为小 写。再如gu5j，把当前行和下面四行全部变成小写。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;112-替换normal模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid94&#34;&gt;
-    &lt;a href=&#34;#112-%e6%9b%bf%e6%8d%a2normal%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid94&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;112-替换normal模式&#34;&gt;
+    &lt;a href=&#34;#112-%e6%9b%bf%e6%8d%a2normal%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id94&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.2 替换（normal模式）
 
@@ -12163,8 +12163,8 @@
 &lt;li&gt;r: 替换光标处的字符，同样支持汉字。&lt;/li&gt;
 &lt;li&gt;R: 进入替换模式，按esc回到正常模式。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;113-撤消与重做normal模式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid95&#34;&gt;
-    &lt;a href=&#34;#113-%e6%92%a4%e6%b6%88%e4%b8%8e%e9%87%8d%e5%81%9anormal%e6%a8%a1%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;113-撤消与重做normal模式&#34;&gt;
+    &lt;a href=&#34;#113-%e6%92%a4%e6%b6%88%e4%b8%8e%e9%87%8d%e5%81%9anormal%e6%a8%a1%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id95&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.3 撤消与重做（normal模式）
 
@@ -12184,8 +12184,8 @@
 &lt;li&gt;:earlier 4m – 回到4分钟前&lt;/li&gt;
 &lt;li&gt;:later 55s – 前进55秒&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;114-宏httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid96&#34;&gt;
-    &lt;a href=&#34;#114-%e5%ae%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid96&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;114-宏&#34;&gt;
+    &lt;a href=&#34;#114-%e5%ae%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id96&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;11.4 宏
 
@@ -12202,8 +12202,8 @@
 &lt;li&gt;q：停止录制&lt;/li&gt;
 &lt;li&gt;@a：播放宏a&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;12-编辑特殊文件httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid97&#34;&gt;
-    &lt;a href=&#34;#12-%e7%bc%96%e8%be%91%e7%89%b9%e6%ae%8a%e6%96%87%e4%bb%b6httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid97&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;12-编辑特殊文件&#34;&gt;
+    &lt;a href=&#34;#12-%e7%bc%96%e8%be%91%e7%89%b9%e6%ae%8a%e6%96%87%e4%bb%b6&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12. 编辑特殊文件
 
@@ -12214,8 +12214,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;121-文件加解密httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34;&gt;
-    &lt;a href=&#34;#121-%e6%96%87%e4%bb%b6%e5%8a%a0%e8%a7%a3%e5%af%86httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;121-文件加解密&#34;&gt;
+    &lt;a href=&#34;#121-%e6%96%87%e4%bb%b6%e5%8a%a0%e8%a7%a3%e5%af%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id98&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.1 文件加解密
 
@@ -12241,8 +12241,8 @@
 
 
  滇狐总结的比较高级的vi技巧。&lt;/p&gt;
-&lt;h2 id=&#34;122-文件的编码httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34;&gt;
-    &lt;a href=&#34;#122-%e6%96%87%e4%bb%b6%e7%9a%84%e7%bc%96%e7%a0%81httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid99&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;122-文件的编码&#34;&gt;
+    &lt;a href=&#34;#122-%e6%96%87%e4%bb%b6%e7%9a%84%e7%bc%96%e7%a0%81&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id99&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.2 文件的编码
 
@@ -12269,8 +12269,8 @@
 
 
 &lt;/p&gt;
-&lt;h2 id=&#34;123-文件格式httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34;&gt;
-    &lt;a href=&#34;#123-%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8fhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid100&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;123-文件格式&#34;&gt;
+    &lt;a href=&#34;#123-%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8f&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id100&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;12.3 文件格式
 
@@ -12288,8 +12288,8 @@
 &lt;li&gt;:set ff，显示当前文件的格式。&lt;/li&gt;
 &lt;li&gt;在vimrc中添加set fileformats=unix,dos,mac，让vim自动识别文件格式。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;13-编程辅助httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid101&#34;&gt;
-    &lt;a href=&#34;#13-%e7%bc%96%e7%a8%8b%e8%be%85%e5%8a%a9httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid101&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;13-编程辅助&#34;&gt;
+    &lt;a href=&#34;#13-%e7%bc%96%e7%a8%8b%e8%be%85%e5%8a%a9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id101&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13. 编程辅助
 
@@ -12300,8 +12300,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;131-一些按键httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34;&gt;
-    &lt;a href=&#34;#131-%e4%b8%80%e4%ba%9b%e6%8c%89%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid102&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;131-一些按键&#34;&gt;
+    &lt;a href=&#34;#131-%e4%b8%80%e4%ba%9b%e6%8c%89%e9%94%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id102&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.1 一些按键
 
@@ -12342,8 +12342,8 @@
 &lt;li&gt;ci&amp;lt;, di&amp;lt;, yi&amp;lt;：修改、剪切或复制&amp;lt;&amp;gt;之间的内容。&lt;/li&gt;
 &lt;li&gt;ca&amp;lt;, da&amp;lt;, ya&amp;lt;：修改、剪切或复制&amp;lt;&amp;gt;之间的内容，包含&amp;lt;&amp;gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;132-ctagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid103&#34;&gt;
-    &lt;a href=&#34;#132-ctagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid103&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;132-ctags&#34;&gt;
+    &lt;a href=&#34;#132-ctags&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id103&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.2 ctags
 
@@ -12377,8 +12377,8 @@
 &lt;li&gt;:tag xyz&lt;tab&gt; – 补齐以xyz开头的tag名，继续按tab键，会显示其他的。&lt;/li&gt;
 &lt;li&gt;:tag /xyz&lt;tab&gt; – 会用名字中含有xyz的tag名补全。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;133-cscopehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid104&#34;&gt;
-    &lt;a href=&#34;#133-cscopehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid104&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;133-cscope&#34;&gt;
+    &lt;a href=&#34;#133-cscope&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id104&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.3 cscope
 
@@ -12395,8 +12395,8 @@
 &lt;li&gt;:cs find c func – 查找func在哪些地方被调用&lt;/li&gt;
 &lt;li&gt;:cw – 打开quickfix窗口查看结果&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;134-gtagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid105&#34;&gt;
-    &lt;a href=&#34;#134-gtagshttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid105&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;134-gtags&#34;&gt;
+    &lt;a href=&#34;#134-gtags&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.4 gtags
 
@@ -12416,8 +12416,8 @@
 &lt;li&gt;:Gtags -f filename 显示 filename 中的函数列表。 你可以用 :Gtags -f % 显示当前文件。&lt;/li&gt;
 &lt;li&gt;:Gtags -P pattern 显示路径中包含特定模式的文件。 如 :Gtags -P .h$ 显示所有头文件， :Gtags -P /vm/ 显示vm目录下的文件。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;135-编译httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid106&#34;&gt;
-    &lt;a href=&#34;#135-%e7%bc%96%e8%af%91httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid106&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;135-编译&#34;&gt;
+    &lt;a href=&#34;#135-%e7%bc%96%e8%af%91&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id106&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.5 编译
 
@@ -12485,8 +12485,8 @@
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;%f表示文件名，%l表示行号， %m表示错误信息，其它的还不能理解。 请参考 :help errorformat。&lt;/p&gt;
-&lt;h2 id=&#34;136-快速修改窗口httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34;&gt;
-    &lt;a href=&#34;#136-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9%e7%aa%97%e5%8f%a3httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid107&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;136-快速修改窗口&#34;&gt;
+    &lt;a href=&#34;#136-%e5%bf%ab%e9%80%9f%e4%bf%ae%e6%94%b9%e7%aa%97%e5%8f%a3&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id107&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.6 快速修改窗口
 
@@ -12509,8 +12509,8 @@
 &lt;li&gt;:cp – 定位到上一个错误。&lt;/li&gt;
 &lt;li&gt;:cr – 定位到第一个错误。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;137-自动补全httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid108&#34;&gt;
-    &lt;a href=&#34;#137-%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid108&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;137-自动补全&#34;&gt;
+    &lt;a href=&#34;#137-%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id108&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.7 自动补全
 
@@ -12539,8 +12539,8 @@
 &lt;li&gt;C-e 退出下拉菜单，并退回到原来录入的文字；&lt;/li&gt;
 &lt;li&gt;C-y 退出下拉菜单，并接受当前选项。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;138-多行缩进缩出httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid109&#34;&gt;
-    &lt;a href=&#34;#138-%e5%a4%9a%e8%a1%8c%e7%bc%a9%e8%bf%9b%e7%bc%a9%e5%87%bahttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid109&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;138-多行缩进缩出&#34;&gt;
+    &lt;a href=&#34;#138-%e5%a4%9a%e8%a1%8c%e7%bc%a9%e8%bf%9b%e7%bc%a9%e5%87%ba&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id109&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.8 多行缩进缩出
 
@@ -12559,8 +12559,8 @@
 &lt;li&gt;在可视模式下，选择要调整的代码块，按=，代码会按书写规则缩排好。&lt;/li&gt;
 &lt;li&gt;或者n =，调整n行代码的缩排。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;139-折叠httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid110&#34;&gt;
-    &lt;a href=&#34;#139-%e6%8a%98%e5%8f%a0httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid110&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;139-折叠&#34;&gt;
+    &lt;a href=&#34;#139-%e6%8a%98%e5%8f%a0&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;13.9 折叠
 
@@ -12587,8 +12587,8 @@
 &lt;li&gt;zk – 跳到上一个折叠处；&lt;/li&gt;
 &lt;li&gt;zi – enable/disable fold;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;14-命令行httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid111&#34;&gt;
-    &lt;a href=&#34;#14-%e5%91%bd%e4%bb%a4%e8%a1%8chttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid111&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;14-命令行&#34;&gt;
+    &lt;a href=&#34;#14-%e5%91%bd%e4%bb%a4%e8%a1%8c&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id111&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;14. 命令行
 
@@ -12600,8 +12600,8 @@
 
 
 &lt;/h1&gt;&lt;p&gt;normal模式下按:进入命令行模式&lt;/p&gt;
-&lt;h2 id=&#34;141-命令行模式下的快捷键httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34;&gt;
-    &lt;a href=&#34;#141-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%a8%a1%e5%bc%8f%e4%b8%8b%e7%9a%84%e5%bf%ab%e6%8d%b7%e9%94%aehttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid112&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;141-命令行模式下的快捷键&#34;&gt;
+    &lt;a href=&#34;#141-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%a8%a1%e5%bc%8f%e4%b8%8b%e7%9a%84%e5%bf%ab%e6%8d%b7%e9%94%ae&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id112&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;14.1 命令行模式下的快捷键：
 
@@ -12626,8 +12626,8 @@
 &lt;li&gt;q： 正常模式下，q然后按’:’，打开命令行历史缓冲区， 可以像编辑文件一样编辑命令。&lt;/li&gt;
 &lt;li&gt;q/和q? 可以打开查找历史记录。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;142-执行外部命令httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid113&#34;&gt;
-    &lt;a href=&#34;#142-%e6%89%a7%e8%a1%8c%e5%a4%96%e9%83%a8%e5%91%bd%e4%bb%a4httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid113&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;142-执行外部命令&#34;&gt;
+    &lt;a href=&#34;#142-%e6%89%a7%e8%a1%8c%e5%a4%96%e9%83%a8%e5%91%bd%e4%bb%a4&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id113&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;14.2 执行外部命令
 
@@ -12645,8 +12645,8 @@
 &lt;li&gt;:r !cmd 将命令的返回结果插入文件当前位置。&lt;/li&gt;
 &lt;li&gt;:m,nw !cmd 将文件的m行到n行之间的内容做为命令输入执行命令。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;15-其它httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid114&#34;&gt;
-    &lt;a href=&#34;#15-%e5%85%b6%e5%ae%83httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid114&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h1 id=&#34;15-其它&#34;&gt;
+    &lt;a href=&#34;#15-%e5%85%b6%e5%ae%83&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id114&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15. 其它
 
@@ -12657,8 +12657,8 @@
 
 
 
-&lt;/h1&gt;&lt;h2 id=&#34;151-工作目录httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34;&gt;
-    &lt;a href=&#34;#151-%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid115&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;/h1&gt;&lt;h2 id=&#34;151-工作目录&#34;&gt;
+    &lt;a href=&#34;#151-%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.1 工作目录
 
@@ -12674,8 +12674,8 @@
 &lt;li&gt;:cd path 改变vim的工作目录。&lt;/li&gt;
 &lt;li&gt;:set autochdir 可以让vim 根据编辑的文件自动切换工作目录。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;152-一些快捷键收集中httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid116&#34;&gt;
-    &lt;a href=&#34;#152-%e4%b8%80%e4%ba%9b%e5%bf%ab%e6%8d%b7%e9%94%ae%e6%94%b6%e9%9b%86%e4%b8%adhttpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid116&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;152-一些快捷键收集中&#34;&gt;
+    &lt;a href=&#34;#152-%e4%b8%80%e4%ba%9b%e5%bf%ab%e6%8d%b7%e9%94%ae%e6%94%b6%e9%9b%86%e4%b8%ad&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id116&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.2 一些快捷键（收集中）
 
@@ -12694,8 +12694,8 @@
 &lt;li&gt;g#: 同上，但部分符合即可。&lt;/li&gt;
 &lt;li&gt;g C-g: 统计全文或统计部分的字数。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;153-在线帮助httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid117&#34;&gt;
-    &lt;a href=&#34;#153-%e5%9c%a8%e7%ba%bf%e5%b8%ae%e5%8a%a9httpwwwcnblogscomjiqingwuarchive20120614vim_noteshtmlid117&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;153-在线帮助&#34;&gt;
+    &lt;a href=&#34;#153-%e5%9c%a8%e7%ba%bf%e5%b8%ae%e5%8a%a9&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     &lt;a class=&#34;link&#34; href=&#34;http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html#id117&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;15.3 在线帮助
 

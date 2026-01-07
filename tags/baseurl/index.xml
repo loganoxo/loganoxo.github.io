@@ -46,8 +46,8 @@
     &lt;button class=&#34;my-code-fold iconfont-logan icon-logan-circle-chevron-down-solid expand1&#34; aria-label=&#34;折叠&#34;&gt;&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;除非在后面加上---baseurl&#34;&gt;
-    &lt;a href=&#34;#%e9%99%a4%e9%9d%9e%e5%9c%a8%e5%90%8e%e9%9d%a2%e5%8a%a0%e4%b8%8a---baseurl&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
+&lt;h2 id=&#34;除非在后面加上-baseurl&#34;&gt;
+    &lt;a href=&#34;#%e9%99%a4%e9%9d%9e%e5%9c%a8%e5%90%8e%e9%9d%a2%e5%8a%a0%e4%b8%8a-baseurl&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     除非在后面加上 &amp;ndash;baseURL
 &lt;/h2&gt;
 &lt;div class=&#34;logan-code-block&#34;&gt;
