@@ -132,7 +132,7 @@
     服务器多环境打包
 &lt;/h2&gt;&lt;p&gt;我的博客，同一套代码在&lt;code&gt;github pages&lt;/code&gt;和&lt;code&gt;vercel&lt;/code&gt;上都有部署,分别是不同的域名，所以就需要区分两个环境的&lt;code&gt;baseUrl&lt;/code&gt;,我是这样做的：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;把原本的&lt;code&gt;hugo.yaml&lt;/code&gt;当作是&lt;code&gt;vercel&lt;/code&gt; 的配置，复制原本的配置为&lt;code&gt;hugo_git.yaml&lt;/code&gt;当作&lt;code&gt;github pages&lt;/code&gt;的配置&lt;/li&gt;
+&lt;li&gt;把原本的&lt;code&gt;hugo.yaml&lt;/code&gt;当作是&lt;code&gt;vercel&lt;/code&gt; 的配置，复制原本的配置为&lt;code&gt;hugo-git.yaml&lt;/code&gt;当作&lt;code&gt;github pages&lt;/code&gt;的配置&lt;/li&gt;
 &lt;li&gt;两个文件只有&lt;code&gt;baseUrl&lt;/code&gt;不同&lt;/li&gt;
 &lt;li&gt;在启动Hugo打包的时候，需要加具体的配置文件名参数&lt;/li&gt;
 &lt;/ul&gt;
@@ -145,7 +145,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify --config hugo.yaml &lt;span class=&#34;c1&#34;&gt;# 在vercel上使用，默认为vercel&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify --config hugo_git.yaml &lt;span class=&#34;c1&#34;&gt;#在github action中使用&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D --gc --minify --config hugo-git.yaml &lt;span class=&#34;c1&#34;&gt;#在github action中使用&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
