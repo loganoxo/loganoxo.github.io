@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Logan的博客</title>
-        <link>https://logan.qinhe.site/page/</link>
+        <link>https://loganoxo.github.io/page/</link>
         <description>Recent content in Pages on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>logan</copyright><atom:link href="https://logan.qinhe.site/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>logan</copyright><atom:link href="https://loganoxo.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>归档</title>
-        <link>https://logan.qinhe.site/page/archives/</link>
+        <link>https://loganoxo.github.io/page/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/page/archives/</guid>
+        <guid>https://loganoxo.github.io/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>相册</title>
-        <link>https://logan.qinhe.site/page/photos/</link>
+        <link>https://loganoxo.github.io/page/photos/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/page/photos/</guid>
+        <guid>https://loganoxo.github.io/page/photos/</guid>
         <description></description>
         </item>
         <item>
         <title></title>
-        <link>https://logan.qinhe.site/page/links/</link>
+        <link>https://loganoxo.github.io/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.qinhe.site/page/links/</guid>
+        <guid>https://loganoxo.github.io/page/links/</guid>
         <description>&lt;h1 id=&#34;我自己的blog信息&#34;&gt;
     &lt;a href=&#34;#%e6%88%91%e8%87%aa%e5%b7%b1%e7%9a%84blog%e4%bf%a1%e6%81%af&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     我自己的blog信息🤡
@@ -42,9 +42,9 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;🍔名字： Logan&amp;#39;s Blog
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;🍟博客地址：https://qinhe.site
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;🍟博客地址：https://qh.1357810.xyz
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;🥗简介：Starry serenade ✍️
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;🍚我的头像: https://qinhe.site/avatar.png&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;🍚我的头像: https://qh.1357810.xyz/avatar.png&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -127,10 +127,10 @@
         </item>
         <item>
         <title></title>
-        <link>https://logan.qinhe.site/timeline/</link>
+        <link>https://loganoxo.github.io/timeline/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.qinhe.site/timeline/</guid>
+        <guid>https://loganoxo.github.io/timeline/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/timeline.jpg" alt="Featured image of post " /&gt;&lt;p&gt;&lt;div class=&#34;timeline__row&#34;&gt;
   &lt;div class=&#34;timeline__time&#34;&gt;
     &lt;div class=&#34;timeline__time&#34;&gt;2021-02-10&lt;/div&gt;
@@ -140,7 +140,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;Whispers of love, carried by the breeze.&lt;/div&gt;
     &lt;/a&gt;
     
@@ -159,7 +159,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;星星在你的眼中起舞&lt;/div&gt;
     &lt;/a&gt;
     
@@ -178,7 +178,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;月光轻轻吻着大地&lt;/div&gt;
     &lt;/a&gt;
     
@@ -197,7 +197,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;森林的低语&lt;/div&gt;
     &lt;/a&gt;
     
@@ -216,7 +216,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;树叶的交响乐&lt;/div&gt;
     &lt;/a&gt;
     
@@ -235,7 +235,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;雨滴在玫瑰花瓣上舞动&lt;/div&gt;
     &lt;/a&gt;
     
@@ -254,7 +254,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;在夜的心中，寂静有千言万语&lt;/div&gt;
     &lt;/a&gt;
     
@@ -273,7 +273,7 @@
     &lt;div class=&#34;timeline__tags&#34;&gt;
           &lt;span class=&#34;timeline__tag timeline__tag-article&#34;&gt;文章&lt;/span&gt;
     &lt;/div&gt;
-    &lt;a href=&#34;https://logan.qinhe.site/articles&#34;&gt;
+    &lt;a href=&#34;https://loganoxo.github.io/articles&#34;&gt;
       &lt;div class=&#34;timeline__title&#34;&gt;脚步在记忆的路上轻轻回响&lt;/div&gt;
     &lt;/a&gt;
     
@@ -287,10 +287,10 @@
         </item>
         <item>
         <title>秦贺的博客</title>
-        <link>https://logan.qinhe.site/about/</link>
+        <link>https://loganoxo.github.io/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.qinhe.site/about/</guid>
+        <guid>https://loganoxo.github.io/about/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_082.jpg" alt="Featured image of post 秦贺的博客" /&gt;&lt;h1 id=&#34;与我联系&#34;&gt;
     &lt;a href=&#34;#%e4%b8%8e%e6%88%91%e8%81%94%e7%b3%bb&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     🌿与我联系：
@@ -1140,10 +1140,10 @@
         </item>
         <item>
         <title>搜索</title>
-        <link>https://logan.qinhe.site/page/search/</link>
+        <link>https://loganoxo.github.io/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://logan.qinhe.site/page/search/</guid>
+        <guid>https://loganoxo.github.io/page/search/</guid>
         <description></description>
         </item>
         

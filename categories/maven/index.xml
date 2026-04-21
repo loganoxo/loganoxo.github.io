@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Maven on Logan的博客</title>
-        <link>https://logan.qinhe.site/categories/maven/</link>
+        <link>https://loganoxo.github.io/categories/maven/</link>
         <description>Recent content in Maven on Logan的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>logan</copyright><atom:link href="https://logan.qinhe.site/categories/maven/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>logan</copyright><atom:link href="https://loganoxo.github.io/categories/maven/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>maven概述</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-summarize/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-summarize/</link>
         <pubDate>Sun, 03 Mar 2024 12:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-summarize/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-summarize/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_001.jpg" alt="Featured image of post maven概述" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://heavy_code_industry.gitee.io/code_heavy_industry/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://heavy_code_industry.gitee.io/code_heavy_industry/
 
@@ -2926,10 +2926,10 @@ java.vendor.url = &lt;a class=&#34;link&#34; href=&#34;http://java.oracle.com/&#
         </item>
         <item>
         <title>1普通工程-命令行</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-common/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-common/</link>
         <pubDate>Sun, 03 Mar 2024 13:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-common/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-common/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_018.jpg" alt="Featured image of post 1普通工程-命令行" /&gt;&lt;h1 id=&#34;一创建-maven-工程&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%ba-maven-%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、创建 Maven 工程
@@ -3554,10 +3554,10 @@ mvn -v 命令和构建操作无关，只要正确配置了 PATH，在任何目�
         </item>
         <item>
         <title>2 web工程-命令行</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-web/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-web/</link>
         <pubDate>Sun, 03 Mar 2024 14:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-web/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-web/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_034.jpg" alt="Featured image of post 2 web工程-命令行" /&gt;&lt;h1 id=&#34;一创建web工程&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%baweb%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、创建web工程
@@ -4187,10 +4187,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
         </item>
         <item>
         <title>3 父子工程-命令行</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-parent/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-parent/</link>
         <pubDate>Sun, 03 Mar 2024 15:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-parent/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-parent/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_033.jpg" alt="Featured image of post 3 父子工程-命令行" /&gt;&lt;h1 id=&#34;一创建父工程&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80%e5%88%9b%e5%bb%ba%e7%88%b6%e5%b7%a5%e7%a8%8b&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、创建父工程
@@ -4790,10 +4790,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
         </item>
         <item>
         <title>4 springboot项目</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-springboot/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-springboot/</link>
         <pubDate>Sun, 03 Mar 2024 16:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-springboot/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-springboot/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_005.jpg" alt="Featured image of post 4 springboot项目" /&gt;&lt;h1 id=&#34;一模块划分&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80%e6%a8%a1%e5%9d%97%e5%88%92%e5%88%86&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、模块划分
@@ -5690,10 +5690,10 @@ JSP全称是 Java Server Page，和 Thymeleaf 一样，是服务器端页面渲�
         </item>
         <item>
         <title>5 build标签和插件</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-build/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-build/</link>
         <pubDate>Sun, 03 Mar 2024 17:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-build/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-build/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_006.jpg" alt="Featured image of post 5 build标签和插件" /&gt;&lt;h1 id=&#34;一插件和目标&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80%e6%8f%92%e4%bb%b6%e5%92%8c%e7%9b%ae%e6%a0%87&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、插件和目标
@@ -8099,10 +8099,10 @@ repackage的goal绑定在生命周期的package阶段。
         </item>
         <item>
         <title>6 生产实践</title>
-        <link>https://logan.qinhe.site/articles/maven/maven-production/</link>
+        <link>https://loganoxo.github.io/articles/maven/maven-production/</link>
         <pubDate>Sun, 03 Mar 2024 18:49:51 +0800</pubDate>
         
-        <guid>https://logan.qinhe.site/articles/maven/maven-production/</guid>
+        <guid>https://loganoxo.github.io/articles/maven/maven-production/</guid>
         <description>&lt;img src="https://logan.1357810.xyz/cover/pic_008.jpg" alt="Featured image of post 6 生产实践" /&gt;&lt;h1 id=&#34;一jar包冲突问题&#34;&gt;
     &lt;a href=&#34;#%e4%b8%80jar%e5%8c%85%e5%86%b2%e7%aa%81%e9%97%ae%e9%a2%98&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;  
     一、jar包冲突问题
